@@ -1,0 +1,53 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-iotcore-docs",
+      "feedback_product_url": "windows-feedback:?contextid=441",
+      "breadcrumb_path": "/windows/iot-core/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-Windows-IoT",
+      "searchScope": [
+        "windows-iot"
+      ],
+      "ms.prod": "windows-iot",
+      "ms.technology": "IoT",
+      "titleSuffix": "Windows IoT"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "windows-iotcore",
+    "markdownEngineName": "markdig"
+  }
+}
