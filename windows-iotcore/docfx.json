@@ -33,10 +33,7 @@
     "externalReference": [],
     "globalMetadata": {
       "layout": "Conceptual",
-      "feedback_system": "GitHub",
       "bilingual_type": "hover over",
-      "feedback_github_repo": "MicrosoftDocs/windows-iotcore-docs.zh-cn",
-      "feedback_product_url": "windows-feedback:?contextid=441",
       "breadcrumb_path": "/windows/iot-core/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows-IoT",
       "searchScope": [
