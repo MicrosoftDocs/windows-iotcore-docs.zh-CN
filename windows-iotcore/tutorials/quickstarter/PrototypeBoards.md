@@ -1,0 +1,37 @@
+---
+title: 建议的原型板
+author: saraclay
+ms.author: saclayt
+ms.date: 04/17/2018
+ms.topic: article
+description: 了解用于 Windows 10 IoT 建议的原型板。
+keywords: windows iot、 开发设备、 主板，Raspberry Pi 2，Raspberry Pi 3、 Minnowboard 最大、 Dragonboard
+ms.openlocfilehash: fc13f44a183e79a4c3f7381c3a12d8b5dcba8895
+ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59510618"
+---
+# <a name="suggested-prototype-boards"></a>建议的原型板
+
+## <a name="windows-10-iot-core-development-devices"></a>Windows 10 IoT 核心版开发设备
+下面您会发现我们建议以帮助你开始使用 Windows 10 IoT 核心板。 这些主板产品/服务的完整 Flash 更新 (FFU) 映像，使用现成的映像更快地使原型设计，并使闪烁的 Windows 10 IoT 核心版的过程变得轻而易举。
+
+> [!IMPORTANT]
+> 必须创建自己的映像，并不使用下面提供的映像，如果你打算商业化你的设备。
+
+> [!NOTE]
+> Raspberry Pi 3B + 具有有限的兼容级别为使用 Windows 10 IoT Core。 请查看[发行说明](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/insider/17744)有关详细信息。 有关更完整的 Windows 10 IoT 核心版体验，请使用 Raspberry Pi 3B，DragonBoard，Up2 板或 NXP 设备。 
+
+
+| 看板 | 详细信息 | FFU 链接 | 如何设置 | 立即开始行动 |
+|-----------|----------|---------|---------|---------|---------|-------|
+| [向上 AAEON 平方](https://up-board.org/upsquared/specifications/) | [启动板站点](https://up-shop.org/28-up-squared) | [下载 FFU](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true) | [eMMC （对于向上平方，Intel）](DeviceSetup.md#flashing-with-emmc-for-up-squared-other-intel-devices) | [商业化](https://up-shop.org/home/270-up-squared.html) | 
+| [DragonBoard 410c](https://developer.qualcomm.com/hardware/dragonboard-410c) | [箭头站点](https://www.arrow.com/en/products/dragonboard410c/arrow-development-tools) | [下载 FFU](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!) | [IoT 仪表板](DeviceSetup.md#using-the-iot-dashboard-dragonboard-410c)，<br>[eMMC （适用于 DragonBoard 410 c，Qualcomm)](DeviceSetup.md#flashing-with-emmc-for-up-squared-other-intel-devices) | [商业化](https://www.arrow.com/en/products/dragonboard410c/arrow-development-tools) | 
+| [MinnowBoard Turbot](https://minnowboard.org) | [Minnowboard 站点](https://minnowboard.org/get-a-board) | [下载 FFU](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!) | [IoT 仪表板](DeviceSetup.md#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp) | 不可用 |
+| [NXP i.MX 6](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors:IMX6X_SERIES) | [NXP 站点](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors:IMX6X_SERIES) | [下载 FFU](https://github.com/ms-iot/imx-iotcore) | [IoT 仪表板](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp) | [商业化](https://www.solid-run.com/nxp-family/hummingboard/imx6-win-10-iot-core/) | 
+| [NXP i.MX 7](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-7-processors:IMX7-SERIES) | [NXP 站点](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-7-processors:IMX7-SERIES) | [下载 FFU](https://github.com/ms-iot/imx-iotcore) | [IoT 仪表板](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp) | [商业化](https://www.compulab.com/products/iot-gateways/iot-gate-imx7-nxp-i-mx-7-internet-of-things-gateway/) | 
+| [NXP i.MX 8 分钟/8 分钟最小](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-8-processors:IMX8-SERIES) | [NXP 站点](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-8-processors:IMX8-SERIES) | [下载 FFU](https://github.com/ms-iot/imx-iotcore) | [IoT 仪表板](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp) | [8 分钟开发工具包](https://www.nxp.com/support/developer-resources/software-development-tools/i.mx-developer-resources/evaluation-kit-for-the-i.mx-8m-applications-processor:MCIMX8M-EVK)或[8 分钟最小的开发人员工具包](https://www.nxp.com/support/developer-resources/software-development-tools/i.mx-developer-resources/evaluation-kit-for-the-i.mx-8m-mini-applications-processor:8MMINILPD4-EVK) |
+| [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)<br> (1.2 不支持) | [Raspberry Pi 站点](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) | [下载 FFU](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!) | [IoT 仪表板 （Raspberry Pi，MinnowBoard）](DeviceSetup.md#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp) | [Adafruit 工具包](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/adafruitkit) | 
+| [在 raspberry Pi 3B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)<br> （3B + 是不受支持的 technical preview） | [Raspberry Pi 站点](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) | [下载 FFU](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!) | [IoT 仪表板](DeviceSetup.md#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp) | [Adafruit 工具包](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/adafruitkit) |

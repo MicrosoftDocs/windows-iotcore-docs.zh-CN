@@ -1,0 +1,359 @@
+---
+title: Internet 连接共享教程 （2015 年 11 月发行版）
+author: saraclay
+ms.author: saclayt
+ms.date: 09/06/17
+ms.topic: article
+description: 了解如何启用和配置 internet 连接的 2015 年 11 月发行版的 Windows 共享。
+keywords: windows iot，Internet 连接共享，ICS，设备门户
+ms.openlocfilehash: c8f27b48197a0ec881a66da5d3e81272b3076100
+ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59510802"
+---
+# <a name="internet-connection-sharing-tutorial-november-2015-release"></a>Internet 连接共享教程 （2015 年 11 月发行版）
+
+本文档介绍的步骤，若要运行 Windows 10 IoT 核心版的设备上启用 Internet 连接共享 (ICS) 2015 年 11 月发布。 目的是要共享 Internet 连接的软件的 Wi-fi 访问点 (SoftAP) 和以太网适配器之间。 如果使用 Windows 10 IoT Core 周年版本，请参阅[Internet 连接共享教程](InternetConnectionSharing.md)。
+
+## <a name="prerequisites"></a>先决条件
+
+* 运行 Windows 10 IoT Core 设备 2015 年 11 月发布。
+* 支持启动 SoftAP 的 WLAN USB 设备。 请参阅[硬件兼容性列表](../learn-about-hardware/HardwareCompatList.md)对于支持的 Wi-fi USB 设备。
+* 具有 Internet 访问权限的以太网连接。
+
+
+## <a name="setup"></a>安装
+
+### <a name="step-1-gathering-network-information"></a>第 1 步：收集网络信息
+
+1. 在插入 WLAN 硬件保护装置、插入以太网电缆的情况下启动设备。
+2. 从 IoT 核心版设备启动 SoftAP。
+
+   默认情况下，Microsoft 将在安装程序 SoftAP 如果 Wi-fi 无线电能够并且没有 WLAN 配置文件已添加的 IoT 载入应用程序提供映像开始。 若要启动 SoftAP，UWP 应用程序可以使用 [Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisher API](https://msdn.microsoft.com/library/windows/apps/windows.devices.wifidirect.wifidirectadvertisementpublisher.aspx)。 IoT 登记应用程序的源代码可在 GitHub 上[IoTOnboarding](https://github.com/ms-iot/samples/tree/develop/IotOnboarding)。
+
+   记录 SoftAP 网络的 SSID。 你以后将需要它来通过 WLAN 连接到 IoT 核心版设备。 IoT 登记应用程序的 SSID 将启动与"AJ\_SoftAPSsid\_"，并且可以在应用程序的配置更改[文件](https://github.com/ms-iot/samples/blob/develop/IotOnboarding/IoTOnboardingTask/Config.xml)。
+
+3. 远程连接到 IoT Core 设备[使用 ssh](ssh.md)。
+4. 通过查找网络设备索引和描述来收集有关设备网络的信息。 声明要桥接哪些网络需要执行此操作。
+
+   在设备上，运行 **route print** 并收集以下数据：
+
+   * 记录以太网的公共接口网络索引。
+   * 记录 SoftAP 的专用接口网络索引（例如“Microsoft WLAN Direct 虚拟适配器 #2”）。
+
+   例如，SoftAP 通过接口索引 5 公开，适配器描述为“Microsoft WLAN Direct 虚拟适配器 #2”。
+
+   ![route print](../media/InternetConnectionSharing/internetconnectionsharing_route.png)
+
+   在设备上，运行 **ipconfig /all** 并收集以下数据：
+    
+   * 记录 SoftAP 的专用接口网络适配器名称
+
+   例如，运行"ipconfig /all"查找特定的适配器名为"本地区域连接 * 3"、"Microsoft Wi-Fi Direct 虚拟适配器 #2"的描述。 使用此方法从“route print”中返回的描述中查找适配器名称。
+
+   ![ipconfig all](../media/InternetConnectionSharing/internetconnectionsharing_ipconfig.png)
+
+### <a name="step-2-scripting-internet-connection-sharing-trigger"></a>步骤 2：编写 Internet 连接共享触发器脚本
+
+从 Internet 连接共享开始两个网络之间需要执行以下步骤：
+
+* 设置注册表项来设置要桥接的专用 (SoftAP) 和公共（以太网）网络接口。
+* 设置相应的防火墙规则。
+* 在专用接口上关闭 DHCP。
+* 在专用接口上设置静态 IP 地址。
+* 启动 SharedAccess 服务。
+* 将命令代码“129”发送到 SharedAccess 服务。
+
+
+#### <a name="create-a-script-to-automate-the-ics-settings"></a>创建一个脚本来自动执行 ICS 设置
+
+下面是脚本的示例和代码来自动执行上面列出的步骤可以集成到设备启动顺序。 创建脚本文件 (例如**ConfigureICS.cmd**) 包含以下内容：
+
+```
+echo off
+
+set START_OR_STOP=%1
+set PUBLIC_INDEX=%2
+set PRIVATE_INDEX=%3
+set PRIVATE_INTERFACE_NAME=%4
+
+if not defined PRIVATE_INTERFACE_NAME (
+  goto usage
+)
+
+if "%START_OR_STOP%"=="start" (
+
+  REM Set the public and private interface registry keys
+  reg add HKEY_LOCAL_MACHINE\System\SA /f /v private /t REG_DWORD /d %PRIVATE_INDEX%
+  reg add HKEY_LOCAL_MACHINE\System\SA /f /v public /t REG_DWORD /d %PUBLIC_INDEX%
+
+  REM Set the firewall rules to allow DHCP to work
+  netsh advfirewall firewall add rule name=\"AllowPort67In\" protocol=UDP dir=in localport=67 action=allow
+  netsh advfirewall firewall add rule name=\"AllowPort68In\" protocol=UDP dir=in localport=68 action=allow
+  netsh advfirewall firewall add rule name=\"AllowPort67Out\" protocol=UDP dir=out localport=67 action=allow
+  netsh advfirewall firewall add rule name=\"AllowPort68Out\" protocol=UDP dir=out localport=68 action=allow
+  netsh advfirewall firewall add rule name=\"AllowPort53Out\" protocol=UDP dir=out localport=53 action=allow
+  netsh advfirewall firewall add rule name=\"AllowPort53In\" protocol=UDP dir=in localport=53 action=allow
+
+  REM Turn off DHCP and set static IP for private interface
+  netsh interface ip set address %4 static 192.168.137.1
+
+  REM Start sharing
+  call SharedAccessUtility.exe start
+
+) else if "%START_OR_STOP%"=="stop" (
+
+  REM Stop sharing
+  call SharedAccessUtility.exe stop
+
+  REM Set the public and private interface registry keys
+  reg add HKEY_LOCAL_MACHINE\System\SA /f /v private /t REG_DWORD /d 0
+  reg add HKEY_LOCAL_MACHINE\System\SA /f /v public /t REG_DWORD /d 0
+
+  REM Clear the firewall rules
+  netsh advfirewall firewall delete rule name="AllowPort67In"
+  netsh advfirewall firewall delete rule name="AllowPort68In"
+  netsh advfirewall firewall delete rule name="AllowPort67Out"
+  netsh advfirewall firewall delete rule name="AllowPort68Out"
+  netsh advfirewall firewall delete rule name="AllowPort53Out"
+  netsh advfirewall firewall delete rule name="AllowPort53In"
+
+  REM Reenable DHCP for private interface
+  netsh interface ip set address %4 dhcp
+
+) else (
+  goto usage
+)
+
+goto eof
+
+:usage
+ECHO USAGE: %0 [start ^| stop] [public interface index] [private interface index] [private interface name]
+ECHO e.g. %0 start 1 2 "Ethernet"
+
+:eof
+```
+
+此脚本将执行除启动/停止 SharedAccess 服务之外的一切操作，并且不会发送服务命令。 对于这些任务，它调用到 SharedAccessUtility.exe（需要创建此程序）。
+
+#### <a name="build-the-sharedaccessutility-application"></a>生成 SharedAccessUtility 应用程序
+在安装了 [Windows IoT 核心版项目模板扩展](https://go.microsoft.com/fwlink/?linkid=847472)的 Visual Studio 中，创建新的名为“SharedAccessUtility”的“空白 Windows IoT 核心版控制台应用程序”。
+
+![VS 新建项目](../media/InternetConnectionSharing/internetconnectionsharing_vs.png)
+
+将 ConsoleApplication.cpp 的内容替换为以下代码：
+
+```C++
+#include "pch.h"
+#include <ws2tcpip.h>
+#include <iphlpapi.h>
+#include <mstcpip.h>
+#include <stdio.h>
+
+#define SHARED_ACCESS_NAME L"SharedAccess"
+#define START_SHARING_CONTROL 129
+
+DWORD StartSharedAccessService(SC_HANDLE *phScm, SC_HANDLE *phSvc)
+{
+    DWORD dwError = ERROR_SUCCESS;
+    SERVICE_STATUS svcStatus = { 0 };
+
+    // open a handle to SCM
+    *phScm = OpenSCManager(NULL, NULL, SC_MANAGER_CONNECT);
+    if (*phScm == NULL)
+    {
+        dwError = GetLastError();
+        printf("\nOpenSCManager failed; error = %d", dwError);
+    }
+    else
+    {
+        // open a handle to the service
+        *phSvc = OpenService(*phScm, SHARED_ACCESS_NAME, SERVICE_START | SERVICE_QUERY_STATUS | SERVICE_QUERY_CONFIG | SERVICE_STOP | SERVICE_USER_DEFINED_CONTROL);
+        if (*phSvc == NULL)
+        {
+            dwError = GetLastError();
+            printf("\nOpenService failed; error = %d", dwError);
+        }
+        else
+        {
+            if (!StartService(*phSvc, 0, NULL))
+            {
+                dwError = GetLastError();
+                if (dwError != ERROR_SERVICE_ALREADY_RUNNING)
+                {
+                    printf("\nStartService failed; error = %d", dwError);
+                }
+                else
+                {
+                    dwError = ERROR_SUCCESS;
+                    printf("\nService already running.");
+                }
+            }
+
+            if (dwError == ERROR_SUCCESS)
+            {
+                if (QueryServiceStatus(*phSvc, &svcStatus) && svcStatus.dwCurrentState != SERVICE_RUNNING)
+                {
+                    for (int i = 0; i < 10; i++)
+                    {
+                        printf("\nWaiting 1 second for service to start.");
+                        Sleep(1000);
+                        if (QueryServiceStatus(*phSvc, &svcStatus))
+                        {
+                            if (svcStatus.dwCurrentState == SERVICE_RUNNING)
+                            {
+                                printf("\nService is running.");
+                                // it is, so break out
+                                dwError = ERROR_SUCCESS;
+                                break;
+                            }
+                            else
+                            {
+                                if (svcStatus.dwCurrentState == SERVICE_STOPPED)
+                                {
+                                    printf("\nService could not run.");
+                                    // it is, so break out
+                                    dwError = ERROR_SERVICE_NOT_ACTIVE;
+                                    break;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            printf("\nWaiting more time.");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if (dwError == ERROR_SUCCESS) //service is running
+    {
+        if (!ControlService(*phSvc, START_SHARING_CONTROL, &svcStatus))
+        {
+            dwError = GetLastError();
+            printf("\nControl service for start sharing failure, %d", dwError);
+        }
+        else
+        {
+            printf("\nSharing started");
+        }
+    }
+
+    // Service cleanup done at the main.
+    return dwError;
+}
+
+
+DWORD StopSharedAccessService(SC_HANDLE *phSvc)
+{
+    DWORD dwError = ERROR_SUCCESS;
+    SERVICE_STATUS svcStatus = { 0 };
+
+    if (!QueryServiceStatus(*phSvc, &svcStatus))
+    {
+        dwError = GetLastError();
+        printf("\nFailed to query sharedaccess, %d", dwError);
+    }
+    else
+    {
+        if (svcStatus.dwCurrentState != SERVICE_STOPPED)
+        {
+            if (ControlService(*phSvc, SERVICE_CONTROL_STOP, &svcStatus))
+            {
+                if (QueryServiceStatus(*phSvc, &svcStatus) && svcStatus.dwCurrentState != SERVICE_STOPPED)
+                {
+                    for (int i = 0; i < 10; i++)
+                    {
+                        printf("\nWaiting 1 second for service to stop.");
+                        Sleep(1000);
+                        if (QueryServiceStatus(*phSvc, &svcStatus))
+                        {
+                            if (svcStatus.dwCurrentState == SERVICE_STOPPED)
+                            {
+                                printf("\nService stopped.");
+                                // it is, so break out
+                                dwError = ERROR_SUCCESS;
+                                break;
+                            }
+                            else
+                            {
+                                printf("\nWaiting more time.");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return dwError;
+}
+
+void ShowUsage()
+{
+    printf("Usage: SharedAccessUtility.exe start | stop\n"
+        "Setup: Make sure the public and private interfaces are up and running and that the SharedAccess registry keys are set.");
+}
+
+int __cdecl
+main(
+    __in int argc,
+    __in_ecount(argc) LPSTR argv[]
+    )
+{
+    SC_HANDLE hScm = NULL;
+    SC_HANDLE hSvc = NULL;
+    DWORD dwError = NO_ERROR;
+    bool startSharing = true;
+
+    if (argc < 2)
+    {
+        ShowUsage();
+        return -1;
+    }
+    else
+    {
+        if (strcmp(argv[1], "start") == 0 || strcmp(argv[1], "/start") == 0)
+        {
+            startSharing = true;
+        }
+        else if (strcmp(argv[1], "stop") == 0 || strcmp(argv[1], "/stop") == 0)
+        {
+            startSharing = false;
+        }
+        else
+        {
+            ShowUsage();
+            return -1;
+        }
+    }
+
+    dwError = startSharing ? StartSharedAccessService(&hScm, &hSvc) : StopSharedAccessService(&hSvc);
+
+    // Cleanup
+    if (hSvc != NULL)
+    {
+        CloseServiceHandle(hSvc);
+        hSvc = NULL;
+    }
+    if (hScm != NULL)
+    {
+        CloseServiceHandle(hScm);
+        hScm = NULL;
+    }
+    return 0;
+}
+```
+
+针对目标体系结构（例如版本 x86 ）进行生成，并找到输出 **SharedAccessUtility.exe**
+
+### <a name="step-3-starting-internet-connection-sharing"></a>步骤 3:启动 Internet 连接共享
+
+1. 复制**ConfigICS.cmd**步骤 2 中创建到设备中某个位置，例如到脚本 `C:\test\`
+2. 复制**SharedAccessUtility.exe**步骤 2 中创建到设备中相同的位置，例如 `C:\test`\
+3. 在设备上运行**C:\test\ConfigureICS.cmd 开始 [公共 index] [专用索引] [专用适配器名称]** 在此示例中，这可能是<strong>C:\test\ConfigureICS.cmd 启动 4 5"本地区域连接 * 3"</strong>
+
+此时设备已启用 Internet 连接共享的任何客户端连接到设备的播发 SSID。

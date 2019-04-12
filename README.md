@@ -1,76 +1,71 @@
-## Microsoft Open Source Code of Conduct
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 开放源代码行为准则
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+此项目已采用[Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。
+有关详细信息请参阅[代码的行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)或联系[ opencode@microsoft.com ](mailto:opencode@microsoft.com)与任何其他问题或意见。
 
-# How to contribute to Windows 10 IoTCore documentation
+# <a name="how-to-contribute-to-windows-10-iotcore-documentation"></a>如何参与编辑 Windows 10 IoTCore 文档
 
-## Legal Notices
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE) file.
+## <a name="legal-notices"></a>法律声明
+Microsoft 及任何创作人按照[创作共用署名 4.0 国际公共许可](https://creativecommons.org/licenses/by/4.0/legalcode)授予你此存储中的 Microsoft 文档和其他内容的许可，请参阅[许可证](LICENSE)文件，并按照 [MIT 许可](https://opensource.org/licenses/MIT)授予你存储库中任何代码的许可，请参阅[许可证代码](LICENSE-CODE)文件。
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
-may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+本文档中引用的 Microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 产品和服务是 Microsoft 在美国和/或其他国际/地区的商标或注册商标。
+此项目的许可证并未授予你使用任何 Microsoft 名称、徽标或商标的权利。
+Microsoft 的一般商标准则，请参阅 http://go.microsoft.com/fwlink/?LinkID=254653。
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+可以在发现的隐私信息 https://privacy.microsoft.com/en-us/
 
-Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+Microsoft 及任何创作人保留所有其他权利（无论是其各自的版权、专利或商标），无论是通过默示、禁止否认的方式还是以其他方式。
 
-## Contributing
+## <a name="contributing"></a>参与
 
-This is the repository for Windows 10 IoT **documentation** hosted at [https://docs.microsoft.com/windows/iot-core](https://docs.microsoft.com/windows/iot-core).
+这是存储库，适用于 Windows 10 IoT**文档**托管于[ https://docs.microsoft.com/windows/iot-core ](https://docs.microsoft.com/windows/iot-core)。
 
-If you would like to see new coverage or have feedback, please consider [**contributing**](/CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
+如果想要了解新的覆盖范围或有任何反馈，请考虑[**参与**](/CONTRIBUTING.md)。  可以编辑现有的内容、 添加新的内容，或只需创建新[问题](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues)。 我们来看看您的建议，并将协同工作来将其合并到文档。
 
-To edit content, just click edit on the article you want to make changes to:
+若要编辑内容，只需单击编辑在想要对注册表进行更改的文章：
 
-![Gif on how to edit docs](windows-iotcore/media/edit-doc.gif)
+![有关如何编辑文档的 Gif](windows-iotcore/media/edit-doc.gif)
 
 
-You can also clone or download the repo to make changes:
+您还可以克隆或下载存储库进行更改：
 
-![Gif on how to clone or download repo](windows-iotcore/media/download-repo.gif)
+![如何克隆或下载存储库上的 Gif](windows-iotcore/media/download-repo.gif)
 
-You will also need to add a reviewer or reviews to your pull requests to get them approved:
+您还需要将审阅者或评论添加到拉取请求来获取批准它们：
 
-![Adding reviewers to your pull request](windows-iotcore/media/reviewers.gif)
+![将审阅者添加到你的拉取请求](windows-iotcore/media/reviewers.gif)
 
-# Conventions
-  - When adding a page, you must add an entry for it in [toc.md](windows-iotcore/TOC.md) for it to appear.
-  - A folder can contain more folders or `readme.md`s
-  - Folder/directory names are dash-separated (e.g., `f12-tools`) and lowercase. They are used in URLs on the docs.microsoft.com site. Don't use underscores or PascalCase/camelCase.
+# <a name="conventions"></a>约定
+  - 在添加一个页面时，您必须添加一个条目中为其[toc.md](windows-iotcore/TOC.md)它才会显示。
+  - 一个文件夹可以包含更多的文件夹或`readme.md`s
+  - 文件夹/目录名称是短划线分隔 (例如， `f12-tools`) 和大小写。 Docs.microsoft.com 网站上的 Url 中使用它们。 不要使用下划线或 pascal 命名法/驼峰式大小写。
 
 
-## Other text elements
+## <a name="other-text-elements"></a>其他文本元素
 
-These other text elements have styling available:
+这些其他文本元素具有样式设置可用：
 
-* Unordered lists
-* Have regular bullets
-   * You can also nest bullets
-   * Bullets lists should have more than one entry.
-* Pretty standard
+* 未排序的列表
+* 具有常规项目符号
+   * 此外可以嵌套项目符号
+   * 项目符号列表应具有多个条目。
+* 漂亮的标准
 
-1. Ordered lists
-2. Use regular ol' western-style numbering.
-3. Should be used only when a list truly has order.
+1. 排序的列表
+2. 使用正则这可怜的家伙 western 样式编号。
+3. 仅当真正有顺序的列表时，才应使用。
 
 _________________________
 
-Horizontal rules are available. We suggest using them sparingly to reduce clutter.
-Do not combine horizontal rules with heading tags; some already used line styles for visual hierarchy.
-Also, do not combine notes (see below) in the middle of numbered lists. This messes with the numbering order.
+水平规则可使用。 我们建议尽量少使用它们来减少混乱。
+与标题标记，则不要混用水平标尺一些已对可视层次结构使用线条样式。
+此外，不要混用中间编号列表的说明 （见下文）。 这都在困扰着编号顺序。
 
-## Displaying code
+## <a name="displaying-code"></a>显示代码
 
-You can use inline `code` Markdown syntax (with the backticks).
+可以使用内联`code`Markdown 语法 （使用反撇号）。
 
-Or you can display blocks of code like so:
+也可以显示的代码块如下所示：
 
 ```css
 body {
@@ -78,32 +73,32 @@ body {
 }
 ```
 
-## Tables
+## <a name="tables"></a>表
 
-| You can     | use headers | on tables    |
+| 你可以     | 使用标头 | 上表    |
 |-------------|-------------|-------------:|
-| Left-aligned| Unless a #  | 456          |
-| Text value  | More text   | $0.00        |
+| 左对齐| 除非 #  | 456          |
+| 文本值  | 更多的文本   | $0.00        |
 
-## Notes
+## <a name="notes"></a>说明
 
-Use notes sparingly. They are blocks designed to highlight "don't-miss-it" information.
+尽量少使用说明。 它们是块旨在突出显示"无-未命中的 it"信息。
 
-We have four different versions of notes currently styled:
-- NOTE
-- WARNING
-- TIP
-- IMPORTANT
+我们有四个不同版本的当前样式的说明：
+- 注意
+- 警告
+- 提示
+- 重要提示
 
 
-For multi-line blockquote notes, use a > in front of each line of the notes as seen in the example below.
+对于多行块引用说明，请使用 > 的说明，如下面的示例中所示的每一行的前面。
 
-## Images
+## <a name="images"></a>映像
 
-Images should be stored in a `media` folder and referenced with a relative path:
+图像应存储在`media`文件夹和相对路径引用：
 
 `![Note patterns](media/notes.png)`
 
 
-## Code of Conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## <a name="code-of-conduct"></a>行为准则
+此项目已采用[Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。 有关详细信息请参阅[代码的行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)或联系[ opencode@microsoft.com ](mailto:opencode@microsoft.com)与任何其他问题或意见。
