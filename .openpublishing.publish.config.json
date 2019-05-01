@@ -20,7 +20,7 @@
   ],
   "notification_subscribers": [],
   "branches_to_filter": [
-    "live-sxs",
+    "master",
     "live"
   ],
   "git_repository_branch_open_to_public_contributors": "master",
