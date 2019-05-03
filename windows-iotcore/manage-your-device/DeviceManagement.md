@@ -8,7 +8,7 @@ description: 了解如何管理 Windows 10 IoT Core 设备的不同方式。
 keywords: windows iot、 设备管理、 windows iot，Azure DM、 Azure 中心、 Azure IoT
 ms.openlocfilehash: dbcc6858ee32ce9eb8b33c3d1831a6581a8fa3c7
 ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/11/2019
 ms.locfileid: "59510971"
@@ -79,7 +79,7 @@ MDM 注册的 IoT Core 设备被通过预配包。 可以使用 Windows 映像�
 
 7. 导航到工作区-> 注册。
 
-8. UPN 字段中输入你想要注册设备下的帐户 (即trmck@contoso.co)，单击**添加**。
+8. UPN 字段中输入你想要注册设备下的帐户 (即trmck@contoso.co)，单击 **添加** 。
 
    ![填充工作区注册](../media/ManagingDevices/WICD-Workplace-Enrollments-UPN-Filled.png)
 
