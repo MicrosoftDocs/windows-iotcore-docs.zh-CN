@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解有关外围接口和 Windows 10 IoT Core 最佳支持的协议。
 keywords: windows iot、 外围设备、 协议、 兼容性、 总线、 硬件
-ms.openlocfilehash: 819414db94d01e826fbcf721c911fff9d02f6c94
-ms.sourcegitcommit: b79c2b74968e552bee664ecc886725754d183657
+ms.openlocfilehash: 54ca0f706033a8a3eef0704534805d0d6b379083
+ms.sourcegitcommit: 77caab0cfa47c74c66777c3cf5eeaa0ec9ac5784
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512103"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64981931"
 ---
 # <a name="hardware-compatibility-list"></a>硬件兼容性列表
 
@@ -38,7 +38,7 @@ Windows 10 IoT 核心版支持各种外设接口和协议，包括对诸如 I2C�
 > | Realtek 8188EU USB 无线 WiFi | ARM32，Mx64，x86BM | Realtek RTL8188EU 无线 LAN 802.11n/g/b USB 2.0 网络适配器 | | &#10004; |
 > | Realtek 8192EU USB 无线 WiFi | ARM32，x64、 x86 | Realtek RTL8192EU 无线 LAN 802.11n/g/b USB 2.0 网络适配器 | | &#10004; |
 > | CanaKit USB 无线 WiFi | x64、 x86 | Chipset Ralink 5370 | | &#10004;
-> | D-Link DWA-172 | ARM32 | 无线 AC600 双外高增益 USB 适配器 | [数据表](ftp://ftp.dlink.de/dwa/dwa-172/documentation/DWA-172_ds_en_Datasheet.pdf) |
+> | D-Link DWA-172 | ARM32 | 无线 AC600 双外高增益 USB 适配器 | [Datasheet](ftp://ftp.dlink.de/dwa/dwa-172/documentation/DWA-172_ds_en_Datasheet.pdf) |
 
 ### <a name="ethernet-adapters"></a>以太网适配器
 > | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证  | 
@@ -79,11 +79,11 @@ Windows 10 IoT 核心版支持各种外设接口和协议，包括对诸如 I2C�
 
 ## <a name="other-hardware-peripherals"></a>其他外围硬件设备
 
-### <a name="storage-media"></a>存储媒体
-> | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证  | 
+### <a name="nfcrfidproximity"></a>NFC/RFID/Proximity
+> | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证 |
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | [Samsung 32GB EVO Class 10 Micro SDHC](https://www.amazon.com/gp/product/B00IVPU786) | AARM32，x64、 x86 | 设备可以有 Windows 10 IoT 核心版已刷新建议的 SD 卡。 | | &#10004;|
-> | [SanDisk Ultra Micro SDHC 16GB](https://www.amazon.com/SanDisk-Ultra-Micro-SDHC-16GB/dp/9966573445) | ARM32，x64、 x86 | 设备可以有 Windows 10 IoT 核心版已刷新建议的 SD 卡。 | | &#10004; |
+> | NXP OM5577 演示板 | ARM32 | NXP PN7120 NFC 芯片的演示板。 | [ProximityDevice 文档](https://docs.microsoft.com/uwp/api/Windows.Networking.Proximity.ProximityDevice) | &#10004; |
+> | NXP PN547/PN548/PN7120 | ARM32，x64、 x86 | 支持 NXP NFC 芯片。 | | &#10004; |
 
 ### <a name="pi-hats"></a>Pi 尖角符号
 > | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证  | 
@@ -92,38 +92,42 @@ Windows 10 IoT 核心版支持各种外设接口和协议，包括对诸如 I2C�
 > | [Dexter 行业 GrovePi](https://www.dexterindustries.com/shop/grovepi-board/) | ARM32 | 可以连接数百个不同的传感器，而焊接，因此可以将其用于监视，编程控制，并在您的生活中实现自动化的设备。 | [GrovePi 示例](https://github.com/DexterInd/GrovePi/) | |
 > | Dexter 行业 GoPiGo | ARM x32 | GoPiGo 是针对 Raspberry Pi 将 Pi 变成完全正常运行机器人很不一般吧和完整的机器人。 GoPiGo 是用于开发的 Dexter 行业在 Raspberry Pi 的移动机器人平台。 | [GoPiGo 示例](https://github.com/DexterInd/GoPiGo/tree/master/Software/CSharp) | |
 
-### <a name="sensors"></a>传感器
-> | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证  | 
-> |----------------|-------------------|-------------|--------|------------------------------|
-> | DHT11 基本温度-湿度传感器 | ARM32，x64、 x86 | 超低成本的基本数字温度和湿度传感器。 它使用容量湿度传感器和热敏电阻来测量周围空气，并在数据引脚上显示数字信号（无需模拟输入引脚）。  | [GpioOneWireSample (DHT11)](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/GpioOneWire)| &#10004; |
-> | DHT22 温度-湿度传感器 | ARM32，x64、 x86 | 超低成本的基本数字温度和湿度传感器。 它使用容量湿度传感器和热敏电阻来测量周围空气，并在数据引脚上显示数字信号（无需模拟输入引脚）。  | [GpioOneWireSample (DHT11)](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/GpioOneWire) | &#10004; |
-> | SparkFun 三轴加速计突围 - ADXL345 | ARM32，x64、 x86 | 小型，精简，低电源、 3 轴 MEMS 加速感应器使用 ±16 g 最高分辨率 （13 位） 上的度量值。 数字输出数据的格式设置为 16 位的二进制补码，并可通过 SPI（3 线或 4 线）或 I2C 数字接口访问。 |[加速计示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer) | &#10004; |
-> | Adafruit BMP280 温度和气压传感器 | ARM32 | 测量温度、气压的 Bosch 环境传感器 | |   &#10004; |
-> | [Adafruit TCS34725 色彩传感器](http://www.adafruit.com/products/1334) | ARM x32 | 使用红外线 （ir） 筛选器和白色 LED-TCS34725 RGB 颜色传感器 | | &#10004; |
-> | Rohm BH1750FVI 环境光线传感器 | ARM32 | 小 I2C 传感器环境光线度量 | [I2C 示例](https://github.com/mickut/Win10-IoT-Sensors) | |
-> | 博世 BMP180 温度和大气传感器 | ARM x32 | 博世环境传感器与 tempreature，大气压力 | [I2C 示例](https://github.com/mickut/Win10-IoT-Sensors) | |
-> | Dorji DSTH01 相对湿度传感器 | ARM32 | I2C 相对湿度传感器 | [I2C 示例](https://github.com/mickut/Win10-IoT-Sensors)| |
-> | Honeywell HMC5883L 数字 3 轴指南针/磁力仪 | ARM32 | 小型数字指南针使用和磁场度量值的 3 轴磁力仪 | [I2C 示例](https://github.com/mickut/Win10-IoT-Sensors) | |
-
-
 ### <a name="port-expanders"></a>端口扩展器
 > | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | MCP23008 8 位 I/O 端口扩展器 | ARM32，x64、 x86 | I2C 接口芯片，GPIO 端口扩展器。 8 个端口，18 PDIP 程序包 | [SPI 端口 Explander 示例](https://www.hackster.io/4803/i2c-port-expander-sample-0a6d4f) | &#10004; |
 > | MCP23S17 16 位 I/O 端口扩展器 | ARM32，x64、 x86 | I2C 接口芯片，GPIO 端口扩展器。 16 个端口，28 SPDIP 的程序包 | [交互式钢琴示例](https://www.hackster.io/windowsiot/build-2014-piano-3b449c) | &#10004; |
 
-### <a name="nfcrfidproximity"></a>NFC/RFID/Proximity
-> | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证 |
+### <a name="storage-media"></a>存储媒体
+> | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | NXP OM5577 演示板 | ARM32 | NXP PN7120 NFC 芯片的演示板。 | [ProximityDevice 文档](https://docs.microsoft.com/uwp/api/Windows.Networking.Proximity.ProximityDevice) | &#10004; |
-> | NXP PN547/PN548/PN7120 | ARM32，x64、 x86 | 支持 NXP NFC 芯片。 | | &#10004; |
+> | [Samsung 32GB EVO 类 10 微 SDHC](https://www.amazon.com/gp/product/B00IVPU786) | AARM32，x64、 x86 | 设备可以有 Windows 10 IoT 核心版已刷新建议的 SD 卡。 | | &#10004;|
+> | [SanDisk Ultra Micro SDHC 16GB](https://www.amazon.com/SanDisk-Ultra-Micro-SDHC-16GB/dp/9966573445) | ARM32，x64、 x86 | 设备可以有 Windows 10 IoT 核心版已刷新建议的 SD 卡。 | | &#10004; |
+
+### <a name="sensors"></a>传感器
+> | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证  | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | DHT11 基本温度-湿度传感器 | ARM32，x64、 x86 | 超低成本的基本数字温度和湿度传感器。 它使用容量湿度传感器和热敏电阻来测量周围空气，并在数据引脚上显示数字信号（无需模拟输入引脚）。  | [GpioOneWireSample (DHT11)](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/GpioOneWire)| &#10004; |
+> | DHT22 温度-湿度传感器 | ARM32，x64、 x86 | 超低成本的基本数字温度和湿度传感器。 它使用容量湿度传感器和热敏电阻来测量周围空气，并在数据引脚上显示数字信号（无需模拟输入引脚）。  | [GpioOneWireSample (DHT11)](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/GpioOneWire) | &#10004; |
+> | SparkFun 三轴加速计突围 - ADXL345 | ARM32，x64、 x86 | 小型，精简，低电源、 3 轴 MEMS 加速感应器使用 ±16 g 最高分辨率 （13 位） 上的度量值。 数字输出数据的格式设置为 16 位的二进制补码，并可通过 SPI（3 线或 4 线）或 I2C 数字接口访问。 |[加速感应器示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer) | &#10004; |
+> | Adafruit BMP280 温度和气压传感器 | ARM32 | 测量温度、气压的 Bosch 环境传感器 | |   &#10004; |
+> | [Adafruit TCS34725 颜色传感器](http://www.adafruit.com/products/1334) | ARM x32 | 使用红外线 （ir） 筛选器和白色 LED-TCS34725 RGB 颜色传感器 | | &#10004; |
+> | Rohm BH1750FVI 环境光线传感器 | ARM32 | 小 I2C 传感器环境光线度量 | [I2C 示例](https://github.com/mickut/Win10-IoT-Sensors) | |
+> | 博世 BMP180 温度和大气传感器 | ARM x32 | 博世环境传感器与 tempreature，大气压力 | [I2C 示例](https://github.com/mickut/Win10-IoT-Sensors) | |
+> | Dorji DSTH01 相对湿度传感器 | ARM32 | I2C 相对湿度传感器 | [I2C 示例](https://github.com/mickut/Win10-IoT-Sensors)| |
+> | Honeywell HMC5883L 数字 3 轴指南针/磁力仪 | ARM32 | 小型数字指南针使用和磁场度量值的 3 轴磁力仪 | [I2C 示例](https://github.com/mickut/Win10-IoT-Sensors) | |
+
+### <a name="touchpanel-solutions"></a>触摸屏解决方案
+> | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证 | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | Keith 和 i 平移 M7 CoverLens | ARM32 | 7.0 用于工业 Qualcomm Snapdragon 410E CPU、 解析 800x480px、 亮度 850 cd/qm USB 2.0 端口，SD 卡波英寸触摸屏的计算机 | [i-平移 M7 信息](https://keith-koep.com/en/products/products-hmi/i-pan-m7-coverlens-arm-touch-panel-computer-technical-data/) | &#10004; |
 
 ### <a name="miscellaneous"></a>其他
 > | 部件名称/编号 | 兼容的体系结构 | 描述 | 相关链接 | Microsoft 验证 | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | 官方 Pi 显示 | ARM32 | 7"800x480 触摸显示。 | [在 raspberry Pi 7"触摸屏](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) | &#10004; |
-> | 单色 1.3"128x64 OLED 图形显示 |ARM，x 32、 x64、 x86 | 1.3"斜向的高对比度黑白 OLED 显示。 128x64 单个白色 OLED 像素，每个 OLED 均由控制器芯片打开或关闭。 | [SPI 屏幕示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/SPIDisplay) | &#10004; |
-> | SN74HC595N 移位寄存器 IC | ARM32，x64、 x86 | IC 8 位移位寄存器 16 DIP | [移位寄存器示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/ShiftRegister) | &#10004; |
+> | 单色 1.3"128x64 OLED 图形显示 |ARM，x 32、 x64、 x86 | 1.3"斜向的高对比度黑白 OLED 显示。 128x64 单个白色 OLED 像素，每个 OLED 均由控制器芯片打开或关闭。 | [SPI 显示示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/SPIDisplay) | &#10004; |
+> | SN74HC595N 移位寄存器 IC | ARM32，x64、 x86 | IC 8 位移位寄存器 16 DIP | [Shift 注册示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/ShiftRegister) | &#10004; |
 > | 微芯片技术 ADC MCP3002-I/P | AARM32，x64、 x86 | MCP3002 10 位模拟到数字转换器。 |  [电位计传感器示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/PotentiometerSensor) | &#10004; |
 > | 微芯片技术 ADC MCP3208-CI/P | ARM32，x64、 x86 | MCP3208 12 位模拟到数字转换器。 | [电位计传感器示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/PotentiometerSensor) | &#10004; |
 > | ADS1115 | ARM，x 32、 x64、 x86 | 极小型、 低功耗、 16 位 ADC | [ADC 总线提供程序](https://github.com/ms-iot/BusProviders/tree/develop/ADC) | &#10004; |

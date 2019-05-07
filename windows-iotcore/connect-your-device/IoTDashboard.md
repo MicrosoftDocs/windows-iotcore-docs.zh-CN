@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解有关 Windows 10 IoT Core 仪表板的作用以及如何开始。
 keywords: windows iot、 windows 10 iot 核心版仪表板、 windows iot 仪表板、 设备
-ms.openlocfilehash: d21b67dad15d510564ec7fae28a2431d28faf8be
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: af87ff8224cf77b567b1dd96e6de2297b4752530
+ms.sourcegitcommit: f447681d9a73ebdec97a3da973bd798a02df975d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510973"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197669"
 ---
 # <a name="windows-10-iot-core-dashboard"></a>Windows 10 IoT 核心版仪表板
 

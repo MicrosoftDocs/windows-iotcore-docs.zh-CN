@@ -6,14 +6,17 @@ ms.date: 09/06/17
 ms.topic: article
 description: 了解如何创建、 部署和调试支持的 Windows IoT Core 设备上连接 Arduino 草图。
 keywords: windows iot，Arduino，Arduino 绑定，模板中，IoT Core UWP
-ms.openlocfilehash: 212e69360e89daafe08c58a7b8bced94ea4410f2
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: ee6c64bdfd01e79d26bfa0a6c5f88f7735150393
+ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510876"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64744789"
 ---
 # <a name="arduino-wiring-for-windows-iot-core-devices"></a>Arduino 开发适用于 Windows IoT Core 设备布线
+
+> [!IMPORTANT]
+> Windows 10 IoT 团队正在不再主动维护 arduino 开发。
 
 若要启用的开发和重复使用的常见[Arduino 接线](https://www.arduino.cc/en/Reference/HomePage)IoT Core 设备上的草图，用于绑定 Arduino 的 Visual Studio 项目模板提供作为的一部分[Windows IoT Core 项目模板扩展](https://go.microsoft.com/fwlink/?linkid=847472)。
 

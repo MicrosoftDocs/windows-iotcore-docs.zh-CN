@@ -6,21 +6,26 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解什么是 Windows 10 IoT 企业版和使用它可以执行的操作。
 keywords: Windows 10 IoT 企业版、 企业版、 二进制、 Windows
-ms.openlocfilehash: 029c98dc7652269aceaa97b820f2a190850eb1d3
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
-ms.translationtype: HT
+ms.openlocfilehash: c8e9eed02a9ae3010ceb10c78bd8a01c4535e383
+ms.sourcegitcommit: 1f6afcfee0cb5557dc21c7b15e199bc557d8eedb
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510783"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65171341"
 ---
 # <a name="an-overview-of-windows-10-iot-enterprise"></a>Windows 10 IoT 企业版的概述
+
+> [!NOTE]
+> Windows 10 容器可以仅用于 Windows IoT Core 和 Windows IoT 企业版与商业利用 Microsoft Azure IoT Edge 的部署。
 
 ## <a name="what-is-windows-10-iot-enterprise"></a>什么是 Windows 10 IoT 企业版？
 Windows 10 IoT 企业版是传递到 IoT 解决方案的企业可管理性和安全性的 Windows 10 的完整版本。 Windows 10 IoT 企业版共享全球范围内 Windows 生态系统的所有的权益。 它是二进制文件等效于 Windows 10 企业版，因此可以使用同一个熟悉的开发和管理工具为客户端 Pc 和便携式计算机。  但是，当涉及到许可和分发，桌面版本和 IoT 版本不同。 请注意，Windows 10 IoT 企业版提供了长期服务频道 (LTSC) 和半年频道 (SAC) 选项。 Oem 可以选择他们需要为其设备的版本。
 
 ## <a name="getting-started"></a>即刻体验 
 
-若要了解有关制造 Windows 10 IoT 企业版，我们建议阅读[Windows 10 IoT 企业制造指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview)。  
+为了在使用 Windows 10 IoT 企业版的生产开始之旅，您将需要从分发服务器联系[此列表](https://go.microsoft.com/fwlink/p/?linkid=2069623)。
+
+在这里，可以了解如何使用 Windows 10 IoT 企业版与制造我们[Windows 10 IoT 企业交付厂商版指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview)。 
 
 ## <a name="fixed-purpose-devices"></a>固定的用途设备 
 
@@ -44,7 +49,7 @@ Windows 10 IoT 企业版是传递到 IoT 解决方案的企业可管理性和安
 
 ## <a name="long-term-support-silicon-details"></a>长期支持硅详细信息
 
-Windows 10 IoT 企业版的 Fall 2018 版本也将 LTSC 版本。 下面的列表包含应在 2018 年秋季版本上支持的所有处理器。 如果想要使用早期版本的 Windows 10 IoT 企业版，您可以找到有关处理器支持详细信息[此处](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table)。
+Windows 10 IoT 企业 2019年版本将会 LTSC 版本。 下面的列表包含预期的此版本支持的所有处理器。 如果想要使用早期版本的 Windows 10 IoT 企业版，您可以找到有关处理器支持详细信息[此处](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table)。
 
 > | Windows 10 IoT 企业版  |
 > |-------------|
@@ -70,12 +75,12 @@ Windows 10 IoT 企业版的 Fall 2018 版本也将 LTSC 版本。 下面的列�
 > [!NOTE]
 > 其他资源都存在于分发服务器，以说明 Windows EPKEA OEM 激活并提供生成你的生产就绪 Windows IoT 企业版中的指导[WIM](https://msdn.microsoft.com/library/windows/desktop/dd861280.aspx)设备映像。
 
-* [企业桌面的自定义项](https://docs.microsoft.com/windows-hardware/customize/enterprise/enterprise-custom-portal)
+* [企业版桌面设备自定义](https://docs.microsoft.com/windows-hardware/customize/enterprise/enterprise-custom-portal)
 * [适用于 Windows 10 的统一的写入筛选器](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter)
 * [有关企业与 Pro 已分配的访问](https://docs.microsoft.com/windows-hardware/customize/enterprise/assigned-access)
 * [用于企业和教育版的 shell 启动程序](https://docs.microsoft.com/windows-hardware/customize/enterprise/shell-launcher)
 * [锁定资源](https://docs.microsoft.com/windows-hardware/customize/enterprise/create-a-kiosk-image) 
 * [启用嵌入模式和在 Windows IoT 企业版上使用后台任务](https://docs.microsoft.com/windows/iot-core/develop-your-app/embeddedmode)
-* [在你的组织中配置 Windows 遥测](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization )
-* [配置运行 Windows 桌面版的网亭和共享设备](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)
+* [在你的组织中配置 Windows 遥测数据](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization )
+* [配置展台和共享运行 Windows 桌面版本的设备](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)
 * [桌面设备制造](https://docs.microsoft.com/windows-hardware/manufacture/desktop/)

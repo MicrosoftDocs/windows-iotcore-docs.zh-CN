@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解有关各种建议看板和社区的设备的硬件功能信息。
 keywords: windows iot、 开发设备、 任务板，SOC，SOM，Raspberry Pi 2、 Raspberry Pi 3、 Minnowboard 最大值、 DragonBoard 芯片上的系统
-ms.openlocfilehash: 7b3839a222c8e15e006f03ca5d125d81f175b46e
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: b4225937fef1338182c77baa0fd288b7ed597d45
+ms.sourcegitcommit: 3eacb968296e79e7e981fdc2a6f7f4f69c0920d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510854"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65040193"
 ---
 # <a name="socs-and-custom-boards"></a>Soc 和自定义看板
 
@@ -81,13 +81,13 @@ Microsoft 致力于 Broadcom、 Intel、 NXP，和 Qualcomm 要验证支持 Wind
 
 *如果是 SoM 提供商或考虑了 ODM 并且想要添加到下面的列表，请发送电子邮件至[ winiotsomhelp@microsoft.com ](mailto:winiotsomhelp@microsoft.com)或直接编辑此页并提交拉取请求。*
 
-*此处列出的许多公司都是大型和复杂。  如果你遇到达到适当的人的问题，请发送电子邮件[ winiotsomhelp@microsoft.com ](mailto:winiotsomhelp@microsoft.com)我们将执行最大努力来将您连接到正确的人。*
+*此处列出的许多公司都是大型和复杂。如果你遇到达到适当的人的问题，请发送电子邮件[ winiotsomhelp@microsoft.com ](mailto:winiotsomhelp@microsoft.com)我们将执行最大努力来将您连接到正确的人。*
 
-### **<a name="raspberry-pi-derived-custom-design"></a>Raspberry Pi 派生的自定义设计**
+### <a name="raspberry-pi-derived-custom-design"></a>**Raspberry Pi 派生的自定义设计**
 
 [元素 14](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service)产品/服务板 Raspberry Pi，以便您可以添加或删除连接选项的自定义服务。 如果还需要对 BSP 进行自定义，则可以利用[打开 Github 上的源代码 BSP](https://github.com/ms-iot/rpi-iotcore)。
 
-### **<a name="intel-based-custom-design"></a>基于 Intel 的自定义设计**
+### <a name="intel-based-custom-design"></a>**基于 Intel 的自定义设计**
 
 不存在的一个充满活力的生态系统[遇到 Intel 设备构建者](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349)有关您可以使用的 Windows。 设计为运行 Windows 10 IoT Core 的 Intel 设备有几种更常见的 Pc 的区别：
 
@@ -96,14 +96,14 @@ Microsoft 致力于 Broadcom、 Intel、 NXP，和 Qualcomm 要验证支持 Wind
 
 如果要生成你自己的看板，请联系 BIOS 供应商，如果您需要的 ACPI 或 SMBIOS 的变化的指南。
 
-#### *<a name="experienced-partners"></a>经验丰富的合作伙伴*
+#### <a name="experienced-partners"></a>*经验丰富的合作伙伴*
 
 * [Aaeon](http://www.aaeon.com/en/)
 * [Advantech](http://www.advantech.com/) - buy@advantech.tw
 * [Kontron](http://www.kontron.com/) - martin.unverdorben@kontron.com
 * [Nexcom](http://www.nexcom.com/)
 
-### **<a name="qualcomm-dragonboard-410c-apq8016-based-custom-design"></a>Qualcomm DragonBoard 410 c (APQ8016)-基于自定义设计**
+### <a name="qualcomm-dragonboard-410c-apq8016-based-custom-design"></a>**Qualcomm DragonBoard 410 c (APQ8016)-基于自定义设计**
 
 可以从下载的 DragonBoard 410 c （基于 AQP8016 Qualcomm SoC） 的二进制 BSP [Qualcomm 开发人员网络](https://developer.qualcomm.com/hardware/dragonboard-410c/software)。
 
@@ -118,21 +118,21 @@ BSP 包包括 ACPI 以便只需要 ACPI 更改的简单硬件自定义的源代�
 2. 如果您正在构建自定义看板，使用 SoM 供应商或一个有经验的 Qualcomm BSP 自定义服务提供程序，如[Intrinsyc](https://www.intrinsyc.com/)或[Thundersoft](http://www.thundersoft.com/)为 BSP 自定义和设计方面的帮助。
 3. 如果您预计有大量 （数百万个），[联系 Qualcomm](https://assets.qualcomm.com/contact-sales-iot.html)。
 
-#### *<a name="experienced-partners"></a>经验丰富的合作伙伴*
+#### <a name="experienced-partners"></a>*经验丰富的合作伙伴*
 
 * [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) -标记 Waldenberg (mwaldenberg@intrinsyc.com)
 * [Keith 和](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/)- contact@keith-koep.com
 * [Reycom](http://www.reycom.swiss/en/home-swiss.html) - welcome@reycom.swiss
 * [Unitech](http://ute.com/products_info.php?pc1=4&pc2=461&rbu=0&pid=2395) -Sam (saml@tw.ute.com);Perry (perryt@te.ute.com)
 
-### **<a name="nxp-preview"></a>NXP 预览**
+### <a name="nxp-preview"></a>**NXP 预览**
 
 适用于 Windows 10 IoT Core NXP 支持处于公共预览状态。 有关详细信息，访问 BSP，或若要查找的硬件合作伙伴，请转到[NXP SoC 页](http://aka.ms/iotnxp)。
 
 您还可以通过扩展到合作伙伴我们正在使用：
 
 * Advantech [RSB 4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
-* Keith 和[pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/)与[Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/) - contact@keith-koep.com
+* Keith 和[pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/)与[Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) - contact@keith-koep.com
 * Kontron [SMARC sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) -Martin Unverdorben (martin.unverdorben@kontron.com)
 * Solid 运行[Hummingboard 边缘](https://www.solid-run.com/imx6-win-10-iot-core/ )-Ilya Viten (ilya@solid-run.com)
 * Geniatech[问题 7 iMX6Q SoM](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM iMX7D](https://www.geniatech.com/product/som-imx7d/) -Mike 德克尔 (mike.decker@geniatech.com) 或 Fang Jijun (Fjj@geniatech.com)

@@ -6,12 +6,12 @@ ms.date: 09/07/18
 ms.topic: article
 description: 利用所有 Windows 10 IoT 社区中的资源。
 keywords: Windows 10 IoT 核心版、 Windows 10 IoT 企业版、 资源，最重要的人员、 视频、 博客文章
-ms.openlocfilehash: a5ef340af33f014dc7212e719a042d97a3cd8c30
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 5d2c90d20da8d44155a0bf0250a4cfd2ce55d4ac
+ms.sourcegitcommit: 3eacb968296e79e7e981fdc2a6f7f4f69c0920d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510969"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65040161"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 资源
 
@@ -58,6 +58,7 @@ ms.locfileid: "59510969"
 * [粉红 Robotics](https://customers.microsoft.com/en-us/story/misty-robotics)
 * [Askey Turbomate](https://customers.microsoft.com/en-us/story/askey)
 * [Johnson Controls GLAS](https://customers.microsoft.com/en-us/story/johnson-controls)
+* [Keith 和鸡尾酒增强](https://customers.microsoft.com/de-de/story/keith-koep)
 * [Kodisoft](https://customers.microsoft.com/en-us/story/kodisoft)
 * [Redback 技术](https://customers.microsoft.com/en-us/story/redback-technologies)
 
@@ -66,7 +67,7 @@ ms.locfileid: "59510969"
 
 * [工业自动化](https://www.hackster.io/projects/tags/industrial+automation+win10)
 * [数字签名](https://www.hackster.io/projects/tags/digital+signage+win10)
-* [医疗保健](https://www.hackster.io/projects/tags/healthcare+win10)
+* [Healthcare](https://www.hackster.io/projects/tags/healthcare+win10)
 * [智能建筑](https://www.hackster.io/projects/tags/smart+building+win10)
 * [零售](https://www.hackster.io/projects/tags/retail+win10)
 * [安全性](https://www.hackster.io/projects/tags/security+win10)

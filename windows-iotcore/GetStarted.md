@@ -6,12 +6,12 @@ ms.date: 04/10/2018
 ms.topic: article
 description: 了解有关如何开始使用 Windows 10 IoT Core。
 keywords: Windows 10 IoT 核心版，开始，映像，
-ms.openlocfilehash: 3940421bdc05ed8b3ca86a071061cb49ffce5472
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: d9c547e8f093c162f731937bb6c5f03bb60cd386
+ms.sourcegitcommit: 4d12231ca2819ca8f513f0dbf3d4660b9eb09eb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59511045"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64914403"
 ---
 # <a name="get-started-with-windows-10-iot-core"></a>开始使用 Windows 10 IoT 核心版
 
@@ -23,7 +23,7 @@ ms.locfileid: "59511045"
 
 ## <a name="what-is-windows-10-iot"></a>Windows 10 IoT 是什么？
 
-若要详细了解我们两个产品/服务，Windows 10 IoT 企业版和 Windows 10 IoT 核心版，我们已创建，以便了解有关每个哪种产品所能提供的文档。  
+若要了解有关我们产品/服务的详细信息，请参阅文档以了解详细信息。 
 
 <table>
 <colgroup>
@@ -51,6 +51,11 @@ ms.locfileid: "59511045"
 <tr class="odd">
 <td align="left"><p><a href="windows-iot-core.md" data-raw-source="[Windows 10 IoT Core Overview](windows-iot-core.md)">Windows 10 IoT 核心版概述</a></p></td>
 <td align="left"><p>了解有关如何开始使用 Windows 10 IoT Core 的详细信息。</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="windows-iot-core.md" data-raw-source="[Windows 10 IoT Core Overview](windows-server.md)">Windows Server IoT 2019 概述</a></p></td>
+<td align="left"><p>了解有关如何开始使用 Windows Server IoT 2019 的详细信息。</p></td>
 </tr>
 
 </tbody>
@@ -97,7 +102,7 @@ ms.locfileid: "59511045"
 
 ## <a name="bring-a-device-to-market"></a>将设备推向市场
 
-商品化，或将设备推向市场，涉及更多移动部件和人员比只是原型制作设备自己的时间更多的高级过程。 商品化需要大量的步骤，以确保你的设备，可以在世界中，它们的位置无关接收更新，会尽可能安全，并且合规。 
+商品化或将设备推向市场的过程涉及到更多移动部件和人员比只是原型制作设备上自己的时间。 商品化需要大量的步骤，以确保你的设备，可以在世界中，它们的位置无关接收更新，会尽可能安全，并且合规。 
 
 <table>
 <colgroup>
@@ -113,33 +118,23 @@ ms.locfileid: "59511045"
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="learn-about-hardware/SoCsAndCustomBoards.md" data-raw-source="[SoCs and Custom Boards](learn-about-hardware/SoCsAndCustomBoards.md)">Soc 和自定义看板</a></p></td>
-<td align="left"><p>了解有关不同 Soc 和 Som 可以使用，生成你的 Windows 10 IoT Core 解决方案。</p></td>
+<td align="left"><p>1. <a href="learn-about-hardware/SoCsAndCustomBoards.md" data-raw-source="[SoCs and Custom Boards](learn-about-hardware/SoCsAndCustomBoards.md)">Soc 和自定义看板</a></p></td>
+<td align="left"><p>开始之前，了解有关不同 Soc 和 Som 可以使用，生成你的 Windows 10 IoT Core 解决方案。</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/license-requirements" data-raw-source="[OEM License Requirements](https://docs.microsoft.com/windows-hardware/manufacture/iot/license-requirements)">OEM 许可要求</a></p></td>
-<td align="left"><p>登录 OEM 许可协议，并了解有关商业化的其他要求的详细信息。</p></td>
+<td align="left"><p>2. <a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide" data-raw-source="[Creating test and retail images](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)">创建测试和零售映像</a></p></td>
+<td align="left"><p>从这里开始，并了解如何创建自定义测试和商业解决方案的零售映像。</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/commercializationfaq" data-raw-source="[Commercialization FAQ](https://docs.microsoft.com/windows-hardware/manufacture/iot/commercializationfaq)">商品化常见问题解答</a></p></td>
-<td align="left"><p>阅读一些有关在 Windows 10 IoT 商业化常见问题。</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide" data-raw-source="[Creating test and retail images](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)">创建测试和零售映像</a></p></td>
-<td align="left"><p>通过 Windows 10 IoT Core 制造指南，了解如何创建测试映像包-适用于试用新的想法和设计-和零售映像-有关更多的最终的设备设计。</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list" data-raw-source="[Windows 10 IoT Core feature list](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list)">Windows 10 IoT 核心版功能列表</a></p></td>
+<td align="left"><p>3. <a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list" data-raw-source="[Windows 10 IoT Core feature list](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-feature-list)">Windows 10 IoT 核心版功能列表</a></p></td>
 <td align="left"><p>了解有关不同的测试和零售功能为 Windows 10 IoT 核心版映像由 Microsoft 定义的一样。</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore" data-raw-source="[Installing and servicing apps](https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore)">安装和维护应用程序</a></p></td>
-<td align="left"><p>了解如何安装和服务通过 Microsoft Store 的 Windows 10 IoT Core 上的 UWP 应用。</p></td>
+<td align="left"><p>4. <a href="https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore" data-raw-source="[Installing and servicing apps](https://docs.microsoft.com/windows-hardware/service/iot/servicing-msstore)">安装和维护应用程序</a></p></td>
+<td align="left"><p>了解如何安装和服务对于 Windows 10 IoT Core 的 UWP 应用。</p></td>
 </tr>
 
 

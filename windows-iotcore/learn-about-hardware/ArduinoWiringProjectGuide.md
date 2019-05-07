@@ -6,20 +6,26 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何创建、 设置和使用 Windows IoT Core Arduino 绑定项目的部署。
 keywords: windows iot，Arduino，Arduino 配线、 闪电般的性能，Visual Studio
-ms.openlocfilehash: baa904d1d5f23db15fd1dacd05c749449dc91213
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 7c5e51efd20de014af4533587fbe6f210140b793
+ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510761"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64744812"
 ---
 # <a name="arduino-wiring-project-guide"></a>Arduino 接线项目指南
+
+> [!IMPORTANT]
+> Windows 10 IoT 团队正在不再主动维护 arduino 开发。
 
 本指南将引导完成创建、 设置和使用 Windows IoT Core Arduino 绑定项目的部署。
 
 Arduino 绑定项目利用熟悉的、 易于使用 Arduino 连接 API 与 Windows IoT 闪电 DMAP 驱动程序： 使用直接内存映射提供重要的驱动程序[性能速度](../develop-your-app/LightningPerformance.md)。 可以复制和粘贴到 IoT Core Arduino 绑定项目的 Arduino 草图和库并运行其支持 IoT Core 上设备，包括 Raspberry Pi2，3 和 Minnowboard 最大值 ！ 请参阅此页获取详细信息开发部分。
 
 ## <a name="install-the-microsoft-iot-templates"></a>安装 Microsoft IoT 模板
+
+> [!NOTE]
+> 下载 VS 2015 访问 Arduino 绑定模板-这些模板是支持 VS 2017 及更高版本不受距离限制。
 
 我们提供了一个 Visual Studio 扩展，该扩展将为 Arduino 接线项目以及其他 Microsoft IoT 项目类型自动安装 VS 模板。 
 

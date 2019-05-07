@@ -6,14 +6,17 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何针对不同平台和语言的 Windows IoT 闪电般的功能和切换频率。
 keywords: windows iot、 闪电般的性能、 快如闪电的功能，GPIO
-ms.openlocfilehash: 65f6732dd945b199902bb7eb4a9e0cc41aac2131
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: e7d57f72f6db85fbb8e453943c87e8ee31ef8a40
+ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510940"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64744778"
 ---
 # <a name="windows-iot-lightning-performance-testing"></a>Windows IoT Lightning 性能测试
+
+> [!IMPORTANT]
+> Windows 10 IoT 团队不再主动支持 Arduino。
 
 GPIO 性能进行了测试使用一个简单的 GPIO 切换应用程序，Windows IoT 闪电功能[可从以下站点](https://github.com/ms-iot/lightning/tree/develop/PerformanceTestSuite)。 通过以尽可能快的速度切换 0 和 1 之间的 GPIO 5 来执行测试。 每个用例的切换频率已使用 Tektronix TP 2024 Oscilloscope 测量。
 

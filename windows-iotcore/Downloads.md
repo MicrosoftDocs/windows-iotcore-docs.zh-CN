@@ -7,12 +7,12 @@ ms.date: 10/05/18
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-ms.openlocfilehash: c471c0da9219ed3a2254f523e3907e1431700831
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 2a89c9dd15f793861a647028a5184a2c5a7553ba
+ms.sourcegitcommit: 9d2134b61848575d0bd5fcc23403ebda92ca6573
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510620"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64953367"
 ---
 # <a name="downloads"></a>下载
 下载工具和所需若要开始使用 Windows 10 IoT 核心版软件。
@@ -21,7 +21,8 @@ ms.locfileid: "59510620"
 
 Windows 10 IoT Core 仪表板使闪烁到你的可导航界面更简单的设备上的 Windows 10 IoT Core。 下载完成后，了解如何设置你的设备与仪表板[此处](https://docs.microsoft.com/en-gb/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp)。
 
-[下载 Windows 10 IoT 核心版仪表板](http://go.microsoft.com/fwlink/?LinkID=708576)
+> [!div class="nextstepaction"]
+> [下载 Windows 10 IoT 核心版仪表板](http://go.microsoft.com/fwlink/?LinkID=708576)
 
 _下载和使用 Windows 10 IoT Core 仪表板表示你同意[许可条款](http://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809)并[隐私声明](http://go.microsoft.com/fwlink/?LinkId=521839)为 Windows 10 IoT Core 仪表板。_
 
@@ -61,17 +62,17 @@ _下载和使用 Windows 10 IoT Core 仪表板表示你同意[许可条款](http
 
 ## <a name="other-downloads"></a>其他下载
 
-### [<a name="mdns-responder"></a>Mdn 响应程序](https://go.microsoft.com/fwlink/?linkid=2077676)
+### <a name="mdns-responderhttpsgomicrosoftcomfwlinklinkid2077676"></a>[Mdn 响应程序](https://go.microsoft.com/fwlink/?linkid=2077676)
 下载 Bonjour 兼容 Mdn 响应程序有关，Windows IoT （示例源）。 在[此处](mDNS.md)了解详细信息。
 
-### [<a name="firmware-update"></a>固件更新](http://firmware.intel.com/projects/minnowboard-max)
+### <a name="firmware-updatehttpfirmwareintelcomprojectsminnowboard-max"></a>[固件更新](http://firmware.intel.com/projects/minnowboard-max)
 从 Intel 下载固件组件和更新 MinnowBoard 最大参考板。
 
-### [<a name="visual-studio-2017"></a>Visual Studio 2017](https://www.visualstudio.com/downloads/)
+### <a name="visual-studio-2017httpswwwvisualstudiocomdownloads"></a>[Visual Studio 2017](https://www.visualstudio.com/downloads/)
 先进的 IDE、 工具和可用于创建强大的 IoT 应用程序的服务。
 
-### [<a name="windows-driver-kit-2017"></a>Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
+### <a name="windows-driver-kit-2017httpsmsdnmicrosoftcomwindowshardwarehh852365aspx"></a>[Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
 提供了一个集成的开发环境，用于创建高效的高质量运行 Windows 10 设备的驱动程序。
 
-### [<a name="windows-developer-tools-for-visual-studio"></a>适用于 Visual Studio 的 Windows 开发人员工具](https://dev.windows.com/en-us/downloads)
+### <a name="windows-developer-tools-for-visual-studiohttpsdevwindowscomen-usdownloads"></a>[用于 Visual Studio 的 Windows 开发人员工具](https://dev.windows.com/en-us/downloads)
 将与 Visual Studio 2017 集成和所需的开发通用 Windows 应用程序平台的工具。 

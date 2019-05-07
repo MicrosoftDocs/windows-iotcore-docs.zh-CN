@@ -6,14 +6,17 @@ ms.date: 01/30/2018
 ms.topic: article
 description: 了解什么是 Windows 10 IoT，您可以使用它所执行的操作。
 keywords: Windows 10 IoT 企业版，Windows 10 IoT Core，无外设、 语音、 功能、 二进制版本，版本
-ms.openlocfilehash: ecfb80049b4fe1dd5437faf6bce410f9fcb3c528
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: f1ff68d1efe967eee0472eec54b5354d47c9447a
+ms.sourcegitcommit: 1f6afcfee0cb5557dc21c7b15e199bc557d8eedb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510622"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65171350"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 概述 
+
+> [!NOTE]
+> Windows 10 容器可以仅用于 Windows IoT Core 和 Windows IoT 企业版与商业利用 Microsoft Azure IoT Edge 的部署。
 
 ## <a name="what-is-windows-10-iot"></a>Windows 10 IoT 是什么？
 Windows 10 IoT 是 Windows 10 系列，它将企业级的能力、 安全性和可管理性引入到物联网的成员。  它利用 Windows 的嵌入式体验、 生态系统和云连接性，使组织能够使用安全设备，可以快速设置、 轻松地管理和无缝连接到的总体云策略创建其的物联网。  
@@ -86,6 +89,9 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 * 并非所有设备上的文件夹都进行访问的通用 Windows 应用程序。 Windows 10 IoT Core 上可以使用 FolderPermissions 工具以便向 UWP 应用可以访问一个文件夹。 例如，运行 FolderPermissions c:\test-e 使 UWP 应用能够访问 c:\test 文件夹。 但是，这不是在桌面上可用的。
 
 在此文章中介绍了所有差异可能会都消失，随着时间的推移由于 Windows 10 IoT Core 的就是不断更新。
+
+## <a name="iot-edge-support-for-windows-10-iot"></a>IoT Edge 支持适用于 Windows 10 IoT
+若要在 Azure IoT Edge 文章中了解有关 IoT Edge 的详细信息的支持 Windows 10 IoT，请详细了解"操作系统"[此处](https://docs.microsoft.com/en-us/azure/iot-edge/support#operating-systems)。
 
 
 ## <a name="helpful-resources"></a>有用资源
