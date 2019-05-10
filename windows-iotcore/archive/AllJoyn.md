@@ -8,15 +8,15 @@ ms.prod: windows-iot
 ms.technology: IoT
 description: 了解有关 AllJoyn、 一种常见协议为 IoT 设备和它如何实现其他扩展和使用 Windows IoT 的功能。
 keywords: windows iot AllJoyn
-ms.openlocfilehash: 6655cf5e8584a9c7046301cda24b10348a704d6e
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 6b558680d479c71b6b8a22d34d03b04e5cbdbd76
+ms.sourcegitcommit: 0f46b7b5c15906a6c82b847ffcd9f4d2674f9fd0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226827"
 ---
 > [!NOTE]
-> 你正在查看存档的文档。 Windows 10 IoT 不再支持 AllJoyn。 如有问题，请打开在 GitHub 上或在下面的注释中留下反馈。
+> 你正在查看存档的文档。 Windows 10 IoT 不再支持 AllJoyn。 如有问题，备选方法，是面向 AllJoyn 的应用层 IoT 协议是[打开连接 Foundation](https://openconnectivity.org)。 OCF 规范的标准实现 Iotivity-可以找到 Windows 支持 Iotivity[此处](https://wiki.iotivity.org/windows)。
 
 # <a name="alljoyn"></a>AllJoyn
 
@@ -29,7 +29,7 @@ Microsoft 在 2014 年加入了 AllSeen 联盟，并在 Windows 10 中将 Allian
 
 ## <a name="developer-resources-and-tools"></a>开发人员资源和工具
 
-**设备系统桥接**
+**设备系统网桥**
 
 AllJoyn [设备系统网桥](AllJoynDSB.md)支持非 AllJoyn 设备使用 AllJoyn 作为其公共语言与 AllJoyn 生态系统进行交互。
 
@@ -72,24 +72,24 @@ AllJoyn 的 IoT 资源管理器（以前称为 AllJoyn 资源管理器）是 Win
 ### <a name="additional-resources"></a>其他资源
 
 * [使用 AllJoyn Studio 扩展](AllJoynStudio.md)
-* [AllJoyn 生成者和创作 AllJoyn 自检](AllJoynProducer.md)
-* [使用 Windows 10 的故障排除 AllJoyn](AllJoynTroubleshooting.md)
+* [AllJoyn 创建器和编写 AllJoyn 自检](AllJoynProducer.md)
+* [Windows 10 的 AllJoyn 疑难解答](AllJoynTroubleshooting.md)
 
 **视频**
 
-* [生成 2015 AllJoyn 技术会话](https://channel9.msdn.com/Events/Build/2015/2-623)
-* [WinHEC 2015 AllJoyn 技术会话](https://channel9.msdn.com/Events/WinHEC/2015/IOT200)
+* [//build 2015 AllJoyn 技术研讨会](https://channel9.msdn.com/Events/Build/2015/2-623)
+* [WinHEC 2015 AllJoyn 技术研讨会](https://channel9.msdn.com/Events/WinHEC/2015/IOT200)
 
 **示例**
 
-* [AllJoyn 生成者](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ProducerExperiences)
-* [AllJoyn 使用者](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ConsumerExperiences)
+* [AllJoyn 创建器](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ProducerExperiences)
+* [AllJoyn 使用器](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ConsumerExperiences)
 * [AllJoyn UWP 示例 (MSDN)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AllJoyn/ConsumerExperiences)
 
 **参考**
 
-* [Windows 10 (MSDN) 中的 AllJoyn Api](https://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.alljoyn.aspx)
-* [AllJoyn 体系结构详细信息 （Allseen 联盟）](https://allseenalliance.org/developers/learn/)
-* [AllJoyn 开发人员资源 （Allseen 联盟）](https://allseenalliance.org/developers/develop/)
-* [AllJoyn C API 参考手册 （Allseen 联盟）](https://allseenalliance.org/docs/api/c/index.html)
+* [Windows 10 中的 AllJoyn API (MSDN)](https://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.alljoyn.aspx)
+* [AllJoyn 体系结构详细信息（Allseen 联盟）](https://allseenalliance.org/developers/learn/)
+* [AllJoyn 开发人员资源（Allseen 联盟）](https://allseenalliance.org/developers/develop/)
+* [AllJoyn C API 参考手册（Allseen 联盟）](https://allseenalliance.org/docs/api/c/index.html)
 

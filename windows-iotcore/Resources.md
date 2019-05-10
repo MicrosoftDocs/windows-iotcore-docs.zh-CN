@@ -6,30 +6,30 @@ ms.date: 09/07/18
 ms.topic: article
 description: 利用所有 Windows 10 IoT 社区中的资源。
 keywords: Windows 10 IoT 核心版、 Windows 10 IoT 企业版、 资源，最重要的人员、 视频、 博客文章
-ms.openlocfilehash: 5d2c90d20da8d44155a0bf0250a4cfd2ce55d4ac
-ms.sourcegitcommit: 3eacb968296e79e7e981fdc2a6f7f4f69c0920d1
+ms.openlocfilehash: c144aabe4662deba7efa990a5af3d59ffe1531b8
+ms.sourcegitcommit: 0f46b7b5c15906a6c82b847ffcd9f4d2674f9fd0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65040161"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226826"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 资源
 
 ## <a name="blog-posts"></a>博客文章
 
+* [建立新式 Windows CE 系统的 Windows 10 IoT](https://blogs.windows.com/buildingapps/2019/05/07/modernizing-windows-ce-systems-with-windows-10-iot/#oHzjguRIlWV0ryo6.97)
+* [打开机器人和 Microsoft 发布 Windows 10 IoT 企业版上 ROS](https://blogs.windows.com/buildingapps/2019/05/07/open-robotics-and-microsoft-release-ros-on-windows-10-iot-enterprise/#Y86A6YUJELKDoRJJ.97)
+* [Microsoft Azure IoT 设备代理 V2 公开上市](https://blogs.windows.com/buildingapps/2019/05/07/microsoft-azure-iot-device-agent-v2-general-availability/#BwOSxBSymeJqU34K.97)
 * [Windows IoT 演变而来：智能边缘的基础](https://blogs.windows.com/windowsexperience/2019/04/03/evolution-of-windows-iot-the-foundation-for-your-intelligent-edge/)
-* [Microsoft Azure IoT 设备代理 V2 公共预览版现已推出](https://blogs.windows.com/windowsexperience/2019/01/15/microsoft-azure-iot-device-agent-v2-public-preview-now-available/#fB07iWklwq1Ro8dk.97)
 * [Windows 10 IoT 提供了创新和智能边缘使用 2018 年 10 月更新](https://blogs.windows.com/windowsexperience/2018/10/04/windows-10-iot-delivers-innovation-and-intelligence-at-the-edge-with-the-october-2018-update/#9g9hmmO2AdUB1C6F.97) 
-* [将 Windows 10 的强大功能引入到机器人 Operating System](https://blogs.windows.com/windowsexperience/2018/09/28/bringing-the-power-of-windows-10-to-the-robot-operating-system/#pqcOPjyO74t65LGb.97)
-* [IoT 在行动：开发改变世界的智能解决方案](https://blogs.windows.com/windowsexperience/2018/09/05/iot-in-action-developing-intelligent-solutions-that-change-the-world/#GHq5SrW6ffImgLgv.97)
 * [Windows 10 IoT-立即明天的 IoT](https://blogs.windows.com/windowsexperience/2018/06/05/windows-10-iot-tomorrows-iot-today/#wl3TcsFseJ6XROUZ.97)
 * [做更在智能边缘使用 Windows 10 IoT](https://blogs.windows.com/windowsexperience/2018/05/07/do-more-at-the-intelligent-edge-with-windows-10-iot/#uDVaAtoBvz7BGrTf.97)
-* [使用 Windows 10 IoT 核心版、 UWP 和 VSTS 的 IoT 的 DevOps](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)
 * [Microsoft 双精度型值向下在 Windows 10 IoT 上添加了支持与](https://blogs.windows.com/windowsexperience/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#DJaDiKX0bYJ1JDHD.97)
 
 ## <a name="videos"></a>视频
 
 >[!Video https://www.youtube.com/embed/Cmj0sxBRofs]
+* [建立新式 Windows CE 设备](https://www.youtube.com/watch?time_continue=1&v=5iUZkZmgmJA)
 * [Windows Server IoT 2019 简介](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Introduction-to-Windows-Server-IoT-2019)
 * [在 Windows 上的 ROS 入门](https://www.youtube.com/watch?v=nZSjwMLi3jQ)
 * [适用于 Windows 的 azure IoT 设备代理](https://www.youtube.com/watch?v=DZn6diOn7uI)
