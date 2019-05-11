@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何使用受信任的平台模块来启用到更好地保护设备的加密功能。
 keywords: windows iot、 安全性、 受信任的平台模块、 TPM、 加密、 密钥
-ms.openlocfilehash: cf22811cbf45b5c715a19b8e12d7b00c2afaa9b8
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 70552a5f98891281879f1d45cbdbd671b56dd902
+ms.sourcegitcommit: 77b86eee2bba3844e87f9d3dbef816761ddf0dd9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510750"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65533321"
 ---
 # <a name="trusted-platform-module-tpm-on-windows-10-iot-core"></a>在 Windows 10 IoT Core 上的受信任的平台模块 (TPM)
 
@@ -27,7 +27,7 @@ TPM 的技术规范由受信任的计算组 (TCG) 来制定并公开发行。 �
 借助 TPM，可保持密钥对的私钥部分独立于操作系统控制的内存。 可以将密钥封装到 TPM，并且在解封并释放该密钥以供使用之前，可以就系统的状态（定义系统”可信赖”的保证）提供某些保证。 由于 TPM 使用自己的内部固件和逻辑电路来处理指令，因此它不依赖于操作系统，并且它不会公开给操作系统或应用程序软件中可能存在的安全漏洞。
 
 ## <a name="tpm-architecture"></a>TPM 体系结构
-_TPM 1.2 和 TPM 2.0 之间的差异。_  
+_TPM 1.2 和 TPM 2.0 之间的区别。_  
 TPM 规范已开发了两次。 第一次，它开发从 1.1b 到 1.2，将合并请求/标识规范委员会的新功能。 此种功能扩展形式的演变使得最终的 TPM 1.2 规范非常复杂。 最后，SHA-1（TPM 1.2 中最强的商业算法）加密缺陷的暴露导致有必要对规范进行更改。 从头开始重新设计 TPM 体系结构，从而诞生更集成和统一设计的 TPM 2.0。  
 
 相较于以前的 TPM 1.2，更改和增强功能如下所示：
@@ -38,7 +38,8 @@ TPM 规范已开发了两次。 第一次，它开发从 1.1b 到 1.2，将合�
 * 简化的 TPM 管理
 * 增强平台服务安全性的其他功能
 
-请注意，Windows IoT 核心版仅支持 TPM 2.0，并不支持过时的 TPM 1.2。
+> [!NOTE] 
+> Windows IoT Core 支持仅 TPM 2.0 和不支持已过时的 TPM 1.2。
 
 ## <a name="what-is-tbs"></a>什么是 TBS？ 
 TPM 基本服务 (TBS) 功能是系统服务，支持透明共享 TPM 资源。 它通过远程过程调用 (RPC) 在同一台物理计算机上的多个应用程序之间共享 TPM 资源。 它使用调用应用程序指定的优先级来集中跨应用程序的 TPM 访问。  
@@ -77,6 +78,6 @@ Windows IoT 核心版上受支持的 dTPM 芯片和 PCB 模块有多个制造商
 ## <a name="additional-resources"></a>其他资源  
 * [受信任的平台模块 (TPM) 规范](http://www.trustedcomputinggroup.org/developers/trusted_platform_module) 
 * [TCG TPM 2.0 库规范](http://www.trustedcomputinggroup.org/resources/tpm_library_specification)
-* [TPM 基本服务](https://msdn.microsoft.com/library/windows/desktop/aa446796(v=vs.85).aspx) 
+* [TPM 基础服务](https://msdn.microsoft.com/library/windows/desktop/aa446796(v=vs.85).aspx) 
 * [启用安全启动和 BitLocker](SecureBootAndBitLocker.md)
 
