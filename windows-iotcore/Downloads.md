@@ -7,12 +7,12 @@ ms.date: 10/05/18
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-ms.openlocfilehash: 2a89c9dd15f793861a647028a5184a2c5a7553ba
-ms.sourcegitcommit: 9d2134b61848575d0bd5fcc23403ebda92ca6573
+ms.openlocfilehash: 85c56a53839f74b02dddf2d094d2b07e4d8d635d
+ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64953367"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706082"
 ---
 # <a name="downloads"></a>下载
 下载工具和所需若要开始使用 Windows 10 IoT 核心版软件。
@@ -30,9 +30,10 @@ _下载和使用 Windows 10 IoT Core 仪表板表示你同意[许可条款](http
 
 ## <a name="latest-windows-10-iot-core-builds"></a>最新的 Windows 10 IoT Core 版本
 
-> [!IMPORTANT]
+> [!WARNING]
 > 请不要将 maker 映像用于商品化。 如果 commercializing 设备，则必须使用自定义 FFU 为获得最佳安全性。 在[此处](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
 
+当 commercializing IoT 解决方案，你将需要下载生成从[Microsoft 软件下载站点](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!)。 我们提供了以下过去的版本也需要使用 Windows 10 IoT Core 设备上一个生成的情况下。 
 
 ### <a name="october-2018-release"></a>2018 年 10 月版本
 

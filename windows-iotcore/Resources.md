@@ -6,12 +6,12 @@ ms.date: 09/07/18
 ms.topic: article
 description: 利用所有 Windows 10 IoT 社区中的资源。
 keywords: Windows 10 IoT 核心版、 Windows 10 IoT 企业版、 资源，最重要的人员、 视频、 博客文章
-ms.openlocfilehash: c144aabe4662deba7efa990a5af3d59ffe1531b8
-ms.sourcegitcommit: 0f46b7b5c15906a6c82b847ffcd9f4d2674f9fd0
+ms.openlocfilehash: 338f30bdfb87f5626cd1300a630529b1ed5b16a8
+ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226826"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706064"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 资源
 
@@ -47,8 +47,8 @@ ms.locfileid: "65226826"
 
 * [Microsoft MVP 社区](https://mvp.microsoft.com/)
 * [Microsoft IoT 技术社区](https://techcommunity.microsoft.com/t5/Internet-of-Things-IoT/ct-p/IoT)
+* [Microsoft 内部人员实验室](https://www.microsoftiotinsiderlabs.com/)
 * [Windows 10 IoT MSDN 论坛](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)
-* [Windows 10 IoT Core Lynda 课程](https://www.lynda.com/Windows-tutorials/IoT-Development-Windows-10-IoT-Core-1-Installation-Basic-Connection/556513-2.html)
 * [使用 Annabooks 亲临式培训](http://www.annabooks.com/training.html)
 * [开始使用 Windows 10 IoT 核心版上 Hackster.io](http://www.hackster.io/KiwiBryn)
 * [窗口 10 IoT 核心版尖角符号](https://www.turta.io/iothat)
