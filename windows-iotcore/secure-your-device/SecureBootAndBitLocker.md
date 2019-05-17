@@ -6,18 +6,40 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何启用安全引导、 BitLocker 和 Windows 10 IoT Core 上的 Device Guard
 keywords: windows iot，安全启动，BitLocker，设备保护、 安全性、 交钥匙安全
-ms.openlocfilehash: 957b81a0a5bc032c62fa75598418778862fdf76d
-ms.sourcegitcommit: 77b86eee2bba3844e87f9d3dbef816761ddf0dd9
+ms.openlocfilehash: 092be64210f651c25156e93885a63f35c22d4791
+ms.sourcegitcommit: fcc0c6add468040e2f676893b44b260e3ddc3c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65533345"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65779396"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>启用安全启动、 BitLocker 和 Windows 10 IoT Core 上的设备保护
 
-Windows 10 IoT Core 现在包括如 UEFI 安全引导、 BitLocker 设备加密和 Device Guard 推出的安全功能。  这些将帮助设备构建者创建完全锁定 Windows IoT 设备时可复原的许多不同类型的攻击。  同时，这些功能提供最佳保护，以确保一个平台，将启动中定义的方式，同时锁定未知的二进制文件和保护用户数据，通过使用设备加密。
+Windows 10 IoT 核心版包括如 UEFI 安全引导、 BitLocker 设备加密和 Device Guard 推出的安全功能。  这些将帮助设备构建者创建完全锁定 Windows IoT 设备时可复原的许多不同类型的攻击。  同时，这些功能提供最佳保护，以确保一个平台，将启动中定义的方式，同时锁定未知的二进制文件和保护用户数据，通过使用设备加密。
 
 ## <a name="boot-order"></a>启动顺序
+
+我们可以深入了解为 IoT 设备提供安全的平台的各个组件，还需要了解的 Windows 10 IoT Core 设备上的启动顺序。
+
+有三个主要区域发生从 IoT 设备时已启动的一直到 OS 内核加载和已安装的应用程序的执行。
+
+* 平台安全启动
+* 统一可扩展固件接口 (UEFI) 安全启动
+* Windows 代码完整性
+
+![启动顺序](../media/SecureBootAndBitLocker/BootOrder.jpg)
+
+可在 Windows 10 启动过程的其他信息[此处](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)。
+
+## <a name="locking-down-iot-devices"></a>锁定 IoT 设备
+
+为了锁定 Windows IoT 设备，必须考虑以下注意事项。
+
+### <a name="platform-secure-boot"></a>平台安全启动
+
+第一次打开设备，整个引导过程的第一步时，加载并运行固件的引导加载程序，在初始化硬件设备，并提供紧急闪烁的功能。 然后加载 UEFI 环境，控制将传递。
+
+这些固件的引导加载程序是特定于 SoC 的因此将需要使用适当的设备制造商能够在设备上创建这些的引导加载程序。
 
 我们可以深入了解为 IoT 设备提供安全的平台的各个组件，还需要了解的 Windows 10 IoT Core 设备上的启动顺序。
 
@@ -31,7 +53,19 @@ Windows 10 IoT Core 现在包括如 UEFI 安全引导、 BitLocker 设备加密�
 
 可在 Windows 10 启动过程的其他信息[此处](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)。
 
-## <a name="locking-down-iot-devices"></a>锁定 IoT 设备
+为了锁定 Windows IoT 设备，必须考虑以下注意事项。
+
+### <a name="platform-secure-boot"></a>平台安全启动
+
+第一次打开设备，整个引导过程的第一步时，加载并运行固件的引导加载程序，在初始化硬件设备，并提供紧急闪烁的功能。 然后加载 UEFI 环境，控制将传递。
+
+这些固件的引导加载程序是特定于 SoC 的因此将需要使用适当的设备制造商能够在设备上创建这些的引导加载程序。
+
+### <a name="uefi-secure-boot"></a>UEFI 安全启动
+
+UEFI 安全启动是第一个策略强制点，并且位于在 UEFI 中。  它将限制为只允许指定的颁发机构，如固件驱动程序、 选项 Rom、 UEFI 驱动程序或应用程序和 UEFI 的引导加载程序签名的二进制文件执行的系统。 此功能可以阻止在平台上执行未知代码，也可以阻止未知代码削弱它的安全状况。 安全启动到该设备，如 rootkit 减少预启动恶意软件攻击的风险。 
+
+作为 OEM，您需要用于存储数据库上的 IoT 设备制造时间 UEFI 安全引导。 这些数据库包括签名数据库 (db)、 撤消签名数据库 (dbx) 和密钥注册密钥数据库 (KEK)。 这些数据库存储在设备的固件非易失性内存 （NV 内存）。
 
 为了锁定 Windows IoT 设备，必须考虑以下注意事项。
 
@@ -61,7 +95,6 @@ UEFI 安全启动是第一个策略强制点，并且位于在 UEFI 中。  它�
 2. 如果固件不受信任，UEFI 固件启动特定于 OEM 恢复以还原受信任的固件。
 3. 如果无法加载 Windows 启动管理器，固件将尝试启动的 Windows 启动管理器中的备份副本。 如果这也将失败，UEFI 固件启动特定于 OEM 的修正。
 4. Windows 启动管理器运行和验证 Windows 内核的数字签名。 如果受信任的 Windows 启动管理器会将控制传递给 Windows 内核中。
-
 
 更多详细信息安全启动以及密钥创建和管理指南，位于[此处](https://technet.microsoft.com/library/dn747883.aspx)。
 
@@ -93,13 +126,17 @@ Windows 10 IoT Core 还实现 BitLocker 设备加密，保护免受脱机攻击�
 
 ## <a name="turnkey-security-on-iot-core"></a>在 IoT Core 上的关守安全
 
-为了便于轻松启用 IoT Core 设备上的主要安全功能，Microsoft 将提供统包的安全包，允许设备生成器以生成完全锁定 IoT 设备。  此包将帮助了解：
+为了便于轻松启用 IoT Core 设备上的主要安全功能，Microsoft 将提供[统包安全包]( https://github.com/ms-iot/security/tree/master/TurnkeySecurity)这样生成的设备构建完全锁定 IoT 设备。 此包将帮助了解：
 
 * 预配安全启动密钥和受支持的 IoT 平台上启用功能
-* 安装和配置使用 BitLocker 设备加密 
+* 安装和配置使用 BitLocker 设备加密
 * 启动设备锁定为只允许已签名的应用程序和驱动程序的执行
 
-### <a name="prerequisites"></a>先决条件
+遵循以下步骤将逐步创建一个锁定图像使用[统包安全包]( https://github.com/ms-iot/security/tree/master/TurnkeySecurity)
+
+![创建锁定映像](../media/SecurityFlowAndCertificates/ImageLockDown.png)
+
+### <a name="prerequisites"></a>系统必备
 
 * 运行 Windows 10 企业版的 PC
 * [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) -必需的证书生成
