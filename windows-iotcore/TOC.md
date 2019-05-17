@@ -2,7 +2,7 @@
 ## [Windows 10 IoT 核心板](windows-iot-core.md)
 ## [Windows 10 IoT 企业版](windows-iot-enterprise.md)
 ## [Windows Server IoT 2019](windows-server.md)
-## [入门](GetStarted.md)
+## [开始行动](GetStarted.md)
 ## [快速入门](tutorials/Tutorials.md)
 ### [确定设备原型]()
 #### [1.选择板](tutorials/quickstarter/PrototypeBoards.md)

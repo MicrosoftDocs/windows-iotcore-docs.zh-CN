@@ -1,17 +1,17 @@
 ---
-title: 快如闪电提供程序
+title: Lightning 提供程序
 author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
 description: 了解有关如何使用要获得有关 Microosft 闪电提供程序库的详细信息。
 keywords: windows iot、 快如闪电提供程序、 快如闪电性能测试、 总线
-ms.openlocfilehash: 8f290bf741f64e07b7b048287128e1ae42ef6b9e
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 50cbf4f9940538da1570cebb6cc142e7fbe06588
+ms.sourcegitcommit: fcc0c6add468040e2f676893b44b260e3ddc3c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510949"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65779387"
 ---
 # <a name="working-with-lightning-providers"></a>使用闪电提供程序
 Microsoft.IoT.Lightning.Providers 库包含一组通过闪电般的控制器总线提供程序以便与在看板进行交互的直接内存映射驱动程序 (DMAP)。
@@ -42,12 +42,13 @@ DMAP 驱动程序产品/服务 GPIO 性能改进通过收件箱驱动程序，�
 
 此外，它很简单添加所需的闪电形提供程序 Nuget 引用，并支持添加到新的或现有应用程序。 按以下步骤操作：
 
-1. 在应用程序中，右键单击项目，然后单击"管理 NuGet 包..."菜单项![UWP 项目](../media/LightningProviders/manage-nuget-project.png)
+1. 在应用程序中，右键单击项目，然后单击"管理 NuGet 包..."菜单项  
+![UWP 项目](../media/LightningProviders/manage-nuget-project.png)
 
 2. NuGet 包管理器将打开。 在浏览选项卡，搜索"闪电 SDK"，并确保选中"包括预发行版"复选框。
 
 3. 选择最新版本，然后单击"安装"以将快如闪电 SDK 添加到你的项目。 
-![NuGet 包管理器](../media/LightningProviders/nuget-package-manager.png)
+![NuGet Package Manager](../media/LightningProviders/nuget-package-manager.png)
 
 4. 按照屏幕上的说明根据需要。 安装完成后，对闪电 SDK 的引用将添加到项目中。
 
@@ -163,7 +164,7 @@ if (LightningProvider.IsLightningEnabled)
 
 生成和使用库所需的 Windows SDK 为 10.0.10586.0 或更高版本（可以从[此处](https://dev.windows.com/en-US/downloads/windows-10-sdk)下载）。
 
-有关设置的所有内容的详细信息，请参阅[我们入门指南。](https://developer.microsoft.com/en-us/windows/iot/getstarted)。
+有关设置的所有内容的详细信息，请参阅[我们入门指南](https://developer.microsoft.com/en-us/windows/iot/getstarted)。
 
 ### <a name="nuget-package-dependencies"></a>Nuget 包依赖关系
 
