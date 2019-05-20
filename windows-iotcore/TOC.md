@@ -22,6 +22,7 @@
 ## [驱动程序指南]()
 ### [驱动程序部署](learn-about-hardware/DriverDeployment.md)
 ### [创建通用驱动程序](learn-about-hardware/DriverCreation.md)
+### [USB 支持](learn-about-hardware/usb-support.md)
 ### [安装 USB 外围设备驱动程序](learn-about-hardware/PeripheralDrivers.md) 
 ## [开发应用程序]()
 ### [前台应用程序](develop-your-app/BuildingAppsForIoTCore.md)
