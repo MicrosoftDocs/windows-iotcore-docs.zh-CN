@@ -6,12 +6,12 @@ ms.date: 02/22/2019
 ms.topic: article
 description: 了解 Windows 10 IoT 核心版和 NXP i.MX Soc
 keywords: Windows 10 IoT 核心版，开始，i.MX，NXP
-ms.openlocfilehash: a6331b8f5695c2a432e1b22f1ba275cd48c549e4
-ms.sourcegitcommit: 3eacb968296e79e7e981fdc2a6f7f4f69c0920d1
+ms.openlocfilehash: 7b78aee0e67e481de38ade9b3fd6007baa8b0c9b
+ms.sourcegitcommit: 87c60bb857cb025255f4f06094c888384a0bb562
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65040181"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65940668"
 ---
 # <a name="window-10-iot-core-and-nxp-imx-socs"></a>窗口 10 IoT 核心版和 NXP i.MX Soc
 
@@ -33,87 +33,21 @@ ms.locfileid: "65040181"
 
 有多个 Microsoft 和 NXP 合作伙伴已经启用了商业 i.MX 6，i.MX 7，并且具有 i.MX 8 分钟设备支持的 Windows 10 IoT 核心版。 请联系合作伙伴，直接获取硬件和平台映像。
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">设备</th>
-<th align="left">联系人</th>
-</tr>
-</thead>
-<tbody>
 
-<tr class="odd">
-<td align="left"><p><a href="https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/">Aaeon PICO-IMX6</a></p></td>
-<td align="left"><p><p><a href="mailto:davidhung@aaeon.com.tw">David 挂起</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858">Advantech RSB-4411</a></p></td>
-<td align="left"><p><p><a href="mailto:buy@advantech.com">buy@advantech.com</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.compulab.com/products/iot-gateways/iot-gate-imx7-nxp-i-mx-7-internet-of-things-gateway/">Compulab IoT-Gate</a></p></td>
-<td align="left"><p><p><a href="mailto:igor@compulab.co.il">Igor Vaisbein</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.geniatech.com/product/som-imx6q-q7/">Geniatech SoM-iMX6Q-Q7</a></p></td>
-<td align="left"><p><p><a href="mailto:mike.decker@geniatech.com">Mike 德克尔</a>或<a href="mailto:Fjj@geniatech.com">Fang Jijun</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.geniatech.com/product/som-imx7d/">Geniatech SoM-iMX7D</a></p></td>
-<td align="left"><p><p><a href="mailto:mike.decker@geniatech.com">Mike 德克尔</a>或<a href="mailto:Fjj@geniatech.com">Fang Jijun</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.karo-electronics.de/tx-standard.html?&L=1">Ka Ro 电子 TX6UL，TX6S，TX6DL 和 TX6Q</a></p></td>
-<td align="left"><p><p><a href="mailto:us@karo-electronics.de">Uwe Steinkohl</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/">Keith 和 pConXS</a>与<a href="https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/">Trizeps VII</a></p></td>
-<td align="left"><p><p><a href="mailto:contact@keith-koep.com">contact@keith-koep.com</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html">Kontron SMARC-sAMX6i</a></p></td>
-<td align="left"><p><p><a href="mailto:martin.unverdorben@kontron.com">Martin Unverdorben</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://phytec.com/product/phyboard-imx7-development-kit/">phyBOARD i.MX 7 开发工具包</a></p></td>
-<td align="left"><p><p><a href="mailto:sales@phytec.com">Fernando Benitez</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.solid-run.com/imx6-win-10-iot-core/">实体运行 Hummingboard 边缘</a></p></td>
-<td align="left"><p><p><a href="mailto:ilya@solid-run.com">Ilya Viten</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.viaembeddedstore.com/shop/boards/vab-820/">VIA VAB-820</a></p></td>
-<td align="left"><p><p><a href="mailto:MichaelFox@via.com.tw">Michael Fox</a>或<a href="mailto:dreamku@via.com.tw">梦想 Ku</p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors/evaluation-kit-for-the-i.mx-6ull-and-6ulz-applications-processor:MCIMX6ULL-EVK">MCIMX6ULL-EVK</a></p></td>
-<td align="left"><p><p><a href="mailto:Wei.A.Wang@nxp.com">Wei Wang</a></p></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="https://www.nxp.com/support/developer-resources/software-development-tools/i.mx-developer-resources/evaluation-kit-for-the-i.mx-8m-applications-processor:MCIMX8M-EVK">MCIMX8M-EVK</a></p></td>
-<td align="left"></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><a href="http://www.nxp.com/imx8mminievk">MCIMX8MMINI-EVK</a></p></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
+> | 设备 | 联系人 |
+> |-------|------|
+> | [Aaeon PICO-IMX6](https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/) | [David 挂起](mailto:davidhung@aaeon.com.tw) |
+> | [Advantech RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) | [buy@advantech.com](mailto:buy@advantech.com) |
+> | [Compulab IoT-Gate](https://www.compulab.com/products/iot-gateways/iot-gate-imx7-nxp-i-mx-7-internet-of-things-gateway/) | [Igor Vaisbein](mailto:igor@compulab.co.il) | 
+> | [Geniatech SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) | [Mike 德克尔](mailto:mike.decker@geniatech.com)或[Fang Jijun](mailto:Fjj@geniatech.com) |
+> | [Geniatech SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) | [Mike 德克尔](mailto:mike.decker@geniatech.com)或[Fang Jijun](mailto:Fjj@geniatech.com) |
+> | [Ka Ro 电子 TX6UL，TX6S，TX6DL 和 TX6Q](https://www.karo-electronics.de/tx-standard.html?&L=1) | [Uwe Steinkohl](mailto:us@karo-electronics.de) |
+> | [Keith 和 pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/)与[Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) | [contact@keith-koep.com](mailto:contact@keith-koep.com) |
+> | [Kontron SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) | [Martin Unverdorben](mailto:martin.unverdorben@kontron.com) |
+> | [phyBOARD i.MX 7 开发工具包](https://phytec.com/product/phyboard-imx7-development-kit/) | [Fernando Benitez](mailto:sales@phytec.com) |
+> | [实体运行 Hummingboard 边缘](https://www.solid-run.com/imx6-win-10-iot-core/) | [Ilya Viten](mailto:ilya@solid-run.com) |
+> | [VIA VAB-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) | [Michael Fox](mailto:MichaelFox@via.com.tw)或[梦想 Ku](mailto:dreamku@via.com.tw) |
+> | [WeAreDev WAD-MX6W](http://www.wearedev.net/?mod=wadmx6w) | [help@wearedev.net](mailto:help@wearedev.net) |
+> | [MCIMX6ULL-EVK](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors/evaluation-kit-for-the-i.mx-6ull-and-6ulz-applications-processor:MCIMX6ULL-EVK) | [Wei Wang](mailto:Wei.A.Wang@nxp.com) |
+> | [MCIMX8M-EVK](https://www.nxp.com/support/developer-resources/software-development-tools/i.mx-developer-resources/evaluation-kit-for-the-i.mx-8m-applications-processor:MCIMX8M-EVK) |  |
+> | [MCIMX8MMINI-EVK](http://www.nxp.com/imx8mminievk) | []() |
