@@ -34,6 +34,7 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "bilingual_type": "hover over",
+      "feedback_system": "None",
       "breadcrumb_path": "/windows/iot-core/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows-IoT",
       "searchScope": [
