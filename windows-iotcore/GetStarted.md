@@ -6,12 +6,12 @@ ms.date: 04/10/2018
 ms.topic: article
 description: 了解有关如何开始使用 Windows 10 IoT Core。
 keywords: Windows 10 IoT 核心版，开始，映像，
-ms.openlocfilehash: 7fa6012cf6d3261e52c5040eafd6cfeaede55d41
-ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
+ms.openlocfilehash: d52fbf7efe5f61e99910d26a02304dc16fabb683
+ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706043"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174007"
 ---
 # <a name="get-started-with-windows-10-iot-core"></a>开始使用 Windows 10 IoT 核心版
 
@@ -59,10 +59,6 @@ ms.locfileid: "65706043"
 </tbody>
 </table>
 
-## <a name="build-a-prototype"></a>构建的原型
-
-新 Windows 10 IoT？ 开始快速、 轻松地使用我们[Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md)。 
-
 ## <a name="windows-10-iot-pricing"></a>Windows 10 IoT 定价
 
 <table>
@@ -97,6 +93,47 @@ ms.locfileid: "65706043"
 </table>
 
 <i>了解有关详细的生命周期信息的详细信息[这里](https://support.microsoft.com/en-us/lifecycle/search?alpha=IoT%20Core)</i>。
+
+## <a name="prototype-a-device"></a>制作设备原型
+
+然后再尝试制造设备，最好是为第一个 try 和原型具有 Windows 10 IoT 核心版的设备。 这样一来，您可以了解哪些功能需要和哪些配置时，你将需要是时候来制造。
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">主题</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
+>1. 选择原型板</a></p></td>
+<td align="left"><p>看一下通用原型板并选择要开始使用原型制作。</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p>2. Flash 原型图像</p></td>
+<td align="left"><p>转到我们的教程部分，了解如何刷写到所选设备上的原型图像。 </p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">3. 安装您的应用程序</a></p></td>
+<td align="left"><p>了解如何安装应用程序使用不同的工具。</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. 将应用部署</a></p></td>
+<td align="left"><p>了解如何使用 Visual Studio 部署应用。</p></td>
+</tr>
+
+</tbody>
+</table>
 
 ## <a name="bring-a-device-to-market"></a>将设备推向市场
 

@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解有关各种建议看板和社区的设备的硬件功能信息。
 keywords: windows iot、 开发设备、 任务板，SOC，SOM，Raspberry Pi 2、 Raspberry Pi 3、 Minnowboard 最大值、 DragonBoard 芯片上的系统
-ms.openlocfilehash: b4225937fef1338182c77baa0fd288b7ed597d45
-ms.sourcegitcommit: 3eacb968296e79e7e981fdc2a6f7f4f69c0920d1
+ms.openlocfilehash: 55e7192a53197623ca47ff8186630a691749c026
+ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65040193"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174026"
 ---
 # <a name="socs-and-custom-boards"></a>Soc 和自定义看板
 
@@ -132,7 +132,8 @@ BSP 包包括 ACPI 以便只需要 ACPI 更改的简单硬件自定义的源代�
 您还可以通过扩展到合作伙伴我们正在使用：
 
 * Advantech [RSB 4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
-* Keith 和[pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/)与[Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) - contact@keith-koep.com
+* Keith 和[pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/
+)与[Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) - contact@keith-koep.com
 * Kontron [SMARC sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) -Martin Unverdorben (martin.unverdorben@kontron.com)
 * Solid 运行[Hummingboard 边缘](https://www.solid-run.com/imx6-win-10-iot-core/ )-Ilya Viten (ilya@solid-run.com)
 * Geniatech[问题 7 iMX6Q SoM](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM iMX7D](https://www.geniatech.com/product/som-imx7d/) -Mike 德克尔 (mike.decker@geniatech.com) 或 Fang Jijun (Fjj@geniatech.com)

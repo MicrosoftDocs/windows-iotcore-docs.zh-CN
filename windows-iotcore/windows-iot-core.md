@@ -6,14 +6,14 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解什么是 Windows 10 IoT 核心版，可以使用它做什么。
 keywords: Windows 10 IoT Core，占用空间小、 无外设
-ms.openlocfilehash: a4ffa21b9e6fd0e539b1ede4810437990212015b
-ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
+ms.openlocfilehash: 0fbcc6a96f8e35227acf32a9507ed3c7a038a83d
+ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706068"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174045"
 ---
-# <a name="windows-10-iot-core"></a>Windows 10 IoT 核心版
+# <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT 核心版的概述
 
 > [!NOTE]
 > Windows 10 容器可以仅用于 Windows IoT Core 和 Windows IoT 企业版与商业利用 Microsoft Azure IoT Edge 的部署。
@@ -21,10 +21,48 @@ ms.locfileid: "65706068"
 ## <a name="what-is-windows-10-iot-core"></a>什么是 Windows 10 IoT 核心版？
 Windows 10 IoT 核心版是针对同时 ARM 运行的较小设备使用或不带显示器和 x86/x64 设备优化的 Windows 10 版本。 Windows IoT Core 文档提供有关连接、 管理、 更新、 保护你的设备和的详细信息。 
 
-## <a name="getting-started"></a>即刻体验
-若要开始使用 Windows 10 IoT 核心版，我们已创建[Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md)以帮助您快速熟悉平台。 
-
 如果您已经准备好以转到下一个级别并开始 commercializing 你的解决方案，可以了解如何使用 Windows 10 IoT Core 与制造我们[Windows 10 IoT Core 交付厂商版指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 
+
+## <a name="getting-started"></a>即刻体验
+
+然后再尝试制造设备，最好是为第一个 try 和原型具有 Windows 10 IoT 核心版的设备。 这样一来，您可以了解哪些功能需要和哪些配置时，你将需要是时候来制造。
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">主题</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
+>1. 选择原型板</a></p></td>
+<td align="left"><p>看一下通用原型板并选择要开始使用原型制作。</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p>2. Flash 原型图像</p></td>
+<td align="left"><p>转到我们的教程部分，了解如何刷写到所选设备上的原型图像。 </p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">2. 3. 安装您的应用程序</a></p></td>
+<td align="left"><p>了解如何安装应用程序使用不同的工具。</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. 将应用部署</a></p></td>
+<td align="left"><p>了解如何使用 Visual Studio 部署应用。</p></td>
+</tr>
+
+</tbody>
+</table>
 
 ## <a name="differences-between-windows-10-desktop-and-windows-10-iot-core"></a>Windows 10 桌面版和 Windows 10 IoT 核心版之间的差异
 
