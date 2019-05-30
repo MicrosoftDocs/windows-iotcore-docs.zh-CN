@@ -6,12 +6,12 @@ ms.date: 11/10/2017
 ms.topic: article
 description: 了解如何配置 Windows 以允许嵌入模式下，启用后台应用程序和其他功能。
 keywords: windows iot、 嵌入的模式、 后台应用程序
-ms.openlocfilehash: 1944cec09400cff4d895bb9e55b89b3b19a3f5f5
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: ca8124d97a9161a1539eff92c55cf3630cf0a049
+ms.sourcegitcommit: b719e66699372e1339c2316cab45df2a474d09a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510623"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66252178"
 ---
 # <a name="embedded-mode"></a>嵌入模式
 
@@ -33,12 +33,16 @@ Windows IoT Core 和 Windows IoT 企业版支持嵌入的模式。 使嵌入的�
 
 时系统将自动重新启动后台应用程序，必须启用系统锁定功能以防止用户停止或干扰后台应用程序的操作。
 
-## <a name="lowleveldevice-capability"></a>lowLevelDevice 功能
+## <a name="lowlevel-device-capability-and-lowleveldevice-capability"></a>lowLevel 设备功能和 lowLevelDevice 功能
 
-LowLevelDevice 功能可让 GPIO、 SPI 和 I2C 等低级别的硬件接口访问。
+**LowLevel**设备功能，如 GPIO、 SPI 和 I2C 低级别的硬件接口访问。
 
 * [灾难从天而降 Sample(GPIO)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
-* [加速计示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer)
+* [加速感应器示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer)
+
+**LowLevelDevices**功能允许应用访问自定义设备时满足其他要求的数量。 此功能不应混淆 lowLevel 设备功能，可对 GPIO、 I2C、 SPI 和 PWM 设备访问权限。
+
+请参阅[应用功能声明](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations)有关详细信息。
 
 ## <a name="systemmanagment-capability"></a>systemManagment 功能
 
@@ -59,21 +63,21 @@ LowLevelDevice 功能可让 GPIO、 SPI 和 I2C 等低级别的硬件接口访�
 ## <a name="changing-the-mode"></a>更改模式
 若要启用嵌入模式，你将需要在映像和配置设计器 (ICD)（将 AllowEmbeddedMode 设置为 1）中创建设置包。  若要安装 ICD，你需要下载并安装适用于 Windows 10 的 Windows ADK。
 
-* [下载适用于 Windows 10 的 Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526740)
-* [了解什么是 Windows ADK for Windows 10 中的新增功能](https://msdn.microsoft.com/library/windows/hardware/dn927348(v=vs.85).aspx)
+* [下载适用于 Windodws 10 的 Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+* [了解适用于 Windows 10 的 Windows ADK 中的新增功能](https://msdn.microsoft.com/library/windows/hardware/dn927348(v=vs.85).aspx)
 
 1. 当安装 ADK 选择**映像和配置设计器 (ICD)**
 2. 安装完成后运行 Windows 映像和配置设计器 (WICD)。
 
     ![WICD 图标](../media/EmbeddedMode/WICD_Icon.png)
 
-3. 单击“高级预配”。  将项目命名**AllowEmbeddedMode**然后单击**下一步**。
-    ![步骤 3](../media/EmbeddedMode/Step3.png)
+3. 单击“高级预配”  。  将项目命名**AllowEmbeddedMode**然后单击**下一步**。
+    ![Step3](../media/EmbeddedMode/Step3.png)
 
 4. 选择**普遍适用于所有 Windows 版本**然后**下一步**。
-    ![步骤 4](../media/EmbeddedMode/Step4.png)
+    ![Step4](../media/EmbeddedMode/Step4.png)
 
-5. 单击 **“完成”**。
+5. 单击 **“完成”** 。
 
     ![步骤 5](../media/EmbeddedMode/Step5.png)
 
@@ -107,7 +111,7 @@ LowLevelDevice 功能可让 GPIO、 SPI 和 I2C 等低级别的硬件接口访�
 
 14. 单击**可以，请将其添加**。
     单击是开 LUA 对话框中如果出现，然后单击**是，将其添加**上如下所示的对话框。
-    ![步骤 14 标准](../media/EmbeddedMode/Step14Standard.png)
+    ![Step14Standard](../media/EmbeddedMode/Step14Standard.png)
 
 
 ## <a name="configuring-a-background-application-to-run-automatically"></a>自动配置为运行一个后台应用程序

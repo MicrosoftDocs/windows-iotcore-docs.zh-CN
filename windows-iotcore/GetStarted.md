@@ -6,12 +6,12 @@ ms.date: 04/10/2018
 ms.topic: article
 description: 了解有关如何开始使用 Windows 10 IoT Core。
 keywords: Windows 10 IoT 核心版，开始，映像，
-ms.openlocfilehash: d52fbf7efe5f61e99910d26a02304dc16fabb683
-ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
+ms.openlocfilehash: c11e37c982c1e38ec270527d54127013b8df7515
+ms.sourcegitcommit: 3cab433275b07093efd1c6cfbfd7eb71c08bbd36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174007"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373141"
 ---
 # <a name="get-started-with-windows-10-iot-core"></a>开始使用 Windows 10 IoT 核心版
 
@@ -52,7 +52,7 @@ ms.locfileid: "66174007"
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="windows-iot-core.md" data-raw-source="[Windows 10 IoT Core Overview](windows-server.md)">Windows Server IoT 2019 概述</a></p></td>
+  <td align="left"><p><a href="windows-server.md" data-raw-source="[Windows Server IoT 2019](https://docs.microsoft.com/en-us/windows/iot-core/windows-server)">Windows Server IoT 2019</a></p></td>
 <td align="left"><p>了解有关如何开始使用 Windows Server IoT 2019 的详细信息。</p></td>
 </tr>
 
@@ -138,7 +138,7 @@ ms.locfileid: "66174007"
 ## <a name="bring-a-device-to-market"></a>将设备推向市场
 
 商品化或将设备推向市场的过程涉及到更多移动部件和人员比只是原型制作设备上自己的时间。 商品化需要大量的步骤，以确保你的设备，可以在世界中，它们的位置无关接收更新，会尽可能安全，并且合规。 
-<br>
+
 启动与该方法最适合您，具体取决于哪个版本的 Windows 10 IoT 要使用的生产指南。
 
 <table>

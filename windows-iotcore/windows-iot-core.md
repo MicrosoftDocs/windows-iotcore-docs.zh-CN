@@ -6,12 +6,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解什么是 Windows 10 IoT 核心版，可以使用它做什么。
 keywords: Windows 10 IoT Core，占用空间小、 无外设
-ms.openlocfilehash: 0fbcc6a96f8e35227acf32a9507ed3c7a038a83d
-ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
+ms.openlocfilehash: 15a3d3e5f1703f87b0f0a0c782bb4cab9b99557f
+ms.sourcegitcommit: 0a4039d333dc3d1ed79de9300c094eb3f57dd8ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174045"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263860"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT 核心版的概述
 
@@ -70,7 +70,7 @@ Windows 10 IoT 核心版是针对同时 ARM 运行的较小设备使用或不带
 
 * 收件箱 Cortana 之后的版本 1809 (17763) 不再可在 Windows 10 IoT 核心版上。 如果想要将具有语音功能的设备要快地进入市场，可以将 Cortana 支持集成到设备使用[Cortana 设备 SDK 的预览](https://developer.microsoft.com/en-us/cortana/devices)。
 * [FileOpenPicker API](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker)不支持在 Windows 10 IoT 核心版中。 若要访问本地驱动器或可移动存储，可以在自己的应用程序中实现此。
-* Windows 10 IoT Core 设备将启动到[默认应用](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp)而不是类似于桌面的 PC。 此应用程序的目的不是仅为你提供要与首次启动时进行交互，但还允许你使用的友好 shell[开放源代码代码](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)为此应用程序，以便您可以使用这些功能即插你自己的自定义应用程序。
+* 默认情况下，Windows 10 IoT Core 设备将启动到[默认应用](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp)而不是类似于桌面的 PC。 但是，对于商品化，此默认的应用**必须**替换为自定义应用程序还是可修改的默认应用程序。 此应用程序的目的不是仅为你提供要与首次启动时进行交互，但还允许你使用的友好 shell[开放源代码代码](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)为此应用程序，以便您可以使用这些功能即插你自己的自定义应用程序。
 
 ### <a name="differences-in-driver-supported-areas"></a>驱动程序支持的区域之间的差异
 

@@ -6,17 +6,18 @@ ms.date: 09/07/18
 ms.topic: article
 description: 利用所有 Windows 10 IoT 社区中的资源。
 keywords: Windows 10 IoT 核心版、 Windows 10 IoT 企业版、 资源，最重要的人员、 视频、 博客文章
-ms.openlocfilehash: 338f30bdfb87f5626cd1300a630529b1ed5b16a8
-ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
+ms.openlocfilehash: d7fdc6423212a387a62fe0dca89dc94792c9909d
+ms.sourcegitcommit: bcc4cf5a25841f499a1de71c463f34e47e9811d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706064"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319845"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 资源
 
 ## <a name="blog-posts"></a>博客文章
 
+* [新的 Windows IoT 解决方案在 Computex 在智能边缘显示天才设计](https://blogs.windows.com/windowsexperience/2019/05/28/new-windows-iot-solutions-at-computex-show-ingenuity-at-the-intelligent-edge/#U3yYXu1rq054ljuk.97)
 * [建立新式 Windows CE 系统的 Windows 10 IoT](https://blogs.windows.com/buildingapps/2019/05/07/modernizing-windows-ce-systems-with-windows-10-iot/#oHzjguRIlWV0ryo6.97)
 * [打开机器人和 Microsoft 发布 Windows 10 IoT 企业版上 ROS](https://blogs.windows.com/buildingapps/2019/05/07/open-robotics-and-microsoft-release-ros-on-windows-10-iot-enterprise/#Y86A6YUJELKDoRJJ.97)
 * [Microsoft Azure IoT 设备代理 V2 公开上市](https://blogs.windows.com/buildingapps/2019/05/07/microsoft-azure-iot-device-agent-v2-general-availability/#BwOSxBSymeJqU34K.97)
