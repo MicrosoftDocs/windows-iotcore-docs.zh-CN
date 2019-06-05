@@ -5,12 +5,12 @@ title: 疑难解答
 ms.author: saclayt
 ms.date: 08/28/18
 ms.topic: article
-ms.openlocfilehash: 00c748e4ce06e960dbc2a4250fb3cb279f4d092a
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 8b93ad987c27e1123d68c4d22148447ccc99e37d
+ms.sourcegitcommit: 2e7e9555fe71ca60b5f41dbf06051a50520a368a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510866"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66491710"
 ---
 # <a name="troubleshooting"></a>疑难解答
 这是包含用户偶然遇到的常见故障排除问题的文章。 若要查找某些具体内容，请使用 Ctrl + F 来查找单词或短语。 是否有任何你想要添加的见解？ 创建此文档或下面 provident 内容反馈的拉取请求。
@@ -88,7 +88,7 @@ ms.locfileid: "59510866"
 
 Raspberry Pi 3 模型 B + 是在 Raspberry Pi 3 范围内，最新的产品纳入 1.4 GHz、 双外 2.4 GHz 和 5 GHz 无线 LAN、 蓝牙 4.2/BLE，更快地以太网，在运行 64 位四核处理器和通过的单独波 HA 波功能。
 
-最近，许多客户想要在 Windows 10 IoT Core 人员遇到的问题，设备无法刷新 Windows 10 IoT Core 之后, 正常启动，但在其上正常工作的 Raspbian。 以下是一些有关如何解决启动问题的建议。
+最近，许多客户想要在 Windows 10 IoT Core 人员遇到的问题，设备无法正常情况下刷新后无法启动 Windows 10 IoT 核心版，但在其上正常工作 Raspbian。 以下是一些有关如何解决启动问题的建议。
 
 此 Insider Preview 映像中有一些已知的问题。 请注意：
 * 此映像仅适用于 Raspberry Pi 3B +，将不会启动 Raspbierry Pi 2 上。

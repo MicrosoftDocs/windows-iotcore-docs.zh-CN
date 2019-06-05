@@ -6,12 +6,12 @@ ms.date: 09/07/18
 ms.topic: article
 description: 利用所有 Windows 10 IoT 社区中的资源。
 keywords: Windows 10 IoT 核心版、 Windows 10 IoT 企业版、 资源，最重要的人员、 视频、 博客文章
-ms.openlocfilehash: d7fdc6423212a387a62fe0dca89dc94792c9909d
-ms.sourcegitcommit: bcc4cf5a25841f499a1de71c463f34e47e9811d5
+ms.openlocfilehash: ba3fb673c12849e9b3cfb48ae9215f3ec85992eb
+ms.sourcegitcommit: 65900a35a0811b8510f3b7f53c8256b4dcc29d1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319845"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66499336"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 资源
 
@@ -43,6 +43,7 @@ ms.locfileid: "66319845"
 ## <a name="whitepapers"></a>白皮书
 * [Azure IoT Edge + Windows IoT:支持 AI 的边缘](https://aka.ms/IoT-Edge-WP)
 * [Windows 机器学习：Windows 应用程序中实现 AI](https://aka.ms/Windows-ML-WP)
+* [使用 Windows IoT 创建更安全 IoT 解决方案](https://aka.ms/secure-windowsiot)
 
 ## <a name="learning-resources"></a>学习资源
 
