@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何启用安全引导、 BitLocker 和 Windows 10 IoT Core 上的 Device Guard
 keywords: windows iot，安全启动，BitLocker，设备保护、 安全性、 交钥匙安全
-ms.openlocfilehash: 092be64210f651c25156e93885a63f35c22d4791
-ms.sourcegitcommit: fcc0c6add468040e2f676893b44b260e3ddc3c52
+ms.openlocfilehash: 300f47ecb3d6c67f467174c230c56a15a1d0f4a1
+ms.sourcegitcommit: 5a103405cbc5c61101139aff6aaa709bd4ef9582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65779396"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66694134"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>启用安全启动、 BitLocker 和 Windows 10 IoT Core 上的设备保护
 
@@ -32,40 +32,6 @@ Windows 10 IoT 核心版包括如 UEFI 安全引导、 BitLocker 设备加密和
 可在 Windows 10 启动过程的其他信息[此处](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)。
 
 ## <a name="locking-down-iot-devices"></a>锁定 IoT 设备
-
-为了锁定 Windows IoT 设备，必须考虑以下注意事项。
-
-### <a name="platform-secure-boot"></a>平台安全启动
-
-第一次打开设备，整个引导过程的第一步时，加载并运行固件的引导加载程序，在初始化硬件设备，并提供紧急闪烁的功能。 然后加载 UEFI 环境，控制将传递。
-
-这些固件的引导加载程序是特定于 SoC 的因此将需要使用适当的设备制造商能够在设备上创建这些的引导加载程序。
-
-我们可以深入了解为 IoT 设备提供安全的平台的各个组件，还需要了解的 Windows 10 IoT Core 设备上的启动顺序。
-
-有三个主要区域发生从 IoT 设备时已启动的一直到 OS 内核加载和已安装的应用程序的执行。
-
-* 平台安全启动
-* 统一可扩展固件接口 (UEFI) 安全启动
-* Windows 代码完整性
-
-![仪表板的屏幕截图](../media/SecureBootAndBitLocker/BootOrder.jpg)
-
-可在 Windows 10 启动过程的其他信息[此处](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)。
-
-为了锁定 Windows IoT 设备，必须考虑以下注意事项。
-
-### <a name="platform-secure-boot"></a>平台安全启动
-
-第一次打开设备，整个引导过程的第一步时，加载并运行固件的引导加载程序，在初始化硬件设备，并提供紧急闪烁的功能。 然后加载 UEFI 环境，控制将传递。
-
-这些固件的引导加载程序是特定于 SoC 的因此将需要使用适当的设备制造商能够在设备上创建这些的引导加载程序。
-
-### <a name="uefi-secure-boot"></a>UEFI 安全启动
-
-UEFI 安全启动是第一个策略强制点，并且位于在 UEFI 中。  它将限制为只允许指定的颁发机构，如固件驱动程序、 选项 Rom、 UEFI 驱动程序或应用程序和 UEFI 的引导加载程序签名的二进制文件执行的系统。 此功能可以阻止在平台上执行未知代码，也可以阻止未知代码削弱它的安全状况。 安全启动到该设备，如 rootkit 减少预启动恶意软件攻击的风险。 
-
-作为 OEM，您需要用于存储数据库上的 IoT 设备制造时间 UEFI 安全引导。 这些数据库包括签名数据库 (db)、 撤消签名数据库 (dbx) 和密钥注册密钥数据库 (KEK)。 这些数据库存储在设备的固件非易失性内存 （NV 内存）。
 
 为了锁定 Windows IoT 设备，必须考虑以下注意事项。
 
@@ -136,7 +102,7 @@ Windows 10 IoT Core 还实现 BitLocker 设备加密，保护免受脱机攻击�
 
 ![创建锁定映像](../media/SecurityFlowAndCertificates/ImageLockDown.png)
 
-### <a name="prerequisites"></a>系统必备
+### <a name="prerequisites"></a>先决条件
 
 * 运行 Windows 10 企业版的 PC
 * [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) -必需的证书生成
@@ -153,7 +119,7 @@ Windows 10 IoT 核心版适用于在数百个设备中利用的各种 silicons�
 
 * Intel MinnowBoardMax
 
-    Intel 的 MinnowBoard Max 固件版本必须为 0.82 或更高版本 (获取[最新的固件](https://firmware.intel.com/projects/minnowboard-max))。 若要启用 TPM 功能，请打开附加了键盘和屏幕的开发板的电源，然后按 F2 进入 UEFI 设置。 转到_设备管理器-> 系统设置-> 安全配置-> PTT_并将其设置为_&lt;启用&gt;_。 按 F10 保存更改，并继续重新启动平台。
+    Intel 的 MinnowBoard Max 固件版本必须为 0.82 或更高版本 (获取[最新的固件](https://firmware.intel.com/projects/minnowboard-max))。 若要启用 TPM 功能，请打开附加了键盘和屏幕的开发板的电源，然后按 F2 进入 UEFI 设置。 转到_设备管理器-> 系统设置-> 安全配置-> PTT_并将其设置为 _&lt;启用&gt;_ 。 按 F10 保存更改，并继续重新启动平台。
 
 > [!NOTE]
 > Raspberry Pi 2 或 3 不支持 TPM，因此我们不能配置锁定方案。

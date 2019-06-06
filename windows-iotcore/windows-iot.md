@@ -6,12 +6,12 @@ ms.date: 01/30/2018
 ms.topic: article
 description: 了解什么是 Windows 10 IoT，您可以使用它所执行的操作。
 keywords: Windows 10 IoT 企业版，Windows 10 IoT Core，无外设、 语音、 功能、 二进制版本，版本
-ms.openlocfilehash: f1ff68d1efe967eee0472eec54b5354d47c9447a
-ms.sourcegitcommit: 1f6afcfee0cb5557dc21c7b15e199bc557d8eedb
+ms.openlocfilehash: b5c729344f3c805deeecb0a04c0c696c8fd7b51e
+ms.sourcegitcommit: 5a103405cbc5c61101139aff6aaa709bd4ef9582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65171350"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66694113"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 概述 
 
@@ -39,9 +39,11 @@ Windows 10 IoT 提供两个版本。  Windows 10 IoT 核心版是 Windows 10 操
 > | 设备安全技术 | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm)，[安全引导、 BitLocker、 设备保护](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker)，和设备运行状况证明 | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm)，[安全引导、 BitLocker、 设备保护](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker)和设备运行状况证明 |
 > | CPU 体系结构支持 | x86、 x64 和 ARM | x86 和 x64 |
 > | 授权 | 联机免版税的许可协议和嵌入式的 OEM 协议， | 直接和间接的嵌入式的 OEM 协议 |
-> | 使用方案 | [数字签名](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage)，智能建筑、 IoT 网关、 HMI，主页，智能可穿戴设备 | 行业平板电脑、 POS、 展台[数字签名](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage)，ATM、 医疗设备、 制造设备，瘦客户端 |
+> | 使用方案 | [数字签名](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage)，智能建筑、 IoT 网关、 HMI，主页，智能可穿戴设备 | 行业平板电脑，零售 Point of Service，展台[数字签名](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage)，ATM、 医疗设备、 制造设备，瘦客户端 |
 
 最低要求的详细信息，请访问[Windows 硬件站点](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)。
+
+如果您感兴趣点的服务的详细信息，请访问[本主题的 UWP 文档](https://aka.ms/pointofservice)。
 
 ## <a name="differences-between-windows-10-desktop-and-windows-10-iot-core"></a>Windows 10 桌面版和 Windows 10 IoT 核心版之间的差异
 
@@ -49,7 +51,7 @@ Windows 10 IoT 提供两个版本。  Windows 10 IoT 核心版是 Windows 10 操
 
 * 收件箱 Cortana 之后的版本 1809 (17763) 不再可在 Windows 10 IoT 核心版上。 如果想要将具有语音功能的设备要快地进入市场，可以将 Cortana 支持集成到设备使用[Cortana 设备 SDK 的预览](https://developer.microsoft.com/en-us/cortana/devices)。
 * [FileOpenPicker API](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker)不支持在 Windows 10 IoT 核心版中。 若要访问本地驱动器或可移动存储，可以在自己的应用程序中实现此。
-* Windows 10 IoT Core 设备将启动到[默认应用](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp)而不是类似于桌面的 PC。 此应用程序的目的不是仅为你提供要与首次启动时进行交互，但还允许你使用的友好 shell[开放源代码代码](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)为此应用程序，以便您可以使用这些功能即插自己的自定义应用程序。
+* Windows 10 IoT Core 设备将启动到[默认应用](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp)而不是类似于桌面的 PC。 此应用程序的目的不是仅为你提供要与首次启动时进行交互，但还允许你使用的友好 shell[开放源代码代码](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)为此应用程序，以便您可以使用这些功能即插你自己的自定义应用程序。
 
 ### <a name="differences-in-driver-supported-areas"></a>驱动程序支持的区域之间的差异
 
@@ -96,4 +98,4 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 
 ## <a name="helpful-resources"></a>有用资源
 * [Windows 10 IoT 企业版](windows-iot-enterprise.md)
-* [Windows 10 IoT 核心版](windows-iot-core.md)
+* [Windows 10 IoT 核心板](windows-iot-core.md)

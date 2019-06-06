@@ -6,12 +6,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解什么是 Windows 10 IoT 企业版和使用它可以执行的操作。
 keywords: Windows 10 IoT 企业版、 企业版、 二进制、 Windows
-ms.openlocfilehash: c8e9eed02a9ae3010ceb10c78bd8a01c4535e383
-ms.sourcegitcommit: 1f6afcfee0cb5557dc21c7b15e199bc557d8eedb
+ms.openlocfilehash: abf6fa3478991a188b8980ceaf838648f6a89feb
+ms.sourcegitcommit: 5a103405cbc5c61101139aff6aaa709bd4ef9582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65171341"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66694129"
 ---
 # <a name="an-overview-of-windows-10-iot-enterprise"></a>Windows 10 IoT 企业版的概述
 
@@ -23,7 +23,7 @@ Windows 10 IoT 企业版是传递到 IoT 解决方案的企业可管理性和安
 
 ## <a name="getting-started"></a>即刻体验 
 
-为了在使用 Windows 10 IoT 企业版的生产开始之旅，您将需要从分发服务器联系[此列表](https://go.microsoft.com/fwlink/p/?linkid=2069623)。
+为了在使用 Windows 10 IoT 企业版的生产开始之旅，您将需要从分发服务器联系[此列表](https://go.microsoft.com/fwlink/p/?linkid=2093270)。
 
 在这里，可以了解如何使用 Windows 10 IoT 企业版与制造我们[Windows 10 IoT 企业交付厂商版指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview)。 
 
