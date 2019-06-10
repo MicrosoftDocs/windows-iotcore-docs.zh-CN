@@ -6,12 +6,12 @@ ms.date: 01/30/2018
 ms.topic: article
 description: 了解什么是 Windows 10 IoT，您可以使用它所执行的操作。
 keywords: Windows 10 IoT 企业版，Windows 10 IoT Core，无外设、 语音、 功能、 二进制版本，版本
-ms.openlocfilehash: b5c729344f3c805deeecb0a04c0c696c8fd7b51e
-ms.sourcegitcommit: 5a103405cbc5c61101139aff6aaa709bd4ef9582
+ms.openlocfilehash: 1e1d2769513005a705c48522d4dc7dc034f5d7b9
+ms.sourcegitcommit: dcaeaa6c5e84dd6a4974a56098f3bab151209e41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66694113"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66760389"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 概述 
 
@@ -73,7 +73,7 @@ HKEY_CURRENTUSER\Control Panel\Accessibility
 REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d "1"
 ```
 
-* 必须从默认帐户设置的注册表项。 如果 ScrollViewer 的 XAML 设置为"Visible"，那么注册表设置为 0 将强制滚动条以显示 regardlss 是否足够要具有在 UI 中显示滚动的内容。 注册表设置为 1 将保留前没有足够内容隐藏滚动条。
+* 必须从默认帐户设置的注册表项。 如果 ScrollViewer 的 XAML 设置为"Visible"，0 的注册表设置将强制滚动条以显示 regardlss 是否足够要具有在 UI 中显示滚动的内容。 注册表设置为 1 将保留前没有足够内容隐藏滚动条。
 
 ```
 <TextBox Height="200" Width="100" IsEnabled="True" FontSize="50" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Visible" Text="..."/>
@@ -90,7 +90,7 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 * PowerShell 删除 AppxPackage 命令的工作上桌面，但不是在 Windows 10 IoT Core。
 * 并非所有设备上的文件夹都进行访问的通用 Windows 应用程序。 Windows 10 IoT Core 上可以使用 FolderPermissions 工具以便向 UWP 应用可以访问一个文件夹。 例如，运行 FolderPermissions c:\test-e 使 UWP 应用能够访问 c:\test 文件夹。 但是，这不是在桌面上可用的。
 
-在此文章中介绍了所有差异可能会都消失，随着时间的推移由于 Windows 10 IoT Core 的就是不断更新。
+在此文章中所示的命令可能会更改随着时间的推移由于不断更新 Windows 10 IoT Core。
 
 ## <a name="iot-edge-support-for-windows-10-iot"></a>IoT Edge 支持适用于 Windows 10 IoT
 若要在 Azure IoT Edge 文章中了解有关 IoT Edge 的详细信息的支持 Windows 10 IoT，请详细了解"操作系统"[此处](https://docs.microsoft.com/en-us/azure/iot-edge/support#operating-systems)。

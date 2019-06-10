@@ -6,17 +6,17 @@ ms.topic: article
 description: 了解如何设置使用 Windows 10 IoT Core 你 Dragonboard。
 keywords: Windows 10 IoT Core Dragonboard
 ms.custom: RS5
-ms.openlocfilehash: 8e4acc77d902124934e1bdae249f76c7f76306a6
-ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
+ms.openlocfilehash: 3630ddad61ac34feeed3bf3c5b602c6c39245151
+ms.sourcegitcommit: dcaeaa6c5e84dd6a4974a56098f3bab151209e41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66182269"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66760385"
 ---
 # <a name="setting-up-a-dragonboard"></a>设置 Dragonboard
 
 > [!IMPORTANT]
-> 当您正在使用新 Dragonboard 时，它还提供安装 Android。 需要擦除并加载使用 eMMC 闪烁方法的设备。
+> 当您正在使用新 Dragonboard 时，它还提供安装 Android。 需要擦除并加载设备使用闪烁的方法，eMMC[此处](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/qualcomm)。
 
 > [!NOTE]
 > 如果正运行带有你 DragonBoard 到任何音频相关的问题，我们建议你通读 Qualcomm 的手册[此处](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf)。 
