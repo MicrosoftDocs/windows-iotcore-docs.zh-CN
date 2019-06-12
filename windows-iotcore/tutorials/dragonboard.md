@@ -6,12 +6,12 @@ ms.topic: article
 description: 了解如何设置使用 Windows 10 IoT Core 你 Dragonboard。
 keywords: Windows 10 IoT Core Dragonboard
 ms.custom: RS5
-ms.openlocfilehash: 3630ddad61ac34feeed3bf3c5b602c6c39245151
-ms.sourcegitcommit: dcaeaa6c5e84dd6a4974a56098f3bab151209e41
+ms.openlocfilehash: 6488237a41f42c7acbe9e5e1c68466548577ab38
+ms.sourcegitcommit: fa4a29fcd5af464924a0a5ab581f08f631a3ad72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66760385"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835599"
 ---
 # <a name="setting-up-a-dragonboard"></a>设置 Dragonboard
 
@@ -42,7 +42,7 @@ Flash，或下载，IoT 核心版到你 MinnowBoard，你将需要：
 4. 挂接到外部显示器你 DragongBoard。
 5. 使用 12V 你 Dragonboard 开机 (> 1A) 在按下向上 （+） 的卷的电源按钮。 设备-连接到显示-时应显示一把铁锤、 闪电，齿轮图标的图像。
 6. 设备现在应可以看到如下所示的仪表板上。 选择适当的设备。
-7. 接受软件 licnse 条款，然后单击**下载并安装**。 你将看到 Windows 10 IoT Core 现在闪到你的设备上。
+7. 接受软件许可条款，然后单击**下载并安装**。 你将看到 Windows 10 IoT Core 现在闪到你的设备上。
 
 ![在闪存模式下的 DragonBoard](../media/DeviceSetup/db4.png)
 

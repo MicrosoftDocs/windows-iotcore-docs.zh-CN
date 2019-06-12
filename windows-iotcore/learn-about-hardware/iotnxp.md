@@ -6,12 +6,12 @@ ms.date: 02/22/2019
 ms.topic: article
 description: 了解 Windows 10 IoT 核心版和 NXP i.MX Soc
 keywords: Windows 10 IoT 核心版，开始，i.MX，NXP
-ms.openlocfilehash: 7b78aee0e67e481de38ade9b3fd6007baa8b0c9b
-ms.sourcegitcommit: 87c60bb857cb025255f4f06094c888384a0bb562
+ms.openlocfilehash: b27589d574db0f459e42d4a8170defa2689fa001
+ms.sourcegitcommit: fa4a29fcd5af464924a0a5ab581f08f631a3ad72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940668"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835593"
 ---
 # <a name="window-10-iot-core-and-nxp-imx-socs"></a>窗口 10 IoT 核心版和 NXP i.MX Soc
 
@@ -24,7 +24,7 @@ ms.locfileid: "65940668"
 
 ## <a name="bsp-access"></a>BSP 访问
 
-如果您想要启用对 i.MX 硬件的支持，请访问 BSP 源和文档上[Github]( https://github.com/ms-iot/imx-iotcore)。 除非另有说明，大多数源 MIT 许可证下提供。 代码仍处于开发阶段。 并非所有平台功能完全启用或优化。 代码当前适用于非商业开发仅在时间时。 专业质量的发行版预计在 2019年更高版本。
+如果您想要启用对 i.MX 硬件的支持，请访问 BSP 源和文档上[Github]( https://github.com/ms-iot/imx-iotcore)。 除非另有说明，大多数源 MIT 许可证下提供。 代码商业使用随 NXP 提供支持，可在[此处](https://www.nxp.com/support/developer-resources/evaluation-and-development-boards/i.mx-evaluation-and-development-boards/i.mx-software-and-development-tool:IMX-SW)。
 
 如果你有 NXP 硬件/BSP 报告相关问题或反馈上 BSP 可以更好地支持你有针对性的解决方案，请将问题发布到[NXP 社区](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D)。 对于任何 Windows 相关的问题，请使用[Microsoft Community](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)。
 

@@ -6,12 +6,12 @@ ms.topic: article
 description: 了解有关如何设置使用 Windows 10 IoT Core Qualcomm 设备。
 keywords: Windows 10 IoT Core Qualcomm
 ms.custom: RS5
-ms.openlocfilehash: 42ccf65023b2742fc584760d09f679c4f6a5b197
-ms.sourcegitcommit: dcaeaa6c5e84dd6a4974a56098f3bab151209e41
+ms.openlocfilehash: 02f6c013c428a271d3b3956c88edc1ce8f4fdbf2
+ms.sourcegitcommit: fa4a29fcd5af464924a0a5ab581f08f631a3ad72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66760370"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835617"
 ---
 # <a name="setting-up-a-qualcomm-device"></a>Qualcomm 设备设置
 
@@ -25,10 +25,10 @@ ms.locfileid: "66760370"
 1. 下载并安装 DragonBoard 更新工具为你[x86](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x86.zip)或[x64](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x64.zip)机。
 2. 下载[Windows 10 IoT 核心 DragonBoard FFU](https://docs.microsoft.com/en-us/windows/iot-core/downloads)。
 3. 双击下载的 ISO 文件并找到已装载的虚拟 CD 的驱动器。 此驱动器将包含的安装程序文件 (.msi);双击该文件。 这将创建一个新的目录下在电脑上 `C:\Program Files (x86)\Microsoft IoT\FFU\`中应看到图像文件、"flash.ffu"。
-4. 请确保你 DragonBoard 是在下载模式下设置首次启动板上切换到 USB 启动，如下所示。 然后，连接 DragonBoard 宿主 PC 通过 microUSB 电缆，然后插入到 12V DragonBoard (> 1A) 电源。
+4. 请确保你 DragonBoard 是在下载模式下设置首次启动板上切换到 USB 启动，如下所示。 然后，将 DragonBoard 连接到宿主 PC 通过 microUSB 电缆，然后插入到 12V DragonBoard (> 1A) 电源。
 5. 启动 DragonBoard 更新工具，它应检测 DragonBoard 连接到您的 PC 的绿色圆圈。 "浏览"到 DragonBoard FFU 下载，然后单击_程序_按钮。
 6. 再次单击"浏览"，然后选择"rawprogram0.xml"已在步骤 5 中生成。 然后单击"计划"按钮。
-7. 下载完成后，从 USB 启动切换回的看板和切换断开电源供应和 microUSB 线_OFF_。 连接到 DragonBoard 和 rec onnect 电源 HDMI 显示器、 鼠标和键盘。 几分钟后，您应该看到 Windows 10 IoT 核心版默认应用程序。 
+7. 下载完成后，从 USB 启动切换回的看板和切换断开电源供应和 microUSB 线_OFF_。 HDMI 显示、 鼠标和键盘连接到 DragonBoard 并重新连接电源。 几分钟后，您应该看到 Windows 10 IoT 核心版默认应用程序。 
 
 ![在下载模式下的 DragonBoard](../media/DeviceSetup/db1.png)
 
