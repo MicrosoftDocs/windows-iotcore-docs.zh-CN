@@ -7,12 +7,12 @@ ms.date: 08/28/2017
 ms.topic: landing page
 description: 这是 Windows 10 IoT 核心版开发人员文档登陆页。
 keywords: windows iot, 开发人员文档, docs, IoT 核心版
-ms.openlocfilehash: 6c4066472322bf6b1c61fd85f26fe99e9629573c
-ms.sourcegitcommit: 87c60bb857cb025255f4f06094c888384a0bb562
+ms.openlocfilehash: 21a4e69de9f06844258d2579551dab6800ba725d
+ms.sourcegitcommit: fa4a29fcd5af464924a0a5ab581f08f631a3ad72
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940672"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835583"
 ---
 # <a name="windows-10-iot-documentation"></a>Windows 10 IoT 文档
 
@@ -132,4 +132,5 @@ Windows 10 IoT 提供了两个版本 - Windows 10 IoT 核心版和 Windows 10 Io
 ---
 
 <h2>Bug？ 建议？</h2>
-<p>如果在使用 Windows 10 IoT 核心版时遇到任何问题或 bug，请将问题发布在<a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT">此处</a>的 MSDN 论坛。 
+<p>如果在使用 Windows 10 IoT 核心版时遇到任何问题或 bug，请将其发布在<a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT">此处</a>的 MSDN 论坛上。</p>
+<p>如果有任何建议，请将其发布到<a href="https://wpdev.uservoice.com/forums/110705-universal-windows-platform?category_id=364159">此处</a>的 UserVoice 页面。</p>
