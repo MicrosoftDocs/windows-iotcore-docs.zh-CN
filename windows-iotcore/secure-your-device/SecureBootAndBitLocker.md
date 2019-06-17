@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何启用安全引导、 BitLocker 和 Windows 10 IoT Core 上的 Device Guard
 keywords: windows iot，安全启动，BitLocker，设备保护、 安全性、 交钥匙安全
-ms.openlocfilehash: 300f47ecb3d6c67f467174c230c56a15a1d0f4a1
-ms.sourcegitcommit: 5a103405cbc5c61101139aff6aaa709bd4ef9582
+ms.openlocfilehash: 26e0949dd8ee0a8cfec8aeafee3908a3ade86293
+ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66694134"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67142365"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>启用安全启动、 BitLocker 和 Windows 10 IoT Core 上的设备保护
 
@@ -206,7 +206,7 @@ Windows 10 IoT 核心版适用于在数百个设备中利用的各种 silicons�
 7. 重新启动设备再次激活 Bitlocker 加密。
 8. 测试的安全功能
     * SecureBoot： 尝试`bcdedit /debug on`，您将获得一个错误，指出值受安全启动策略
-    * BitLocker：运行`fvecon -status c:`，你将获得状态提及*上加密、 已恢复数据 （外部密钥）、 具有 TPM 数据、 安全、 启动分区、 仅已用空间*
+    * BitLocker：运行`start /wait sectask.exe -waitencryptcomplete:1`，如果 ERRORLEVEL 为`-2147023436`(ERROR_TIMEOUT) 然后加密并不完整。 当从.cmd 文件运行 sectask.exe 时省略`start /wait`。
     * DeviceGuard:运行未签名的任何二进制文件或使用不在 SIPolicy 列表中的证书签名的二进制文件并确认它无法运行。
 
 ### <a name="generate-lockdown-image"></a>生成锁定映像
