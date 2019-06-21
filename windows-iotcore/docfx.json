@@ -43,7 +43,16 @@
       "ms.technology": "IoT",
       "titleSuffix": "Windows IoT"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+       "open_to_public_contributors": {
+         "./*.md": true,
+         "tutorials/*.md": true,
+         "tutorials/quickstarter/**.md": true,
+         "release-notes/*.md": true,
+         "release-notes/commercial/**.md": true,
+         "release-notes/insider/**.md": true
+        }
+    },
     "template": [],
     "dest": "windows-iotcore",
     "markdownEngineName": "markdig"
