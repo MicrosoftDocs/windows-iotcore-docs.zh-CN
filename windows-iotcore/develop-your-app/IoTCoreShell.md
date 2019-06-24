@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何利用 IoT 外壳程序，以在设备上的导航之间导航。
 keywords: windows iot，IoT core 命令行程序、 应用程序、 前台应用程序、 后台应用程序
-ms.openlocfilehash: be72fabc91fc5748a029b61ebd9a306deb23f726
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 74d8406036aa18dc5f8dcaa871e116eb7f8ec29b
+ms.sourcegitcommit: beed912a2266d6dbc06a8a26b85ff49f1feffd69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510875"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316632"
 ---
 # <a name="iot-shell-overview"></a>IoT Shell 概述
 
@@ -31,7 +31,7 @@ IoT Core 设备运行 IoT Shell。 它有许多职责，但它主要工作是确
 
 目前，启动应用，可创建适用于 Windows 10 IoT Core，可用于不同前台应用程序间切换主应用。 
 
-**IoT 启动应用程序**([示例](https://developer.microsoft.com/en-us/windows/iot/samples/iotstartapp)表示一个简单的启动应用，它列出在设备上已安装的应用，然后启动一个使用 PackageManager Api。
+**IoT 启动应用程序**([示例](https://github.com/microsoft/Windows-iotcore-samples/tree/master/Samples/IoTStartApp)表示一个简单的启动应用，它列出在设备上已安装的应用，然后启动一个使用 PackageManager Api。
 
 ## <a name="switching-between-apps-with-hid-injection-keys"></a>应用与 HID 注入密钥之间切换
 
@@ -66,8 +66,7 @@ IoT Core 设备运行 IoT Shell。 它有许多职责，但它主要工作是确
 “NEXT” QWORD 0x00020000 00050009 
 ``
 
-为 REG 文件，这种情况，如下所示：
-``
+为 REG 文件，这种情况，如下所示： ``
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\HotKeys]
 "Prev"=hex(b):09,00,01,00,00,00,01,00
 "Next"=hex(b):09,00,05,00,00,00,02,00

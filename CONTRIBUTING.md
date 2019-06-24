@@ -1,82 +1,82 @@
-# <a name="contributing-to-the-windows-10-iot-documentation"></a>参与 Windows 10 IoT 文档
+# <a name="contributing-to-the-windows-10-iot-documentation"></a>参与撰写 Windows 10 IoT 文档
 
-感谢您对我们的文档的关注。 我们非常感谢你的反馈，编辑、 新增功能和改进我们的文档的帮助。此页介绍的基本步骤和做出贡献的指导原则。
+感谢你对我们的文档的关注。 感谢你为了改进我们的文档而提供的反馈、编辑内容、添加内容以及帮助。本页涵盖投稿的基本步骤和指南。
 
-## <a name="sign-a-cla"></a>签订 CLA
+## <a name="sign-a-cla"></a>签署 CLA
 
-如果你要参与多个几行，并且你不是 Microsoft 员工，需要[签署 Microsoft 贡献许可协议 (CLA)](https://cla.microsoft.com/)。 
+如果你希望贡献不止数行的内容，但你不是 Microsoft 员工，则需[签署 Microsoft 投稿许可协议 (CLA)](https://cla.microsoft.com/)。 
 
-## <a name="proposing-a-change"></a>建议进行更改
+## <a name="proposing-a-change"></a>建议一项更改
 
-建议对文档进行更改，请执行以下步骤：
+若要建议更改文档，请按以下步骤操作：
 
-1. 如果您正在查看 Docs.microsoft.com 页上，单击**编辑**中的页面右上角的按钮。  您将重定向到对应的 Markdown 源文件中[GitHub 存储库](https://github.com/MicrosoftDocs/windows-iotcore-docs)。  如果已在 GitHub 存储库中，您可以只需导航到想要更改的源文件。
-2. 如果还没有 GitHub 帐户，请单击**注册**右上角权限，并创建新的帐户。
-3. 从你想要更改的 GitHub 页上，单击铅笔图标。 
-4. 修改文件，并使用预览选项卡来确保所做的更改显示良好。
+1. 如果你是在查看 Docs.microsoft.com 页面，请单击页面右上角的“编辑”  按钮。  我们会将你重定向到 [GitHub 存储库](https://github.com/MicrosoftDocs/windows-iotcore-docs)中的相应 Markdown 源文件。  如果已经在 GitHub 存储库中，则可直接导航到要更改的源文件。
+2. 如果还没有 GitHub 帐户，请单击右上角的“注册”，创建一个新帐户。 
+3. 在要更改的 GitHub 页中，单击铅笔图标。 
+4. 修改文件，使用预览选项卡来确保所做的更改看起来是合适的。
 5. 完成后，提交所做的更改并打开一个拉取请求。
 
-创建拉取请求后，将检查 Windows 10 IoT 团队的成员。 如果接受你的请求，则将更新发布到[ https://docs.microsoft.com/windows/iot-core ](https://docs.microsoft.com/windows/iot-core)。
+当你创建拉取请求之后，Windows 10 IoT 团队的成员会进行审查。 如果你的请求被接受，则更新会发布到 [https://docs.microsoft.com/windows/iot-core](https://docs.microsoft.com/windows/iot-core)。
 
-## <a name="making-more-substantial-changes"></a>进行更重大更改
+## <a name="making-more-substantial-changes"></a>进行更重大的更改
 
-若要对现有文章进行重大更改、 添加或更改图像，或参与新的项目，我们建议在存储库分叉到 GitHub 帐户 (单击右上角的"分叉"按钮[GitHub 存储库](https://github.com/MicrosoftDocs/windows-iotcore-docs)，，然后创建本地克隆 (单击绿色的"克隆或下载"按钮，复制到剪贴板，然后在你的命令行中输入`git clone <paste your repo clone link>`)。
+若要对现有文章进行重大更改、添加或更改图像或是进行新文章投稿，建议将存储库的分支放置到 GitHub 帐户中，方法是：单击 [GitHub 存储库](https://github.com/MicrosoftDocs/windows-iotcore-docs)右上角的“分支”按钮，然后创建本地克隆（单击绿色的“克隆或下载”按钮，将内容复制到剪贴板中，然后在命令行中输入 `git clone <paste your repo clone link>`）。
 
-我们还要求的补充新文章，问问自己以下问题之前...
-* 已包含一个，并且只有一个 # 级别标题 （相当于以 html 格式的 H1）？ 
-* 是 （如果适用） 谓词时态我现在时中并与其他文档一致的新文章的标题中？
-* 所有我语法是否正确？
-* 具有我添加我的文章-如果补充新文章-到相应的类别以及更新 TOC.md？
-* 我具有正确格式的 Url[如下所示](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md)而不是这样： https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md
-* 您是否有至少两个审阅者评审新项目？
-* 联系过 Sara (saclayt) 或 Namrata (namkedia) 如果您不确定的任何内容？
+我们还要求你在进行新文章投稿时，询问自己以下问题：
+* 我是否已提供一个（仅一个）# 级标题（等同于 HTML 中的 H1）？ 
+* 我新文章的标题中的动词时态（如果适用）是否采用现在时且与其他文档一致？
+* 我的语法是否全都正确？
+* 我是否已将文章（如果是进行新文章投稿）添加到适当的类别并更新了 TOC.md？
+* 我是否已正确设置 URL 的格式，使之[看起来像这样](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md)而不是这样： https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md ？
+* 你是否已安排至少两个人对你的新文章进行评审？
+* 你是否在有疑问的情况下联系过 Sara (saclayt) 或 Namrata (namkedia)？
 
-新文章 does 获取接受，我们的建议如下：
-* 与团队共享文章 ！ 不能隐藏所有人-让你知道的对等方。
-* 通过在注释框下单击"关注"按钮，按照您的文章的注释。 这样一来，您将保持更新您的文章可能会收到的注释。
+如果我们接受了你的新文章，建议你：
+* 将文章与你的团队共享！ 不要隐藏你的成就 - 让你的同事知道。
+* 单击评论框下的“关注”按钮，关注文章的评论。 这样就可以即时了解文章获得的评论。
 
-有关详细信息，请参阅[存储库分叉](https://help.github.com/articles/fork-a-repo/)。 请注意，我们不会合并活动分支上的任何 Pr。 请确保您要提交到主分支的拉取请求。
+有关详细信息，请参阅 [Fork a Repo](https://help.github.com/articles/fork-a-repo/)（创建存储库分支）。 请注意，我们不会合并活动分支上的任何 PR。 请务必将 PR 提交到主分支。
 
-如果您不熟悉使用 Git，请尝试[Lynda.com Git Essentials 培训](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html)。
+如果不熟悉 Git 的使用，请尝试观看 [Lynda.com 的 Git 基础知识培训](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html)。
 
-## <a name="authoring-your-contribution"></a>创作您的发布内容
+## <a name="authoring-your-contribution"></a>创作稿件
 
-分叉并存储库克隆到本地计算机后，您可以开始创作与所选的文本编辑器。  我们，当然，建议[Visual Studio Code](https://code.visualstudio.com/)，来自 Microsoft 的轻量的免费开放源代码编辑器。 有关 markdown 创作帮助，请查看此[Markdown 的每个人都很有趣 ！海报](windows-iotcore/media/DocsMarkdownPoster.pdf)所有需要了解的基础知识。 甚至可以打印和贴在墙上挂起提醒您参与。 
+创建存储库的分支并将存储库克隆到本地计算机以后，即可使用所选文本编辑器进行创作。  当然，我们会建议你使用 [Visual Studio Code](https://code.visualstudio.com/)，这是 Microsoft 提供的免费轻型开源编辑器。 如需 Markdown 创作方面的帮助，请查看这张 [Markdown is FUN for Everyone!海报](windows-iotcore/media/DocsMarkdownPoster.pdf)，其中包含你需要知道的所有基本信息。 你甚至可以将它打印出来挂在墙上，提醒你投稿。 
 
-## <a name="submitting-your-contribution-and-filing-a-pull-request-pr"></a>提交您的发布内容并提交拉取请求 (PR)
+## <a name="submitting-your-contribution-and-filing-a-pull-request-pr"></a>提交稿件和拉取请求 (PR)
 
-若要将所做的更改添加到远程存储库，以便它们将分阶段实现发布准备就绪后，在命令行中输入以下步骤：
-- `git status`：此命令将显示哪些文件已更改，以便你可以确认自己想要进行这些更改。 
-- `git add -A`：此命令指示 git 进行添加所有所做的更改。 如果您希望仅添加到一个特定的文件所做的更改，而是输入以下命令： `git add <file.md>`，其中"file.md"表示名称包含所做的更改的文件。
-- `git commit -m “Fixed a few typos”`：此命令指示 git 提交更改添加在上一步骤中，以及描述你所做的更改的简短消息。
-- `git push origin <yourbranchname>`：此命令将所做的更改推送到你指定的分支到分叉 GitHub ("origin") 的远程存储库。 因为您已分叉到 GitHub 帐户的存储库，你也可以完成工作**开发**分支。 
+准备将更改添加到远程存储库暂存以待发表后，请在命令行中输入以下步骤：
+- `git status`：此命令会显示你更改了哪些文件，目的是让你确认确实要进行这些更改。 
+- `git add -A`：此命令要求 git 添加你的所有更改。 如果只希望添加对某个具体文件的更改，可以改为输入 `git add <file.md>` 命令，其中的“file.md”表示包含更改内容的文件的名称。
+- `git commit -m “Fixed a few typos”`：此命令要求 git 提交你在上一步添加的更改，并附上一条说明所做更改的短消息。
+- `git push origin <yourbranchname>`：此命令将你对远程存储库（即“原始存储库”，已在 GitHub 上创建其分支）所做的更改推送到指定的分支中。 由于你已创建存储库的分支并将其放置到你自己的 GitHub 帐户中，因此你可以在“开发”分支中完成自己的工作。  
 
-如果要满意所做的更改并准备好提交 PR:
-- 转到的 IoT 存储库分叉： https://github.com/your-github-alias/windows-iotcore-docs。
-- 单击"新建拉取请求"按钮。 ("基分支:"将被列为"MicrosoftDocs/windows iotcore 的文档"，"头分支:"应显示在存储库和分支所做更改的分支。)还可以查看所做更改。 
-- 单击绿色的"创建拉取请求"按钮。 然后将需要为你的拉取请求，标题和说明，然后单击"创建拉取请求"按钮一次。
+如果对所做的更改满意并准备提交 PR，请执行以下操作：
+- 转到 IoT 存储库的分支： https://github.com/your-github-alias/windows-iotcore-docs 。
+- 单击“新建拉取请求”按钮。 （“基分支:”会被列为“MicrosoftDocs/windows-iotcore-docs”，“头分支:”会显示你的存储库分支以及在其中进行了更改的分支。）也可在此处查看所做的更改。 
+- 单击绿色的“创建拉取请求”按钮。 此时系统会要求你为拉取请求提供标题和说明，然后再次单击“创建拉取请求”按钮。
 
-之后将您的发布内容推送到远程存储库，你将发送的电子邮件*打开发布的生成服务*通知您的发布内容是否已成功生成，并链接到任何错误警告，例如断开的链接，请单击若要查看在站点上暂存内容的链接。
+当你将稿件推送到远程存储库以后，*Open Publishing Build Service* 会向你发送一封电子邮件，告知你投稿是否成功，并提供指向错误警告（例如链接失效）的链接。单击这些链接即可查看暂存在站点上的内容。
 
-一旦您在检查了您的发布内容[Windows 10 IoT Docs 暂存站点](https://review.docs.microsoft.com/en-us/windows/iot-core/)并且可以确信，你想要实时发布所做的更改，你必须提交拉取请求 (PR)。
+查看 [Windows 10 IoT Docs 暂存站点](https://review.docs.microsoft.com/en-us/windows/iot-core/)上的稿件并决定实时发布所做的更改以后，你必须提交拉取请求 (PR)。
 
-PR 提交后，将检查 Windows 10 IoT 文档团队的成员。 它接受后，你将能够查看所做的更改上[过渡站点](https://review.docs.microsoft.com/en-us/windows/iot-core)。 这些更新将最终发布实时到[ https://docs.microsoft.com/windows/iot-core ](https://docs.microsoft.com/windows/iot-core)。
+当你提交 PR 之后，Windows 10 IoT Docs 团队的成员会进行审查。 如果我们接受了该 PR，你就可以在[暂存站点](https://review.docs.microsoft.com/en-us/windows/iot-core)上查看所做的更改。 这些更新最终会实时发布到 [https://docs.microsoft.com/windows/iot-core](https://docs.microsoft.com/windows/iot-core)。
 
-## <a name="working-with-branches"></a>如何使用分支
+## <a name="working-with-branches"></a>使用分支
 
-[Windows 10 IoT Docs GitHub 存储库](https://github.com/MicrosoftDocs/windows-iotcore-docs)利用两个主要的父分支：[开发](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/develop)，可以在查看此内容[过渡站点](https://review.docs.microsoft.com/en-us/windows/iot-core)，和[Live](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/live)，内容显示在[实时站点](https://docs.microsoft.com/windows/iot-core)。 
+[Windows 10 IoT Docs GitHub 存储库](https://github.com/MicrosoftDocs/windows-iotcore-docs)使用两个主要的父分支：一个是[开发](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/develop)分支，其内容可以在[暂存站点](https://review.docs.microsoft.com/en-us/windows/iot-core)上查看；另一个是[实时](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/live)分支，其内容显示在[实时站点](https://docs.microsoft.com/windows/iot-core)上。 
 
-发布内容时，请提交拉取请求 (PR) 到**开发**分支。 此分支可以在过渡网站上查看，并且应仅包含已准备好进行实时发布的发布内容。
+投稿时，请将拉取请求 (PR) 提交到**开发**分支。 此分支可以在暂存站点上查看，应该只包含即将实时发布的稿件。
 
-## <a name="using-issues-to-provide-feedback-on-iot-documentation"></a>使用问题来提供有关 IoT 文档的反馈
+## <a name="using-issues-to-provide-feedback-on-iot-documentation"></a>以问题形式提供 IoT 文档反馈
 
-若要提供反馈而不是直接修改的实际文档页面[创建一个问题](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues)。
+若要提供反馈而不是直接修改实际文档页面，请[创建一个问题](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues)。
 
 请务必包含主题标题和页面的 URL。
 
 ## <a name="additional-resources"></a>其他资源
-- [编写和 GitHub 上格式设置入门](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+- [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)（GitHub 写作和格式设置入门）
 
-## <a name="additional-resources-for-microsoft-employees"></a>对于 Microsoft 员工的其他资源
-- [连接你的 GitHub 帐户和 MS 别名](https://review.docs.microsoft.com/en-us/windows-authoring-guide/github-account#2-connect-your-github-account-and-ms-alias-on-the-microsoft-open-source-portal)
-- [用于编写 Markdown 资源](https://review.docs.microsoft.com/en-us/windows-authoring-guide/writing-guidance/writing-markdown)
+## <a name="additional-resources-for-microsoft-employees"></a>Microsoft 员工的其他资源
+- [关联 GitHub 帐户和 MS 别名](https://review.docs.microsoft.com/en-us/windows-authoring-guide/github-account#2-connect-your-github-account-and-ms-alias-on-the-microsoft-open-source-portal)
+- [编写 Markdown 的资源](https://review.docs.microsoft.com/en-us/windows-authoring-guide/writing-guidance/writing-markdown)
