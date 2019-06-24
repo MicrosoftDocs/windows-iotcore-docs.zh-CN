@@ -1,129 +1,129 @@
 ---
-title: 发行说明生成 17763.253
+title: 内部版本 17763.253 发行说明
 author: zeeshanfurqan
 ms.author: zeeshan.furqan
 ms.date: 02/14/2019
 ms.topic: article
-description: 阅读并了解有关新增功能 Windows Insider 生成号 17763.253 中的新增功能
-keywords: windows iot、 Windows 预览体验，发行说明
+description: 阅读并了解 Windows 预览体验成员内部版本号 17763.253 的新增功能。
+keywords: windows iot, Windows 预览体验成员, 发行说明
 ms.openlocfilehash: dde4089d16ff552e665d341b432f663293ede6b8
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
-ms.translationtype: MT
+ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510759"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "60168985"
 ---
-# <a name="release-notes-for-build-17763253"></a><span data-ttu-id="c10ac-104">发行说明生成 17763.253</span><span class="sxs-lookup"><span data-stu-id="c10ac-104">Release Notes for Build 17763.253</span></span>
-_<span data-ttu-id="c10ac-105">生成号 17763.253。</span><span class="sxs-lookup"><span data-stu-id="c10ac-105">Build Number 17763.253.</span></span> <span data-ttu-id="c10ac-106">2019 年 2 月。</span><span class="sxs-lookup"><span data-stu-id="c10ac-106">February 2019.</span></span>_
+# <a name="release-notes-for-build-17763253"></a><span data-ttu-id="7ebf1-104">内部版本 17763.253 发行说明</span><span class="sxs-lookup"><span data-stu-id="7ebf1-104">Release Notes for Build 17763.253</span></span>
+<span data-ttu-id="7ebf1-105">_内部版本号 17763.253。2019 年 2 月。_</span><span class="sxs-lookup"><span data-stu-id="7ebf1-105">_Build Number 17763.253. February 2019._</span></span>
 
-<span data-ttu-id="c10ac-107">&copy; 2019 Microsoft Corporation.</span><span class="sxs-lookup"><span data-stu-id="c10ac-107">&copy; 2019 Microsoft Corporation.</span></span> <span data-ttu-id="c10ac-108">保留所有权利。</span><span class="sxs-lookup"><span data-stu-id="c10ac-108">All rights reserved.</span></span>
+<span data-ttu-id="7ebf1-106">&copy; 2019 Microsoft Corporation。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-106">&copy; 2019 Microsoft Corporation.</span></span> <span data-ttu-id="7ebf1-107">保留所有权利。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-107">All rights reserved.</span></span>
 
-<span data-ttu-id="c10ac-109">本文档提供最新进展或其他信息，用于补充 Windows 10 IoT 核心版随附的文档。</span><span class="sxs-lookup"><span data-stu-id="c10ac-109">This document provides late-breaking or other information that supplements the documentation included with the Windows 10 IoT Core.</span></span>
+<span data-ttu-id="7ebf1-108">本文档提供最新进展或其他信息，用于补充 Windows 10 IoT 核心版随附的文档。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-108">This document provides late-breaking or other information that supplements the documentation included with the Windows 10 IoT Core.</span></span>
 
-<span data-ttu-id="c10ac-110">感谢下载 Windows 10 IoT 核心版。</span><span class="sxs-lookup"><span data-stu-id="c10ac-110">Thank you for downloading Windows 10 IoT Core.</span></span> <span data-ttu-id="c10ac-111">Windows 10 IoT 核心版是用于开发嵌入式或专用设备的 Windows 10 版本，可供制造商社区选择使用。</span><span class="sxs-lookup"><span data-stu-id="c10ac-111">Windows 10 IoT Core is the version of Windows 10 intended for development of embedded or dedicated purpose devices and the choice for the Maker community.</span></span> <span data-ttu-id="c10ac-112">此版本中的包包含的工具和 Minnowboard 最大平台基于 Intel Atom 处理器 Raspberry Pi 2/3 基于 Broadcom 2836/2837 和 Dragonboard 410 c 基于 Qualcomm Snapdragon 400 系列上安装 Windows 10 IoT 核心版所需的内容处理器。</span><span class="sxs-lookup"><span data-stu-id="c10ac-112">The packages within this release contain tools and content needed to install Windows 10 IoT Core on Minnowboard Max platform based on Intel Atom processers, Raspberry Pi 2/3 based on Broadcom 2836/2837, and Dragonboard 410c based on Qualcomm Snapdragon 400 series processors.</span></span>
-
-
-## <a name="privacy-statement"></a><span data-ttu-id="c10ac-113">隐私声明</span><span class="sxs-lookup"><span data-stu-id="c10ac-113">Privacy Statement</span></span>
-
-<span data-ttu-id="c10ac-114">可以查看此版本的 Windows 操作系统的隐私声明[此处](http://go.microsoft.com/fwlink/?LinkId=506737)。</span><span class="sxs-lookup"><span data-stu-id="c10ac-114">The privacy statement for this version of the Windows operating system can be viewed [here](http://go.microsoft.com/fwlink/?LinkId=506737).</span></span>
-
-<span data-ttu-id="c10ac-115">可通过将正向链接粘贴到浏览器窗口中，查看链接的条款。</span><span class="sxs-lookup"><span data-stu-id="c10ac-115">You can review linked terms by pasting the forward link into your browser window.</span></span>
-
-## <a name="whats-new-in-this-build"></a><span data-ttu-id="c10ac-116">什么是此生成中的新增功能：</span><span class="sxs-lookup"><span data-stu-id="c10ac-116">What's new in this build:</span></span> 
-* <span data-ttu-id="c10ac-117">一般性的 bug 修复</span><span class="sxs-lookup"><span data-stu-id="c10ac-117">General bug fixes</span></span> 
+<span data-ttu-id="7ebf1-109">感谢下载 Windows 10 IoT 核心版。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-109">Thank you for downloading Windows 10 IoT Core.</span></span> <span data-ttu-id="7ebf1-110">Windows 10 IoT 核心版是用于开发嵌入式或专用设备的 Windows 10 版本，可供制造商社区选择使用。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-110">Windows 10 IoT Core is the version of Windows 10 intended for development of embedded or dedicated purpose devices and the choice for the Maker community.</span></span> <span data-ttu-id="7ebf1-111">此版本中的程序包包含的工具和内容是在基于 Intel Atom 处理器的 Minnowboard Max 平台上、基于 Broadcom 2836/2837 的 Raspberry Pi 2/3 上以及基于 Qualcomm Snapdragon 400 系列处理器的 Dragonboard 410c 上安装 Windows 10 IoT 核心版所需的。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-111">The packages within this release contain tools and content needed to install Windows 10 IoT Core on Minnowboard Max platform based on Intel Atom processers, Raspberry Pi 2/3 based on Broadcom 2836/2837, and Dragonboard 410c based on Qualcomm Snapdragon 400 series processors.</span></span>
 
 
-## <a name="additional-information"></a><span data-ttu-id="c10ac-118">其他信息</span><span class="sxs-lookup"><span data-stu-id="c10ac-118">Additional Information</span></span>
-* <span data-ttu-id="c10ac-119">使用我们的龙第板映像的 BSP 版本是 2120.0.0.0。</span><span class="sxs-lookup"><span data-stu-id="c10ac-119">The BSP version used for our Dragon Board image is 2120.0.0.0.</span></span> 
+## <a name="privacy-statement"></a><span data-ttu-id="7ebf1-112">隐私声明</span><span class="sxs-lookup"><span data-stu-id="7ebf1-112">Privacy Statement</span></span>
 
-## <a name="known-issues-in-this-build"></a><span data-ttu-id="c10ac-120">此版本中的已知问题：</span><span class="sxs-lookup"><span data-stu-id="c10ac-120">Known issues in this build:</span></span>
-* <span data-ttu-id="c10ac-121">从 Visual Studio 的 F5 驱动程序部署不适用于 IoT Core。</span><span class="sxs-lookup"><span data-stu-id="c10ac-121">F5 driver deployment from Visual Studio does not work on IoT Core.</span></span>
-* <span data-ttu-id="c10ac-122">通过 NOOBS 安装的设备不能运行 bcdedit 工具来启用内核调试程序。</span><span class="sxs-lookup"><span data-stu-id="c10ac-122">Devices that were installed via NOOBS cannot run the bcdedit tool to enable the kernel debugger.</span></span> <span data-ttu-id="c10ac-123">这可以通过以下解决方法: \* \* 在电脑上装载的 SD 卡 \* \* 找到 EFIESP 驱动器分区带有 diskpart 或磁盘管理 （例如它是"m:"） \* \* 运行命令"bcdedit /store M:\EFI\Microsoft\boot\bcd /set {default} debug 是"\* \* 卸载 SD 卡。</span><span class="sxs-lookup"><span data-stu-id="c10ac-123">This can be achieved with the following workaround: \*\*  Mount the SD card on your PC \*\*  Find the EFIESP drive partition number with diskpart or Disk Management (say it’s “M:”) \*\*  Run the command “bcdedit /store M:\EFI\Microsoft\boot\bcd /set {default} debug yes” \*\*  Unmount the SD card.</span></span>
-<span data-ttu-id="c10ac-124">\* \* 你现在应能够像往常一样将调试器连接</span><span class="sxs-lookup"><span data-stu-id="c10ac-124">\*\*  You should now be able to connect the debugger as usual</span></span>
-* <span data-ttu-id="c10ac-125">有时，PSSession 将中断时将命令发送到 IoT 设备。</span><span class="sxs-lookup"><span data-stu-id="c10ac-125">On occasion, PSSession will break when sending commands to IoT devices.</span></span>
-* <span data-ttu-id="c10ac-126">RPi3 不将 BT + BTLE 载入 Bluetooth 的搭配使用。</span><span class="sxs-lookup"><span data-stu-id="c10ac-126">RPi3 will not pair BT + BTLE with onboard Bluetooth.</span></span>
-* <span data-ttu-id="c10ac-127">无法通过使用 SoftAp Up2 WIFI 连接连接到 internet。</span><span class="sxs-lookup"><span data-stu-id="c10ac-127">Unable to connect to internet through WIFI connection with SoftAp of Up2.</span></span>
-* <span data-ttu-id="c10ac-128">亮度控制设置不会保留在 IoT 期间重写。</span><span class="sxs-lookup"><span data-stu-id="c10ac-128">Brightness control settings do not persist on IoT during Override.</span></span>
+<span data-ttu-id="7ebf1-113">可在[此处](http://go.microsoft.com/fwlink/?LinkId=506737)查看此 Windows 操作系统版本的隐私声明。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-113">The privacy statement for this version of the Windows operating system can be viewed [here](http://go.microsoft.com/fwlink/?LinkId=506737).</span></span>
+
+<span data-ttu-id="7ebf1-114">可通过将正向链接粘贴到浏览器窗口中，查看链接的条款。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-114">You can review linked terms by pasting the forward link into your browser window.</span></span>
+
+## <a name="whats-new-in-this-build"></a><span data-ttu-id="7ebf1-115">此内部版本的新增功能：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-115">What's new in this build:</span></span> 
+* <span data-ttu-id="7ebf1-116">常规 Bug 修复</span><span class="sxs-lookup"><span data-stu-id="7ebf1-116">General bug fixes</span></span> 
 
 
-## <a name="iot-core-general-known-issues-and-work-arounds"></a><span data-ttu-id="c10ac-129">常规 IoT 核心版的已知的问题和解决方法</span><span class="sxs-lookup"><span data-stu-id="c10ac-129">IoT Core general known issues and work arounds</span></span>
+## <a name="additional-information"></a><span data-ttu-id="7ebf1-117">其他信息</span><span class="sxs-lookup"><span data-stu-id="7ebf1-117">Additional Information</span></span>
+* <span data-ttu-id="7ebf1-118">用于 Dragon Board 映像的 BSP 版本为 2120.0.0.0。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-118">The BSP version used for our Dragon Board image is 2120.0.0.0.</span></span> 
 
-### <a name="for-raspberry-pi"></a><span data-ttu-id="c10ac-130">Raspberry pi</span><span class="sxs-lookup"><span data-stu-id="c10ac-130">For Raspberry Pi</span></span>
+## <a name="known-issues-in-this-build"></a><span data-ttu-id="7ebf1-119">此版本中的已知问题：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-119">Known issues in this build:</span></span>
+* <span data-ttu-id="7ebf1-120">不能在 IoT 核心版上通过 Visual Studio 进行 F5 驱动程序部署。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-120">F5 driver deployment from Visual Studio does not work on IoT Core.</span></span>
+* <span data-ttu-id="7ebf1-121">通过 NOOBS 安装的设备不能运行 bcdedit 工具来启用内核调试程序。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-121">Devices that were installed via NOOBS cannot run the bcdedit tool to enable the kernel debugger.</span></span> <span data-ttu-id="7ebf1-122">可以通过以下方法解决此问题：\*\*  将 SD 卡装载到电脑上 \*\*  通过 diskpart 或磁盘管理查找 EFIESP 驱动器分区号（假设它是“M:”）\*\*  运行“bcdedit /store M:\EFI\Microsoft\boot\bcd /set {default} debug yes”命令 \*\*  卸载 SD 卡。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-122">This can be achieved with the following workaround: \*\*  Mount the SD card on your PC \*\*  Find the EFIESP drive partition number with diskpart or Disk Management (say it’s “M:”) \*\*  Run the command “bcdedit /store M:\EFI\Microsoft\boot\bcd /set {default} debug yes” \*\*  Unmount the SD card.</span></span>
+<span data-ttu-id="7ebf1-123">\*\*  现在应该能够正常连接调试程序</span><span class="sxs-lookup"><span data-stu-id="7ebf1-123">\*\*  You should now be able to connect the debugger as usual</span></span>
+* <span data-ttu-id="7ebf1-124">有时候，在将命令发送到 IoT 设备时，PSSession 会中断。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-124">On occasion, PSSession will break when sending commands to IoT devices.</span></span>
+* <span data-ttu-id="7ebf1-125">RPi3 不会将 BT + BTLE 与板载蓝牙配对。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-125">RPi3 will not pair BT + BTLE with onboard Bluetooth.</span></span>
+* <span data-ttu-id="7ebf1-126">使用 Up2 的 SoftAp 时，无法通过 WIFI 连接连接到 Internet。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-126">Unable to connect to internet through WIFI connection with SoftAp of Up2.</span></span>
+* <span data-ttu-id="7ebf1-127">在重写时，亮度控制设置不保留在 IoT 上。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-127">Brightness control settings do not persist on IoT during Override.</span></span>
 
-#### <a name="raspberry-pi-display-resolution-if-monitor-is-disconnected"></a><span data-ttu-id="c10ac-131">Raspberry Pi 的显示分辨率如果断开连接监视器</span><span class="sxs-lookup"><span data-stu-id="c10ac-131">Raspberry Pi Display Resolution if monitor is disconnected</span></span> 
-<span data-ttu-id="c10ac-132">在 Raspberry Pi 如果断开连接监视器不能保持显示分辨率。</span><span class="sxs-lookup"><span data-stu-id="c10ac-132">The Raspberry Pi may not maintain Display Resolution if monitor is disconnected.</span></span> <span data-ttu-id="c10ac-133">监视器 EDID 用于设置系统的解决方法，当其中一个连接。</span><span class="sxs-lookup"><span data-stu-id="c10ac-133">The EDID of the monitor is used to set the resolution of the system when one is connected.</span></span> <span data-ttu-id="c10ac-134">当断开连接，Raspberry Pi 固件默认为根目录中的 SD 卡 config.txt 中内容。</span><span class="sxs-lookup"><span data-stu-id="c10ac-134">When disconnected, the Raspberry Pi firmware defaults to what is in the config.txt in the root of the SD card.</span></span> 
 
-#### <a name="raspberry-pi-video-performance"></a><span data-ttu-id="c10ac-135">Raspberry Pi 视频性能</span><span class="sxs-lookup"><span data-stu-id="c10ac-135">Raspberry Pi Video Performance</span></span> 
-<span data-ttu-id="c10ac-136">在 Raspberry Pi 的平台上的视频播放性能没有进行优化。</span><span class="sxs-lookup"><span data-stu-id="c10ac-136">Video playback performance on the Raspberry Pi platform is not optimized.</span></span><span data-ttu-id="c10ac-137">  动态用户元素（包括基于 XAML 的下拉菜单）可能表现不出最佳性能。</span><span class="sxs-lookup"><span data-stu-id="c10ac-137">  Animated user elements including XAML-based dropdown menus may exhibit less than optimal performance.</span></span> 
+## <a name="iot-core-general-known-issues-and-work-arounds"></a><span data-ttu-id="7ebf1-128">IoT 核心版常规已知问题和解决方法</span><span class="sxs-lookup"><span data-stu-id="7ebf1-128">IoT Core general known issues and work arounds</span></span>
+
+### <a name="for-raspberry-pi"></a><span data-ttu-id="7ebf1-129">对于 Raspberry Pi</span><span class="sxs-lookup"><span data-stu-id="7ebf1-129">For Raspberry Pi</span></span>
+
+#### <a name="raspberry-pi-display-resolution-if-monitor-is-disconnected"></a><span data-ttu-id="7ebf1-130">Raspberry Pi 显示器分辨率（在监视器断开连接的情况下）</span><span class="sxs-lookup"><span data-stu-id="7ebf1-130">Raspberry Pi Display Resolution if monitor is disconnected</span></span> 
+<span data-ttu-id="7ebf1-131">在监视器断开连接的情况下，Raspberry Pi 可能无法保持显示器分辨率。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-131">The Raspberry Pi may not maintain Display Resolution if monitor is disconnected.</span></span> <span data-ttu-id="7ebf1-132">在连接的情况下，监视器的 EDID 用于设置系统的分辨率。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-132">The EDID of the monitor is used to set the resolution of the system when one is connected.</span></span> <span data-ttu-id="7ebf1-133">断开连接时，Raspberry Pi 固件默认设置为 SD 卡根目录的 config.txt 中的值。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-133">When disconnected, the Raspberry Pi firmware defaults to what is in the config.txt in the root of the SD card.</span></span> 
+
+#### <a name="raspberry-pi-video-performance"></a><span data-ttu-id="7ebf1-134">Raspberry Pi 视频性能</span><span class="sxs-lookup"><span data-stu-id="7ebf1-134">Raspberry Pi Video Performance</span></span> 
+<span data-ttu-id="7ebf1-135">Raspberry Pi 平台上的视频播放性能未进行优化。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-135">Video playback performance on the Raspberry Pi platform is not optimized.</span></span><span data-ttu-id="7ebf1-136">  动态用户元素（包括基于 XAML 的下拉菜单）可能表现不出最佳性能。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-136">  Animated user elements including XAML-based dropdown menus may exhibit less than optimal performance.</span></span> 
  
-#### <a name="raspberry-pi-camera-support"></a><span data-ttu-id="c10ac-138">Raspberry Pi 相机支持</span><span class="sxs-lookup"><span data-stu-id="c10ac-138">Raspberry Pi Camera Support</span></span> 
-<span data-ttu-id="c10ac-139">照相机外围设备的支持是有限的。</span><span class="sxs-lookup"><span data-stu-id="c10ac-139">Support for camera peripheral devices is limited.</span></span> <span data-ttu-id="c10ac-140">由于平台来支持 D3D 现代 USB USB 主控制器上要求很高的网络摄像头生成数据流中的限制不支持直接连接到载入照相机总线 PiCam 设备。</span><span class="sxs-lookup"><span data-stu-id="c10ac-140">The PiCam device directly connected to the onboard camera bus is not supported due to limitations in the platform to support D3D Modern USB webcams produce data streams that are very demanding on the USB Host controller.</span></span><span data-ttu-id="c10ac-141">  即使摄像头结合使用低分辨率设置，还将需要其他 USB 微调和专用控件逻辑。</span><span class="sxs-lookup"><span data-stu-id="c10ac-141">  Even when used with low resolution settings webcams will require additional USB fine tuning and specialized control logic.</span></span> 
+#### <a name="raspberry-pi-camera-support"></a><span data-ttu-id="7ebf1-137">Raspberry Pi 相机支持</span><span class="sxs-lookup"><span data-stu-id="7ebf1-137">Raspberry Pi Camera Support</span></span> 
+<span data-ttu-id="7ebf1-138">对相机外围设备的支持受限。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-138">Support for camera peripheral devices is limited.</span></span> <span data-ttu-id="7ebf1-139">直接连接到板载相机总线的 PiCam 设备不受支持，因为平台支持 D3D 现代 USB 摄像头在 USB 主控制器上生成要求极度严苛的数据流的能力有限。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-139">The PiCam device directly connected to the onboard camera bus is not supported due to limitations in the platform to support D3D Modern USB webcams produce data streams that are very demanding on the USB Host controller.</span></span><span data-ttu-id="7ebf1-140">  即使摄像头结合使用低分辨率设置，还将需要其他 USB 微调和专用控件逻辑。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-140">  Even when used with low resolution settings webcams will require additional USB fine tuning and specialized control logic.</span></span> 
 
-#### <a name="raspberry-pi3-bluetooth-support"></a><span data-ttu-id="c10ac-142">Raspberry Pi3 蓝牙支持</span><span class="sxs-lookup"><span data-stu-id="c10ac-142">Raspberry Pi3 Bluetooth support</span></span> 
-<span data-ttu-id="c10ac-143">Raspberry Pi3 内置的蓝牙驱动程序仅支持带宽较低的设备。</span><span class="sxs-lookup"><span data-stu-id="c10ac-143">The Raspberry Pi3 built-in Bluetooth driver only supports low bandwidth devices.</span></span> 
+#### <a name="raspberry-pi3-bluetooth-support"></a><span data-ttu-id="7ebf1-141">Raspberry Pi3 蓝牙支持</span><span class="sxs-lookup"><span data-stu-id="7ebf1-141">Raspberry Pi3 Bluetooth support</span></span> 
+<span data-ttu-id="7ebf1-142">Raspberry Pi3 内置蓝牙驱动程序仅支持低带宽设备。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-142">The Raspberry Pi3 built-in Bluetooth driver only supports low bandwidth devices.</span></span> 
 
-#### <a name="serial-port-usage-and-access-on-rpi2"></a><span data-ttu-id="c10ac-144">RPi2 上的串行端口用法和访问权限</span><span class="sxs-lookup"><span data-stu-id="c10ac-144">Serial Port Usage and Access on RPi2</span></span> 
-<span data-ttu-id="c10ac-145">Raspberry Pi 2 支持通过 PL011 UART 串行传输通信。</span><span class="sxs-lookup"><span data-stu-id="c10ac-145">Raspberry Pi 2 supports the serial transport for communication through the PL011 UART.</span></span><span data-ttu-id="c10ac-146">  这是内核调试方案中的默认设置。</span><span class="sxs-lookup"><span data-stu-id="c10ac-146">  This is set by default in kernel debugging scenarios.</span></span><span data-ttu-id="c10ac-147">  应用程序或设备驱动程序可以使用 PL011 UART 在 PL011 设备驱动程序使用以下命令关闭调试程序的情况下发送和接收数据：</span><span class="sxs-lookup"><span data-stu-id="c10ac-147">  An application or device driver can use the PL011 UART to send and receive data with the PL011 device driver turning off the debugger using the following command:</span></span>
+#### <a name="serial-port-usage-and-access-on-rpi2"></a><span data-ttu-id="7ebf1-143">RPi2 上的串行端口用法和访问权限</span><span class="sxs-lookup"><span data-stu-id="7ebf1-143">Serial Port Usage and Access on RPi2</span></span> 
+<span data-ttu-id="7ebf1-144">Raspberry Pi 2 支持通过 PL011 UART 串行传输通信。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-144">Raspberry Pi 2 supports the serial transport for communication through the PL011 UART.</span></span><span data-ttu-id="7ebf1-145">  这是内核调试方案中的默认设置。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-145">  This is set by default in kernel debugging scenarios.</span></span><span data-ttu-id="7ebf1-146">  应用程序或设备驱动程序可以使用 PL011 UART 在 PL011 设备驱动程序使用以下命令关闭调试程序的情况下发送和接收数据：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-146">  An application or device driver can use the PL011 UART to send and receive data with the PL011 device driver turning off the debugger using the following command:</span></span>
 ```
 bcedit /set debug off 
 ```
 
-#### <a name="data-breakpoints-have-been-disabled-on-the-raspberry-pi2"></a><span data-ttu-id="c10ac-148">数据断点在 Raspberry Pi2 被禁用</span><span class="sxs-lookup"><span data-stu-id="c10ac-148">Data breakpoints have been disabled on the Raspberry Pi2</span></span>
-<span data-ttu-id="c10ac-149">目前没有解决方法。</span><span class="sxs-lookup"><span data-stu-id="c10ac-149">No workaround at this time.</span></span>
+#### <a name="data-breakpoints-have-been-disabled-on-the-raspberry-pi2"></a><span data-ttu-id="7ebf1-147">已在 Raspberry Pi2 上禁用数据断点</span><span class="sxs-lookup"><span data-stu-id="7ebf1-147">Data breakpoints have been disabled on the Raspberry Pi2</span></span>
+<span data-ttu-id="7ebf1-148">目前没有解决方法。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-148">No workaround at this time.</span></span>
 
-#### <a name="disabling-the-onboard-adapters-for-raspberry-pi-3"></a><span data-ttu-id="c10ac-150">为 Raspberry Pi 3 禁用载入适配器</span><span class="sxs-lookup"><span data-stu-id="c10ac-150">Disabling the onboard adapters for Raspberry Pi 3</span></span>
-<span data-ttu-id="c10ac-151">Raspberry Pi 3 具备板载蓝牙必须禁用以使用不同的硬件保护装置禁用到板载蓝牙、 打开 telnet/ssh 会话并运行：</span><span class="sxs-lookup"><span data-stu-id="c10ac-151">The Raspberry Pi 3 has onboard Bluetooth which must be disabled to use a different dongle to disable to onboard Bluetooth, open a telnet/ssh session and run:</span></span> 
+#### <a name="disabling-the-onboard-adapters-for-raspberry-pi-3"></a><span data-ttu-id="7ebf1-149">禁用 Raspberry Pi 3 的板载适配器</span><span class="sxs-lookup"><span data-stu-id="7ebf1-149">Disabling the onboard adapters for Raspberry Pi 3</span></span>
+<span data-ttu-id="7ebf1-150">Raspberry Pi 3 有板载蓝牙，必须禁用该蓝牙才能使用其他硬件保护装置。若要禁用板载蓝牙，请打开 telnet/ssh 会话并运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-150">The Raspberry Pi 3 has onboard Bluetooth which must be disabled to use a different dongle to disable to onboard Bluetooth, open a telnet/ssh session and run:</span></span> 
 ```
 reg add hklm\system\controlset001\services\BtwSerialH5Bus /v Start /t REG_DWORD /d 4 
 ```
 
-<span data-ttu-id="c10ac-152">你可以使用以下命令禁用 WiFi:</span><span class="sxs-lookup"><span data-stu-id="c10ac-152">You may disable WiFi with the following command:</span></span> 
+<span data-ttu-id="7ebf1-151">可以通过以下命令禁用 WiFi：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-151">You may disable WiFi with the following command:</span></span> 
 ```
 reg add hklm\system\controlset001\services\bcmsdh43xx /v Start /t REG_DWORD /d 4 
 ``` 
 
-### <a name="for-dragon-board"></a><span data-ttu-id="c10ac-153">龙板</span><span class="sxs-lookup"><span data-stu-id="c10ac-153">For Dragon Board</span></span>
+### <a name="for-dragon-board"></a><span data-ttu-id="7ebf1-152">对于 Dragon Board</span><span class="sxs-lookup"><span data-stu-id="7ebf1-152">For Dragon Board</span></span>
 
-#### <a name="dragonboard-410c-shutdown"></a><span data-ttu-id="c10ac-154">Dragonboard 410c 关机</span><span class="sxs-lookup"><span data-stu-id="c10ac-154">Dragonboard 410c Shutdown</span></span>
-<span data-ttu-id="c10ac-155">在 DragonBoard 上，关机命令不会关闭开发板电源。</span><span class="sxs-lookup"><span data-stu-id="c10ac-155">On the DragonBoard, a shutdown command will not power off the board.</span></span> <span data-ttu-id="c10ac-156">系统将会重新启动。</span><span class="sxs-lookup"><span data-stu-id="c10ac-156">The system will restart.</span></span> <span data-ttu-id="c10ac-157">请通过断开电源连接来关闭开发板电源。</span><span class="sxs-lookup"><span data-stu-id="c10ac-157">Please power off the board by disconnecting the power.</span></span>
+#### <a name="dragonboard-410c-shutdown"></a><span data-ttu-id="7ebf1-153">Dragonboard 410c 关机</span><span class="sxs-lookup"><span data-stu-id="7ebf1-153">Dragonboard 410c Shutdown</span></span>
+<span data-ttu-id="7ebf1-154">在 DragonBoard 上，关机命令不会关闭开发板电源。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-154">On the DragonBoard, a shutdown command will not power off the board.</span></span> <span data-ttu-id="7ebf1-155">系统将会重新启动。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-155">The system will restart.</span></span> <span data-ttu-id="7ebf1-156">请通过断开电源连接来关闭开发板电源。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-156">Please power off the board by disconnecting the power.</span></span>
 
-#### <a name="dragon-board-and-windbg"></a><span data-ttu-id="c10ac-158">龙板和 windbg</span><span class="sxs-lookup"><span data-stu-id="c10ac-158">Dragon Board and windbg</span></span>
-<span data-ttu-id="c10ac-159">在使用 windbg 连接到 DragonBoard 时，将禁用 GPIO/I2C/SPI/UART 驱动程序。</span><span class="sxs-lookup"><span data-stu-id="c10ac-159">The GPIO/I2C/SPI/UART drivers will be disabled when connecting to the DragonBoard with windbg.</span></span>
+#### <a name="dragon-board-and-windbg"></a><span data-ttu-id="7ebf1-157">Dragon Board 和 windbg</span><span class="sxs-lookup"><span data-stu-id="7ebf1-157">Dragon Board and windbg</span></span>
+<span data-ttu-id="7ebf1-158">在使用 windbg 连接到 DragonBoard 时，将禁用 GPIO/I2C/SPI/UART 驱动程序。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-158">The GPIO/I2C/SPI/UART drivers will be disabled when connecting to the DragonBoard with windbg.</span></span>
 
-#### <a name="dragon-board-headset--microphone-jack"></a><span data-ttu-id="c10ac-160">龙板耳机和麦克风插孔</span><span class="sxs-lookup"><span data-stu-id="c10ac-160">Dragon Board headset & microphone jack</span></span>
-<span data-ttu-id="c10ac-161">Dragonboard BSP 具有耳机插孔和麦克风插孔的驱动程序，但它在开发板上没有这两种插孔。</span><span class="sxs-lookup"><span data-stu-id="c10ac-161">The Dragonboard BSP has drivers for the headset jack and microphone jack, but it doesn't have either of these jacks on board.</span></span>  
+#### <a name="dragon-board-headset--microphone-jack"></a><span data-ttu-id="7ebf1-159">Dragon Board 耳机和麦克风插孔</span><span class="sxs-lookup"><span data-stu-id="7ebf1-159">Dragon Board headset & microphone jack</span></span>
+<span data-ttu-id="7ebf1-160">Dragonboard BSP 具有耳机插孔和麦克风插孔的驱动程序，但它在开发板上没有这两种插孔。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-160">The Dragonboard BSP has drivers for the headset jack and microphone jack, but it doesn't have either of these jacks on board.</span></span>  
 
-#### <a name="dragonboard-spi-runs-at-48mhz"></a><span data-ttu-id="c10ac-162">Dragonboard SPI 运行 4.8 mhz</span><span class="sxs-lookup"><span data-stu-id="c10ac-162">Dragonboard SPI runs at 4.8Mhz</span></span>
-<span data-ttu-id="c10ac-163">Dragonboard 上的 SPI 将会忽略所请求的速度，并始终以 4.8 Mhz 的速度运行。</span><span class="sxs-lookup"><span data-stu-id="c10ac-163">The SPI on the Dragonboard will ignore the requested speed and always run at 4.8 Mhz.</span></span>  
+#### <a name="dragonboard-spi-runs-at-48mhz"></a><span data-ttu-id="7ebf1-161">Dragonboard SPI 以 4.8Mhz 的速度运行</span><span class="sxs-lookup"><span data-stu-id="7ebf1-161">Dragonboard SPI runs at 4.8Mhz</span></span>
+<span data-ttu-id="7ebf1-162">Dragonboard 上的 SPI 将会忽略所请求的速度，并始终以 4.8 Mhz 的速度运行。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-162">The SPI on the Dragonboard will ignore the requested speed and always run at 4.8 Mhz.</span></span>  
 
-#### <a name="dragonboard-connected-standby"></a><span data-ttu-id="c10ac-164">Dragonboard 连接待机状态</span><span class="sxs-lookup"><span data-stu-id="c10ac-164">Dragonboard Connected Standby</span></span> 
-<span data-ttu-id="c10ac-165">不，默认情况下，Qualcomm Dragonboard 启用连接待机状态。</span><span class="sxs-lookup"><span data-stu-id="c10ac-165">Connected Standby is not enabled on the Qualcomm Dragonboard by default.</span></span>  <span data-ttu-id="c10ac-166">若要启用连接待机 DragonBoard 上以下注册表项必须设置为"1":</span><span class="sxs-lookup"><span data-stu-id="c10ac-166">To enable Connected Standby on DragonBoard the following registry key needs to be set to “1”:</span></span>
+#### <a name="dragonboard-connected-standby"></a><span data-ttu-id="7ebf1-163">Dragonboard 连接待机</span><span class="sxs-lookup"><span data-stu-id="7ebf1-163">Dragonboard Connected Standby</span></span> 
+<span data-ttu-id="7ebf1-164">默认情况下，连接待机在 Qualcomm Dragonboard 上未启用。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-164">Connected Standby is not enabled on the Qualcomm Dragonboard by default.</span></span>  <span data-ttu-id="7ebf1-165">若要在 DragonBoard 上启用连接待机，需将以下注册表项设置为“1”：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-165">To enable Connected Standby on DragonBoard the following registry key needs to be set to “1”:</span></span>
 
 ```
 HKLM\System\Controlset001\Control\Power\CsEnabled=DWORD:1 
 ```
 
 > [!NOTE]
-> <span data-ttu-id="c10ac-167">不是所有平台都都支持连接待机状态。</span><span class="sxs-lookup"><span data-stu-id="c10ac-167">Not all platforms have support for Connected Standby.</span></span>  <span data-ttu-id="c10ac-168">这可能不适用于所有平台。</span><span class="sxs-lookup"><span data-stu-id="c10ac-168">This may not work on all platforms.</span></span>    
+> <span data-ttu-id="7ebf1-166">并非所有平台都支持连接待机。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-166">Not all platforms have support for Connected Standby.</span></span>  <span data-ttu-id="7ebf1-167">这可能不适用于所有平台。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-167">This may not work on all platforms.</span></span>    
 
 
-### <a name="for-minnowboard"></a><span data-ttu-id="c10ac-169">有关 MinnowBoard</span><span class="sxs-lookup"><span data-stu-id="c10ac-169">For MinnowBoard</span></span>
-#### <a name="minnowboard-max-boot-and-firmware-update"></a><span data-ttu-id="c10ac-170">Minnowboard Max 启动和固件更新</span><span class="sxs-lookup"><span data-stu-id="c10ac-170">Minnowboard Max Boot and Firmware Update</span></span> 
-<span data-ttu-id="c10ac-171">除非固件版本.092，否则将不会启动 MinnowBoard 最大或更高版本。</span><span class="sxs-lookup"><span data-stu-id="c10ac-171">The MinnowBoard Max will not boot unless the firmware is version .092 or later.</span></span> <span data-ttu-id="c10ac-172">最小建议的固件的版本是"MinnowBoard 最大 0.92 32-Bit"。</span><span class="sxs-lookup"><span data-stu-id="c10ac-172">The minimum recommended version of the firmware is “MinnowBoard MAX 0.92 32-Bit”.</span></span> <span data-ttu-id="c10ac-173">可以从下载固件更新[此处](http://go.microsoft.com/fwlink/?LinkId=708613)。</span><span class="sxs-lookup"><span data-stu-id="c10ac-173">Firmware updates can be downloaded from [here](http://go.microsoft.com/fwlink/?LinkId=708613).</span></span>
+### <a name="for-minnowboard"></a><span data-ttu-id="7ebf1-168">对于 MinnowBoard</span><span class="sxs-lookup"><span data-stu-id="7ebf1-168">For MinnowBoard</span></span>
+#### <a name="minnowboard-max-boot-and-firmware-update"></a><span data-ttu-id="7ebf1-169">Minnowboard Max 启动和固件更新</span><span class="sxs-lookup"><span data-stu-id="7ebf1-169">Minnowboard Max Boot and Firmware Update</span></span> 
+<span data-ttu-id="7ebf1-170">除非固件是 .092 或更高版本，否则 MinnowBoard Max 不会启动。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-170">The MinnowBoard Max will not boot unless the firmware is version .092 or later.</span></span> <span data-ttu-id="7ebf1-171">推荐的最低固件版本是“MinnowBoard MAX 0.92 32 位”。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-171">The minimum recommended version of the firmware is “MinnowBoard MAX 0.92 32-Bit”.</span></span> <span data-ttu-id="7ebf1-172">固件更新可从[此处](http://go.microsoft.com/fwlink/?LinkId=708613)下载。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-172">Firmware updates can be downloaded from [here](http://go.microsoft.com/fwlink/?LinkId=708613).</span></span>
 
-#### <a name="minnow-board-peripheral-support"></a><span data-ttu-id="c10ac-174">Minnow 开发板外设支持</span><span class="sxs-lookup"><span data-stu-id="c10ac-174">Minnow Board Peripheral Support</span></span>
-<span data-ttu-id="c10ac-175">此发布中包含的 Windows 10 IoT 核心版映像支持在 MinnowBoard MAX 板上公开的外设。</span><span class="sxs-lookup"><span data-stu-id="c10ac-175">The Windows 10 IoT Core image included in this drop supports the peripherals that are exposed on the MinnowBoard MAX board.</span></span> <span data-ttu-id="c10ac-176">随后，Intel&reg;将提供的支持包括 Intel Celeron Baytrail 处理器的完整功能集&trade;处理器 J1900/N2930/N2807 和 Intel Atom&trade;处理器 E38XX。</span><span class="sxs-lookup"><span data-stu-id="c10ac-176">Subsequently, Intel&reg; will provide support of the full feature set of the Baytrail processors including the Intel Celeron&trade; Processors J1900/N2930/N2807 and Intel Atom&trade; Processors E38XX.</span></span>
+#### <a name="minnow-board-peripheral-support"></a><span data-ttu-id="7ebf1-173">Minnow 开发板外设支持</span><span class="sxs-lookup"><span data-stu-id="7ebf1-173">Minnow Board Peripheral Support</span></span>
+<span data-ttu-id="7ebf1-174">此发布中包含的 Windows 10 IoT 核心版映像支持在 MinnowBoard MAX 板上公开的外设。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-174">The Windows 10 IoT Core image included in this drop supports the peripherals that are exposed on the MinnowBoard MAX board.</span></span> <span data-ttu-id="7ebf1-175">随后，Intel&reg; 将提供对 Baytrail 处理器（包括 Intel Celeron&trade; 处理器 J1900/N2930/N2807 和 Intel Atom&trade; 处理器 E38XX）的完整功能集的支持。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-175">Subsequently, Intel&reg; will provide support of the full feature set of the Baytrail processors including the Intel Celeron&trade; Processors J1900/N2930/N2807 and Intel Atom&trade; Processors E38XX.</span></span>
 
 
-### <a name="for-all-platforms"></a><span data-ttu-id="c10ac-177">为所有平台</span><span class="sxs-lookup"><span data-stu-id="c10ac-177">For All Platforms</span></span> 
+### <a name="for-all-platforms"></a><span data-ttu-id="7ebf1-176">对于所有平台</span><span class="sxs-lookup"><span data-stu-id="7ebf1-176">For All Platforms</span></span> 
 
-#### <a name="mouse-pointer-disappears-while-debugging"></a><span data-ttu-id="c10ac-178">鼠标指针在调试时消失</span><span class="sxs-lookup"><span data-stu-id="c10ac-178">Mouse Pointer disappears while debugging</span></span> 
-<span data-ttu-id="c10ac-179">在某些情况下，鼠标指针部署或调试应用程序使用 Visual Studio 后不可见，请将鼠标指针应重新出现，如果更改焦点使用键盘 (Tab)。</span><span class="sxs-lookup"><span data-stu-id="c10ac-179">In some cases, the mouse pointer is not visible after deploying or debugging apps with Visual Studio, the mouse pointer should reappear if you change focus using the keyboard (Tab).</span></span>
+#### <a name="mouse-pointer-disappears-while-debugging"></a><span data-ttu-id="7ebf1-177">调试时鼠标指针消失</span><span class="sxs-lookup"><span data-stu-id="7ebf1-177">Mouse Pointer disappears while debugging</span></span> 
+<span data-ttu-id="7ebf1-178">在某些情况下，在使用 Visual Studio 部署或调试应用后，鼠标指针会变得不可见，此时如果使用键盘 (Tab) 更改焦点，鼠标指针就会重新显示。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-178">In some cases, the mouse pointer is not visible after deploying or debugging apps with Visual Studio, the mouse pointer should reappear if you change focus using the keyboard (Tab).</span></span>
 
-#### <a name="accessing-public-documents"></a><span data-ttu-id="c10ac-180">访问公共文档</span><span class="sxs-lookup"><span data-stu-id="c10ac-180">Accessing public documents</span></span>
-<span data-ttu-id="c10ac-181">这要求应用程序才能访问公用文档目录指定 broadFileSystem 访问的文件访问的基础 Api 已更改。</span><span class="sxs-lookup"><span data-stu-id="c10ac-181">A change was made to the underlying APIs for file access which requires an application specify broadFileSystem access in order to access the public documents directory.</span></span>
+#### <a name="accessing-public-documents"></a><span data-ttu-id="7ebf1-179">访问公用文档</span><span class="sxs-lookup"><span data-stu-id="7ebf1-179">Accessing public documents</span></span>
+<span data-ttu-id="7ebf1-180">对用于文件访问的基础 API 进行了更改，要求应用程序必须指定 broadFileSystem 访问权限才能访问公用文档目录。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-180">A change was made to the underlying APIs for file access which requires an application specify broadFileSystem access in order to access the public documents directory.</span></span>
 
-<span data-ttu-id="c10ac-182">。XML 文件代码段应如下所示：</span><span class="sxs-lookup"><span data-stu-id="c10ac-182">The .XML file snippet should look like this:</span></span>
+<span data-ttu-id="7ebf1-181">.XML 文件代码段应如下所示：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-181">The .XML file snippet should look like this:</span></span>
 ```
 <Package
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
@@ -141,9 +141,9 @@ HKLM\System\Controlset001\Control\Power\CsEnabled=DWORD:1
 </Package>
 ```
 
-#### <a name="server-applications-with-softap"></a><span data-ttu-id="c10ac-183">SoftAP 服务器应用程序</span><span class="sxs-lookup"><span data-stu-id="c10ac-183">Server Applications with SoftAP</span></span>
-<span data-ttu-id="c10ac-184">当使用 SoftAP 客户端将无法再访问由 UAP 应用公开的内容。</span><span class="sxs-lookup"><span data-stu-id="c10ac-184">When using the SoftAP clients will not be able to access content exposed by UAP apps.</span></span>  
-<span data-ttu-id="c10ac-185">提供通过 SoftAP UAP 应用程序必须从设备上的控制台进行以下更改：</span><span class="sxs-lookup"><span data-stu-id="c10ac-185">To expose UAP applications via SoftAP the following changes must be made from the console on the device:</span></span>  
+#### <a name="server-applications-with-softap"></a><span data-ttu-id="7ebf1-182">服务器应用程序与 SoftAP</span><span class="sxs-lookup"><span data-stu-id="7ebf1-182">Server Applications with SoftAP</span></span>
+<span data-ttu-id="7ebf1-183">使用 SoftAP 时，客户端将无法访问 UAP 应用公开的内容。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-183">When using the SoftAP clients will not be able to access content exposed by UAP apps.</span></span>  
+<span data-ttu-id="7ebf1-184">若要通过 SoftAP 公开 UAP 应用程序，必须通过设备上的控制台进行以下更改：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-184">To expose UAP applications via SoftAP the following changes must be made from the console on the device:</span></span>  
 
 ```
 reg add hklm\system\currentcontrolset\services\mpssvc\parameters /v IoTInboundLoopbackPolicy /t REG_DWORD /d 1 
@@ -151,55 +151,55 @@ checknetisolation loopbackexempt -a -n=<AppID for SoftAP App>
 checknetisolation loopbackexempt -a -n=<AppID for Additional App>  
 ```
 
-<span data-ttu-id="c10ac-186">例如：</span><span class="sxs-lookup"><span data-stu-id="c10ac-186">For example:</span></span>  
+<span data-ttu-id="7ebf1-185">例如：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-185">For example:</span></span>  
 ```
 checknetisolation loopbackexempt -a -n=IoTOnboardingTask-uwp_1w720vyc4ccym
 ```
-<span data-ttu-id="c10ac-187">重新启动</span><span class="sxs-lookup"><span data-stu-id="c10ac-187">Reboot</span></span> 
+<span data-ttu-id="7ebf1-186">重新启动</span><span class="sxs-lookup"><span data-stu-id="7ebf1-186">Reboot</span></span> 
 
 
-#### <a name="sensor-driver-conflict-in-pre-built-ffus"></a><span data-ttu-id="c10ac-188">在预建 FFUs 传感器驱动程序冲突</span><span class="sxs-lookup"><span data-stu-id="c10ac-188">Sensor Driver conflict in pre-built FFUs</span></span> 
-<span data-ttu-id="c10ac-189">提供 FFUs 中没有传感器驱动程序冲突。</span><span class="sxs-lookup"><span data-stu-id="c10ac-189">There is a Sensor Driver Conflict in the provided FFUs.</span></span> <span data-ttu-id="c10ac-190">远程传感器框架指南针、 磁力仪、 加速感应器和回转仪安装驱动程序。</span><span class="sxs-lookup"><span data-stu-id="c10ac-190">The Remote Sensor Framework installs drivers for Compass, Magnetometer, Accelerometer and Gyro.</span></span> <span data-ttu-id="c10ac-191">用于访问这些应用程序中的 UWP Api 假定安装了只是 1。</span><span class="sxs-lookup"><span data-stu-id="c10ac-191">The UWP APIs for accessing these from an application assume just 1 is installed.</span></span> <span data-ttu-id="c10ac-192">如果你正在开发以物理方式附加设备的驱动程序，Microsoft 上的远程驱动程序提供 FFUs 会发生冲突。</span><span class="sxs-lookup"><span data-stu-id="c10ac-192">If you are developing a driver for a physically attached device, the remote driver on the Microsoft provided FFUs will conflict.</span></span>
+#### <a name="sensor-driver-conflict-in-pre-built-ffus"></a><span data-ttu-id="7ebf1-187">在预先构建的 FFU 中出现传感器驱动程序冲突</span><span class="sxs-lookup"><span data-stu-id="7ebf1-187">Sensor Driver conflict in pre-built FFUs</span></span> 
+<span data-ttu-id="7ebf1-188">在提供的 FFU 中存在传感器驱动程序冲突。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-188">There is a Sensor Driver Conflict in the provided FFUs.</span></span> <span data-ttu-id="7ebf1-189">Remote Sensor Framework 可为指南针、磁力计、加速计和陀螺仪安装驱动程序。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-189">The Remote Sensor Framework installs drivers for Compass, Magnetometer, Accelerometer and Gyro.</span></span> <span data-ttu-id="7ebf1-190">从应用程序访问这些项目的 UWP API 会假定只安装了其中 1 项。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-190">The UWP APIs for accessing these from an application assume just 1 is installed.</span></span> <span data-ttu-id="7ebf1-191">如果你为通过物理方式连接的设备开发驱动程序，则 Microsoft 提供的 FFU 上的远程驱动程序会产生冲突。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-191">If you are developing a driver for a physically attached device, the remote driver on the Microsoft provided FFUs will conflict.</span></span>
 
-<span data-ttu-id="c10ac-193">解决方案：可以通过连接到设备通过 SSH 或 Powershell 并使用工具 devcon.exe 通过键入删除远程传感器驱动程序删除冲突的驱动程序"devcon.exe 删除 @"ROOT\REMOTESENSORDRIVER \*"。</span><span class="sxs-lookup"><span data-stu-id="c10ac-193">Resolution: The conflicting driver can be removed by connecting to the device via SSH or Powershell and using the tool devcon.exe to remove the remote sensor driver by typing “devcon.exe remove @”ROOT\REMOTESENSORDRIVER\*”.</span></span> <span data-ttu-id="c10ac-194">远程传感器驱动程序不会影响创建 FFUs OEM。</span><span class="sxs-lookup"><span data-stu-id="c10ac-194">The remote sensor driver does not affect OEM created FFUs.</span></span>
-
-
-#### <a name="default-administrator-user-name-and-password"></a><span data-ttu-id="c10ac-195">默认管理员用户名和密码</span><span class="sxs-lookup"><span data-stu-id="c10ac-195">Default Administrator User Name and Password</span></span>
-<span data-ttu-id="c10ac-196">默认的管理员用户名和密码已硬编码在 Windows 10 IoT 核心版映像中。</span><span class="sxs-lookup"><span data-stu-id="c10ac-196">The default administrator user name and password are hard coded in the Windows 10 IoT Core image.</span></span> <span data-ttu-id="c10ac-197">这使设备具有安全风险，因此在更改密码之前，请不要向开放的 Internet 连接公开此信息。</span><span class="sxs-lookup"><span data-stu-id="c10ac-197">This is a security risk for the device, and it should not be exposed to an open internet connection until the password has been changed.</span></span>
-
-#### <a name="volume-controls"></a><span data-ttu-id="c10ac-198">音量控件</span><span class="sxs-lookup"><span data-stu-id="c10ac-198">Volume Controls</span></span>
-<span data-ttu-id="c10ac-199">依赖于 Windows 系统更改系统音量的 USB 麦克风和扬声器的硬件音量控件当前在 Windows 10 IoT 核心版上不受支持。</span><span class="sxs-lookup"><span data-stu-id="c10ac-199">Hardware volume controls for USB microphones and speakers which depend on Windows system to change system volume are currently not supported on Windows 10 IoT Core.</span></span> 
-
-#### <a name="usb-keyboards"></a><span data-ttu-id="c10ac-200">USB 键盘</span><span class="sxs-lookup"><span data-stu-id="c10ac-200">USB Keyboards</span></span>  
-<span data-ttu-id="c10ac-201">某些 USB 键盘和鼠标可能无法在 IoT 核心版上工作。</span><span class="sxs-lookup"><span data-stu-id="c10ac-201">Some USB keyboards and mice may not work on IoT Core.</span></span> <span data-ttu-id="c10ac-202">使用其他键盘或鼠标。</span><span class="sxs-lookup"><span data-stu-id="c10ac-202">Use a different keyboard or mouse.</span></span> <span data-ttu-id="c10ac-203">可以在找到的已验证的外围设备列表[此处的文档](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/hardwarecompatlist)。</span><span class="sxs-lookup"><span data-stu-id="c10ac-203">A list of validated peripheral devices can be found in the [documentation here](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/hardwarecompatlist).</span></span>
+<span data-ttu-id="7ebf1-192">解决方案：可以删除发生冲突的驱动程序，方法是：通过 SSH 或 Powershell 连接到设备，然后键入“devcon.exe remove @”ROOT\REMOTESENSORDRIVER\*”，使用 devcon.exe 工具删除远程传感器驱动程序。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-192">Resolution: The conflicting driver can be removed by connecting to the device via SSH or Powershell and using the tool devcon.exe to remove the remote sensor driver by typing “devcon.exe remove @”ROOT\REMOTESENSORDRIVER\*”.</span></span> <span data-ttu-id="7ebf1-193">远程传感器驱动程序不影响 OEM 创建的 FFU。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-193">The remote sensor driver does not affect OEM created FFUs.</span></span>
 
 
-#### <a name="screen-orientation"></a><span data-ttu-id="c10ac-204">屏幕方向</span><span class="sxs-lookup"><span data-stu-id="c10ac-204">Screen Orientation</span></span>
-<span data-ttu-id="c10ac-205">在通用应用程序中可能不遵循设置为"纵向"方向。</span><span class="sxs-lookup"><span data-stu-id="c10ac-205">Setting the orientation to “Portrait” may not be honored in a Universal App.</span></span>
+#### <a name="default-administrator-user-name-and-password"></a><span data-ttu-id="7ebf1-194">默认管理员用户名和密码</span><span class="sxs-lookup"><span data-stu-id="7ebf1-194">Default Administrator User Name and Password</span></span>
+<span data-ttu-id="7ebf1-195">默认的管理员用户名和密码已硬编码在 Windows 10 IoT 核心版映像中。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-195">The default administrator user name and password are hard coded in the Windows 10 IoT Core image.</span></span> <span data-ttu-id="7ebf1-196">这使设备具有安全风险，因此在更改密码之前，请不要向开放的 Internet 连接公开此信息。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-196">This is a security risk for the device, and it should not be exposed to an open internet connection until the password has been changed.</span></span>
 
-#### <a name="referencing-adapters-with-alljoyn-templates"></a><span data-ttu-id="c10ac-206">使用 AllJoyn 模板引用适配器</span><span class="sxs-lookup"><span data-stu-id="c10ac-206">Referencing Adapters with AllJoyn Templates</span></span>
-<span data-ttu-id="c10ac-207">尝试向 AllJoyn 适配器项目添加引用可能会在使用特定 SDK 版本时导致错误。</span><span class="sxs-lookup"><span data-stu-id="c10ac-207">Attempting to add references to AllJoyn adapter projects may result in errors when using specific SDK versions.</span></span>  <span data-ttu-id="c10ac-208">若要解决这些错误，请更改 Visual Studio 的目标平台，以匹配当前的 SDK 版本，然后重新加载项目。</span><span class="sxs-lookup"><span data-stu-id="c10ac-208">To resolve these errors, change Visual Studio’s target platform to match the current SDK version, then reload the project.</span></span>
+#### <a name="volume-controls"></a><span data-ttu-id="7ebf1-197">音量控件</span><span class="sxs-lookup"><span data-stu-id="7ebf1-197">Volume Controls</span></span>
+<span data-ttu-id="7ebf1-198">依赖于 Windows 系统更改系统音量的 USB 麦克风和扬声器的硬件音量控件当前在 Windows 10 IoT 核心版上不受支持。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-198">Hardware volume controls for USB microphones and speakers which depend on Windows system to change system volume are currently not supported on Windows 10 IoT Core.</span></span> 
 
-#### <a name="wifi-direct-limitations-on-iotcore"></a><span data-ttu-id="c10ac-209">WiFi 直接 IoTCore 的限制</span><span class="sxs-lookup"><span data-stu-id="c10ac-209">WiFi Direct limitations on IoTCore</span></span>
-* <span data-ttu-id="c10ac-210">IoTCore 设备必须是连接设备，因为在其他设备初始化连接时，该设备无法作为广告设备运行。</span><span class="sxs-lookup"><span data-stu-id="c10ac-210">The IoTCore device has to be the connecting device – it will not work as the advertising device with another device initiating the connection.</span></span>   
-* <span data-ttu-id="c10ac-211">必须使用高级配对。</span><span class="sxs-lookup"><span data-stu-id="c10ac-211">Advanced pairing must be used.</span></span>  <span data-ttu-id="c10ac-212">示例应用演示了如何在连接前使用高级配对 API 对设备进行配对。</span><span class="sxs-lookup"><span data-stu-id="c10ac-212">The sample app demonstrates how to use the advanced pairing API’s to pair the devices prior to connecting.</span></span> 
-* <span data-ttu-id="c10ac-213">并非所有无线适配器都支持 WLAN Direct。</span><span class="sxs-lookup"><span data-stu-id="c10ac-213">Not all wireless adapters support WiFi direct.</span></span> <span data-ttu-id="c10ac-214">我们已测试并验证的"Realtek RTL8188EU 无线 Lan 802.11n USB 2.0 端口的网络适配器"可能不受支持的工作原理，但其他适配器。</span><span class="sxs-lookup"><span data-stu-id="c10ac-214">We have tested and validated that the “Realtek RTL8188EU Wireless Lan 802.11n USB 2.0 Network adapter” works, but other adapters may not be supported.</span></span> 
+#### <a name="usb-keyboards"></a><span data-ttu-id="7ebf1-199">USB 键盘</span><span class="sxs-lookup"><span data-stu-id="7ebf1-199">USB Keyboards</span></span>  
+<span data-ttu-id="7ebf1-200">某些 USB 键盘和鼠标可能无法在 IoT 核心版上工作。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-200">Some USB keyboards and mice may not work on IoT Core.</span></span> <span data-ttu-id="7ebf1-201">使用其他键盘或鼠标。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-201">Use a different keyboard or mouse.</span></span> <span data-ttu-id="7ebf1-202">有关已验证的外围设备列表，可参阅[此处的文档](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/hardwarecompatlist)。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-202">A list of validated peripheral devices can be found in the [documentation here](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/hardwarecompatlist).</span></span>
 
 
-#### <a name="non-default-drive-mode"></a><span data-ttu-id="c10ac-215">非默认驱动器模式</span><span class="sxs-lookup"><span data-stu-id="c10ac-215">Non-default drive mode</span></span>
-<span data-ttu-id="c10ac-216">在 Raspberry Pi 和 Dragonboard 上，从非默认驱动器模式切换到其他非默认驱动器模式可能会在 GPIO 引脚上产生故障。</span><span class="sxs-lookup"><span data-stu-id="c10ac-216">On Raspberry Pi and Dragonboard, switching from a non-default drive mode to a different non-default drive mode may produce a glitch on the GPIO pin.</span></span> <span data-ttu-id="c10ac-217">解决方法：在应用程序开端处设置一次驱动器模式。</span><span class="sxs-lookup"><span data-stu-id="c10ac-217">WORKAROUND: Set drive mode once at the beginning of the application.</span></span>
+#### <a name="screen-orientation"></a><span data-ttu-id="7ebf1-203">屏幕方向</span><span class="sxs-lookup"><span data-stu-id="7ebf1-203">Screen Orientation</span></span>
+<span data-ttu-id="7ebf1-204">将方向设置为“纵向”在通用应用中可能不受支持。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-204">Setting the orientation to “Portrait” may not be honored in a Universal App.</span></span>
 
-#### <a name="application-already-running"></a><span data-ttu-id="c10ac-218">已在运行的应用程序</span><span class="sxs-lookup"><span data-stu-id="c10ac-218">Application already running</span></span>
-<span data-ttu-id="c10ac-219">如果默认启动应用也从 Visual Studio 部署，则该应用可能会跟自身发生冲突。</span><span class="sxs-lookup"><span data-stu-id="c10ac-219">The Default startup app may conflict with itself when it is also deployed from Visual Studio.</span></span> <span data-ttu-id="c10ac-220">解决方法：将默认启动应用更改为不希望部署的应用程序。</span><span class="sxs-lookup"><span data-stu-id="c10ac-220">WORKAROUND: Change the default startup app to an application other than that you wish to deploy.</span></span> 
+#### <a name="referencing-adapters-with-alljoyn-templates"></a><span data-ttu-id="7ebf1-205">使用 AllJoyn 模板引用适配器</span><span class="sxs-lookup"><span data-stu-id="7ebf1-205">Referencing Adapters with AllJoyn Templates</span></span>
+<span data-ttu-id="7ebf1-206">尝试向 AllJoyn 适配器项目添加引用可能会在使用特定 SDK 版本时导致错误。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-206">Attempting to add references to AllJoyn adapter projects may result in errors when using specific SDK versions.</span></span>  <span data-ttu-id="7ebf1-207">若要解决这些错误，请更改 Visual Studio 的目标平台，以匹配当前的 SDK 版本，然后重新加载项目。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-207">To resolve these errors, change Visual Studio’s target platform to match the current SDK version, then reload the project.</span></span>
 
-#### <a name="backgroundmediaplayermessagereceivedfromforeground-may-crash"></a><span data-ttu-id="c10ac-221">BackgroundMediaPlayer.MessageReceivedFromForeground 可能会崩溃</span><span class="sxs-lookup"><span data-stu-id="c10ac-221">BackgroundMediaPlayer.MessageReceivedFromForeground may crash</span></span>
-<span data-ttu-id="c10ac-222">以下代码行可能崩溃："BackgroundMediaPlayer.MessageReceivedFromForeground + = OnMessageReceivedFromForeground;"。</span><span class="sxs-lookup"><span data-stu-id="c10ac-222">The following line of code may crash: “BackgroundMediaPlayer.MessageReceivedFromForeground += OnMessageReceivedFromForeground;”.</span></span> <span data-ttu-id="c10ac-223">若要防止在发生崩溃，添加此代码，以便首先执行"var 播放机 = BackgroundMediaPlayer.Current;"</span><span class="sxs-lookup"><span data-stu-id="c10ac-223">To prevent the crash, add this code so that it is executed first “var player = BackgroundMediaPlayer.Current;”</span></span> 
+#### <a name="wifi-direct-limitations-on-iotcore"></a><span data-ttu-id="7ebf1-208">IoTCore 上的 WiFi Direct 限制</span><span class="sxs-lookup"><span data-stu-id="7ebf1-208">WiFi Direct limitations on IoTCore</span></span>
+* <span data-ttu-id="7ebf1-209">IoTCore 设备必须是连接设备，因为在其他设备初始化连接时，该设备无法作为广告设备运行。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-209">The IoTCore device has to be the connecting device – it will not work as the advertising device with another device initiating the connection.</span></span>   
+* <span data-ttu-id="7ebf1-210">必须使用高级配对。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-210">Advanced pairing must be used.</span></span>  <span data-ttu-id="7ebf1-211">示例应用演示了如何在连接前使用高级配对 API 对设备进行配对。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-211">The sample app demonstrates how to use the advanced pairing API’s to pair the devices prior to connecting.</span></span> 
+* <span data-ttu-id="7ebf1-212">并非所有无线适配器都支持 WLAN Direct。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-212">Not all wireless adapters support WiFi direct.</span></span> <span data-ttu-id="7ebf1-213">我们已测试并验证“Realtek RTL8188EU 无线 LAN 802.11n USB 2.0 网络适配器”有效，但其他适配器可能不受支持。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-213">We have tested and validated that the “Realtek RTL8188EU Wireless Lan 802.11n USB 2.0 Network adapter” works, but other adapters may not be supported.</span></span> 
 
-#### <a name="azure-active-directory-authentication-support"></a><span data-ttu-id="c10ac-224">Azure Active Directory 身份验证支持</span><span class="sxs-lookup"><span data-stu-id="c10ac-224">Azure Active Directory Authentication Support</span></span>
-<span data-ttu-id="c10ac-225">Azure Active Directory 身份验证库在 Windows 10 IoT 核心版上不可用。</span><span class="sxs-lookup"><span data-stu-id="c10ac-225">The Azure Active Directory Authentication Library does not work on Windows 10 IoT Core.</span></span>  
 
-#### <a name="shell-management-of-application-crashes"></a><span data-ttu-id="c10ac-226">命令行程序管理的应用程序崩溃</span><span class="sxs-lookup"><span data-stu-id="c10ac-226">Shell Management of Application Crashes</span></span>
-<span data-ttu-id="c10ac-227">IoT 核心版的 shell 基础结构用于监视设备中运行的 APPX 类型的应用程序是否崩溃，并且会在发生崩溃时重新启动这些应用程序。</span><span class="sxs-lookup"><span data-stu-id="c10ac-227">IoT Core’s shell infrastructure monitors APPX-type applications running on the device for crashes, and restarts those applications when crashes occur.</span></span>  <span data-ttu-id="c10ac-228">如果重新启动的应用程序继续崩溃，shell 将采用 __failfast 这一系统关键进程，可引起错误检测并重新启动以尝试恢复。</span><span class="sxs-lookup"><span data-stu-id="c10ac-228">If the restarted applications continue to crash, the shell will employ a __failfast – a system critical process that causes a bugcheck and reboot in an attempt to recover.</span></span>  <span data-ttu-id="c10ac-229">可比较逻辑和处理用于有外设配置中的后台任务和前台应用程序。</span><span class="sxs-lookup"><span data-stu-id="c10ac-229">Comparable logic and handling is used to background tasks and foreground applications in a headed configuration.</span></span>   <span data-ttu-id="c10ac-230">下面捕获的是崩溃处理和重试逻辑：</span><span class="sxs-lookup"><span data-stu-id="c10ac-230">Crash handing and retry logic is captured below:</span></span>
+#### <a name="non-default-drive-mode"></a><span data-ttu-id="7ebf1-214">非默认驱动器模式</span><span class="sxs-lookup"><span data-stu-id="7ebf1-214">Non-default drive mode</span></span>
+<span data-ttu-id="7ebf1-215">在 Raspberry Pi 和 Dragonboard 上，从非默认驱动器模式切换到其他非默认驱动器模式可能会在 GPIO 引脚上产生故障。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-215">On Raspberry Pi and Dragonboard, switching from a non-default drive mode to a different non-default drive mode may produce a glitch on the GPIO pin.</span></span> <span data-ttu-id="7ebf1-216">解决方法：在应用程序开端处设置一次驱动器模式。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-216">WORKAROUND: Set drive mode once at the beginning of the application.</span></span>
+
+#### <a name="application-already-running"></a><span data-ttu-id="7ebf1-217">已处于运行状态的应用程序</span><span class="sxs-lookup"><span data-stu-id="7ebf1-217">Application already running</span></span>
+<span data-ttu-id="7ebf1-218">如果默认启动应用也从 Visual Studio 部署，则该应用可能会跟自身发生冲突。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-218">The Default startup app may conflict with itself when it is also deployed from Visual Studio.</span></span> <span data-ttu-id="7ebf1-219">解决方法：将默认启动应用更改为不希望部署的应用程序。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-219">WORKAROUND: Change the default startup app to an application other than that you wish to deploy.</span></span> 
+
+#### <a name="backgroundmediaplayermessagereceivedfromforeground-may-crash"></a><span data-ttu-id="7ebf1-220">BackgroundMediaPlayer.MessageReceivedFromForeground 可能会崩溃</span><span class="sxs-lookup"><span data-stu-id="7ebf1-220">BackgroundMediaPlayer.MessageReceivedFromForeground may crash</span></span>
+<span data-ttu-id="7ebf1-221">以下代码行可能崩溃：“BackgroundMediaPlayer.MessageReceivedFromForeground += OnMessageReceivedFromForeground;”。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-221">The following line of code may crash: “BackgroundMediaPlayer.MessageReceivedFromForeground += OnMessageReceivedFromForeground;”.</span></span> <span data-ttu-id="7ebf1-222">若要防止崩溃，请添加此代码，以便首先执行它：“var player = BackgroundMediaPlayer.Current;”</span><span class="sxs-lookup"><span data-stu-id="7ebf1-222">To prevent the crash, add this code so that it is executed first “var player = BackgroundMediaPlayer.Current;”</span></span> 
+
+#### <a name="azure-active-directory-authentication-support"></a><span data-ttu-id="7ebf1-223">Azure Active Directory 身份验证支持</span><span class="sxs-lookup"><span data-stu-id="7ebf1-223">Azure Active Directory Authentication Support</span></span>
+<span data-ttu-id="7ebf1-224">Azure Active Directory 身份验证库在 Windows 10 IoT 核心版上不可用。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-224">The Azure Active Directory Authentication Library does not work on Windows 10 IoT Core.</span></span>  
+
+#### <a name="shell-management-of-application-crashes"></a><span data-ttu-id="7ebf1-225">应用程序崩溃的 Shell 管理</span><span class="sxs-lookup"><span data-stu-id="7ebf1-225">Shell Management of Application Crashes</span></span>
+<span data-ttu-id="7ebf1-226">IoT 核心版的 shell 基础结构用于监视设备中运行的 APPX 类型的应用程序是否崩溃，并且会在发生崩溃时重新启动这些应用程序。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-226">IoT Core’s shell infrastructure monitors APPX-type applications running on the device for crashes, and restarts those applications when crashes occur.</span></span>  <span data-ttu-id="7ebf1-227">如果重新启动的应用程序继续崩溃，shell 将采用 __failfast 这一系统关键进程，可引起错误检测并重新启动以尝试恢复。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-227">If the restarted applications continue to crash, the shell will employ a __failfast – a system critical process that causes a bugcheck and reboot in an attempt to recover.</span></span>  <span data-ttu-id="7ebf1-228">可比较逻辑和处理用于有外设配置中的后台任务和前台应用程序。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-228">Comparable logic and handling is used to background tasks and foreground applications in a headed configuration.</span></span>   <span data-ttu-id="7ebf1-229">下面捕获的是崩溃处理和重试逻辑：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-229">Crash handing and retry logic is captured below:</span></span>
 
 ```
 Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\CBTConfig  (or ForegroundAppConfig for headed) 
@@ -211,7 +211,7 @@ Dword:"FallbackExponentDenominator", default is 20
 Fallback_exponent = FallbackExponentNumerator / FallbackExponentDenominator; // default is 1.55 
 ```
 
-<span data-ttu-id="c10ac-231">当检测到应用崩溃时：</span><span class="sxs-lookup"><span data-stu-id="c10ac-231">When app crash is detected:</span></span> 
+<span data-ttu-id="7ebf1-230">当检测到应用崩溃时：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-230">When app crash is detected:</span></span> 
 
 ```
 if time_since_last_crash > failureresetinterval then crashes_seen = 1 
@@ -225,28 +225,28 @@ else
 delay = (dword) ((float)BaseRetryDelayMs * (crashes_seen ** Fallback_exponent)) 
 ```
 
-<span data-ttu-id="c10ac-232">等待延迟和重新启动应用程序</span><span class="sxs-lookup"><span data-stu-id="c10ac-232">Wait for delay and relaunch app</span></span> 
+<span data-ttu-id="7ebf1-231">等待延迟并重新启动应用</span><span class="sxs-lookup"><span data-stu-id="7ebf1-231">Wait for delay and relaunch app</span></span> 
 
 
-#### <a name="time-synchronization"></a><span data-ttu-id="c10ac-233">时间同步</span><span class="sxs-lookup"><span data-stu-id="c10ac-233">Time Synchronization</span></span>  
-<span data-ttu-id="c10ac-234">如果时间同步失败或超时这可能是由于无法访问或远距离时间服务器，可以执行以下要添加其他或本地时间服务器。</span><span class="sxs-lookup"><span data-stu-id="c10ac-234">If time sync is failing or timing out this may be due to unreachable or a distant time server, the following can be done to add additional or local time servers.</span></span> 
+#### <a name="time-synchronization"></a><span data-ttu-id="7ebf1-232">时间同步</span><span class="sxs-lookup"><span data-stu-id="7ebf1-232">Time Synchronization</span></span>  
+<span data-ttu-id="7ebf1-233">如果时间同步失败或超时，可能是因为时间服务器无法访问或过于遥远，可以通过以下操作来添加额外的或本地的时间服务器。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-233">If time sync is failing or timing out this may be due to unreachable or a distant time server, the following can be done to add additional or local time servers.</span></span> 
 
-1) <span data-ttu-id="c10ac-235">从命令行 （例如在设备上。</span><span class="sxs-lookup"><span data-stu-id="c10ac-235">From a command line on the device (eg.</span></span> <span data-ttu-id="c10ac-236">SSH, Powershell) w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..."</span><span class="sxs-lookup"><span data-stu-id="c10ac-236">SSH, Powershell) w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..."</span></span> 
+1) <span data-ttu-id="7ebf1-234">在设备的命令行（例如</span><span class="sxs-lookup"><span data-stu-id="7ebf1-234">From a command line on the device (eg.</span></span> <span data-ttu-id="7ebf1-235">SSH、Powershell）中，键入：w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..."</span><span class="sxs-lookup"><span data-stu-id="7ebf1-235">SSH, Powershell) w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..."</span></span> 
 
-2) <span data-ttu-id="c10ac-237">也可能会对通过启动脚本注册表这些新增功能或自定义运行时配置包包含必要时在映像创建过程的一部分。</span><span class="sxs-lookup"><span data-stu-id="c10ac-237">You may also make these additions to the registry via a boot script or a custom runtime configuration package included as part of the image creation process if needed.</span></span> <span data-ttu-id="c10ac-238">有关更多详细信息，请参阅：</span><span class="sxs-lookup"><span data-stu-id="c10ac-238">For more details, see:</span></span> 
+2) <span data-ttu-id="7ebf1-236">也可根据需要通过启动脚本或自定义运行时配置包（在创建映像过程中包括进来）将其添加到注册表中。</span><span class="sxs-lookup"><span data-stu-id="7ebf1-236">You may also make these additions to the registry via a boot script or a custom runtime configuration package included as part of the image creation process if needed.</span></span> <span data-ttu-id="7ebf1-237">有关更多详细信息，请参阅：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-237">For more details, see:</span></span> 
 
-* [<span data-ttu-id="c10ac-239">添加到图像文件和注册表设置</span><span class="sxs-lookup"><span data-stu-id="c10ac-239">Adding a file and registry setting to an image</span></span>](https://msdn.microsoft.com/en-us/library/windows/hardware/mt670641(v=vs.85).aspx)
+* <span data-ttu-id="7ebf1-238">[将文件和注册表设置添加到映像](https://msdn.microsoft.com/en-us/library/windows/hardware/mt670641(v=vs.85).aspx)</span><span class="sxs-lookup"><span data-stu-id="7ebf1-238">[Adding a file and registry setting to an image](https://msdn.microsoft.com/en-us/library/windows/hardware/mt670641(v=vs.85).aspx)</span></span>
 
 
-### <a name="starting-the-ftp-server"></a><span data-ttu-id="c10ac-240">启动 FTP 服务器</span><span class="sxs-lookup"><span data-stu-id="c10ac-240">Starting the FTP Server</span></span> 
-<span data-ttu-id="c10ac-241">FTP 服务器无法再运行默认情况下在启动时</span><span class="sxs-lookup"><span data-stu-id="c10ac-241">The FTP Server no longer runs by default at start-up</span></span> 
+### <a name="starting-the-ftp-server"></a><span data-ttu-id="7ebf1-239">启动 FTP 服务器</span><span class="sxs-lookup"><span data-stu-id="7ebf1-239">Starting the FTP Server</span></span> 
+<span data-ttu-id="7ebf1-240">FTP 服务器不再在启动时默认运行</span><span class="sxs-lookup"><span data-stu-id="7ebf1-240">The FTP Server no longer runs by default at start-up</span></span> 
 
-<span data-ttu-id="c10ac-242">若要运行一次：使用 SSH\PS，然后运行此命令启动 FTP 登录名：</span><span class="sxs-lookup"><span data-stu-id="c10ac-242">To run once: Login with SSH\PS and run this command to start FTP:</span></span>  
+<span data-ttu-id="7ebf1-241">若要运行一次：请使用 SSH\PS 登录，然后运行以下命令来启动 FTP：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-241">To run once: Login with SSH\PS and run this command to start FTP:</span></span>  
 ```
 start ftpd.exe 
 ```
 
-<span data-ttu-id="c10ac-243">若要运行在每次启动用户应创建计划程序任务：使用 SSH\PS 登录并创建计划程序任务：</span><span class="sxs-lookup"><span data-stu-id="c10ac-243">To run on every boot Users should create a scheduler task: Login with SSH\PS and create a scheduler task:</span></span> 
+<span data-ttu-id="7ebf1-242">若要在每次启动时运行，用户应创建一项计划程序任务：请使用 SSH\PS 登录，然后创建一项计划程序任务：</span><span class="sxs-lookup"><span data-stu-id="7ebf1-242">To run on every boot Users should create a scheduler task: Login with SSH\PS and create a scheduler task:</span></span> 
 ```
 schtasks /create /tn "IoTFTPD" /tr ftpd.exe /ru system /sc onstart 
 Schtasks /run /tn “IoTFTPD”
