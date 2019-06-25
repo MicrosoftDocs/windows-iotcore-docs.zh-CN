@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解有关各种建议看板和社区的设备的硬件功能信息。
 keywords: windows iot、 开发设备、 任务板，SOC，SOM，Raspberry Pi 2、 Raspberry Pi 3、 Minnowboard 最大值、 DragonBoard 芯片上的系统
-ms.openlocfilehash: 55e7192a53197623ca47ff8186630a691749c026
-ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
+ms.openlocfilehash: 85625926a5aaa474ba2ea86ff6c2890553669131
+ms.sourcegitcommit: 8bb162cbfa286107e243a0286fe53b3b9cc3f359
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174026"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67345119"
 ---
 # <a name="socs-and-custom-boards"></a>Soc 和自定义看板
 
@@ -23,7 +23,7 @@ Microsoft 致力于 Broadcom、 Intel、 NXP，和 Qualcomm 要验证支持 Wind
 |----------|-------|----------|-----|
 | BCM2837 | [Intel Atom® 处理器 E3900 系列 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 系列](http://aka.ms/iotnxp) |
 | BCM2836 | [Intel Celeron® 处理器 N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 系列](http://aka.ms/iotnxp)     |
-|         | [Intel® Pentium® 处理器 N4200 平台 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8 M 系列](http://aka.ms/iotnxp) |
+|         | [Intel® Pentium® 处理器 N4200 平台 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8 分钟和 8 分钟迷你系列](http://aka.ms/iotnxp) |
 |         | [Intel® Pentium® 和 Celeron® 处理器 N3000 系列 (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
 |         | [Intel® Atom® x5 E8000 处理器 (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         |  |
 |         | [Intel® Atom® x5 Z8350 处理器 （Cherry 线索）](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         |     |
