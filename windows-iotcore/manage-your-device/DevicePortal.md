@@ -8,12 +8,12 @@ ms.prod: windows-iot
 ms.technology: IoT
 description: 了解有关如何使用 Windows Device Portal 若要配置和远程管理你的设备。
 keywords: windows iot、 Windows Device Portal，远程，设备门户
-ms.openlocfilehash: 715e9c138e86efcd82b485d832c5fbdd536398dd
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 8e430365ea09509f5638d86ac77b151226df488f
+ms.sourcegitcommit: 8932969dc50805113c330bc2ba6ec9003d067b3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510646"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412154"
 ---
 # <a name="windows-device-portal"></a>Windows Device Portal
    Windows Device Portal (WDP) 允许您配置和通过本地网络的远程管理你的设备。
@@ -22,7 +22,7 @@ ms.locfileid: "59510646"
 ![Device Portal 主页](../media/deviceportal/deviceportal.png)
 
 > [!IMPORTANT]
-> 请不要将 maker 映像用于商品化。 如果 commercializing 设备，则必须使用自定义 FFU 为获得最佳安全性。 在[此处](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
+> 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
 
 > [!WARNING]
 > 实时内核调试目前适用于 ARM 设备将失败。 我们正在努力获得修复此问题。
@@ -188,6 +188,23 @@ Windows IoT 远程服务器允许用户查看其设备无需连接到键盘的�
 在 Windows 10 创意者更新，Windows Device Portal 添加了设备管理员安装使用的自定义证书中的 HTTPS 通信的方法。
 
 若要了解更多信息，请[阅读 Windows Device Portal docs 下的文档](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl)。 
+
+### <a name="crash-dump-settings-for-capturing-memory-dump"></a>用于捕获内存转储崩溃转储设置：
+
+若要捕获完整内存转储，请执行以下操作：
+
+1. 连接到通过 WDP IoT 设备。
+
+2. 从调试-> 的调试-> 设置内核故障设置-> 故障转储类型。 
+
+3. 选择：完全内存转储 （使用内存中）。
+    请确保在设备重新启动设置才能生效。 
+    
+4. 验证`HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\CrashDumpEnabled`设置为 0x1。
+
+5. 更新`HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFileSize`为 0x0。
+
+6. 请确保有足够的空间来生成此转储在设备上。 你可以配置更改的转储文件位置在此处： `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFile`
 
 
 ## <a name="additional-resources"></a>其他资源
