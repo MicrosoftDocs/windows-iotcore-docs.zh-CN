@@ -1,31 +1,31 @@
 ---
-title: Windows 10 IoT 核心版的概述
+title: Windows 10 IoT 核心版概述
 author: saraclay
 ms.author: saclayt
 ms.date: 01/18/2018
 ms.topic: article
-description: 了解什么是 Windows 10 IoT 核心版，可以使用它做什么。
-keywords: Windows 10 IoT Core，占用空间小、 无外设
+description: 了解 Windows 10 IoT 核心版是什么，以及可以用它执行什么操作。
+keywords: Windows 10 IoT 核心版, 占用空间小, 无外设
 ms.openlocfilehash: 15a3d3e5f1703f87b0f0a0c782bb4cab9b99557f
-ms.sourcegitcommit: 0a4039d333dc3d1ed79de9300c094eb3f57dd8ed
-ms.translationtype: MT
+ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 06/17/2019
 ms.locfileid: "66263860"
 ---
-# <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT 核心版的概述
+# <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT 核心版概述
 
 > [!NOTE]
-> Windows 10 容器可以仅用于 Windows IoT Core 和 Windows IoT 企业版与商业利用 Microsoft Azure IoT Edge 的部署。
+> Windows 10 容器只能与 Windows IoT 核心版和 Windows IoT 企业版配合使用，以便使用 Microsoft Azure IoT Edge 进行商业部署。
 
 ## <a name="what-is-windows-10-iot-core"></a>什么是 Windows 10 IoT 核心版？
-Windows 10 IoT 核心版是针对同时 ARM 运行的较小设备使用或不带显示器和 x86/x64 设备优化的 Windows 10 版本。 Windows IoT Core 文档提供有关连接、 管理、 更新、 保护你的设备和的详细信息。 
+Windows 10 IoT 核心版是针对带显示屏或不带显示屏的小型设备进行了优化的一个 Windows 10 版本，可以在 ARM 和 x86/x64 设备上运行。 此 Windows IoT 核心版文档介绍如何连接、管理、更新、保护设备，等等。 
 
-如果您已经准备好以转到下一个级别并开始 commercializing 你的解决方案，可以了解如何使用 Windows 10 IoT Core 与制造我们[Windows 10 IoT Core 交付厂商版指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 
+如果准备进入下一阶段并开始将解决方案商业化，则可参阅 [Windows 10 IoT 核心版制造指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)，了解如何使用 Windows 10 IoT 核心版进行制造。 
 
 ## <a name="getting-started"></a>即刻体验
 
-然后再尝试制造设备，最好是为第一个 try 和原型具有 Windows 10 IoT 核心版的设备。 这样一来，您可以了解哪些功能需要和哪些配置时，你将需要是时候来制造。
+在尝试制造某个设备之前，最好是先使用 Windows 10 IoT 核心版尝试该设备并制作其原型。 这样就可以了解在要制造时需要的功能和配置。
 
 <table>
 <colgroup>
@@ -42,23 +42,23 @@ Windows 10 IoT 核心版是针对同时 ARM 运行的较小设备使用或不带
 
 <tr class="odd">
 <td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
->1. 选择原型板</a></p></td>
-<td align="left"><p>看一下通用原型板并选择要开始使用原型制作。</p></td>
+>1. 选取原型板</a></p></td>
+<td align="left"><p>查看常见的原型板，选择一个开始其原型制作。</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p>2. Flash 原型图像</p></td>
-<td align="left"><p>转到我们的教程部分，了解如何刷写到所选设备上的原型图像。 </p></td>
+<td align="left"><p>2. 刷写原型映像</p></td>
+<td align="left"><p>转到教程部分，了解如何将原型映像刷写到所选设备中。 </p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">2. 3. 安装您的应用程序</a></p></td>
-<td align="left"><p>了解如何安装应用程序使用不同的工具。</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">2. 3. 安装应用</a></p></td>
+<td align="left"><p>了解如何使用不同工具来安装应用。</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. 将应用部署</a></p></td>
-<td align="left"><p>了解如何使用 Visual Studio 部署应用。</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. 部署应用</a></p></td>
+<td align="left"><p>了解如何使用 Visual Studio 来部署应用。</p></td>
 </tr>
 
 </tbody>
@@ -66,50 +66,50 @@ Windows 10 IoT 核心版是针对同时 ARM 运行的较小设备使用或不带
 
 ## <a name="differences-between-windows-10-desktop-and-windows-10-iot-core"></a>Windows 10 桌面版和 Windows 10 IoT 核心版之间的差异
 
-### <a name="different-features-available-on-desktop-and-iot-core"></a>可在桌面和 IoT Core 上的不同功能
+### <a name="different-features-available-on-desktop-and-iot-core"></a>桌面版和 IoT 核心版上提供的不同功能
 
-* 收件箱 Cortana 之后的版本 1809 (17763) 不再可在 Windows 10 IoT 核心版上。 如果想要将具有语音功能的设备要快地进入市场，可以将 Cortana 支持集成到设备使用[Cortana 设备 SDK 的预览](https://developer.microsoft.com/en-us/cortana/devices)。
-* [FileOpenPicker API](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker)不支持在 Windows 10 IoT 核心版中。 若要访问本地驱动器或可移动存储，可以在自己的应用程序中实现此。
-* 默认情况下，Windows 10 IoT Core 设备将启动到[默认应用](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp)而不是类似于桌面的 PC。 但是，对于商品化，此默认的应用**必须**替换为自定义应用程序还是可修改的默认应用程序。 此应用程序的目的不是仅为你提供要与首次启动时进行交互，但还允许你使用的友好 shell[开放源代码代码](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)为此应用程序，以便您可以使用这些功能即插你自己的自定义应用程序。
+* 从版本 1809 (17763) 开始，Windows 10 IoT 核心版不再提供内置 Cortana。 若要让支持语音的设备快速面市，则可使用 [Cortana 设备 SDK 预览版](https://developer.microsoft.com/en-us/cortana/devices)将 Cortana 支持集成到设备中。
+* Windows 10 IoT 核心版不支持 [FileOpenPicker API](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker)。 若要访问本地驱动器或可移动存储，可以在自己的应用程序中实现此 API。
+* 现成的 Windows 10 IoT 核心版设备会启动到[默认应用](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp)，这一点不同于桌面类电脑。 但是，若要进行商业化，**必须**将该默认应用替换为可以修改的自定义应用或默认应用。 此应用程序的用途在于，它不仅为你提供一个友好的用于在首次启动时进行交互的 shell，而且允许你使用此应用程序的[开源代码](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)，这样你就可以使用这些功能对自己的自定义应用程序进行即插即用操作。
 
-### <a name="differences-in-driver-supported-areas"></a>驱动程序支持的区域之间的差异
+### <a name="differences-in-driver-supported-areas"></a>驱动程序支持范围的差异
 
-* Windows 10 桌面版具有更比 Windows 10 IoT Core 支持的驱动程序。 若要使相同设备适用于 Windows 10 IoT Core 因为在桌面上，可能需要生成来自源的 Windows 10 IoT Core 设备驱动程序或查找另一个解决方法，尤其是对于 ARM 体系结构。
-* Libusb 为 Windows 10 IoT Core (ARM) 没有开箱驱动程序-你将需要生成源中要面向 ARM 体系结构。
+* Windows 10 桌面版支持的驱动程序多于 Windows 10 IoT 核心版。 若要让相同的设备在 Windows 10 IoT 核心版和桌面版上都可以使用，可能需要根据 Windows 10 IoT 核心版设备的源代码构建一个驱动程序，或者找到另一个解决方案，尤其是针对 ARM 体系结构的解决方案。
+* 对于适用于 Windows 10 IoT 核心版 (ARM) 的 libusb，没有现成的驱动程序 - 需根据源代码构建面向 ARM 体系结构的驱动程序。
 
-### <a name="differences-in-available-registry-set"></a>可用的注册表设置中的差异
+### <a name="differences-in-available-registry-set"></a>可用注册表设置中的差异
 
-* 在桌面上，是"自动隐藏滚动条在 Windows"，可以设置为 off 的选项。 受以下注册表项： 
+* 在桌面版上有一个“自动隐藏 Windows 中的滚动条”选项，可以将其设置为关。 它由以下注册表项控制： 
 
 ```
 HKEY_CURRENTUSER\Control Panel\Accessibility
 ```
 
-* 有默认情况下是在 Windows 10 IoT Core 设备上的任何此类注册表。 你将需要根据需要添加"动态滚动条"注册。
-* 若要启用自动在 UWP 应用程序中隐藏滚动条，可以添加"DynamicScrollbars"注册并将值设置为"1"像这样：
+* 在 Windows 10 IoT 核心版设备上，默认没有此类注册表。 需添加“DynamicScrollbars”注册表项（如果想要这样做）。
+* 若要启用在 UWP 应用程序中自动隐藏滚动条的功能，可以添加“DynamicScrollbars”注册表项并将值设置为“1”，如下所示：
 
 ```
 REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d "1"
 ```
 
-* 必须从默认帐户设置的注册表项。 如果 ScrollViewer 的 XAML 设置为"Visible"，那么注册表设置为 0 将强制滚动条以显示 regardlss 是否足够要具有在 UI 中显示滚动的内容。 注册表设置为 1 将保留前没有足够内容隐藏滚动条。
+* 必须通过默认帐户设置注册表项。 如果 ScrollViewer 的 XAML 设置为 "Visible"，则注册表设置为 0 会强制滚动条显示，不管是否有足够的内容让滚动条显示在 UI 中。 注册表设置为 1 会使滚动条处于隐藏状态，直至有足够的内容迫使其显示。
 
 ```
 <TextBox Height="200" Width="100" IsEnabled="True" FontSize="50" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Visible" Text="..."/>
 ```
 
-* 最后，如果 ScrollViewer XAML 的设置为"Auto"然后注册表设置为 0 将只显示完整的滚动条当没有足够的内容显示滚动条。 如果注册表设置为 1，隐藏足够内容如果时没有任何内容，然后将显示滚动条。
+* 最后，如果 ScrollViewer XAML 的设置为 "Auto"，则注册表设置为 0 时，只有在有足够内容的情况下才会显示完整的滚动条。 注册表设置为 1 时，滚动条会在有足够内容的时候显示，在没有内容的时候隐藏。
 
 ```
 <TextBox Height="200" Width="100" IsEnabled="True" FontSize="50" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" Text="..."/>
 ```
 
-### <a name="different-commands-supported"></a>支持的不同命令
+### <a name="different-commands-supported"></a>支持的命令不同
 
-* PowerShell 删除 AppxPackage 命令的工作上桌面，但不是在 Windows 10 IoT Core。
-* 并非所有设备上的文件夹都进行访问的通用 Windows 应用程序。 Windows 10 IoT Core 上可以使用 FolderPermissions 工具以便向 UWP 应用可以访问一个文件夹。 例如，运行 FolderPermissions c:\test-e 使 UWP 应用能够访问 c:\test 文件夹。 但是，这不是在桌面上可用的。
+* PowerShell 的 Remove-AppxPackage 命令可以在 Windows 10 桌面版上使用，但不能在 Windows 10 IoT 核心版上使用。
+* 并非设备上的所有文件夹都可供通用 Windows 应用访问。 在 Windows 10 IoT 核心版上，可以使用 FolderPermissions 工具将文件夹设置为可供 UWP 应用访问。 例如，运行 FolderPermissions c:\test -e 即可让 UWP 应用访问 c:\test 文件夹。 但是，这在桌面版上不适用。
 
-在这篇文章所述的所有差异可能不是有效将来因为 Windows 10 IoT Core 不断地进行更新。
+此发布文章中介绍的所有差异在将来可能不适用，因为 Windows 10 IoT 核心版经常进行更新。
 
 ## <a name="helpful-resources"></a>有用资源
-[阅读我们的文档](https://docs.microsoft.com/windows/iot-core/)若要了解有关 Windows 10 IoT Core 的详细信息。
+[阅读我们的文档](https://docs.microsoft.com/windows/iot-core/)，详细了解 Windows 10 IoT 核心版。

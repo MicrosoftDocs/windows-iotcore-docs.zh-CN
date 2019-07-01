@@ -3,62 +3,62 @@ title: 设置 Intel 设备
 ms.author: saclayt
 ms.date: 05/22/2019
 ms.topic: article
-description: 了解有关如何设置 Intel 设备使用 Windows 10 IoT Core。
-keywords: Windows 10 IoT Core Intel
+description: 了解如何通过 Windows 10 IoT 核心版来设置 Intel 设备。
+keywords: Windows 10 IoT 核心版, Intel
 ms.custom: RS5
 ms.openlocfilehash: a42771d82ffbebee9a45a72c5256479f5f611388
-ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
-ms.translationtype: MT
+ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
+ms.lasthandoff: 06/17/2019
 ms.locfileid: "66182179"
 ---
 # <a name="setting-up-an-intel-device"></a>设置 Intel 设备
 
-如果您希望通过 Qualcomm 设备制造，请参阅[IoT Core 交付厂商版指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 创建者映像不能用于生产。
+若要使用 Qualcomm 设备进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
 
 > [!NOTE]
-> 请确保设备现已通过重新输入 BIOS 设置，并切换启动驱动器顺序加载从硬盘驱动器而不是从 USB 驱动器启动从 eMMC 内存。
+> 确保设备现在是从 eMMC 内存启动，方法是：再次进入 BIOS 设置，切换驱动器启动顺序，使之从硬盘驱动器加载，而不是从 USB 盘加载。
 
 ## <a name="using-emmc"></a>使用 eMMC
 
-1. 下载并安装[Windows 评估和部署工具包](https://docs.microsoft.com/windows-hardware/get-started/adk-install)与正在运行的 Windows 10 的相关版本。
-2. 将 USB 驱动器插入计算机。
-3. 创建 USB 可启动的 WinPE 映像：
-4. 开始部署和映像的工具环境`(C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools)`以管理员身份。
-5. 创建 Windows PE 文件的工作副本。 指定任一 x86 amd64 或 ARM: `Copype amd64 C:\WINPE_amd64`
-6. 将 Windows PE 安装到 USB 闪存驱动器，指定以下的 WinPE 驱动器号。 可找到更多信息[此处](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)。 `MMakeWinPEMedia /UFD C:\WinPE_amd64 P:`
-7. 下载[Windows 10 IoT Core 映像](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true)通过双击已下载的 ISO 文件并查找装载的虚拟 CD 的驱动器。
-8. 此驱动器将包含的安装文件 (.msi);双击它。 这将在 C:\Program Files (x86) \Microsoft IoT\FFU\ 否则 d 在其中查看图像文件，在电脑上创建一个新目录"flash.ffu"。
-9. 下载、 解压缩并复制[eMMC 安装程序脚本](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip)到 USB 设备的根目录，以及设备的 FFU。
-10. 连接到 USB 集线器的 USB 驱动器、 鼠标和键盘。 将向你的设备的 HDMI 显示后，该设备附加到 USB 集线器，并在设备的电源线。
-11. 请转到设备的 BIOS 设置。 选择*Windows*作为从 uSB 驱动器启动操作系统并将设备设置。 当系统重新启动时，你会看到 WinPE 命令提示符。 WinPE 提示符切换到 USB 驱动器。 这通常是 c： 或 d:，但可能需要尝试其他驱动器盘符。
-12. 运行 eMMC 安装程序脚本，这将在 Windows 10 IoT Core 映像安装到设备的 eMMC 内存。 操作完成时，按任意键，并运行`wpeutil reboot`。 系统应引导到 Windows 10 IoT 核心版、 启动配置过程中，并加载默认应用程序。
+1. 下载并安装 [Windows 评估和部署工具包](https://docs.microsoft.com/windows-hardware/get-started/adk-install)，其中包含要运行的 Windows 10 相关版本。
+2. 将 USB 盘插入计算机中。
+3. 创建可从 USB 启动的 WinPE 映像：
+4. 以管理员身份启动 Deployment and Imaging Tools Environment `(C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools)`。
+5. 创建 Windows PE 文件的工作副本。 指定 x86、amd64 或 ARM：`Copype amd64 C:\WINPE_amd64`
+6. 将 Windows PE 安装到 U 盘，指定下面的 WinPE 驱动器号。 可以在[此处](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)查找详细信息。 `MMakeWinPEMedia /UFD C:\WinPE_amd64 P:`
+7. 下载 [Windows 10 IoT 核心版映像](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true)，方法是：双击下载的 ISO 文件，找到装载的虚拟 CD 驱动器。
+8. 此驱动器将包含一个安装文件 (.msi)；双击它。 这样会在电脑中的 C:\Program Files (x86)\Microsoft IoT\FFU\ 下创建一个新目录，其中可以看到映像文件“flash.ffu”。
+9. 下载 [eMMC 安装程序脚本](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip)，将其解压缩后连同设备的 FFU 复制到 USB 设备的根目录。
+10. 将 U 盘、鼠标和键盘连接到 USB 集线器。 将 HDMI 显示器连接到设备，将设备连接到 USB 集线器，并将电源线连接到设备。
+11. 转到设备的 BIOS 设置。 选择 *Windows* 作为操作系统，将设备设置为从 U 盘启动。 当系统重启后，会看到 WinPE 命令提示符。 从 WinPE 命令提示符切换到 U 盘。 该 U 盘通常为 C: 或 D:，但你可能需要尝试其他驱动器号。
+12. 运行 eMMC 安装程序脚本，将 Windows 10 IoT 核心版映像安装到设备的 eMMC 内存。 完成后，按任意键运行 `wpeutil reboot`。 系统会引导到 Windows 10 IoT 核心版中，开始配置过程，并加载默认应用程序。
 
 ## <a name="connect-to-a-network"></a>连接到网络
 
-### <a name="wired-connection"></a>有线的连接
-如果你的设备附带的以太网端口或 USB 以太网适配器支持，使您的有线的连接，将附加以太网电缆连接到你的网络。
+### <a name="wired-connection"></a>有线连接
+如果设备带有以太网端口或 USB 以太网适配器支持，因此可以启用有线连接，则请连接一条以太网电缆，通过它连接到网络。
 
 ### <a name="wireless-connection"></a>无线连接
-如果你的设备支持的 Wi-fi 连接，并且你已连接到它的显示，你将需要：
+如果设备支持 Wi-Fi 连接，而你已将显示器连接到设备，则需执行以下操作：
 
-1. 转到默认应用程序并单击设置按钮旁边的时钟。
-2. 在设置页上选择_网络和 Wi-fi_。
-3. 你的设备将开始扫描无线网络。
-4. 一旦你的网络会显示此列表中，选择它，然后单击_Connect_。
+1. 进入默认应用程序，单击时钟旁边的设置按钮。
+2. 在设置页上，选择“网络和 Wi-Fi”。 
+3. 设备将开始扫描无线网络。
+4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。 
 
-如果尚未连接显示，并且想要通过 Wi-fi 连接，你将需要：
+如果尚未连接显示器，因此希望通过 Wi-Fi 进行连接，则需执行以下操作：
 
-1. 转到 IoT 仪表板，并单击_我的设备_。
-2. 查找从列表中未配置开发板。 其名称开头"AJ_"...(例如 AJ_58EA6C68)。 如果看不到开发板出现几分钟后，请尝试重新启动你的板。
-3. 单击_配置设备_并输入你的网络凭据。 这将连接到网络的开发板。
+1. 转到 IoT 仪表板，单击“我的设备”。 
+2. 从列表中找到你的未配置的板。 其名称会以“AJ_”开头（例如 AJ_58EA6C68）。 如果数分钟后仍没有看到自己的板显示，则请尝试重启你的板。
+3. 单击“配置设备”，然后输入网络凭据。  这样就会将板连接到网络。
 
 > [!NOTE]
-> 您的计算机上的 Wifi 将需要打开以便找到其他网络。
+> 需启用计算机上的 Wi-Fi 才能找到其他网络。
 
-## <a name="connect-to-windows-device-portal"></a>连接到 Windows Device Portal
+## <a name="connect-to-windows-device-portal"></a>连接到 Windows 设备门户
 
-使用[Windows Device Portal](../manage-your-device/DevicePortal.md)通过 web 浏览器连接你的设备。 设备门户提供有价值的配置和设备管理功能。 
+使用 [Windows 设备门户](../manage-your-device/DevicePortal.md)，通过 Web 浏览器来连接设备。 设备门户提供重要的配置和设备管理功能。 
 
 
