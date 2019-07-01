@@ -84,7 +84,7 @@
 ### [Azure IoT 概述](connect-to-cloud/Overview.md)
 ### [连接设备](connect-to-cloud/ConnectDeviceToCloud.md)
 ### [连接应用](connect-to-cloud/ConnectAppToCloud.md)
-### [Azure 设备管理](manage-your-device/AzureIoTDM.md)
+### [Azure IoT 设备代理](manage-your-device/AzureIoTDA.md)
 ## [发行说明]()
 ### [Insider Preview](release-notes/CurrentInsider.md)
 #### [最新版：版本 17744](release-notes/insider/17744.md)
