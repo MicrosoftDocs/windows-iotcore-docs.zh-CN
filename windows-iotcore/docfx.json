@@ -35,6 +35,7 @@
       "layout": "Conceptual",
       "feedback_system": "None",
       "breadcrumb_path": "/windows/iot-core/breadcrumb/toc.json",
+      "disable_contribution_on_translation_quality": ["MT"],
       "uhfHeaderId": "MSDocsHeader-Windows-IoT",
       "searchScope": [
         "windows-iot"
