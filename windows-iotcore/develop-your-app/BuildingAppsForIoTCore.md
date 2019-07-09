@@ -6,19 +6,19 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解有关语言和 IoT Core 支持的应用类型。
 keywords: windows iot、 语言、 应用程序类型，UWP，支持
-ms.openlocfilehash: 7d330ff2961ba83d969861bbecd1536b02a4833a
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: e0eb046ba874e8433e7632d3f88a63a90b88fa2b
+ms.sourcegitcommit: 8a197111b5b7814b924d77dfea5f9d38760d4288
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510945"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67627395"
 ---
 # <a name="developing-foreground-applications"></a>前台应用程序开发
 了解有关 Windows 10 IoT 核心版，以及 UWP 支持的语言和支持 IoT Core 的非 UWP 应用程序类型。
 
 
 > [!NOTE]
-> 部署到 RS5 时，visual Studio 将生成一个含义模糊的错误 （或使用 OpenSSH RS4 启用） IoT 图像，除非已从 RS4 或更高版本的 SDK 安装 Visual Studio 可以访问。
+> 在部署到 RS5（或启用了 OpenSSH 的 RS4）IoT 映像时，Visual Studio 会生成一条晦涩的错误，除非安装了可供 Visual Studio 访问的来自 RS4 或更高版本的 SDK。
 
 ## <a name="application-types"></a>应用程序类型
 ___
@@ -119,10 +119,9 @@ C#和 VB 同时支持作为 UWP 应用，并有权访问的部分的.net Framewo
 示例：
 
 
-* [C#灾难从天而降无外设的完整文档](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground)
-* [C#仅灾难从天而降无外设代码](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/CS)
-* [VB 灾难从天而降无外设的代码仅限](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/VB)
-* [C#灾难从天而降 UI 应用](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
+* [C#灾难从天而降无外设](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/CS)
+* [VB 灾难从天而降无外设](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/VB)
+* [C#灾难从天而降 UI 应用](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky/CS)
 
 
 ### <a name="javascript"></a>Javascript
@@ -145,7 +144,7 @@ C#和 VB 同时支持作为 UWP 应用，并有权访问的部分的.net Framewo
 
 * [灾难从天而降无外设](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/CPP)
 * [灾难从天而降讲述的内容](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky/Cpp)
-* [控制台应用程序](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/MemoryStatus)
+* [控制台应用程序](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/MemoryStatus/CPP)
 
 > [!NOTE]
 > 对于那些规划中编写自己的应用程序C++，将需要检查 UWPC++在下载时的复选框。
@@ -158,7 +157,7 @@ C#和 VB 同时支持作为 UWP 应用，并有权访问的部分的.net Framewo
 
 我们[Arduino 连接项目向导](../learn-about-hardware/ArduinoWiringProjectGuide.md)提供有关如何完成设置以构建这些应用程序的完整说明。 以下链接和复制的示例将帮助你开始构建你自己的。  您甚至可以[生成 WinRT 组件中 Arduino](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky)然后可以使用从其他语言。 
 
-*灾难从天而降示例代码*完整[示例代码和文档](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/VB)位于我们的示例页，您可以发现下面的完整代码：
+*灾难从天而降示例代码*完整[示例代码和文档](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky)位于我们的示例页，您可以发现下面的完整代码：
 
 ```C++
 void setup()
