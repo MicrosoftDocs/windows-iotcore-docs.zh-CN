@@ -6,12 +6,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 核心版是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 核心版, 占用空间小, 无外设
-ms.openlocfilehash: 15a3d3e5f1703f87b0f0a0c782bb4cab9b99557f
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 37bbf85028542573972f85954777b7ef26098ce9
+ms.sourcegitcommit: 8a197111b5b7814b924d77dfea5f9d38760d4288
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66263860"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67627389"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT 核心版概述
 

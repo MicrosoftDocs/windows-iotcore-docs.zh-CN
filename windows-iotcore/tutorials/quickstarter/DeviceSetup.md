@@ -6,12 +6,12 @@ ms.topic: article
 description: 了解如何使用 SD 卡通过 Windows 10 IoT 核心版来设置设备。
 keywords: Windows 10 IoT 核心版, SD 卡, Windows 10 IoT 核心版仪表板
 ms.custom: RS5
-ms.openlocfilehash: ece83dcc7f6961a4614db2ee0c6a1331b009bb47
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 29332c99c9c2136ed8f62421972ee7fec184a9fd
+ms.sourcegitcommit: 8a197111b5b7814b924d77dfea5f9d38760d4288
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "60167706"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67627410"
 ---
 # <a name="setting-up-your-device"></a>设置设备
 
