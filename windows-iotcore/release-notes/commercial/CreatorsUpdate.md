@@ -1,17 +1,17 @@
 ---
 title: 创意者更新的内部版本 15063
-author: zeeshanfurqan
-ms.author: zeeshanf
+author: saraclay
+ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 阅读并了解有关新增功能创意者更新中的新增功能。
 keywords: windows iot，创意者更新发行说明
-ms.openlocfilehash: 73be3f48ce1051d98aa9ebce06dbdc4682fff0fa
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: a8b8fc93d8c079b1b57bbe18f48ea0bc7082dcbe
+ms.sourcegitcommit: 38de3aad11845248dac393ffc51b18c5596af4c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510925"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68155394"
 ---
 # <a name="creators-update-release-notes-for-windows-10-iot-core"></a>创意者更新的 Windows 10 IoT 核心版发行说明
 内部版本 15063 版本号。 2017 年 4 月
@@ -26,7 +26,7 @@ Windows 10 IoT Core 支持的嵌入式或专用用途设备的开发，Oem 和�
 
 ## <a name="privacy-statement"></a>隐私声明
 
-可以查看此版本的 Windows 操作系统的隐私声明[此处](http://go.microsoft.com/fwlink/?LinkId=506737)。
+可在[此处](http://go.microsoft.com/fwlink/?LinkId=506737)查看此 Windows 操作系统版本的隐私声明。
 
 ## <a name="whats-new"></a>新增功能
 * Windows 10 IoT 核心版公开发行版。 
@@ -65,9 +65,9 @@ Windows 10 IoT Core 支持的嵌入式或专用用途设备的开发，Oem 和�
 
 ### <a name="raspberry-pi"></a>Raspberry Pi  
 
-#### <a name="raspberry-pi-display-resolution-if-monitor-is-disconnected"></a>Raspberry Pi 的显示分辨率如果断开连接监视器 
-在 Raspberry Pi 如果断开连接监视器不能保持显示分辨率。 监视器 EDID 用于设置系统的解决方法，当其中一个连接。  
-当断开连接，Raspberry Pi 固件默认为根目录中的 SD 卡 config.txt 中内容。 
+#### <a name="raspberry-pi-display-resolution-if-monitor-is-disconnected"></a>Raspberry Pi 显示器分辨率（在监视器断开连接的情况下） 
+在监视器断开连接的情况下，Raspberry Pi 可能无法保持显示器分辨率。 监视器 EDID 用于设置系统的解决方法，当其中一个连接。  
+断开连接时，Raspberry Pi 固件默认设置为 SD 卡根目录的 config.txt 中的值。 
 
 #### <a name="raspberry-pi-video-performance"></a>Raspberry Pi 视频性能 
 Raspberry Pi 平台上的视频播放性能尚未进行优化。  动态用户元素（包括基于 XAML 的下拉菜单）可能表现不出最佳性能。 
@@ -79,7 +79,7 @@ Raspberry Pi 平台上的视频播放性能尚未进行优化。  动态用户�
 Raspberry Pi3 内置的蓝牙驱动程序仅支持带宽较低的设备  
 
 #### <a name="serial-port-usage-and-access-on-raspberry-pi-2"></a>串行端口使用情况和 Raspberry Pi 2 上的访问 
-Raspberry Pi 2 支持通过 PL011 UART 串行传输通信。  这是内核调试方案中的默认设置。  应用程序或设备驱动程序可以使用 PL011 UART 在 PL011 设备驱动程序使用以下命令关闭调试程序的情况下发送和接收数据：   
+Raspberry Pi 2 支持通过 PL011 UART 串行传输通信。  这是内核调试方案中的默认设置。  应用程序或设备的驱动程序可以使用 PL011 UART 发送和接收数据与 PL011 设备驱动程序关闭调试器使用以下命令：   
 `bcedit /set debug off` 
  
 ### <a name="dragon-board"></a>龙板 
@@ -87,14 +87,14 @@ Raspberry Pi 2 支持通过 PL011 UART 串行传输通信。  这是内核调�
 #### <a name="dragonboard-410c-shutdown"></a>Dragonboard 410c 关机 
 在 DragonBoard 上，关机命令不会关闭开发板电源。 系统将会重新启动。 请通过断开电源连接来关闭开发板电源。 
 
-#### <a name="dragon-board-headset--microphone-jack"></a>龙板耳机和麦克风插孔  
+#### <a name="dragon-board-headset--microphone-jack"></a>Dragon Board 耳机和麦克风插孔  
 Dragonboard BSP 具有耳机插孔和麦克风插孔的驱动程序，但它在开发板上没有这两种插孔。  
 
 #### <a name="dragonboard-spi-runs-at-lock-speed"></a>锁的速度运行 Dragonboard SPI  
 上 Dragonboard SPI 将忽略所请求的速度，并始终以预配置的速度运行。  
 
-#### <a name="dragonboard-connected-standby"></a>Dragonboard 连接待机状态 
-不，默认情况下，Qualcomm Dragonboard 启用连接待机状态。  若要启用连接待机 DragonBoard 上的以下注册表项需要设置为"1" 
+#### <a name="dragonboard-connected-standby"></a>Dragonboard 连接待机 
+默认情况下，连接待机在 Qualcomm Dragonboard 上未启用。  若要启用连接待机 DragonBoard 上的以下注册表项需要设置为"1" 
 <br>
 `HKLM\System\Controlset001\Control\Power\CsEnabled=DWORD:1`
 <br>
@@ -120,10 +120,10 @@ Dragonboard BSP 具有耳机插孔和麦克风插孔的驱动程序，但它在�
  
 ### <a name="all-platforms"></a>所有平台 
 
-#### <a name="mouse-pointer-disappears-while-debugging"></a>鼠标指针在调试时消失 
+#### <a name="mouse-pointer-disappears-while-debugging"></a>调试时鼠标指针消失 
 在某些情况下，鼠标指针在部署或调试应用程序使用 Visual Studio 后不可见，如果使用键盘 (Tab) 的焦点更改鼠标指针应会重新出现  
 
-#### <a name="server-applications-with-softap"></a>SoftAP 服务器应用程序  
+#### <a name="server-applications-with-softap"></a>服务器应用程序与 SoftAP  
 当使用 SoftAP 客户端将无法再访问由 UAP 应用公开的内容。  
 提供通过 SoftAP UAP 应用程序必须从设备上的控制台进行以下更改：  
 <br>
@@ -137,9 +137,9 @@ Dragonboard BSP 具有耳机插孔和麦克风插孔的驱动程序，但它在�
 <br>
 `Reboot`
 
-#### <a name="sensor-driver-conflict-in-pre-built-ffus"></a>在预建 FFUs 传感器驱动程序冲突 
-提供 FFUs 中没有传感器驱动程序冲突。 远程传感器框架指南针、 磁力仪、 加速感应器和回转仪安装驱动程序。 用于访问这些应用程序中的 UWP Api 假定安装了只是 1。 如果你正在开发以物理方式附加设备的驱动程序，Microsoft 上的远程驱动程序提供 FFUs 会发生冲突。  
-解决方案：可以通过连接到设备通过 SSH 或 PowerShell 并使用工具 devcon.exe 通过键入删除远程传感器驱动程序删除冲突的驱动程序"devcon.exe 删除 @"ROOT\REMOTESENSORDRIVER *"。 远程传感器驱动程序不会影响创建 FFUs OEM。 
+#### <a name="sensor-driver-conflict-in-pre-built-ffus"></a>在预先构建的 FFU 中出现传感器驱动程序冲突 
+在提供的 FFU 中存在传感器驱动程序冲突。 Remote Sensor Framework 可为指南针、磁力计、加速计和陀螺仪安装驱动程序。 从应用程序访问这些项目的 UWP API 会假定只安装了其中 1 项。 如果你正在开发以物理方式附加设备的驱动程序，Microsoft 上的远程驱动程序提供 FFUs 会发生冲突。  
+解决方案：可以通过连接到设备通过 SSH 或 PowerShell 并使用工具 devcon.exe 通过键入删除远程传感器驱动程序删除冲突的驱动程序"devcon.exe 删除 @"ROOT\REMOTESENSORDRIVER *"。 远程传感器驱动程序不影响 OEM 创建的 FFU。 
  
 #### <a name="default-administrator-user-name-and-password"></a>默认管理员用户名和密码 
 默认的管理员用户名和密码已硬编码在 Windows 10 IoT 核心版映像中。 这使设备具有安全风险，因此在更改密码之前，请不要向开放的 Internet 连接公开此信息。 
@@ -159,7 +159,7 @@ Dragonboard BSP 具有耳机插孔和麦克风插孔的驱动程序，但它在�
 #### <a name="non-default-drive-mode"></a>非默认驱动器模式  
 在 Raspberry Pi 和 Dragonboard 上，从非默认驱动器模式切换到其他非默认驱动器模式可能会在 GPIO 引脚上产生故障。 解决方法：在应用程序开端处设置一次驱动器模式。 
  
-#### <a name="application-already-running"></a>已在运行的应用程序  
+#### <a name="application-already-running"></a>已处于运行状态的应用程序  
 如果默认启动应用也从 Visual Studio 部署，则该应用可能会跟自身发生冲突。 解决方法：将默认启动应用更改为不希望部署的应用程序。 
  
 #### <a name="backgroundmediaplayermessagereceivedfromforeground-may-crash"></a>BackgroundMediaPlayer.MessageReceivedFromForeground 可能会崩溃  
@@ -170,7 +170,7 @@ Dragonboard BSP 具有耳机插孔和麦克风插孔的驱动程序，但它在�
 #### <a name="azure-active-directory-authentication-support"></a>Azure Active Directory 身份验证支持  
 Azure Active Directory 身份验证库在 Windows 10 IoT 核心版上不可用。  
  
-#### <a name="shell-management-of-application-crashes"></a>命令行程序管理的应用程序崩溃 
+#### <a name="shell-management-of-application-crashes"></a>应用程序崩溃的 Shell 管理 
 IoT 核心版的 shell 基础结构用于监视设备中运行的 APPX 类型的应用程序是否崩溃，并且会在发生崩溃时重新启动这些应用程序。  如果重新启动应用程序继续崩溃，shell 将采用 __failfast – 系统关键进程导致的 bug 检查和恢复以尝试重新启动。  可比较逻辑和处理用于有外设配置中的后台任务和前台应用程序。   
 
 下面捕获的是崩溃处理和重试逻辑： 
@@ -198,9 +198,9 @@ delay = (dword) ((float)BaseRetryDelayMs * (crashes_seen ** Fallback_exponent))
 ```
  
 #### <a name="time-synchronization"></a>时间同步  
-如果时间同步失败或超时这可能是由于无法访问或远距离时间服务器，可以执行以下要添加其他或本地时间服务器。 
+如果时间同步失败或超时，可能是因为时间服务器无法访问或过于遥远，可以通过以下操作来添加额外的或本地的时间服务器。 
  
-* 从命令行 （例如在设备上。 SSH, PowerShell)  w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..." 
+* 在设备的命令行（例如 SSH, PowerShell)  w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.其他内容..." 
 * 也可能会对通过启动脚本注册表这些新增功能或自定义运行时配置包包含必要时在映像创建过程的一部分。 
 有关更多详细信息，请参阅： 
 * [将文件和注册表设置添加到映像](https://msdn.microsoft.com/library/windows/hardware/mt670641(v=vs.85).aspx)
@@ -211,8 +211,7 @@ FTP 服务器无法再运行默认情况下在启动时 
 <br>
 若要运行一次： 
 `Login with SSH\PS`运行以下命令以启动 FTP:  
-`start ftpd.exe` 
-  
+`start ftpd.exe`    
 若要在每次启动上运行用户应创建计划程序任务。 
 
     Login with SSH\PS and create a scheduler task:       
@@ -221,7 +220,7 @@ FTP 服务器无法再运行默认情况下在启动时 
 
 ## <a name="copyright-information"></a>版权信息 
 
-© Microsoft. 保留所有权利。 
+© Microsoft。 保留所有权利。 
  
 本文档按原样提供。  在此文档中，包括 URL 和其他 Internet 网站引用表达信息和观点可能会更改恕不另行通知。 
 
