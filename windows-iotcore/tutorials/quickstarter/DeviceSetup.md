@@ -6,12 +6,12 @@ ms.topic: article
 description: 了解如何使用 SD 卡通过 Windows 10 IoT 核心版来设置设备。
 keywords: Windows 10 IoT 核心版, SD 卡, Windows 10 IoT 核心版仪表板
 ms.custom: RS5
-ms.openlocfilehash: 29332c99c9c2136ed8f62421972ee7fec184a9fd
-ms.sourcegitcommit: 8a197111b5b7814b924d77dfea5f9d38760d4288
+ms.openlocfilehash: e276f2cd1d123e4bbf266557fcf069c459e96210
+ms.sourcegitcommit: 1f3760a4f03c5f7713023bfa6bad508c99103a54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67627410"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522255"
 ---
 # <a name="setting-up-your-device"></a>设置设备
 
@@ -95,17 +95,22 @@ ms.locfileid: "67627410"
 
 ## <a name="flashing-with-emmc-for-up-squared-other-intel-devices"></a>使用 eMMC 进行刷写（适用于 Up Squared 和其他 Intel 设备）
 
-1. 下载并安装 [Windows 评估和部署工具包](https://docs.microsoft.com/windows-hardware/get-started/adk-install)，其中包含要运行的 Windows 10 相关版本。
-2. 将 USB 盘插入计算机中。
-3. 创建可从 USB 启动的 WinPE 映像：
-4. 以管理员身份启动 Deployment and Imaging Tools Environment `(C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools)`。
-5. 创建 Windows PE 文件的工作副本。 指定 x86、amd64 或 ARM：`Copype amd64 C:\WINPE_amd64`
-6. 将 Windows PE 安装到 U 盘，指定下面的 WinPE 驱动器号。 可以在[此处](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)查找详细信息。 `MMakeWinPEMedia /UFD C:\WinPE_amd64 P:`
+#### <a name="download-and-install-tools"></a>下载并安装工具
+
+1. 下载并安装与你的计算机上运行的 Windows 10 版本相对应的 [Windows 评估和部署工具包](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (Windows ADK)。
+2. 下载并安装 [ADK 的 Windows PE 加载项](https://go.microsoft.com/fwlink/?linkid=2087112)。
+
+#### <a name="create-a-usb-bootable-windows-pehttpsdocsmicrosoftcomen-uswindows-hardwaremanufacturedesktopwinpe-intro-image"></a>创建可从 USB 启动的 [Windows PE](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro) 映像
+
+3. 将 USB 盘插入计算机中。
+4. 以管理员身份启动“部署和映像工具环境”。 默认安装路径为 `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\DandISetEnv.bat`。
+5. 使用 [`Copype`](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/copype-command-line-options) 创建 Windows PE 文件的工作副本。 必须指定 x86、amd64 或 ARM 体系结构（例如 `Copype amd64 C:\WINPE_amd64`）
+6. 使用 [`MakeWinPEMedia`](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/makewinpemedia-command-line-options) 将 Windows PE 安装到 U 盘。 必须指定目标 USB 驱动器（例如 `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`）。
 7. 下载 [Windows 10 IoT 核心版映像](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true)，方法是：双击下载的 ISO 文件，找到装载的虚拟 CD 驱动器。
-8. 此驱动器将包含一个安装文件 (.msi)；双击它。 这样会在电脑中的 C:\Program Files (x86)\Microsoft IoT\FFU\ 下创建一个新目录，其中可以看到映像文件“flash.ffu”。
+8. 此驱动器将包含一个安装文件 (.msi)；双击它。 这会在电脑中的 `C:\Program Files (x86)\Microsoft IoT\FFU\` 下创建一个新目录，其中可以看到映像文件 `flash.ffu`。
 9. 下载 [eMMC 安装程序脚本](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip)，将其解压缩后连同设备的 FFU 复制到 USB 设备的根目录。
 10. 将 U 盘、鼠标和键盘连接到 USB 集线器。 将 HDMI 显示器连接到设备，将设备连接到 USB 集线器，并将电源线连接到设备。
-11. 转到设备的 BIOS 设置。 选择 *Windows* 作为操作系统，将设备设置为从 U 盘启动。 当系统重启后，会看到 WinPE 命令提示符。 从 WinPE 命令提示符切换到 U 盘。 该 U 盘通常为 C: 或 D:，但你可能需要尝试其他驱动器号。
+11. 如果必要，请转到设备的 BIOS 设置。 选择 *Windows* 作为操作系统，将设备设置为从 U 盘启动。 当系统重启后，会看到 WinPE 命令提示符。 从 WinPE 命令提示符切换到 U 盘。 该 U 盘通常为 C: 或 D:，但你可能需要尝试其他驱动器号。
 12. 运行 eMMC 安装程序脚本，将 Windows 10 IoT 核心版映像安装到设备的 eMMC 内存。 完成后，按任意键运行 `wpeutil reboot`。 系统会引导到 Windows 10 IoT 核心版中，开始配置过程，并加载默认应用程序。
 
 > [!NOTE]
