@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解 Windows 10 IoT Core 最支持的外围接口和协议。
 keywords: windows iot, 外围设备, 协议, 兼容性, 总线, 硬件
-ms.openlocfilehash: 6e30dd487e86c5e512e156fc47ce795e6830f50a
-ms.sourcegitcommit: 3bfdf0bead481053edaabc1f9de97ffc3fc787cd
+ms.openlocfilehash: d1d97c3bff2fe843216410d07530f4866136bc63
+ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68409369"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739820"
 ---
 # <a name="hardware-compatibility-list"></a>硬件兼容性列表
 
@@ -94,6 +94,29 @@ Windows 10 IoT 核心版支持各种外设接口和协议，包括对诸如 I2C�
 > | [Raspberry PI 的 SeeedStudio Grove 基本 Hat](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi.html) |ARM| RPI 的 Grove 基本 Hat 在 Raspbery PI 平台上提供对 Seeedstudio Grove 系统的支持。| [库和示例](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 > | [SeeedStudio Grove for Raspberry PI Zero](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi-Zero-p-3187.html) |ARM| RPI 0 的 Grove 基本 Hat 为 Raspbery PI 平台上的 Seeedstudio Grove 系统提供支持。| [库和示例](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 
+### <a name="semtech-sx127x-based-lora-pi-hatshttpswwwsemtechcomproductswireless-rflora-transceivers"></a>[基于 Semtech SX127X 的 LoRa® Pi 帽子](https://www.semtech.com/products/wireless-rf/lora-transceivers)
+Semtech 的 LoRa®超长范围 (100M 到 10KM), 传播频谱通信技术具有高干扰抗干扰性, 并提供一种低成本的解决方案, 用于将备有电池的设备连接到传统的网络基础结构。
+
+> | 部件名称/编号 | 兼容体系结构 | 描述 | 相关链接 | Microsoft 验证  | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | [Adafruit LoRa 收音机 Bonnet 433MHz](https://www.adafruit.com/product/4075) | ARM32 | 433MHz LoRa 连接, 3 个按钮和一个 OLED 显示。 | [库和示例](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [Adafruit LoRa 收音机 Bonnet 868/915MHz](https://www.adafruit.com/product/4074) | ARM32 | 868/915MHz LoRa 连接, 3 个按钮和一个 OLED 显示器。 | [库和示例](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [Dragino LoRa GPS Hat for Config-raspberrypi.json 433/868/915MHz](http://www.dragino.com/products/lora/item/106-lora-gps-hat.html) | ARM32 | 433/868/915MHz LoRa 连接选项和 GPS。 | [库和示例](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [RPI 915MHz 的 Elecrow LoRa RFM95 IoT 板](https://www.elecrow.com/lora-rfm95-iot-board-for-rpi.html) | ARM32 | 915MHz LoRa 连接和 Grove 套接字。 | [库和示例](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [电子技巧 Lora/LoraWan 盾牌 Raspberry Pi Zero and PI3](https://www.tindie.com/products/electronictrik/loralorawan-shield-for-raspberry-pi-zero-and-pi3/) | ARM32 | 868/915MHz LoRa 连接性和可选 OLED 显示。 | [库和示例](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [M2M 1 通道 LoRaWan Gateway 盾牌 for Raspberry Pi](https://www.tindie.com/products/m2m/1-channel-lorawan-gateway-shield-for-raspberry-pi/) | ARM32 | 868/915/923MHz LoRa 连接选项。 | [库和示例](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [uputronics Raspberry Pi + LoRa (TM) 扩展板](https://store.uputronics.com/index.php?route=product/product&path=61&product_id=68) | ARM32 | 433/868/915MHz LoRa 连接选项。 | [库和示例](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [uputronics Raspberry PiZero LoRa (TM) 扩展板](https://store.uputronics.com/index.php?route=product/product&path=61&product_id=99) | ARM32 | 双 433/868/915MHz LoRa 连接选项。 | [库和示例](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+
+
+### <a name="nordic-semiconductor-nrf24l01-wireless-pi-hatshttpswwwnordicsemicomproductslow-power-short-range-wirelessnrf24-series"></a>[北欧半导体 nRF24L01 无线 Pi 帽子](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF24-series)
+全球 2.5 GHz ISM 波段、250Kbps、1Mbps 和2Mbps 数据速率。 低能耗模块10的计量范围, 高能耗模块1KM。
+
+> | 部件名称/编号 | 兼容体系结构 | 描述 | 相关链接 | Microsoft 验证  | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | [Ceech Raspberry Pi nRF24l01 + 盾牌](https://www.tindie.com/products/ceech/new-raspberry-pi-to-nrf24l01-shield/) |ARM| Raspberry Pi 的 Raspberry Pi NRF24l01 + 盾牌外接程序支持单个 NRF24l01 + 模块和一个蜂鸣器和原型设计区域。| [库](https://github.com/techfooninja/Radios.RF24),[示例应用程序](https://github.com/KiwiBryn/nRF24L01Windows10IoTCoreDuinoDemo),[必需修改](https://blog.devmobile.co.nz/2017/07/31/nrf24-windows-10-iot-core-hardware/) | |
+> | [Boros Rf2-双重 nRF24L01 pHat](https://www.tindie.com/products/boros/borosrf2-dual-nrf24l01-phathat-rtc-for-pis/) |ARM| Boros RF2 最多支持两个 NRF24L01 + 无线电和一个可选 RTC。| [库](https://github.com/techfooninja/Radios.RF24),[示例应用程序](https://github.com/KiwiBryn/nRF24L01Windows10IoTCoreDuinoDemo) | |
+
 
 ### <a name="port-expanders"></a>端口扩展器
 > | 部件名称/编号 | 兼容体系结构 | 描述 | 相关链接 | Microsoft 验证  | 
@@ -124,6 +147,7 @@ Windows 10 IoT 核心版支持各种外设接口和协议，包括对诸如 I2C�
 > | 部件名称/编号 | 兼容体系结构 | 描述 | 相关链接 | Microsoft 验证 | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Keith & Koep i-平移 M7 CoverLens | ARM32 | 7.0 英寸触摸计算机, 适用于使用 Qualcomm Snapdragon 410E CPU、解析800x480px、亮度 850cd/qm、USB 2.0、SD 卡、POE | [i-平移 M7 信息](https://keith-koep.com/en/products/products-hmi/i-pan-m7-coverlens-arm-touch-panel-computer-technical-data/) | &#10004; |
+
 
 ### <a name="miscellaneous"></a>其他
 > | 部件名称/编号 | 兼容体系结构 | 描述 | 相关链接 | Microsoft 验证 | 
