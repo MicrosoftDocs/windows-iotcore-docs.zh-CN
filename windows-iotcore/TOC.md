@@ -21,6 +21,7 @@
 #### [Minnowboard 最大值](learn-about-hardware/PinMappings/PinMappingsMBM.md)
 ### [有外设和无外设设备](learn-about-hardware/HeadlessMode.md)
 ### [触控唤醒](learn-about-hardware/WakeOnTouch.md)
+### [UEFI 要求](commercialize-your-device/uefirequirements.md)
 ## [驱动程序指南]()
 ### [驱动程序部署](learn-about-hardware/DriverDeployment.md)
 ### [创建通用驱动程序](learn-about-hardware/DriverCreation.md)
