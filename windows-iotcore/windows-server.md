@@ -6,17 +6,17 @@ ms.date: 02/07/2019
 ms.topic: article
 description: 了解 Windows Server IoT 2019 是什么，以及可以用它执行什么操作。
 keywords: Windows Server IoT 2019, 企业可管理性, Windows 生态系统, IoT
-ms.openlocfilehash: 07c361d2b34aebe645659900587c25b92de442be
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 7c14df57e3a9e9368ba02a435027efe836d12e28
+ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "65197667"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739845"
 ---
 # <a name="an-overview-of-windows-server-iot-2019"></a>Windows Server IoT 2019 概述
 
 > [!NOTE]
-> 支持将 Windows 10 容器以商业方式部署在 Windows IoT Server 和 Windows Server 2019 上。
+> Windows 容器受到支持，能够以商业方式部署在 Windows Server、Windows IoT Server、Windows IoT Enterprise 和 Windows IoT Core 上。  从 Windows 10 月更新 2018（版本 17763）开始，Windows 容器只能与 Windows 企业版和专业版配合使用，用于开发/测试目的。
 
 ## <a name="what-is-windows-server-iot-2019"></a>什么是 Windows Server IoT 2019？
 Windows Server IoT 2019 是完整版本的 Windows Server 2019，可以为 IoT 解决方案提供企业可管理性和安全性。 Windows Server IoT 2019 享有全球 Windows 生态系统的所有权益。 它是 Windows Server 2019 的二进制等效文件，因此你可以使用类似的开发和管理工具，就像在常规用途服务器上使用一样。 但是，在许可和分发方面，常规用途版本和 IoT 版本存在差异。  Windows Server IoT 2019 只能通过 OEM 渠道获得许可，其用户享有特殊的专用权利。

@@ -6,24 +6,24 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 企业版是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 企业版, 企业, 二进制, Windows
-ms.openlocfilehash: c5532b3281eb0f497cbfeeedcf92e54a3659421d
-ms.sourcegitcommit: 8bb162cbfa286107e243a0286fe53b3b9cc3f359
+ms.openlocfilehash: 0d7347e86e3fd3eb6b5b7ad0eccc0825611a9225
+ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345129"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739833"
 ---
 # <a name="an-overview-of-windows-10-iot-enterprise"></a>Windows 10 IoT 企业版概述
 
 > [!NOTE]
-> Windows 10 容器只能与 Windows IoT 核心版和 Windows IoT 企业版配合使用，以便使用 Microsoft Azure IoT Edge 进行商业部署。
+> Windows 容器受到支持，能够以商业方式部署在 Windows Server、Windows IoT Server、Windows IoT Enterprise 和 Windows IoT Core 上。  从 Windows 10 月更新 2018（版本 17763）开始，Windows 容器只能与 Windows 企业版和专业版配合使用，用于开发/测试目的。
 
 ## <a name="what-is-windows-10-iot-enterprise"></a>什么是 Windows 10 IoT 企业版？
 Windows 10 IoT 企业版是完整版本的 Windows 10，可以为 IoT 解决方案提供企业可管理性和安全性。 Windows 10 IoT 企业版享有全球 Windows 生态系统的所有权益。 它是 Windows 10 企业版的二进制等效文件，因此你可以使用类似的开发和管理工具，就像在客户端电脑和笔记本电脑上使用一样。  但是，在许可和分发方面，桌面版本和 IoT 版本存在差异。 请注意，Windows 10 IoT 企业版提供长期服务频道 (LTSC) 和半年频道 (SAC) 两个选项。 OEM 可以选择需要用于设备的版本。
 
 ## <a name="getting-started"></a>即刻体验 
 
-若要开始使用 Windows 10 IoT 企业版进行制造，需联系[此列表](https://go.microsoft.com/fwlink/p/?linkid=2093270)中的某位分发商。
+若要开始使用 Windows 10 IoT 企业版进行制造，需联系[此列表](https://go.microsoft.com/fwlink/?linkid=2094697)中的某位分发商。
 
 也可尝试[此处](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)提供的 Windows 10 IoT 企业版评估副本。
 

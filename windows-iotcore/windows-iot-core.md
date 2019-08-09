@@ -6,17 +6,17 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 核心版是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 核心版, 占用空间小, 无外设
-ms.openlocfilehash: 37bbf85028542573972f85954777b7ef26098ce9
-ms.sourcegitcommit: 8a197111b5b7814b924d77dfea5f9d38760d4288
+ms.openlocfilehash: 602aeb62ecc0bb2dd08118775aaf41c3ee61184b
+ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67627389"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739792"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT 核心版概述
 
 > [!NOTE]
-> Windows 10 容器只能与 Windows IoT 核心版和 Windows IoT 企业版配合使用，以便使用 Microsoft Azure IoT Edge 进行商业部署。
+> Windows 容器受到支持，能够以商业方式部署在 Windows Server、Windows IoT Server、Windows IoT Enterprise 和 Windows IoT Core 上。  从 Windows 10 月更新 2018（版本 17763）开始，Windows 容器只能与 Windows 企业版和专业版配合使用，用于开发/测试目的。
 
 ## <a name="what-is-windows-10-iot-core"></a>什么是 Windows 10 IoT 核心版？
 Windows 10 IoT 核心版是针对带显示屏或不带显示屏的小型设备进行了优化的一个 Windows 10 版本，可以在 ARM 和 x86/x64 设备上运行。 此 Windows IoT 核心版文档介绍如何连接、管理、更新、保护设备，等等。 

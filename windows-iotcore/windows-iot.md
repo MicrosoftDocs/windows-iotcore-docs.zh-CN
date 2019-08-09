@@ -6,17 +6,17 @@ ms.date: 01/30/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 企业版, Windows 10 IoT 核心版, 无外设, 语音, 功能, 二进制版本, 版本
-ms.openlocfilehash: 1e1d2769513005a705c48522d4dc7dc034f5d7b9
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 1c99541f3b52891d2510fa3fa05df68fac7ced14
+ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66760389"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739807"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 概述 
 
 > [!NOTE]
-> Windows 10 容器只能与 Windows IoT 核心版和 Windows IoT 企业版配合使用，以便使用 Microsoft Azure IoT Edge 进行商业部署。
+> Windows 容器受到支持，能够以商业方式部署在 Windows Server、Windows IoT Server、Windows IoT Enterprise 和 Windows IoT Core 上。  从 Windows 10 月更新 2018（版本 17763）开始，Windows 容器只能与 Windows 企业版和专业版配合使用，用于开发/测试目的。
 
 ## <a name="what-is-windows-10-iot"></a>什么是 Windows 10 IoT？
 Windows 10 IoT 是 Windows 10 系列的成员，为物联网提供企业级功能、安全性和可管理性。  它利用 Windows 的嵌入式体验、生态系统和云连接，让组织可以通过安全的设备创建其物联网。这些设备可以快速进行预配、轻松进行管理，并可无缝连接到总体云策略。  
