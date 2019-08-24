@@ -6,12 +6,12 @@ ms.topic: article
 description: 了解如何通过 Windows 10 IoT 核心版来设置 NXP 设备。
 keywords: Windows 10 IoT 核心版, NXP
 ms.custom: RS5
-ms.openlocfilehash: 58bed6c49a5a05afe0852572051132f8731dfcb1
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 4924d109ab6fce3b6794a996140364d2814aca23
+ms.sourcegitcommit: 4272081b5186dada1e61974193e41fcc1c42a1b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66182169"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69629386"
 ---
 # <a name="setting-up-a-nxp-device"></a>设置 NXP 设备
 
@@ -19,6 +19,9 @@ ms.locfileid: "66182169"
 
 > [!IMPORTANT]
 > 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。  我们正在修复此问题。
+
+> [!NOTE]
+> 设置 NXP 与设置 Raspberry Pi 几乎完全相同。
 
 设置进行原型制作的 NXP 设备时，建议使用 Windows 10 IoT 核心版仪表板。 但是，若要使用 NXP 设备进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
 <br>
