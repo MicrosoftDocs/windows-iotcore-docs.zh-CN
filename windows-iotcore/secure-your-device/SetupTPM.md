@@ -1,30 +1,30 @@
 ---
-title: 设置建议的平台上的 TPM
+title: 在建议的平台上设置 TPM
 author: saraclay
 ms.author: saclayt
 ms.date: 09/05/17
 ms.topic: article
-description: 了解如何通过遵循本指南中建议的平台上设置 TPM 来增强设备安全性。
-keywords: windows iot、 安全性设置，受信任的平台模块、 TPM、 加密、 密钥
+description: 在建议的平台上设置 TPM 后, 了解如何使设备安全。
+keywords: windows iot, 安全性, 安装程序, 受信任的平台模块, TPM, 加密, 密钥
 ms.openlocfilehash: cc82262e3f800195b460bfe1113ec7c075d36b9a
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60170125"
 ---
-# <a name="setting-up-tpm-on-suggested-platforms"></a><span data-ttu-id="37e4a-104">设置建议的平台上的 TPM</span><span class="sxs-lookup"><span data-stu-id="37e4a-104">Setting up TPM on Suggested Platforms</span></span>
+# <a name="setting-up-tpm-on-suggested-platforms"></a><span data-ttu-id="a54d7-104">在建议的平台上设置 TPM</span><span class="sxs-lookup"><span data-stu-id="a54d7-104">Setting up TPM on Suggested Platforms</span></span>
 
-## <a name="setup-firmware-tpm-ftpm"></a><span data-ttu-id="37e4a-105">安装程序固件 TPM (fTPM)</span><span class="sxs-lookup"><span data-stu-id="37e4a-105">Setup firmware TPM (fTPM)</span></span>
-<span data-ttu-id="37e4a-106">固件 TPM (fTPM) 需要特殊处理器/SoC 支持，因此，fTPM 当前在 Raspberry Pi2 上无法实现。</span><span class="sxs-lookup"><span data-stu-id="37e4a-106">Firmware TPM (fTPM) requires special Processor/SoC support and whence fTPM is not currently implemented on Raspberry Pi2.</span></span>
+## <a name="setup-firmware-tpm-ftpm"></a><span data-ttu-id="a54d7-105">设置固件 TPM (fTPM)</span><span class="sxs-lookup"><span data-stu-id="a54d7-105">Setup firmware TPM (fTPM)</span></span>
+<span data-ttu-id="a54d7-106">固件 TPM (fTPM) 需要特殊处理器/SoC 支持，因此，fTPM 当前在 Raspberry Pi2 上无法实现。</span><span class="sxs-lookup"><span data-stu-id="a54d7-106">Firmware TPM (fTPM) requires special Processor/SoC support and whence fTPM is not currently implemented on Raspberry Pi2.</span></span>
 
-1. <span data-ttu-id="37e4a-107">必须使用内含版本 0.80 或更高版本的 UEFI 的 MBM。</span><span class="sxs-lookup"><span data-stu-id="37e4a-107">You must have MBM with UEFI version 0.80 or above.</span></span>
-2. <span data-ttu-id="37e4a-108">通过更改以下 UEFI 设置来启用 fTPM：</span><span class="sxs-lookup"><span data-stu-id="37e4a-108">Enable fTPM by changing the following UEFI settings:</span></span>
+1. <span data-ttu-id="a54d7-107">必须使用内含版本 0.80 或更高版本的 UEFI 的 MBM。</span><span class="sxs-lookup"><span data-stu-id="a54d7-107">You must have MBM with UEFI version 0.80 or above.</span></span>
+2. <span data-ttu-id="a54d7-108">通过更改以下 UEFI 设置来启用 fTPM：</span><span class="sxs-lookup"><span data-stu-id="a54d7-108">Enable fTPM by changing the following UEFI settings:</span></span>
 
         Device Manager -> System Setup -> Security Configuration -> PTT = <Enable>
 
-3. <span data-ttu-id="37e4a-109">确保没有用于 sTPM/dTPM 的 C:\Windows\System32\ACPITABL.dat（解决冲突/删除不需要的文件）。</span><span class="sxs-lookup"><span data-stu-id="37e4a-109">Ensure you do not have C:\Windows\System32\ACPITABL.dat for sTPM/dTPM (resolve the conflict/delete the file if not needed).</span></span>
-4. <span data-ttu-id="37e4a-110">验证是否已启用正确的 TPM 版本 - 在 Windows IoT 核心版设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T)。</span><span class="sxs-lookup"><span data-stu-id="37e4a-110">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
+3. <span data-ttu-id="a54d7-109">确保没有用于 sTPM/dTPM 的 C:\Windows\System32\ACPITABL.dat（解决冲突/删除不需要的文件）。</span><span class="sxs-lookup"><span data-stu-id="a54d7-109">Ensure you do not have C:\Windows\System32\ACPITABL.dat for sTPM/dTPM (resolve the conflict/delete the file if not needed).</span></span>
+4. <span data-ttu-id="a54d7-110">验证是否已启用正确的 TPM 版本 - 在 Windows IoT 核心版设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T)。</span><span class="sxs-lookup"><span data-stu-id="a54d7-110">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
 
         C:\>t2t.exe -cap
 
@@ -95,8 +95,8 @@ ms.locfileid: "59510715"
 
         c:\>
 
-5. <span data-ttu-id="37e4a-111">验证 fTPM 是否正常工作 - 在 Windows IoT 核心版设备上运行 [Urchin 单元测试](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest)。</span><span class="sxs-lookup"><span data-stu-id="37e4a-111">Verify fTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
-   <span data-ttu-id="37e4a-112">应查看多个通过测试（请注意，某些功能并不受 fTPM 支持，因此预计会出现多个错误代码）：</span><span class="sxs-lookup"><span data-stu-id="37e4a-112">You should see several PASS tests (note that some of the functionality is not supported by the fTPM, so a few error codes are expected):</span></span>
+5. <span data-ttu-id="a54d7-111">验证 fTPM 是否正常工作 - 在 Windows IoT 核心版设备上运行 [Urchin 单元测试](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest)。</span><span class="sxs-lookup"><span data-stu-id="a54d7-111">Verify fTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
+   <span data-ttu-id="a54d7-112">应查看多个通过测试（请注意，某些功能并不受 fTPM 支持，因此预计会出现多个错误代码）：</span><span class="sxs-lookup"><span data-stu-id="a54d7-112">You should see several PASS tests (note that some of the functionality is not supported by the fTPM, so a few error codes are expected):</span></span>
 
         C:\>urchintest.exe
         ---SETUP----------------------------------------
@@ -141,27 +141,27 @@ ms.locfileid: "59510715"
 
         C:\>
 
-## <a name="setup-discrete-tpm-dtpm"></a><span data-ttu-id="37e4a-113">安装程序离散 TPM (dTPM)</span><span class="sxs-lookup"><span data-stu-id="37e4a-113">Setup discrete TPM (dTPM)</span></span>
-<span data-ttu-id="37e4a-114">以下说明适用于 MBM、RPi2 或 RPi3 上受支持的任何 dTPM 模块。</span><span class="sxs-lookup"><span data-stu-id="37e4a-114">These instructions are applicable for any dTPM module supported on MBM, RPi2, or RPi3.</span></span>
+## <a name="setup-discrete-tpm-dtpm"></a><span data-ttu-id="a54d7-113">设置离散 TPM (dTPM)</span><span class="sxs-lookup"><span data-stu-id="a54d7-113">Setup discrete TPM (dTPM)</span></span>
+<span data-ttu-id="a54d7-114">以下说明适用于 MBM、RPi2 或 RPi3 上受支持的任何 dTPM 模块。</span><span class="sxs-lookup"><span data-stu-id="a54d7-114">These instructions are applicable for any dTPM module supported on MBM, RPi2, or RPi3.</span></span>
 
-1. <span data-ttu-id="37e4a-115">获取一个离散 TPM 模块，并将其附加到 MBM/RPi2/RPi3。</span><span class="sxs-lookup"><span data-stu-id="37e4a-115">Get a discrete TPM module and attach it to the MBM/RPi2/RPi3.</span></span>
-2. <span data-ttu-id="37e4a-116">（适用于 MBM）通过更改以下 UEFI 设置来禁用 fTPM：</span><span class="sxs-lookup"><span data-stu-id="37e4a-116">(Applies to MBM) Disable fTPM by changing the following UEFI settings:</span></span>
+1. <span data-ttu-id="a54d7-115">获取一个离散 TPM 模块，并将其附加到 MBM/RPi2/RPi3。</span><span class="sxs-lookup"><span data-stu-id="a54d7-115">Get a discrete TPM module and attach it to the MBM/RPi2/RPi3.</span></span>
+2. <span data-ttu-id="a54d7-116">（适用于 MBM）通过更改以下 UEFI 设置来禁用 fTPM：</span><span class="sxs-lookup"><span data-stu-id="a54d7-116">(Applies to MBM) Disable fTPM by changing the following UEFI settings:</span></span>
 
         Device Manager -> System Setup -> Security Configuration -> PTT = <Disable>
 
-3. <span data-ttu-id="37e4a-117">（适用于 MBM）通过更改以下 UEFI 设置来启用 dTPM：</span><span class="sxs-lookup"><span data-stu-id="37e4a-117">(Applies to MBM) Enable dTPM by changing the following UEFI settings:</span></span>
+3. <span data-ttu-id="a54d7-117">（适用于 MBM）通过更改以下 UEFI 设置来启用 dTPM：</span><span class="sxs-lookup"><span data-stu-id="a54d7-117">(Applies to MBM) Enable dTPM by changing the following UEFI settings:</span></span>
 
         Device Manager -> System Setup -> Security Configuration -> Discrete TPM = <Enable>
 
-4. <span data-ttu-id="37e4a-118">根据选择的离散 TPM 模块，在[此处](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL)标记其匹配的 ACPI 表。</span><span class="sxs-lookup"><span data-stu-id="37e4a-118">Based on your discrete TPM module of choice, identify its matching ACPI table [here](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL).</span></span>
-5. <span data-ttu-id="37e4a-119">将该 ACPI 表复制到 MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_。</span><span class="sxs-lookup"><span data-stu-id="37e4a-119">Copy that ACPI table to MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_.</span></span>
-6. <span data-ttu-id="37e4a-120">启用设备上的 testsigning：</span><span class="sxs-lookup"><span data-stu-id="37e4a-120">Enable testsigning on the device:</span></span>
+4. <span data-ttu-id="a54d7-118">根据选择的离散 TPM 模块，在[此处](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL)标记其匹配的 ACPI 表。</span><span class="sxs-lookup"><span data-stu-id="a54d7-118">Based on your discrete TPM module of choice, identify its matching ACPI table [here](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL).</span></span>
+5. <span data-ttu-id="a54d7-119">将该 ACPI 表复制到 MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_。</span><span class="sxs-lookup"><span data-stu-id="a54d7-119">Copy that ACPI table to MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_.</span></span>
+6. <span data-ttu-id="a54d7-120">启用设备上的 testsigning：</span><span class="sxs-lookup"><span data-stu-id="a54d7-120">Enable testsigning on the device:</span></span>
 
         bcdedit /set {current} integrityservices disable
         bcdedit /set testsigning on
 
-7. <span data-ttu-id="37e4a-121">重新启动设备。</span><span class="sxs-lookup"><span data-stu-id="37e4a-121">Reboot the device.</span></span>
-8. <span data-ttu-id="37e4a-122">验证是否已启用正确的 TPM 版本 - 在 Windows IoT 核心版设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T)。</span><span class="sxs-lookup"><span data-stu-id="37e4a-122">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
+7. <span data-ttu-id="a54d7-121">重新启动设备。</span><span class="sxs-lookup"><span data-stu-id="a54d7-121">Reboot the device.</span></span>
+8. <span data-ttu-id="a54d7-122">验证是否已启用正确的 TPM 版本 - 在 Windows IoT 核心版设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T)。</span><span class="sxs-lookup"><span data-stu-id="a54d7-122">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
 
         C:\>t2t.exe -cap
 
@@ -232,8 +232,8 @@ ms.locfileid: "59510715"
 
         C:\>
 
-9. <span data-ttu-id="37e4a-123">验证 dTPM 是否正常工作 - 在 Windows IoT 核心版设备上运行 [Urchin 单元测试](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest)。</span><span class="sxs-lookup"><span data-stu-id="37e4a-123">Verify dTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
-    <span data-ttu-id="37e4a-124">应查看多个通过测试（请注意，某些功能可能不受 dTPM 支持，因此预计会出现多个错误代码）：</span><span class="sxs-lookup"><span data-stu-id="37e4a-124">You should see several PASS tests (note that some of the functionality may not be supported by the dTPM, so a few error codes are expected):</span></span>
+9. <span data-ttu-id="a54d7-123">验证 dTPM 是否正常工作 - 在 Windows IoT 核心版设备上运行 [Urchin 单元测试](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest)。</span><span class="sxs-lookup"><span data-stu-id="a54d7-123">Verify dTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
+    <span data-ttu-id="a54d7-124">应查看多个通过测试（请注意，某些功能可能不受 dTPM 支持，因此预计会出现多个错误代码）：</span><span class="sxs-lookup"><span data-stu-id="a54d7-124">You should see several PASS tests (note that some of the functionality may not be supported by the dTPM, so a few error codes are expected):</span></span>
 
         C:\>urchintest.exe
 
@@ -279,25 +279,25 @@ ms.locfileid: "59510715"
 
         C:\>
 
-## <a name="enable-and-verify-software-tpm-stpm"></a><span data-ttu-id="37e4a-125">启用并验证软件 TPM (sTPM)</span><span class="sxs-lookup"><span data-stu-id="37e4a-125">Enable and verify software TPM (sTPM)</span></span>  
-<span data-ttu-id="37e4a-126">请注意，**sTPM 仅用于开发目的，并不提供任何切实的安全优势**。</span><span class="sxs-lookup"><span data-stu-id="37e4a-126">Note that **sTPM is intended for development purposes only and does not provide any real security benefits**.</span></span>
+## <a name="enable-and-verify-software-tpm-stpm"></a><span data-ttu-id="a54d7-125">启用和验证软件 TPM (sTPM)</span><span class="sxs-lookup"><span data-stu-id="a54d7-125">Enable and verify software TPM (sTPM)</span></span>  
+<span data-ttu-id="a54d7-126">请注意，**sTPM 仅用于开发目的，并不提供任何切实的安全优势**。</span><span class="sxs-lookup"><span data-stu-id="a54d7-126">Note that **sTPM is intended for development purposes only and does not provide any real security benefits**.</span></span>
 
-1. <span data-ttu-id="37e4a-127">（适用于 MBM）通过更改以下 UEFI 设置来禁用 fTPM：</span><span class="sxs-lookup"><span data-stu-id="37e4a-127">(Applies to MBM) Disable fTPM by changing the following UEFI settings:</span></span>
+1. <span data-ttu-id="a54d7-127">（适用于 MBM）通过更改以下 UEFI 设置来禁用 fTPM：</span><span class="sxs-lookup"><span data-stu-id="a54d7-127">(Applies to MBM) Disable fTPM by changing the following UEFI settings:</span></span>
 
         Device Manager -> System Setup -> Security Configuration -> PTT = <Disable>
 
-2. <span data-ttu-id="37e4a-128">（适用于 MBM）通过更改以下 UEFI 设置来启用 dTPM：</span><span class="sxs-lookup"><span data-stu-id="37e4a-128">(Applies to MBM) Enable dTPM by changing the following UEFI settings:</span></span>
+2. <span data-ttu-id="a54d7-128">（适用于 MBM）通过更改以下 UEFI 设置来启用 dTPM：</span><span class="sxs-lookup"><span data-stu-id="a54d7-128">(Applies to MBM) Enable dTPM by changing the following UEFI settings:</span></span>
 
         Device Manager -> System Setup -> Security Configuration -> Discrete TPM = <Enable>
 
-3. <span data-ttu-id="37e4a-129">启用设备上的 testsigning：</span><span class="sxs-lookup"><span data-stu-id="37e4a-129">Enable testsigning on the device:</span></span>
+3. <span data-ttu-id="a54d7-129">启用设备上的 testsigning：</span><span class="sxs-lookup"><span data-stu-id="a54d7-129">Enable testsigning on the device:</span></span>
 
         bcdedit /set {current} integrityservices disable
         bcdedit /set testsigning on
 
-4. <span data-ttu-id="37e4a-130">将 ACPI 表从[此处](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim)复制到 MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_。</span><span class="sxs-lookup"><span data-stu-id="37e4a-130">Copy the ACPI table from [here](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim) to MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_.</span></span>
-5. <span data-ttu-id="37e4a-131">重新启动设备。</span><span class="sxs-lookup"><span data-stu-id="37e4a-131">Reboot the device.</span></span>
-6. <span data-ttu-id="37e4a-132">验证是否已启用正确的 TPM 版本 - 在 Windows IoT 核心版设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T)。</span><span class="sxs-lookup"><span data-stu-id="37e4a-132">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
+4. <span data-ttu-id="a54d7-130">将 ACPI 表从[此处](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim)复制到 MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_。</span><span class="sxs-lookup"><span data-stu-id="a54d7-130">Copy the ACPI table from [here](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim) to MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_.</span></span>
+5. <span data-ttu-id="a54d7-131">重新启动设备。</span><span class="sxs-lookup"><span data-stu-id="a54d7-131">Reboot the device.</span></span>
+6. <span data-ttu-id="a54d7-132">验证是否已启用正确的 TPM 版本 - 在 Windows IoT 核心版设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T)。</span><span class="sxs-lookup"><span data-stu-id="a54d7-132">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
 
         C:\>t2t.exe -cap
         TBS detected 2.0 simulated TPM (sTPM).
@@ -367,8 +367,8 @@ ms.locfileid: "59510715"
 
         C:\>
 
-7. <span data-ttu-id="37e4a-133">验证 sTPM 是否正常工作 - 在 Windows IoT 核心版设备上运行 [Urchin 单元测试](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest)。</span><span class="sxs-lookup"><span data-stu-id="37e4a-133">Verify sTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
-   <span data-ttu-id="37e4a-134">应查看多个通过测试（请注意，某些功能并不受 sTPM 支持，因此预计会出现多个错误代码）：</span><span class="sxs-lookup"><span data-stu-id="37e4a-134">You should see several PASS tests (note that some of the functionality is not supported by the sTPM, so a few error codes are expected):</span></span>
+7. <span data-ttu-id="a54d7-133">验证 sTPM 是否正常工作 - 在 Windows IoT 核心版设备上运行 [Urchin 单元测试](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest)。</span><span class="sxs-lookup"><span data-stu-id="a54d7-133">Verify sTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
+   <span data-ttu-id="a54d7-134">应查看多个通过测试（请注意，某些功能并不受 sTPM 支持，因此预计会出现多个错误代码）：</span><span class="sxs-lookup"><span data-stu-id="a54d7-134">You should see several PASS tests (note that some of the functionality is not supported by the sTPM, so a few error codes are expected):</span></span>
 
         C:\>urchintest.exe
         ---SETUP----------------------------------------
