@@ -6,12 +6,12 @@ ms.date: 01/30/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 企业版, Windows 10 IoT 核心版, 无外设, 语音, 功能, 二进制版本, 版本
-ms.openlocfilehash: 1c99541f3b52891d2510fa3fa05df68fac7ced14
-ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
+ms.openlocfilehash: 8638a17201f2fe0a571741918e08172c99592be5
+ms.sourcegitcommit: 823a8f6967f74d71d5c61fe90f6b63ba79483479
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68739807"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159271"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 概述 
 
