@@ -1,17 +1,17 @@
 ---
 title: 内部版本 17763.253 发行说明
-author: zeeshanfurqan
-ms.author: zeeshan.furqan
+ms.author: saclayt
+author: saraclay
 ms.date: 02/14/2019
 ms.topic: article
 description: 阅读并了解 Windows 预览体验成员内部版本号 17763.253 的新增功能。
 keywords: windows iot, Windows 预览体验成员, 发行说明
-ms.openlocfilehash: dde4089d16ff552e665d341b432f663293ede6b8
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 476efb3edb5a260a6366e92927ebd24a4e648a19
+ms.sourcegitcommit: 823a8f6967f74d71d5c61fe90f6b63ba79483479
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "60168985"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159310"
 ---
 # <a name="release-notes-for-build-17763253"></a>内部版本 17763.253 发行说明
 _内部版本号 17763.253。2019 年 2 月。_
