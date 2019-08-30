@@ -1,11 +1,11 @@
 ---
-title: Arduino 开发和 Windows 10
+title: Arduino 和 Windows 10
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: 了解有关如何使用 arduino 开发和 Windows 10 一起在接线、 远程 Arduino，和的详细信息。
-keywords: windows iot，Arduino，Arduino 配线、 Windows 远程 Arduino
+description: 了解如何将 Arduino 和 Windows 10 一起用于接线、远程 Arduino 等。
+keywords: windows iot, Arduino, Arduino 布线, Windows 远程 Arduino
 ms.openlocfilehash: 79201f2f85f84783838b1de7c28031863d948d5e
 ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
 ms.translationtype: MT
@@ -13,26 +13,26 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "64744804"
 ---
-# <a name="arduino-and-windows-10"></a>Arduino 开发和 Windows 10
+# <a name="arduino-and-windows-10"></a>Arduino 和 Windows 10
 
 > [!IMPORTANT]
-> Windows 10 IoT 团队正在不再主动维护 arduino 开发。
+> Windows 10 IoT 团队不再主动维护 Arduino。
 
-Arduino 开发和 Windows 10 协同工作以帮助您使令人惊叹的项目-通过单击以下链接之一开始。 我们的技术支持 Arduino Uno 和庞大，以及新的 Arduino 101。
+Arduino 和 Windows 10 协同工作, 帮助你创建令人惊叹的项目-通过单击下面的链接之一即可开始。 我们的技术支持 Arduino Uno 和万像素, 以及新的 Arduino 101。
 
 ## <a name="arduino-wiring-for-windows-10-iot-core-devices"></a>Windows 10 IoT 核心版设备的 Arduino 接线
 
 ![Arduino 接线](../media/ArduinoAndWindows10/Lighning_0.png)
 
-若要启用的熟悉[Arduino 绑定](https://www.arduino.cc/en/Reference/HomePage)IoT Core 设备上的语言，提供用于连接 Arduino 的 Visual Studio 项目模板。 Arduino 绑定项目模板使开发、 部署和调试支持 IoT 核心版的设备上连接 Arduino 草图。
+为了能够在 IoT Core 设备上使用熟悉的[Arduino 布线](https://www.arduino.cc/en/Reference/HomePage)语言, 提供了用于 Arduino 布线的 Visual Studio 项目模板。 Arduino 布线项目模板允许在支持的 IoT 核心设备上开发、部署和调试 Arduino 布线。
     
-[开始使用 Arduino 绑定](ArduinoWiring.md)   
+[开始使用 Arduino 布线](ArduinoWiring.md)   
 
 ## <a name="windows-remote-arduino"></a>Windows 远程 Arduino
 
 [![windows 远程 arduino](../media/ArduinoAndWindows10/WindowsPhone_0.png)](https://github.com/ms-iot/remote-wiring)
 
-Windows 远程 Arduino 是一个开放源代码 Windows 运行时库允许创建者来控制 Arduino 通过蓝牙、 USB、 Wi-fi 或以太网连接。 它使开发人员能够在其 Windows 项目中，包括 Arduino 的传感器或甚至卸载 Arduino 从 Windows 到的计算成本高工作。 Windows 远程 Arduino 库可用于任何 WinRT 语言 (C++/CX，C#和 JavaScript)。
+Windows Remote Arduino 是一个开源 Windows 运行时库, 它允许制造商通过蓝牙、USB、Wi-fi 或以太网连接控制 Arduino。 它使开发人员能够在其 Windows 项目中包含 Arduino 传感器, 甚至在 Arduino 到 Windows 的情况下卸载计算资源高昂。 Windows Remote Arduino 库可用于任何 WinRT 语言 (C++/Cx C#和 JavaScript)。
 
 [查看 GitHub 上的 Windows 远程 Arduino](https://github.com/ms-iot/remote-wiring)
 
@@ -40,13 +40,13 @@ Windows 远程 Arduino 是一个开放源代码 Windows 运行时库允许创建
 </div>
 </div>
 
-## <a name="windows-virtual-shields-for-arduino"></a>Windows 虚拟 Shields arduino
+## <a name="windows-virtual-shields-for-arduino"></a>适用于 Arduino 的 Windows 虚拟屏蔽
 
-![arduino 虚拟 shields](../media/ArduinoAndWindows10/Arduino_1.png)
+![arduino 的虚拟防护](../media/ArduinoAndWindows10/Arduino_1.png)
 
-Windows 虚拟 Shields arduino 是主要用于 Arduino UNO 这与在所有 Windows 10 设备，包括 Windows Lumia 手机上运行的开放源代码通用 Windows 应用程序进行通信的开放源代码库。 该库公开 Lumia 手机的传感器和功能到绑定 Arduino 草图。
+适用于 Arduino 的 Windows 虚拟防护是一个开源库, 主要用于 Arduino UNO, 它与在所有 Windows 10 设备上运行的开放源代码通用 Windows 应用程序 (包括 Windows Lumia phone) 进行通信。 该库向 Arduino 布线草绘提供 Lumia 手机的传感器和功能。
 
-[查看 GitHub 上的 arduino Windows 虚拟防护罩](https://github.com/ms-iot/virtual-shields-arduino)
+[在 GitHub 上查看适用于 Arduino 的 Windows 虚拟盾牌](https://github.com/ms-iot/virtual-shields-arduino)
 
 [购买 Arduino](http://store-usa.arduino.cc/)
 </div>

@@ -4,19 +4,19 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: 了解 Minnowboard 最大 pin 映射的功能。
-keywords: windows iot，Minnowboard Max 引脚映射，GPIO
+description: 了解 Minnowboard Max 的 pin 映射功能。
+keywords: windows iot, Minnowboard Max, pin 映射, GPIO
 ms.openlocfilehash: 884d9ee0d93167a13f39a28b28454daccb2eebad
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60167489"
 ---
 # <a name="minnowboard-max-pin-mappings"></a>MinnowBoard Max 引脚映射
 
 > [!NOTE] 
-> 若要比较为较新版本的 Minnowboard 此 pin 映射，请访问文档[此处](https://minnowboard.org/minnowboard-turbot/documentation)。
+> 若要将此 pin 映射与较新版本的 Minnowboard 进行比较, 请访问[此处](https://minnowboard.org/minnowboard-turbot/documentation)的文档。
 
 ## <a name="overview"></a>概述
 
@@ -32,12 +32,12 @@ MinnowBoard Max 的硬件接口通过开发板上的 26 排针 **JP1** 公开。
 * **1x** - 3.3V 电源引脚
 * **2x** - 接地引脚
 
-在所有 IO 引脚 MinnowBoard 最大使用 3.3V 逻辑级别。 此外所有引脚由 [TXS0104E](http://www.ti.com/product/txs0104e) 电平转换器缓冲，电源和接地引脚除外。
+MinnowBoard Max 在所有 IO 引脚上使用 3.3 V 逻辑级别。 此外所有引脚由 [TXS0104E](http://www.ti.com/product/txs0104e) 电平转换器缓冲，电源和接地引脚除外。
 这些电平转换器显示为开放收集器输出，并带有 **10K&#x2126; 电阻式上拉，无论 IO 设置为输入还是输出该上拉都存在。**
  
 电平转换器的开放收集器性质意味着引脚可以强输出“０”，但只能弱输出“１”。 在连接从引脚（例如 LED）消耗电流的设备时记住这一点很重要。 有关将 LED 接入到 MinnowBoard Max 的正确方法，请参阅 [Blinky 示例](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)。
 
-## <a name="gpio-pins"></a>GPIO 插针
+## <a name="gpio-pins"></a>GPIO Pin
 
 以下 GPIO 引脚可通过 API 访问：
 
@@ -81,8 +81,8 @@ MBM 上提供两个串行 UART：**UART1** 和 **UART2**
 
 **UART1** 具有标准 **UART1 TX** 和 **UART1 RX** 线，以及流控制信号 **UART1 CTS** 和 **UART1 RTS**。
 
-* 将固定 6- **UART1 TX**
-* 将固定 8- **UART1 RX**
+* Pin 6- **UART1 TX**
+* Pin 8- **UART1 RX**
 * 引脚 10- **UART1 CTS**
 * 引脚 12- **UART1 RTS**
 
@@ -90,8 +90,8 @@ MBM 上提供两个串行 UART：**UART1** 和 **UART2**
 
 **UART2** 仅包括 **UART2 TX** 和 **UART2 RX** 线。
 
-* 将固定 17- **UART2 TX**
-* 将固定 19- **UART2 RX**
+* 固定 17- **UART2 TX**
+* Pin 19- **UART2 RX**
 
 UART2 不支持流控制，因此访问 SerialDevice 的以下属性可能会导致引发异常：
 
@@ -137,7 +137,7 @@ public async void Serial()
 
 请注意，必须将以下功能添加到 UWP 项目中的 **Package.appxmanifest** 文件，才能运行串行 UART 代码：
 
-Visual Studio 2017 在清单设计器 （appxmanifest 文件的可视编辑器） 的影响 serialcommunication 功能中有一个已知的 bug。  如果你 appxmanifest 添加 serialcommunication 功能，修改与设计器在 appxmanifest 将损坏你 appxmanifest （设备 xml 子将会丢失）。  可以解决此问题通过手动编辑 appxmanifest 通过右键单击你的 appxmanifest 并从上下文菜单中选择查看代码。
+Visual Studio 2017 在清单设计器 (appxmanifest.xml 文件的可视化编辑器) 中有一个已知 bug, 该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能, 则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml (设备 xml 子级将丢失)。  若要解决此问题, 请右键单击 appxmanifest.xml, 然后从上下文菜单中选择 "查看代码", 手动编辑 appxmanifest.xml。
 
 ```
   <Capabilities>
@@ -151,7 +151,7 @@ Visual Studio 2017 在清单设计器 （appxmanifest 文件的可视编辑器�
 
 ## <a name="i2c-bus"></a>I2C 总线
 
-让我们看一下此设备上可用的 I2C 总线。
+让我们看看此设备上提供的 I2C 总线。
 
 ### <a name="i2c-overview"></a>I2C 概述
 
@@ -197,7 +197,7 @@ MinnowBoard Max 具有已知的 I2C 总线问题，可导致某些 I2C 设备发
 
 ## <a name="spi-bus"></a>SPI 总线
 
-让我们看一下此设备上的可用 SPI 总线。
+让我们看看此设备上可用的 SPI 总线。
 
 ### <a name="spi-overview"></a>SPI 概述
 

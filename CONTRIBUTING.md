@@ -10,8 +10,8 @@
 
 若要建议更改文档，请按以下步骤操作：
 
-1. 如果你是在查看 Docs.microsoft.com 页面，请单击页面右上角的“编辑”  按钮。  我们会将你重定向到 [GitHub 存储库](https://github.com/MicrosoftDocs/windows-iotcore-docs)中的相应 Markdown 源文件。  如果已经在 GitHub 存储库中，则可直接导航到要更改的源文件。
-2. 如果还没有 GitHub 帐户，请单击右上角的“注册”，创建一个新帐户。 
+1. 如果你是在查看 Docs.microsoft.com 页面，请单击页面右上角的“编辑”按钮。  我们会将你重定向到 [GitHub 存储库](https://github.com/MicrosoftDocs/windows-iotcore-docs)中的相应 Markdown 源文件。  如果已经在 GitHub 存储库中，则可直接导航到要更改的源文件。
+2. 如果还没有 GitHub 帐户，请单击右上角的“注册”，创建一个新帐户。
 3. 在要更改的 GitHub 页中，单击铅笔图标。 
 4. 修改文件，使用预览选项卡来确保所做的更改看起来是合适的。
 5. 完成后，提交所做的更改并打开一个拉取请求。
@@ -49,7 +49,7 @@
 - `git status`：此命令会显示你更改了哪些文件，目的是让你确认确实要进行这些更改。 
 - `git add -A`：此命令要求 git 添加你的所有更改。 如果只希望添加对某个具体文件的更改，可以改为输入 `git add <file.md>` 命令，其中的“file.md”表示包含更改内容的文件的名称。
 - `git commit -m “Fixed a few typos”`：此命令要求 git 提交你在上一步添加的更改，并附上一条说明所做更改的短消息。
-- `git push origin <yourbranchname>`：此命令将你对远程存储库（即“原始存储库”，已在 GitHub 上创建其分支）所做的更改推送到指定的分支中。 由于你已创建存储库的分支并将其放置到你自己的 GitHub 帐户中，因此你可以在“开发”分支中完成自己的工作。  
+- `git push origin <yourbranchname>`：此命令将你对远程存储库（即“原始存储库”，已在 GitHub 上创建其分支）所做的更改推送到指定的分支中。 由于你已创建存储库的分支并将其放置到你自己的 GitHub 帐户中，因此你可以在“开发”分支中完成自己的工作。 
 
 如果对所做的更改满意并准备提交 PR，请执行以下操作：
 - 转到 IoT 存储库的分支： https://github.com/your-github-alias/windows-iotcore-docs 。

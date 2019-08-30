@@ -1,21 +1,21 @@
 ---
-title: 设置建议的平台上的 TPM
+title: 在建议的平台上设置 TPM
 author: saraclay
 ms.author: saclayt
 ms.date: 09/05/17
 ms.topic: article
-description: 了解如何通过遵循本指南中建议的平台上设置 TPM 来增强设备安全性。
-keywords: windows iot、 安全性设置，受信任的平台模块、 TPM、 加密、 密钥
+description: 在建议的平台上设置 TPM 后, 了解如何使设备安全。
+keywords: windows iot, 安全性, 安装程序, 受信任的平台模块, TPM, 加密, 密钥
 ms.openlocfilehash: cc82262e3f800195b460bfe1113ec7c075d36b9a
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60170125"
 ---
-# <a name="setting-up-tpm-on-suggested-platforms"></a>设置建议的平台上的 TPM
+# <a name="setting-up-tpm-on-suggested-platforms"></a>在建议的平台上设置 TPM
 
-## <a name="setup-firmware-tpm-ftpm"></a>安装程序固件 TPM (fTPM)
+## <a name="setup-firmware-tpm-ftpm"></a>设置固件 TPM (fTPM)
 固件 TPM (fTPM) 需要特殊处理器/SoC 支持，因此，fTPM 当前在 Raspberry Pi2 上无法实现。
 
 1. 必须使用内含版本 0.80 或更高版本的 UEFI 的 MBM。
@@ -141,7 +141,7 @@ ms.locfileid: "59510715"
 
         C:\>
 
-## <a name="setup-discrete-tpm-dtpm"></a>安装程序离散 TPM (dTPM)
+## <a name="setup-discrete-tpm-dtpm"></a>设置离散 TPM (dTPM)
 以下说明适用于 MBM、RPi2 或 RPi3 上受支持的任何 dTPM 模块。
 
 1. 获取一个离散 TPM 模块，并将其附加到 MBM/RPi2/RPi3。
@@ -279,7 +279,7 @@ ms.locfileid: "59510715"
 
         C:\>
 
-## <a name="enable-and-verify-software-tpm-stpm"></a>启用并验证软件 TPM (sTPM)  
+## <a name="enable-and-verify-software-tpm-stpm"></a>启用和验证软件 TPM (sTPM)  
 请注意，**sTPM 仅用于开发目的，并不提供任何切实的安全优势**。
 
 1. （适用于 MBM）通过更改以下 UEFI 设置来禁用 fTPM：

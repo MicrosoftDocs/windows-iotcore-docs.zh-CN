@@ -5,41 +5,41 @@ ms.author: paulmon
 ms.date: 09/20/2017
 ms.topic: article
 description: 了解如何调查内存泄漏。
-keywords: windows iot，Visual Studio 中，泄漏，故障排除
+keywords: windows iot, Visual Studio, 泄漏, 故障排除
 ms.openlocfilehash: 8385ae621c18c079d0a2ec7bf7b0b4042359eccc
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60168533"
 ---
 # <a name="investigating-memory-leaks"></a>调查内存泄漏
 
-调查使用 Visual Studio Windows IoT Core 上的内存泄漏的最佳工具是集成[诊断工具](https://docs.microsoft.com/visualstudio/profiling/memory-usage)
+通过 Visual Studio 调查 Windows IoT Core 上的内存泄漏的最佳工具是集成的[诊断工具](https://docs.microsoft.com/visualstudio/profiling/memory-usage)
 
 ![诊断工具](../media/MemoryLeaks/DiagnosticTools.PNG)
 
-可以为前台应用程序[按照文档说明](https://docs.microsoft.com/visualstudio/profiling/memory-usage)。
+对于前台应用程序, 你可以[按照文档操作](https://docs.microsoft.com/visualstudio/profiling/memory-usage)。
 
-但是，这些工具不能直接与 Windows IoT Core**后台应用程序**。 后台应用程序中使用的分析代码的一种方法是将其包装在前台应用程序以进行分析：
+但是, 这些工具不会直接使用 Windows IoT Core**后台应用程序**。 分析后台应用程序中使用的代码的一种方法是将其包装在前台应用程序中进行分析:
 
-1. 添加**空白应用**到**背景应用**解决方案
-2. 右键单击**空白应用**引用，然后添加对引用**背景应用**
-3. 更改**后台应用**run （） 方法检查 taskInstance 参数是否为 null，并处理这些情况下，以不同的方式。
-4. 从**BlankApp**调用 BackgroundApp::Run(null)
-5. 对 BackgroundApp::Run 调用上设置断点
-6. 当命中断点时发现**诊断工具**windows 和单击![快照](../media/MemoryLeaks/Snapshot.PNG)按钮。
+1. 将**空白应用**添加到**后台应用**解决方案
+2. 右键单击**空白应用**引用并添加对**后台应用**的引用
+3. 更改**后台应用**Run () 方法, 检查 taskInstance 参数是否为 null, 并以不同的方式处理这些情况。
+4. 从**BlankApp**调用 BackgroundApp:: Run (null)
+5. 在调用 BackgroundApp:: Run 时设置断点
+6. 命中断点时, 查找**诊断工具**窗口, 然后单击 "快照![](../media/MemoryLeaks/Snapshot.PNG) " 按钮。
 
-8. 重现此问题
-9. 创建另一个快照
-10. 使用**诊断工具**窗口进行诊断泄漏。
+8. 重现问题
+9. 拍摄另一个快照
+10. 使用 "**诊断工具**" 窗口诊断泄露。
 
-## <a name="create-a-test-app"></a>创建一个测试应用
+## <a name="create-a-test-app"></a>创建测试应用
 
-让我们开始分配内存并不会释放它模拟了泄漏的应用程序。
-首先，创建一个新C#后台应用程序：[开发后台应用程序](./BackgroundApplications.md)
+让我们从分配内存的应用程序开始, 而不释放内存来模拟泄露。
+首先创建一个新C#的后台应用程序:[开发后台应用程序](./BackgroundApplications.md)
 
-与此替换 StartupTask.cs 中的代码
+将 StartupTask.cs 中的代码替换为此
 ```C#
 using System;
 using System.Collections.Generic;
@@ -99,31 +99,31 @@ namespace LeakyBackgroundApp
 }
 ```
 
-此时在 IoT 设备上运行的后台应用程序如果它应会消耗大量内存并永远不会释放它。 如果尝试使用诊断工具现在您将看到类似如下所示，因为当前不支持与后台应用程序使用的工具。
+此时, 如果你在 IoT 设备上运行后台应用程序, 它应该会占用大量内存, 并且永远不会释放。 如果此时尝试使用诊断工具, 你将看到如下所示的内容, 因为当前不支持使用带后台应用的工具。
 
-![诊断工具后台应用程序](../media/MemoryLeaks/DiagnosticToolsBackgroundApp.png)
+![诊断工具后台应用](../media/MemoryLeaks/DiagnosticToolsBackgroundApp.png)
 
-若要解决此我们要将前台应用程序添加到解决方案。 在中**解决方案资源管理器**右键单击解决方案文件夹，然后选择**Add.New 项目**。
+若要解决此情况, 我们将向解决方案中添加一个前景应用。 在**解决方案资源管理器**右键单击解决方案文件夹, 然后选择 "添加" "**新建项目**"。
 
 ![添加新项目](../media/MemoryLeaks/AddNewProject.png)
 
-选择**可视化C#> Windows 通用 > 空白应用**作为项目类型，命名你的项目，然后单击**确定**。
+选择 **" C#Visual > Windows 通用 >" 空白应用程序**作为项目类型, 为项目命名, 然后单击 **"确定"** 。
 
 ![添加新项目](../media/MemoryLeaks/NewForegroundApp.PNG)
 
-右键单击新前台应用程序项目的**引用**节点，然后选择**添加引用...**
+右键单击新的前台应用项目的 "**引用**" 节点, 然后选择 "**添加引用 ...** "
 
 ![添加新项目](../media/MemoryLeaks/AddReference.PNG)
 
-在中**引用管理器**对话框中，选择**项目**的左窗格中。  在中心窗格中在后台应用程序项目旁边的复选框中添加检查，然后单击**确定**。
+在 "**引用管理器**" 对话框中, 选择左窗格中的 "**项目**"。  在中心窗格中, 在后台应用程序项目旁边的复选框中添加一个复选框, 然后单击 **"确定"** 。
 
 ![添加新项目](../media/MemoryLeaks/AddReferenceDialog.PNG)
 
-接下来右键单击前台应用程序项目，然后单击**设为启动项目**。
+接下来, 右键单击前台应用项目, 然后单击 "**设为启动项目**"。
 
 ![添加新项目](../media/MemoryLeaks/SetAsStartup.PNG)
 
-添加代码以创建您的后台应用程序对象的实例并调用 Run 传递空值作为唯一参数。
+添加代码以创建后台应用程序对象的实例, 并以 null 作为唯一参数传入。
 ```C#
 public MainPage()
 {
@@ -133,7 +133,7 @@ public MainPage()
 }
 ```
 
-然后在后台应用程序的运行方法检查并确保 taskInstance 不为 null 然后再使用它。
+然后, 在后台应用的 Run 方法中检查以确保 taskInstance 在使用之前不为 null。
 
 ```C#
 public void Run(IBackgroundTaskInstance taskInstance)
@@ -147,24 +147,24 @@ public void Run(IBackgroundTaskInstance taskInstance)
 }
 ```
 
-1. 对任务的调用上设置断点。Run(null)。
-2. 设置计时器另一个断点。在中 StartupTask.cs Timer_Tick 中的更改 （Timeout.Infinite，Timeout.Infinite）。
+1. 在对任务的调用上设置断点。运行 (null)。
+2. 设置计时器上的另一个断点。在 StartupTask.cs 的 Timer_Tick 中更改 (Timeout, 无限大, 无限大)。
 3. 按 F5 开始调试
-4. 当命中第一个断点按快照按钮以设置要比较的基线
+4. 点击第一个断点时, 请按 "快照" 按钮, 设置比较基线
 
 ![快照](../media/MemoryLeaks/Snapshot.PNG)
 
 5. 按 F5
-6. 当你命中第二个断点按快照按钮再次捕获的当前状态。
+6. 命中第二个断点时, 请再次按 "快照" 按钮以捕获当前状态。
 
-现在的诊断工具应显示具有增加内存使用和 2 个快照，像这样的关系图：
+现在, 诊断工具应显示一个图表, 其中包含增加的内存使用情况和2个快照, 如下所示:
 
-![与泄漏的诊断工具](../media/MemoryLeaks/DiagnosticToolsWithLeaks.PNG)
+![泄漏诊断工具](../media/MemoryLeaks/DiagnosticToolsWithLeaks.PNG)
 
-查看堆大小列中的第 2 行。 单击包含加号和向上键的第二个数字。 你应该会看到如下内容：
+查看 "堆大小" 列中的第2行。 单击带有加号和向上键的第二个数字。 你应该会看到如下内容：
 
 ![快照表](../media/MemoryLeaks/Snapshot2_1.PNG)
 
-按大小差异排序，以便最大数量是在顶部，然后单击顶部的行。 第二个详细信息表上单击**引用的类型**。  现在应显示第二个表**列表\<Byte []\>** 作为所有的内存使用率的源。
+按大小差异排序, 使最大数值位于顶部, 然后单击顶部的行。 在第二个详细信息表上方, 单击 "**引用的类型**"。  第二个表现在应**将\<List Byte [\> ]** 显示为所有内存使用情况的源。
 
 ![快照表](../media/MemoryLeaks/Snapshot2_2.PNG)

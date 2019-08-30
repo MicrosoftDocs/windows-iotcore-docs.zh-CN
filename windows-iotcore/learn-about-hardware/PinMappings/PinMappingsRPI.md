@@ -4,32 +4,32 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: 了解 Raspberry Pi 2 和 3 引脚映射的功能。
-keywords: windows iot，Rasperry Pi 2，Raspberry Pi 3，固定映射，GPIO
+description: 了解 Raspberry Pi 2 和3的 pin 映射功能。
+keywords: windows iot, Rasperry Pi 2, Raspberry Pi 3, 固定映射, GPIO
 ms.openlocfilehash: 86e641bdcc6b4895161c6509ca7529b0dd55fad9
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60167509"
 ---
 # <a name="raspberry-pi-2--3-pin-mappings"></a>Raspberry Pi 2 和 3 引脚映射
 
-![Raspberry Pi 2 和 3 Pin 标头](../../media/PinMappingsRPI/RP2_Pinout.png)
+![Raspberry Pi 2 & 3 针标题](../../media/PinMappingsRPI/RP2_Pinout.png)
 
 Raspberry Pi 2 和 Raspberry Pi 3 的硬件接口通过开发板上的 40 排针 **J8** 公开。 功能包括：
 
-* **24 x**的 GPIO 插针
-* **1 x** -串行 UARTs （RPi3 仅包括最小 UART）
-* **2 x** -SPI 总线
+* **24x** -GPIO 引脚
+* **1x** -串行 UARTs (RPi3 仅包含微型 UART)
+* **2x** -SPI 总线
 * **1x** - I2C 总线
 * **2x** - 5V 电源引脚
 * **2x** - 3.3V 电源引脚
 * **8x** - 接地引脚
 
-## <a name="gpio-pins"></a>GPIO 插针
+## <a name="gpio-pins"></a>GPIO Pin
 
-让我们看一下 GPIO 此设备上可用。
+让我们看看此设备上的 GPIO 可用。
 
 ### <a name="gpio-pin-overview"></a>GPIO Pin 概述
 
@@ -64,7 +64,7 @@ Raspberry Pi 2 和 Raspberry Pi 3 的硬件接口通过开发板上的 40 排针
 > | 35*   | 上拉        |                     | 红色电源 LED      |
 > | 47*   | 上拉        |                     | 绿色活动 LED |
 
-\* = 仅 raspberry Pi 2。 Raspberry Pi 3 上未提供 GPIO 35 和 47。
+\*= Raspberry Pi 2。 Raspberry Pi 3 上未提供 GPIO 35 和 47。
 
 ### <a name="gpio-sample"></a>GPIO 示例
 
@@ -93,15 +93,15 @@ public void GPIO()
 }
 ```
 
-当打开 pin 时，它将在其电源的状态，其中可能包括拉取电阻器。 若要断开拉电阻的连接并获取高阻抗输入，请将驱动程序模式设置为 GpioPinDriveMode.Input：
+打开 pin 时, 它将处于其开机状态, 其中可能包括拉取电阻器。 若要断开拉电阻的连接并获取高阻抗输入，请将驱动程序模式设置为 GpioPinDriveMode.Input：
 
     pin.SetDriveMode(GpioPinDriveMode.Input);
 
 当关闭引脚时，它将还原到其通电状态。
 
-### <a name="pin-muxing"></a>Pin Muxing
+### <a name="pin-muxing"></a>固定 Muxing
 
-某些 GPIO 插针可以执行多个功能。 默认情况下，pin 配置为 GPIO 输入。 当您打开一个备用函数通过调用`I2cDevice.FromIdAsync()`或`SpiDevice.FromIdAsync()`，针函数所需的自动交换 ("muxed") 到正确的函数。 通过调用关闭设备时`I2cDevice.Dispose()`或`SpiDevice.Dispose()`，球瓶还原为其默认函数。 如果你尝试为两个不同的功能一次使用 pin，当您尝试打开冲突函数时将引发异常。 例如，
+某些 GPIO pin 可以执行多个功能。 默认情况下, pin 配置为 GPIO 输入。 当通过调用`I2cDevice.FromIdAsync()`或`SpiDevice.FromIdAsync()`打开替代函数时, 该函数所需的 pin 会自动切换 ("muxed") 到正确的函数。 当通过调用`I2cDevice.Dispose()`或`SpiDevice.Dispose()`关闭设备时, pin 会恢复为其默认功能。 如果尝试同时对两个不同的函数使用 pin, 则在尝试打开冲突的函数时会引发异常。 例如，
 
 ```csharp
 var controller = GpioController.GetDefault();
@@ -123,8 +123,8 @@ var gpio2 = controller.OpenPin(2); // succeeds now that GPIO2 is available
 
 RPi2/3 上有一个串行 UART：**UART0**
 
-* 将固定 8- **UART0 TX**
-* 将固定 10- **UART0 RX**
+* Pin 8- **UART0 TX**
+* 引脚 10- **UART0 RX**
 
 以下示例初始化 **UART0** 并依次执行写入和读取操作：
 
@@ -164,7 +164,7 @@ public async void Serial()
 
 请注意，必须将以下功能添加到 UWP 项目中的 **Package.appxmanifest** 文件，才能运行串行 UART 代码：
 
-Visual Studio 2017 在清单设计器 （appxmanifest 文件的可视编辑器） 的影响 serialcommunication 功能中有一个已知的 bug。  如果你 appxmanifest 添加 serialcommunication 功能，修改与设计器在 appxmanifest 将损坏你 appxmanifest （设备 xml 子将会丢失）。  可以解决此问题通过手动编辑 appxmanifest 通过右键单击你的 appxmanifest 并从上下文菜单中选择查看代码。
+Visual Studio 2017 在清单设计器 (appxmanifest.xml 文件的可视化编辑器) 中有一个已知 bug, 该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能, 则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml (设备 xml 子级将丢失)。  若要解决此问题, 请右键单击 appxmanifest.xml, 然后从上下文菜单中选择 "查看代码", 手动编辑 appxmanifest.xml。
 
 ```xml
   <Capabilities>
@@ -178,13 +178,13 @@ Visual Studio 2017 在清单设计器 （appxmanifest 文件的可视编辑器�
 
 ## <a name="i2c-bus"></a>I2C 总线
 
-让我们看一下此设备上可用的 I2C 总线。
+让我们看看此设备上提供的 I2C 总线。
 
 ### <a name="i2c-overview"></a>I2C 概述
 
 排针上公开了一个 I2C 控制器 **I2C1**，带有 **SDA** 和 **SCL** 两条线。 用于此总线的 1.8K&#x2126; 内部上拉电阻已安装在开发板上。
 
-> | 信号名称 | 标头的 Pin 号码 | Gpio 数 |
+> | 信号名称 | 标头 Pin 号 | Gpio 编号 |
 > |-------------|-------------------|-------------|
 > | SDA         | 3                 | 2           |
 > | SCL         | 5                 | 3           |
@@ -215,11 +215,11 @@ public async void I2C()
 
 ## <a name="spi-bus"></a>SPI 总线
 
-SPI 总线的两个控制器上有 RPi2/3。
+RPi2/3 提供了两个 SPI 总线控制器。
 
 ### <a name="spi0"></a>SPI0
 
-> | 信号名称 | 标头的 Pin 号码 | Gpio 数 |
+> | 信号名称 | 标头 Pin 号 | Gpio 编号 |
 > |-------------|-------------------|-------------|
 > | MOSI        | 19                | 10          |
 > | MISO        | 21                | 9           |
@@ -229,7 +229,7 @@ SPI 总线的两个控制器上有 RPi2/3。
 
 ### <a name="spi1"></a>SPI1
 
-> | 信号名称 | 标头的 Pin 号码 | Gpio 数 |
+> | 信号名称 | 标头 Pin 号 | Gpio 编号 |
 > |-------------|-------------------|-------------|
 > | MOSI        | 38                | 20          |
 > | MISO        | 35                | 19          |
@@ -239,7 +239,7 @@ SPI 总线的两个控制器上有 RPi2/3。
 
 ### <a name="spi-sample"></a>SPI 示例
 
-举例说明如何执行 SPI 总线上编写**SPI0**使用芯片 select 0 如下所示：
+下面显示了一个示例, 说明如何使用芯片**SPI0**在总线上执行 SPI 写入操作:
 
 ```csharp
 using Windows.Devices.Enumeration;

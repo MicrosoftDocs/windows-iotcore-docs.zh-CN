@@ -6,19 +6,19 @@ ms.date: 09/06/17
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-description: 了解如何将桥接接口对象映射到 AllJoyn 使用 IAdapter，表示系统的将映射到 AllJoyn 总线的一个或多个设备控制器。
-keywords: windows iot AllJoyn
+description: 了解如何使用 IAdapter 将桥接口对象映射到 AllJoyn, 并为映射到 AllJoyn 总线的一台或多台设备的系统提供控制器。
+keywords: windows iot, AllJoyn
 ms.openlocfilehash: 7c928ee0359ba705a4255d309339c48aa8d000a4
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59511026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60169005"
 ---
 > [!NOTE]
-> 你正在查看存档的文档。 Windows 10 IoT 不再支持 AllJoyn。 如有问题，请打开在 GitHub 上或在下面的注释中留下反馈。
+> 你正在查看存档的文档。 Windows 10 IoT 不再支持 AllJoyn。 如有问题, 请在 GitHub 上提出问题, 或在下面的评论中留下反馈。
 
-# <a name="mapping-bridge-interface-objects-to-alljoyn"></a>AllJoyn 映射桥接接口对象
+# <a name="mapping-bridge-interface-objects-to-alljoyn"></a>将桥接口对象映射到 AllJoyn
 
 ### <a name="i-iadapter"></a>I. IAdapter
 
@@ -32,7 +32,7 @@ ms.locfileid: "59511026"
 <ExposedAdapterPrefix>.DeviceSystemBridge.<AdapterName> 
 ```
 
-每个适配器会公开两个`com.microsoft.alljoynmanagement.config`接口该支持桥和适配器配置： 
+每个适配器都`com.microsoft.alljoynmanagement.config`公开了两个支持桥和适配器配置的接口: 
 
 ```
 /AdapterConfig 
@@ -127,7 +127,7 @@ IAdapter 接口可声明某些必须实现的属性。  下表介绍了这些属
 
 > | IAdapterValue 属性    | 描述                        | 网桥映射                                |
 > | :-------------------------- | :--------------------------------- | :-------------------------------------------- |
-> | 数据                          | 网桥设备上属性的实际数据值。| AllJoyn 属性|
+> | Data                          | 网桥设备上属性的实际数据值。| AllJoyn 属性|
 > | 名称                        | 值的名称                      | AllJoyn 属性的名称|
 
 ### <a name="iv-iadaptersignal"></a>IV. IAdapterSignal

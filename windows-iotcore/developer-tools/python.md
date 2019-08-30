@@ -8,7 +8,7 @@ description: 了解如何在运行 Windows 10 IoT Core 的设备上安装 Python
 keywords: windows iot, python
 ms.openlocfilehash: 26063863e5fdf7539e3159d4a4809bab3a38fb71
 ms.sourcegitcommit: 4272081b5186dada1e61974193e41fcc1c42a1b9
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2019
 ms.locfileid: "69629384"
@@ -176,9 +176,9 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ![证书导出向导](../media/Python/global_sign_cert.png)
 
-10. 单击“`Next`”。
+10. 单击 `Next`。
 
-11. 单击“`Finish`”。
+11. 单击 `Finish`。
 
 12. 在台式计算机上运行以下命令以将 `c:\test\DigiCert High Assurance EV Root.cer` 复制到设备：
 

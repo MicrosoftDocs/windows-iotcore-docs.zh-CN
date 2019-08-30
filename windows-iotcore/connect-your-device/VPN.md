@@ -1,43 +1,43 @@
 ---
-title: 在 Windows 10 IoT Core 上的 VPN
+title: Windows 10 IoT Core 上的 VPN
 author: saraclay
 ms.author: saclayt
 ms.date: 11/19/2018
 ms.topic: article
-description: 了解如何使用安装程序，并配置 Windows 10 IoT Core 设备的 VPN 功能。
-keywords: windows iot，VPN，安装程序、 设备
+description: 了解如何为 Windows 10 IoT Core 设备使用、设置和配置 VPN 功能。
+keywords: windows iot, VPN, 安装程序, 设备
 ms.openlocfilehash: 94eafcb74a05179a7741cb516b5e7be30b525092
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60167895"
 ---
-# <a name="leveraging-vpn-capabilities-for-your-windows-10-iot-core-device"></a>利用 VPN 功能为你的 Windows 10 IoT Core 设备
+# <a name="leveraging-vpn-capabilities-for-your-windows-10-iot-core-device"></a>为 Windows 10 IoT Core 设备利用 VPN 功能
 
-若要充分利用 Windows 10 IoT Core 的 VPN 功能，请执行下面的说明。
+若要利用 Windows 10 IoT Core 的 VPN 功能, 请按照以下说明进行操作。
 
 > [!NOTE]
-> 必须适合最下面的说明。 它们是特定于用户要连接的 VPN 主机。 使用的证书是示例。
+> 以下大多数说明必须经过改编。 它们特定于用户连接到的 VPN 主机。 使用的证书是示例。
 
 ## <a name="establishing-a-vpn-connection"></a>建立 VPN 连接 
 
-1. 获取必要的证书并将复制到你的 IoT 设备 （例如到 \vpntest 文件夹）。
+1. 获取必要的证书并将其复制到 IoT 设备 (例如, 到 \vpntest 文件夹)。
 
-* RASTest.pfx
-* IssuingCA.crl
-* RootCA.crl
+* RASTest .pfx
+* Issuingca-app1
+* Rootca.cer
 
-2. 应用本地计算机证书。 以管理员身份的设备到 PowerShell
+2. 应用本地计算机证书 a。 以管理员身份从 PowerShell 进入设备
 
 ```powershell
 certmgr -add .\IssuingCA.crl -r localmachine -s root
 certmgr -add .\RootCA.crl -r localmachine -s root
 ```
 
-3. 应用用户证书。 登录到"DefaultAccount"作为使用 SSH 的 IoT 设备。
-b. 从命令提示符处，键入"PowerShell"。
-c. 从 PowerShell （在中记录为"默认帐户"） 时发出以下命令：
+3. 应用用户证书 a。 使用 SSH 作为 "DefaultAccount" 登录到 IoT 设备。
+b. 在命令提示符下, 键入 "PowerShell"。
+c. 从 PowerShell 发出以下命令 (在以 "默认帐户" 身份登录时):
 
 ```powershell
 $mypwd = ConvertTo-SecureString -String "<password>" -Force -AsPlainText
@@ -47,21 +47,21 @@ Cert -add .\IssuingCA.crl -r currentuser -s my
 certmgr -add .\RootCA.crl -r currentuser -s my
 ```
 
-4. 修复主机文件添加到 c:\windows\system32\driverS\etc\hosts 文件 （如下所示的示例;） 的条目
+4. 修复主机文件将条目添加到 c:\windows\system32\driverS\etc\hosts 文件 (示例如下所示);
 
 > |    |    |    |
 > |----|----| ---|
-> | 10.10.10.10 | MyVPN.DomainName.org | 根据需要使用 IP 地址和域的名称替换 |
+> | 10.10.10.10 | MyVPN.DomainName.org | 根据需要将替换为 IP 地址和域名 |
 
-5. 生成 VPN 测试应用的源代码中的"MyVPN.DomainName.org"替换。 根据需要进一步增强。
+5. 生成 VPN 测试应用替换源代码中的 "MyVPN.DomainName.org"。 根据需要进一步增加。
 
-6. 将在下面的代码部署到 Windows 10 IoT 设备的"启动和停止 VPN 连接"部分。
-输入任意"配置文件名称"，然后按"连接到 VPN"按钮。 
+6. 将下面的代码部署到 Windows 10 IoT 设备的 "启动和停止 VPN 连接" 部分。
+输入任意 "配置文件名称", 并按 "连接到 VPN" 按钮。 
 
 
 ## <a name="starting-and-stopping-a-vpn-connection"></a>启动和停止 VPN 连接
 
-使用下面的代码来启动和停止 VPN 连接。
+使用以下代码启动和停止 VPN 连接。
 
 ```csharp
 

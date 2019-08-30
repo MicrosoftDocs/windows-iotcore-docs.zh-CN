@@ -4,18 +4,18 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: 了解 Dragonboard 引脚映射的功能。
-keywords: windows iot，Dragonboard，引脚映射 GPIO
+description: 了解 Dragonboard 的 pin 映射功能。
+keywords: windows iot, Dragonboard, pin 映射, GPIO
 ms.openlocfilehash: f6df962c6d05aa912013f8f0819c0789bfc393ce
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59511027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60167675"
 ---
 # <a name="dragonboard-pin-mappings"></a>DragonBoard 引脚映射
 
-![Dragonboard Pin 标头](../../media/PinMappingsDB/DB_Pinout.png)
+![Dragonboard 针标头](../../media/PinMappingsDB/DB_Pinout.png)
 
 Dragonboard 的硬件接口通过开发板上的 40 排针公开。 功能包括：
 
@@ -27,13 +27,13 @@ Dragonboard 的硬件接口通过开发板上的 40 排针公开。 功能包括
 * **1x** - 1.8V 电源引脚
 * **4x** - 接地引脚
 
-请注意，Dragonboard 使用 1.8 v 逻辑级别上所有 IO 引脚。 
+请注意, Dragonboard 在所有 IO 引脚上使用 1.8 V 逻辑级别。 
 
-## <a name="gpio-pins"></a>GPIO 插针
+## <a name="gpio-pins"></a>GPIO Pin
 
-让我们看一下 GPIO 此设备上可用。
+让我们看看此设备上的 GPIO 可用。
 
-### <a name="gpio-pin-table"></a>GPIO Pin 表
+### <a name="gpio-pin-table"></a>GPIO 固定表
 
 以下 GPIO 引脚可通过 API 访问：
 
@@ -54,7 +54,7 @@ Dragonboard 的硬件接口通过开发板上的 40 排针公开。 功能包括
 > | 120   | 用户 LED 2         |         
 
 
-例如，下面的代码打开**GPIO 35**作为输出，并将写入数字**1**的插针的扩展：
+例如, 以下代码将**GPIO 35**打开为输出, 并在 pin 上写入数字 "**1**":
          
 ```C#
 using Windows.Devices.Gpio;
@@ -71,7 +71,7 @@ public void GPIO()
 
 ### <a name="gpio-issues"></a>GPIO 问题
 
-* GPIO 24 输出不起作用。 输入工作正常。
+* 输出在 GPIO 24 上不起作用。 输入工作正常。
 * 引脚会在启动时配置为 InputPullDown，但在首次打开时将更改为 Input (floating)
 * 关闭时，引脚不会还原为默认状态
 * 当多个引脚上启用了中断时，可能会看到假中断
@@ -83,16 +83,16 @@ Dragonboard 上提供了两个串行 UART：**UART0** 和 **UART1**
 
 **UART0** 具有标准 **UART0 TX** 和 **UART0 RX** 线以及流控制信号 **UART0 CTS** 和 **UART0 RTS**。
 
-* 固定 5- **UART0 TX**
-* 将固定 7- **UART0 RX**
-* 固定 3- **UART0 CTS**
-* 将固定 9- **UART0 RTS**
+* Pin 5- **UART0 TX**
+* 引脚 7- **UART0 RX**
+* Pin 3- **UART0 CTS**
+* Pin 9- **UART0 RTS**
 
 
 **UART1** 仅包含 **UART1 TX** 和 **UART1 RX** 线。
 
-* 将固定 11- **UART1 TX**
-* 将固定 13- **UART1 RX**
+* Pin 11- **UART1 TX**
+* Pin 13- **UART1 RX**
 
 以下示例初始化 **UART1** 并依次执行写入和读取操作：
 
@@ -129,9 +129,9 @@ public async void Serial()
 }
 ```
 > [!NOTE]
-> Visual Studio 2017 在清单设计器 （appxmanifest 文件的可视编辑器） 的影响 serialcommunication 功能中有一个已知的 bug。  如果你 appxmanifest 添加 serialcommunication 功能，修改与设计器在 appxmanifest 将损坏你 appxmanifest （设备 xml 子将会丢失）。  可以解决此问题通过手动编辑 appxmanifest 通过右键单击你的 appxmanifest 并从上下文菜单中选择查看代码。
+> Visual Studio 2017 在清单设计器 (appxmanifest.xml 文件的可视化编辑器) 中有一个已知 bug, 该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能, 则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml (设备 xml 子级将丢失)。  若要解决此问题, 请右键单击 appxmanifest.xml, 然后从上下文菜单中选择 "查看代码", 手动编辑 appxmanifest.xml。
 
-必须将添加到了以下功能**Package.appxmanifest** UWP 项目运行串行 UART 代码文件中：
+必须将以下功能添加到 UWP 项目中的**appxmanifest.xml**文件, 才能运行串行 UART 代码:
 
 ```xml
   <Capabilities>
@@ -145,9 +145,9 @@ public async void Serial()
 
 ## <a name="i2c-bus"></a>I2C 总线
 
-让我们看一下此设备上的可用 I2C 总线。
+让我们看看此设备上提供的 I2C 总线。
 
-### <a name="i2c-pins"></a>I2C Pin
+### <a name="i2c-pins"></a>I2C 引脚
 
 在排针上公开的 **I2C0**，带有 **SDA** 和 **SCL** 两条线
 
@@ -192,14 +192,14 @@ public async void I2C()
 
 ## <a name="spi-bus"></a>SPI 总线
 
-让我们看一下此设备上的可用 SPI 总线。
+让我们看看此设备上可用的 SPI 总线。
 
 ### <a name="spi-pins"></a>SPI Pin
 
 DB 上提供一个 SPI 控制器 **SPI0**
 
-* 将固定 10- **SPI0 MISO**
-* 将固定 14- **SPI0 MOSI**
+* Pin 10- **SPI0 MISO**
+* Pin 14- **SPI0 MOSI**
 * 引脚 8 - **SPI0 SCLK**
 * 引脚 12 - **SPI0 CS0**
 

@@ -1,25 +1,25 @@
 ---
-title: 在 IoT Core 上的 Cortana
+title: IoT Core 上的 Cortana
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: 了解如何开始并为 Cortana 在 Windows IoT Core 上安装更新。
-keywords: windows iot，Cortana，语音，AI，数字助理，语言
+description: 了解如何开始和在 Windows IoT Core 上安装 Cortana 更新。
+keywords: windows iot, Cortana, 语音, AI, 数字助手, 语言
 ms.openlocfilehash: c18534a532b0588b54f377acf1092d6916e8a673
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60170505"
 ---
-# <a name="cortana-on-iot-core"></a>在 IoT Core 上的 Cortana
+# <a name="cortana-on-iot-core"></a>IoT Core 上的 Cortana
 
-Cortana 是跨所有设备以帮助您在日常生活中处理个人数字助理。 她学习有关您;可帮助你完成通过完成任务; 任务与您采用一致、 上下文的方式; 使用自然语言交互并始终查找出您。 Cortana 具有一致的视觉标志、 各自的特点和语音。
+Cortana 是在所有设备上工作的个人数字助理, 可帮助你日常生活。 她了解你的情况;帮助您通过完成任务来完成工作;以一致的上下文方式使用自然语言与你交互;并且始终会为你提供。 Cortana 具有一致的视觉标识、个性和语音。
 
-若要启用将设备与 Cortana 设备 SDK 中的智能无帮助，请访问[Cortana 开发人员中心](http://www.aka.ms/cortanadevices)。
+若要使用 Cortana 设备 SDK 在设备中启用无人参与的智能帮助, 请访问[Cortana 开发人员中心](http://www.aka.ms/cortanadevices)。
 
-在 IoT Core 上的 Cortana 将专注于商业方案将来。 即将提供更新。 
+IoT Core 上的 Cortana 将着重于将来的商业方案。 即将更新。 
 
 <!--
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Cortana-on-Windows-10-IoT-Core/player]

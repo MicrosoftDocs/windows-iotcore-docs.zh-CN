@@ -1,41 +1,41 @@
 ---
-title: Internet 连接共享教程 （2015 年 11 月发行版）
+title: Internet 连接共享教程 (2015 年11月版)
 author: saraclay
 ms.author: saclayt
 ms.date: 09/06/17
 ms.topic: article
-description: 了解如何启用和配置 internet 连接的 2015 年 11 月发行版的 Windows 共享。
-keywords: windows iot，Internet 连接共享，ICS，设备门户
+description: 了解如何启用和配置 Windows 2015 年11月版的 internet 连接共享。
+keywords: windows iot, Internet 连接共享, ICS, 设备门户
 ms.openlocfilehash: c8f27b48197a0ec881a66da5d3e81272b3076100
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60169056"
 ---
-# <a name="internet-connection-sharing-tutorial-november-2015-release"></a>Internet 连接共享教程 （2015 年 11 月发行版）
+# <a name="internet-connection-sharing-tutorial-november-2015-release"></a>Internet 连接共享教程 (2015 年11月版)
 
-本文档介绍的步骤，若要运行 Windows 10 IoT 核心版的设备上启用 Internet 连接共享 (ICS) 2015 年 11 月发布。 目的是要共享 Internet 连接的软件的 Wi-fi 访问点 (SoftAP) 和以太网适配器之间。 如果使用 Windows 10 IoT Core 周年版本，请参阅[Internet 连接共享教程](InternetConnectionSharing.md)。
+本文档介绍在运行 Windows 10 IoT Core 11 月2015版的设备上启用 Internet 连接共享 (ICS) 的步骤。 目标是在软件 Wi-fi 接入点 (SoftAP) 和以太网适配器之间共享 Internet 连接。 如果使用的是 Windows 10 IoT Core 周年版, 请参阅[Internet 连接共享教程](InternetConnectionSharing.md)。
 
 ## <a name="prerequisites"></a>先决条件
 
-* 运行 Windows 10 IoT Core 设备 2015 年 11 月发布。
-* 支持启动 SoftAP 的 WLAN USB 设备。 请参阅[硬件兼容性列表](../learn-about-hardware/HardwareCompatList.md)对于支持的 Wi-fi USB 设备。
+* 运行 Windows 10 IoT Core 11 月2015版的设备。
+* 支持启动 SoftAP 的 WLAN USB 设备。 请参阅支持的 Wi-fi USB 设备的[硬件兼容性列表](../learn-about-hardware/HardwareCompatList.md)。
 * 具有 Internet 访问权限的以太网连接。
 
 
 ## <a name="setup"></a>安装
 
-### <a name="step-1-gathering-network-information"></a>第 1 步：收集网络信息
+### <a name="step-1-gathering-network-information"></a>步骤 1：收集网络信息
 
 1. 在插入 WLAN 硬件保护装置、插入以太网电缆的情况下启动设备。
 2. 从 IoT 核心版设备启动 SoftAP。
 
-   默认情况下，Microsoft 将在安装程序 SoftAP 如果 Wi-fi 无线电能够并且没有 WLAN 配置文件已添加的 IoT 载入应用程序提供映像开始。 若要启动 SoftAP，UWP 应用程序可以使用 [Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisher API](https://msdn.microsoft.com/library/windows/apps/windows.devices.wifidirect.wifidirectadvertisementpublisher.aspx)。 IoT 登记应用程序的源代码可在 GitHub 上[IoTOnboarding](https://github.com/ms-iot/samples/tree/develop/IotOnboarding)。
+   默认情况下, Microsoft 提供的映像将启动一个 IoT 载入应用程序, 该应用程序将设置 SoftAP (如果 Wi-fi 无线功能可用且未添加任何 WLAN 配置文件)。 若要启动 SoftAP，UWP 应用程序可以使用 [Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisher API](https://msdn.microsoft.com/library/windows/apps/windows.devices.wifidirect.wifidirectadvertisementpublisher.aspx)。 IoT 载入应用程序的源代码可以位于 GitHub [IoTOnboarding](https://github.com/ms-iot/samples/tree/develop/IotOnboarding)上。
 
-   记录 SoftAP 网络的 SSID。 你以后将需要它来通过 WLAN 连接到 IoT 核心版设备。 IoT 登记应用程序的 SSID 将启动与"AJ\_SoftAPSsid\_"，并且可以在应用程序的配置更改[文件](https://github.com/ms-iot/samples/blob/develop/IotOnboarding/IoTOnboardingTask/Config.xml)。
+   记录 SoftAP 网络的 SSID。 你以后将需要它来通过 WLAN 连接到 IoT 核心版设备。 对于 IoT 载入应用程序, SSID 将以 "AJ\_SoftAPSsid\_" 开头, 可以在应用程序的配置[文件](https://github.com/ms-iot/samples/blob/develop/IotOnboarding/IoTOnboardingTask/Config.xml)中进行更改。
 
-3. 远程连接到 IoT Core 设备[使用 ssh](ssh.md)。
+3. [使用 ssh](ssh.md)远程连接到 IoT Core 设备。
 4. 通过查找网络设备索引和描述来收集有关设备网络的信息。 声明要桥接哪些网络需要执行此操作。
 
    在设备上，运行 **route print** 并收集以下数据：
@@ -51,13 +51,13 @@ ms.locfileid: "59510802"
     
    * 记录 SoftAP 的专用接口网络适配器名称
 
-   例如，运行"ipconfig /all"查找特定的适配器名为"本地区域连接 * 3"、"Microsoft Wi-Fi Direct 虚拟适配器 #2"的描述。 使用此方法从“route print”中返回的描述中查找适配器名称。
+   例如, 运行 "ipconfig/all" 将查找名为 "本地连接" 的特定适配器, 该适配器的描述为 "Microsoft Wi-fi Direct 虚拟适配器 #2"。 使用此方法从“route print”中返回的描述中查找适配器名称。
 
    ![ipconfig all](../media/InternetConnectionSharing/internetconnectionsharing_ipconfig.png)
 
 ### <a name="step-2-scripting-internet-connection-sharing-trigger"></a>步骤 2：编写 Internet 连接共享触发器脚本
 
-从 Internet 连接共享开始两个网络之间需要执行以下步骤：
+在两个网络之间启动 Internet 连接共享需要执行以下步骤:
 
 * 设置注册表项来设置要桥接的专用 (SoftAP) 和公共（以太网）网络接口。
 * 设置相应的防火墙规则。
@@ -67,9 +67,9 @@ ms.locfileid: "59510802"
 * 将命令代码“129”发送到 SharedAccess 服务。
 
 
-#### <a name="create-a-script-to-automate-the-ics-settings"></a>创建一个脚本来自动执行 ICS 设置
+#### <a name="create-a-script-to-automate-the-ics-settings"></a>创建脚本以自动执行 ICS 设置
 
-下面是脚本的示例和代码来自动执行上面列出的步骤可以集成到设备启动顺序。 创建脚本文件 (例如**ConfigureICS.cmd**) 包含以下内容：
+下面是一个脚本和代码示例, 用于自动执行上面列出的可集成到设备启动序列中的步骤。 创建包含以下内容的脚本文件 (如**ConfigureICS**):
 
 ```
 echo off
@@ -350,10 +350,10 @@ main(
 
 针对目标体系结构（例如版本 x86 ）进行生成，并找到输出 **SharedAccessUtility.exe**
 
-### <a name="step-3-starting-internet-connection-sharing"></a>步骤 3:启动 Internet 连接共享
+### <a name="step-3-starting-internet-connection-sharing"></a>步骤 3：启动 Internet 连接共享
 
-1. 复制**ConfigICS.cmd**步骤 2 中创建到设备中某个位置，例如到脚本 `C:\test\`
-2. 复制**SharedAccessUtility.exe**步骤 2 中创建到设备中相同的位置，例如 `C:\test`\
-3. 在设备上运行**C:\test\ConfigureICS.cmd 开始 [公共 index] [专用索引] [专用适配器名称]** 在此示例中，这可能是<strong>C:\test\ConfigureICS.cmd 启动 4 5"本地区域连接 * 3"</strong>
+1. 将在步骤2中创建的**ConfigICS**脚本复制到某个位置的设备, 例如`C:\test\`
+2. 将在步骤2中创建的**SharedAccessUtility**复制到同一位置中的设备, 例如`C:\test`\
+3. 在设备上, 运行**C:\test\ConfigureICS.cmd start [public index] [private index] [private adapter name]** 在本示例中, 这意味着<strong>C:\test\ConfigureICS.cmd Start 4 5 "Local Area Connection * 3"</strong>
 
-此时设备已启用 Internet 连接共享的任何客户端连接到设备的播发 SSID。
+此时, 设备已为连接到设备的播发 SSID 的任何客户端启用了 Internet 连接共享。

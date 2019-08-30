@@ -6,8 +6,8 @@ ms.date: 09/06/17
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-description: 了解有关 AllJoyn、 一种常见协议为 IoT 设备和它如何实现其他扩展和使用 Windows IoT 的功能。
-keywords: windows iot AllJoyn
+description: 了解 AllJoyn (IoT 设备的常用协议) 以及它如何通过 Windows IoT 启用其他扩展和功能。
+keywords: windows iot, AllJoyn
 ms.openlocfilehash: 6b558680d479c71b6b8a22d34d03b04e5cbdbd76
 ms.sourcegitcommit: 0f46b7b5c15906a6c82b847ffcd9f4d2674f9fd0
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65226827"
 ---
 > [!NOTE]
-> 你正在查看存档的文档。 Windows 10 IoT 不再支持 AllJoyn。 如有问题，备选方法，是面向 AllJoyn 的应用层 IoT 协议是[打开连接 Foundation](https://openconnectivity.org)。 OCF 规范的标准实现 Iotivity-可以找到 Windows 支持 Iotivity[此处](https://wiki.iotivity.org/windows)。
+> 你正在查看存档的文档。 Windows 10 IoT 不再支持 AllJoyn。 对于问题 (替代方法), 用于 AllJoyn 的应用层 IoT 协议是[开放式连接基础](https://openconnectivity.org)。 OCF 规范的标准实现是 Iotivity-可以在[此处](https://wiki.iotivity.org/windows)找到对 Iotivity 的支持。
 
 # <a name="alljoyn"></a>AllJoyn
 
@@ -55,11 +55,11 @@ AllJoyn [设备系统网桥](AllJoynDSB.md)支持非 AllJoyn 设备使用 AllJoy
 * 从自检 XML 文件加载接口
 * 从 network1 上的创建器发现接口
 
-AllJoyn Studio 可以通过安装 Visual Studio 工具-> 扩展和更新... -> 联机-> 的"搜索"字段中键入"AllJoyn"
+可以通过 Visual Studio Tools > 扩展和更新来安装 AllJoyn Studio 。 -> 联机-> 在 "搜索" 字段中键入 "AllJoyn"
 
-提供了有关如何使用 AllJoyn Studio 的更多详细信息[此处](AllJoynStudio.md)。
+[此处](AllJoynStudio.md)提供了有关如何使用 AllJoyn Studio 的更多详细信息。
 
-**IoT 资源管理器为 AllJoyn （AllJoyn 的资源管理器） 的**
+**用于 AllJoyn 的 IoT 浏览器 (AllJoyn 资源管理器)**
 
 AllJoyn 的 IoT 资源管理器（以前称为 AllJoyn 资源管理器）是 Windows 通用应用程序，用于与本地邻近网络上的 AllJoyn 设备进行交互。 开发人员可以列出所有可用的 AllJoyn 设备、检查其接口和对象结构，以及接收信号、设置和获取属性并调用方法。
 

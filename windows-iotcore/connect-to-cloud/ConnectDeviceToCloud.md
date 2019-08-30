@@ -5,51 +5,51 @@ ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何将设备连接到云。
-keywords: windows iot，Azure，安全性，受信任的平台模块、 SoC
+keywords: windows iot, Azure, 安全性, 受信任的平台模块, SoC
 ms.openlocfilehash: ff54bbfa1aaf30d08107fac72ba59ae5a04aa247
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59511004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60169736"
 ---
 # <a name="connect-your-device-to-the-cloud"></a>将设备连接到云
 
-将安全信息，例如密码或证书存储在设备上无法使设备受到危害。 密码是欢心办法危及设备或整个系统的安全。 在 Windows 系列，支持的操作系统的安全性的技术是受信任的平台模块。
+在设备上存储安全信息 (如密码或证书) 可能会使设备容易遭受曝光。 泄漏密码是一种损害设备或整个系统的安全的 surefire 方式。 在 Windows 系列中, 支持操作系统安全的技术是受信任的平台模块。
 
-一个[受信任的平台模块](https://en.wikipedia.org/wiki/Trusted_Platform_Module)(TPM) 设备是可以存储数据和执行计算的微型控制器。 它可以是焊接到计算机的主板的离散芯片或集成到芯片 (SoC) 上的系统制造商的模块。 
+[受信任的平台模块](https://en.wikipedia.org/wiki/Trusted_Platform_Module)(TPM) 设备是一个可以存储数据和执行计算的微控制器。 它可以是焊接到计算机主板上的离散芯片, 也可以是制造商提供的芯片 (SoC) 上集成到系统中的模块。 
 
 ## <a name="inside-the-tpm"></a>TPM 内部 
 
-TPM 的关键功能是它只写的内存。 根据在其中的数据，TPM 还可以计算的加密哈希 (如[HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code))、 基于该数据。
-不可能的秘密给定哈希，但如果机密识别这两个参与方的通信，就可以确定是否从另一方收到的哈希通过生成的该机密。
+TPM 的一项重要功能是它只写内存。 根据数据, TPM 还可以根据数据计算加密哈希 (例如[HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code))。
+由于哈希, 无法发现机密, 但如果对双方的通信都知道密码, 则可能会确定是否从该机密产生了从另一方收到的哈希。
 
-使用加密密钥的基本理念： 建立并在设备预配过程期间的 IoT 设备和云之间共享的机密 （也称为共享的访问密钥）。 从该点开始，将使用派生自该机密的 HMAC IoT 设备进行身份验证。
+使用加密密钥的基本思路: 机密 (也称为共享访问密钥) 在设备预配过程中建立并共享 IoT 设备和云。 从此时开始, 将使用从机密派生的 HMAC 对 IoT 设备进行身份验证。
 
 ## <a name="device-provisioning"></a>设备预配 
 
-预配 Windows 10 IoT Core 设备的工具称为 IoT 核心版仪表板，可以从下载[下载页面](http://go.microsoft.com/fwlink/?LinkID=708576)。
+设置 Windows 10 IoT Core 设备的工具称为 IoT 核心仪表板, 可以从[下载页](http://go.microsoft.com/fwlink/?LinkID=708576)下载。
 
-在仪表板生成的 OS 映像，并安全地将你的设备连接到 Azure。 这是通过将物理设备与 Azure IoT 中心中的设备 ID 相关联并 imprinting 到设备的 TPM 的特定于设备的共享的访问密钥。 
+仪表板会生成操作系统映像, 并将设备安全连接到 Azure。 这是通过将物理设备与 Azure IoT 中心中的设备 ID 相关联并将设备特定的共享访问密钥 imprinting 到设备的 TPM 来完成的。 
 
-对于不带 TPM 芯片的设备，该工具可以安装软件模拟的 TPM。 这不提供安全性，但允许您开发应用程序使用的创建者设备 （如 Raspberry Pi 2 或 3） 和使用 TPM 的硬件设备上有"点燃"的安全，而无需更改应用。 
+对于没有 TPM 芯片的设备, 此工具可以安装软件模拟的 TPM。 这并不提供安全性, 但允许使用 maker 设备开发应用 (如 Raspberry Pi 2 或 3), 并在具有硬件 TPM 的设备上具有安全性 "亮起", 而无需更改应用。 
 
-若要将设备连接到 Azure 中，单击"连接到 Azure"选项卡上：
+若要将设备连接到 Azure, 请单击 "连接到 Azure" 选项卡:
 
-![打开连接到 Azure 的选项卡](../media/ConnectDeviceToCloud/Building_Secure_Apps_for_IoT_Core_Screen01.png)
+![打开 "连接到 Azure" 选项卡](../media/ConnectDeviceToCloud/Building_Secure_Apps_for_IoT_Core_Screen01.png)
 
-你将需要登录到你的 Azure 帐户。 选择 Azure IoT 中心的所需的实例，并将你的物理设备与之关联。 如果在 Azure 订阅中没有任何 IoT 中心实例，该工具将允许您创建一个免费的实例。 
+系统将要求你登录到 Azure 帐户。 选择所需的 Azure IoT 中心实例, 并将你的物理设备与它相关联。 如果 Azure 订阅中没有任何 IoT 中心实例, 则该工具将允许你创建一个免费的实例。 
 
-选择 IoT 中心和设备 ID 将与设备相关联之后, 可以上的共享的访问密钥，该设备的标记在 TPM 上：
+选择要与设备关联的 IoT 中心和设备 ID 后, 你可以在 TPM 上为该设备的共享访问密钥加上一个选项:
 
-![设备预配](../media/ConnectDeviceToCloud/Building_Secure_Apps_for_IoT_Core_Screen02.png)
+![预配设备](../media/ConnectDeviceToCloud/Building_Secure_Apps_for_IoT_Core_Screen02.png)
 
-你的设备现在已准备好以安全方式连接到 Azure。 
+你的设备现在可以通过安全方式连接到 Azure。 
 
-Windows Device Portal 还可用于动态获取 IoT 中心连接字符串，当它首次连接到 internet 后正在预配。 这可以从设备门户的"Azure 客户端"选项卡。
+你还可以使用 Windows 设备门户在设置后首次连接到 internet 时, 动态获取 IoT 中心连接字符串。 这可以从设备门户中的 "Azure 客户端" 选项卡完成。
 
 ![Azure 客户端选项卡](../media/ConnectDeviceToCloud/azure-clients.png)
 
-## <a name="helpful-resources"></a>有用的资源：
-* [将应用连接到 Azure](../connect-to-cloud/ConnectAppToCloud.md)
-* [IoT 核心版为构建安全应用程序](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core/#oqFLXiWIL1iCF8j9.97)
+## <a name="helpful-resources"></a>有用资源:
+* [将你的应用连接到 Azure](../connect-to-cloud/ConnectAppToCloud.md)
+* [为 IoT Core 构建安全应用](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core/#oqFLXiWIL1iCF8j9.97)

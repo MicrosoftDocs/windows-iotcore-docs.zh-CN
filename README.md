@@ -1,7 +1,7 @@
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 开放源代码行为准则
 
-此项目采用了 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。
-有关详细信息，请参阅[行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)，或如果有任何其他问题或意见，请与 [opencode@microsoft.com ](mailto:opencode@microsoft.com) 联系。
+此项目采用了[Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。
+有关详细信息，请参阅[代码的行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)或联系[ opencode@microsoft.com ](mailto:opencode@microsoft.com)提出任何其他问题或意见。
 
 # <a name="how-to-contribute-to-windows-10-iotcore-documentation"></a>如何参与撰写 Windows 10 IoT 核心版文档
 
@@ -80,7 +80,7 @@ body {
 | 左对齐| 除非使用 #  | 456          |
 | 文本值  | 更多文本   | $0.00        |
 
-## <a name="notes"></a>注释
+## <a name="notes"></a>说明
 
 请谨慎使用注释。 注释是旨在突出显示“请勿错过”信息的块。
 
@@ -101,4 +101,4 @@ body {
 
 
 ## <a name="code-of-conduct"></a>行为准则
-此项目采用了 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。 有关详细信息，请参阅[行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)，或如果有任何其他问题或意见，请与 [opencode@microsoft.com ](mailto:opencode@microsoft.com) 联系。
+此项目采用了[Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。 有关详细信息，请参阅[代码的行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)或联系[ opencode@microsoft.com ](mailto:opencode@microsoft.com)提出任何其他问题或意见。
