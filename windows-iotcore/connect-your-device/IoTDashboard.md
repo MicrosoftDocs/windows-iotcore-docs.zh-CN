@@ -4,8 +4,8 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: 了解有关 Windows 10 IoT Core 仪表板的作用以及如何开始。
-keywords: windows iot、 windows 10 iot 核心版仪表板、 windows iot 仪表板、 设备
+description: 了解 Windows 10 IoT Core 仪表板的功能以及入门方式。
+keywords: windows iot，windows 10 iot 核心仪表板，windows iot 面板，设备
 ms.openlocfilehash: af87ff8224cf77b567b1dd96e6de2297b4752530
 ms.sourcegitcommit: f447681d9a73ebdec97a3da973bd798a02df975d
 ms.translationtype: MT
@@ -15,102 +15,102 @@ ms.locfileid: "65197669"
 ---
 # <a name="windows-10-iot-core-dashboard"></a>Windows 10 IoT 核心版仪表板
 
-Windows 10 IoT 核心版仪表板是最佳的方式，若要下载，请设置并连接你的 Windows 10 IoT Core 设备，所有从您的 PC。
+Windows 10 IoT 核心仪表板是从 PC 下载、设置和连接 Windows 10 IoT 核心设备的最佳方式。
 
-您可以下载[IoT 核心版仪表板此处](http://go.microsoft.com/fwlink/?LinkID=708576)。
+可在此处下载[IoT 核心仪表板](http://go.microsoft.com/fwlink/?LinkID=708576)。
 
 > [!NOTE]
-> 如果您正在查找您将获得一个白色的屏幕，下载后打开 IoT 仪表板时，它可能是由于驱动程序问题。 若要解决此问题，您将需要下载[zip 格式](https://downloadmirror.intel.com/27894/a08/win64_24.20.100.6229.zip)Intel 图形驱动程序的手动安装的驱动程序。 
+> 如果您在下载后打开 IoT 面板时遇到了白屏，则可能是由于驱动程序问题所致。 若要解决此问题，需要下载 Intel 图形驱动程序的[zip 格式](https://downloadmirror.intel.com/27894/a08/win64_24.20.100.6229.zip)，并手动安装驱动程序。 
 
 ## <a name="set-up-a-new-device"></a>设置新设备
 
 > [!NOTE]
-> 不能用于设置 Raspberry Pi 3B + 使用仪表板。 如果你有 3B + 设备，则必须使用[3B + 技术预览版](https://www.microsoft.com/en-us/software-download/windowsiot)。 请查看[已知限制](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting)的 technical preview，以确定这是否适用于你的开发。
+> 仪表板不能用来设置 Raspberry Pi 3B+。 如果有 3B+ 设备，则必须使用 [3B+ 技术预览版](https://www.microsoft.com/en-us/software-download/windowsiot)。 请查看技术预览版的[已知限制](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting)，确定它是否适合开发。
 
 > [!NOTE]
-> 目前有一个已知的问题，其中 OS 上的 SD 卡经历分区并提示格式... 特定的数据分区，不包含任何文件系统的消息。 请通过按取消，则关闭此提示。 虽然我们在一个解决方案中工作，我们建议，如果单击现在格式，您刷新使用 FFU 映像的 SD 卡再次作为更新过程，并在设备将无法更新的格式操作影响。
+> 目前存在一个已知问题，其中，操作系统会经历 SD 卡上的分区，并提示 "Format ..." 不包含任何文件系统的特定数据分区的消息。 请按 "取消" 以消除此提示。 当我们处理某个解决方案时，我们建议，如果你单击 "立即格式化"，则会再次使用 FFU 图像刷新 SD 卡，因为 Format 操作会影响更新过程，并且设备将无法更新。
 
 
-IoT 仪表板轻松设置新设备。 有关如何入门的详细说明，请参阅[开始](https://docs.microsoft.com/en-us/windows/iot-core/getstarted)页。
+使用 IoT 面板可以轻松地设置新设备。 有关如何入门的详细说明，请参阅[入门页。](https://docs.microsoft.com/en-us/windows/iot-core/getstarted)
 
-![IoT 仪表板安装程序页](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
+![IoT 面板设置页面](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
 
 ### <a name="sd-card"></a>SD 卡
-类型、 品牌和型号的 SD 卡极大地影响性能和 IoT 核心版的质量。
-慢速卡可能长达五次启动比我们[建议卡](../learn-about-hardware/hardwarecompatlist.md)。
-也可以不工作的较旧的、 可靠性较低的 SD 卡。 如果继续遇到安装问题，请考虑更换 SD 卡。
+SD 卡的类型、品牌和型号极大地影响 IoT 核心的性能和质量。
+比我们[建议的卡](../learn-about-hardware/hardwarecompatlist.md)相比，慢卡的启动时间可能会长达五倍。
+旧的、不太可靠的 SD 卡甚至可能不起作用。 如果继续安装时遇到问题，请考虑更换 SD 卡。
 
 ### <a name="device-name"></a>设备名称
-默认设备名称是 minwinpc。 我们建议将其更改为的唯一名称，因为这可更轻松地查找网络上的设备。 设备名称可以在最多 15 个字符之间，并可以包含字母、 数字和以下符号: @ # $ %^ &) (。 -_ {} ~ 自动重新启动如果设置你的设备时更改 IoT 仪表板中的设备名称，将发生在设备上的第一次当您打开。
+默认设备名称为 minwinpc。 建议将其更改为唯一的内容，因为这样可以更轻松地在网络上查找设备。 设备名称的长度最长可以为15个字符，可以包含字母、数字和以下符号： @ # $% ^ & '）（。 -_ {} ~ 如果在设置设备时在 IoT 面板中更改设备名，则在第一次打开设备电源时将自动重启。
 
 ### <a name="password"></a>密码
-密码是必填字段，必须设置。 在 IoT 仪表板中设置密码修改它默认情况下是管理员用户的密码"p@ssw0rd"。
+密码是必填字段，必须设置。 在 IoT 面板中设置密码会修改管理员用户的密码，默认情况下为p@ssw0rd""。
 
 ### <a name="wi-fi-network-connection"></a>Wi-fi 网络连接
-IoT 仪表板显示您的 PC 之前已连接到的所有可用的网络。 如果您看不到所需的 Wi-fi 网络列表上，确保您的 PC 上连接到它。
-如果取消选中的框，则必须后闪烁到开发板连接以太网电缆。
+IoT 面板显示你的电脑以前连接到的所有可用网络。 如果在列表中看不到所需的 Wi-fi 网络，请确保你已在电脑上连接到该网络。
+如果取消选中此框，则必须在闪烁后将以太网电缆连接到您的面板。
 
 ### <a name="first-boot"></a>首次启动
-在首次启动始终需要比所有后续启动时较长时间。 操作系统将需要一些时间来安装并连接到你的网络。
-启动时可能会因极大地 SD 卡上。 例如，我们建议的 SD 卡上运行 Raspberry Pi 3 需要首次启动的 3 到 4 分钟。 使用低质量 SD 卡在同一个 pi，我们已了解了启动时间超过 15 分钟。
+首次启动的时间将始终比所有后续启动的时间要长。 操作系统将需要一段时间来安装和连接到你的网络。
+根据 SD 卡的不同，启动时间可能会很大。 例如，在我们建议的 SD 卡上运行的 Raspberry Pi 3 在第一次启动时会花费3-4 分钟。 对于质量较差的 SD 卡，同一 Pi 上的启动时间超过15分钟。
 
 ### <a name="connecting-to-the-internet"></a>连接到 internet
-让你连接到 internet 的 IoT Core 设备是必不可少的。 许多较新板附带内置的 Wi-fi 适配器中。 如果你遇到问题，获取连接到网络，请尝试以下解决方法：
+将 IoT Core 设备连接到 internet 非常重要。 许多较新的板随附内置 Wi-fi 适配器。 如果在连接到网络时遇到问题，请尝试以下操作：
 
-* 重启设备
+* 正在重启设备
 * 插入以太网电缆
-* 插入到设备的监视器。 这将显示有关你的设备的诊断信息
+* 将监视器插入设备。 这会显示有关设备的诊断信息
 
 > [!NOTE]
-> 连接到 Wi-fi 时，正式的 Raspberry Pi 2 Wi-fi 适配器可以是不稳定。
+> 在连接到 Wi-fi 时，官方 Raspberry Pi 2 Wi-fi 适配器可能不稳定。
 
 
 ## <a name="my-devices"></a>我的设备
 ___
-你的设备连接到 internet 后，IoT 仪表板将自动检测你的设备。
-若要查找你的设备，请转到**我的设备**。 如果未列出你的设备，请尝试重新启动设备。 请确保，如果有多个设备在网络上，它们都具有唯一的名称。 此外，请确保你**windows10iotcoredashboard.exe**允许通过 Windows 防火墙通信通过执行以下步骤：
+将设备连接到 internet 后，IoT 面板会自动检测你的设备。
+若要查找你的设备，请参阅 **"我的设备**"。 如果未列出你的设备，请尝试重新启动设备。 请确保网络上有多个设备，每个设备都具有唯一的名称。 此外，请确保你的**windows10iotcoredashboard**可以通过执行以下步骤，通过 Windows 防火墙进行通信：
 
-1. 打开**网络和共享中心**，然后找到您的 PC 所连接到网络 (域/Private/Public) 的类型。
-2. 打开**Control Panel**然后单击**系统和安全**。
-3. 单击**允许通过 Windows 防火墙的应用程序**下**Windows 防火墙**。
-4. 单击**更改设置**。
-5. 查找**windows10iotcoredashboard.exe**中**允许的应用程序和功能**，然后启用相应的网络复选框 （即在步骤 1 中找到的网络类型）。
+1. 打开 "**网络和共享中心**"，然后找到您的 PC 连接到的网络类型（域/专用/公共）。
+2. 打开 **"控制面板"** ，然后单击 "**系统和安全**"。
+3. 在**Windows 防火墙**下，单击 "**允许应用通过 windows 防火墙**"。
+4. 单击“更改设置”。
+5. 在 "**允许的应用和功能**" 中找到**windows10iotcoredashboard** ，然后启用适当的网络复选框（即在步骤1中找到的网络类型）。
 
 
 ### <a name="connect-to-your-device"></a>连接到设备
 
 > [!NOTE]
-> 如果您不能在仪表板中查找你的设备，请尝试键入你的 [IP 地址] 和 [: 8080] 到浏览器以获取 Windows Device Portal，启动并运行。 若要获取你的设备以显示在仪表板中，请尝试重新启动你的设备。
+> 如果在仪表板中找不到你的设备，请尝试在浏览器中键入 [IP 地址] 和 [： 8080] 以启动并运行 Windows 设备门户。 若要使设备在仪表板中显示，请尝试重新启动设备。
 
 
-右键单击并选择**在设备门户中打开**。 这将启动[Windows Device Portal](../manage-your-device/DevicePortal.md)页以及交互并管理你的设备的最佳方式。
+右键单击并选择 **"在设备门户中打开"** 。 这将启动[Windows 设备门户](../manage-your-device/DevicePortal.md)页面，并且是交互和管理设备的最佳方式。
 
-![IoTDashboard 查看设备](../media/IoTDashboard/IoTDashboard_RightClickMenu.PNG)
+![IoTDashboard 视图设备](../media/IoTDashboard/IoTDashboard_RightClickMenu.PNG)
 
-您还可以连接到使用 Windows PowerShell 的设备。
+你还可以使用 Windows PowerShell 连接到设备。
 
 ## <a name="connect-to-azure"></a>连接到 Azure
 ___
-IoT 面板，您可以使用 Azure IoT 中心的 IoT Core 设备预配。 你可以阅读更多有关它在此[博客文章](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core)。
+IoT 面板允许通过 Azure IoT 中心设置 IoT 核心设备。 可在此[博客文章](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core)中阅读更多相关信息。
 
-[了解如何使用 Azure IoT 仪表板](https://docs.microsoft.com/windows/iot-core/connect-to-cloud/connectdevicetocloud)
+[了解如何在 Azure 中使用 IoT 面板](https://docs.microsoft.com/windows/iot-core/connect-to-cloud/connectdevicetocloud)
 
-## <a name="quick-run-samples"></a>快速运行的示例
+## <a name="quick-run-samples"></a>快速运行示例
 ___
 
-快速运行示例并不需要任何代码编译，Visual studio 安装或下载 SDK。 它们非常适合用于快速签出 IoT 核心版可以执行的操作。
+"快速运行" 示例不需要任何代码编译、Visual studio 安装或 SDK 下载。 它们非常适用于快速查看 IoT 核心可以执行的操作。
 
-### <a name="network-3d-printer"></a>网络 3D 打印机
-使用网络 3D 打印机示例连接到开发板的 3D 打印机可以使它可检测到通过您的家庭网络。 
+### <a name="network-3d-printer"></a>网络3D 打印机
+使用 "网络3D 打印机" 示例将3D 打印机连接到你的板，使其可通过家庭网络发现。 
 
-![IoTDashboard 网络 3D 打印机](../media/IoTDashboard/IoTDashboard_3DPrinter.PNG)
+![IoTDashboard 网络3D 打印机](../media/IoTDashboard/IoTDashboard_3DPrinter.PNG)
 
 ### <a name="internet-radio"></a>Internet 广播
-转变为可以控制从任意位置在家中 internet 广播你的 Windows 10 IoT Core 设备。
+将 Windows 10 IoT Core 设备转换为可从家里任意位置控制的 internet 收音机。
 
-![IoTDashboard Internet 广播](../media/IoTDashboard/IoTDashboard_InternetRadio.PNG)
+![IoTDashboard Internet 收音机](../media/IoTDashboard/IoTDashboard_InternetRadio.PNG)
 
-### <a name="iot-core-blockly"></a>IoT 核心版 Blockly
-IoT Core Blockly 示例允许程序 Raspberry Pi2 或 3 和 Raspberry Pi 意义上乘幂号的使用从浏览器的"块"编辑器。
+### <a name="iot-core-blockly"></a>IoT 核心 Blockly
+IoT Core Blockly 示例可让你的程序 Raspberry Pi2 或3，并使用你的浏览器中的 "阻止" 编辑器。
 
 ![IoTDashboard Blockly](../media/IoTDashboard/IoTDashboard_Blockly.PNG)
