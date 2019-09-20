@@ -1,0 +1,56 @@
+### YamlMime:Landing
+title: “适用于 IoT 的 Windows”文档
+summary: “适用于 IoT 的 Windows”平台有多个版本，每个版本都针对特定场景进行了优化。 它们全部都提供安全性、可管理性、支持和云连接性，与你期望从 Window 获得的完全相同。
+metadata:
+  description: 了解适用于 IoT 的 Windows，以便开发自己的联网嵌入式解决方案。
+  services: windows-iot
+  ms.service: windows-iot
+  ms.topic: landing-page
+  author: saraclay
+  ms.author: saclayt
+  ms.date: 09/04/2019
+  ms.openlocfilehash: 655ef6423c244b3eec6d49797ad2affbc859ff32
+  ms.sourcegitcommit: 365721929dc902ec12bafe02653609d3d21a59f0
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71144977"
+landingContent:
+- title: 关于适用于 IoT 的 Windows
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Windows 10 IoT 核心版
+      url: windows-iot-core.md
+    - text: Windows 10 IoT 企业版
+      url: windows-iot-enterprise.md
+    - text: Windows Server IoT 2019
+      url: windows-server.md
+- title: 立即开始行动
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Windows 10 IoT 核心版设备制造指南
+      url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide
+    - text: Windows 10 IoT 企业版设备制造指南
+      url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview
+  - linkListType: reference
+    links:
+    - text: 原型板
+      url: tutorials/quickstarter/prototypeboards.md
+    - text: SoC 和自定义板
+      url: learn-about-hardware/socsandcustomboards.md
+    - text: 硬件兼容性列表
+      url: learn-about-hardware/hardwarecompatlist.md
+    - text: NXP i.MX SoC
+      url: learn-about-hardware/iotnxp.md
+- title: 资源
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: “适用于 IoT 的 Windows”培训和书籍
+      url: http://www.annabooks.com/training.html
+    - text: “适用于 IoT 的 Windows”论坛
+      url: https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT
+    - text: “适用于 IoT 的 Windows”UserVoice
+      url: https://wpdev.uservoice.com/forums/110705-universal-windows-platform?category_id=364159

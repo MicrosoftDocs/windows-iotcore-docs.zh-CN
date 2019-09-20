@@ -6,12 +6,12 @@ ms.date: 09/07/18
 ms.topic: article
 description: 利用 Windows 10 IoT 社区中的所有资源。
 keywords: Windows 10 IoT 核心版, Windows 10 IoT 企业版, 资源, 最重要人员, 视频, 博客文章
-ms.openlocfilehash: ba3fb673c12849e9b3cfb48ae9215f3ec85992eb
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: b8916b4f344ee11e3cd0697f43e9afbad23c7870
+ms.sourcegitcommit: 365721929dc902ec12bafe02653609d3d21a59f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66499336"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71135793"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 资源
 
@@ -45,6 +45,9 @@ ms.locfileid: "66499336"
 * [Windows Machine Learning:Implement AI in your Windows apps](https://aka.ms/Windows-ML-WP)（Windows 机器学习：在 Windows 应用中实现 AI）
 * [Create more secure IoT solutions with Windows IoT](https://aka.ms/secure-windowsiot)（使用 Windows IoT 创建更安全的 IoT 解决方案）
 
+## <a name="webinars"></a>网络研讨会
+* [智能边缘最佳做法](https://youtu.be/DEOCKFb7lvM)
+
 ## <a name="learning-resources"></a>学习资源
 
 * [Microsoft MVP 社区](https://mvp.microsoft.com/)
@@ -55,25 +58,6 @@ ms.locfileid: "66499336"
 * [基于 Hackster.io 的 Windows 10 IoT 核心版入门](http://www.hackster.io/KiwiBryn)
 * [Window 10 IoT 核心版 HAT](https://www.turta.io/iothat)
 
-## <a name="commercialized-projects"></a>商用化的项目
-
-* [Misty Robotics](https://customers.microsoft.com/en-us/story/misty-robotics)
-* [Askey Turbomate](https://customers.microsoft.com/en-us/story/askey)
-* [Johnson Controls GLAS](https://customers.microsoft.com/en-us/story/johnson-controls)
-* [Keith & Koep Cocktail Booster](https://customers.microsoft.com/de-de/story/keith-koep)
-* [Kodisoft](https://customers.microsoft.com/en-us/story/kodisoft)
-* [Redback Technologies](https://customers.microsoft.com/en-us/story/redback-technologies)
-
-
-## <a name="community-projects"></a>社区项目
-
-* [工业自动化](https://www.hackster.io/projects/tags/industrial+automation+win10)
-* [数字签名](https://www.hackster.io/projects/tags/digital+signage+win10)
-* [医疗保健](https://www.hackster.io/projects/tags/healthcare+win10)
-* [智能建筑](https://www.hackster.io/projects/tags/smart+building+win10)
-* [零售](https://www.hackster.io/projects/tags/retail+win10)
-* [安全性](https://www.hackster.io/projects/tags/security+win10)
-* [能源](https://www.hackster.io/projects/tags/energy+win10)
 
 ## <a name="our-technology-partners"></a>我们的技术合作伙伴
 

@@ -1,0 +1,240 @@
+- name: “适用于 IoT 的 Windows”文档
+  href: index.yml
+- name: 适用于 IoT 的 Windows
+  expanded: false
+  items:
+    - name: Windows 10 IoT 核心版
+      href: windows-iot-core.md
+    - name: Windows 10 IoT 企业版
+      href: windows-iot-enterprise.md
+    - name: Windows Server IoT 2019
+      href: windows-server.md
+- name: 教程
+  expanded: false
+  items:
+    - name: 设置 Raspberry Pi
+      href: tutorials/rpi.md
+    - name: 设置 MinnowBoard
+      href: tutorials/minnowboard.md
+    - name: 设置 NXP 设备
+      href: tutorials/nxp.md
+    - name: 设置 DragonBoard
+      href: tutorials/dragonboard.md
+    - name: 设置 Qualcomm 设备
+      href: tutorials/qualcomm.md
+    - name: 设置 Intel 设备
+      href: tutorials/intel.md
+- name: 硬件指南
+  expanded: false
+  items:
+    - name: SoC 和自定义板
+      href: learn-about-hardware/SoCsAndCustomBoards.md
+    - name: 硬件兼容性列表
+      href: learn-about-hardware/HardwareCompatList.md
+    - name: NXP i.MX SoC
+      href: learn-about-hardware/iotnxp.md
+    - name: 引脚映射
+      items:
+        - name: Raspberry Pi 2 和 3
+          href: learn-about-hardware/PinMappings/PinMappingsRPI.md
+        - name: Dragonboard
+          href: learn-about-hardware/PinMappings/PinMappingsDB.md
+        - name: Minnowboard Max
+          href: learn-about-hardware/PinMappings/PinMappingsMBM.md
+    - name: 有外设设备和无外设设备
+      href: learn-about-hardware/HeadlessMode.md
+    - name: 触摸唤醒
+      href: learn-about-hardware/WakeOnTouch.md
+    - name: UEFI 要求
+      href: commercialize-your-device/uefirequirements.md
+- name: 驱动程序指南
+  expanded: false
+  items:
+    - name: 驱动程序部署
+      href: learn-about-hardware/DriverDeployment.md
+    - name: 通用驱动程序创建
+      href: learn-about-hardware/DriverCreation.md
+    - name: USB 支持
+      href: learn-about-hardware/usb-support.md
+    - name: 安装 USB 外设驱动程序
+      href: learn-about-hardware/PeripheralDrivers.md
+- name: 开发应用程序
+  expanded: false
+  items:
+    - name: 前台应用程序
+      href: develop-your-app/BuildingAppsForIoTCore.md
+    - name: 后台应用程序
+      href: develop-your-app/BackgroundApplications.md
+    - name: 部署你的应用
+      href: develop-your-app/AppDeployment.md
+    - name: 设置默认应用
+      href: develop-your-app/SetupDefaultApp.md
+    - name: 安装应用
+      href: develop-your-app/AppInstaller.md
+    - name: IoT 核心版默认应用
+      href: develop-your-app/IoTCoreDefaultApp.md
+    - name: 单元测试
+      href: develop-your-app/UnitTestsForIoTCore.md
+    - name: 部署控制台应用程序
+      href: develop-your-app/RemoteDebugging.md
+    - name: 语言支持
+      href: develop-your-app/MultiLang.md
+    - name: 嵌入模式
+      href: develop-your-app/EmbeddedMode.md
+    - name: 总线提供程序
+      href: develop-your-app/BusProviders.md
+    - name: 屏幕键盘
+      href: develop-your-app/OnScreenKeyboard.md
+    - name: 登录对话栏
+      href: develop-your-app/SignInDialogTitleBars.md
+    - name: 本地主机环回
+      href: develop-your-app/Loopback.md
+    - name: IoT Shell 概述
+      href: develop-your-app/IoTCoreShell.md
+- name: 调试应用程序
+  expanded: false
+  items:
+    - name: 概述
+      href: manage-your-device/Overview.md
+    - name: Windows Device Portal
+      href: manage-your-device/DevicePortal.md
+    - name: Windows 调试器
+      href: manage-your-device/WindowsDebugger.md
+    - name: 设置默认应用
+      href: develop-your-app/SetupDefaultApp.md
+    - name: 内存泄漏
+      href: develop-your-app/InvestigateMemoryLeaks.md
+    - name: Fiddler
+      href: develop-your-app/Fiddler.md
+    - name: Lightning 提供程序
+      href: develop-your-app/LightningProviders.md
+    - name: 事件跟踪
+      href: manage-your-device/EventTracing.md
+- name: 开发人员工具
+  expanded: false
+  items:
+    - name: Windows 10 IoT 核心版仪表板
+      href: connect-your-device/IoTDashboard.md
+    - name: PowerShell
+      href: connect-your-device/PowerShell.md
+    - name: 远程显示
+      href: manage-your-device/RemoteDisplay.md
+    - name: 命令行实用程序
+      href: manage-your-device/CommandLineUtils.md
+    - name: Windows 10 IoT 核心版 API 移植工具
+      href: learn-about-hardware/IoTCorePortingTool.md
+    - name: 网络数据包捕获
+      href: manage-your-device/NetworkPacketCapture.md
+    - name: Windows 文件共享
+      href: manage-your-device/WindowsFileSharing.md
+    - name: SSH
+      href: connect-your-device/SSH.md
+    - name: DISM
+      href: connect-your-device/DISM.md
+    - name: FTP
+      href: connect-your-device/FTP.md
+    - name: MTP
+      href: connect-your-device/MTP.md
+    - name: Python
+      href: developer-tools/python.md
+- name: 连接性
+  expanded: false
+  items:
+    - name: WLAN Direct
+      href: connect-your-device/SetupWiFiDirect.md
+    - name: WLAN
+      href: connect-your-device/SetupWifi.md
+    - name: Miracast
+      href: connect-your-device/Miracast.md
+    - name: 蓝牙
+      href: connect-your-device/Bluetooth.md
+    - name: VPN
+      href: connect-your-device/VPN.md
+    - name: 移动宽带
+      href: connect-your-device/MBB.md
+- name: 管理设备
+  expanded: false
+  items:
+    - name: 设备管理
+      href: manage-your-device/DeviceManagement.md
+    - name: Project Rome
+      href: manage-your-device/ProjectRome.md
+    - name: Intune 设备注册
+      href: manage-your-device/IntuneDeviceEnrollment.md
+- name: 保护设备
+  expanded: false
+  items:
+    - name: 概述
+      href: secure-your-device/BuildingSecureDevices.md
+    - name: 安全启动、BitLocker 和 Device Guard
+      href: secure-your-device/SecureBootAndBitLocker.md
+    - name: 统一写入筛选器
+      href: secure-your-device/UnifiedWriteFilter.md
+    - name: TPM 概述
+      href: secure-your-device/TPM.md
+    - name: 设置 TPM
+      href: secure-your-device/setupTPM.md
+- name: 云连接
+  expanded: false
+  items:
+    - name: 概述
+      href: connect-to-cloud/Overview.md
+    - name: 连接设备
+      href: connect-to-cloud/ConnectDeviceToCloud.md
+    - name: 连接应用
+      href: connect-to-cloud/ConnectAppToCloud.md
+    - name: Azure IoT 设备代理
+      href: manage-your-device/AzureIoTDA.md
+- name: 发行说明
+  expanded: false
+  items:
+    - name: Insider Preview
+      items:
+        - name: 最新版：版本 17744
+          href: release-notes/insider/17744.md
+        - name: 版本 17723
+          href: release-notes/insider/17723.md
+        - name: 版本 17692
+          href: release-notes/insider/17692.md
+        - name: 版本 17686
+          href: release-notes/insider/17686.md
+        - name: 版本 17672
+          href: release-notes/insider/17672.md
+        - name: 最新版：版本 17661
+          href: release-notes/insider/17661.md
+        - name: Raspberry Pi 3B+ 版本
+          href: release-notes/insider/RPi3BP.md
+        - name: 版本 17110
+          href: release-notes/insider/17110.md
+        - name: 版本 17083
+          href: release-notes/insider/17083.md
+        - name: 版本 17015
+          href: release-notes/insider/17015.md
+        - name: 版本 16267
+          href: release-notes/insider/16267.md
+        - name: 版本 16257
+          href: release-notes/insider/16257.md
+    - name: 商业版本
+      items:
+        - name: 最新版：2018 年 10 月更新（带有 2019 年 1 月服务）
+          href: release-notes/commercial/17763.md
+        - name: 2018 年 10 月更新（版本 17763）
+          href: release-notes/commercial/October2018Update.md
+        - name: 2018 年 4 月更新（版本 17134）
+          href: release-notes/commercial/April2018Update.md
+        - name: Fall Creators Update（版本 16299）
+          href: release-notes/commercial/FallCreatorsUpdate.md
+        - name: Creators Update（版本 15063）
+          href: release-notes/commercial/CreatorsUpdate.md
+- name: 疑难解答
+  href: Troubleshooting.md
+- name: 下载
+  href: Downloads.md
+- name: 资源
+  href: Resources.md
+- name: Microsoft IoT Pack
+  href: tutorials/adafruitkit.md
+- name: 辅助功能
+  href: Accessibility.md
+- name: 术语表
+  href: Glossary.md
