@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: “适用于 IoT 的 Windows”文档
-summary: “适用于 IoT 的 Windows”平台有多个版本，每个版本都针对特定场景进行了优化。 它们全部都提供安全性、可管理性、支持和云连接性，与你期望从 Window 获得的完全相同。
+summary: “适用于 IoT 的 Windows”平台有多个版本，每个版本都针对特定场景进行了优化。 它们全部都提供安全性、可管理性、支持和云连接性，与你期望从 Windows 获得的完全相同。
 metadata:
   description: 了解适用于 IoT 的 Windows，以便开发自己的联网嵌入式解决方案。
   services: windows-iot
@@ -9,12 +9,12 @@ metadata:
   author: saraclay
   ms.author: saclayt
   ms.date: 09/04/2019
-  ms.openlocfilehash: 655ef6423c244b3eec6d49797ad2affbc859ff32
-  ms.sourcegitcommit: 365721929dc902ec12bafe02653609d3d21a59f0
+  ms.openlocfilehash: ab7185c6439439764ed6e78530ec4d25258e6112
+  ms.sourcegitcommit: e3457de2e13ff89142a91cb8af2da4bf2e41ad20
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/19/2019
-  ms.locfileid: "71144977"
+  ms.lasthandoff: 09/23/2019
+  ms.locfileid: "71189922"
 landingContent:
 - title: 关于适用于 IoT 的 Windows
   linkLists:
