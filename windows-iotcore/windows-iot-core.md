@@ -7,10 +7,10 @@ ms.topic: article
 description: 了解 Windows 10 IoT 核心版是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 核心版, 占用空间小, 无外设
 ms.openlocfilehash: a1f2ce0835dcb40efc71f2b4d0d4733b781b0799
-ms.sourcegitcommit: 823a8f6967f74d71d5c61fe90f6b63ba79483479
+ms.sourcegitcommit: e3457de2e13ff89142a91cb8af2da4bf2e41ad20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 09/24/2019
 ms.locfileid: "70159289"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT 核心版概述
@@ -23,7 +23,7 @@ Windows 10 IoT 核心版是针对带显示屏或不带显示屏的小型设备�
 
 如果准备进入下一阶段并开始将解决方案商业化，则可参阅 [Windows 10 IoT 核心版制造指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)，了解如何使用 Windows 10 IoT 核心版进行制造。 
 
-## <a name="getting-started"></a>即刻体验
+## <a name="getting-started"></a>入门
 
 在尝试制造某个设备之前，最好是先使用 Windows 10 IoT 核心版尝试该设备并制作其原型。 这样就可以了解在要制造时需要的功能和配置。
 
