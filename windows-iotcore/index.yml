@@ -9,12 +9,12 @@ metadata:
   author: saraclay
   ms.author: saclayt
   ms.date: 09/04/2019
-  ms.openlocfilehash: 03caed08ace90632f31e6c32a75cfc66b652c22f
-  ms.sourcegitcommit: 5eebf5f03a4ee0b498bd80e8c54f343d94be3ecd
+  ms.openlocfilehash: 2e5e780fa492417549b66b12b697c5a5cf9a6c84
+  ms.sourcegitcommit: bd99c93285508bb91e82ce5ba174ac49bb622d4a
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/24/2019
-  ms.locfileid: "71247538"
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71719904"
 landingContent:
 - title: 关于适用于 IoT 的 Windows
   linkLists:
@@ -54,5 +54,3 @@ landingContent:
       url: http://www.annabooks.com/training.html
     - text: “适用于 IoT 的 Windows”论坛
       url: https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT
-    - text: “适用于 IoT 的 Windows”UserVoice
-      url: https://wpdev.uservoice.com/forums/110705-universal-windows-platform?category_id=364159
