@@ -9,12 +9,12 @@ metadata:
   author: saraclay
   ms.author: saclayt
   ms.date: 09/04/2019
-  ms.openlocfilehash: 2e5e780fa492417549b66b12b697c5a5cf9a6c84
-  ms.sourcegitcommit: bd99c93285508bb91e82ce5ba174ac49bb622d4a
+  ms.openlocfilehash: ef86af89111f945a5df4ba9f1a741aaba822e76b
+  ms.sourcegitcommit: b0030e562669a449e0dbb9c7397ac0d564b77e5f
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/02/2019
-  ms.locfileid: "71719904"
+  ms.lasthandoff: 10/09/2019
+  ms.locfileid: "72184443"
 landingContent:
 - title: 关于适用于 IoT 的 Windows
   linkLists:
@@ -51,6 +51,6 @@ landingContent:
   - linkListType: learn
     links:
     - text: “适用于 IoT 的 Windows”培训和书籍
-      url: http://www.annabooks.com/training.html
+      url: http://www.annabooks.com/index.html
     - text: “适用于 IoT 的 Windows”论坛
       url: https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT
