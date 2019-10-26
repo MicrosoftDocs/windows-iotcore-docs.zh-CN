@@ -6,15 +6,13 @@ metadata:
   services: windows-iot
   ms.service: windows-iot
   ms.topic: landing-page
-  author: saraclay
-  ms.author: saclayt
   ms.date: 09/04/2019
-  ms.openlocfilehash: ef86af89111f945a5df4ba9f1a741aaba822e76b
-  ms.sourcegitcommit: b0030e562669a449e0dbb9c7397ac0d564b77e5f
+  ms.openlocfilehash: fa98addadf627de0037f38c2bd9f13c90cef460a
+  ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/09/2019
-  ms.locfileid: "72184443"
+  ms.lasthandoff: 10/25/2019
+  ms.locfileid: "72918161"
 landingContent:
 - title: 关于适用于 IoT 的 Windows
   linkLists:
@@ -28,7 +26,7 @@ landingContent:
       url: windows-server.md
     - text: Windows 10 IoT 核心版服务
       url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview
-- title: 立即开始行动
+- title: 入门
   linkLists:
   - linkListType: tutorial
     links:
