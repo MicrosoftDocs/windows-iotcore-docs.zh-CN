@@ -1,17 +1,15 @@
 ---
 title: Arduino 接线移植指南
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 了解部署 Arduino 接线图项目时出现的修改和常见问题。
-keywords: windows iot, Arduino, 布线, Visual Studio, 移植
-ms.openlocfilehash: 9b1d54807c21a54d8186d7f7ddabc31f16d3dab3
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+keywords: windows iot，Arduino，布线，Visual Studio，移植
+ms.openlocfilehash: 7f3f70101fb28fab001dbd38d3159a7a10fa5586
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60169987"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918136"
 ---
 # <a name="arduino-wiring-porting-guide"></a>Arduino 接线移植指南
 
@@ -38,7 +36,7 @@ pinMode( GPIO5, OUTPUT );
 digitalWrite( GPIO5, HIGH );
 ```
 
-可以在[pins_arduino](https://github.com/ms-iot/lightning/blob/develop/source/pins_arduino.h)中找到预定义的 pin 名称, 并将其包含在每个 arduino 布线项目中, 但由于要为构建的硬件设置, 提供了不同的物理连接器 pin, 因此我们还提供了一个表此处说明每个设备的可用 pin 名称。
+可以在[pins_arduino](https://github.com/ms-iot/lightning/blob/develop/source/pins_arduino.h)中找到预定义的 pin 名称，并将其包含在每个 arduino 布线项目中，但由于要为构建的硬件设置，提供了不同的物理连接器 pin，因此我们还提供了一个表此处说明每个设备的可用 pin 名称。
 
 #### <a name="raspberry-pi-2-and-3"></a>Raspberry Pi 2 和 3
 
@@ -48,14 +46,14 @@ digitalWrite( GPIO5, HIGH );
 > | 引脚定义 | 相应的引脚编号|
 > |-------------|----------|
 > | LED_BUILTIN | *板载 LED* |
-> | GPIO * _where * 指 [0, 27]_ | *请参考引出线图* |
+> | GPIO * _where * 指 [0，27]_ | *请参考引出线图* |
 > | GCLK | 7 |
-> | GEN * _where * 指 [0, 5]_ | \* 参阅引线关系图 |
+> | GEN * _where * 指 [0，5]_ | \* 参阅引线关系图 |
 > | SCL1 | 5 |
 > | SDA1 | 3 |
-> | CS0 (或 CE0 或 SS) | 24 |
-> | CS1 (或 CE1) | 26 |
-> | SCLK (或 SCK) | 23 |
+> | CS0 （或 CE0 或 SS） | 24 |
+> | CS1 （或 CE1） | 26 |
+> | SCLK （或 SCK） | 23 |
 > | MISO | 21 |
 > | MOSI | 19 |
 > | RXD | 10 |
@@ -67,11 +65,11 @@ digitalWrite( GPIO5, HIGH );
 > [!div class="mx-tdBreakAll"]
 > | 引脚定义 | 相应的引脚编号|
 > |-------------|----------|
-> | GPIO * _where * 指 [0, 9]_  | *请参考引出线图* |
+> | GPIO * _where * 指 [0，9]_  | *请参考引出线图* |
 > | SCL | 13 |
 > | SDA | 15 |
-> | CS0 (或 CE0 或 SS) | 5 |
-> | SCLK (或 SCK)| 11 |
+> | CS0 （或 CE0 或 SS） | 5 |
+> | SCLK （或 SCK）| 11 |
 > | MISO |7 |
 > | MOSI | 9 |
 > | CTS1 | 10 |
@@ -86,15 +84,15 @@ digitalWrite( GPIO5, HIGH );
 
 ### <a name="cant-find-arduino-wiring-application-visual-c-project-template-in-visual-studio"></a>在 Visual Studio 中找不到“Arduino 接线应用程序”Visual C++ 项目模板
 
-**原因**：未安装适用于 Visual Studio 的 Windows IoT 项目模板扩展。
+**原因**： 未安装适用于 Visual Studio 的 Windows IoT 项目模板扩展。
 
-**解决方案**：你必须先安装适用于 Windows IoT 项目模板的 Visual Studio 扩展才能在 Visual Studio 中创建 Arduino 接线项目。 转到 [Windows IoT 核心版项目模板扩展页面](https://go.microsoft.com/fwlink/?linkid=847472)来从 Visual Studio 库下载该扩展！
+**解决方案**： 你必须先安装适用于 Windows IoT 项目模板的 Visual Studio 扩展才能在 Visual Studio 中创建 Arduino 接线项目。 转到 [Windows IoT 核心版项目模板扩展页面](https://go.microsoft.com/fwlink/?linkid=847472)来从 Visual Studio 库下载该扩展！
 
 ### <a name="error-identifier-not-found-when-calling-a-function"></a>错误：在调用某个函数时“找不到标识符”
 
-**原因**：当调用尚未在文档中声明的函数时，在链接器过程中会发生此错误。
+**原因**： 当调用尚未在文档中声明的函数时，在链接器过程中会发生此错误。
 
-**解决方案**：在 C++ 中，所有函数都必须在调用前进行声明。 如果你已在草图文件中定义了新函数，该函数的声明或完整实现必须在任何调用它的尝试上方（通常在文档顶部）。
+**解决方案**： 在 C++ 中，所有函数都必须在调用前进行声明。 如果你已在草图文件中定义了新函数，该函数的声明或完整实现必须在任何调用它的尝试上方（通常在文档顶部）。
 
 **示例**：
 
@@ -140,7 +138,7 @@ void myFunction()
 }
 ```
 
-或者, 您可以将函数的整个实现移动到任何调用的上面。 这会导致同时声明和定义该函数。
+或者，您可以将函数的整个实现移动到任何调用的上面。 这会导致同时声明和定义该函数。
 
 ```C++
 void setup()
@@ -162,9 +160,9 @@ void loop()
 
 存在可能导致 C++ 解决方案在初始化时无限期挂起（死锁）的已知问题。 如果你发现你的解决方案看起来永久挂起，并且你无法使用调试器“闯入”Arduino 接线应用程序的 setup() 或 loop() 部分中的任何声明，则可能遇到此类型的问题。
 
-**原因**：在解决方案完成初始化前创建了某个对象或调用了某个函数，从而导致异步操作。 这可能由对象的构造函数调用 `pinMode` 等 API 函数所导致。
+**原因**： 在解决方案完成初始化前创建了某个对象或调用了某个函数，从而导致异步操作。 这可能由对象的构造函数调用 `pinMode` 等 API 函数所导致。
 
-**解决方案**：将任何对象构造函数和函数调用从代码的初始化部分中移开，并移到 `setup()` 块中。
+**解决方案**： 将任何对象构造函数和函数调用从代码的初始化部分中移开，并移到 `setup()` 块中。
 
 **示例 1**：
 
@@ -287,30 +285,30 @@ void loop()
 }
 ```
 
-### <a name="using-serialprint-and-serialprintln"></a>使用`Serial.print()`和`Serial.println()`
+### <a name="using-serialprint-and-serialprintln"></a>使用 `Serial.print()` 和 `Serial.println()`
 
-许多 Arduino 草图使用 `Serial` 将数据打印到串行控制台（如果打开）或写入串行线（USB 或 tx/rx）。 在以前版本的闪电 SDK 中, 不`Serial`包括硬件支持, 因此我们提供了`Log()`一个函数, 该函数将打印到 Visual Studio 中的 "调试器输出" 窗口。 `Serial.print*()`或者`Serial.write()`必须删除。
+许多 Arduino 草图使用 `Serial` 将数据打印到串行控制台（如果打开）或写入串行线（USB 或 tx/rx）。 在早期版本的闪电 SDK 中，不包括硬件 `Serial` 支持，因此我们提供了一个 `Log()` 函数，该函数将打印到 Visual Studio 中的 "调试器输出" 窗口。 必须删除 `Serial.print*()` 或 `Serial.write()`。
 
-但是, 从_闪电 1.1.0_开始, 我们添加`Hardware Serial`了支持, 并`Serial.print*()`完全支持或`Serial.write()`函数。 因此, 如果您要复制为 Arduino 生成的草绘, 则不需要替换该草图的 Windows IoT 版本中的任何这些序列引用。
+但从_闪电 SDK v 1.1.0_开始，我们添加了 `Hardware Serial` 支持，并完全支持 `Serial.print*()` 或 `Serial.write()` 函数。 因此，如果您要复制为 Arduino 生成的草绘，则不需要替换该草图的 Windows IoT 版本中的任何这些序列引用。
 
-此外, 我们还扩展了`Serial.print()`和`Serial.println()`的功能, 以便在附加调试器时输出到调试器窗口-除了写入硬件串行 pin 外。
-调试输出打印设置为默认值, 因为在读取输出后, 大多数用户都需要该输出。 但是, 也可以禁用该功能;例如, 为了提高性能, 只需`Serial.enablePrintDebugOutput(false);`调用即可在草图中禁用它。 若要重新启用, 请调用`Serial.enablePrintDebugOutput(true);`。 写入硬件串行端口不受这些调用的影响。
+此外，我们还扩展了 `Serial.print()` 和 `Serial.println()`的功能，在附加调试器的情况下输出到调试器窗口-除了写入硬件串行 pin 外。
+调试输出打印设置为默认值，因为在读取输出后，大多数用户都需要该输出。 但是，也可以禁用该功能;例如，若要提高性能，只需调用 `Serial.enablePrintDebugOutput(false);` 以在草绘中禁用它。 若要重新启用，请调用 `Serial.enablePrintDebugOutput(true);`。 写入硬件串行端口不受这些调用的影响。
 
-请注意, 不需要将任何外围设备连接到串行 pin (如 FTDI), 即可获取发送到调试器窗口的输出。 但是, 你需要确保在调试你的应用程序时调试器窗口处于打开状态。
+请注意，不需要将任何外围设备连接到串行 pin （如 FTDI），即可获取发送到调试器窗口的输出。 但是，你需要确保在调试你的应用程序时调试器窗口处于打开状态。
 
 ![调试器输出](../media/ArduinoWiringPortingGuide/debugger_output.png)
 
-已在[Windows IoT Core 项目模板扩展页面](https://go.microsoft.com/fwlink/?linkid=847472)上更新项目模板, 以允许使用现成的`Serial`硬件。 但是, 如果你的 Arduino 配应用程序已使用较旧的项目模板版本创建, 则需要 1) 将项目升级到最新的闪电 SDK, v 1.1.0 或更高版本, 并 2) 将所需的硬件串行设备功能添加到你的能够使用`Serial`的 appxmanifest.xml。
+已在[Windows IoT Core 项目模板扩展页面](https://go.microsoft.com/fwlink/?linkid=847472)上更新项目模板，以允许使用现成的硬件 `Serial`。 但是，如果你的 Arduino 配应用程序已使用较旧的项目模板版本创建，则需要1）将项目升级到最新的闪电 SDK，v 1.1.0 或更高版本，并2）将所需的硬件串行设备功能添加到你的Appxmanifest.xml 可以使用 `Serial`。
 
 ### <a name="hardware-serial-device-capability-requirements"></a>硬件串行设备功能要求
 
 Windows 10 IoT Core 中的硬件串行功能要求向 AppX 清单添加设备功能声明。
 
-在 "解决方案`Package.appxmanifest`资源管理器" 中键入文件名, 查找项目中的文件。 然后, 右键单击该文件, 然后选择 "打开方式 ..."。 选择 "XML (文本) 编辑器", 然后单击 "确定"。
+在 "解决方案资源管理器" 中键入文件名，查找项目中的文件 `Package.appxmanifest`。 然后，右键单击该文件，然后选择 "打开方式 ..."。 选择 "XML （文本）编辑器"，然后单击 "确定"。
 
 ![正在更新包。 appxmanifest.xml](../media/ArduinoWiringPortingGuide/appxmanifest_search.png)
 
-在 appx 清单文件编辑器中, 将`serialcommunication` DeviceCapability 添加到你的项目中, 如以下 XML 代码片段所示:
+在 appx 清单文件编辑器中，将 `serialcommunication` DeviceCapability 添加到您的项目中，如以下 XML 代码片段所示：
 
 ```xml
 <Capabilities>
@@ -332,12 +330,12 @@ Windows 10 IoT Core 中的硬件串行功能要求向 AppX 清单添加设备功
 
 ### <a name="upgrade-your-project-to-the-latest-lightning-sdk"></a>将项目升级到最新的闪电 SDK
 
-Arduino 布线项目依赖于[闪电 SDK Nuget 包](https://www.nuget.org/packages/Microsoft.IoT.Lightning/)来实现所需的 Arduino 布线功能和声明, 并与闪电驱动程序建立接口。 最新的闪电 SDK 将包含最新的改进和 bug 修复。 若要升级到最新的闪电 SDK, 请执行以下步骤:
+Arduino 布线项目依赖于[闪电 SDK Nuget 包](https://www.nuget.org/packages/Microsoft.IoT.Lightning/)来实现所需的 Arduino 布线功能和声明，并与闪电驱动程序建立接口。 最新的闪电 SDK 将包含最新的改进和 bug 修复。 若要升级到最新的闪电 SDK，请执行以下步骤：
 
-- 在解决方案资源管理器中, 右键单击你的项目, 然后单击 "管理 Nuget 包 ..."
-- 在 NuGet 包管理器中, 切换到 "已安装" 选项卡。应会看到已安装的 ""
+- 在解决方案资源管理器中，右键单击你的项目，然后单击 "管理 Nuget 包 ..."
+- 在 NuGet 包管理器中，切换到 "已安装" 选项卡。应会看到已安装的 ""
 - 可用版本将在 "版本" combobox 内列出。
-- 选择最新版本, 并单击 "更新" 更新您的包。
-- 请注意, 若要升级到预发布版本, 请务必选中 "包括预发行版" 复选框。
+- 选择最新版本，并单击 "更新" 更新您的包。
+- 请注意，若要升级到预发布版本，请务必选中 "包括预发行版" 复选框。
 
 ![NuGet 包管理器](../media/ArduinoWiringPortingGuide/Nuget_PackageManager.png)

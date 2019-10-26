@@ -1,73 +1,71 @@
 ---
 title: 秋季创建者更新-生成16299
-author: saraclay
-ms.author: saclayt
 ms.date: 10/12/2017
 ms.topic: article
 description: 了解适用于 Windows 10 IoT 的秋季创建者更新的新增功能。
-keywords: Windows IoT, 秋季创意者更新, 发行说明
-ms.openlocfilehash: 00daad18d5519eee9be695105332aced81a1133f
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+keywords: Windows IoT，秋季创意者更新，发行说明
+ms.openlocfilehash: 35dbe905cfb25613d1225ab8e6d4b8fd636134d9
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167455"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918697"
 ---
 # <a name="fall-creators-update-release-notes-for-windows-10-iot"></a>Windows 10 IoT 的秋季创意者更新发行说明
 内部版本号16299。 2017 年 10 月
 
-Windows 10 IoT 允许开发嵌入或专用设备, 并且是为为智能设备构建 Windows 解决方案的 Oem 和开发人员选择的。
+Windows 10 IoT 允许开发嵌入或专用设备，并且是为为智能设备构建 Windows 解决方案的 Oem 和开发人员选择的。
 
 本文档提供了有关此版本的 Windows 10 IoT 的补充其他内容和文档的信息。
 
-若要下载此最新版本和程序包, 请访问[Windows 有问必答 Preview 下载页](https://www.microsoft.com/en-us/software-download/windowsiot)。
+若要下载此最新版本和程序包，请访问[Windows 有问必答 Preview 下载页](https://www.microsoft.com/en-us/software-download/windowsiot)。
 
 ## <a name="privacy-statement"></a>隐私声明
 
-可以在[https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839)中查看此版本 Windows 操作系统的隐私声明。
+可以[https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839)查看此版本 Windows 操作系统的隐私声明。
 
 ## <a name="whats-new-in-fall-creators-update"></a>秋季创意者更新中的新增功能
-* [适用于 UWP 应用的 .net](https://msdn.microsoft.com/library/windows/apps/xaml/mt185501.aspx?f=255&mspperror=-2147217396), 一组可用于使用C#或 Visual Basic 生成通用 Windows 平台应用的托管类型已扩充了[数千个新 api](https://blogs.msdn.microsoft.com/dotnet/2017/08/25/uwp-net-standard-2-0-preview/) , 以使其符合 .NET Standard 2.0。
-* Windows 10 IoT Core 上经过更新的语言支持, 包括英语 (en-us 和 en-GB)、法语 (fr 和 fr-CA)、西班牙语 (es 和 es-mx) 以及简体中文 (zh-chs)。 可以创建支持多种语言的 FFUs-有关详细信息, 请参阅[MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/16299/Source-arm/Products/MultiLangSample)和[SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/16299/Source-arm/Products/SingleLangSample) 。
+* [适用于 UWP 应用的 .net](https://msdn.microsoft.com/library/windows/apps/xaml/mt185501.aspx?f=255&mspperror=-2147217396)，一组可用于使用C#或 Visual Basic 生成通用 Windows 平台应用的托管类型已扩充了[数千个新 api](https://blogs.msdn.microsoft.com/dotnet/2017/08/25/uwp-net-standard-2-0-preview/) ，以使其符合 .NET Standard 2.0。
+* Windows 10 IoT Core 上经过更新的语言支持，包括英语（en-us 和 en-GB）、法语（fr 和 fr-CA）、西班牙语（es 和 es-mx）以及简体中文（zh-chs）。 可以创建支持多种语言的 FFUs-有关详细信息，请参阅[MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/16299/Source-arm/Products/MultiLangSample)和[SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/16299/Source-arm/Products/SingleLangSample) 。
 * 支持 Windows 10 IoT Core 上的[紧急管理服务](https://technet.microsoft.com/library/cc736319(v=ws.10).aspx)。
-* 改进了对 Windows 10 IoT Core 的[墨迹支持](https://docs.microsoft.com/windows/uwp/input-and-devices/pen-and-stylus-interactions)。 使用兼容的笔数字化仪, 你现在可以使用 DirectInk Api 来处理荧光笔、铅笔和基于矢量的墨迹。 此外, 我们还添加了适用于 UWP 的 XAML 墨迹控件, 包括 InkCanvas 和 InkToolbar, 它们可以启用标尺和 protractors 等模具, 还可以实现多模式交互, 例如, 同时使用触控笔和触摸兼容硬件。 不支持智能墨迹功能 (如墨迹识别和墨迹分析)。
-* 控制行显示的其他支持, 包括自定义光标样式、亮度、闪烁速度和字符集。 还添加了对自定义字形、事务描述符和滚动文本的滚动框模式的支持。
-* 在 Windows 10 IoT 企业版上, 我们通过[Windows 设备 api](https://docs.microsoft.com/windows/uwp/devices-sensors/enable-usermode-access)启用了从用户模式对行业标准总线 (如 GPIO、I2C、SPI 和 UART) 的访问。
-* [分配的访问权限](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps)是 Windows 10 IoT Enterprise 中的一项功能, 它允许你将特定用户帐户限制为仅使用一个通用 Windows 应用。 我们已扩展分配的访问支持, 允许在锁定体验中运行多个 UWP 和 Win32 应用, 并从云中管理这些设置。
-* 可以使用 IoTSettings 或新 Api 更改系统语言。 有关详细信息, 请参阅[命令行 Utils](https://docs.microsoft.com/windows/iot-core/develop-your-app/multilang)和[语言支持](https://docs.microsoft.com/windows/iot-core/develop-your-app/multilang)文档中的 "语言配置" 部分。
+* 改进了对 Windows 10 IoT Core 的[墨迹支持](https://docs.microsoft.com/windows/uwp/input-and-devices/pen-and-stylus-interactions)。 使用兼容的笔数字化仪，你现在可以使用 DirectInk Api 来处理荧光笔、铅笔和基于矢量的墨迹。 此外，我们还添加了适用于 UWP 的 XAML 墨迹控件，包括 InkCanvas 和 InkToolbar，它们可以启用标尺和 protractors 等模具，还可以实现多模式交互，例如，同时使用触控笔和触摸兼容硬件。 不支持智能墨迹功能（如墨迹识别和墨迹分析）。
+* 控制行显示的其他支持，包括自定义光标样式、亮度、闪烁速度和字符集。 还添加了对自定义字形、事务描述符和滚动文本的滚动框模式的支持。
+* 在 Windows 10 IoT 企业版上，我们通过[Windows 设备 api](https://docs.microsoft.com/windows/uwp/devices-sensors/enable-usermode-access)启用了从用户模式对行业标准总线（如 GPIO、I2C、SPI 和 UART）的访问。
+* [分配的访问权限](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps)是 Windows 10 IoT Enterprise 中的一项功能，它允许你将特定用户帐户限制为仅使用一个通用 Windows 应用。 我们已扩展分配的访问支持，允许在锁定体验中运行多个 UWP 和 Win32 应用，并从云中管理这些设置。
+* 可以使用 IoTSettings 或新 Api 更改系统语言。 有关详细信息，请参阅[命令行 Utils](https://docs.microsoft.com/windows/iot-core/develop-your-app/multilang)和[语言支持](https://docs.microsoft.com/windows/iot-core/develop-your-app/multilang)文档中的 "语言配置" 部分。
 * 用于启用启动卷监视器的 Raspberry Pi UEFI 更新。
 * 向 Windows 10 IoT Core 的所有体系结构添加了 SMSC 网络驱动程序。
 * 为 Windows 10 IoT Core 上的音频终结点设备启用了[专门模式的音频流](https://msdn.microsoft.com/library/windows/desktop/dd370844(v=vs.85).aspx)。
-* 在 WinRT 中添加了新的 Api, 用于设置 Windows 10 IoT Core 上的系统日期和时间。
-* 添加了对[通用 BSP (wm .xml)](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-packages)的支持。 将 addonkit v4.0 与 ADK 的当前版本结合使用。
-* 将语言选择和本地化布局添加到屏幕键盘。 有关更多详细信息, 请参阅[屏幕键盘布局](https://docs.microsoft.com/windows/iot-core/develop-your-app/onscreenkeyboardlayouts)。
+* 在 WinRT 中添加了新的 Api，用于设置 Windows 10 IoT Core 上的系统日期和时间。
+* 添加了对[通用 BSP （wm .xml）](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-packages)的支持。 将 addonkit v4.0 与 ADK 的当前版本结合使用。
+* 将语言选择和本地化布局添加到屏幕键盘。 有关更多详细信息，请参阅[屏幕键盘布局](https://docs.microsoft.com/windows/iot-core/develop-your-app/onscreenkeyboardlayouts)。
 
 ## <a name="features-in-preview-for-dev-and-test-scenarios"></a>用于开发和测试方案的预览功能
-* 组件更新服务 [预览] 允许 Oem 全局管理其应用并将操作系统、应用、设置和文件的更新推送到设备, 以使其保持最新和安全。
-* 支持在 Windows 10 IoT 核心版和企业版的64位版本上托管[Nano Server 容器](https://docs.microsoft.com/virtualization/windowscontainers/about/index), 使应用程序及其数据可以相互隔离, 并从开发到生产或云到边缘快速移动。
+* 组件更新服务 [预览] 允许 Oem 全局管理其应用并将操作系统、应用、设置和文件的更新推送到设备，以使其保持最新和安全。
+* 支持在 Windows 10 IoT 核心版和企业版的64位版本上托管[Nano Server 容器](https://docs.microsoft.com/virtualization/windowscontainers/about/index)，使应用程序及其数据可以相互隔离，并从开发到生产或云到边缘快速移动。
 * Windows 设备运行状况证明 [预览] 服务使用硬件功能和云服务根据硬件级别的指标和证明数据提供对设备运行状况的篡改和远程认证。
-* Windows IoT [预览版] 上的[Azure IoT Edge](https://azure.microsoft.com/campaigns/iot-edge/)允许 IoT 解决方案协调云和边缘设备之间的智能, 以确保应用程序和服务可以在最有意义的地方处理 IoT 数据。
-* Azure IoT 中心[设备预配服务 [预览版]](https://blogs.windows.com/buildingapps/2017/10/05/windows-10-iot-enables-complete-iot-lifecycle/)支持在制造期间使用公用映像创建 Windows 10 IoT 设备, 并将其配置为在首次启动时自动连接到 Azure IoT 中心以检索特定于设备的设置信息.
-* [Azure Iot 设备管理 [预览版]](https://docs.microsoft.com/windows/iot-core/manage-your-device/AzureIoTDM)使 IoT 操作员能够从云中远程管理设备配置, 例如已安装的应用程序、Windows 更新、证书和网络设置。
+* Windows IoT [预览版] 上的[Azure IoT Edge](https://azure.microsoft.com/campaigns/iot-edge/)允许 IoT 解决方案协调云和边缘设备之间的智能，以确保应用程序和服务可以在最有意义的地方处理 IoT 数据。
+* Azure IoT 中心[设备预配服务 [预览版]](https://blogs.windows.com/buildingapps/2017/10/05/windows-10-iot-enables-complete-iot-lifecycle/)支持在制造期间使用公用映像创建 Windows 10 IoT 设备，并将其配置为在首次启动时自动连接到 Azure IoT 中心以检索特定于设备的设置信息.
+* [Azure Iot 设备管理 [预览版]](https://docs.microsoft.com/windows/iot-core/manage-your-device/AzureIoTDM)使 IoT 操作员能够从云中远程管理设备配置，例如已安装的应用程序、Windows 更新、证书和网络设置。
 
 ## <a name="windows-10-iot-core-reference-images"></a>Windows 10 IoT 核心参考映像
 ___ 
 * Minnowboard Max
-  * 处理器：Intel Atom E3825
-  * 体系结构: x86
-  * BSP 版本:10.0.4.0
+  * 处理器： Intel Atom E3825
+  * 体系结构： x86
+  * BSP 版本：10.0.4。0
 * Raspberry Pi 3
-  * 处理器：Broadcom BCM2837
-  * 体系结构：ARM
-  * BSP 版本:10.0.16248.1001
+  * 处理器： Broadcom BCM2837
+  * 体系结构： ARM
+  * BSP 版本：10.0.16248.1001
 * DragonBoard 410c
-  * 处理器：Qualcomm Snapdragon 410
-  * 体系结构：ARM
-  * BSP 版本:2112.0.0.0
+  * 处理器： Qualcomm Snapdragon 410
+  * 体系结构： ARM
+  * BSP 版本：2112.0.0。0
 
 ## <a name="additional-information"></a>其他信息
-* 在此版本中, 根据最近的用于停止生成 Intel Joule 平台的 intel 公告, FFUs for Intel Joule。 评估 Intel Joule 的客户应该使用其他受支持的 Soc 之一来识别替代平台-请参阅[建议的板和列表 soc](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/prototypeboards) 。
-* 已重构 IOT_WEBB_EXTN 功能以删除载入功能, 该功能现在可用作 IOT_ONBOARDING_APP。 在此更新中, 将删除载入功能, 并且应 reflashed 使用此功能的设备, 以再次获取此功能。
+* 在此版本中，根据最近的用于停止生成 Intel Joule 平台的 intel 公告，FFUs for Intel Joule。 评估 Intel Joule 的客户应该使用其他受支持的 Soc 之一来识别替代平台-请参阅[建议的板和列表 soc](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/prototypeboards) 。
+* 已重构 IOT_WEBB_EXTN 功能以删除载入功能，该功能现在可用作 IOT_ONBOARDING_APP。 在此更新中，将删除载入功能，并且应 reflashed 使用此功能的设备，以再次获取此功能。
 
 ## <a name="known-issues"></a>已知问题
 * 不能在 Windows 10 IoT 核心版上通过 Visual Studio 进行 F5 驱动程序部署。 必须手动复制驱动程序并将其注册到设备上。

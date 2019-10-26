@@ -2,27 +2,27 @@
 title: Windows 10 IoT 核心语言支持
 author: msalehmsft
 ms.author: msaleh
-ms.date: 09/12/17
+ms.date: 09/12/2017
 ms.topic: article
 description: 了解 UWP Core 上的 UWP 应用程序和 OS 中的多语言支持。
-keywords: windows iot, 语言, 应用类型, UWP, OS
-ms.openlocfilehash: aad3005a008264223750b7ede5b154306d9d3015
-ms.sourcegitcommit: b005de492d52cd5139fa410dd31c3ca369030dd9
+keywords: windows iot，语言，应用类型，UWP，OS
+ms.openlocfilehash: 5bc44fb090e6e198525e95d6aee6815afd0095da
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69545518"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918228"
 ---
 # <a name="language-support"></a>语言支持
 
-可以在两个级别上启用语言支持: 应用程序级别和操作系统级别, 具体取决于映像中提供的语言资源。
+可以在两个级别上启用语言支持：应用程序级别和操作系统级别，具体取决于映像中提供的语言资源。
 
 ## <a name="languages-in-uwp-applications"></a>UWP 应用程序中的语言
-UWP 应用程序语言并不局限于操作系统中包含的语言。  事实上, 不触发 shell UI 或利用语音资源的 IoT 设备可以通过其 UWP 应用程序提供多种不同语言的设备体验, 即使基础 Windows 10 IoT 核心操作系统只是以 en-us 默认模式生成的。 
+UWP 应用程序语言并不局限于操作系统中包含的语言。  事实上，不触发 shell UI 或利用语音资源的 IoT 设备可以通过其 UWP 应用程序提供多种不同语言的设备体验，即使基础 Windows 10 IoT 核心操作系统只是以 en-us 默认模式生成的。 
 
 UWP 应用程序必须提供需要支持的语言的资源。 [ApplicationLanguage](https://docs.microsoft.com/uwp/api/windows.globalization.applicationlanguages) api 可用于指定与语言相关的首选项。
 
-请参阅下面的示例应用程序:
+请参阅下面的示例应用程序：
 
 * [IoTDefaultApp 示例](https://developer.microsoft.com/en-us/windows/iot/samples/iotdefaultapp)
 
@@ -31,16 +31,16 @@ UWP 应用程序必须提供需要支持的语言的资源。 [ApplicationLangua
 
 ## <a name="languages-in-os"></a>操作系统中的语言
 
-Windows 10 IoTCore 工具包现在包含适用于以下语言的语言资源:
+Windows 10 IoTCore 工具包现在包含适用于以下语言的语言资源：
 
-> | 语言  | 代码 | 地区 |
+> | “语言”  | 代码 | Region |
 > |-------------|-----|-----|
-> | 英语(美国) | en-US | 北美 | 
-> | 英语 (英国) | en-GB | 欧洲 |
+> | 英语（美国） | zh-CN | 北美 | 
+> | 英语（英国） | en-GB | 欧洲 |
 > | 法语(法国) | fr-FR | 欧洲 |
-> | 法语(加拿大) | fr-CA | 北美 |
+> | 法语（加拿大） | fr-CA | 北美 |
 > | 西班牙语(西班牙) | es-ES | 欧洲 |
-> | 西班牙语(墨西哥) | es-MX | 北美 |
+> | 西班牙语（墨西哥） | es-MX | 北美 |
 > | 中文 | zh-CN | 东亚 | 
 > | 阿拉伯语 | ar-SA | 东亚 |
 > | 德语 | de-DE | 欧洲 |
@@ -52,13 +52,13 @@ Windows 10 IoTCore 工具包现在包含适用于以下语言的语言资源:
 > | 罗马尼亚语 | ro-RO | 欧洲 |
 > | 俄语 | ru-RU | 欧洲 |
 > | 希腊语 | el-GR | 欧洲 |
-> | 葡萄牙语 (巴西) | pt-BR | 南美/欧洲 |
-> | Portuese (葡萄牙) | pt-PT | 南美/欧洲 |
+> | 葡萄牙语（巴西） | pt-BR | 南美/欧洲 |
+> | Portuese （葡萄牙） | pt-PT | 南美/欧洲 |
 
-这些语言资源包含 UI 字符串、语音语言和语音 (语音合成)。 Windows IoT 映像可以用一个或多个这些资源生成, 并且必须在映像时间内指定, 以后不能修改。 请注意, 与语音和语音资源无关的 UI 语言相关资源。
+这些语言资源包含 UI 字符串、语音语言和语音（语音合成）。 Windows IoT 映像可以用一个或多个这些资源生成，并且必须在映像时间内指定，以后不能修改。 请注意，与语音和语音资源无关的 UI 语言相关资源。
 
 ### <a name="specifying-ui-and-speech-resources"></a>指定 UI 和语音资源 
-在 OEM 输入 xml 文件中, 指定了所需的 UI 和语音语言, 如下所示
+在 OEM 输入 xml 文件中，指定了所需的 UI 和语音语言，如下所示
 
 ``` xml
   <SupportedLanguages>
@@ -93,7 +93,7 @@ Windows 10 IoTCore 工具包现在包含适用于以下语言的语言资源:
 
 
 ### <a name="specifying-speech-data-resources"></a>指定语音数据资源
-在 OEM 输入 xml 文件中, 按如下所示指定所需的语音数据资源。
+在 OEM 输入 xml 文件中，按如下所示指定所需的语音数据资源。
 
 ``` xml
     <Microsoft>
@@ -108,27 +108,27 @@ Windows 10 IoTCore 工具包现在包含适用于以下语言的语言资源:
 ```
 
 > [!NOTE]
-> 默认情况下, en-us 语音数据包括在映像中。
+> 默认情况下，en-us 语音数据包括在映像中。
 
 ### <a name="samples"></a>示例
-* 有关多语言支持, 请参阅[MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/MultiLangSample)
-* 请参阅[SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample) for fr-fr, 并以 en-us 作为备用语言。
-    * 请注意, 当更改启动 ui 语言时, `administrator`还会用启动 ui 语言转换帐户名称。 因此, 在 fr-fr 中, 它是`administrateur`。 请参阅[OEMCustomization。](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample/oemcustomization.cmd)
+* 有关多语言支持，请参阅[MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/MultiLangSample)
+* 请参阅[SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample) for fr-fr，并以 en-us 作为备用语言。
+    * 请注意，当更改启动 UI 语言时，还会以启动 UI 语言转换 `administrator` 帐户名称。 因此，在 fr-fr 中 `administrateur`。 请参阅[OEMCustomization。](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample/oemcustomization.cmd)
 
-## <a name="changing-user-preferences-language-region-speech-and-voice"></a>更改用户首选项 (语言、区域、语音和语音)
+## <a name="changing-user-preferences-language-region-speech-and-voice"></a>更改用户首选项（语言、区域、语音和语音）
 
-UWP 应用程序可以使用 WinRT Api 来设置默认情况下应使用的区域、首选的 UI 语言列表、语音语言和语音。 在首选的 UI 语言列表集之后, UWP 应用程序将尝试加载相应的资源 (除非应用程序以编程方式禁止)。
+UWP 应用程序可以使用 WinRT Api 来设置默认情况下应使用的区域、首选的 UI 语言列表、语音语言和语音。 在首选的 UI 语言列表集之后，UWP 应用程序将尝试加载相应的资源（除非应用程序以编程方式禁止）。
  
-如果应用程序没有相应的资源, 则会加载回退资源。 同样, 如果首选语言的操作系统资源不是 Windows IoT 映像的一部分, 则 Windows IoT 将使用它的回退, 这可能是英语 (en-us)。
+如果应用程序没有相应的资源，则会加载回退资源。 同样，如果首选语言的操作系统资源不是 Windows IoT 映像的一部分，则 Windows IoT 将使用它的回退，这可能是英语（en-us）。
 
-* 使用`TrySetHomeGeographicRegion` [GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)中的设置区域
-* 使用`TrySetLanguages` [GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)中的设置 UI 语言
-* 在 SpeechRecognition 中使用`TrySetSystemSpeechLanguageAsync`设置语音语言。 [SpeechRecognizer](https://docs.microsoft.com/uwp/api/windows.media.speechrecognition.speechrecognizer)
-* 在`TrySetDefaultVoiceAsync` [SpeechSynthesis. SpeechSynthesizer](https://docs.microsoft.com/en-us/uwp/api/windows.media.speechsynthesis.speechsynthesizer)中使用设置语音。
+* 使用[GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)中的 `TrySetHomeGeographicRegion` 设置区域
+* 使用[GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)中的 `TrySetLanguages` 设置 UI 语言
+* 使用 SpeechRecognition 中的 `TrySetSystemSpeechLanguageAsync` 设置语音语言。 [SpeechRecognizer](https://docs.microsoft.com/uwp/api/windows.media.speechrecognition.speechrecognizer)
+* 使用 SpeechSynthesis 中的 `TrySetDefaultVoiceAsync` 设置语音。 [SpeechSynthesizer](https://docs.microsoft.com/en-us/uwp/api/windows.media.speechsynthesis.speechsynthesizer)
 
 > [!NOTE]
-> 为了正常工作, Cortana 要求区域、UI 语言和语音语言保持一致, 例如: 区域 FR、UI 和语音语言 fr-fr 或地区 ES、UI 和语音语言 es。 Cortana 使用自己的语音, UWP 应用程序无法更改它。
+> 为了正常工作，Cortana 要求区域、UI 语言和语音语言保持一致，例如：区域 FR、UI 和语音语言 fr-fr 或地区 ES、UI 和语音语言 es。 Cortana 使用自己的语音，UWP 应用程序无法更改它。
 
 ## <a name="iotsettingsexe"></a>IoTSettings
 
-若要了解有关更改区域和用户或语音语言设置以构建启用 Cortana 的产品的详细信息, 请阅读我们的[命令行 Utils](../manage-your-device/CommandLineUtils.md)文档。
+若要了解有关更改区域和用户或语音语言设置以构建启用 Cortana 的产品的详细信息，请阅读我们的[命令行 Utils](../manage-your-device/CommandLineUtils.md)文档。

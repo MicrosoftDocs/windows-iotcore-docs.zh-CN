@@ -1,21 +1,19 @@
 ---
 title: 在建议的平台上设置 TPM
-author: saraclay
-ms.author: saclayt
-ms.date: 09/05/17
+ms.date: 09/05/2017
 ms.topic: article
-description: 在建议的平台上设置 TPM 后, 了解如何使设备安全。
-keywords: windows iot, 安全性, 安装程序, 受信任的平台模块, TPM, 加密, 密钥
-ms.openlocfilehash: cc82262e3f800195b460bfe1113ec7c075d36b9a
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+description: 在建议的平台上设置 TPM 后，了解如何使设备安全。
+keywords: windows iot，安全性，安装程序，受信任的平台模块，TPM，加密，密钥
+ms.openlocfilehash: 905d6ea829d6920a1458dbc1a4bdd16f266f7be1
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170125"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918690"
 ---
 # <a name="setting-up-tpm-on-suggested-platforms"></a>在建议的平台上设置 TPM
 
-## <a name="setup-firmware-tpm-ftpm"></a>设置固件 TPM (fTPM)
+## <a name="setup-firmware-tpm-ftpm"></a>设置固件 TPM （fTPM）
 固件 TPM (fTPM) 需要特殊处理器/SoC 支持，因此，fTPM 当前在 Raspberry Pi2 上无法实现。
 
 1. 必须使用内含版本 0.80 或更高版本的 UEFI 的 MBM。
@@ -141,7 +139,7 @@ ms.locfileid: "60170125"
 
         C:\>
 
-## <a name="setup-discrete-tpm-dtpm"></a>设置离散 TPM (dTPM)
+## <a name="setup-discrete-tpm-dtpm"></a>设置离散 TPM （dTPM）
 以下说明适用于 MBM、RPi2 或 RPi3 上受支持的任何 dTPM 模块。
 
 1. 获取一个离散 TPM 模块，并将其附加到 MBM/RPi2/RPi3。
@@ -160,7 +158,7 @@ ms.locfileid: "60170125"
         bcdedit /set {current} integrityservices disable
         bcdedit /set testsigning on
 
-7. 重新启动设备。
+7. 重启设备。
 8. 验证是否已启用正确的 TPM 版本 - 在 Windows IoT 核心版设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T)。
 
         C:\>t2t.exe -cap
@@ -279,7 +277,7 @@ ms.locfileid: "60170125"
 
         C:\>
 
-## <a name="enable-and-verify-software-tpm-stpm"></a>启用和验证软件 TPM (sTPM)  
+## <a name="enable-and-verify-software-tpm-stpm"></a>启用和验证软件 TPM （sTPM）  
 请注意，**sTPM 仅用于开发目的，并不提供任何切实的安全优势**。
 
 1. （适用于 MBM）通过更改以下 UEFI 设置来禁用 fTPM：
@@ -296,7 +294,7 @@ ms.locfileid: "60170125"
         bcdedit /set testsigning on
 
 4. 将 ACPI 表从[此处](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim)复制到 MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_。
-5. 重新启动设备。
+5. 重启设备。
 6. 验证是否已启用正确的 TPM 版本 - 在 Windows IoT 核心版设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T)。
 
         C:\>t2t.exe -cap

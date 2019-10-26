@@ -1,17 +1,15 @@
 ---
 title: Windows IoT Core 事件跟踪
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何使用事件跟踪为 Windows IoT Core 编写事件和使用事件。
 keywords: windows iot，事件跟踪，ETW，windows 事件跟踪，设备
-ms.openlocfilehash: 7e01681e2af2ed8913614ba23bd12dfd36bcd76e
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: ce031cd2bc7b94f01c970bec9e1ad4df0b9dbf06
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170305"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917253"
 ---
 # <a name="event-tracing-for-windows-iot-core"></a>Windows IoT Core 事件跟踪
 

@@ -1,17 +1,15 @@
 ---
 title: 2018年10月更新-版本17763
-author: saraclay
-ms.author: saclayt
 ms.date: 10/02/2018
 ms.topic: article
 description: 了解 Windows 10 月2018版更新中的新增功能。
 keywords: Windows IoT，10月2018更新，发行说明
-ms.openlocfilehash: 886f86a733f53632dee73d0af7b2c172693bc3a5
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 30292437da20a577a319fe47b3f5c2647df00382
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170115"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918704"
 ---
 # <a name="october-2018-update-release-notes-for-windows-10-iot"></a>2018年10月更新发行说明，适用于 Windows 10 IoT
 内部版本号17763。 2018 年 10 月
@@ -25,7 +23,7 @@ Windows 10 IoT 允许开发嵌入或专用设备，并且是为为智能设备�
 
 ## <a name="privacy-statement"></a>隐私声明
 
-可以在[https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839)中查看此版本 Windows 操作系统的隐私声明。
+可以[https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839)查看此版本 Windows 操作系统的隐私声明。
 
 ## <a name="whats-new-in-october-2018-update"></a>2018年10月更新中的新增功能
 
@@ -79,17 +77,17 @@ _Windows 10 IoT 核心板_
 ## <a name="windows-10-iot-core-reference-images"></a>Windows 10 IoT 核心参考映像
 ___ 
 * Minnowboard Max
-  * 处理器：Intel Atom E3825
+  * 处理器： Intel Atom E3825
   * 体系结构： x86
 
 * Raspberry Pi 3 模型 B
-  * 处理器：Broadcom BCM2837
-  * 体系结构：ARM
+  * 处理器： Broadcom BCM2837
+  * 体系结构： ARM
 
 * DragonBoard 410c
-  * 处理器：Qualcomm Snapdragon 410
-  * 体系结构：ARM
-  * BSP 版本：2120.0.0.0
+  * 处理器： Qualcomm Snapdragon 410
+  * 体系结构： ARM
+  * BSP 版本：2120.0.0。0
 
 
 ## <a name="known-issues"></a>已知问题

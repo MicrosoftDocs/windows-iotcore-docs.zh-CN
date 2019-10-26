@@ -1,17 +1,15 @@
 ---
 title: Windows 10 IoT 核心版仪表板
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 了解 Windows 10 IoT Core 仪表板的功能以及入门方式。
 keywords: windows iot，windows 10 iot 核心仪表板，windows iot 面板，设备
-ms.openlocfilehash: af87ff8224cf77b567b1dd96e6de2297b4752530
-ms.sourcegitcommit: f447681d9a73ebdec97a3da973bd798a02df975d
+ms.openlocfilehash: e244dd4705fa85707468f284b9a5d070c91720d8
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197669"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918612"
 ---
 # <a name="windows-10-iot-core-dashboard"></a>Windows 10 IoT 核心版仪表板
 
@@ -44,7 +42,7 @@ SD 卡的类型、品牌和型号极大地影响 IoT 核心的性能和质量。
 默认设备名称为 minwinpc。 建议将其更改为唯一的内容，因为这样可以更轻松地在网络上查找设备。 设备名称的长度最长可以为15个字符，可以包含字母、数字和以下符号： @ # $% ^ & '）（。 -_ {} ~ 如果在设置设备时在 IoT 面板中更改设备名，则在第一次打开设备电源时将自动重启。
 
 ### <a name="password"></a>密码
-密码是必填字段，必须设置。 在 IoT 面板中设置密码会修改管理员用户的密码，默认情况下为p@ssw0rd""。
+密码是必填字段，必须设置。 在 IoT 面板中设置密码会修改管理员用户的密码，默认情况下为 "p@ssw0rd"。
 
 ### <a name="wi-fi-network-connection"></a>Wi-fi 网络连接
 IoT 面板显示你的电脑以前连接到的所有可用网络。 如果在列表中看不到所需的 Wi-fi 网络，请确保你已在电脑上连接到该网络。

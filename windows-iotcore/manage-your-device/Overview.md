@@ -1,19 +1,17 @@
 ---
 title: 调试概述
-author: saraclay
-ms.author: saclayt
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
 description: 了解可用于调试 Windows 10 IoT Core 的不同方式。
 keywords: windows iot，调试，PowerShell，SSH
-ms.openlocfilehash: 1baeaca24fff425372e6a6de64d4b74bdcc60abb
-ms.sourcegitcommit: e3457de2e13ff89142a91cb8af2da4bf2e41ad20
+ms.openlocfilehash: 455d8a90fc655b2deda4a09a661c849ff852b65c
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71189931"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917250"
 ---
 # <a name="debugging-on-windows-iot-core"></a>在 Windows IoT Core 上调试
 使用运行中的应用程序设置 IoT 核心映像后，你可以根据需要调试应用程序或系统。 调试和测试系统的最佳时间是测试映像状态。 一旦基于 IoT 核心的系统在本质上出现，调试可能会 challanging。 这并不是说，这种情况并不能完成，而是将其他问题添加到了调试阶段。 在测试模式下，可以使用以下操作调试应用程序或映像：

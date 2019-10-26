@@ -1,17 +1,15 @@
 ---
 title: DragonBoard 引脚映射
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 了解 Dragonboard 的 pin 映射功能。
-keywords: windows iot, Dragonboard, pin 映射, GPIO
-ms.openlocfilehash: f6df962c6d05aa912013f8f0819c0789bfc393ce
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+keywords: windows iot，Dragonboard，pin 映射，GPIO
+ms.openlocfilehash: 170b14ce640fed33754f90bd4df188f4629f04c2
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167675"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917965"
 ---
 # <a name="dragonboard-pin-mappings"></a>DragonBoard 引脚映射
 
@@ -27,7 +25,7 @@ Dragonboard 的硬件接口通过开发板上的 40 排针公开。 功能包括
 * **1x** - 1.8V 电源引脚
 * **4x** - 接地引脚
 
-请注意, Dragonboard 在所有 IO 引脚上使用 1.8 V 逻辑级别。 
+请注意，Dragonboard 在所有 IO 引脚上使用 1.8 V 逻辑级别。 
 
 ## <a name="gpio-pins"></a>GPIO Pin
 
@@ -54,7 +52,7 @@ Dragonboard 的硬件接口通过开发板上的 40 排针公开。 功能包括
 > | 120   | 用户 LED 2         |         
 
 
-例如, 以下代码将**GPIO 35**打开为输出, 并在 pin 上写入数字 "**1**":
+例如，以下代码将**GPIO 35**打开为输出，并在 pin 上写入数字 "**1**"：
          
 ```C#
 using Windows.Devices.Gpio;
@@ -129,9 +127,9 @@ public async void Serial()
 }
 ```
 > [!NOTE]
-> Visual Studio 2017 在清单设计器 (appxmanifest.xml 文件的可视化编辑器) 中有一个已知 bug, 该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能, 则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml (设备 xml 子级将丢失)。  若要解决此问题, 请右键单击 appxmanifest.xml, 然后从上下文菜单中选择 "查看代码", 手动编辑 appxmanifest.xml。
+> Visual Studio 2017 在清单设计器（appxmanifest.xml 文件的可视化编辑器）中有一个已知 bug，该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能，则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml （设备 xml 子级将丢失）。  若要解决此问题，请右键单击 appxmanifest.xml，然后从上下文菜单中选择 "查看代码"，手动编辑 appxmanifest.xml。
 
-必须将以下功能添加到 UWP 项目中的**appxmanifest.xml**文件, 才能运行串行 UART 代码:
+必须将以下功能添加到 UWP 项目中的**appxmanifest.xml**文件，才能运行串行 UART 代码：
 
 ```xml
   <Capabilities>

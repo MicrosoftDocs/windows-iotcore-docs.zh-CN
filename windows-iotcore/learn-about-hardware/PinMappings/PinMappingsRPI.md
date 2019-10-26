@@ -1,17 +1,15 @@
 ---
 title: Raspberry Pi 2 和 3 引脚映射
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 了解 Raspberry Pi 2 和3的 pin 映射功能。
-keywords: windows iot, Rasperry Pi 2, Raspberry Pi 3, 固定映射, GPIO
-ms.openlocfilehash: 86e641bdcc6b4895161c6509ca7529b0dd55fad9
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+keywords: windows iot，Rasperry Pi 2，Raspberry Pi 3，固定映射，GPIO
+ms.openlocfilehash: 2a3155b28fb01434ff8596de6e2f75b06b42f6ae
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167509"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917850"
 ---
 # <a name="raspberry-pi-2--3-pin-mappings"></a>Raspberry Pi 2 和 3 引脚映射
 
@@ -20,7 +18,7 @@ ms.locfileid: "60167509"
 Raspberry Pi 2 和 Raspberry Pi 3 的硬件接口通过开发板上的 40 排针 **J8** 公开。 功能包括：
 
 * **24x** -GPIO 引脚
-* **1x** -串行 UARTs (RPi3 仅包含微型 UART)
+* **1x** -串行 UARTs （RPi3 仅包含微型 UART）
 * **2x** -SPI 总线
 * **1x** - I2C 总线
 * **2x** - 5V 电源引脚
@@ -64,7 +62,7 @@ Raspberry Pi 2 和 Raspberry Pi 3 的硬件接口通过开发板上的 40 排针
 > | 35*   | 上拉        |                     | 红色电源 LED      |
 > | 47*   | 上拉        |                     | 绿色活动 LED |
 
-\*= Raspberry Pi 2。 Raspberry Pi 3 上未提供 GPIO 35 和 47。
+\* = Raspberry Pi 2。 Raspberry Pi 3 上未提供 GPIO 35 和 47。
 
 ### <a name="gpio-sample"></a>GPIO 示例
 
@@ -93,7 +91,7 @@ public void GPIO()
 }
 ```
 
-打开 pin 时, 它将处于其开机状态, 其中可能包括拉取电阻器。 若要断开拉电阻的连接并获取高阻抗输入，请将驱动程序模式设置为 GpioPinDriveMode.Input：
+打开 pin 时，它将处于其开机状态，其中可能包括拉取电阻器。 若要断开拉电阻的连接并获取高阻抗输入，请将驱动程序模式设置为 GpioPinDriveMode.Input：
 
     pin.SetDriveMode(GpioPinDriveMode.Input);
 
@@ -101,7 +99,7 @@ public void GPIO()
 
 ### <a name="pin-muxing"></a>固定 Muxing
 
-某些 GPIO pin 可以执行多个功能。 默认情况下, pin 配置为 GPIO 输入。 当通过调用`I2cDevice.FromIdAsync()`或`SpiDevice.FromIdAsync()`打开替代函数时, 该函数所需的 pin 会自动切换 ("muxed") 到正确的函数。 当通过调用`I2cDevice.Dispose()`或`SpiDevice.Dispose()`关闭设备时, pin 会恢复为其默认功能。 如果尝试同时对两个不同的函数使用 pin, 则在尝试打开冲突的函数时会引发异常。 例如，
+某些 GPIO pin 可以执行多个功能。 默认情况下，pin 配置为 GPIO 输入。 通过调用 `I2cDevice.FromIdAsync()` 或 `SpiDevice.FromIdAsync()` 打开备用函数时，该函数所需的 pin 会自动切换（"muxed"）到正确的函数。 当通过调用 `I2cDevice.Dispose()` 或 `SpiDevice.Dispose()`关闭设备时，pin 会恢复为其默认功能。 如果尝试同时对两个不同的函数使用 pin，则在尝试打开冲突的函数时会引发异常。 例如，
 
 ```csharp
 var controller = GpioController.GetDefault();
@@ -121,7 +119,7 @@ var gpio2 = controller.OpenPin(2); // succeeds now that GPIO2 is available
 
 ## <a name="serial-uart"></a>串行 UART
 
-RPi2/3 上有一个串行 UART：**UART0**
+RPi2/3 上有一个串行 UART： **UART0**
 
 * Pin 8- **UART0 TX**
 * 引脚 10- **UART0 RX**
@@ -164,7 +162,7 @@ public async void Serial()
 
 请注意，必须将以下功能添加到 UWP 项目中的 **Package.appxmanifest** 文件，才能运行串行 UART 代码：
 
-Visual Studio 2017 在清单设计器 (appxmanifest.xml 文件的可视化编辑器) 中有一个已知 bug, 该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能, 则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml (设备 xml 子级将丢失)。  若要解决此问题, 请右键单击 appxmanifest.xml, 然后从上下文菜单中选择 "查看代码", 手动编辑 appxmanifest.xml。
+Visual Studio 2017 在清单设计器（appxmanifest.xml 文件的可视化编辑器）中有一个已知 bug，该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能，则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml （设备 xml 子级将丢失）。  若要解决此问题，请右键单击 appxmanifest.xml，然后从上下文菜单中选择 "查看代码"，手动编辑 appxmanifest.xml。
 
 ```xml
   <Capabilities>
@@ -239,7 +237,7 @@ RPi2/3 提供了两个 SPI 总线控制器。
 
 ### <a name="spi-sample"></a>SPI 示例
 
-下面显示了一个示例, 说明如何使用芯片**SPI0**在总线上执行 SPI 写入操作:
+下面显示了一个示例，说明如何使用芯片**SPI0**在总线上执行 SPI 写入操作：
 
 ```csharp
 using Windows.Devices.Enumeration;

@@ -1,28 +1,26 @@
 ---
 title: Windows 10 IoT Core 上的 VPN
-author: saraclay
-ms.author: saclayt
 ms.date: 11/19/2018
 ms.topic: article
 description: 了解如何为 Windows 10 IoT Core 设备使用、设置和配置 VPN 功能。
-keywords: windows iot, VPN, 安装程序, 设备
-ms.openlocfilehash: 94eafcb74a05179a7741cb516b5e7be30b525092
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+keywords: windows iot，VPN，安装程序，设备
+ms.openlocfilehash: 2f88fe9090f7cf5329b77a3185f82dd153547b6a
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167895"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918276"
 ---
 # <a name="leveraging-vpn-capabilities-for-your-windows-10-iot-core-device"></a>为 Windows 10 IoT Core 设备利用 VPN 功能
 
-若要利用 Windows 10 IoT Core 的 VPN 功能, 请按照以下说明进行操作。
+若要利用 Windows 10 IoT Core 的 VPN 功能，请按照以下说明进行操作。
 
 > [!NOTE]
 > 以下大多数说明必须经过改编。 它们特定于用户连接到的 VPN 主机。 使用的证书是示例。
 
 ## <a name="establishing-a-vpn-connection"></a>建立 VPN 连接 
 
-1. 获取必要的证书并将其复制到 IoT 设备 (例如, 到 \vpntest 文件夹)。
+1. 获取必要的证书并将其复制到 IoT 设备（例如，到 \vpntest 文件夹）。
 
 * RASTest .pfx
 * Issuingca-app1
@@ -36,8 +34,8 @@ certmgr -add .\RootCA.crl -r localmachine -s root
 ```
 
 3. 应用用户证书 a。 使用 SSH 作为 "DefaultAccount" 登录到 IoT 设备。
-b. 在命令提示符下, 键入 "PowerShell"。
-c. 从 PowerShell 发出以下命令 (在以 "默认帐户" 身份登录时):
+b. 在命令提示符下，键入 "PowerShell"。
+c. 从 PowerShell 发出以下命令（在以 "默认帐户" 身份登录时）：
 
 ```powershell
 $mypwd = ConvertTo-SecureString -String "<password>" -Force -AsPlainText
@@ -47,7 +45,7 @@ Cert -add .\IssuingCA.crl -r currentuser -s my
 certmgr -add .\RootCA.crl -r currentuser -s my
 ```
 
-4. 修复主机文件将条目添加到 c:\windows\system32\driverS\etc\hosts 文件 (示例如下所示);
+4. 修复主机文件将条目添加到 c:\windows\system32\driverS\etc\hosts 文件（示例如下所示）;
 
 > |    |    |    |
 > |----|----| ---|
@@ -56,7 +54,7 @@ certmgr -add .\RootCA.crl -r currentuser -s my
 5. 生成 VPN 测试应用替换源代码中的 "MyVPN.DomainName.org"。 根据需要进一步增加。
 
 6. 将下面的代码部署到 Windows 10 IoT 设备的 "启动和停止 VPN 连接" 部分。
-输入任意 "配置文件名称", 并按 "连接到 VPN" 按钮。 
+输入任意 "配置文件名称"，并按 "连接到 VPN" 按钮。 
 
 
 ## <a name="starting-and-stopping-a-vpn-connection"></a>启动和停止 VPN 连接

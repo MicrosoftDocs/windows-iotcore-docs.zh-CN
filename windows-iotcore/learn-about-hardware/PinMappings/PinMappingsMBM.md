@@ -1,22 +1,20 @@
 ---
 title: Minnowboard 最大 Pin 映射
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 了解 Minnowboard Max 的 pin 映射功能。
-keywords: windows iot, Minnowboard Max, pin 映射, GPIO
-ms.openlocfilehash: 884d9ee0d93167a13f39a28b28454daccb2eebad
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+keywords: windows iot，Minnowboard Max，pin 映射，GPIO
+ms.openlocfilehash: c97147357bbe17c13f2e69e9878b2630a6d12097
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167489"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917957"
 ---
 # <a name="minnowboard-max-pin-mappings"></a>MinnowBoard Max 引脚映射
 
 > [!NOTE] 
-> 若要将此 pin 映射与较新版本的 Minnowboard 进行比较, 请访问[此处](https://minnowboard.org/minnowboard-turbot/documentation)的文档。
+> 若要将此 pin 映射与较新版本的 Minnowboard 进行比较，请访问[此处](https://minnowboard.org/minnowboard-turbot/documentation)的文档。
 
 ## <a name="overview"></a>概述
 
@@ -54,7 +52,7 @@ MinnowBoard Max 在所有 IO 引脚上使用 3.3 V 逻辑级别。 此外所有�
 > | 8     | 24                 |
 > | 9     | 26                 |
 
-**注意：** MinnowBoard Max 将 GPIO 4 和 **GPIO 5** 用作 BIOS 的引导配置引脚。
+**注意：** 对于 BIOS， **Gpio 4**和**gpio 5**被 MinnowBoard Max 用作启动配置的 pin。
 确保连接的设备不会在启动时将 GPIO 电平降低，因为这会阻止 MBM 启动。
 在 MBM 晚于 BIOS 启动后，这些 GPIO 可正常使用。
      
@@ -77,7 +75,7 @@ public void GPIO()
 
 ## <a name="serial-uart"></a>串行 UART
 
-MBM 上提供两个串行 UART：**UART1** 和 **UART2**
+MBM 上提供两个串行 UART： **UART1** 和 **UART2**
 
 **UART1** 具有标准 **UART1 TX** 和 **UART1 RX** 线，以及流控制信号 **UART1 CTS** 和 **UART1 RTS**。
 
@@ -137,7 +135,7 @@ public async void Serial()
 
 请注意，必须将以下功能添加到 UWP 项目中的 **Package.appxmanifest** 文件，才能运行串行 UART 代码：
 
-Visual Studio 2017 在清单设计器 (appxmanifest.xml 文件的可视化编辑器) 中有一个已知 bug, 该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能, 则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml (设备 xml 子级将丢失)。  若要解决此问题, 请右键单击 appxmanifest.xml, 然后从上下文菜单中选择 "查看代码", 手动编辑 appxmanifest.xml。
+Visual Studio 2017 在清单设计器（appxmanifest.xml 文件的可视化编辑器）中有一个已知 bug，该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能，则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml （设备 xml 子级将丢失）。  若要解决此问题，请右键单击 appxmanifest.xml，然后从上下文菜单中选择 "查看代码"，手动编辑 appxmanifest.xml。
 
 ```
   <Capabilities>

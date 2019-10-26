@@ -1,17 +1,15 @@
 ---
 title: 在 Windows 10 IoT Core 上启用安全启动、BitLocker 和 Device Guard
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何在 Windows 10 IoT Core 上启用安全启动、BitLocker 和 Device Guard
 keywords: windows iot，安全启动，BitLocker，device guard，安全性，全包式安全
-ms.openlocfilehash: 012cf74528a556f40b865a4ca02f27c9effc2cb7
-ms.sourcegitcommit: 365721929dc902ec12bafe02653609d3d21a59f0
+ms.openlocfilehash: 00e2abf82a043dfebe956281995961692b45c3b9
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71140468"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918532"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>在 Windows 10 IoT Core 上启用安全启动、BitLocker 和 Device Guard
 
@@ -49,7 +47,7 @@ UEFI 安全启动是第一个策略强制点，位于 UEFI。  它将系统限�
 
 * **签名数据库（db）：** 这列出了允许在设备上加载的操作系统加载程序、UEFI 应用程序和 UEFI 驱动程序的签名者或图像哈希
 
-* **已吊销的签名数据库（.dbx）：** 这列出了不再受信任且*不*允许在设备上加载的操作系统加载程序、uefi 应用程序和 uefi 驱动程序的签名者或图像哈希 
+* 已**吊销的签名数据库（.dbx）：** 这列出了不再受信任且*不*允许在设备上加载的操作系统加载程序、uefi 应用程序和 uefi 驱动程序的签名者或图像哈希 
 
 * **密钥注册密钥数据库（KEK）：** 包含一个签名密钥列表，可用于更新签名和吊销的签名数据库。
 
@@ -102,7 +100,7 @@ Windows 10 IoT Core 还实现了 BitLocker 设备加密的轻型版，保护 IoT
 
 ![创建锁定映像](../media/SecurityFlowAndCertificates/ImageLockDown.png)
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 
 * 运行 Windows 10 企业版（提供的脚本**不**支持其他 Windows 版本）的电脑 
 * [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) -证书生成必需
@@ -119,7 +117,7 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在[�
 
 * Intel MinnowBoardMax
 
-    对于 Intel 的 MinnowBoard 最大值，固件版本必须为0.82 或更高版本（获取[最新固件](https://firmware.intel.com/projects/minnowboard-max)）。 若要启用 TPM 功能，请打开附加了键盘和屏幕的开发板的电源，然后按 F2 进入 UEFI 设置。 请参阅_设备管理器-> 系统设置-> 安全配置-> PTT_并将其设置 _&lt;为&gt;"启用_"。 按 F10 保存更改，并继续重新启动平台。
+    对于 Intel 的 MinnowBoard 最大值，固件版本必须为0.82 或更高版本（获取[最新固件](https://firmware.intel.com/projects/minnowboard-max)）。 若要启用 TPM 功能，请打开附加了键盘和屏幕的开发板的电源，然后按 F2 进入 UEFI 设置。 请参阅_设备管理器-> 系统设置-> 安全配置-> PTT_并将其设置为 _&lt;启用&gt;_ 。 按 F10 保存更改，并继续重新启动平台。
 
 > [!NOTE]
 > Raspberry Pi 2 或3不支持 TPM，因此我们无法配置锁定方案。
@@ -148,17 +146,17 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在[�
 
     * 常规部分：指定包目录
     * 工具部分：设置工具的路径
-        * Windows10KitsRoot`(e.g. <Windows10KitsRoot>C:\Program Files (x86)\Windows Kits\10\</Windows10KitsRoot>)`
-        * WindowsSDKVersion`(e.g. <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion>)`
-            * 计算机上安装的 SDK 版本低于`C:\Program Files (x86)\Windows Kits\10\`
-    * SecureBoot 部分：指定用于安全引导的密钥（PK 和 SB 密钥）
+        * Windows10KitsRoot `(e.g. <Windows10KitsRoot>C:\Program Files (x86)\Windows Kits\10\</Windows10KitsRoot>)`
+        * WindowsSDKVersion `(e.g. <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion>)`
+            * 计算机上安装的 SDK 版本低于 `C:\Program Files (x86)\Windows Kits\10\`
+    * SecureBoot 节：指定用于安全引导的密钥（PK 和 SB 密钥）
     * BitLocker 部分：为 Bitlocker 数据恢复指定证书（DRA 密钥）
-    * SIPolicy 部分：指定应信任的证书
-        * ScanPath :用于扫描二进制文件的设备的路径。`\\a.b.c.d\C$`
-        * 时更新SIPolicy （PAUTH 键）的签名者
-        * 用户用户模式证书（UMCI 密钥） 
-        * 壳内核模式证书（KMCI 密钥）
-    * 包指定包生成的设置
+    * SIPolicy 节：指定应信任的证书
+        * ScanPath：用于扫描二进制文件的设备路径，`\\a.b.c.d\C$`
+        * 更新： SIPolicy 的签名者（PAUTH 键）
+        * User：用户模式证书（UMCI 密钥） 
+        * 内核：内核模式证书（KMCI 密钥）
+    * 打包：指定包生成的设置
 
 > [!IMPORTANT]
 > 为了在初始开发周期中协助测试，Microsoft 在适当的位置提供了预生成的密钥和证书。  这意味着 Microsoft 测试、开发和预发布二进制文件被视为受信任。  在最终产品创建和映像生成过程中，请确保删除这些证书并使用你自己的密钥，以确保完全锁定的设备。
@@ -179,7 +177,7 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在[�
 
 1. 使用解锁的映像（在前面的步骤中用于扫描的图像）来闪存设备。
 2. 连接到设备（[使用 SSH](../connect-your-device/SSH.md)或使用[Powershell](../connect-your-device/PowerShell.md)）
-3. 将以下 .cab 文件复制到目录下的设备，例如`c:\OemInstall`
+3. 将以下 .cab 文件复制到目录下的设备，例如 `c:\OemInstall`
     * 原始.自定义 .Cmd
     * 原始.安全. .cab
     * 原始.Security. SecureBoot
@@ -189,7 +187,7 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在[�
     ```C
     applyupdate -stage c:\OemInstall\OEM.Custom.Cmd.cab
     ```
-    如果使用的是自定义映像，则必须*跳过*此文件，并`c:\windows\system32\oemcustomization.cmd`使用文件中`Output\OEMCustomization\OEMCustomization.cmd`可用的内容手动编辑
+    如果使用的是自定义映像，则必须*跳过*此文件，并使用 `Output\OEMCustomization\OEMCustomization.cmd` 文件中的可用内容手动编辑 `c:\windows\system32\oemcustomization.cmd`
 
     ```C
     applyupdate -stage c:\OemInstall\OEM.Security.BitLocker.cab
@@ -205,24 +203,24 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在[�
 6. 设备将重新启动到更新操作系统（显示齿轮）以安装包，并再次重新启动到主操作系统。  设备重新启动到 MainOS 后，将启用安全启动并应进行 SIPolicy。
 7. 再次重新启动设备以激活 Bitlocker 加密。
 8. 测试安全功能
-    * SecureBoot：尝试`bcdedit /debug on` ，会收到一条错误消息，指出值受安全启动策略的保护
-    * BitLocker：运行`start /wait sectask.exe -waitencryptcomplete:1`，如果 ERRORLEVEL 为`-2147023436` （ERROR_TIMEOUT），则加密不完整。 从 .cmd 文件中运行 sectask 时， `start /wait`请省略。
-    * DeviceGuard :运行任何未签名的二进制文件或使用不在 SIPolicy 列表中的证书签名的二进制文件，并确认它无法运行。
+    * SecureBoot：尝试 `bcdedit /debug on`，你将收到一条错误消息，指出值受安全启动策略的保护
+    * BitLocker：运行 `start /wait sectask.exe -waitencryptcomplete:1`，如果 ERRORLEVEL 为 `-2147023436` （ERROR_TIMEOUT），则加密不完整。 从 .cmd 文件运行 sectask 时省略 `start /wait`。
+    * DeviceGuard：运行任何未签名的二进制文件或使用不在 SIPolicy 列表中的证书签名的二进制文件，并确认它无法运行。
 
 ### <a name="generate-lockdown-image"></a>生成锁定映像
 
 按照前面定义的设置验证锁定包是否正常工作后，可以按照以下给定步骤将这些包包含到映像中。 阅读[IoT 制造指南](https://aka.ms/iotcoreguide)了解自定义映像创建说明。
 
 1. 在工作区目录中，从上面生成的输出目录中更新以下文件
-    * SecureBoot`Copy ..\Output\SecureBoot\*.bin  ..\Workspace\Common\Packages\Security.SecureBoot`
+    * SecureBoot： `Copy ..\Output\SecureBoot\*.bin  ..\Workspace\Common\Packages\Security.SecureBoot`
       * SetVariable_db.bin
       * SetVariable_kek.bin
       * SetVariable_pk.bin
-    * BitLocker`Copy ..\Output\Bitlocker\*.* ..\Workspace\Common\Packages\Security.Bitlocker`
+    * BitLocker： `Copy ..\Output\Bitlocker\*.* ..\Workspace\Common\Packages\Security.Bitlocker`
       * DETask.xml
       * 安全. node.js .xml
       * setup.exe
-    * DeviceGuard :`Copy ..\Output\DeviceGuard\*.*  ..\Workspace\Common\Packages\Security.DeviceGuard`
+    * DeviceGuard： `Copy ..\Output\DeviceGuard\*.*  ..\Workspace\Common\Packages\Security.DeviceGuard`
       * SIPolicyOn
       * SIPolicyOff
   
@@ -231,8 +229,8 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在[�
     * `<Feature>SEC_SECUREBOOT</Feature>`
     * `<Feature>SEC_DEVICEGUARD</Feature>`
 3. 重新生成映像
-    * `buildpkg all`（这会基于以上策略文件生成新的锁定包）
-    * `buildimage ProductName test(or)retail`（这会生成新的 ffu）
+    * `buildpkg all` （这会基于以上策略文件生成新的锁定包）
+    * `buildimage ProductName test(or)retail` （这会生成新的 ffu）
 4. 用这个新的 ffu 闪存设备，并验证安全功能。
 
 请参阅[SecureSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SecureSample)作为锁定的龙板配置的示例。

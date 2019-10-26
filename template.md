@@ -5,16 +5,17 @@ ms.author: Microsoft alias goes here
 ms.date: 09/11/2018
 ms.topic: article
 description: 此处显示说明
-keywords: windows iot, 解决方案, 体系结构, 合作伙伴
-ms.openlocfilehash: 2ea83230f2771bb70032d8e20e93017f67c370ad
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+keywords: windows iot
+ROBOTS: NOINDEX
+ms.openlocfilehash: 7023b9649296929b1e8e017a53fa54167260fc14
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "60167666"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918449"
 ---
 # <a name="main-title-goes-here"></a>此处显示主标题
 
-内容
+内容-机器人： NoIndex metadata 标记仅适用于此页面，不包括在新文章中。 
 
-## <a name="subtitle"></a>副标题
+## <a name="subtitle"></a>Subtitle
