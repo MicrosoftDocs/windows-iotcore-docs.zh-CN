@@ -1,16 +1,14 @@
 ---
-author: saraclay
 Description: 排查与开发相关的不同问题。
 title: 疑难解答
-ms.author: saclayt
-ms.date: 08/28/18
+ms.date: 08/28/2018
 ms.topic: article
-ms.openlocfilehash: 8b93ad987c27e1123d68c4d22148447ccc99e37d
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 8d2e326dae01157931e5d1d1c3d6eb858a1268b1
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66491710"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918590"
 ---
 # <a name="troubleshooting"></a>疑难解答
 本文包含用户遇到的常见故障排除问题。 若要查找特定内容（字词或短语），请使用 Ctrl+F。 想要表达你自己的见解？ 请针对本文档创建一个 PR，或者在下面提供内容反馈。

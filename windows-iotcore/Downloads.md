@@ -1,18 +1,16 @@
 ---
-author: saraclay
 Description: 下载用于 Windows 10 IoT 核心版的文件。
 title: 下载
-ms.author: saclayt
-ms.date: 10/05/18
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-ms.openlocfilehash: 85c56a53839f74b02dddf2d094d2b07e4d8d635d
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 863df3df64515e96bbd1b1308d86e2228b291f84
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "65706082"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918546"
 ---
 # <a name="downloads"></a>下载
 下载 Windows 10 IoT 核心版入门所需的工具和软件。

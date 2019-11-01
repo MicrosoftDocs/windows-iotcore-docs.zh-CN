@@ -1,17 +1,15 @@
 ---
 title: Windows 10 IoT 资源
-author: saraclay
-ms.author: saclayt
-ms.date: 09/07/18
+ms.date: 09/07/2018
 ms.topic: article
 description: 利用 Windows 10 IoT 社区中的所有资源。
 keywords: Windows 10 IoT 核心版, Windows 10 IoT 企业版, 资源, 最重要人员, 视频, 博客文章
-ms.openlocfilehash: e9dd4ffdc3e49b34aff3907d5bca592fac97e04c
-ms.sourcegitcommit: 4ed27e7a37d30d5a7c59e76d691e40b709d291e7
+ms.openlocfilehash: 20057f55e2083189d17d2455c065c33d456dad87
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71151132"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918421"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 资源
 

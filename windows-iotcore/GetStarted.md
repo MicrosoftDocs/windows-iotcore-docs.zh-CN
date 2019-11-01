@@ -1,17 +1,15 @@
 ---
 title: 入门概述
-author: saraclay
-ms.author: saclayt
 ms.date: 04/10/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 核心版入门。
 keywords: Windows 10 IoT 核心版, 入门, 映像,
-ms.openlocfilehash: c11e37c982c1e38ec270527d54127013b8df7515
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 868e1b6bdaea8326fe081a0ebca1b75d4ddd8ff4
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66373141"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918437"
 ---
 # <a name="get-started-with-windows-10-iot-core"></a>Windows 10 IoT 核心版入门
 

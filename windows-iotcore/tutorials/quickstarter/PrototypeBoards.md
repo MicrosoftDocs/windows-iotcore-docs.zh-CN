@@ -1,17 +1,15 @@
 ---
 title: 建议的原型板
-author: saraclay
-ms.author: saclayt
 ms.date: 04/17/2018
 ms.topic: article
 description: 了解建议用于 Windows 10 IoT 的原型板。
 keywords: windows iot, 开发设备, 板, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, Dragonboard
-ms.openlocfilehash: e303ce86133fe1cfcef49639e8c60be7178afe08
-ms.sourcegitcommit: 823a8f6967f74d71d5c61fe90f6b63ba79483479
+ms.openlocfilehash: f2ecf7295af1236330e48b1301bf5fe224606ac4
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159291"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918479"
 ---
 # <a name="suggested-prototype-boards"></a>建议的原型板
 

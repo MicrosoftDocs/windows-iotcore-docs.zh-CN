@@ -1,17 +1,16 @@
 ---
 title: 设置 Qualcomm 设备
-ms.author: saclayt
 ms.date: 05/22/2019
 ms.topic: article
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Qualcomm 设备。
 keywords: Windows 10 IoT 核心版, Qualcomm
 ms.custom: RS5
-ms.openlocfilehash: 02f6c013c428a271d3b3956c88edc1ce8f4fdbf2
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 9c27f6011503ea557687817bc044b08695ee7add
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66835617"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918649"
 ---
 # <a name="setting-up-a-qualcomm-device"></a>设置 Qualcomm 设备
 
