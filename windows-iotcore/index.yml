@@ -3,16 +3,14 @@ title: “适用于 IoT 的 Windows”文档
 summary: “适用于 IoT 的 Windows”平台有多个版本，每个版本都针对特定场景进行了优化。 它们全部都提供安全性、可管理性、支持和云连接性，与你期望从 Windows 获得的完全相同。
 metadata:
   description: 了解适用于 IoT 的 Windows，以便开发自己的联网嵌入式解决方案。
-  services: windows-iot
-  ms.service: windows-iot
   ms.topic: landing-page
   ms.date: 09/04/2019
-  ms.openlocfilehash: fa98addadf627de0037f38c2bd9f13c90cef460a
-  ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+  ms.openlocfilehash: 9d2a71a4e5615ec8ef79ed9e6f6d20ce6702aff1
+  ms.sourcegitcommit: 833f64e5c9ef8edc6ea62824d5f4f0b7d5a03270
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/25/2019
-  ms.locfileid: "72918161"
+  ms.lasthandoff: 11/18/2019
+  ms.locfileid: "74154961"
 landingContent:
 - title: 关于适用于 IoT 的 Windows
   linkLists:
@@ -26,7 +24,7 @@ landingContent:
       url: windows-server.md
     - text: Windows 10 IoT 核心版服务
       url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview
-- title: 入门
+- title: 立即开始行动
   linkLists:
   - linkListType: tutorial
     links:
