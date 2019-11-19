@@ -5,33 +5,34 @@ ms.author: chsha
 ms.date: 02/22/2019
 ms.topic: article
 description: 了解 Windows 10 IoT Core 和 NXP i.MX Soc
-keywords: Windows 10 IoT Core, 入门, i.MX, NXP
-ms.openlocfilehash: 244d767507393680df7a48487522ff62be40692d
-ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
-ms.translationtype: MT
+keywords: Windows 10 IoT Core，入门，i.MX，NXP
+ms.openlocfilehash: 79b42c31abc110a3256db32fd67818288f7269aa
+ms.sourcegitcommit: 833f64e5c9ef8edc6ea62824d5f4f0b7d5a03270
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68739815"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74154924"
 ---
 # <a name="window-10-iot-core-and-nxp-imx-socs"></a>Windows 10 IoT Core 和 NXP i.MX Soc
 
-在2018中, Microsoft 和 NXP 在 NXP i.MX 6 和 i.MX 7 硅上公布了 Windows 10 IoT Core 的个人预览版, 并开始在 i.MX 8 分钟 Soc 上工作。 数百个商业开发人员、研究人员和开发人员在10年的 Windows 安全更新和灵活性和可靠性上都有了 NXP 硅的兴趣。 
- 
-在预览版期间, Microsoft 和 NXP 工程师会花费数千个小时的时间来优化并改善 BSP, 这是基于评估解决方案的输入。 我们与对现代化旧式工业控制器感兴趣的客户合作, 开发新的云连接构建自动化解决方案, 和具有一流的安全性 (如[受信任 i/o](https://blogs.windows.com/windowsexperience/2018/04/24/trusted-cyber-physical-systems-looks-to-protect-your-critical-infrastructure-from-modern-threats-in-the-world-of-iot/#A0WkfgLBpgbLaFe3.97)) 的网关。
- 
-基于解决方案的主要兴趣, Microsoft 和 NXP 现在将 Bsp 作为非商业公共预览版提供 i.MX 6、i.MX 7 和 i.MX 8 分钟系列。 由于 Microsoft 和 NXP 在内嵌和 IoT 市场中具有较长的历史记录, 因此我们了解设计灵活性的需求。 因此, 除了在模块解决方案 Microsoft、NXP 和我们的硬件合作伙伴上启用的多单板计算机和系统外, 还会在开放源代码许可下提供 i.MX 6、i.MX 7 和 i.MX 8 分钟 Bsp。 现在, 每个人都可以访问 i.MX 6、i.MX 7 和 i.MX 8 分钟产品系列的完整 BSP 内容, 以便在其硬件上进行评估, 以及2018年10月版的 Windows 10 IoT Core。
+NXP 支持 Windows 10 IoT Core，通过 i.MX 应用程序处理器和精选开发板上的板支持包（Bsp）。 
 
+I.MX 应用程序平台上经过高度优化的 Windows 10 IoT Core Bsp 使你可以更轻松地从设备到云构建安全、可缩放的解决方案，其中包括预配到大规模管理和保护设备。 设计人员可以轻松地运行云服务，从 IoT 设备获得见解。 I.MX 应用程序处理器上的 Windows 10 IoT Core 可以更快地投放市场，其中包含现成的许多用户界面和设备堆栈。
+
+根据客户对使用 NXP i.MX 硅的 Windows 10 IoT Core 的巨大兴趣，Microsoft 和 NXP 已为 i.MX 6、i.MX 7 和 i.MX 8 分钟系列 Soc 提供了 Bsp，可供商业使用。 由于 Microsoft 和 NXP 在内嵌和 IoT 市场中具有较长的历史记录，因此我们了解设计灵活性的需求。 因此，除了在模块解决方案 Microsoft、NXP 和我们的硬件合作伙伴上启用的多单板计算机和系统外，还会在开放源代码许可下提供 i.MX 6、i.MX 7 和 i.MX 8 分钟 Bsp。 现在，每个人都可以访问 i.MX 6、i.MX 7 和 i.MX 8 分钟产品系列的完整 BSP 内容，与 Windows 10 IoT Core 10 月2018版一起使用。
 
 ## <a name="bsp-access"></a>BSP 访问
 
-如果你有兴趣启用对你自己的 i.MX 硬件的支持, 请访问[Github]( https://github.com/ms-iot/imx-iotcore)上的 BSP 源和文档。 除非另行说明, 否则在 MIT 许可证下提供了大部分来源。 此代码由 NXP 提供支持的商业使用发布, 可在[此处](https://www.nxp.com/support/developer-resources/evaluation-and-development-boards/i.mx-evaluation-and-development-boards/i.mx-software-and-development-tool:IMX-SW)找到。
+如果你有兴趣为自己的 i/MX 硬件启用商业支持，请访问[NXP 网站](https://www.nxp.com/design/software/embedded-software/windows-10-iotIf-core-for-i.mx-applications-processors:IMXWIN10IOT)上的 BSP 源和文档。 
 
-如果你有 NXP 硬件/BSP 报告相关问题或有关 BSP 如何更好地支持你的目标解决方案的信息, 请将其发布到[NXP 社区](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D)。 对于任何与 Windows 相关的问题, 请使用[Microsoft 社区](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)。
+如果你有 NXP 硬件/BSP 报告相关问题或有关 BSP 如何更好地支持你的目标解决方案的信息，请将其发布到[NXP 社区](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D)。 对于任何与 Windows 相关的问题，请使用[Microsoft 社区](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)。
+
+如果你需要超出用于 BSP 自定义和 integation i.MX 产品的社区论坛的其他支持，可通过 Pro-Support www.nxp.com/prosupport 获得支持。 可以将查询发送到[prosupport@nxp.com](mailto:prosupport@nxp.com)。 对于 Windows 10 IoT 付费服务和集成，请联系[epsoinfo@microsoft.com](mailto:epsoinfo@microsoft.com)。
 
 
 ## <a name="ecosystem-resources"></a>生态系统资源
 
-一些 Microsoft 和 NXP 合作伙伴已启用商用 i.MX 6、i.MX 7 和 i.MX 8 分钟设备, 支持 Windows 10 IoT Core。 请直接与合作伙伴联系以获取硬件和平台映像。
+一些 Microsoft 和 NXP 合作伙伴已在商业 i.MX 6、i.MX 7 和 i.MX 8 分钟设备上启用了 Windows 10 IoT Core。 请直接联系合作伙伴进行硬件访问。 
 
 
 > | 设备 | 联系人 |
@@ -53,3 +54,7 @@ ms.locfileid: "68739815"
 > | [MCIMX6ULL-EVK](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors/evaluation-kit-for-the-i.mx-6ull-and-6ulz-applications-processor:MCIMX6ULL-EVK) | [Wei Wang](mailto:Wei.A.Wang@nxp.com) |
 > | [MCIMX8M-EVK](https://www.nxp.com/support/developer-resources/software-development-tools/i.mx-developer-resources/evaluation-kit-for-the-i.mx-8m-applications-processor:MCIMX8M-EVK) |  |
 > | [MCIMX8MMINI-EVK](http://www.nxp.com/imx8mminievk) | []() |
+> | [i. MX8M MaaXBoard](http://www.embest-tech.com/prod_view.aspx?TypeId=117&Id=388&Fid=t3:117:3) | [chinasales@embest-tech.com](mailto:chinasales@embest-tech.com) |
+
+注意：上述合作伙伴支持其硬件和其硬件的 BSP。 它们可能无法帮助解决其他软件或配置问题。
+
