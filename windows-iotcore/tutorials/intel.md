@@ -5,12 +5,12 @@ ms.topic: article
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Intel 设备。
 keywords: Windows 10 IoT 核心版, Intel
 ms.custom: RS5
-ms.openlocfilehash: 3f92f9af4ddb492b1f465ee00b55e88e16b3a67f
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: bd1aa788e11bf4d01fdd897c64c9ae947928a46f
+ms.sourcegitcommit: 833f64e5c9ef8edc6ea62824d5f4f0b7d5a03270
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918511"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74154967"
 ---
 # <a name="setting-up-an-intel-device"></a>设置 Intel 设备
 
@@ -26,7 +26,7 @@ ms.locfileid: "72918511"
 3. 创建可从 USB 启动的 WinPE 映像：
 4. 以管理员身份启动 Deployment and Imaging Tools Environment `(C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools)`。
 5. 创建 Windows PE 文件的工作副本。 指定 x86、amd64 或 ARM：`Copype amd64 C:\WINPE_amd64`
-6. 将 Windows PE 安装到 U 盘，指定下面的 WinPE 驱动器号。 可以在[此处](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)查找详细信息。 `MMakeWinPEMedia /UFD C:\WinPE_amd64 P:`
+6. 将 Windows PE 安装到 U 盘，指定下面的 WinPE 驱动器号。 可以在[此处](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)查找详细信息。 `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`
 7. 下载 [Windows 10 IoT 核心版映像](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true)，方法是：双击下载的 ISO 文件，找到装载的虚拟 CD 驱动器。
 8. 此驱动器将包含一个安装文件 (.msi)；双击它。 这样会在电脑中的 C:\Program Files (x86)\Microsoft IoT\FFU\ 下创建一个新目录，其中可以看到映像文件“flash.ffu”。
 9. 下载 [eMMC 安装程序脚本](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip)，将其解压缩后连同设备的 FFU 复制到 USB 设备的根目录。
