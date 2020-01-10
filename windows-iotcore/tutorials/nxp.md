@@ -5,12 +5,12 @@ ms.topic: article
 description: 了解如何通过 Windows 10 IoT 核心版来设置 NXP 设备。
 keywords: Windows 10 IoT 核心版, NXP
 ms.custom: RS5
-ms.openlocfilehash: 180399130d898baff6af4f0dc18e1e20e13ec83c
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: aa3e28cb79e69c1faccd733d993c8ec12f6ae314
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918499"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721728"
 ---
 # <a name="setting-up-a-nxp-device"></a>设置 NXP 设备
 
@@ -22,7 +22,7 @@ ms.locfileid: "72918499"
 > [!NOTE]
 > 设置 NXP 与设置 Raspberry Pi 几乎完全相同。
 
-设置进行原型制作的 NXP 设备时，建议使用 Windows 10 IoT 核心版仪表板。 但是，若要使用 NXP 设备进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
+设置进行原型制作的 NXP 设备时，建议使用 Windows 10 IoT 核心版仪表板。 但是，若要使用 NXP 设备进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
 <br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
@@ -46,7 +46,7 @@ Device: minwinpc
 Password: p@ssw0rd
 ```
 
-4. 使用“浏览”功能上传预先下载的映像文件。 有关详细信息，请参阅 [NXP 文档](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/iotnxp)。
+4. 使用“浏览”功能上传预先下载的映像文件。 有关详细信息，请参阅 [NXP 文档](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp)。
 5. 接受软件许可条款，然后单击“下载并安装”  。 如果一切正常，则可以看到 Windows 10 IoT 核心版此时正刷写 SD 卡。
 
 ![仪表板屏幕截图](../media/DeviceSetup/Dashboard-Screenshot.jpg)

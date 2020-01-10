@@ -5,12 +5,12 @@ ms.topic: article
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Minnowboard。
 keywords: Windows 10 IoT 核心版, Minnowboard
 ms.custom: RS5
-ms.openlocfilehash: f74d15a5a20a6869544ad47798457067422590f4
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: abbc6548a9219b967ea379e238ed6a898830e798
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918655"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721912"
 ---
 # <a name="setting-up-a-minnowboard"></a>设置 MinnowBoard
 
@@ -22,7 +22,7 @@ ms.locfileid: "72918655"
 > [!IMPORTANT]
 > 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。  我们正在修复此问题。
 
-设置进行原型制作的 MinnowBoard 时，建议使用 Windows 10 IoT 核心版仪表板。 但是，若要使用 MinnowBoard 进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
+设置进行原型制作的 MinnowBoard 时，建议使用 Windows 10 IoT 核心版仪表板。 但是，若要使用 MinnowBoard 进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
 <br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 

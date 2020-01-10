@@ -5,16 +5,16 @@ ms.topic: article
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Intel 设备。
 keywords: Windows 10 IoT 核心版, Intel
 ms.custom: RS5
-ms.openlocfilehash: bd1aa788e11bf4d01fdd897c64c9ae947928a46f
-ms.sourcegitcommit: 833f64e5c9ef8edc6ea62824d5f4f0b7d5a03270
+ms.openlocfilehash: bf32ffbaa890620c8ff9aca40a2c45023609c9ef
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74154967"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721892"
 ---
 # <a name="setting-up-an-intel-device"></a>设置 Intel 设备
 
-若要使用 Qualcomm 设备进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
+若要使用 Qualcomm 设备进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
 
 > [!NOTE]
 > 确保设备现在是从 eMMC 内存启动，方法是：再次进入 BIOS 设置，切换驱动器启动顺序，使之从硬盘驱动器加载，而不是从 USB 盘加载。
