@@ -4,12 +4,12 @@ ms.date: 02/07/2019
 ms.topic: article
 description: 了解 Windows Server IoT 2019 是什么，以及可以用它执行什么操作。
 keywords: Windows Server IoT 2019, 企业可管理性, Windows 生态系统, IoT
-ms.openlocfilehash: c02dfb5887c53769baae54955f1208d2ae7f88ff
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 8ed21ae695bff2386346dfe15de9cb83e2697a90
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918592"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721772"
 ---
 # <a name="an-overview-of-windows-server-iot-2019"></a>Windows Server IoT 2019 概述
 
@@ -30,10 +30,10 @@ Windows Server 作为可供世界范围的小型企业使用的服务器操作�
 
 用户已熟悉了解该版本模型（以前称为“长期服务频道”），其中 Windows Server 的全新主要版本每 2-3 年发布一次。 用户有权享受 5 年的主流支持和 5 年的延长支持。 该频道适用于需要更长时间服务选项和功能稳定性的系统。 新的半年频道版本不会影响 Windows Server IoT 2019 和 Windows Server 早期版本的部署工作。 长期服务频道将持续接受安全和非安全更新，但不会接受新特性和新功能。
 
-* [了解有关 LTSC 的详细信息](https://docs.microsoft.com/en-us/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc)
+* [了解有关 LTSC 的详细信息](https://docs.microsoft.com/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc)
 
 ## <a name="helpful-resources"></a>有用资源
 > [!NOTE]
 > 分发商或 Microsoft 代表可能会提供其他资源。
 
-* [Windows Server 2019 文档](https://docs.microsoft.com/en-us/windows-server/index)
+* [Windows Server 2019 文档](https://docs.microsoft.com/windows-server/index)

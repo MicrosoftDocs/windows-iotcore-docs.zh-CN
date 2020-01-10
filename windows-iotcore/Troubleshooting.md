@@ -3,18 +3,18 @@ Description: 排查与开发相关的不同问题。
 title: 疑难解答
 ms.date: 08/28/2018
 ms.topic: article
-ms.openlocfilehash: 8d2e326dae01157931e5d1d1c3d6eb858a1268b1
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 6118a5a5006d79c65681400de45fb7626f96836d
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918590"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721513"
 ---
 # <a name="troubleshooting"></a>疑难解答
 本文包含用户遇到的常见故障排除问题。 若要查找特定内容（字词或短语），请使用 Ctrl+F。 想要表达你自己的见解？ 请针对本文档创建一个 PR，或者在下面提供内容反馈。
 
 > [!TIP]
-> 若要排查与制造相关的问题，请阅读制造指南中的[故障排除文档](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/troubleshooting)。
+> 若要排查与制造相关的问题，请阅读制造指南中的[故障排除文档](https://docs.microsoft.com/windows-hardware/manufacture/iot/troubleshooting)。
 
 ## <a name="asus-tinkerboard-and-rockchip-support"></a>ASUS Tinkerboard 和 Rockchip 支持
 
@@ -69,7 +69,7 @@ ms.locfileid: "72918590"
 
 2. 另一因素是，必须满足每个接口的漫游策略。 默认情况下，该策略设置为 FALSE（“仅限家庭运营商”）。 可以在命令行中通过 `netsh mbn get/set dataroamcontrol.` 对此项进行查询和更改
 
-示例：
+例如：
 
 ```
     netsh mbn show dataroamcontrol int=*
@@ -82,7 +82,7 @@ ms.locfileid: "72918590"
 ## <a name="raspberry-pi-3b-booting-issues"></a>Raspberry Pi 3B+ 启动问题
 
 > [!NOTE]
-> Raspberry Pi 3B+ 的此版本是不受支持的技术预览版。 已完成有限的验证和启用。 若要获得更好的评估体验，或者要将产品商用化，请使用 Raspberry Pi 3B 或者其他带有受支持的 Intel、Qualcomm 或 NXP SoC 的设备。 若要排查 Raspberry Pi 3B+ 的问题，请参阅[此处](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues)的故障排除指南。 
+> Raspberry Pi 3B+ 的此版本是不受支持的技术预览版。 已完成有限的验证和启用。 若要获得更好的评估体验，或者要将产品商用化，请使用 Raspberry Pi 3B 或者其他带有受支持的 Intel、Qualcomm 或 NXP SoC 的设备。 若要排查 Raspberry Pi 3B+ 的问题，请参阅[此处](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues)的故障排除指南。 
 
 Raspberry Pi 3 的 B+ 型号是 Raspberry Pi 3 系列的最新产品，拥有以 1.4GHz 运行的 64 位四核处理器、2.4GHz 和 5GHz 双频段无线 LAN、蓝牙 4.2/BLE、更快速的以太网，以及通过独立 PoE HA 实现的 PoE 功能。
 
@@ -101,7 +101,7 @@ Raspberry Pi 3 的 B+ 型号是 Raspberry Pi 3 系列的最新产品，拥有以
 
 通常情况下，需检查 SD 卡是否为假货，或者是否受到损伤或损坏。 许多因素（例如电力不足或拆除不当）都有相同的几率造成 SD 卡受损。 必须确保内存卡不受损。
 
-若要将映像刷写到 SD 卡，可以使用 [Windows 10 IoT 核心版仪表板](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard)。 需在“OS 内部版本”字段中选择“自定义”，然后选择要刷写的 FFU 文件。 
+若要将映像刷写到 SD 卡，可以使用 [Windows 10 IoT 核心版仪表板](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard)。 需在“OS 内部版本”字段中选择“自定义”，然后选择要刷写的 FFU 文件。 
 
 查看设备中是否存在硬件故障。 Raspberry Pi 3B+ 板上有两个 LED，与 3B 一样。 一个用于 PWR，另一个用于 ACT。 ACT 灯的闪烁次数将决定板是否启动。 在 Raspberry Pi 3B+ 上启动时，在某些阶段 SD 卡活动 LED 不会闪烁。
 
@@ -117,7 +117,7 @@ Raspberry Pi 3 的 B+ 型号是 Raspberry Pi 3 系列的最新产品，拥有以
 
 ![UART 适配器和 USB UART 适配器](media/Troubleshooting/adapters.png)
 
-可以阅读[此文](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi#serial-uart)，详细了解如何初始化 UART0 并依次执行写入和读取操作。
+可以阅读[此文](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi#serial-uart)，详细了解如何初始化 UART0 并依次执行写入和读取操作。
 
 另外，射频通信 (RFCOMM) 是经典蓝牙的基础串行通信。 请参阅[此 GitHub 示例](https://github.com/djaus2/iotbluetoothserial)，了解如何在 Windows 10 IoT 核心版上运行 UWP 应用，在通过 IoT 设备连接后进行蓝牙串行通信。
 
@@ -182,7 +182,7 @@ administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=
 
 “平板模式”是仅存在于桌面 shell 上的概念，不适用于 IoT 核心版。 
 
-如果设备有支持的硬件（不管是通过 I2C 还是通过 USB HID 触摸进行支持），则应可通过内置型驱动程序自动启用触摸功能。 你可以在[此处](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity)阅读有关此问题的详细信息。
+如果设备有支持的硬件（不管是通过 I2C 还是通过 USB HID 触摸进行支持），则应可通过内置型驱动程序自动启用触摸功能。 你可以在[此处](https://docs.microsoft.com/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity)阅读有关此问题的详细信息。
 
 
 ## <a name="yubikey-support"></a>Yubikey 支持

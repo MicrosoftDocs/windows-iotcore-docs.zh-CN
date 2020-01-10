@@ -4,12 +4,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 核心版是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 核心版, 占用空间小, 无外设
-ms.openlocfilehash: 31e16be3784be6f33438ae8907997a0a58828620
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 837b9ba8b7f6fa4d36014f4ff5ae2669a73e6e6c
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918466"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721818"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT 核心版概述
 
@@ -19,9 +19,9 @@ ms.locfileid: "72918466"
 ## <a name="what-is-windows-10-iot-core"></a>什么是 Windows 10 IoT 核心版？
 Windows 10 IoT 核心版是针对带显示屏或不带显示屏的小型设备进行了优化的一个 Windows 10 版本，可以在 ARM 和 x86/x64 设备上运行。 此 Windows IoT 核心版文档介绍如何连接、管理、更新、保护设备，等等。 
 
-如果准备进入下一阶段并开始将解决方案商业化，则可参阅 [Windows 10 IoT 核心版制造指南](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)，了解如何使用 Windows 10 IoT 核心版进行制造。 
+如果准备进入下一阶段并开始将解决方案商业化，则可参阅 [Windows 10 IoT 核心版制造指南](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)，了解如何使用 Windows 10 IoT 核心版进行制造。 
 
-## <a name="getting-started"></a>即刻体验
+## <a name="getting-started"></a>入门
 
 在尝试制造某个设备之前，最好是先使用 Windows 10 IoT 核心版尝试该设备并制作其原型。 这样就可以了解在要制造时需要的功能和配置。
 
@@ -30,13 +30,13 @@ Windows 10 IoT 核心版是针对带显示屏或不带显示屏的小型设备�
 <thead>  
 <tr class="header">  
 <th align="left">主题</th>
-<th align="left">描述</th>
+<th align="left">说明</th>
 </tr>
 </thead>
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
 >1. 选取原型板</a></p></td>
 <td align="left"><p>查看常见的原型板，选择一个开始其原型制作。</p></td>
 </tr>
@@ -47,12 +47,12 @@ Windows 10 IoT 核心版是针对带显示屏或不带显示屏的小型设备�
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">2. 3. 安装应用</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">2. 3. 安装应用</a></p></td>
 <td align="left"><p>了解如何使用不同工具来安装应用。</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. 部署应用</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appdeployment">4. 部署应用</a></p></td>
 <td align="left"><p>了解如何使用 Visual Studio 来部署应用。</p></td>
 </tr>
 
@@ -63,9 +63,9 @@ Windows 10 IoT 核心版是针对带显示屏或不带显示屏的小型设备�
 
 ### <a name="different-features-available-on-desktop-and-iot-core"></a>桌面版和 IoT 核心版上提供的不同功能
 
-* 从版本 1809 (17763) 开始，Windows 10 IoT 核心版不再提供内置 Cortana。 若要让支持语音的设备快速面市，则可使用 [Cortana 设备 SDK 预览版](https://developer.microsoft.com/en-us/cortana/devices)将 Cortana 支持集成到设备中。
-* Windows 10 IoT 核心版不支持 [FileOpenPicker API](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker)。 若要访问本地驱动器或可移动存储，可以在自己的应用程序中实现此 API。
-* 现成的 Windows 10 IoT 核心版设备会启动到[默认应用](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp)，这一点不同于桌面类电脑。 但是，若要进行商业化，**必须**将该默认应用替换为可以修改的自定义应用或默认应用。 此应用程序的用途在于，它不仅为你提供一个友好的用于在首次启动时进行交互的 shell，而且允许你使用此应用程序的[开源代码](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)，这样你就可以使用这些功能对自己的自定义应用程序进行即插即用操作。
+* 从版本 1809 (17763) 开始，Windows 10 IoT 核心版不再提供内置 Cortana。 若要让支持语音的设备快速面市，则可使用 [Cortana 设备 SDK 预览版](https://developer.microsoft.com/cortana/devices)将 Cortana 支持集成到设备中。
+* Windows 10 IoT 核心版不支持 [FileOpenPicker API](https://docs.microsoft.com/uwp/api/windows.storage.pickers.fileopenpicker)。 若要访问本地驱动器或可移动存储，可以在自己的应用程序中实现此 API。
+* 现成的 Windows 10 IoT 核心版设备会启动到[默认应用](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp)，这一点不同于桌面类电脑。 但是，若要进行商业化，**必须**将该默认应用替换为可以修改的自定义应用或默认应用。 此应用程序的用途在于，它不仅为你提供一个友好的用于在首次启动时进行交互的 shell，而且允许你使用此应用程序的[开源代码](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)，这样你就可以使用这些功能对自己的自定义应用程序进行即插即用操作。
 
 ### <a name="differences-in-driver-supported-areas"></a>驱动程序支持范围的差异
 

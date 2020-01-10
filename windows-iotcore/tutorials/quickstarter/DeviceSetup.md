@@ -5,19 +5,19 @@ ms.topic: article
 description: 了解如何使用 SD 卡通过 Windows 10 IoT 核心版来设置设备。
 keywords: Windows 10 IoT 核心版, SD 卡, Windows 10 IoT 核心版仪表板
 ms.custom: RS5
-ms.openlocfilehash: a201a70019a00448ea1913da158365d9788ed247
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 7575889b94cf7a69550c5c4128ab5ff8a82dde9c
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918639"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721832"
 ---
 # <a name="setting-up-your-device"></a>设置设备
 
 下面介绍如何通过四种不同的方式使用 Windows 10 IoT 核心版来刷写设备。 根据[建议进行原型制作的板的列表](PrototypeBoards.md)中包含的图表，按相应的说明操作。 使用正确的列在这些不同的刷写方法之间导航。
 
 > [!IMPORTANT]
-> 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
+> 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
 
 > [!IMPORTANT]
 > 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。  我们正在修复此问题。
@@ -34,7 +34,7 @@ ms.locfileid: "72918639"
 > NXP 仅支持自定义映像。 若要刷写自定义映像，请从 OS 内部版本下拉列表中选择“自定义”，按[此处](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image)的说明创建基本映像，然后按下面的其余说明完成操作。
 
 > [!NOTE]
-> 仪表板不能用来设置 Raspberry Pi 3B+。 如果有 3B+ 设备，则必须使用 [3B+ 技术预览版](https://www.microsoft.com/en-us/software-download/windowsiot)。 请查看技术预览版的[已知限制](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting)，确定它是否适合开发。
+> 仪表板不能用来设置 Raspberry Pi 3B+。 如果有 3B+ 设备，则必须使用 [3B+ 技术预览版](https://www.microsoft.com/software-download/windowsiot)。 请查看技术预览版的[已知限制](https://docs.microsoft.com/windows/iot-core/troubleshooting)，确定它是否适合开发。
 
 > [!TIP]
 > 建议使用高性能 SD 卡（例如 SanDisk SD 卡），这样可以增强稳定性，并且可以将设备连接到外部显示器来查看默认的应用程序启动。
@@ -79,7 +79,7 @@ ms.locfileid: "72918639"
 ## <a name="flashing-with-emmc-for-dragonboard-410c-other-qualcomm-devices"></a>使用 eMMC 进行刷写（适用于 DragonBoard 410c 和其他 Qualcomm 设备）
 
 1. 为 [x86](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x86.zip) 或 [x64](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x64.zip) 计算机下载并安装 DragonBoard Update Tool。
-2. 下载 [Windows 10 IoT 核心版 DragonBoard FFU](https://developer.microsoft.com/en-us/windows/iot/Downloads)。
+2. 下载 [Windows 10 IoT 核心版 DragonBoard FFU](https://developer.microsoft.com/windows/iot/Downloads)。
 3. 双击下载的 ISO 文件，找到装载的虚拟 CD 驱动器。 此驱动器将包含一个安装程序文件 (.msi)；双击它。 这样会在电脑中的 `C:\Program Files (x86)\Microsoft IoT\FFU\` 下创建一个新目录，其中可以看到映像文件“flash.ffu”。
 4. 确保 DragonBoard 处于下载模式，方法是将板上的第一个启动开关设置为“USB 启动”，如下所示。 接着通过 microUSB 电缆将 DragonBoard 连接到主机，然后将 DragonBoard 连接到 12V (> 1A) 电源。
 5. 启动 DragonBoard Update Tool，该工具会通过一个绿色圆圈来表示已检测到 DragonBoard 连接到电脑。 “浏览”到 DragonBoard 的已下载 FFU，然后单击“程序”按钮。 
@@ -99,12 +99,12 @@ ms.locfileid: "72918639"
 1. 下载并安装与你的计算机上运行的 Windows 10 版本相对应的 [Windows 评估和部署工具包](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (Windows ADK)。
 2. 下载并安装 [ADK 的 Windows PE 加载项](https://go.microsoft.com/fwlink/?linkid=2087112)。
 
-#### <a name="create-a-usb-bootable-windows-pehttpsdocsmicrosoftcomen-uswindows-hardwaremanufacturedesktopwinpe-intro-image"></a>创建可从 USB 启动的 [Windows PE](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro) 映像
+#### <a name="create-a-usb-bootable-windows-pehttpsdocsmicrosoftcomwindows-hardwaremanufacturedesktopwinpe-intro-image"></a>创建可从 USB 启动的 [Windows PE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) 映像
 
 3. 将 USB 盘插入计算机中。
 4. 以管理员身份启动“部署和映像工具环境”。 默认安装路径为 `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\DandISetEnv.bat`。
-5. 使用 [`Copype`](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/copype-command-line-options) 创建 Windows PE 文件的工作副本。 必须指定 x86、amd64 或 ARM 体系结构（例如 `Copype amd64 C:\WINPE_amd64`）
-6. 使用 [`MakeWinPEMedia`](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/makewinpemedia-command-line-options) 将 Windows PE 安装到 U 盘。 必须指定目标 USB 驱动器（例如 `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`）。
+5. 使用 [`Copype`](https://docs.microsoft.com/windows-hardware/manufacture/desktop/copype-command-line-options) 创建 Windows PE 文件的工作副本。 必须指定 x86、amd64 或 ARM 体系结构（例如 `Copype amd64 C:\WINPE_amd64`）
+6. 使用 [`MakeWinPEMedia`](https://docs.microsoft.com/windows-hardware/manufacture/desktop/makewinpemedia-command-line-options) 将 Windows PE 安装到 U 盘。 必须指定目标 USB 驱动器（例如 `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`）。
 7. 下载 [Windows 10 IoT 核心版映像](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true)，方法是：双击下载的 ISO 文件，找到装载的虚拟 CD 驱动器。
 8. 此驱动器将包含一个安装文件 (.msi)；双击它。 这会在电脑中的 `C:\Program Files (x86)\Microsoft IoT\FFU\` 下创建一个新目录，其中可以看到映像文件 `flash.ffu`。
 9. 下载 [eMMC 安装程序脚本](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip)，将其解压缩后连同设备的 FFU 复制到 USB 设备的根目录。

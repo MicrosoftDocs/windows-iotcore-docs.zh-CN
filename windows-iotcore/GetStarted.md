@@ -4,12 +4,12 @@ ms.date: 04/10/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 核心版入门。
 keywords: Windows 10 IoT 核心版, 入门, 映像,
-ms.openlocfilehash: 868e1b6bdaea8326fe081a0ebca1b75d4ddd8ff4
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: f33c2ae81a9012e11337063677a51ff31aff89a0
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918437"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721432"
 ---
 # <a name="get-started-with-windows-10-iot-core"></a>Windows 10 IoT 核心版入门
 
@@ -29,7 +29,7 @@ ms.locfileid: "72918437"
 <thead>
 <tr class="header">
 <th align="left">主题</th>
-<th align="left">描述</th>
+<th align="left">说明</th>
 </tr>
 </thead>
 <tbody>
@@ -50,7 +50,7 @@ ms.locfileid: "72918437"
 </tr>
 
 <tr class="odd">
-  <td align="left"><p><a href="windows-server.md" data-raw-source="[Windows Server IoT 2019](https://docs.microsoft.com/en-us/windows/iot-core/windows-server)">Windows Server IoT 2019</a></p></td>
+  <td align="left"><p><a href="windows-server.md" data-raw-source="[Windows Server IoT 2019](https://docs.microsoft.com/windows/iot-core/windows-server)">Windows Server IoT 2019</a></p></td>
 <td align="left"><p>详细了解如何完成 Windows Server IoT 2019 入门。</p></td>
 </tr>
 
@@ -104,13 +104,13 @@ ms.locfileid: "72918437"
 <thead>
 <tr class="header">
 <th align="left">主题</th>
-<th align="left">描述</th>
+<th align="left">说明</th>
 </tr>
 </thead>
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
 >1. 选取原型板</a></p></td>
 <td align="left"><p>查看常见的原型板，选择一个开始其原型制作。</p></td>
 </tr>
@@ -121,12 +121,12 @@ ms.locfileid: "72918437"
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">3. 安装应用</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">3. 安装应用</a></p></td>
 <td align="left"><p>了解如何使用不同工具来安装应用。</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. 部署应用</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appdeployment">4. 部署应用</a></p></td>
 <td align="left"><p>了解如何使用 Visual Studio 来部署应用。</p></td>
 </tr>
 
@@ -147,19 +147,19 @@ ms.locfileid: "72918437"
 <thead>
 <tr class="header">
 <th align="left">主题</th>
-<th align="left">描述</th>
+<th align="left">说明</th>
 </tr>
 </thead>
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide"
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide"
 >Windows 10 IoT 核心版设备制造指南</a></p></td>
 <td align="left"><p>从这里开始，了解如何创建适合商业化 Windows 10 IoT 核心版解决方案的自定义测试和零售映像。</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview">Windows 10 IoT 企业版设备制造指南</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/manufacture/desktop/iot-ent-overview">Windows 10 IoT 企业版设备制造指南</a></p></td>
 <td align="left"><p>从这里开始，了解如何为商业化 Windows 10 IoT 企业版解决方案创建映像。</p></td>
 </tr>
 
