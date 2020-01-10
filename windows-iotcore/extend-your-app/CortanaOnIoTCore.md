@@ -4,20 +4,20 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何开始和在 Windows IoT Core 上安装 Cortana 更新。
 keywords: windows iot，Cortana，语音，AI，数字助手，语言
-ms.openlocfilehash: b3a4699a762f158671459c8bc592007def6d9621
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 8f89a697efb445807ac74a2c08e87a43d77a33c5
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918181"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721760"
 ---
-# <a name="cortana-on-iot-core"></a><span data-ttu-id="80840-104">IoT Core 上的 Cortana</span><span class="sxs-lookup"><span data-stu-id="80840-104">Cortana on IoT Core</span></span>
+# <a name="cortana-on-iot-core"></a><span data-ttu-id="d841f-104">IoT Core 上的 Cortana</span><span class="sxs-lookup"><span data-stu-id="d841f-104">Cortana on IoT Core</span></span>
 
-<span data-ttu-id="80840-105">Cortana 是在所有设备上工作的个人数字助理，可帮助你日常生活。</span><span class="sxs-lookup"><span data-stu-id="80840-105">Cortana is a personal digital assistant working across all your devices to help you in your daily life.</span></span> <span data-ttu-id="80840-106">她了解你的情况;帮助您通过完成任务来完成工作;以一致的上下文方式使用自然语言与你交互;并且始终会为你提供。</span><span class="sxs-lookup"><span data-stu-id="80840-106">She learns about you; helps you get things done by completing tasks; interacts with you using natural language in a consistent, contextual way; and always looks out for you.</span></span> <span data-ttu-id="80840-107">Cortana 具有一致的视觉标识、个性和语音。</span><span class="sxs-lookup"><span data-stu-id="80840-107">Cortana has a consistent visual identity, personality, and voice.</span></span>
+<span data-ttu-id="d841f-105">Cortana 是在所有设备上工作的个人数字助理，可帮助你日常生活。</span><span class="sxs-lookup"><span data-stu-id="d841f-105">Cortana is a personal digital assistant working across all your devices to help you in your daily life.</span></span> <span data-ttu-id="d841f-106">她了解你的情况;帮助您通过完成任务来完成工作;以一致的上下文方式使用自然语言与你交互;并且始终会为你提供。</span><span class="sxs-lookup"><span data-stu-id="d841f-106">She learns about you; helps you get things done by completing tasks; interacts with you using natural language in a consistent, contextual way; and always looks out for you.</span></span> <span data-ttu-id="d841f-107">Cortana 具有一致的视觉标识、个性和语音。</span><span class="sxs-lookup"><span data-stu-id="d841f-107">Cortana has a consistent visual identity, personality, and voice.</span></span>
 
-<span data-ttu-id="80840-108">若要使用 Cortana 设备 SDK 在设备中启用无人参与的智能帮助，请访问[Cortana 开发人员中心](http://www.aka.ms/cortanadevices)。</span><span class="sxs-lookup"><span data-stu-id="80840-108">To enable hands-free intelligent assistance in your device with the Cortana Device SDK, please visit [The Cortana Dev Center](http://www.aka.ms/cortanadevices).</span></span>
+<span data-ttu-id="d841f-108">若要使用 Cortana 设备 SDK 在设备中启用无人参与的智能帮助，请访问[Cortana 开发人员中心](https://aka.ms/cortanadevices)。</span><span class="sxs-lookup"><span data-stu-id="d841f-108">To enable hands-free intelligent assistance in your device with the Cortana Device SDK, please visit [The Cortana Dev Center](https://aka.ms/cortanadevices).</span></span>
 
-<span data-ttu-id="80840-109">IoT Core 上的 Cortana 将着重于将来的商业方案。</span><span class="sxs-lookup"><span data-stu-id="80840-109">Cortana on IoT Core will focus on commercial scenarios in the future.</span></span> <span data-ttu-id="80840-110">即将更新。</span><span class="sxs-lookup"><span data-stu-id="80840-110">Updates will come soon.</span></span> 
+<span data-ttu-id="d841f-109">IoT Core 上的 Cortana 将着重于将来的商业方案。</span><span class="sxs-lookup"><span data-stu-id="d841f-109">Cortana on IoT Core will focus on commercial scenarios in the future.</span></span> <span data-ttu-id="d841f-110">即将更新。</span><span class="sxs-lookup"><span data-stu-id="d841f-110">Updates will come soon.</span></span> 
 
 <!--
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Cortana-on-Windows-10-IoT-Core/player]
