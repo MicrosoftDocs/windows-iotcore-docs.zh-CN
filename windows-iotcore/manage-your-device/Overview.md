@@ -6,18 +6,18 @@ ms.prod: windows-iot
 ms.technology: IoT
 description: 了解可用于调试 Windows 10 IoT Core 的不同方式。
 keywords: windows iot，调试，PowerShell，SSH
-ms.openlocfilehash: 455d8a90fc655b2deda4a09a661c849ff852b65c
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 2fbfbbd9b181455b56964678d105f106acefa789
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917250"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721592"
 ---
 # <a name="debugging-on-windows-iot-core"></a>在 Windows IoT Core 上调试
 使用运行中的应用程序设置 IoT 核心映像后，你可以根据需要调试应用程序或系统。 调试和测试系统的最佳时间是测试映像状态。 一旦基于 IoT 核心的系统在本质上出现，调试可能会 challanging。 这并不是说，这种情况并不能完成，而是将其他问题添加到了调试阶段。 在测试模式下，可以使用以下操作调试应用程序或映像：
 
 ## <a name="device-portal"></a>设备门户
-Windows 设备门户（WDP）允许你通过本地网络配置和管理 IoT 设备 remoately。 可以通过 IoT 设备的本地 ip 来访问 WDP。 有关 IoT 上的 WDP 的其他信息，请参阅[此处](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/DevicePortal)。
+Windows 设备门户（WDP）允许你通过本地网络配置和管理 IoT 设备 remoately。 可以通过 IoT 设备的本地 ip 来访问 WDP。 有关 IoT 上的 WDP 的其他信息，请参阅[此处](https://docs.microsoft.com/windows/iot-core/manage-your-device/DevicePortal)。
 
 ### <a name="collecting-etw--wpp-logs"></a>收集 ETW/WPP 日志 
 -----
@@ -42,4 +42,4 @@ PowerShell 是基于任务的命令行 Shell 和脚本语言，专为进行系�
 
 -----
 ## <a name="live-app-debug"></a>实时应用调试
-在 Visual Studio （2015及更高版本）中，可以使用 Azure 应用程序 Insights 中的遥测，在调试和生产环境中分析性能和诊断问题。 此功能在以后扩展，以在 Visual Studio 2017 和通过 Azure 门户中包括桌面和 UWP 应用程序。 有关调试项目的其他信息，请参阅[此处](https://docs.microsoft.com/en-us/azure/azure-monitor/app/visual-studio)和监视使用情况，可以在[此处](https://docs.microsoft.com/en-us/azure/azure-monitor/app/windows-desktop)找到桌面或 UWP 应用程序的性能。
+在 Visual Studio （2015及更高版本）中，可以使用 Azure 应用程序 Insights 中的遥测，在调试和生产环境中分析性能和诊断问题。 此功能在以后扩展，以在 Visual Studio 2017 和通过 Azure 门户中包括桌面和 UWP 应用程序。 有关调试项目的其他信息，请参阅[此处](https://docs.microsoft.com/azure/azure-monitor/app/visual-studio)和监视使用情况，可以在[此处](https://docs.microsoft.com/azure/azure-monitor/app/windows-desktop)找到桌面或 UWP 应用程序的性能。

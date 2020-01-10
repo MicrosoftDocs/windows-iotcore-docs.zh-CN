@@ -6,12 +6,12 @@ ms.prod: windows-iot
 ms.technology: IoT
 description: 了解如何使用 Windows 设备门户远程配置和管理你的设备。
 keywords: windows iot，Windows 设备门户，远程，设备门户
-ms.openlocfilehash: d7e5285b7a29a61f15a5272cc822832230e56f75
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 9a5bb55da073ad7fa44674bc851e9dfef4809a37
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917437"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721618"
 ---
 # <a name="windows-device-portal"></a>Windows Device Portal
    Windows 设备门户（WDP）允许你通过本地网络远程配置和管理你的设备。
@@ -20,13 +20,13 @@ ms.locfileid: "72917437"
 ![Device Portal 主页](../media/deviceportal/deviceportal.png)
 
 > [!IMPORTANT]
-> 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
+> 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
 
 > [!WARNING]
 > 对于 ARM 设备，实时内核调试当前失败。 我们正在努力解决此情况。
 
 > [!IMPORTANT]
-> 如果要为商业部署构建开放零售设备，使其最终用户执行最终配置，并记录客户必须[为 WDP 获取证书的 "特定/限制安装" （即工厂或零售商店）。并将其安装在 WDP 和连接浏览器上并更改 WDP 上的密码](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl)，然后在此窄的商业实例中使用 WDP 是可接受的。 此方案中的零售映像应仍*不*包含 IOT_TOOLKIT，但应使用 IOT_WEBBEXTN 包拉取 WDP。 
+> 如果要构建一个用于商业部署的开放零售设备，使其最终用户执行最终配置，并记录客户他们必须[获得 WDP 的证书并将其安装在 WDP 上并连接浏览器和密码在 WDP 上](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl)，则可接受此窄的商业实例中的 WDP。 此方案中的零售映像仍*不*包含 IOT_TOOLKIT，但应使用 IOT_WEBBEXTN 包来请求 WDP。 
 
 ## <a name="shared-documentation"></a>共享文档
 WDP 是在所有 Windows 10 设备上共享的开发人员工具。 每个产品都有其自己独特的功能，但核心功能是相同的。
@@ -38,7 +38,7 @@ WDP 是在所有 Windows 10 设备上共享的开发人员工具。 每个产品
 
 ### <a name="1-windows-10-iot-dashboard"></a>1. Windows 10 IoT 面板
 
-首先，你将需要下载[Windows 10 IoT 仪表板](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard)，它是一个开发人员工具，可让你轻松地设置新设备。 使用仪表板将 Windows 10 IoT Core 映像闪存到设备后，请检查设备是否显示在 "我的设备" 下。 
+首先，你将需要下载[Windows 10 IoT 仪表板](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard)，它是一个开发人员工具，可让你轻松地设置新设备。 使用仪表板将 Windows 10 IoT Core 映像闪存到设备后，请检查设备是否显示在 "我的设备" 下。 
 
 在此处使用 "操作" 下的省略号选择 "在设备门户中打开"。 在这里，你将转到设备门户身份验证页面，除非最初更改了凭据，否则默认凭据为： 
 
@@ -116,7 +116,7 @@ IoT 载入为配置 IoT 设备的 Wi-fi 连接选项提供支持。
 > [!NOTE]
 > 若要在 Windows 10 IoT 版本10.0.14393 或更早版本中使用 AllJoyn 载入，需要更新<strong>IotOnboarding</strong>示例，此示例可在[此处下载](https://github.com/ms-iot/samples)。
 
-![加入到在 ICS 上![加入到 AllJoyn](../media/DevicePortal/OnboardingAllJoyn.png)
+![加入到在 ICS 上 ![加入到 AllJoyn](../media/DevicePortal/OnboardingAllJoyn.png)
 上](../media/DevicePortal/OnboardingICS.png)
 
 > [!NOTE]
@@ -126,7 +126,7 @@ IoT 载入为配置 IoT 设备的 Wi-fi 连接选项提供支持。
 ![载入软 AP](../media/DevicePortal/OnboardingSoftAP.png)
 
 > [!NOTE]
-> 如果启用了 AllJoyn 加入并使用 Wifi 适配器的 MAC 地址后缀，则 SoftAP SSID 将自动以 "AJ_" 作为前缀。 SoftAP 密码必须介于8到 63 ASCII 字符之间。
+> 如果启用了 AllJoyn 载入并使用 Wifi 适配器的 MAC 地址后缀，SoftAP SSID 将自动以 "AJ_" 作为前缀。 SoftAP 密码必须介于8到 63 ASCII 字符之间。
 
 
 ### <a name="tpm-configuration"></a>TPM 配置

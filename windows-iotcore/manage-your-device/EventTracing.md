@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何使用事件跟踪为 Windows IoT Core 编写事件和使用事件。
 keywords: windows iot，事件跟踪，ETW，windows 事件跟踪，设备
-ms.openlocfilehash: ce031cd2bc7b94f01c970bec9e1ad4df0b9dbf06
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: e5d017c28640f78011ef0b7d82071a51524b2185
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917253"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721570"
 ---
 # <a name="event-tracing-for-windows-iot-core"></a>Windows IoT Core 事件跟踪
 
@@ -32,7 +32,7 @@ Windows IoT Core 设备上的 ETW 支持基于清单的事件和典型事件，�
 
 ## <a name="use-tools-in-windows-assessment-and-deployment-kit"></a>使用 Windows 评估和部署工具包中的工具
 
-Windows 评估和部署工具包包含3个可帮助捕获和分析事件的工具。 [单击此处下载](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+Windows 评估和部署工具包包含3个可帮助捕获和分析事件的工具。 [单击此处下载](https://go.microsoft.com/fwlink/p/?LinkId=526740)
 
 
 1. **Windows 性能分析器**直观显示桌面上的 ETL 文件[，其中包含分步指南。](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx)

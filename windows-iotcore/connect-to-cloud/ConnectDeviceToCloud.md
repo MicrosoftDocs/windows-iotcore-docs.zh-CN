@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何将设备连接到云。
 keywords: windows iot，Azure，安全性，受信任的平台模块，SoC
-ms.openlocfilehash: 6bce16b45175c4c19156f30f35f6d3502f675930
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 62120695d2209227f938ebd5635380f226dddfc1
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918396"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721502"
 ---
 # <a name="connect-your-device-to-the-cloud"></a>将设备连接到云
 
@@ -26,7 +26,7 @@ TPM 的一项重要功能是它只写内存。 根据数据，TPM 还可以根�
 
 ## <a name="device-provisioning"></a>设备预配 
 
-设置 Windows 10 IoT Core 设备的工具称为 IoT 核心仪表板，可以从[下载页](http://go.microsoft.com/fwlink/?LinkID=708576)下载。
+设置 Windows 10 IoT Core 设备的工具称为 IoT 核心仪表板，可以从[下载页](https://go.microsoft.com/fwlink/?LinkID=708576)下载。
 
 仪表板会生成操作系统映像，并将设备安全连接到 Azure。 这是通过将物理设备与 Azure IoT 中心中的设备 ID 相关联并将设备特定的共享访问密钥 imprinting 到设备的 TPM 来完成的。 
 

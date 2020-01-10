@@ -4,26 +4,26 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何使用 Microsoft Message Analyzer 启用网络数据包捕获
 keywords: windows iot，网络数据包，网络数据包捕获，Microsoft Message Analyzer，PowerShell
-ms.openlocfilehash: 593b6f4f8650e074666dda06feb88e6afccf5e61
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 20f280623fc8919a5ebd3b015ece7d29dbe40cb5
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917427"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721654"
 ---
 # <a name="network-packet-capture"></a>网络数据包捕获
 
-可以使用[Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=44226)来捕获、显示和分析 Windows 10 IoT Core 设备上的协议消息传送流量。
+可以使用[Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226)来捕获、显示和分析 Windows 10 IoT Core 设备上的协议消息传送流量。
 
 ![消息分析器](../media/NetworkPacketCapture/message-analyzer.png)
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 工作 PowerShell 连接（ [powershell](../connect-your-device/PowerShell.md)中介绍的步骤1到8。
 
 ## <a name="set-up-your-device"></a>设置设备
 
-若要使用 Message Analyzer 连接到设备，需要先重命名设备。  可以使用 `setcomputername` 命令通过[SSH](../connect-your-device/SSH.md)或[PowerShell](../connect-your-device/PowerShell.md)完成此操作。
+若要使用 Message Analyzer 连接到设备，需要先重命名设备。  可以 使用`setcomputername`命令通过[SSH](../connect-your-device/SSH.md)或 [PowerShell](../connect-your-device/PowerShell.md) 完成此操作。
 
 ![PowerShell 重命名设备](../media/NetworkPacketCapture/powershell-rename-device.png)
 
@@ -39,7 +39,7 @@ ms.locfileid: "72917427"
 
 设置设备后，让我们使用 Microsoft Message Analyzer 连接到它。
 
-1. 下载[Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=44226)。
+1. 下载[Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226)。
 2. 打开 Message Analyzer。
 3. 单击 `New Session`。
 
@@ -52,7 +52,7 @@ ms.locfileid: "72917427"
     ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-edit-target-computers.png)
 7. 单击 `Select a trace scenario` 下拉列表，然后选择 "`Local Network Interfaces`"。
     ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-trace-scenario.png)
-8. 单击 "`Start`" 按钮。
+8. 单击 `Start` 按钮。
 9. 应该会看到消息通过设备上的网络接口。
     ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer.png)
 10. 通过 Message Analyzer 启动跟踪后，还可以在设备的[web 界面](DevicePortal.md)中查看数据包捕获驱动程序的 ETW 消息。  为此，请在 web 界面的 "ETW" 选项卡上，从 "`Registered providers`" 下拉菜单中选择 "`Microsoft-Windows-NDIS-PacketCapture`"，然后单击 "`Enable`" 按钮。

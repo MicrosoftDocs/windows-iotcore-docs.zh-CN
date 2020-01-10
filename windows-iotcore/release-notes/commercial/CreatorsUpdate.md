@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 阅读并了解创意者更新中的新增功能。
 keywords: windows iot，创意者更新，发行说明
-ms.openlocfilehash: f62bb14e99c8509374c776172cfcb495b62325da
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 5946d97cd84992f62213d71c59374aa7f9a5779b
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918719"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721852"
 ---
 # <a name="creators-update-release-notes-for-windows-10-iot-core"></a>Windows 10 IoT Core 的创意者更新发行说明
 内部版本号15063。 2017 年 4 月
@@ -24,7 +24,7 @@ Windows 10 IoT Core 允许开发嵌入或专用设备，并且是针对小型设
 
 ## <a name="privacy-statement"></a>隐私声明
 
-可在[此处](http://go.microsoft.com/fwlink/?LinkId=506737)查看此 Windows 操作系统版本的隐私声明。
+可在[此处](https://go.microsoft.com/fwlink/?LinkId=506737)查看此 Windows 操作系统版本的隐私声明。
 
 ## <a name="whats-new"></a>新增功能
 * Windows 10 IoT Core 公有版。 
@@ -113,7 +113,7 @@ Dragonboard 上的 SPI 将忽略请求的速度，并始终以预配置的速度
 
 #### <a name="minnowboard-max-firmware-update"></a>Minnowboard 最大固件更新 
 除非固件为092或更高版本，否则不会启动 MinnowBoard Max。  
-MinnowBoard Max （MBM）固件版本0.93 可能存在网络连接故障。   此问题已在固件版本0.94 中解决。）  最小建议固件版本为 "MinnowBoard MAX 0.94 32-bit"。 可从 [此处](http://go.microsoft.com/fwlink/?LinkId=708613)下载固件更新。
+MinnowBoard Max （MBM）固件版本0.93 可能存在网络连接故障。   此问题已在固件版本0.94 中解决。）  最小建议固件版本为 "MinnowBoard MAX 0.94 32-bit"。 可从 [此处](https://go.microsoft.com/fwlink/?LinkId=708613)下载固件更新。
   
  
 ### <a name="all-platforms"></a>所有平台 
@@ -176,7 +176,7 @@ IoT 核心版的 shell 基础结构用于监视设备中运行的 APPX 类型的
 Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\CBTConfig （或 ForegroundAppConfig） 
 * Qword： "FailureResetIntervalMs" –应用必须成功运行的时间长度，才能将出现的故障重置为0。 –默认值为 0x00000000000493E0 = = 5 分钟。 
 * Qword： "BaseRetryDelayMs"--等待时间系数。  默认值为0xa。
-* Dword:"MaxFailureCount"。 默认值为10。
+* Dword:"MaxFailureCount"。 默认值为 10。
 * DWord:"FallbackExponentNumerator"，默认值为 31。
 * Dword： "FallbackExponentDenominator"，默认值为20。
  
@@ -226,11 +226,11 @@ delay = (dword) ((float)BaseRetryDelayMs * (crashes_seen ** Fallback_exponent))
 
 本文档不提供任何 Microsoft 产品中任何知识产权的任何法律权利。  本文档可用于内部、参考目的。 
   
-Microsoft 不作任何明示或默示的保证。  
+Microsoft 不做任何明示或暗示的担保。  
 
 有关商标字产品的列表，请参阅 Microsoft 商标。 
 
-所有其他商标的所有权属于其各自所有者。  
+所有其他商标均是其各自所有者的财产。  
 
 UPnP ™ 是 UPnP™ Implementers Corporation 的认证标记。 
 

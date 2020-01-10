@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何创建驱动程序包，以及如何在设备上安装第三方驱动程序。
 keywords: windows iot，USB 驱动程序，外围设备，USB
-ms.openlocfilehash: 96e234c943771c336a9f5d7c0b7568cb11c0f6ce
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 4e3b77466e2bacb9bf8e06bc3a0dc081db2ee5f9
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918069"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721472"
 ---
 # <a name="install-usb-peripheral-drivers"></a>安装 USB 外设驱动程序
 按照以下步骤为外围设备（如 USB 移动宽带调制解调器、打印机、扫描仪等）添加第三方驱动程序（usb）。 
@@ -27,7 +27,7 @@ ___
 
 4. 在属性窗口中转到 "驱动程序" 选项卡，然后单击 "驱动程序详细信息"。 请注意列出的 sys 文件。
 
-5. 从 "`C:\Windows\system32`" 和 "`C:\Windows\Inf`中的相关 inf 文件复制 sys 文件。 可以通过 searcing 在 `.inf` 文件中查找 sys 文件引用的 inf 文件。 你可能需要复制 Inf 中列出的其他文件，这些文件将在下一步中使用 `inf2pkg.cmd` 时创建的 inf_filelist 文件中列出。
+5. 从 "`C:\Windows\system32`" 和 "`C:\Windows\Inf`中的相关 inf 文件复制 sys 文件。 可以通过 searcing 在 `.inf` 文件中查找 sys 文件引用的 inf 文件。 你可能需要复制 Inf 中列出的其他文件，这些文件将在下一步使用 `inf2pkg.cmd` 时创建的 inf_filelist 文件中列出。
 
 
 ## <a name="step-2-create-a-driver-package"></a>步骤2：创建驱动程序包
@@ -38,7 +38,7 @@ ___
 [IoTInf2Cab](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTInf2Cab.md)创建包 xml 文件，还直接生成 cab 文件。
 
 > [!NOTE]
-> Windows IoT Core 仅支持[通用 INF 和通用驱动程序](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-universal-drivers)。
+> Windows IoT Core 仅支持[通用 INF 和通用驱动程序](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)。
 
 
 另请参阅：[示例驱动程序包](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO) 

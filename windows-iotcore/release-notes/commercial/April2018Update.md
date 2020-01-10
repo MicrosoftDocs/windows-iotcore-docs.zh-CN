@@ -4,12 +4,12 @@ ms.date: 05/01/2018
 ms.topic: article
 description: 了解适用于 Windows 10 IoT 的2018年4月更新版中的新增功能。
 keywords: Windows IoT，2018年4月更新，发行说明
-ms.openlocfilehash: f9068b3860dcf684aaa12d12ed3fb0abd9598232
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: b06378db14ba78fc5a3eb60e842e1555e56a66ac
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918723"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721750"
 ---
 # <a name="april-2018-update-release-notes-for-windows-10-iot"></a>适用于 Windows 10 IoT 的2018年4月更新发行说明
 内部版本号17134。 2018 年 5 月
@@ -25,7 +25,7 @@ Windows 10 IoT 允许开发嵌入或专用设备，并且是为为智能设备�
 ## <a name="whats-new-in-april-2018-update"></a>2018年4月更新中的新增功能
 * [Visual studio 15.6 RTW](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes#Win10_IoT_Core_Testing_Support)附带的[Visual studio 测试平台](https://blogs.msdn.microsoft.com/devops/2017/02/12/evolving-the-visual-studio-test-platform-part-4-together-in-the-open/)现在支持 Windows 10 IoT Core 上的测试。 当在面向 Windows 10 IoT Core 的 Visual Studio 2017 中编写项目的[单元测试](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)时，开发人员现在可以直接从 Visual studio 在设备上远程执行这些单元测试，而无需将测试部署到设备并手动运行。
 * 开发人员可以利用 windows 10 IoT 上[WINDOWS AI 平台](https://blogs.windows.com/buildingapps/2018/03/07/ai-platform-windows-developers/)中的功能来创建更多智能设备，并使用 CPU 或 GPU 加速 ML 模型评估。
-* 希望使启用语音的设备快速投放市场的 Oem 可以使用[Cortana 设备 SDK 的预览](http://www.aka.ms/cortanadevices)将 cortana 支持集成到其设备中。
+* 希望使启用语音的设备快速投放市场的 Oem 可以使用[Cortana 设备 SDK 的预览](https://www.aka.ms/cortanadevices)将 cortana 支持集成到其设备中。
 * Oem 可以利用 Windows 上提供的丰富 Csp 集，使用[Azure IoT 设备管理](https://github.com/ms-iot/iot-core-azure-dm-client)，大规模地对设备进行远程配置和管理。 这一新的示例实现结合了本地客户端、云服务和管理门户，使 IoT 操作员可以在云规模下执行设备管理。
 * 在此版本中，你可以编写在控制台主机（例如命令控制台或 PowerShell）中运行的[UWP 控制台应用](https://docs.microsoft.com/windows/uwp/launch-resume/console-uwp)。 UWP 控制台应用还可以使用适用于 UWP 应用的 Win32 Api，并可通过 Microsoft Store 进行发布和更新。
 * 我们已添加 IoT Core 的新[Miracast 功能包](https://docs.microsoft.com/windows/iot-core/connect-your-device/miracast)以及一[组强制转换 api](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BasicMediaCasting) ，使设备能够充当 Miracast 发送器或接收方。
@@ -50,7 +50,7 @@ Windows 10 IoT 允许开发嵌入或专用设备，并且是为为智能设备�
 * 支持在 Windows 10 IoT 核心版和企业版的64位版本上托管[Nano Server 容器](https://docs.microsoft.com/virtualization/windowscontainers/about/index)，使应用程序及其数据可以相互隔离，并从开发到生产或云到边缘快速移动。
 * Windows 设备运行状况证明 [预览] 服务使用硬件功能和云服务根据硬件级别的指标和证明数据提供对设备运行状况的篡改和远程认证。
 * Windows IoT [预览版] 上的[Azure IoT Edge](https://azure.microsoft.com/campaigns/iot-edge/)允许 IoT 解决方案协调云和边缘设备之间的智能，以确保应用程序和服务可以在最有意义的地方处理 IoT 数据。
-* Azure IoT 中心[设备预配服务 [预览版]](https://blogs.windows.com/buildingapps/2017/10/05/windows-10-iot-enables-complete-iot-lifecycle/)支持在制造期间使用公用映像创建 Windows 10 IoT 设备，并将其配置为在首次启动时自动连接到 Azure IoT 中心以检索特定于设备的设置信息.
+* Azure IoT 中心[设备预配服务 [预览]](https://blogs.windows.com/buildingapps/2017/10/05/windows-10-iot-enables-complete-iot-lifecycle/)允许在制造期间使用公用映像创建 Windows 10 IoT 设备，并将其配置为在首次启动到 Azure IoT 中心时自动连接，以检索特定于设备的设置信息。
 
 ## <a name="windows-10-iot-core-reference-images"></a>Windows 10 IoT 核心参考映像
 ___ 

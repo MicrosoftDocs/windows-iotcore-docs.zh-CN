@@ -4,19 +4,19 @@ ms.date: 05/16/2018
 ms.topic: article
 description: 阅读并了解 Raspberry Pi 3B + 生成的内容。
 keywords: windows iot，Windows 有问必答，发行说明，Raspberry Pi 3B +
-ms.openlocfilehash: e0cf0afb98440034d8384e5d44ce98bb14a0fe71
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: d321676758f7ff438540720098e6a6ecb1ba457f
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918742"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721012"
 ---
 # <a name="release-notes-for-raspberry-pi-3b"></a>Raspberry Pi 3B + 的发行说明
 
 &copy; 2018 Microsoft Corporation。 保留所有权利。
 
 > [!NOTE]
-> Raspberry Pi 3B+ 的此版本是不受支持的技术预览版。 已完成有限的验证和启用。 可在[此处](https://www.microsoft.com/en-us/software-download/windowsiot)找到当前版本。 若要获得更好的评估体验，或者要将产品商用化，请使用 Raspberry Pi 3B 或者其他带有受支持的 Intel、Qualcomm 或 NXP SoC 的设备。 若要排查 Raspberry Pi 3B+ 的问题，请参阅[此处](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues)的故障排除指南。 
+> Raspberry Pi 3B+ 的此版本是不受支持的技术预览版。 已完成有限的验证和启用。 可在[此处](https://www.microsoft.com/en-us/software-download/windowsiot)找到当前版本。 若要获得更好的评估体验，或者要将产品商用化，请使用 Raspberry Pi 3B 或者其他带有受支持的 Intel、Qualcomm 或 NXP SoC 的设备。 若要排查 Raspberry Pi 3B+ 的问题，请参阅[此处](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues)的故障排除指南。 
 
 ## <a name="whats-new-in-this-build"></a>此内部版本的新增功能： 
 * 常规 Bug 修复
@@ -53,7 +53,7 @@ checknetisolation loopbackexempt -a -n=<AppID for Additional App>
 For example:  checknetisolation loopbackexempt -a -n=IoTOnboardingTask-uwp_1w720vyc4ccym 
 ```
 
-要求.
+重新启动。
 
 ### <a name="sensor-driver-conflict-in-pre-built-ffus"></a>在预先构建的 FFU 中出现传感器驱动程序冲突 
 在提供的 FFU 中存在传感器驱动程序冲突。 Remote Sensor Framework 可为指南针、磁力计、加速计和陀螺仪安装驱动程序。 用于从应用程序访问这些类的 UWP Api 假设只安装一个。 如果你为通过物理方式连接的设备开发驱动程序，则 Microsoft 提供的 FFU 上的远程驱动程序会产生冲突。  
@@ -74,7 +74,7 @@ For example:  checknetisolation loopbackexempt -a -n=IoTOnboardingTask-uwp_1w720
 依赖于 Windows 系统更改系统音量的 USB 麦克风和扬声器的硬件音量控件当前在 Windows 10 IoT 核心版上不受支持。 
 
 ### <a name="usb-keyboards"></a>USB 键盘
-某些 USB 键盘和鼠标可能无法在 IoT 核心版上工作。 使用其他键盘或鼠标。 可在[此处](http://go.microsoft.com/fwlink/?LinkId=619428)的文档中找到经过验证的外围设备的列表。
+某些 USB 键盘和鼠标可能无法在 IoT 核心版上工作。 使用其他键盘或鼠标。 可在[此处](https://go.microsoft.com/fwlink/?LinkId=619428)的文档中找到经过验证的外围设备的列表。
  
 ### <a name="screen-orientation"></a>屏幕方向
 将方向设置为“纵向”在通用应用中可能不受支持。

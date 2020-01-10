@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何为设备配置 Windows IoT Core，使其适用于 "头" 或 "无外设" 模式。
 keywords: windows iot，屏幕，头，无外设，UI
-ms.openlocfilehash: 138bc19b355e39db7e6bd4f4441159b03fde26c1
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 2fb41d2981b74436ba88ca573407b0ddbcf35566
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918094"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721782"
 ---
 # <a name="headed-and-headless-devices"></a>头和无外设设备
 
@@ -49,7 +49,7 @@ ms.locfileid: "72918094"
 
 ## <a name="finding-your-headless-device"></a>查找无外设设备
 
-在无外设模式下的 IoT 核心设备可以使用**Windows 10 IoT Core 仪表板**应用程序来发现。  若要下载 IoT 面板，请参阅[下载](http://go.microsoft.com/fwlink/?LinkID=708576)页。
+在无外设模式下的 IoT 核心设备可以使用**Windows 10 IoT Core 仪表板**应用程序来发现。  若要下载 IoT 面板，请参阅[下载](https://go.microsoft.com/fwlink/?LinkID=708576)页。
 运行时，应用程序会侦听来自本地网络上的任何 IoT 核心设备的 ping，并显示设备信息，如名称、IP 地址等。
 
 ![Windows 10 IoT 核心版仪表板](../media/HeadlessMode/selectDevice.png)

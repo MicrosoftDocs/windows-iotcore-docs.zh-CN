@@ -6,12 +6,12 @@ ms.date: 09/12/2017
 ms.topic: article
 description: 了解 UWP Core 上的 UWP 应用程序和 OS 中的多语言支持。
 keywords: windows iot，语言，应用类型，UWP，OS
-ms.openlocfilehash: 5bc44fb090e6e198525e95d6aee6815afd0095da
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: ea54ee9dac93866065313e00caccb91ac1dc7c7f
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918228"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721680"
 ---
 # <a name="language-support"></a>语言支持
 
@@ -35,18 +35,18 @@ Windows 10 IoTCore 工具包现在包含适用于以下语言的语言资源：
 
 > | “语言”  | 代码 | Region |
 > |-------------|-----|-----|
-> | 英语（美国） | zh-CN | 北美 | 
+> | 英语(美国) | en-US | 北美 | 
 > | 英语（英国） | en-GB | 欧洲 |
 > | 法语(法国) | fr-FR | 欧洲 |
-> | 法语（加拿大） | fr-CA | 北美 |
-> | 西班牙语(西班牙) | es-ES | 欧洲 |
-> | 西班牙语（墨西哥） | es-MX | 北美 |
-> | 中文 | zh-CN | 东亚 | 
-> | 阿拉伯语 | ar-SA | 东亚 |
+> | 法语(加拿大) | fr-CA | 北美 |
+> | 西班牙语（西班牙） | es-ES | 欧洲 |
+> | 西班牙语(墨西哥) | es-MX | 北美 |
+> | 中文 | zh-CN | 亚洲 | 
+> | 阿拉伯语 | ar-SA | 亚洲 |
 > | 德语 | de-DE | 欧洲 |
 > | 意大利语 | it-IT | 欧洲 | 
-> | 日语 | ja-JP | 东亚 |
-> | 朝鲜语 | ko-KR | 东亚 |
+> | 日语 | ja-JP | 亚洲 |
+> | 朝鲜语 | ko-KR | 亚洲 |
 > | 荷兰语 | nl-NL | 欧洲 |
 > | 波兰语 | pl-PL | 欧洲 | 
 > | 罗马尼亚语 | ro-RO | 欧洲 |
@@ -124,7 +124,7 @@ UWP 应用程序可以使用 WinRT Api 来设置默认情况下应使用的区�
 * 使用[GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)中的 `TrySetHomeGeographicRegion` 设置区域
 * 使用[GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)中的 `TrySetLanguages` 设置 UI 语言
 * 使用 SpeechRecognition 中的 `TrySetSystemSpeechLanguageAsync` 设置语音语言。 [SpeechRecognizer](https://docs.microsoft.com/uwp/api/windows.media.speechrecognition.speechrecognizer)
-* 使用 SpeechSynthesis 中的 `TrySetDefaultVoiceAsync` 设置语音。 [SpeechSynthesizer](https://docs.microsoft.com/en-us/uwp/api/windows.media.speechsynthesis.speechsynthesizer)
+* 使用 SpeechSynthesis 中的 `TrySetDefaultVoiceAsync` 设置语音。 [SpeechSynthesizer](https://docs.microsoft.com/uwp/api/windows.media.speechsynthesis.speechsynthesizer)
 
 > [!NOTE]
 > 为了正常工作，Cortana 要求区域、UI 语言和语音语言保持一致，例如：区域 FR、UI 和语音语言 fr-fr 或地区 ES、UI 和语音语言 es。 Cortana 使用自己的语音，UWP 应用程序无法更改它。

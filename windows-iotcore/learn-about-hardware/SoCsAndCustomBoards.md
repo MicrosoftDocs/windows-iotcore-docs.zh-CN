@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解各种建议的板和社区设备的硬件功能。
 keywords: windows iot，开发设备，板，SOC，SOM，芯片上的系统，Raspberry Pi 2，Raspberry Pi 3，Minnowboard Max，DragonBoard
-ms.openlocfilehash: 4114cc6ba7b0580b1f00a7aeae67284bb1fc8cb3
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 049cea0ede9740c95d49eba39c387fb1be49a86c
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917410"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721705"
 ---
 # <a name="socs-and-custom-boards"></a>SoC 和自定义板
 
@@ -19,9 +19,9 @@ Microsoft 与 Broadcom、Intel、NXP 和 Qualcomm 一起工作，验证对芯片
 
 | Broadcom | Intel | Qualcomm | NXP |
 |----------|-------|----------|-----|
-| BCM2837 | [Intel® Atom® processor E3900 系列（Apollo）](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 （APQ8016）](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 系列](http://aka.ms/iotnxp) |
-| BCM2836 | [Intel®赛扬® processor N3350 （Apollo）](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 （APQ8009）](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 系列](http://aka.ms/iotnxp)     |
-|         | [Intel®奔腾® processor N4200 platform （Apollo）](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8 分钟和8分钟微型系列](http://aka.ms/iotnxp) |
+| BCM2837 | [Intel® Atom® processor E3900 系列（Apollo）](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 （APQ8016）](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 系列](https://aka.ms/iotnxp) |
+| BCM2836 | [Intel®赛扬® processor N3350 （Apollo）](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 （APQ8009）](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 系列](https://aka.ms/iotnxp)     |
+|         | [Intel®奔腾® processor N4200 platform （Apollo）](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8 分钟和8分钟微型系列](https://aka.ms/iotnxp) |
 |         | [Intel® Pentium®和赛扬® Processor N3000 系列（Braswell）](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
 |         | [Intel® Atom® x5-E8000 处理器（Braswell）](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         |  |
 |         | [Intel® Atom® x5-Z8350 处理器（挑拣轨迹）](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         |     |
@@ -110,7 +110,7 @@ BSP 包包含 ACPI 的源代码，以允许只需 ACPI 更改的简单硬件自�
 > [!IMPORTANT] 
 > 如果需要额外的硬件自定义，例如使用特定的 MIPI-DSI 显示面板，请启用平台安全启动、RF 校准和认证（例如 FCC，CE），你需要成为一个 Qualcomm BSP 源代码，或与具有访问权限的提供商合作（请参阅下面的经验丰富的合作伙伴）。
 
-针对
+建议：
 
 1. 如果可能，请与有经验的 SoM 供应商合作，以实现自定义设计。
 2. 如果要构建自定义板，请使用 SoM 供应商或经验丰富的 Qualcomm BSP 自定义服务提供程序，如用于 BSP 自定义和设计帮助的[Intrinsyc](https://www.intrinsyc.com/)或[Thundersoft](http://www.thundersoft.com/) 。
@@ -125,7 +125,7 @@ BSP 包包含 ACPI 的源代码，以允许只需 ACPI 更改的简单硬件自�
 
 ### <a name="nxp-preview"></a>**NXP 预览**
 
-NXP 支持 Windows 10 IoT Core 提供公共预览版。 有关详细信息，请访问 BSP 或查找硬件合作伙伴，请访问[NXP SoC 页面](http://aka.ms/iotnxp)。
+NXP 支持 Windows 10 IoT Core 提供公共预览版。 有关详细信息，请访问 BSP 或查找硬件合作伙伴，请访问[NXP SoC 页面](https://aka.ms/iotnxp)。
 
 你还可以与我们正在使用的合作伙伴联系：
 

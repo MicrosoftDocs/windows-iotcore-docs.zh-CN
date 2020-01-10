@@ -6,12 +6,12 @@ ms.date: 08/13/2019
 ms.topic: article
 description: 了解如何在运行 Windows 10 IoT Core 的设备上安装 Python
 keywords: windows iot, python
-ms.openlocfilehash: 26063863e5fdf7539e3159d4a4809bab3a38fb71
-ms.sourcegitcommit: 4272081b5186dada1e61974193e41fcc1c42a1b9
+ms.openlocfilehash: e76fdeaafe4b3b2b80b75a1fc22bd8a58769e1e5
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69629384"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721630"
 ---
 # <a name="python"></a>Python
 Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
@@ -176,9 +176,9 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ![证书导出向导](../media/Python/global_sign_cert.png)
 
-10. 单击 `Next`。
+10. 单击“`Next`”。
 
-11. 单击 `Finish`。
+11. 单击“`Finish`”。
 
 12. 在台式计算机上运行以下命令以将 `c:\test\DigiCert High Assurance EV Root.cer` 复制到设备：
 
@@ -211,21 +211,21 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ### <a name="set-up-an-iot-hub-and-create-a-device-identity"></a>设置 IoT 中心并创建设备标识
 
-19. 安装 [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)（或使用 [Azure Cloud Shell](https://shell.azure.com/)）并使用它来创建 [Azure IoT 中心](https://docs.microsoft.com/en-us/cli/azure/iot/hub?view=azure-cli-latest#az-iot-hub-create)。
+19. 安装 [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)（或使用 [Azure Cloud Shell](https://shell.azure.com/)）并使用它来创建 [Azure IoT 中心](https://docs.microsoft.com/cli/azure/iot/hub?view=azure-cli-latest#az-iot-hub-create)。
 
     ```powershell
     az iot hub create --resource-group <your resource group> --name <your IoT Hub name>
     ```
     * 请注意，此操作可能需要几分钟时间。
 
-20. 将 IoT 扩展添加到 Azure CLI，然后[注册设备标识](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-create)
+20. 将 IoT 扩展添加到 Azure CLI，然后[注册设备标识](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-create)
 
     ```powershell
     az extension add --name azure-cli-iot-ext
     az iot hub device-identity create --hub-name <your IoT Hub name> --device-id <your device id>
     ```
 
-21. 使用 Azure CLI [检索设备连接字符串](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-show-connection-string)
+21. 使用 Azure CLI [检索设备连接字符串](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-show-connection-string)
 
     ```powershell
     az iot hub device-identity show-connection-string --device-id <your device id> --hub-name <your IoT Hub name>
@@ -238,7 +238,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ### <a name="send-a-simple-telemetry-message"></a>发送简单的遥测消息
 
-22. 使用 Azure CLI [开始监视 IoT 中心上的遥测数据](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-monitor-events)
+22. 使用 Azure CLI [开始监视 IoT 中心上的遥测数据](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-monitor-events)
 
     ```powershell
     az iot hub monitor-events --hub-name <your IoT Hub name> --output table

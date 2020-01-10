@@ -4,18 +4,18 @@ ms.date: 10/02/2018
 ms.topic: article
 description: 了解 Windows 10 月2018版更新中的新增功能。
 keywords: Windows IoT，10月2018更新，发行说明
-ms.openlocfilehash: 30292437da20a577a319fe47b3f5c2647df00382
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 5b5b6e45552d099426019626ca52000635e308a5
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918704"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721872"
 ---
 # <a name="october-2018-update-release-notes-for-windows-10-iot"></a>2018年10月更新发行说明，适用于 Windows 10 IoT
 内部版本号17763。 2018 年 10 月
 
 > [!IMPORTANT]
-> 如果你使用的是[10 2018 月版更新](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/commercial/october2018update)，请改为使用[10 月更新版（与1月版服务包、版本17763.253）](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/commercial/17763) 。 我们发现存在一些已知问题，这些问题会影响10月2018更新的用户。 
+> 如果你使用的是[10 2018 月版更新](https://docs.microsoft.com/windows/iot-core/release-notes/commercial/october2018update)，请改为使用[10 月更新版（与1月版服务包、版本17763.253）](https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763) 。 我们发现存在一些已知问题，这些问题会影响10月2018更新的用户。 
 
 Windows 10 IoT 允许开发嵌入或专用设备，并且是为为智能设备构建 Windows 解决方案的 Oem 和开发人员选择的。
 
@@ -37,7 +37,7 @@ _Windows 10 IoT 核心板_
 * 为了满足不断增长的客户和合作伙伴对硅多样性的需求，Microsoft 在与 NXP 的密切合作中增加了对 NXP i.MX 6、7和8分钟系列处理器到 Windows 10 IoT Core 的支持。 
 * Qualcomm 和 Microsoft 创建了一个解决方案，该解决方案将 Windows 10 IoT Enterprise 与 Snapdragon 处理器组合在一起，以构建消耗更少电源、始终处于连接状态且可立即唤醒的设备。 使用电池电量长时，mobile POS 和业务线平板电脑等专用设备将一直使用一整天。 
 * [Windows 10 IoT Core 默认应用](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp)具有更多功能，用户可将其用于自己的应用程序，尤其是在将其设备投放市场时。 这些功能包括天气、墨迹功能、音频功能。 
-* 如果要为商业部署构建开放零售设备，使其最终用户执行最终配置，并记录客户必须[为 WDP 获取证书的 "特定/限制安装" （即工厂或零售商店）。并将其安装在 WDP 和连接浏览器上并更改 WDP 上的密码](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl)，然后在此窄的商业实例中使用 WDP 是可接受的。 此方案中的零售映像应仍不包含 IOT_TOOLKIT，但应使用 IOT_WEBBEXTN 包拉取 WDP。 
+* 如果要构建一个用于商业部署的开放零售设备，使其最终用户执行最终配置，并记录客户他们必须[获得 WDP 的证书并将其安装在 WDP 上并连接浏览器和密码在 WDP 上](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl)，则可接受此窄的商业实例中的 WDP。 此方案中的零售映像仍不包含 IOT_TOOLKIT，但应使用 IOT_WEBBEXTN 包来请求 WDP。 
 * Limpet 现在作为[开源项目](https://github.com/ms-iot/azure-dm-client)提供。 为了使测试变得更容易，我们提供了一个未签名的预构建版本的 Limpet，可从 WDP 下载。 从[Windows 设备门户文档](https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal)中了解有关此功能的详细信息。  
 * 使用 RS5，开发人员现在可以使用仪表板将自定义 FFUs 闪存到其设备上。 可以通过 DragonBoard 410C 或 NXP 实现此目的。 [在此处](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup)了解详细信息并开始。
 * Windows 10 IoT Core 现在使用与 Windows 桌面版本相同的触摸键盘组件，这允许使用听写模式、整套 Windows 键盘语言布局等功能。 此新更新还包括图释、大多数输入 "作用域" 和更好的多语言支持 supprt。 [在此处](https://docs.microsoft.com/windows/iot-core/develop-your-app/onscreenkeyboard)了解如何利用这些功能。
@@ -47,11 +47,11 @@ _Windows 10 IoT 核心板_
 * 现在[我们的示例存储库](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/BusTools)中提供了可用于与 Gpio、I2c、SPI 和 UART 交互的总线工具。 这些工具将在任何 Windows 版本（包括 Windows 10 IoT Core 和 Windows Enterprise）上运行。 
 * [Windows. Update 命名空间 API](https://docs.microsoft.com/uwp/api/windows.system.update)启用对系统更新的交互式控制的调用。 此命名空间仅适用于 Windows 10 IoT 核心版。
 * 如果希望将 IoT Central 用作 Windows 10 IoT 解决方案的一部分，现在可以准备[windows 10 Iot Core 设备并将其连接到 Azure IoT Central 应用程序](https://docs.microsoft.com/azure/iot-central/howto-connect-windowsiotcore)。 
-* Raspberry Pi 3B + （可下载[ISO）的](http://go.microsoft.com/fwlink/?LinkID=708576)发行版是 technical preview，当前没有适用于发布版本的时间线。 若要获得更好的评估体验和 fr 任何商业产品，请使用 Raspberry Pi 3B 或支持 Intel、Qualcomm 或 NXP Soc 的其他设备。 
+* Raspberry Pi 3B + （可下载[ISO）的](https://go.microsoft.com/fwlink/?LinkID=708576)发行版是 technical preview，当前没有适用于发布版本的时间线。 若要获得更好的评估体验和 fr 任何商业产品，请使用 Raspberry Pi 3B 或支持 Intel、Qualcomm 或 NXP Soc 的其他设备。 
 
 ## <a name="iot-enterprise-manufacturing-guide"></a>IoT 企业生产指南
 
-* [现已推出](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview)适用于 Windows 10 IoT 企业版的新生产指南。 
+* [现已推出](https://docs.microsoft.com/windows-hardware/manufacture/desktop/iot-ent-overview)适用于 Windows 10 IoT 企业版的新生产指南。 
 
 ## <a name="improvements-in-assigned-access"></a>已分配的访问的改进 
 

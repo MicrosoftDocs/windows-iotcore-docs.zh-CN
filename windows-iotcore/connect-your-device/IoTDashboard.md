@@ -4,18 +4,18 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解 Windows 10 IoT Core 仪表板的功能以及入门方式。
 keywords: windows iot，windows 10 iot 核心仪表板，windows iot 面板，设备
-ms.openlocfilehash: e244dd4705fa85707468f284b9a5d070c91720d8
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 53a8be4e29f93ab3f6d9979e247c598ea5e637c8
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918612"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721482"
 ---
 # <a name="windows-10-iot-core-dashboard"></a>Windows 10 IoT 核心版仪表板
 
 Windows 10 IoT 核心仪表板是从 PC 下载、设置和连接 Windows 10 IoT 核心设备的最佳方式。
 
-可在此处下载[IoT 核心仪表板](http://go.microsoft.com/fwlink/?LinkID=708576)。
+可在此处下载[IoT 核心仪表板](https://go.microsoft.com/fwlink/?LinkID=708576)。
 
 > [!NOTE]
 > 如果您在下载后打开 IoT 面板时遇到了白屏，则可能是由于驱动程序问题所致。 若要解决此问题，需要下载 Intel 图形驱动程序的[zip 格式](https://downloadmirror.intel.com/27894/a08/win64_24.20.100.6229.zip)，并手动安装驱动程序。 
@@ -23,13 +23,13 @@ Windows 10 IoT 核心仪表板是从 PC 下载、设置和连接 Windows 10 IoT 
 ## <a name="set-up-a-new-device"></a>设置新设备
 
 > [!NOTE]
-> 仪表板不能用来设置 Raspberry Pi 3B+。 如果有 3B+ 设备，则必须使用 [3B+ 技术预览版](https://www.microsoft.com/en-us/software-download/windowsiot)。 请查看技术预览版的[已知限制](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting)，确定它是否适合开发。
+> 仪表板不能用来设置 Raspberry Pi 3B+。 如果有 3B+ 设备，则必须使用 [3B+ 技术预览版](https://www.microsoft.com/software-download/windowsiot)。 请查看技术预览版的[已知限制](https://docs.microsoft.com/windows/iot-core/troubleshooting)，确定它是否适合开发。
 
 > [!NOTE]
 > 目前存在一个已知问题，其中，操作系统会经历 SD 卡上的分区，并提示 "Format ..." 不包含任何文件系统的特定数据分区的消息。 请按 "取消" 以消除此提示。 当我们处理某个解决方案时，我们建议，如果你单击 "立即格式化"，则会再次使用 FFU 图像刷新 SD 卡，因为 Format 操作会影响更新过程，并且设备将无法更新。
 
 
-使用 IoT 面板可以轻松地设置新设备。 有关如何入门的详细说明，请参阅[入门页。](https://docs.microsoft.com/en-us/windows/iot-core/getstarted)
+使用 IoT 面板可以轻松地设置新设备。 有关如何入门的详细说明，请参阅[入门页。](https://docs.microsoft.com/windows/iot-core/getstarted)
 
 ![IoT 面板设置页面](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
 

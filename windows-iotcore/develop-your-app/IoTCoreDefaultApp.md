@@ -5,12 +5,12 @@ ms.topic: article
 description: 了解 Windows 10 IoT Core 默认应用及其功能。
 keywords: windows iot，windows 10 iot core，默认应用
 ms.custom: RS5
-ms.openlocfilehash: a0e26d54f1c6694cd408de6f54cf0c0fba263156
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 730e8c386b328efdbb66092121980a42e066679c
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918251"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721492"
 ---
 # <a name="windows-10-iot-core-default-app-overview"></a>Windows 10 IoT Core 默认应用概述
 
@@ -21,21 +21,21 @@ ms.locfileid: "72918251"
 
 ![IoT Core 默认应用的屏幕截图](../media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
 
-此应用程序的目的不仅是为了让你在首次启动 Windows 10 IoT Core 时，为你提供与交互的友好 shell，但我们在[此处](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)提供了此应用程序的代码，以便你可以在自己的 cu 上插入和使用这些功能。stom 应用程序。
+此应用程序的目的不仅是为了让你在首次启动 Windows 10 IoT Core 时，为你提供与交互的友好 shell，但我们在[此处](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)提供了此应用程序的代码，以便你可以在自己的自定义应用程序上插入和使用这些功能。
 
 本文将为你提供 Windows 10 IoT Core 默认应用提供的不同功能的说明，以及你可以如何对自己的应用程序使用这些不同功能。
 
 ## <a name="leveraging-the-iot-core-default-app"></a>利用 IoT 核心默认应用 
 
 > [!IMPORTANT]
-> 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
+> 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
 
 IoT Core 默认应用可进行自定义和扩展，也可将源代码用作你自己的应用的示例。 若要亲自尝试此问题，请下载我们的示例的 zip，或在[此处](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)查看 IoT Core 默认应用的代码。 如有任何问题，请在[此处](https://github.com/Microsoft/Windows-iotcore-samples/issues)提出有关示例存储库的问题。
 
 如下面的[设置部分](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
 )中所示，在某些情况下，你可以代表最终用户配置客户系统上的默认设置和功能。 但是，如果在默认情况下启用这些设置和功能，或者诊断高于 "基本" 设置，则必须执行以下操作：
 
-* 通知最终用户这些功能已启用，并向最终用户提供[此处](http://go.microsoft.com/fwlink/?LinkId=521839)指向 Microsoft 隐私声明网页的链接。 
+* 通知最终用户这些功能已启用，并向最终用户提供[此处](https://go.microsoft.com/fwlink/?LinkId=521839)指向 Microsoft 隐私声明网页的链接。 
 * 在默认情况下（根据适用法律要求）启用此类功能的安全同意。
 * 向最终用户提供将诊断设置更改回 "基本" 设置的能力。
 * 如果你启用 Microsoft 帐户，并且你有权访问最终用户数据，则在最终用户删除 Microsoft 帐户时，你必须在设备上启用所有最终用户的 Microsoft 帐户数据的同时删除。 
@@ -45,7 +45,7 @@ IoT Core 默认应用可进行自定义和扩展，也可将源代码用作你�
 IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要求提供默认语言和 wi-fi 设置。 从这里开始，你的应用程序必须与 GDPR 兼容，你必须有一个诊断数据屏幕，并且如果你计划跟踪位置，则还需要具有位置权限屏幕。 下面显示了二者的示例。 
 
 oobe](../media/IoTCoreDefaultApp/OOBE3.jpg)
-的 ![位置设置![OOBE 的诊断设置](../media/IoTCoreDefaultApp/OOBE4.jpg)
+的 ![位置设置 ![OOBE 的诊断设置](../media/IoTCoreDefaultApp/OOBE4.jpg)
 
 ## <a name="command-bar"></a>命令栏
 命令栏是位于屏幕底部的持久性 horizonatal 栏。 这提供了对以下有趣的轻松访问：
