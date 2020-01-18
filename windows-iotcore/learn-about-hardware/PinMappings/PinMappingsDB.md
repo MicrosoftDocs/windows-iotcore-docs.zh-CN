@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解 Dragonboard 的 pin 映射功能。
 keywords: windows iot，Dragonboard，pin 映射，GPIO
-ms.openlocfilehash: 170b14ce640fed33754f90bd4df188f4629f04c2
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: f0a811c05b371d9f7a85c1f86b0f69de4d750487
+ms.sourcegitcommit: 0fa10fafb13788496674d13e0ae810a6d93e3483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917965"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258551"
 ---
 # <a name="dragonboard-pin-mappings"></a>DragonBoard 引脚映射
 
@@ -210,7 +210,7 @@ SPI 时钟固定在 4.8mhz。 请求的 SPI 时钟将被忽略。
 
 有关如何在总线 **SPI0** 上执行 SPI 写入的示例如下所示：
 
-```C3
+```C#
 using Windows.Devices.Enumeration;
 using Windows.Devices.Spi;
 
