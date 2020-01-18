@@ -4,55 +4,55 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解 Dragonboard 的 pin 映射功能。
 keywords: windows iot，Dragonboard，pin 映射，GPIO
-ms.openlocfilehash: 170b14ce640fed33754f90bd4df188f4629f04c2
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: f0a811c05b371d9f7a85c1f86b0f69de4d750487
+ms.sourcegitcommit: 0fa10fafb13788496674d13e0ae810a6d93e3483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917965"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258551"
 ---
-# <a name="dragonboard-pin-mappings"></a><span data-ttu-id="4fba4-104">DragonBoard 引脚映射</span><span class="sxs-lookup"><span data-stu-id="4fba4-104">Dragonboard Pin Mappings</span></span>
+# <a name="dragonboard-pin-mappings"></a><span data-ttu-id="8a337-104">DragonBoard 引脚映射</span><span class="sxs-lookup"><span data-stu-id="8a337-104">Dragonboard Pin Mappings</span></span>
 
 ![Dragonboard 针标头](../../media/PinMappingsDB/DB_Pinout.png)
 
-<span data-ttu-id="4fba4-106">Dragonboard 的硬件接口通过开发板上的 40 排针公开。</span><span class="sxs-lookup"><span data-stu-id="4fba4-106">Hardware interfaces for the Dragonboard are exposed through the 40-pin header on the board.</span></span> <span data-ttu-id="4fba4-107">功能包括：</span><span class="sxs-lookup"><span data-stu-id="4fba4-107">Functionality includes:</span></span>
+<span data-ttu-id="8a337-106">Dragonboard 的硬件接口通过开发板上的 40 排针公开。</span><span class="sxs-lookup"><span data-stu-id="8a337-106">Hardware interfaces for the Dragonboard are exposed through the 40-pin header on the board.</span></span> <span data-ttu-id="8a337-107">功能包括：</span><span class="sxs-lookup"><span data-stu-id="8a337-107">Functionality includes:</span></span>
 
-* <span data-ttu-id="4fba4-108">**11x** - GPIO 引脚</span><span class="sxs-lookup"><span data-stu-id="4fba4-108">**11x** - GPIO pins</span></span>
-* <span data-ttu-id="4fba4-109">**2x** - 串行 UART</span><span class="sxs-lookup"><span data-stu-id="4fba4-109">**2x** - Serial UARTs</span></span>
-* <span data-ttu-id="4fba4-110">**1x** - SPI 总线</span><span class="sxs-lookup"><span data-stu-id="4fba4-110">**1x** - SPI bus</span></span>
-* <span data-ttu-id="4fba4-111">**2x** - I2C 总线</span><span class="sxs-lookup"><span data-stu-id="4fba4-111">**2x** - I2C bus</span></span>
-* <span data-ttu-id="4fba4-112">**1x** - 5V 电源引脚</span><span class="sxs-lookup"><span data-stu-id="4fba4-112">**1x** - 5V power pin</span></span>
-* <span data-ttu-id="4fba4-113">**1x** - 1.8V 电源引脚</span><span class="sxs-lookup"><span data-stu-id="4fba4-113">**1x** - 1.8V power pin</span></span>
-* <span data-ttu-id="4fba4-114">**4x** - 接地引脚</span><span class="sxs-lookup"><span data-stu-id="4fba4-114">**4x** - Ground pins</span></span>
+* <span data-ttu-id="8a337-108">**11x** - GPIO 引脚</span><span class="sxs-lookup"><span data-stu-id="8a337-108">**11x** - GPIO pins</span></span>
+* <span data-ttu-id="8a337-109">**2x** - 串行 UART</span><span class="sxs-lookup"><span data-stu-id="8a337-109">**2x** - Serial UARTs</span></span>
+* <span data-ttu-id="8a337-110">**1x** - SPI 总线</span><span class="sxs-lookup"><span data-stu-id="8a337-110">**1x** - SPI bus</span></span>
+* <span data-ttu-id="8a337-111">**2x** - I2C 总线</span><span class="sxs-lookup"><span data-stu-id="8a337-111">**2x** - I2C bus</span></span>
+* <span data-ttu-id="8a337-112">**1x** - 5V 电源引脚</span><span class="sxs-lookup"><span data-stu-id="8a337-112">**1x** - 5V power pin</span></span>
+* <span data-ttu-id="8a337-113">**1x** - 1.8V 电源引脚</span><span class="sxs-lookup"><span data-stu-id="8a337-113">**1x** - 1.8V power pin</span></span>
+* <span data-ttu-id="8a337-114">**4x** - 接地引脚</span><span class="sxs-lookup"><span data-stu-id="8a337-114">**4x** - Ground pins</span></span>
 
-<span data-ttu-id="4fba4-115">请注意，Dragonboard 在所有 IO 引脚上使用 1.8 V 逻辑级别。</span><span class="sxs-lookup"><span data-stu-id="4fba4-115">Note that the Dragonboard uses 1.8V logic levels on all IO pins.</span></span> 
+<span data-ttu-id="8a337-115">请注意，Dragonboard 在所有 IO 引脚上使用 1.8 V 逻辑级别。</span><span class="sxs-lookup"><span data-stu-id="8a337-115">Note that the Dragonboard uses 1.8V logic levels on all IO pins.</span></span> 
 
-## <a name="gpio-pins"></a><span data-ttu-id="4fba4-116">GPIO Pin</span><span class="sxs-lookup"><span data-stu-id="4fba4-116">GPIO Pins</span></span>
+## <a name="gpio-pins"></a><span data-ttu-id="8a337-116">GPIO Pin</span><span class="sxs-lookup"><span data-stu-id="8a337-116">GPIO Pins</span></span>
 
-<span data-ttu-id="4fba4-117">让我们看看此设备上的 GPIO 可用。</span><span class="sxs-lookup"><span data-stu-id="4fba4-117">Let's look at the GPIO available on this device.</span></span>
+<span data-ttu-id="8a337-117">让我们看看此设备上的 GPIO 可用。</span><span class="sxs-lookup"><span data-stu-id="8a337-117">Let's look at the GPIO available on this device.</span></span>
 
-### <a name="gpio-pin-table"></a><span data-ttu-id="4fba4-118">GPIO 固定表</span><span class="sxs-lookup"><span data-stu-id="4fba4-118">GPIO Pin Table</span></span>
+### <a name="gpio-pin-table"></a><span data-ttu-id="8a337-118">GPIO 固定表</span><span class="sxs-lookup"><span data-stu-id="8a337-118">GPIO Pin Table</span></span>
 
-<span data-ttu-id="4fba4-119">以下 GPIO 引脚可通过 API 访问：</span><span class="sxs-lookup"><span data-stu-id="4fba4-119">The following GPIO pins are accessible through APIs:</span></span>
+<span data-ttu-id="8a337-119">以下 GPIO 引脚可通过 API 访问：</span><span class="sxs-lookup"><span data-stu-id="8a337-119">The following GPIO pins are accessible through APIs:</span></span>
 
-> | <span data-ttu-id="4fba4-120">GPIO#</span><span class="sxs-lookup"><span data-stu-id="4fba4-120">GPIO#</span></span> | <span data-ttu-id="4fba4-121">排针</span><span class="sxs-lookup"><span data-stu-id="4fba4-121">Header Pin</span></span>         |
+> | <span data-ttu-id="8a337-120">GPIO#</span><span class="sxs-lookup"><span data-stu-id="8a337-120">GPIO#</span></span> | <span data-ttu-id="8a337-121">排针</span><span class="sxs-lookup"><span data-stu-id="8a337-121">Header Pin</span></span>         |
 > |-------|--------------------|
-> | <span data-ttu-id="4fba4-122">36</span><span class="sxs-lookup"><span data-stu-id="4fba4-122">36</span></span>    | <span data-ttu-id="4fba4-123">23</span><span class="sxs-lookup"><span data-stu-id="4fba4-123">23</span></span>                 |
-> | <span data-ttu-id="4fba4-124">12</span><span class="sxs-lookup"><span data-stu-id="4fba4-124">12</span></span>    | <span data-ttu-id="4fba4-125">24</span><span class="sxs-lookup"><span data-stu-id="4fba4-125">24</span></span>                 |
-> | <span data-ttu-id="4fba4-126">13</span><span class="sxs-lookup"><span data-stu-id="4fba4-126">13</span></span>    | <span data-ttu-id="4fba4-127">25</span><span class="sxs-lookup"><span data-stu-id="4fba4-127">25</span></span>                 |
-> | <span data-ttu-id="4fba4-128">69</span><span class="sxs-lookup"><span data-stu-id="4fba4-128">69</span></span>    | <span data-ttu-id="4fba4-129">26</span><span class="sxs-lookup"><span data-stu-id="4fba4-129">26</span></span>                 |
-> | <span data-ttu-id="4fba4-130">115</span><span class="sxs-lookup"><span data-stu-id="4fba4-130">115</span></span>   | <span data-ttu-id="4fba4-131">27</span><span class="sxs-lookup"><span data-stu-id="4fba4-131">27</span></span>                 |
-> | <span data-ttu-id="4fba4-132">24</span><span class="sxs-lookup"><span data-stu-id="4fba4-132">24</span></span>    | <span data-ttu-id="4fba4-133">29</span><span class="sxs-lookup"><span data-stu-id="4fba4-133">29</span></span>                 |
-> | <span data-ttu-id="4fba4-134">25</span><span class="sxs-lookup"><span data-stu-id="4fba4-134">25</span></span>    | <span data-ttu-id="4fba4-135">30</span><span class="sxs-lookup"><span data-stu-id="4fba4-135">30</span></span>                 |
-> | <span data-ttu-id="4fba4-136">35</span><span class="sxs-lookup"><span data-stu-id="4fba4-136">35</span></span>    | <span data-ttu-id="4fba4-137">31</span><span class="sxs-lookup"><span data-stu-id="4fba4-137">31</span></span>                 |
-> | <span data-ttu-id="4fba4-138">34</span><span class="sxs-lookup"><span data-stu-id="4fba4-138">34</span></span>    | <span data-ttu-id="4fba4-139">32</span><span class="sxs-lookup"><span data-stu-id="4fba4-139">32</span></span>                 |
-> | <span data-ttu-id="4fba4-140">28</span><span class="sxs-lookup"><span data-stu-id="4fba4-140">28</span></span>    | <span data-ttu-id="4fba4-141">33</span><span class="sxs-lookup"><span data-stu-id="4fba4-141">33</span></span>                 |
-> | <span data-ttu-id="4fba4-142">33</span><span class="sxs-lookup"><span data-stu-id="4fba4-142">33</span></span>    | <span data-ttu-id="4fba4-143">34</span><span class="sxs-lookup"><span data-stu-id="4fba4-143">34</span></span>                 |
-> | <span data-ttu-id="4fba4-144">21</span><span class="sxs-lookup"><span data-stu-id="4fba4-144">21</span></span>    | <span data-ttu-id="4fba4-145">用户 LED 1</span><span class="sxs-lookup"><span data-stu-id="4fba4-145">User LED 1</span></span>         | 
-> | <span data-ttu-id="4fba4-146">120</span><span class="sxs-lookup"><span data-stu-id="4fba4-146">120</span></span>   | <span data-ttu-id="4fba4-147">用户 LED 2</span><span class="sxs-lookup"><span data-stu-id="4fba4-147">User LED 2</span></span>         |         
+> | <span data-ttu-id="8a337-122">36</span><span class="sxs-lookup"><span data-stu-id="8a337-122">36</span></span>    | <span data-ttu-id="8a337-123">23</span><span class="sxs-lookup"><span data-stu-id="8a337-123">23</span></span>                 |
+> | <span data-ttu-id="8a337-124">12</span><span class="sxs-lookup"><span data-stu-id="8a337-124">12</span></span>    | <span data-ttu-id="8a337-125">24</span><span class="sxs-lookup"><span data-stu-id="8a337-125">24</span></span>                 |
+> | <span data-ttu-id="8a337-126">13</span><span class="sxs-lookup"><span data-stu-id="8a337-126">13</span></span>    | <span data-ttu-id="8a337-127">25</span><span class="sxs-lookup"><span data-stu-id="8a337-127">25</span></span>                 |
+> | <span data-ttu-id="8a337-128">69</span><span class="sxs-lookup"><span data-stu-id="8a337-128">69</span></span>    | <span data-ttu-id="8a337-129">26</span><span class="sxs-lookup"><span data-stu-id="8a337-129">26</span></span>                 |
+> | <span data-ttu-id="8a337-130">115</span><span class="sxs-lookup"><span data-stu-id="8a337-130">115</span></span>   | <span data-ttu-id="8a337-131">27</span><span class="sxs-lookup"><span data-stu-id="8a337-131">27</span></span>                 |
+> | <span data-ttu-id="8a337-132">24</span><span class="sxs-lookup"><span data-stu-id="8a337-132">24</span></span>    | <span data-ttu-id="8a337-133">29</span><span class="sxs-lookup"><span data-stu-id="8a337-133">29</span></span>                 |
+> | <span data-ttu-id="8a337-134">25</span><span class="sxs-lookup"><span data-stu-id="8a337-134">25</span></span>    | <span data-ttu-id="8a337-135">30</span><span class="sxs-lookup"><span data-stu-id="8a337-135">30</span></span>                 |
+> | <span data-ttu-id="8a337-136">35</span><span class="sxs-lookup"><span data-stu-id="8a337-136">35</span></span>    | <span data-ttu-id="8a337-137">31</span><span class="sxs-lookup"><span data-stu-id="8a337-137">31</span></span>                 |
+> | <span data-ttu-id="8a337-138">34</span><span class="sxs-lookup"><span data-stu-id="8a337-138">34</span></span>    | <span data-ttu-id="8a337-139">32</span><span class="sxs-lookup"><span data-stu-id="8a337-139">32</span></span>                 |
+> | <span data-ttu-id="8a337-140">28</span><span class="sxs-lookup"><span data-stu-id="8a337-140">28</span></span>    | <span data-ttu-id="8a337-141">33</span><span class="sxs-lookup"><span data-stu-id="8a337-141">33</span></span>                 |
+> | <span data-ttu-id="8a337-142">33</span><span class="sxs-lookup"><span data-stu-id="8a337-142">33</span></span>    | <span data-ttu-id="8a337-143">34</span><span class="sxs-lookup"><span data-stu-id="8a337-143">34</span></span>                 |
+> | <span data-ttu-id="8a337-144">21</span><span class="sxs-lookup"><span data-stu-id="8a337-144">21</span></span>    | <span data-ttu-id="8a337-145">用户 LED 1</span><span class="sxs-lookup"><span data-stu-id="8a337-145">User LED 1</span></span>         | 
+> | <span data-ttu-id="8a337-146">120</span><span class="sxs-lookup"><span data-stu-id="8a337-146">120</span></span>   | <span data-ttu-id="8a337-147">用户 LED 2</span><span class="sxs-lookup"><span data-stu-id="8a337-147">User LED 2</span></span>         |         
 
 
-<span data-ttu-id="4fba4-148">例如，以下代码将**GPIO 35**打开为输出，并在 pin 上写入数字 "**1**"：</span><span class="sxs-lookup"><span data-stu-id="4fba4-148">As an example, the following code opens **GPIO 35** as an output and writes a digital '**1**' out on the pin:</span></span>
+<span data-ttu-id="8a337-148">例如，以下代码将**GPIO 35**打开为输出，并在 pin 上写入数字 "**1**"：</span><span class="sxs-lookup"><span data-stu-id="8a337-148">As an example, the following code opens **GPIO 35** as an output and writes a digital '**1**' out on the pin:</span></span>
          
 ```C#
 using Windows.Devices.Gpio;
@@ -67,32 +67,32 @@ public void GPIO()
 }
 ```
 
-### <a name="gpio-issues"></a><span data-ttu-id="4fba4-149">GPIO 问题</span><span class="sxs-lookup"><span data-stu-id="4fba4-149">GPIO Issues</span></span>
+### <a name="gpio-issues"></a><span data-ttu-id="8a337-149">GPIO 问题</span><span class="sxs-lookup"><span data-stu-id="8a337-149">GPIO Issues</span></span>
 
-* <span data-ttu-id="4fba4-150">输出在 GPIO 24 上不起作用。</span><span class="sxs-lookup"><span data-stu-id="4fba4-150">Output doesn't work on GPIO 24.</span></span> <span data-ttu-id="4fba4-151">输入工作正常。</span><span class="sxs-lookup"><span data-stu-id="4fba4-151">Input works fine.</span></span>
-* <span data-ttu-id="4fba4-152">引脚会在启动时配置为 InputPullDown，但在首次打开时将更改为 Input (floating)</span><span class="sxs-lookup"><span data-stu-id="4fba4-152">Pins are configured as InputPullDown at boot, but will change to Input (floating) the first time they are opened</span></span>
-* <span data-ttu-id="4fba4-153">关闭时，引脚不会还原为默认状态</span><span class="sxs-lookup"><span data-stu-id="4fba4-153">Pins do not revert to their default state when closed</span></span>
-* <span data-ttu-id="4fba4-154">当多个引脚上启用了中断时，可能会看到假中断</span><span class="sxs-lookup"><span data-stu-id="4fba4-154">Spurious interrupts may be seen when interrupts are enabled on multiple pins</span></span>
-
-
-## <a name="serial-uart"></a><span data-ttu-id="4fba4-155">串行 UART</span><span class="sxs-lookup"><span data-stu-id="4fba4-155">Serial UART</span></span>
-
-<span data-ttu-id="4fba4-156">Dragonboard 上提供了两个串行 UART：**UART0** 和 **UART1**</span><span class="sxs-lookup"><span data-stu-id="4fba4-156">There are two Serial UARTS available on the Dragonboard **UART0** and **UART1**</span></span>
-
-<span data-ttu-id="4fba4-157">**UART0** 具有标准 **UART0 TX** 和 **UART0 RX** 线以及流控制信号 **UART0 CTS** 和 **UART0 RTS**。</span><span class="sxs-lookup"><span data-stu-id="4fba4-157">**UART0** has the standard **UART0 TX** and **UART0 RX** lines, along with flow control signals **UART0 CTS** and **UART0 RTS**.</span></span>
-
-* <span data-ttu-id="4fba4-158">Pin 5- **UART0 TX**</span><span class="sxs-lookup"><span data-stu-id="4fba4-158">Pin 5  - **UART0 TX**</span></span>
-* <span data-ttu-id="4fba4-159">引脚 7- **UART0 RX**</span><span class="sxs-lookup"><span data-stu-id="4fba4-159">Pin 7  - **UART0 RX**</span></span>
-* <span data-ttu-id="4fba4-160">Pin 3- **UART0 CTS**</span><span class="sxs-lookup"><span data-stu-id="4fba4-160">Pin 3 - **UART0 CTS**</span></span>
-* <span data-ttu-id="4fba4-161">Pin 9- **UART0 RTS**</span><span class="sxs-lookup"><span data-stu-id="4fba4-161">Pin 9 - **UART0 RTS**</span></span>
+* <span data-ttu-id="8a337-150">输出在 GPIO 24 上不起作用。</span><span class="sxs-lookup"><span data-stu-id="8a337-150">Output doesn't work on GPIO 24.</span></span> <span data-ttu-id="8a337-151">输入工作正常。</span><span class="sxs-lookup"><span data-stu-id="8a337-151">Input works fine.</span></span>
+* <span data-ttu-id="8a337-152">引脚会在启动时配置为 InputPullDown，但在首次打开时将更改为 Input (floating)</span><span class="sxs-lookup"><span data-stu-id="8a337-152">Pins are configured as InputPullDown at boot, but will change to Input (floating) the first time they are opened</span></span>
+* <span data-ttu-id="8a337-153">关闭时，引脚不会还原为默认状态</span><span class="sxs-lookup"><span data-stu-id="8a337-153">Pins do not revert to their default state when closed</span></span>
+* <span data-ttu-id="8a337-154">当多个引脚上启用了中断时，可能会看到假中断</span><span class="sxs-lookup"><span data-stu-id="8a337-154">Spurious interrupts may be seen when interrupts are enabled on multiple pins</span></span>
 
 
-<span data-ttu-id="4fba4-162">**UART1** 仅包含 **UART1 TX** 和 **UART1 RX** 线。</span><span class="sxs-lookup"><span data-stu-id="4fba4-162">**UART1** includes just the **UART1 TX** and **UART1 RX** lines.</span></span>
+## <a name="serial-uart"></a><span data-ttu-id="8a337-155">串行 UART</span><span class="sxs-lookup"><span data-stu-id="8a337-155">Serial UART</span></span>
 
-* <span data-ttu-id="4fba4-163">Pin 11- **UART1 TX**</span><span class="sxs-lookup"><span data-stu-id="4fba4-163">Pin 11  - **UART1 TX**</span></span>
-* <span data-ttu-id="4fba4-164">Pin 13- **UART1 RX**</span><span class="sxs-lookup"><span data-stu-id="4fba4-164">Pin 13  - **UART1 RX**</span></span>
+<span data-ttu-id="8a337-156">Dragonboard 上提供了两个串行 UART：**UART0** 和 **UART1**</span><span class="sxs-lookup"><span data-stu-id="8a337-156">There are two Serial UARTS available on the Dragonboard **UART0** and **UART1**</span></span>
 
-<span data-ttu-id="4fba4-165">以下示例初始化 **UART1** 并依次执行写入和读取操作：</span><span class="sxs-lookup"><span data-stu-id="4fba4-165">The example below initializes **UART1** and performs a write followed by a read:</span></span>
+<span data-ttu-id="8a337-157">**UART0** 具有标准 **UART0 TX** 和 **UART0 RX** 线以及流控制信号 **UART0 CTS** 和 **UART0 RTS**。</span><span class="sxs-lookup"><span data-stu-id="8a337-157">**UART0** has the standard **UART0 TX** and **UART0 RX** lines, along with flow control signals **UART0 CTS** and **UART0 RTS**.</span></span>
+
+* <span data-ttu-id="8a337-158">Pin 5- **UART0 TX**</span><span class="sxs-lookup"><span data-stu-id="8a337-158">Pin 5  - **UART0 TX**</span></span>
+* <span data-ttu-id="8a337-159">引脚 7- **UART0 RX**</span><span class="sxs-lookup"><span data-stu-id="8a337-159">Pin 7  - **UART0 RX**</span></span>
+* <span data-ttu-id="8a337-160">Pin 3- **UART0 CTS**</span><span class="sxs-lookup"><span data-stu-id="8a337-160">Pin 3 - **UART0 CTS**</span></span>
+* <span data-ttu-id="8a337-161">Pin 9- **UART0 RTS**</span><span class="sxs-lookup"><span data-stu-id="8a337-161">Pin 9 - **UART0 RTS**</span></span>
+
+
+<span data-ttu-id="8a337-162">**UART1** 仅包含 **UART1 TX** 和 **UART1 RX** 线。</span><span class="sxs-lookup"><span data-stu-id="8a337-162">**UART1** includes just the **UART1 TX** and **UART1 RX** lines.</span></span>
+
+* <span data-ttu-id="8a337-163">Pin 11- **UART1 TX**</span><span class="sxs-lookup"><span data-stu-id="8a337-163">Pin 11  - **UART1 TX**</span></span>
+* <span data-ttu-id="8a337-164">Pin 13- **UART1 RX**</span><span class="sxs-lookup"><span data-stu-id="8a337-164">Pin 13  - **UART1 RX**</span></span>
+
+<span data-ttu-id="8a337-165">以下示例初始化 **UART1** 并依次执行写入和读取操作：</span><span class="sxs-lookup"><span data-stu-id="8a337-165">The example below initializes **UART1** and performs a write followed by a read:</span></span>
 
 ```C#
 using Windows.Storage.Streams;
@@ -127,9 +127,9 @@ public async void Serial()
 }
 ```
 > [!NOTE]
-> <span data-ttu-id="4fba4-166">Visual Studio 2017 在清单设计器（appxmanifest.xml 文件的可视化编辑器）中有一个已知 bug，该 bug 会影响 serialcommunication 功能。</span><span class="sxs-lookup"><span data-stu-id="4fba4-166">Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.</span></span>  <span data-ttu-id="4fba4-167">如果 appxmanifest.xml 添加 serialcommunication 功能，则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml （设备 xml 子级将丢失）。</span><span class="sxs-lookup"><span data-stu-id="4fba4-167">If your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child will be lost).</span></span>  <span data-ttu-id="4fba4-168">若要解决此问题，请右键单击 appxmanifest.xml，然后从上下文菜单中选择 "查看代码"，手动编辑 appxmanifest.xml。</span><span class="sxs-lookup"><span data-stu-id="4fba4-168">You can workaround this problem by hand editting the appxmanifest by right-clicking your appxmanifest and selecting View Code from the context menu.</span></span>
+> <span data-ttu-id="8a337-166">Visual Studio 2017 在清单设计器（appxmanifest.xml 文件的可视化编辑器）中有一个已知 bug，该 bug 会影响 serialcommunication 功能。</span><span class="sxs-lookup"><span data-stu-id="8a337-166">Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.</span></span>  <span data-ttu-id="8a337-167">如果 appxmanifest.xml 添加 serialcommunication 功能，则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml （设备 xml 子级将丢失）。</span><span class="sxs-lookup"><span data-stu-id="8a337-167">If your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child will be lost).</span></span>  <span data-ttu-id="8a337-168">若要解决此问题，请右键单击 appxmanifest.xml，然后从上下文菜单中选择 "查看代码"，手动编辑 appxmanifest.xml。</span><span class="sxs-lookup"><span data-stu-id="8a337-168">You can workaround this problem by hand editting the appxmanifest by right-clicking your appxmanifest and selecting View Code from the context menu.</span></span>
 
-<span data-ttu-id="4fba4-169">必须将以下功能添加到 UWP 项目中的**appxmanifest.xml**文件，才能运行串行 UART 代码：</span><span class="sxs-lookup"><span data-stu-id="4fba4-169">You must add the following capability to the **Package.appxmanifest** file in your UWP project to run Serial UART code:</span></span>
+<span data-ttu-id="8a337-169">必须将以下功能添加到 UWP 项目中的**appxmanifest.xml**文件，才能运行串行 UART 代码：</span><span class="sxs-lookup"><span data-stu-id="8a337-169">You must add the following capability to the **Package.appxmanifest** file in your UWP project to run Serial UART code:</span></span>
 
 ```xml
   <Capabilities>
@@ -141,25 +141,25 @@ public async void Serial()
   </Capabilities>
 ```
 
-## <a name="i2c-bus"></a><span data-ttu-id="4fba4-170">I2C 总线</span><span class="sxs-lookup"><span data-stu-id="4fba4-170">I2C Bus</span></span>
+## <a name="i2c-bus"></a><span data-ttu-id="8a337-170">I2C 总线</span><span class="sxs-lookup"><span data-stu-id="8a337-170">I2C Bus</span></span>
 
-<span data-ttu-id="4fba4-171">让我们看看此设备上提供的 I2C 总线。</span><span class="sxs-lookup"><span data-stu-id="4fba4-171">Let's look at the I2C busses available on this device.</span></span>
+<span data-ttu-id="8a337-171">让我们看看此设备上提供的 I2C 总线。</span><span class="sxs-lookup"><span data-stu-id="8a337-171">Let's look at the I2C busses available on this device.</span></span>
 
-### <a name="i2c-pins"></a><span data-ttu-id="4fba4-172">I2C 引脚</span><span class="sxs-lookup"><span data-stu-id="4fba4-172">I2C Pins</span></span>
+### <a name="i2c-pins"></a><span data-ttu-id="8a337-172">I2C 引脚</span><span class="sxs-lookup"><span data-stu-id="8a337-172">I2C Pins</span></span>
 
-<span data-ttu-id="4fba4-173">在排针上公开的 **I2C0**，带有 **SDA** 和 **SCL** 两条线</span><span class="sxs-lookup"><span data-stu-id="4fba4-173">**I2C0** exposed on the pin header with two lines **SDA** and **SCL**</span></span>
+<span data-ttu-id="8a337-173">在排针上公开的 **I2C0**，带有 **SDA** 和 **SCL** 两条线</span><span class="sxs-lookup"><span data-stu-id="8a337-173">**I2C0** exposed on the pin header with two lines **SDA** and **SCL**</span></span>
 
-* <span data-ttu-id="4fba4-174">引脚 17 - **I2C0 SDA**</span><span class="sxs-lookup"><span data-stu-id="4fba4-174">Pin 17 - **I2C0 SDA**</span></span>
-* <span data-ttu-id="4fba4-175">引脚 15 - **I2C0 SCL**</span><span class="sxs-lookup"><span data-stu-id="4fba4-175">Pin 15 - **I2C0 SCL**</span></span>
+* <span data-ttu-id="8a337-174">引脚 17 - **I2C0 SDA**</span><span class="sxs-lookup"><span data-stu-id="8a337-174">Pin 17 - **I2C0 SDA**</span></span>
+* <span data-ttu-id="8a337-175">引脚 15 - **I2C0 SCL**</span><span class="sxs-lookup"><span data-stu-id="8a337-175">Pin 15 - **I2C0 SCL**</span></span>
 
-<span data-ttu-id="4fba4-176">在排针上公开的 **I2C1**，带有 **SDA** 和 **SCL** 两条线</span><span class="sxs-lookup"><span data-stu-id="4fba4-176">**I2C1** exposed on the pin header with two lines **SDA** and **SCL**</span></span>
+<span data-ttu-id="8a337-176">在排针上公开的 **I2C1**，带有 **SDA** 和 **SCL** 两条线</span><span class="sxs-lookup"><span data-stu-id="8a337-176">**I2C1** exposed on the pin header with two lines **SDA** and **SCL**</span></span>
 
-* <span data-ttu-id="4fba4-177">引脚 21 - **I2C1 SDA**</span><span class="sxs-lookup"><span data-stu-id="4fba4-177">Pin 21 - **I2C1 SDA**</span></span>
-* <span data-ttu-id="4fba4-178">引脚 19 - **I2C1 SCL**</span><span class="sxs-lookup"><span data-stu-id="4fba4-178">Pin 19 - **I2C1 SCL**</span></span>
+* <span data-ttu-id="8a337-177">引脚 21 - **I2C1 SDA**</span><span class="sxs-lookup"><span data-stu-id="8a337-177">Pin 21 - **I2C1 SDA**</span></span>
+* <span data-ttu-id="8a337-178">引脚 19 - **I2C1 SCL**</span><span class="sxs-lookup"><span data-stu-id="8a337-178">Pin 19 - **I2C1 SCL**</span></span>
 
-### <a name="i2c-sample"></a><span data-ttu-id="4fba4-179">I2C 示例</span><span class="sxs-lookup"><span data-stu-id="4fba4-179">I2C Sample</span></span>
+### <a name="i2c-sample"></a><span data-ttu-id="8a337-179">I2C 示例</span><span class="sxs-lookup"><span data-stu-id="8a337-179">I2C Sample</span></span>
 
-<span data-ttu-id="4fba4-180">以下示例将初始化 **I2C0** 并将数据写入地址为 **0x40** 的 I2C 设备：</span><span class="sxs-lookup"><span data-stu-id="4fba4-180">The example below initializes **I2C0** and writes data to an I2C device with address **0x40**:</span></span>
+<span data-ttu-id="8a337-180">以下示例将初始化 **I2C0** 并将数据写入地址为 **0x40** 的 I2C 设备：</span><span class="sxs-lookup"><span data-stu-id="8a337-180">The example below initializes **I2C0** and writes data to an I2C device with address **0x40**:</span></span>
 
 ```C#
 using Windows.Devices.Enumeration;
@@ -188,29 +188,29 @@ public async void I2C()
 ```
 
 
-## <a name="spi-bus"></a><span data-ttu-id="4fba4-181">SPI 总线</span><span class="sxs-lookup"><span data-stu-id="4fba4-181">SPI Bus</span></span>
+## <a name="spi-bus"></a><span data-ttu-id="8a337-181">SPI 总线</span><span class="sxs-lookup"><span data-stu-id="8a337-181">SPI Bus</span></span>
 
-<span data-ttu-id="4fba4-182">让我们看看此设备上可用的 SPI 总线。</span><span class="sxs-lookup"><span data-stu-id="4fba4-182">Let's look at the SPI bus available on this device.</span></span>
+<span data-ttu-id="8a337-182">让我们看看此设备上可用的 SPI 总线。</span><span class="sxs-lookup"><span data-stu-id="8a337-182">Let's look at the SPI bus available on this device.</span></span>
 
-### <a name="spi-pins"></a><span data-ttu-id="4fba4-183">SPI Pin</span><span class="sxs-lookup"><span data-stu-id="4fba4-183">SPI Pins</span></span>
+### <a name="spi-pins"></a><span data-ttu-id="8a337-183">SPI Pin</span><span class="sxs-lookup"><span data-stu-id="8a337-183">SPI Pins</span></span>
 
-<span data-ttu-id="4fba4-184">DB 上提供一个 SPI 控制器 **SPI0**</span><span class="sxs-lookup"><span data-stu-id="4fba4-184">There is one SPI controller **SPI0** available on the DB</span></span>
+<span data-ttu-id="8a337-184">DB 上提供一个 SPI 控制器 **SPI0**</span><span class="sxs-lookup"><span data-stu-id="8a337-184">There is one SPI controller **SPI0** available on the DB</span></span>
 
-* <span data-ttu-id="4fba4-185">Pin 10- **SPI0 MISO**</span><span class="sxs-lookup"><span data-stu-id="4fba4-185">Pin 10 - **SPI0 MISO**</span></span>
-* <span data-ttu-id="4fba4-186">Pin 14- **SPI0 MOSI**</span><span class="sxs-lookup"><span data-stu-id="4fba4-186">Pin 14 - **SPI0 MOSI**</span></span>
-* <span data-ttu-id="4fba4-187">引脚 8 - **SPI0 SCLK**</span><span class="sxs-lookup"><span data-stu-id="4fba4-187">Pin 8 - **SPI0 SCLK**</span></span>
-* <span data-ttu-id="4fba4-188">引脚 12 - **SPI0 CS0**</span><span class="sxs-lookup"><span data-stu-id="4fba4-188">Pin 12 - **SPI0 CS0**</span></span>
+* <span data-ttu-id="8a337-185">Pin 10- **SPI0 MISO**</span><span class="sxs-lookup"><span data-stu-id="8a337-185">Pin 10 - **SPI0 MISO**</span></span>
+* <span data-ttu-id="8a337-186">Pin 14- **SPI0 MOSI**</span><span class="sxs-lookup"><span data-stu-id="8a337-186">Pin 14 - **SPI0 MOSI**</span></span>
+* <span data-ttu-id="8a337-187">引脚 8 - **SPI0 SCLK**</span><span class="sxs-lookup"><span data-stu-id="8a337-187">Pin 8 - **SPI0 SCLK**</span></span>
+* <span data-ttu-id="8a337-188">引脚 12 - **SPI0 CS0**</span><span class="sxs-lookup"><span data-stu-id="8a337-188">Pin 12 - **SPI0 CS0**</span></span>
 
-### <a name="spi-issues"></a><span data-ttu-id="4fba4-189">SPI 问题</span><span class="sxs-lookup"><span data-stu-id="4fba4-189">SPI Issues</span></span>
+### <a name="spi-issues"></a><span data-ttu-id="8a337-189">SPI 问题</span><span class="sxs-lookup"><span data-stu-id="8a337-189">SPI Issues</span></span>
 
-<span data-ttu-id="4fba4-190">SPI 时钟固定在 4.8mhz。</span><span class="sxs-lookup"><span data-stu-id="4fba4-190">The SPI clock is fixed at 4.8mhz.</span></span> <span data-ttu-id="4fba4-191">请求的 SPI 时钟将被忽略。</span><span class="sxs-lookup"><span data-stu-id="4fba4-191">The requested SPI clock will be ignored.</span></span> 
+<span data-ttu-id="8a337-190">SPI 时钟固定在 4.8mhz。</span><span class="sxs-lookup"><span data-stu-id="8a337-190">The SPI clock is fixed at 4.8mhz.</span></span> <span data-ttu-id="8a337-191">请求的 SPI 时钟将被忽略。</span><span class="sxs-lookup"><span data-stu-id="8a337-191">The requested SPI clock will be ignored.</span></span> 
 
 
-### <a name="spi-sample"></a><span data-ttu-id="4fba4-192">SPI 示例</span><span class="sxs-lookup"><span data-stu-id="4fba4-192">SPI Sample</span></span>
+### <a name="spi-sample"></a><span data-ttu-id="8a337-192">SPI 示例</span><span class="sxs-lookup"><span data-stu-id="8a337-192">SPI Sample</span></span>
 
-<span data-ttu-id="4fba4-193">有关如何在总线 **SPI0** 上执行 SPI 写入的示例如下所示：</span><span class="sxs-lookup"><span data-stu-id="4fba4-193">An example on how to perform a SPI write on bus **SPI0** is shown below:</span></span>
+<span data-ttu-id="8a337-193">有关如何在总线 **SPI0** 上执行 SPI 写入的示例如下所示：</span><span class="sxs-lookup"><span data-stu-id="8a337-193">An example on how to perform a SPI write on bus **SPI0** is shown below:</span></span>
 
-```C3
+```C#
 using Windows.Devices.Enumeration;
 using Windows.Devices.Spi;
 
