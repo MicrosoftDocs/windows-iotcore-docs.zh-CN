@@ -4,12 +4,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 核心版是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 核心版, 占用空间小, 无外设
-ms.openlocfilehash: 837b9ba8b7f6fa4d36014f4ff5ae2669a73e6e6c
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: 266fab5749ebb5886183fa79914cd8d1ee8c4bd4
+ms.sourcegitcommit: 34928850d3b1b2fe22a92ebd1d75c01b3d4bf0aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721818"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894364"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT 核心版概述
 
@@ -47,7 +47,7 @@ Windows 10 IoT 核心版是针对带显示屏或不带显示屏的小型设备�
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">2. 3. 安装应用</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">3. 安装应用</a></p></td>
 <td align="left"><p>了解如何使用不同工具来安装应用。</p></td>
 </tr>
 
