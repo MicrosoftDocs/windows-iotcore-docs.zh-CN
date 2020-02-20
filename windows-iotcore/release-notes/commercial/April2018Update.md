@@ -6,7 +6,7 @@ description: 了解适用于 Windows 10 IoT 的2018年4月更新版中的新增�
 keywords: Windows IoT，2018年4月更新，发行说明
 ms.openlocfilehash: b06378db14ba78fc5a3eb60e842e1555e56a66ac
 ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75721750"
