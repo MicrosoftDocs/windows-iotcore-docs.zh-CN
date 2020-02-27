@@ -2,13 +2,13 @@
 title: Raspberry Pi 3B + 的发行说明
 ms.date: 05/16/2018
 ms.topic: article
-description: 阅读并了解 Raspberry Pi 3B + 生成的内容。
-keywords: windows iot，Windows 有问必答，发行说明，Raspberry Pi 3B +
+description: 阅读并了解 Raspberry Pi 3B + 内部版本中的内容。
+keywords: windows iot, Windows 预览体验成员, 发行说明, Raspberry Pi 3B +
 ms.openlocfilehash: d321676758f7ff438540720098e6a6ecb1ba457f
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
-ms.translationtype: MT
+ms.sourcegitcommit: 34928850d3b1b2fe22a92ebd1d75c01b3d4bf0aa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
+ms.lasthandoff: 02/24/2020
 ms.locfileid: "75721012"
 ---
 # <a name="release-notes-for-raspberry-pi-3b"></a>Raspberry Pi 3B + 的发行说明
@@ -16,7 +16,7 @@ ms.locfileid: "75721012"
 &copy; 2018 Microsoft Corporation。 保留所有权利。
 
 > [!NOTE]
-> Raspberry Pi 3B+ 的此版本是不受支持的技术预览版。 已完成有限的验证和启用。 可在[此处](https://www.microsoft.com/en-us/software-download/windowsiot)找到当前版本。 若要获得更好的评估体验，或者要将产品商用化，请使用 Raspberry Pi 3B 或者其他带有受支持的 Intel、Qualcomm 或 NXP SoC 的设备。 若要排查 Raspberry Pi 3B+ 的问题，请参阅[此处](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues)的故障排除指南。 
+> Raspberry Pi 3B+ 的此版本是不受支持的技术预览版。 已完成有限的验证和启用。 在[此处](https://www.microsoft.com/en-us/software-download/windowsiot)可找到当前版本。 若要获得更好的评估体验，或者要将产品商用化，请使用 Raspberry Pi 3B 或者其他带有受支持的 Intel、Qualcomm 或 NXP SoC 的设备。 若要排查 Raspberry Pi 3B+ 的问题，请参阅[此处](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues)的故障排除指南。 
 
 ## <a name="whats-new-in-this-build"></a>此内部版本的新增功能： 
 * 常规 Bug 修复
@@ -24,27 +24,27 @@ ms.locfileid: "75721012"
 ## <a name="known-issues-in-this-build"></a>此版本中的已知问题：
 * 此映像仅适用于 RPi3B +，并且不会在 RPi2 上启动。 
 * 不能在 IoT 核心版上通过 Visual Studio 进行 F5 驱动程序部署。 
-* 板载 WIFI 和蓝牙在 RPI3B + 上不起作用。 
-* Ft5406 touch screen 驱动程序在 RPi3B + 上处于禁用状态。 
+* 板载 WIFI 和蓝牙不适用于 RPI3B +。 
+* Ft5406 触摸屏驱动程序在 RPi3B + 上禁用。 
 * SD 卡活动 LED 禁用。 
 
 
-### <a name="display-resolution-is-monitor-is-disconnected"></a>显示分辨率为监视器断开连接
-如果监视器断开连接，Raspberry Pi 3B + 可能不会维持显示分辨率。 在连接的情况下，监视器的 EDID 用于设置系统的分辨率。 断开连接后，固件会默认为 SD 卡根目录下的 config.xml 中的内容。 
+### <a name="display-resolution-is-monitor-is-disconnected"></a>显示器分辨率（在显示器断开连接的情况下）
+在监视器断开连接的情况下，Raspberry Pi 3B+ 可能无法保持显示器分辨率。 在连接的情况下，监视器的 EDID 用于设置系统的分辨率。 断开连接时，固件默认设置为 SD 卡根目录的 config.txt 中的值。 
 
 
 ### <a name="video-performance"></a>视频性能
-平台上的视频播放性能未优化。  动态用户元素（包括基于 XAML 的下拉菜单）可能表现不出最佳性能。  
+平台上的视频播放性能未进行优化。  动态用户元素（包括基于 XAML 的下拉菜单）可能表现不出最佳性能。  
 
-### <a name="camera-support"></a>照相机支持
+### <a name="camera-support"></a>相机支持
 对相机外围设备的支持受限。 直接连接到板载相机总线的 PiCam 设备不受支持，因为平台支持 D3D 现代 USB 摄像头在 USB 主控制器上生成要求极度严苛的数据流的能力有限。  即使摄像头结合使用低分辨率设置，还将需要其他 USB 微调和专用控件逻辑。  
 
 
-### <a name="mouse-pointer-disappears-while-debugging"></a>鼠标指针在调试时消失
-在某些情况下，在使用 Visual Studio 部署或调试应用程序后不会显示鼠标指针，如果使用键盘（选项卡）（8038595）更改焦点，则会重新显示鼠标指针。
+### <a name="mouse-pointer-disappears-while-debugging"></a>调试时鼠标指针消失
+在某些情况下，在使用 Visual Studio 部署或调试应用后，鼠标指针会变得不可见，此时如果使用键盘 (Tab) 更改焦点，鼠标指针就会重新显示 (8038595)。
 
-### <a name="server-applications-with-softap"></a>具有 SoftAP 的服务器应用程序
-使用 SoftAP 时，客户端将无法访问 UAP 应用公开的内容。 若要通过 SoftAP 公开 UAP 应用程序，必须从设备上的控制台进行以下更改（8111807）：  
+### <a name="server-applications-with-softap"></a>服务器应用程序与 SoftAP
+使用 SoftAP 时，客户端将无法访问 UAP 应用公开的内容。 若要通过 SoftAP 公开 UAP 应用程序，必须通过设备上的控制台进行以下更改 (8111807)：  
 
 ```
 reg add hklm\system\currentcontrolset\services\mpssvc\parameters /v IoTInboundLoopbackPolicy /t REG_DWORD /d 1 
@@ -56,9 +56,9 @@ For example:  checknetisolation loopbackexempt -a -n=IoTOnboardingTask-uwp_1w720
 重新启动。
 
 ### <a name="sensor-driver-conflict-in-pre-built-ffus"></a>在预先构建的 FFU 中出现传感器驱动程序冲突 
-在提供的 FFU 中存在传感器驱动程序冲突。 Remote Sensor Framework 可为指南针、磁力计、加速计和陀螺仪安装驱动程序。 用于从应用程序访问这些类的 UWP Api 假设只安装一个。 如果你为通过物理方式连接的设备开发驱动程序，则 Microsoft 提供的 FFU 上的远程驱动程序会产生冲突。  
+在提供的 FFU 中存在传感器驱动程序冲突。 Remote Sensor Framework 可为指南针、磁力计、加速计和陀螺仪安装驱动程序。 从应用程序访问这些项目的 UWP API 会假定只安装了其中一项。 如果你为通过物理方式连接的设备开发驱动程序，则 Microsoft 提供的 FFU 上的远程驱动程序会产生冲突。  
 
-若要解决此情况，可以通过 SSH 或 Powershell 连接到设备，并使用工具 devcon 删除远程传感器驱动程序，方法是通过键入以下内容来删除该驱动程序： 
+若要解决此问题，可以删除发生冲突的驱动程序，方法是通过 SSH 或 Powershell 连接到设备，然后键入以下命令，使用 devcon.exe 工具删除远程传感器驱动程序： 
 
 ```
 "devcon.exe remove @"ROOT\REMOTESENSORDRIVER*"
@@ -70,28 +70,28 @@ For example:  checknetisolation loopbackexempt -a -n=IoTOnboardingTask-uwp_1w720
 ### <a name="default-administrator-user-name-and-password"></a>默认管理员用户名和密码
 默认的管理员用户名和密码已硬编码在 Windows 10 IoT 核心版映像中。 这使设备具有安全风险，因此在更改密码之前，请不要向开放的 Internet 连接公开此信息。 
 
-### <a name="volume-controls"></a>卷控件
+### <a name="volume-controls"></a>音量控件
 依赖于 Windows 系统更改系统音量的 USB 麦克风和扬声器的硬件音量控件当前在 Windows 10 IoT 核心版上不受支持。 
 
 ### <a name="usb-keyboards"></a>USB 键盘
-某些 USB 键盘和鼠标可能无法在 IoT 核心版上工作。 使用其他键盘或鼠标。 可在[此处](https://go.microsoft.com/fwlink/?LinkId=619428)的文档中找到经过验证的外围设备的列表。
+某些 USB 键盘和鼠标可能无法在 IoT 核心版上工作。 使用其他键盘或鼠标。 有关已验证的外围设备列表，可参阅[此处](https://go.microsoft.com/fwlink/?LinkId=619428)的文档。
  
 ### <a name="screen-orientation"></a>屏幕方向
 将方向设置为“纵向”在通用应用中可能不受支持。
 
-### <a name="referencing-adapters-with-alljoyn-templates"></a>引用具有 AllJoyn 模板的适配器
+### <a name="referencing-adapters-with-alljoyn-templates"></a>使用 AllJoyn 模板引用适配器
 尝试向 AllJoyn 适配器项目添加引用可能会在使用特定 SDK 版本时导致错误。  若要解决这些错误，请更改 Visual Studio 的目标平台，以匹配当前的 SDK 版本，然后重新加载项目。  
 
-### <a name="wifi-direct-limitations-on-windows-10-iot-core"></a>Windows 10 IoT Core 的 WiFi 直接限制
-1. Windows 10 IoT Core 设备必须是连接设备-它不能作为使用其他设备启动连接的广告设备。   
+### <a name="wifi-direct-limitations-on-windows-10-iot-core"></a>Windows 10 IoT 核心版上的 WiFi Direct 限制
+1. Windows 10 IoT 核心版设备必须是连接设备，因为在其他设备初始化连接时，该设备无法作为广告设备运行。   
 2. 必须使用高级配对。  示例应用演示了如何在连接前使用高级配对 API 对设备进行配对。 
 3. 并非所有无线适配器都支持 WLAN Direct。 我们已测试并验证“Realtek RTL8188EU 无线 LAN 802.11n USB 2.0 网络适配器”有效，但其他适配器可能不受支持。 
 
 ### <a name="non-default-drive-mode-3890679"></a>非默认驱动器模式 (3890679) 
-在 Raspberry Pi 和 Dragonboard 上，从非默认驱动器模式切换到其他非默认驱动器模式可能会在 GPIO 引脚上产生故障。 若要解决此问题，请在应用程序开始时设置驱动器模式一次。 
+在 Raspberry Pi 和 Dragonboard 上，从非默认驱动器模式切换到其他非默认驱动器模式可能会在 GPIO 引脚上产生故障。 若要解决此问题，请在应用程序启动时设置一次驱动器模式。 
 
 ### <a name="application-already-running-1244550"></a>已处于运行状态的应用程序 (1244550) 
-如果默认启动应用也从 Visual Studio 部署，则该应用可能会跟自身发生冲突。 解决方法： 将默认启动应用更改为不希望部署的应用程序。 
+如果默认启动应用也从 Visual Studio 部署，则该应用可能会跟自身发生冲突。 解决方法：将默认启动应用更改为不希望部署的应用程序。 
 
 ### <a name="backgroundmediaplayermessagereceivedfromforeground-may-crash-2199869"></a>BackgroundMediaPlayer.MessageReceivedFromForeground 可能会崩溃 (2199869) 
 以下代码行可能崩溃： 
@@ -99,7 +99,7 @@ For example:  checknetisolation loopbackexempt -a -n=IoTOnboardingTask-uwp_1w720
 BackgroundMediaPlayer.MessageReceivedFromForeground += OnMessageReceivedFromForeground
 ```
 
-若要防止发生崩溃，请添加以下代码，使其首先执行：
+若要防止崩溃，请添加此代码，以便首先执行它：
 ```
 var player = BackgroundMediaPlayer.Current;
 ```
@@ -108,7 +108,7 @@ var player = BackgroundMediaPlayer.Current;
 Azure Active Directory 身份验证库在 Windows 10 IoT 核心版上不可用。  
 
 ### <a name="shell-management-of-application-crashes"></a>应用程序崩溃的 Shell 管理
-IoT 核心版的 shell 基础结构用于监视设备中运行的 APPX 类型的应用程序是否崩溃，并且会在发生崩溃时重新启动这些应用程序。  如果重新启动的应用程序仍然崩溃，shell 将使用 failfast –导致错误检查的系统关键过程，并在尝试恢复时重新启动。  可比较逻辑和处理用于有外设配置中的后台任务和前台应用程序。   崩溃处理和重试逻辑如下所示：
+IoT 核心版的 shell 基础结构用于监视设备中运行的 APPX 类型的应用程序是否崩溃，并且会在发生崩溃时重新启动这些应用程序。  如果重新启动的应用程序继续崩溃，shell 将采用 failfast，这一系统关键进程可引起错误检测并重新启动以尝试恢复。  可比较逻辑和处理用于有外设配置中的后台任务和前台应用程序。   下面捕获的是崩溃处理和重试逻辑：
 
 ```
 Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\CBTConfig  (or ForegroundAppConfig for headed) 
@@ -137,7 +137,7 @@ delay = (dword) ((float)BaseRetryDelayMs * (crashes_seen ** Fallback_exponent))
 Dragonboard 上的 SPI 将会忽略所请求的速度，并始终以 4.8 Mhz 的速度运行。  
 
 #### <a name="dragonboard-connected-standby"></a>Dragonboard 连接待机 
-默认情况下，连接待机在 Qualcomm Dragonboard 上未启用。  若要在 DragonBoard 上启用连接备用，需要将以下注册表项设置为 "1"。
+默认情况下，连接待机在 Qualcomm Dragonboard 上未启用。  若要在 DragonBoard 上启用连接待机，需将以下注册表项设置为“1”。
 
 
 ### <a name="time-synchronization"></a>时间同步
@@ -150,13 +150,13 @@ Dragonboard 上的 SPI 将会忽略所请求的速度，并始终以 4.8 Mhz 的
 2. 也可根据需要通过启动脚本或自定义运行时配置包（在创建映像过程中包括进来）将其添加到注册表中。 
 
 ### <a name="starting-the-ftp-server"></a>启动 FTP 服务器 
-* 若要运行一次-登录到 SSH\PS 并运行以下命令以启动 FTP：  
+* 若要运行一次 - 请使用 SSH\PS 登录，然后运行以下命令来启动 FTP：  
 
 ```
 start ftpd.exe 
 ```
 
-* 若要在每次启动时运行，用户应创建计划程序任务-使用 SSH\PS 登录并创建计划程序任务：
+* 若要在每次启动时运行，用户应创建计划程序任务 - 使用 SSH\PS 登录并创建计划程序任务：
 
 ```
 schtasks /create /tn "IoTFTPD" /tr ftpd.exe /ru system /sc onstart 
@@ -164,17 +164,17 @@ Schtasks /run /tn “IoTFTPD”
 ```
 
 ### <a name="partition-size-requirements-for-update"></a>更新的分区大小要求 
-确保数据分区保持足够的空间来更新功能。  我们建议1GB 免费版进行完整更新。  如果数据分区没有足够的空间，则在安装阶段中更新将会失败。 
+确保数据分区保持足够的空间来更新功能。  我们建议保留 1GB 的可用空间来进行完整的功能更新。  如果数据分区没有足够的空间，则在安装阶段中更新将会失败。 
 
-### <a name="powershell-log-generation-on-iot-core"></a>IoT Core 上的 PowerShell 日志生成 
-默认情况下，PowerShell on Iot Core 可能会生成日志文件。 虽然日志文件大小有限，但可能会占用空间，从而导致磁盘空间不足的情况，在其他情况下，可能会导致更新失败。 .Evtx 事件日志文件的最大大小为 20 MB。 您可以通过注册表单独限制文件的最大大小。 例如，要以 10 MB 的最大大小保留 .evtx： 
+### <a name="powershell-log-generation-on-iot-core"></a>IoT 核心版上的 PowerShell 日志生成 
+默认情况下，Iot 核心版上的 PowerShell 可能会生成日志文件，从而占用文件系统上的空间。 虽然日志文件大小有限，但可能会占用空间，从而导致磁盘空间不足，此外还可能会导致更新失败。 每个 .evtx 事件日志文件的预定义大小上限为 20 MB。 你可以通过注册表单独限制文件的大小上限。 例如，若要将 security.evtx 的最大上限设置为 10 MB，请输入以下命令： 
 ```
 regd add HKLM\SYSTEM\CurrentControlSet\Services\EventLog\Security /v MaxSize /t REG_DWORD /d 0xa00000 /f 
 ```
 
 ### <a name="schtasks-limitation"></a>Schtasks 限制  
-Schtasks 不支持使用/xml 开关。 例如： 
+Schtasks 不支持使用 /xml 开关。 例如： 
 ```
 schtasks /create /xml <xmlfile> /TN <taskname>
 ```
-这会在 IoT Core 上失败。 运行该命令将生成错误：错误：找不到指定的过程。 
+这会在 IoT 核心版上失败。 运行命令将生成以下错误：错误：找不到指定的过程。 
