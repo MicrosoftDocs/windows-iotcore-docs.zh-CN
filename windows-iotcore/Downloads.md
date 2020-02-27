@@ -31,7 +31,7 @@ Windows 10 IoT 核心版仪表板有一个可导航的界面，可以简化将 W
 > [!WARNING]
 > 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
 
-商业化 IoT 解决方案时，需从 [Microsoft 软件下载站点](https://www.microsoft.com/software-download/windows10IoTCore#!)下载内部版本。 考虑到你可能需要使用适用于设备的 Windows 10 IoT 核心版的旧内部版本，我们还在下面提供了过去的几个版本。 
+商业化 IoT 解决方案时，需从 [Microsoft 软件下载站点](https://www.microsoft.com/en-us/software-download/windows10IoTCore)下载内部版本。 考虑到你可能需要使用适用于设备的 Windows 10 IoT 核心版的旧内部版本，我们还在下面提供了过去的几个版本。 
 
 ### <a name="october-2018-release"></a>2018 年 10 月发行版
 
