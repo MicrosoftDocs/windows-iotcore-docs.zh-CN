@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何使用 PowerShell 连接到你的设备并管理你的设备。
 keywords: windows iot，PowerShell，Windows PowerShell，命令行，命令行 shell
-ms.openlocfilehash: fb8ec04365e330c2466c1287b446a5d3b15729a1
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: f12fd88ee7c53937d92f163ae5acedc4197dbc8a
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721582"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080570"
 ---
 # <a name="using-powershell-for-windows-iot"></a>使用适用于 Windows IoT 的 PowerShell
 
@@ -48,12 +48,12 @@ PowerShell 是基于任务的命令行 Shell 和脚本语言，专为进行系�
         Set-Item WSMan:\localhost\Client\TrustedHosts -Value <machine-name or IP Address>
 
 6. 输入 `Y` 以确认更改。
-
-> [!NOTE]
-> 如果要连接多台设备，则可以使用逗号和引号分隔每个设备。
         
         Set-Item WSMan:\localhost\Client\TrustedHosts -Value "<machine1-name or IP Address>,<machine2-name or IP Address>"
     
+> [!NOTE]
+> 如果要连接多台设备，则可以使用逗号和引号分隔每个设备。
+
 7. 现在，你可以使用你的 Windows IoT 核心版设备启动会话。 在管理员 PowerShell 控制台中，键入：
 
         Enter-PSSession -ComputerName <machine-name or IP Address> -Credential <machine-name or IP Address or localhost>\Administrator

@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何创建驱动程序包，以及如何在设备上安装第三方驱动程序。
 keywords: windows iot，USB 驱动程序，外围设备，USB
-ms.openlocfilehash: 4e3b77466e2bacb9bf8e06bc3a0dc081db2ee5f9
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: 36b11d06d860b169503ecc5979a8cfb1b1fa1fea
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721472"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080544"
 ---
 # <a name="install-usb-peripheral-drivers"></a>安装 USB 外设驱动程序
 按照以下步骤为外围设备（如 USB 移动宽带调制解调器、打印机、扫描仪等）添加第三方驱动程序（usb）。 
