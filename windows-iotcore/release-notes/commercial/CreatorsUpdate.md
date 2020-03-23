@@ -113,7 +113,7 @@ Dragonboard 上的 SPI 将会忽略所请求的速度，并始终以预配置的
 
 #### <a name="minnowboard-max-firmware-update"></a>Minnowboard Max 固件更新 
 除非固件是 .092 或更高版本，否则 MinnowBoard Max 不会启动。  
-MinnowBoard Max (MBM) 固件版本 0.93 可能存在网络连接故障。   此问题已在固件版本 0.94 中解决。） 推荐的最低固件版本是“MinnowBoard MAX 0.94 32 位”。 固件更新可从 [此处](https://go.microsoft.com/fwlink/?LinkId=708613)下载。
+MinnowBoard Max (MBM) 固件版本 0.93 可能存在网络连接故障。   （此问题已在固件版本 0.94 中解决。） 推荐的最低固件版本是“MinnowBoard MAX 0.94 32 位”。 固件更新可从 [此处](https://go.microsoft.com/fwlink/?LinkId=708613)下载。
   
  
 ### <a name="all-platforms"></a>所有平台 
