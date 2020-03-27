@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 阅读并了解 Creators Update 的新增内容。
 keywords: Windows IoT, Creators Update, 发行说明
-ms.openlocfilehash: 5946d97cd84992f62213d71c59374aa7f9a5779b
-ms.sourcegitcommit: 34928850d3b1b2fe22a92ebd1d75c01b3d4bf0aa
+ms.openlocfilehash: 09157cb634de971bfe57f549c3c87354f814f9e9
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "75721852"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080562"
 ---
 # <a name="creators-update-release-notes-for-windows-10-iot-core"></a>Windows 10 IoT 核心板的 Creators Update 的发行说明
 内部版本号 15063。 2017 年 4 月
@@ -112,8 +112,8 @@ Dragonboard 上的 SPI 将会忽略所请求的速度，并始终以预配置的
 ### <a name="minnowboard"></a>MinnowBoard  
 
 #### <a name="minnowboard-max-firmware-update"></a>Minnowboard Max 固件更新 
-除非固件是 .092 或更高版本，否则 MinnowBoard Max 不会启动。  
-MinnowBoard Max (MBM) 固件版本 0.93 可能存在网络连接故障。   （此问题已在固件版本 0.94 中解决。） 推荐的最低固件版本是“MinnowBoard MAX 0.94 32 位”。 固件更新可从 [此处](https://go.microsoft.com/fwlink/?LinkId=708613)下载。
+除非固件是 0.92 版或更高版本，否则 MinnowBoard Max 不会启动。  
+MinnowBoard Max (MBM) 固件版本 0.93 可能存在网络连接故障。   此问题已在固件版本 0.94 中解决。） 推荐的最低固件版本是“MinnowBoard MAX 0.94 32 位”。 固件更新可从 [此处](https://go.microsoft.com/fwlink/?LinkId=708613)下载。
   
  
 ### <a name="all-platforms"></a>所有平台 
