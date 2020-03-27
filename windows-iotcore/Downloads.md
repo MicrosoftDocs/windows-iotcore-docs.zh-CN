@@ -5,12 +5,12 @@ ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-ms.openlocfilehash: c2ba5b9151400774c236bab612b877c4e5a360f3
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: 44e1b03ce9e7e9eb4e9bdad6f90ef803a00094f6
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721452"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080553"
 ---
 # <a name="downloads"></a>下载
 下载 Windows 10 IoT 核心版入门所需的工具和软件。
@@ -31,11 +31,11 @@ Windows 10 IoT 核心版仪表板有一个可导航的界面，可以简化将 W
 > [!WARNING]
 > 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
 
-商业化 IoT 解决方案时，需从 [Microsoft 软件下载站点](https://www.microsoft.com/software-download/windows10IoTCore#!)下载内部版本。 考虑到你可能需要使用适用于设备的 Windows 10 IoT 核心版的旧内部版本，我们还在下面提供了过去的几个版本。 
+商业化 IoT 解决方案时，需从 [Microsoft 软件下载站点](https://aka.ms/iotcoredownloads)下载内部版本。 考虑到你可能需要使用适用于设备的 Windows 10 IoT 核心版的旧内部版本，我们还在下面提供了过去的几个版本。 
 
 ### <a name="october-2018-release"></a>2018 年 10 月发行版
 
-* [Windows 10 IoT 核心版程序包](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!)
+* [Windows 10 IoT 核心版程序包](https://aka.ms/iotcoredownloads)
 * [Raspberry Pi 2 和 3](https://go.microsoft.com/fwlink/?LinkId=846058)
 * [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
 * [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
@@ -61,17 +61,17 @@ Windows 10 IoT 核心版仪表板有一个可导航的界面，可以简化将 W
 
 ## <a name="other-downloads"></a>其他下载
 
-### <a name="mdns-responderhttpsgomicrosoftcomfwlinklinkid2077676"></a>[mDNS 响应程序](https://go.microsoft.com/fwlink/?linkid=2077676)
+### <a name="mdns-responder"></a>[mDNS 响应程序](https://go.microsoft.com/fwlink/?linkid=2077676)
 下载适用于 Windows IoT 且兼容 Bonjour 的 mDNS 响应程序（示例源）。 在[此处](mDNS.md)了解详细信息。
 
-### <a name="firmware-updatehttpfirmwareintelcomprojectsminnowboard-max"></a>[固件更新](http://firmware.intel.com/projects/minnowboard-max)
+### <a name="firmware-update"></a>[固件更新](http://firmware.intel.com/projects/minnowboard-max)
 从 Intel 下载 MinnowBoard Max 参考板的固件组件和更新。
 
-### <a name="visual-studio-2017httpswwwvisualstudiocomdownloads"></a>[Visual Studio 2017](https://www.visualstudio.com/downloads/)
+### <a name="visual-studio-2017"></a>[Visual Studio 2017](https://www.visualstudio.com/downloads/)
 可用于创建出色 IoT 应用的先进 IDE、工具和服务。
 
-### <a name="windows-driver-kit-2017httpsmsdnmicrosoftcomwindowshardwarehh852365aspx"></a>[Windows 驱动程序工具包 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
+### <a name="windows-driver-kit-2017"></a>[Windows 驱动程序工具包 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
 提供集成开发环境，用于创建适用于运行 Windows 10 的设备的高效优质驱动程序。
 
-### <a name="windows-developer-tools-for-visual-studiohttpsdevwindowscomen-usdownloads"></a>[适用于 Visual Studio 的 Windows 开发人员工具](https://dev.windows.com/en-us/downloads)
-开发通用 Windows 应用平台所需的且与 Visual Studio 2017 集成的工具。 
+### <a name="windows-developer-tools-for-visual-studio"></a>[适用于 Visual Studio 的 Windows 开发人员工具](https://developer.microsoft.com/windows/downloads/)
+开发通用 Windows 应用平台所需的且与 Visual Studio 2017 集成的工具。
