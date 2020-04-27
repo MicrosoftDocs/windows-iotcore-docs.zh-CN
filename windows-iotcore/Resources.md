@@ -5,10 +5,10 @@ ms.topic: article
 description: 利用 Windows 10 IoT 社区中的所有资源。
 keywords: Windows 10 IoT 核心版, Windows 10 IoT 企业版, 资源, 最重要人员, 视频, 博客文章
 ms.openlocfilehash: 20057f55e2083189d17d2455c065c33d456dad87
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "72918421"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 资源

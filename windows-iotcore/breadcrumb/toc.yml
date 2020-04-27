@@ -10,7 +10,7 @@
           tocHref: /windows/iot-core/
           topicHref: /windows/iot-core/index
           items:
-            - name: Windows 10 IoT 核心版
+            - name: Windows 10 IoT 核心板
               tocHref: /windows/iot-core/windows-iot-core/
               topicHref: /windows/iot-core/windows-iot-core
             - name: Windows 10 IoT 企业版
@@ -19,7 +19,7 @@
             - name: Windows Server IoT 2019
               tocHref: /windows/iot-core/windows-server/
               topicHref: /windows/iot-core/windows-server
-            - name: 立即开始行动
+            - name: 入门
               tocHref: /windows/iot-core/getstarted/
               topicHref: /windows/iot-core/getstarted/
             - name: 快速入门

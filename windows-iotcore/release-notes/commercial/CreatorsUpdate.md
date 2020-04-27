@@ -8,7 +8,7 @@ ms.openlocfilehash: 09157cb634de971bfe57f549c3c87354f814f9e9
 ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "80080562"
 ---
 # <a name="creators-update-release-notes-for-windows-10-iot-core"></a>Windows 10 IoT 核心板的 Creators Update 的发行说明

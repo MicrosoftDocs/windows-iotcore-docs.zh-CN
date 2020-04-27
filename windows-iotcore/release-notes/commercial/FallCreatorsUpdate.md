@@ -5,10 +5,10 @@ ms.topic: article
 description: 了解适用于 Windows 10 IoT 的 Fall Creators Update 的新增功能。
 keywords: Windows IoT, Fall Creators Update, 发行说明
 ms.openlocfilehash: 35dbe905cfb25613d1225ab8e6d4b8fd636134d9
-ms.sourcegitcommit: 34928850d3b1b2fe22a92ebd1d75c01b3d4bf0aa
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "72918697"
 ---
 # <a name="fall-creators-update-release-notes-for-windows-10-iot"></a>适用于 Windows 10 IoT 的 Fall Creators Update 的发行说明
