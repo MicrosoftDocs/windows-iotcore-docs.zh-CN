@@ -3,7 +3,7 @@
 - name: 适用于 IoT 的 Windows
   expanded: false
   items:
-    - name: Windows 10 IoT 核心版
+    - name: Windows 10 IoT 核心板
       href: windows-iot-core.md
     - name: Windows 10 IoT 企业版
       href: windows-iot-enterprise.md
@@ -98,7 +98,7 @@
   items:
     - name: 概述
       href: manage-your-device/Overview.md
-    - name: Windows Device Portal
+    - name: Windows 设备门户
       href: manage-your-device/DevicePortal.md
     - name: Windows 调试器
       href: manage-your-device/WindowsDebugger.md
@@ -148,7 +148,7 @@
       href: connect-your-device/SetupWifi.md
     - name: Miracast
       href: connect-your-device/Miracast.md
-    - name: 蓝牙
+    - name: Bluetooth
       href: connect-your-device/Bluetooth.md
     - name: VPN
       href: connect-your-device/VPN.md
