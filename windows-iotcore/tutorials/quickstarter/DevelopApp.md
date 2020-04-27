@@ -5,10 +5,10 @@ ms.topic: article
 description: 了解如何添加和开发适用于设备的应用
 keywords: Windows 10 IoT 核心版, 入门, 开发应用, 应用
 ms.openlocfilehash: 7c047e2bba686705db19b12ea3b31350f0240688
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "72918491"
 ---
 # <a name="develop-an-app-for-your-device"></a>开发适用于设备的应用
@@ -48,7 +48,7 @@ ms.locfileid: "72918491"
 <thead>
 <tr class="header">
 <th align="left">主题</th>
-<th align="left">描述</th>
+<th align="left">说明</th>
 </tr>
 </thead>
 <tbody>
