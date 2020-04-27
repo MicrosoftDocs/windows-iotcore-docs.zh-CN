@@ -5,10 +5,10 @@ ms.topic: article
 description: 了解建议用于 Windows 10 IoT 的原型板。
 keywords: windows iot, 开发设备, 板, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, Dragonboard
 ms.openlocfilehash: d1dde3bf04622dfdbdc611fcca96f3fdd3cfae3c
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "75721882"
 ---
 # <a name="suggested-prototype-boards"></a>建议的原型板
@@ -23,7 +23,7 @@ ms.locfileid: "75721882"
 > Raspberry Pi 3B+ 与 Windows 10 IoT 核心版有限兼容。 有关详细信息，请查看[发行说明](https://docs.microsoft.com/windows/iot-core/release-notes/insider/rpi3bp)。 如需更完整的 Windows 10 IoT 核心版体验，请使用 Raspberry Pi 3B、DragonBoard、Up2 板或 NXP 设备。 
 
 
-| 板 | 详细信息 | FFU 链接 | 如何设置 | 入门 |
+| 板 | 详细信息 | FFU 链接 | 如何设置 | 立即开始行动 |
 |-----------|----------|---------|---------|---------|---------|-------|
 | [AAEON Up Squared](https://up-board.org/upsquared/specifications/) | [Up Board 站点](https://up-shop.org/28-up-squared) | [下载 FFU](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true) | [设置 Intel 设备](https://docs.microsoft.com/windows/iot-core/tutorials/intel) | [商业化](https://up-shop.org/home/270-up-squared.html) | 
 | [DragonBoard 410c](https://developer.qualcomm.com/hardware/dragonboard-410c) | [Arrow 站点](https://www.arrow.com/en/products/dragonboard410c/arrow-development-tools) | [下载 FFU](https://www.microsoft.com/software-download/windows10IoTCore#!) | [设置 Dragonboard](https://docs.microsoft.com/windows/iot-core/tutorials/dragonboard)、<br>[设置 Qualcomm 设备](https://docs.microsoft.com/windows/iot-core/tutorials/qualcomm) | [商业化](https://www.arrow.com/en/products/dragonboard410c/arrow-development-tools) | 

@@ -6,10 +6,10 @@ description: 了解如何使用 SD 卡通过 Windows 10 IoT 核心版来设置�
 keywords: Windows 10 IoT 核心版, SD 卡, Windows 10 IoT 核心版仪表板
 ms.custom: RS5
 ms.openlocfilehash: 7575889b94cf7a69550c5c4128ab5ff8a82dde9c
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "75721832"
 ---
 # <a name="setting-up-your-device"></a>设置设备
@@ -99,7 +99,7 @@ ms.locfileid: "75721832"
 1. 下载并安装与你的计算机上运行的 Windows 10 版本相对应的 [Windows 评估和部署工具包](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (Windows ADK)。
 2. 下载并安装 [ADK 的 Windows PE 加载项](https://go.microsoft.com/fwlink/?linkid=2087112)。
 
-#### <a name="create-a-usb-bootable-windows-pehttpsdocsmicrosoftcomwindows-hardwaremanufacturedesktopwinpe-intro-image"></a>创建可从 USB 启动的 [Windows PE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) 映像
+#### <a name="create-a-usb-bootable-windows-pe-image"></a>创建可从 USB 启动的 [Windows PE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) 映像
 
 3. 将 USB 盘插入计算机中。
 4. 以管理员身份启动“部署和映像工具环境”。 默认安装路径为 `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\DandISetEnv.bat`。

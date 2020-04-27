@@ -5,10 +5,10 @@ ms.topic: article
 description: 了解 Windows Server IoT 2019 是什么，以及可以用它执行什么操作。
 keywords: Windows Server IoT 2019, 企业可管理性, Windows 生态系统, IoT
 ms.openlocfilehash: 8ed21ae695bff2386346dfe15de9cb83e2697a90
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "75721772"
 ---
 # <a name="an-overview-of-windows-server-iot-2019"></a>Windows Server IoT 2019 概述

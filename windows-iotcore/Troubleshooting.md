@@ -4,10 +4,10 @@ title: 疑难解答
 ms.date: 08/28/2018
 ms.topic: article
 ms.openlocfilehash: 6118a5a5006d79c65681400de45fb7626f96836d
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "75721513"
 ---
 # <a name="troubleshooting"></a>疑难解答
@@ -69,7 +69,7 @@ ms.locfileid: "75721513"
 
 2. 另一因素是，必须满足每个接口的漫游策略。 默认情况下，该策略设置为 FALSE（“仅限家庭运营商”）。 可以在命令行中通过 `netsh mbn get/set dataroamcontrol.` 对此项进行查询和更改
 
-例如：
+示例：
 
 ```
     netsh mbn show dataroamcontrol int=*

@@ -5,10 +5,10 @@ ms.topic: article
 description: 了解如何完成 mDNS 响应程序示例源代码入门。
 keywords: Windows 10 IoT 核心版, mDNS 响应程序示例源代码
 ms.openlocfilehash: ca99a217ade4c55c6d3050134af8d5663d8d1621
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "72917343"
 ---
 # <a name="getting-started-with-mdns-responder-sample-source"></a>mDNS 响应程序示例源代码入门

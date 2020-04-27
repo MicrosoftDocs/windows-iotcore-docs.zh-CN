@@ -6,10 +6,10 @@ description: 了解如何通过 Windows 10 IoT 核心版来设置 Intel 设备�
 keywords: Windows 10 IoT 核心版, Intel
 ms.custom: RS5
 ms.openlocfilehash: bf32ffbaa890620c8ff9aca40a2c45023609c9ef
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "75721892"
 ---
 # <a name="setting-up-an-intel-device"></a>设置 Intel 设备

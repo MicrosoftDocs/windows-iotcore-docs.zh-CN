@@ -9,7 +9,7 @@ ms.openlocfilehash: 44e1b03ce9e7e9eb4e9bdad6f90ef803a00094f6
 ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "80080553"
 ---
 # <a name="downloads"></a>下载
@@ -22,7 +22,7 @@ Windows 10 IoT 核心版仪表板有一个可导航的界面，可以简化将 W
 > [!div class="nextstepaction"]
 > [下载 Windows 10 IoT 核心版仪表板](https://go.microsoft.com/fwlink/?LinkID=708576)
 
-下载和使用 Windows 10 IoT 核心版仪表板即表示你同意 Windows 10 IoT 核心版仪表板的[许可条款](https://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809)和[隐私声明](https://go.microsoft.com/fwlink/?LinkId=521839)。 
+下载和使用 Windows 10 IoT 核心版仪表板即表示你同意 Windows 10 IoT 核心版仪表板的_许可条款[和](https://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809)隐私声明[。](https://go.microsoft.com/fwlink/?LinkId=521839)_
 
 ![Windows 10 IoT 核心版仪表板的映像](media/IoTDashboard/DASHBOARD-800x450.jpg)
 
