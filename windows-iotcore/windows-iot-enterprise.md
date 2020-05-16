@@ -4,12 +4,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 企业版是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 企业版, 企业, 二进制, Windows
-ms.openlocfilehash: da4621a46ae5769ac28c00f2eb3c2d461f3d74ac
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: 29edd07682102c89c3442ed77be86466e89ed346
+ms.sourcegitcommit: f4660deb31a5736f4bf267d358778d53d2a2c04d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75721807"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "83001351"
 ---
 # <a name="an-overview-of-windows-10-iot-enterprise"></a>Windows 10 IoT 企业版概述
 
@@ -19,7 +19,7 @@ ms.locfileid: "75721807"
 ## <a name="what-is-windows-10-iot-enterprise"></a>什么是 Windows 10 IoT 企业版？
 Windows 10 IoT 企业版是完整版本的 Windows 10，可以为 IoT 解决方案提供企业可管理性和安全性。 Windows 10 IoT 企业版享有全球 Windows 生态系统的所有权益。 它是 Windows 10 企业版的二进制等效文件，因此你可以使用类似的开发和管理工具，就像在客户端电脑和笔记本电脑上使用一样。  但是，在许可和分发方面，桌面版本和 IoT 版本存在差异。 请注意，Windows 10 IoT 企业版提供长期服务频道 (LTSC) 和半年频道 (SAC) 两个选项。 OEM 可以选择需要用于设备的版本。
 
-## <a name="getting-started"></a>即刻体验 
+## <a name="getting-started"></a>入门 
 
 若要开始使用 Windows 10 IoT 企业版进行制造，需联系[此列表](https://go.microsoft.com/fwlink/?linkid=2094697)中的某位分发商。
 
@@ -52,27 +52,7 @@ Windows 作为可供全世界消费者和企业使用的笔记本电脑和台式
 
 ## <a name="long-term-support-silicon-details"></a>长期支持芯片详细信息
 
-Windows 10 IoT 企业 2019 版将是一个 LTSC 版本。 下表包含该版本预期会支持的所有处理器。 如果打算使用更早的 Windows 10 IoT 企业版，可以在[此处](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table)找到有关处理器支持的详细信息。
-
-> | Windows 10 IoT 企业版  |
-> |-------------|
-> | AMD® 第 6 代处理器系列 Ax-8xxx、E 系列 Ex-8xxx 和 FX-870K | 
-> | AMD® 第 7 代处理器系列 Ax-9xxx、E 系列 Ex-9xxx 和 FX-9xxx | 
-> | AMD® Ryzen™ 3/5/7 1xxx | 
-> | AMD® Ryzen™ 3/5/7 2xxx | 
-> | AMD® G 系列 | 
-> | AMD® R 系列 | 
-> | AMD® V1xxx | 
-> | 第 4 代 Intel® Core™ 处理器 | 
-> | 第 5 代 Intel® Core™ 处理器 |
-> | 第 6 代 Intel® Core™ 处理器 |
-> | 第 7 代 Intel® Core™ 处理器 |
-> | 第 8 代 Intel® Core™ 处理器 |
-> | Intel® Atom™ 处理器 E3900 系列 |
-> | Intel® Atom™ x5-E8000 处理器 |
-> | Intel® Atom™ x5-Z8350 处理器 |
-> | Intel® Atom™ 处理器 E3800 产品系列 |
-> | Intel® Pentium® 和 Celeron® 处理器 N 系列和 J 系列 |
+Windows 10 IoT 企业 2019 版将是一个 LTSC 版本。 有关 Windows 10 LTSC 和其他可用渠道的一般说明，请参阅[此处](https://docs.microsoft.com/windows/whats-new/ltsc)。 可在[此处](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table)详细了解对 Windows 10 的每个版本和渠道的处理器支持。
 
 ## <a name="helpful-resources"></a>有用资源
 > [!NOTE]
@@ -86,4 +66,4 @@ Windows 10 IoT 企业 2019 版将是一个 LTSC 版本。 下表包含该版本�
 * [在 Windows IoT 企业版上启用嵌入模式和使用后台任务](https://docs.microsoft.com/windows/iot-core/develop-your-app/embeddedmode)
 * [在组织中配置 Windows 遥测](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization )
 * [配置运行 Windows 桌面版的网亭和共享设备](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)
-* [台式机制造](https://docs.microsoft.com/windows-hardware/manufacture/desktop/)
+* [桌面设备制造](https://docs.microsoft.com/windows-hardware/manufacture/desktop/)
