@@ -11,6 +11,8 @@
       href: windows-server.md
     - name: Windows IoT 核心版服务
       href: 'https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview'
+    - name: Windows CE 应用容器
+      href: windows-ce-app-container.md
 - name: 教程
   expanded: false
   items:
