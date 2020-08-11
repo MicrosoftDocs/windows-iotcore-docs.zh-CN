@@ -2,15 +2,15 @@
 title: Windows 10 IoT Core 默认应用
 ms.date: 08/08/2018
 ms.topic: article
-description: 了解 Windows 10 IoT Core 默认应用及其功能。
+description: 阅读有关 Windows 10 IoT Core 默认应用的概述。 获取有关 (OOBE) 、命令栏、开始菜单等的全新体验的信息。
 keywords: windows iot，windows 10 iot core，默认应用
 ms.custom: RS5
-ms.openlocfilehash: 730e8c386b328efdbb66092121980a42e066679c
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: 74da457bf824cb977522c9e1c0e81bba59d20b20
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721492"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081592"
 ---
 # <a name="windows-10-iot-core-default-app-overview"></a>Windows 10 IoT Core 默认应用概述
 
@@ -21,7 +21,7 @@ ms.locfileid: "75721492"
 
 ![IoT Core 默认应用的屏幕截图](../media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
 
-此应用程序的目的不仅是为了让你在首次启动 Windows 10 IoT Core 时，为你提供与交互的友好 shell，但我们在[此处](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)提供了此应用程序的代码，以便你可以在自己的自定义应用程序上插入和使用这些功能。
+此应用程序的目的不仅是为了让你在首次启动 Windows 10 IoT Core 时，为你提供与交互的友好 shell，但我们在[此处](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)提供了此应用程序的代码，以便你可以在自己的自定义应用程序 () 上插入和使用这些功能。
 
 本文将为你提供 Windows 10 IoT Core 默认应用提供的不同功能的说明，以及你可以如何对自己的应用程序使用这些不同功能。
 
@@ -36,16 +36,16 @@ IoT Core 默认应用可进行自定义和扩展，也可将源代码用作你�
 )中所示，在某些情况下，你可以代表最终用户配置客户系统上的默认设置和功能。 但是，如果在默认情况下启用这些设置和功能，或者诊断高于 "基本" 设置，则必须执行以下操作：
 
 * 通知最终用户这些功能已启用，并向最终用户提供[此处](https://go.microsoft.com/fwlink/?LinkId=521839)指向 Microsoft 隐私声明网页的链接。 
-* 在默认情况下（根据适用法律要求）启用此类功能的安全同意。
+* 根据适用法律) 的要求，在默认情况下启用此类功能，以确保基于相关最终用户的许可 (。
 * 向最终用户提供将诊断设置更改回 "基本" 设置的能力。
 * 如果你启用 Microsoft 帐户，并且你有权访问最终用户数据，则在最终用户删除 Microsoft 帐户时，你必须在设备上启用所有最终用户的 Microsoft 帐户数据的同时删除。 
 
-## <a name="out-of-box-experience-oobe"></a>全新体验（OOBE）
+## <a name="out-of-box-experience-oobe"></a> (OOBE) 的全新体验
 
 IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要求提供默认语言和 wi-fi 设置。 从这里开始，你的应用程序必须与 GDPR 兼容，你必须有一个诊断数据屏幕，并且如果你计划跟踪位置，则还需要具有位置权限屏幕。 下面显示了二者的示例。 
 
-oobe](../media/IoTCoreDefaultApp/OOBE3.jpg)
-的 ![位置设置 ![OOBE 的诊断设置](../media/IoTCoreDefaultApp/OOBE4.jpg)
+![OOBE 的 OOBE ](../media/IoTCoreDefaultApp/OOBE3.jpg)
+ ![ 诊断设置的位置设置](../media/IoTCoreDefaultApp/OOBE4.jpg)
 
 ## <a name="command-bar"></a>命令栏
 命令栏是位于屏幕底部的持久性 horizonatal 栏。 这提供了对以下有趣的轻松访问：
@@ -69,7 +69,7 @@ oobe](../media/IoTCoreDefaultApp/OOBE3.jpg)
 ### <a name="web-browser"></a>Web 浏览器
 通过 web 浏览器，你可以从 web 中提取大多数站点。
 
-### <a name="music"></a>音乐
+### <a name="music"></a>Music
 此页面将从 "**音乐库**" 播放 MP3 和 WAV 文件，可以通过[Windows 设备门户](../manage-your-device/DevicePortal.md)访问这些文件。  若要将文件上传到音乐播放机，你需要导航到 Windows 设备门户，单击 "应用" 下拉列表，导航到 "文件资源管理器"，选择 "音乐"，然后上传文件。
 
 
@@ -81,12 +81,12 @@ oobe](../media/IoTCoreDefaultApp/OOBE3.jpg)
 
 ![如何上传音乐文件](../media/IoTCoreDefaultApp/slideshow.gif)
 
-### <a name="draw"></a>绘图
+### <a name="draw"></a>绘制
 此页面允许你测试 Windows 10 IoT Core 的墨迹功能。
 
 ## <a name="start-menu---explore"></a>开始菜单-浏览 
 
-### <a name="apps"></a>“应用” 
+### <a name="apps"></a>应用 
 此页面允许你启动在设备上安装的其他前台应用程序。 启动应用程序将挂起 IoT Core 默认应用，可通过在[Windows 设备门户](../manage-your-device/DevicePortal.md)中使用应用管理器变该应用。
 
 不需要任何特殊内容即可在页面中列出前景应用程序，只需[安装](AppInstaller.md)或[部署](AppDeployment.md)应用程序即可。 成功安装或部署后，请重新导航到 "应用" 页，刷新应用程序列表。
@@ -116,9 +116,9 @@ oobe](../media/IoTCoreDefaultApp/OOBE3.jpg)
 
 若要启用此功能，必须设置一个注册表项，以便应用可以运行这些命令。 第一次尝试运行命令时，你将看到一个链接，该链接允许你使用对 Windows 设备门户的调用来设置注册表项。 单击链接以使你的设备能够运行命令。
 
-某些命令需要管理员访问权限。 为了安全起见，默认情况下，应用程序使用非管理员帐户运行命令。 如果需要以管理员身份运行命令，则可以在命令行提示符中键入 "RunAsAdmin <your command>"。
+某些命令需要管理员访问权限。 为了安全起见，默认情况下，应用程序使用非管理员帐户运行命令。 如果需要以管理员身份运行命令，则可以 <your command> 在命令行提示符中键入 "RunAsAdmin"。
 
-## <a name="settings"></a>“设置”
+## <a name="settings"></a>设置
 你将能够在此处配置许多设置，包括 Wi-fi、蓝牙、电源选项等。
 
 ### <a name="app-settings"></a>应用设置
@@ -132,7 +132,7 @@ oobe](../media/IoTCoreDefaultApp/OOBE3.jpg)
 
 ##### <a name="weather-settings"></a>天气设置
 * 更改位置
-  > 仅当您提供有效的[Bing 地图服务令牌](https://msdn.microsoft.com/library/ff428642.aspx)时，才会启用此功能。  若要将令牌传递给应用，请在应用的 LocalState 文件夹中创建一个**MapToken**文件（例如 C:\Data\USERS\\[用户帐户] \AppData\Packages\\[包全名] \LocalState\MapToken.config），然后重新启动应用。
+  > 仅当您提供有效的[Bing 地图服务令牌](https://msdn.microsoft.com/library/ff428642.aspx)时，才会启用此功能。  若要将令牌传递给应用，请在应用的 LocalState 文件夹中创建**MapToken.config**文件 (例如 C:\Data\USERS \\ [用户帐户] \AppData\Packages \\ [包全名] \LocalState\MapToken.config) 并重新启动应用。
 * 展开地图
 * 启用/禁用地图翻转，使地图和天气交换机定期发生，以防屏幕烧入
 
@@ -148,13 +148,13 @@ oobe](../media/IoTCoreDefaultApp/OOBE3.jpg)
 * 设置 UI 缩放-默认设置自动缩放
 * 设置磁贴颜色
 
-#### <a name="system"></a>“系统”
+#### <a name="system"></a>系统
 更改语言、键盘布局和时区。
 
 #### <a name="network--wi-fi"></a>网络 & Wi-fi
 查看网络适配器属性或连接到可用的 Wi-fi 网络。
 
-#### <a name="bluetooth"></a>“蓝牙”
+#### <a name="bluetooth"></a>Bluetooth
 与蓝牙设备配对。
 
 #### <a name="app-updates"></a>应用更新
@@ -169,7 +169,7 @@ oobe](../media/IoTCoreDefaultApp/OOBE3.jpg)
 ##### <a name="basic"></a>基本 
 仅发送有关你的设备的信息、其设置和功能以及它是否正确执行。
 
-##### <a name="full"></a>完整
+##### <a name="full"></a>完全
 发送所有基本诊断数据，以及有关浏览的网站以及如何使用应用程序和功能的信息，以及有关设备运行状况、设备活动和增强的错误报告的其他信息。
 
 #### <a name="location"></a>位置

@@ -4,19 +4,19 @@ author: chsha
 ms.author: chsha
 ms.date: 02/22/2019
 ms.topic: article
-description: 了解 Windows 10 IoT Core 和 NXP i.MX Soc
+description: 了解有关 Windows 10 IoT Core 和 NXP i.MX systems for 芯片 (Soc) 的信息。 适用于 i.MX 6、i.MX 7 和 i.MX 8 分钟 (Bsp) 的板支持包。
 keywords: Windows 10 IoT Core，入门，i.MX，NXP
-ms.openlocfilehash: 5720def1be274d2c241715c164e74249f4ab8e76
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: aa7db435e7e51333572485a1a316075393b30bea
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721862"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081282"
 ---
 # <a name="window-10-iot-core-and-nxp-imx-socs"></a>Windows 10 IoT Core 和 NXP i.MX Soc
 
 
-NXP 已为 i.MX 6、i.MX 7 和 i.MX 8 分钟系列 Soc 提供了板支持包（Bsp），可用于商业用途。 I.MX 应用程序平台上经过高度优化的 Windows 10 IoT Core Bsp 使你可以更轻松地从设备到云构建安全、可缩放的解决方案，其中包括预配到大规模管理和保护设备。 设计人员可以轻松地运行云服务，从 IoT 设备获得见解。 I.MX 应用程序处理器上的 Windows 10 IoT Core 可以更快地投放市场，其中包含现成的许多用户界面和设备堆栈。
+NXP 已将 i.MX 6、i.MX 7 和 i.MX 8 分钟系列 Soc) 的板支持 (包用于商业用途。 I.MX 应用程序平台上经过高度优化的 Windows 10 IoT Core Bsp 使你可以更轻松地从设备到云构建安全、可缩放的解决方案，其中包括预配到大规模管理和保护设备。 设计人员可以轻松地运行云服务，从 IoT 设备获得见解。 I.MX 应用程序处理器上的 Windows 10 IoT Core 可以更快地投放市场，其中包含现成的许多用户界面和设备堆栈。
 
 NXP 支持 Windows 10 IoT Core，通过 i.MX 应用程序处理器和精选开发板上的开源 Bsp。  除了 NXP 设计的开发板外，NXP 硬件合作伙伴还使用开放源许可 I.MX 启用了多个 MX6、MX7 和8分钟 Bsp 单板计算机和系统模块解决方案。 现在，每个人都可以访问 i.MX 6、i.MX 7 和 i.MX 8 分钟产品系列的完整 BSP 内容，以及10年支持的 Windows 10 IoT 核心2018版。
 
@@ -26,7 +26,7 @@ NXP 支持 Windows 10 IoT Core，通过 i.MX 应用程序处理器和精选开�
 
 如果你有 NXP 硬件/BSP 报告相关问题或有关 BSP 如何更好地支持你的目标解决方案的信息，请将其发布到[NXP 社区](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D)。 对于任何与 Windows 相关的问题，请使用[Microsoft 社区](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)。
 
-如果你需要超出用于 BSP 自定义和 integation i.MX 产品的社区论坛的其他支持，可通过 Pro-Support www.nxp.com/prosupport 获得支持。 可以将查询发送到[prosupport@nxp.com](mailto:prosupport@nxp.com)。 对于 Windows 10 IoT 付费服务和集成，请联系[epsoinfo@microsoft.com](mailto:epsoinfo@microsoft.com)。
+如果你需要超出用于 BSP 自定义和 integation i.MX 产品的社区论坛的其他支持，可通过 Pro-Support www.nxp.com/prosupport 获得支持。 可以将查询发送到 [prosupport@nxp.com](mailto:prosupport@nxp.com) 。 对于 Windows 10 IoT 付费服务和集成，请联系 [epsoinfo@microsoft.com](mailto:epsoinfo@microsoft.com) 。
 
 
 ## <a name="ecosystem-resources"></a>生态系统资源

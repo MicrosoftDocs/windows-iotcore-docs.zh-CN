@@ -2,27 +2,27 @@
 title: 将设备连接到云
 ms.date: 08/28/2017
 ms.topic: article
-description: 了解如何将设备连接到云。
+description: 了解如何将设备连接到云。 使用受信任的平台模块 (TPM) 微控制器设备来存储数据和执行计算。
 keywords: windows iot，Azure，安全性，受信任的平台模块，SoC
-ms.openlocfilehash: 62120695d2209227f938ebd5635380f226dddfc1
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: 13f37749981c713f9094aba828b7ff7a10122238
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721502"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081152"
 ---
 # <a name="connect-your-device-to-the-cloud"></a>将设备连接到云
 
 在设备上存储安全信息（如密码或证书）可能会使设备容易遭受曝光。 泄漏密码是一种损害设备或整个系统的安全的 surefire 方式。 在 Windows 系列中，支持操作系统安全的技术是受信任的平台模块。
 
-[受信任的平台模块](https://en.wikipedia.org/wiki/Trusted_Platform_Module)（TPM）设备是一个可以存储数据和执行计算的微控制器。 它可以是焊接到计算机主板上的离散芯片，也可以是制造商提供的芯片（SoC）上集成到系统中的模块。 
+[受信任的平台模块](https://en.wikipedia.org/wiki/Trusted_Platform_Module) (TPM) 设备是可以存储数据和执行计算的微控制器。 它可以是焊接到计算机主板上的离散芯片，也可以是制造商 (SoC) 芯片上集成到系统中的模块。 
 
 ## <a name="inside-the-tpm"></a>TPM 内部 
 
-TPM 的一项重要功能是它只写内存。 根据数据，TPM 还可以根据数据计算加密哈希（例如[HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code)）。
+TPM 的一项重要功能是它只写内存。 根据数据，TPM 还可以基于数据中的数据来计算加密哈希 (例如[HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code)) 。
 由于哈希，无法发现机密，但如果对双方的通信都知道密码，则可能会确定是否从该机密产生了从另一方收到的哈希。
 
-使用加密密钥的基本思路：机密（也称为共享访问密钥）在设备预配过程中建立并共享 IoT 设备和云。 从此时开始，将使用从机密派生的 HMAC 对 IoT 设备进行身份验证。
+使用加密密钥的基本思路：机密 (也称为共享访问密钥) 在设备预配过程中建立并共享 IoT 设备和云。 从此时开始，将使用从机密派生的 HMAC 对 IoT 设备进行身份验证。
 
 ## <a name="device-provisioning"></a>设备预配 
 
@@ -30,7 +30,7 @@ TPM 的一项重要功能是它只写内存。 根据数据，TPM 还可以根�
 
 仪表板会生成操作系统映像，并将设备安全连接到 Azure。 这是通过将物理设备与 Azure IoT 中心中的设备 ID 相关联并将设备特定的共享访问密钥 imprinting 到设备的 TPM 来完成的。 
 
-对于没有 TPM 芯片的设备，此工具可以安装软件模拟的 TPM。 这并不提供安全性，但允许使用 maker 设备开发应用（如 Raspberry Pi 2 或3），并在具有硬件 TPM 的设备上具有安全性 "亮起"，而无需更改应用。 
+对于没有 TPM 芯片的设备，此工具可以安装软件模拟的 TPM。 这并不提供安全性，但允许你使用 maker 设备开发应用 (如 Raspberry Pi 2 或 3) ，并在具有硬件 TPM 的设备上具有安全性 "亮起"，而无需更改应用。 
 
 若要将设备连接到 Azure，请单击 "连接到 Azure" 选项卡：
 

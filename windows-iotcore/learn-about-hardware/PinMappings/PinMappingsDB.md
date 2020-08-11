@@ -1,29 +1,29 @@
 ---
-title: DragonBoard 引脚映射
+title: Dragonboard Pin 映射
 ms.date: 08/28/2017
 ms.topic: article
-description: 了解 Dragonboard 的 pin 映射功能。
+description: 了解 Dragonboard 的 pin 映射功能，包括 GPIO、串行 UART、I2C 总线和 SPI 总线。
 keywords: windows iot，Dragonboard，pin 映射，GPIO
-ms.openlocfilehash: f0a811c05b371d9f7a85c1f86b0f69de4d750487
-ms.sourcegitcommit: 0fa10fafb13788496674d13e0ae810a6d93e3483
+ms.openlocfilehash: 9a74e8256da8ed7a58343d8606eedbf58550d6b1
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258551"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081472"
 ---
-# <a name="dragonboard-pin-mappings"></a>DragonBoard 引脚映射
+# <a name="dragonboard-pin-mappings"></a>Dragonboard Pin 映射
 
 ![Dragonboard 针标头](../../media/PinMappingsDB/DB_Pinout.png)
 
-Dragonboard 的硬件接口通过开发板上的 40 排针公开。 功能包括：
+Dragonboard 的硬件接口通过板上的40针标头公开。 功能包括：
 
-* **11x** - GPIO 引脚
-* **2x** - 串行 UART
-* **1x** - SPI 总线
-* **2x** - I2C 总线
-* **1x** - 5V 电源引脚
-* **1x** - 1.8V 电源引脚
-* **4x** - 接地引脚
+* **11x** -GPIO 引脚
+* **2x** -串行 UARTs
+* **1x** -SPI 总线
+* **2x** -I2C 总线
+* **1x** -5v 电源
+* **1x** -1.8 v 电源固定
+* **4x**
 
 请注意，Dragonboard 在所有 IO 引脚上使用 1.8 V 逻辑级别。 
 
@@ -33,9 +33,9 @@ Dragonboard 的硬件接口通过开发板上的 40 排针公开。 功能包括
 
 ### <a name="gpio-pin-table"></a>GPIO 固定表
 
-以下 GPIO 引脚可通过 API 访问：
+以下 GPIO pin 可通过 Api 访问：
 
-> | GPIO# | 排针         |
+> | GPIO# | 标头 Pin         |
 > |-------|--------------------|
 > | 36    | 23                 |
 > | 12    | 24                 |
@@ -70,16 +70,16 @@ public void GPIO()
 ### <a name="gpio-issues"></a>GPIO 问题
 
 * 输出在 GPIO 24 上不起作用。 输入工作正常。
-* 引脚会在启动时配置为 InputPullDown，但在首次打开时将更改为 Input (floating)
-* 关闭时，引脚不会还原为默认状态
-* 当多个引脚上启用了中断时，可能会看到假中断
+* 在启动时，pin 配置为 InputPullDown，但在首次打开时，将更改为 "输入 (" 浮动) 
+* Pin 在关闭时不会恢复为其默认状态
+* 如果对多个 pin 启用了中断，可能会出现虚假中断
 
 
 ## <a name="serial-uart"></a>串行 UART
 
-Dragonboard 上提供了两个串行 UART：**UART0** 和 **UART1**
+Dragonboard **UART0**和**UART1**上提供了两个串行 UARTS
 
-**UART0** 具有标准 **UART0 TX** 和 **UART0 RX** 线以及流控制信号 **UART0 CTS** 和 **UART0 RTS**。
+**UART0**具有标准的**UART0 TX**和**UART0 RX**线路，以及流控制信号**UART0 CTS**和**UART0 RTS**。
 
 * Pin 5- **UART0 TX**
 * 引脚 7- **UART0 RX**
@@ -87,12 +87,12 @@ Dragonboard 上提供了两个串行 UART：**UART0** 和 **UART1**
 * Pin 9- **UART0 RTS**
 
 
-**UART1** 仅包含 **UART1 TX** 和 **UART1 RX** 线。
+**UART1**仅包括**UART1 TX**和**UART1 RX**行。
 
 * Pin 11- **UART1 TX**
 * Pin 13- **UART1 RX**
 
-以下示例初始化 **UART1** 并依次执行写入和读取操作：
+下面的示例初始化**UART1**并执行写操作，后跟读取：
 
 ```C#
 using Windows.Storage.Streams;
@@ -127,7 +127,7 @@ public async void Serial()
 }
 ```
 > [!NOTE]
-> Visual Studio 2017 在清单设计器（appxmanifest.xml 文件的可视化编辑器）中有一个已知 bug，该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能，则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml （设备 xml 子级将丢失）。  若要解决此问题，请右键单击 appxmanifest.xml，然后从上下文菜单中选择 "查看代码"，手动编辑 appxmanifest.xml。
+> Visual Studio 2017 在清单设计器中有一个已知 bug， (用于 appxmanifest.xml 文件的可视化编辑器) 会影响 serialcommunication 功能。  如果你的 appxmanifest.xml 添加 serialcommunication 功能，则通过设计器修改 appxmanifest.xml 将损坏 appxmanifest.xml (设备 xml 子级将丢失) 。  若要解决此问题，请右键单击 appxmanifest.xml，然后从上下文菜单中选择 "查看代码"，手动编辑 appxmanifest.xml。
 
 必须将以下功能添加到 UWP 项目中的**appxmanifest.xml**文件，才能运行串行 UART 代码：
 
@@ -147,19 +147,19 @@ public async void Serial()
 
 ### <a name="i2c-pins"></a>I2C 引脚
 
-在排针上公开的 **I2C0**，带有 **SDA** 和 **SCL** 两条线
+**I2C0**在 pin 标头上公开，并带有两行**SDA**和**SCL**
 
-* 引脚 17 - **I2C0 SDA**
-* 引脚 15 - **I2C0 SCL**
+* Pin 17- **I2C0 SDA**
+* 固定 15- **I2C0 SCL**
 
-在排针上公开的 **I2C1**，带有 **SDA** 和 **SCL** 两条线
+**I2C1**在 pin 标头上公开，并带有两行**SDA**和**SCL**
 
-* 引脚 21 - **I2C1 SDA**
-* 引脚 19 - **I2C1 SCL**
+* Pin 21- **I2C1 SDA**
+* 固定 19- **I2C1 SCL**
 
 ### <a name="i2c-sample"></a>I2C 示例
 
-以下示例将初始化 **I2C0** 并将数据写入地址为 **0x40** 的 I2C 设备：
+下面的示例使用 address **0x40**初始化**I2C0**并将数据写入 I2C 设备：
 
 ```C#
 using Windows.Devices.Enumeration;
@@ -194,21 +194,21 @@ public async void I2C()
 
 ### <a name="spi-pins"></a>SPI Pin
 
-DB 上提供一个 SPI 控制器 **SPI0**
+数据库上有一个 SPI 控制器**SPI0**可用
 
 * Pin 10- **SPI0 MISO**
 * Pin 14- **SPI0 MOSI**
-* 引脚 8 - **SPI0 SCLK**
-* 引脚 12 - **SPI0 CS0**
+* Pin 8- **SPI0 SCLK**
+* Pin 12- **SPI0 CS0**
 
 ### <a name="spi-issues"></a>SPI 问题
 
-SPI 时钟固定在 4.8mhz。 请求的 SPI 时钟将被忽略。 
+SPI 时钟固定在 4.8 mhz。 请求的 SPI 时钟将被忽略。 
 
 
 ### <a name="spi-sample"></a>SPI 示例
 
-有关如何在总线 **SPI0** 上执行 SPI 写入的示例如下所示：
+下面显示了有关如何在总线上执行 SPI 写入的示例**SPI0** ：
 
 ```C#
 using Windows.Devices.Enumeration;

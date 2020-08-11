@@ -4,14 +4,14 @@ author: paulmon
 ms.author: paulmon
 ms.date: 08/13/2019
 ms.topic: article
-description: 了解如何在运行 Windows 10 IoT Core 的设备上安装 Python
+description: 了解如何在运行 Windows 10 IoT Core 的设备上安装 Python。 有关 x64、x86、ARM32 和 ARM64 的说明，请参阅。 请参阅其他 Python 开发人员资源。
 keywords: windows iot, python
-ms.openlocfilehash: e76fdeaafe4b3b2b80b75a1fc22bd8a58769e1e5
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: 497b1d02805ed57a212481fa118db31862f917ff
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721630"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081502"
 ---
 # <a name="python"></a>Python
 Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
@@ -148,7 +148,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
     python -c "print('Hello World!');quit()"
     ```
 
-## <a name="try-out-azure-iot-hub-python-sdks-v2---previewhttpsgithubcomazureazure-iot-sdk-python-preview"></a>试用 [Azure IoT 中心 Python SDK v2 - 预览版](https://github.com/Azure/azure-iot-sdk-python-preview)
+## <a name="try-out-azure-iot-hub-python-sdks-v2---preview"></a>试用 [Azure IoT 中心 Python SDK v2 - 预览版](https://github.com/Azure/azure-iot-sdk-python-preview)
 
 1. 首先安装 SDK。
 
@@ -176,9 +176,9 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ![证书导出向导](../media/Python/global_sign_cert.png)
 
-10. 单击“`Next`”。
+10. 单击 `Next`。
 
-11. 单击“`Finish`”。
+11. 单击 `Finish`。
 
 12. 在台式计算机上运行以下命令以将 `c:\test\DigiCert High Assurance EV Root.cer` 复制到设备：
 
@@ -231,7 +231,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
     az iot hub device-identity show-connection-string --device-id <your device id> --hub-name <your IoT Hub name>
     ```
 
-    其格式应为：
+    它应采用以下格式：
     ```
     HostName=<your IoT Hub name>.azure-devices.net;DeviceId=<your device id>;SharedAccessKey=<some value>
     ```
