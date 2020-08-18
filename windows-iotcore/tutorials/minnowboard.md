@@ -2,15 +2,15 @@
 title: 设置 Minnowboard
 ms.date: 05/22/2019
 ms.topic: article
-description: 了解如何通过 Windows 10 IoT 核心版来设置 Minnowboard。
+description: 了解如何通过 Windows 10 IoT 核心版来设置 Minnowboard。 查看如何使用仪表板、连接到网络，以及如何连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, Minnowboard
 ms.custom: RS5
-ms.openlocfilehash: abbc6548a9219b967ea379e238ed6a898830e798
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: ec5813a08dc66374573a43a170d47017112a2dd8
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75721912"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081702"
 ---
 # <a name="setting-up-a-minnowboard"></a>设置 MinnowBoard
 
@@ -20,7 +20,7 @@ ms.locfileid: "75721912"
 > MinnowBoard Turbot 的最新 64 位固件可以在 [MinnowBoard 网站](https://minnowboard.org/tutorials/updating-the-firmware)上找到（跳过 MinnowBoard 站点的说明中的步骤 4）。
 
 > [!IMPORTANT]
-> 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。  我们正在修复此问题。
+> 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。__ 我们正在努力修复此问题。
 
 设置进行原型制作的 MinnowBoard 时，建议使用 Windows 10 IoT 核心版仪表板。 但是，若要使用 MinnowBoard 进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
 <br>
@@ -35,9 +35,9 @@ ms.locfileid: "75721912"
 * 外部显示器
 * 任何其他外设（例如鼠标、键盘等）
 
-### <a name="instructions"></a>说明
+### <a name="instructions"></a>Instructions
 
-1. 运行 Windows 10 IoT 核心版仪表板，单击“设置新设备”，然后将 SD 卡插入计算机中。 
+1. 运行 Windows 10 IoT 核心版仪表板，单击“设置新设备”，然后将 SD 卡插入计算机中。
 2. 将 MinnowBoard 连接到外部显示器。
 3. 填写字段。 选择“Intel [MinnowBoard Turbox/MAX (x64)]”作为设备类型。 确保为设备提供新的名称和密码。 否则，默认凭据仍旧为：
 
@@ -46,7 +46,7 @@ Device: minwinpc
 Password: p@ssw0rd
 ```
 
-4. 接受软件许可条款，然后单击“下载并安装”  。 如果一切正常，则可以看到 Windows 10 IoT 核心版此时正刷写 SD 卡。
+4. 接受软件许可条款，然后单击“下载并安装”。 如果一切正常，则可以看到 Windows 10 IoT 核心版此时正刷写 SD 卡。
 
 ![仪表板屏幕截图](../media/DeviceSetup/Dashboard-Screenshot.jpg)
 
@@ -58,15 +58,15 @@ Password: p@ssw0rd
 如果设备支持 Wi-Fi 连接，而你已将显示器连接到设备，则需执行以下操作：
 
 1. 进入默认应用程序，单击时钟旁边的设置按钮。
-2. 在设置页上，选择“网络和 Wi-Fi”。 
+2. 在设置页上，选择“网络和 Wi-Fi”。__
 3. 设备将开始扫描无线网络。
-4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。 
+4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。__
 
 如果尚未连接显示器，因此希望通过 Wi-Fi 进行连接，则需执行以下操作：
 
-1. 转到 IoT 仪表板，单击“我的设备”。 
+1. 转到 IoT 仪表板，单击“我的设备”。__
 2. 从列表中找到你的未配置的板。 其名称会以“AJ_”开头（例如 AJ_58EA6C68）。 如果数分钟后仍没有看到自己的板显示，则请尝试重启你的板。
-3. 单击“配置设备”，然后输入网络凭据。  这样就会将板连接到网络。
+3. 单击“配置设备”，然后输入网络凭据。__ 这样就会将板连接到网络。
 
 > [!NOTE]
 > 需启用计算机上的 Wi-Fi 才能找到其他网络。

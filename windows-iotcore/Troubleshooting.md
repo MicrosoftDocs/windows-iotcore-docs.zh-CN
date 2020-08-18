@@ -1,14 +1,14 @@
 ---
-Description: 排查与开发相关的不同问题。
+Description: 排查 Windows 10 IoT 核心版中与开发相关的不同问题，包括特定硬件设备方面的问题。
 title: 疑难解答
 ms.date: 08/28/2018
 ms.topic: article
-ms.openlocfilehash: 6118a5a5006d79c65681400de45fb7626f96836d
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: 6ed28a979cb5132e0b368e4e338c16a0d476367b
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75721513"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081362"
 ---
 # <a name="troubleshooting"></a>疑难解答
 本文包含用户遇到的常见故障排除问题。 若要查找特定内容（字词或短语），请使用 Ctrl+F。 想要表达你自己的见解？ 请针对本文档创建一个 PR，或者在下面提供内容反馈。
@@ -182,7 +182,7 @@ administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=
 
 “平板模式”是仅存在于桌面 shell 上的概念，不适用于 IoT 核心版。 
 
-如果设备有支持的硬件（不管是通过 I2C 还是通过 USB HID 触摸进行支持），则应可通过内置型驱动程序自动启用触摸功能。 你可以在[此处](https://docs.microsoft.com/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity)阅读有关此问题的详细信息。
+如果设备有支持的硬件（不管是通过 I2C 还是通过 USB HID 触摸进行支持），则应可通过内置型驱动程序自动启用触摸功能。 你可以在[此处](https://docs.microsoft.com/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity)了解更多相关信息。
 
 
 ## <a name="yubikey-support"></a>Yubikey 支持

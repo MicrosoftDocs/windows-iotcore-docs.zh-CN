@@ -2,14 +2,14 @@
 title: 2018 年 10 月更新 - 版本 17763
 ms.date: 10/02/2018
 ms.topic: article
-description: 了解适用于 Windows 的 2018 年 10 月更新中的新增功能。
+description: 阅读 Windows 10 IoT 的 2018 年 10 月更新的发行说明。 查看新增功能，了解已分配的访问权限的改进之处等等。
 keywords: Windows IoT，2018 年 10 月更新，发行说明
-ms.openlocfilehash: 5b5b6e45552d099426019626ca52000635e308a5
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: 3647f5be09e84afdc596f0b1aede0deae1cf8739
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75721872"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081732"
 ---
 # <a name="october-2018-update-release-notes-for-windows-10-iot"></a>适用于 Windows 10 IoT 的 2018 年 10 月更新的发行说明
 内部版本号 17763。 2018 年 10 月
@@ -27,12 +27,12 @@ Windows 10 IoT 支持开发嵌入式设备或专用设备，适合 OEM 和开发
 
 ## <a name="whats-new-in-october-2018-update"></a>2018 年 10 月更新中的新增功能
 
-Windows 10 IoT 企业版和 Windows 10 IoT 核心版 
+Windows 10 IoT 企业版和 Windows 10 IoT 核心版
 * Windows 10 IoT 2018 年 10 月更新将为 IoT 核心版和 IoT 企业版提供 10 年的支持。
 * [Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/quickstart) 是一种完全托管的服务，可通过直接在 Windows 10 IoT 设备上部署和运行人工 (AI) 工作负载、Azure 服务和自定义逻辑，在本地提供云智能。
 * 借助 [Windows 机器学习](https://docs.microsoft.com/windows/ai/)，开发人员可在其应用程序中使用预先训练的机器学习模型。 这些模型通常在云中训练，以便在边缘设备上进行评估。 在运行 Windows 10 IoT 的设备上进行本地评估有助于减轻连接性、带宽和数据隐私方面的问题。  
 
-_Windows 10 IoT 核心板_
+_Windows 10 IoT Core_
 * [Windows 10 IoT Core Services](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview) 订阅现已正式发布。 此订阅具有三大优点：10 年的 OS 支持、[设备更新中心](https://docs.microsoft.com/windows-hardware/service/iot/using-device-update-center)的更新控制和设备运行状况证明 (DHA)。
 * 为了应对客户和合作伙伴对晶片多样性需求不断增长的趋势，Microsoft 与 NXP 密切合作，向 Windows 10 IoT 核心版添加了对 NXP i.MX 6、7 和 8M 系列处理器的支持。 
 * Qualcomm 和 Microsoft 制定了一个解决方案，该解决方案将 Windows 10 IoT 企业版与 Snapdragon 处理器相结合，以构建功耗更低、始终保持连接并可立即唤醒的设备。 较长的电池续航时间使移动 POS 和业务线平板电脑等专用设备可以持续使用一整天。 
@@ -70,7 +70,7 @@ _Windows 10 IoT 企业版_
 _Windows 10 IoT 企业版_
 * Azure IoT 中心提供了轻量级的设备管理功能和可扩展模型，使设备和云开发人员能够构建可靠的设备管理解决方案。 Windows 10 IoT 核心版和企业版现在都可与[Azure IoT 设备管理](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm)集成。 
 
-_Windows 10 IoT 核心板_
+_Windows 10 IoT Core_
 * 使用 [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) 进行设备管理的企业现在可以管理 Windows 10 IoT 核心版设备以及 Windows 10 IoT 企业版设备和其他托管设备。 这样，操作员可以采取一致的方式，使用相同的管理界面和控件管理 Windows 10 IoT 设备。 
 
 

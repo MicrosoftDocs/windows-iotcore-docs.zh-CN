@@ -2,22 +2,22 @@
 title: 设置 NXP 设备
 ms.date: 05/22/2019
 ms.topic: article
-description: 了解如何通过 Windows 10 IoT 核心版来设置 NXP 设备。
+description: 了解如何通过 Windows 10 IoT 核心版来设置 NXP 设备。 使用仪表板、连接到网络，并连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, NXP
 ms.custom: RS5
-ms.openlocfilehash: aa3e28cb79e69c1faccd733d993c8ec12f6ae314
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: 6bcf1c7bde16f941afa6bb3d83c33bf4f12c9454
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75721728"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081692"
 ---
 # <a name="setting-up-a-nxp-device"></a>设置 NXP 设备
 
 ## <a name="overview"></a>概述
 
 > [!IMPORTANT]
-> 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。  我们正在修复此问题。
+> 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。__ 我们正在努力修复此问题。
 
 > [!NOTE]
 > 设置 NXP 与设置 Raspberry Pi 几乎完全相同。
@@ -35,9 +35,9 @@ ms.locfileid: "75721728"
 * 外部显示器
 * 任何其他外设（例如鼠标、键盘等）
 
-### <a name="instructions"></a>说明
+### <a name="instructions"></a>Instructions
 
-1. 运行 Windows 10 IOT 核心版仪表板，单击“设置新设备”，然后将 SD 卡插入计算机中。 
+1. 运行 Windows 10 IOT 核心版仪表板，单击“设置新设备”，然后将 SD 卡插入计算机中。**
 2. 将 NXP 设备连接到外部显示器。
 3. 填写字段。 选择“NXP [i.MX6/i.MX7]”作为设备类型。 确保为设备提供新的名称和密码。 否则，默认凭据仍旧为：
 
@@ -47,7 +47,7 @@ Password: p@ssw0rd
 ```
 
 4. 使用“浏览”功能上传预先下载的映像文件。 有关详细信息，请参阅 [NXP 文档](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp)。
-5. 接受软件许可条款，然后单击“下载并安装”  。 如果一切正常，则可以看到 Windows 10 IoT 核心版此时正刷写 SD 卡。
+5. 接受软件许可条款，然后单击“下载并安装”。 如果一切正常，则可以看到 Windows 10 IoT 核心版此时正刷写 SD 卡。
 
 ![仪表板屏幕截图](../media/DeviceSetup/Dashboard-Screenshot.jpg)
 
@@ -60,15 +60,15 @@ Password: p@ssw0rd
 如果设备支持 Wi-Fi 连接，而你已将显示器连接到设备，则需执行以下操作：
 
 1. 进入默认应用程序，单击时钟旁边的设置按钮。
-2. 在设置页上，选择“网络和 Wi-Fi”。 
+2. 在设置页上，选择“网络和 Wi-Fi”。__
 3. 设备将开始扫描无线网络。
-4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。 
+4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。__
 
 如果尚未连接显示器，因此希望通过 Wi-Fi 进行连接，则需执行以下操作：
 
-1. 转到 IoT 仪表板，单击“我的设备”。 
+1. 转到 IoT 仪表板，单击“我的设备”。__
 2. 从列表中找到你的未配置的板。 其名称会以“AJ_”开头（例如 AJ_58EA6C68）。 如果数分钟后仍没有看到自己的板显示，则请尝试重启你的板。
-3. 单击“配置设备”，然后输入网络凭据。  这样就会将板连接到网络。
+3. 单击“配置设备”，然后输入网络凭据。__ 这样就会将板连接到网络。
 
 > [!NOTE]
 > 需启用计算机上的 Wi-Fi 才能找到其他网络。

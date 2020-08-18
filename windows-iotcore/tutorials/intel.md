@@ -2,15 +2,15 @@
 title: 设置 Intel 设备
 ms.date: 05/22/2019
 ms.topic: article
-description: 了解如何通过 Windows 10 IoT 核心版来设置 Intel 设备。
+description: 了解如何通过 Windows 10 IoT 核心版来设置 Intel 设备。 使用 eMMC、连接到网络，并连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, Intel
 ms.custom: RS5
-ms.openlocfilehash: bf32ffbaa890620c8ff9aca40a2c45023609c9ef
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: 1b9eec92e9f0858adafb79b1a857812305e67f73
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75721892"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081712"
 ---
 # <a name="setting-up-an-intel-device"></a>设置 Intel 设备
 
@@ -26,7 +26,7 @@ ms.locfileid: "75721892"
 3. 创建可从 USB 启动的 WinPE 映像：
 4. 以管理员身份启动 Deployment and Imaging Tools Environment `(C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools)`。
 5. 创建 Windows PE 文件的工作副本。 指定 x86、amd64 或 ARM：`Copype amd64 C:\WINPE_amd64`
-6. 将 Windows PE 安装到 U 盘，指定下面的 WinPE 驱动器号。 可以在[此处](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)查找详细信息。 `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`
+6. 将 Windows PE 安装到 U 盘，指定下面的 WinPE 驱动器号。 可在[此处](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)找到详细信息。 `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`
 7. 下载 [Windows 10 IoT 核心版映像](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true)，方法是：双击下载的 ISO 文件，找到装载的虚拟 CD 驱动器。
 8. 此驱动器将包含一个安装文件 (.msi)；双击它。 这样会在电脑中的 C:\Program Files (x86)\Microsoft IoT\FFU\ 下创建一个新目录，其中可以看到映像文件“flash.ffu”。
 9. 下载 [eMMC 安装程序脚本](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip)，将其解压缩后连同设备的 FFU 复制到 USB 设备的根目录。
@@ -43,15 +43,15 @@ ms.locfileid: "75721892"
 如果设备支持 Wi-Fi 连接，而你已将显示器连接到设备，则需执行以下操作：
 
 1. 进入默认应用程序，单击时钟旁边的设置按钮。
-2. 在设置页上，选择“网络和 Wi-Fi”。 
+2. 在设置页上，选择“网络和 Wi-Fi”。__
 3. 设备将开始扫描无线网络。
-4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。 
+4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。__
 
 如果尚未连接显示器，因此希望通过 Wi-Fi 进行连接，则需执行以下操作：
 
-1. 转到 IoT 仪表板，单击“我的设备”。 
+1. 转到 IoT 仪表板，单击“我的设备”。__
 2. 从列表中找到你的未配置的板。 其名称会以“AJ_”开头（例如 AJ_58EA6C68）。 如果数分钟后仍没有看到自己的板显示，则请尝试重启你的板。
-3. 单击“配置设备”，然后输入网络凭据。  这样就会将板连接到网络。
+3. 单击“配置设备”，然后输入网络凭据。__ 这样就会将板连接到网络。
 
 > [!NOTE]
 > 需启用计算机上的 Wi-Fi 才能找到其他网络。

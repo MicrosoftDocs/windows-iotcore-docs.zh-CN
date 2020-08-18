@@ -2,14 +2,14 @@
 title: 入门概述
 ms.date: 04/10/2018
 ms.topic: article
-description: 了解 Windows 10 IoT 核心版入门。
+description: Windows 10 IoT 核心版入门。 查看相关文章，了解 Windows 10 IoT、Windows 10 IoT 定价、设备原型以及将设备投入市场的方式。
 keywords: Windows 10 IoT 核心版, 入门, 映像,
-ms.openlocfilehash: f33c2ae81a9012e11337063677a51ff31aff89a0
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: 32869420dcb9d4514a647848eb80646a393e0c66
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75721432"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081222"
 ---
 # <a name="get-started-with-windows-10-iot-core"></a>Windows 10 IoT 核心版入门
 
@@ -66,7 +66,7 @@ ms.locfileid: "75721432"
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">用途</th>
+<th align="left">目标</th>
 <th align="left">定价</th>
 </tr>
 </thead>
@@ -74,12 +74,12 @@ ms.locfileid: "75721432"
 
 <tr class="odd">
 <td align="left"><p>原型制作</p></td>
-<td align="left"><p>Free</p></td>
+<td align="left"><p>免费</p></td>
 </tr>
 
 <tr class="odd">
 <td align="left"><p>针对商业化的长期服务频道 (LTSC)</p></td>
-<td align="left"><p>每台设备支付少量费用即可获得 10 年期支持、更新控制和设备运行状况证明 (DHA)。 在<a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview" data-raw-source="[here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview)">此处</a>了解详细信息。</p></td>
+<td align="left"><p>每台设备支付少量费用即可获得 10 年期支持、更新控制和设备运行状况证明 (DHA)。 在<a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview" data-raw-source="[here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview)">此处</a>了解更多信息。</p></td>
 </tr>
 
 <tr class="odd">

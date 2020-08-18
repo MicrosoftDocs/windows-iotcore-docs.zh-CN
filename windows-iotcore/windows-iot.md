@@ -2,14 +2,14 @@
 title: Windows 10 IoT 概述
 ms.date: 01/30/2018
 ms.topic: article
-description: 了解 Windows 10 IoT 是什么，以及可以用它执行什么操作。
+description: 查看 Windows 10 IoT 的概述及其用途。 查看 Windows 10 IoT 核心版、Windows 10 IoT 企业版和 Windows 10 桌面版之间的差异。
 keywords: Windows 10 IoT 企业版, Windows 10 IoT 核心版, 无外设, 语音, 功能, 二进制版本, 版本
-ms.openlocfilehash: 9ef9562e93dbaa71b97f75689adc3eed28ac1f9f
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: 6f85de7d4185135148b186f7c5991de7f6081578
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75721793"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081742"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 概述 
 
@@ -26,17 +26,17 @@ Windows 10 IoT 有两个版本。  Windows 10 IoT 核心版是 Windows 10 操作
 
 虽然 Windows 10 IoT 核心版和 Windows 10 IoT 企业版在名称上类似，但其提供的东西和支持的东西存在差异。 下面是一个功能列表，其中突出显示了版本差异。
 
-> |             | Windows 10 IoT 核心版  |  Windows 10 IoT 企业版  |
+> | 功能&nbsp;/&nbsp;版本 | Windows 10 IoT 核心板  |  Windows 10 IoT 企业版  |
 > |-------------|----------|---------|
 > | 用户体验 | 在某个时刻前台中会有一个 UWP 应用（请参阅 [IoT Shell 文档](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell)，了解如何进行应用 Backstack 处理），此外还有提供支持的后台应用和服务。 | 带有高级锁定功能的传统 Windows Shell |
 > | 支持无外设 | 是 | 是 |
 > | 支持应用体系结构 | 仅 UWP UI | 完整 Windows UI 支持（例如 UWP、WinForms 等） |
 > | Cortana | [*Cortana SDK*](https://developer.microsoft.com/cortana/devices) | 是 |
 > | 域加入 | 仅 AAD | AAD 和传统域 |
-> | Management | MDM | MDM |
+> | 管理 | MDM | MDM |
 > | 设备安全技术 | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm)、[安全启动、BitLocker、Device Guard](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker)，以及设备运行状况证明 | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm)、[安全启动、BitLocker、Device Guard](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker)，以及设备运行状况证明 |
 > | CPU 体系结构支持 | x86、x64 和 ARM | x86 和 x64 |
-> | 授权 | 免版税联机许可协议和嵌入式 OEM 协议 | 直接和间接嵌入式 OEM 协议 |
+> | 许可 | 免版税联机许可协议和嵌入式 OEM 协议 | 直接和间接嵌入式 OEM 协议 |
 > | 使用方案 | [数字签名](https://www.microsoft.com/windowsforbusiness/digital-signage)、智能建筑、IoT 网关、HMI、智能家居、可穿戴设备 | 工业平板电脑、零售服务点、展台、[数字签名](https://www.microsoft.com/windowsforbusiness/digital-signage)、ATM、医疗设备、制造设备、瘦客户端 |
 
 如需最低要求的详细信息，请访问 [Windows 硬件站点](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)。
@@ -96,4 +96,4 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 
 ## <a name="helpful-resources"></a>有用资源
 * [Windows 10 IoT 企业版](windows-iot-enterprise.md)
-* [Windows 10 IoT 核心板](windows-iot-core.md)
+* [Windows 10 IoT Core](windows-iot-core.md)

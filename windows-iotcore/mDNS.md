@@ -2,18 +2,18 @@
 title: mDNS 响应程序示例源代码入门
 ms.date: 02/26/2019
 ms.topic: article
-description: 了解如何完成 mDNS 响应程序示例源代码入门。
+description: 了解如何开始使用面向 Windows IoT 的 mDNS 响应程序。 需要下载与 Bonjour 兼容的示例源。
 keywords: Windows 10 IoT 核心版, mDNS 响应程序示例源代码
-ms.openlocfilehash: ca99a217ade4c55c6d3050134af8d5663d8d1621
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: ea6be19041b82ab4b496728d0ffb4a169c262eb9
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "72917343"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081352"
 ---
 # <a name="getting-started-with-mdns-responder-sample-source"></a>mDNS 响应程序示例源代码入门
 
-## <a name="getting-started"></a>即刻体验
+## <a name="getting-started"></a>入门
 
 1.  编译项目 *mDNSResponder* 以获取 mDNSResponder.exe，这是一项服务。 将 .exe 复制到目标计算机，然后注册并运行该服务。
 2. 运行“mDNSResponder.exe /?” 以列显用法

@@ -1,16 +1,16 @@
 ---
-Description: 下载用于 Windows 10 IoT 核心版的文件。
 title: 下载
+description: 开发单元测试，了解 Windows 10 IoT 核心版上支持的通用 Windows 平台 (UWP) 单元测试。
 ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-ms.openlocfilehash: 81b54ab3a0e5f0dcca480bd9abdebf4aadb85f84
-ms.sourcegitcommit: 415bbc74b970f7a1b30e4aa01f06c09a63270150
+ms.openlocfilehash: d36280e761e497c910006bfbdcd4e3b9b25073db
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84418843"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081322"
 ---
 # <a name="downloads"></a>下载
 下载 Windows 10 IoT 核心版入门所需的工具和软件。

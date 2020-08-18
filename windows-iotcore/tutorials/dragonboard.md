@@ -2,15 +2,15 @@
 title: 设置 Dragonboard
 ms.date: 05/22/2019
 ms.topic: article
-description: 了解如何通过 Windows 10 IoT 核心版来设置 Dragonboard。
+description: 了解如何通过 Windows 10 IoT 核心版来设置 Dragonboard。 使用仪表板、连接到网络，并连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, Dragonboard
 ms.custom: RS5
-ms.openlocfilehash: 49de9a3007dac12a13a42a334d33dc79c96f96af
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: 4beb128902c35867e72e66273581c20874c4566b
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75721740"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081722"
 ---
 # <a name="setting-up-a-dragonboard"></a>设置 Dragonboard
 
@@ -33,15 +33,15 @@ ms.locfileid: "75721740"
 * 外部显示器
 * 任何其他外设（例如鼠标、键盘等）
 
-### <a name="instructions"></a>说明
+### <a name="instructions"></a>Instructions
 
-1. 运行 Windows 10 IoT 核心版仪表板，然后单击“设置新设备”。 
+1. 运行 Windows 10 IoT 核心版仪表板，然后单击“设置新设备”。**
 2. 选择“Qualcomm [DragonBoard 410c]”作为设备类型。
 3. 使用 microUSB 电缆将 DragonBoard 连接到计算机。
 4. 将 DragongBoard 连接到外部显示器。
 5. 使用 12V (>1A) 电源在按住调高音量 (+) 按钮的情况下将 Dragonboard 通电。 此设备在连接到显示器的情况下应该显示包含一个锤子、一个闪电和一个齿轮的图像。
 6. 此设备现在应该在仪表板上可见，如下所示。 选择适当的设备。
-7. 接受软件许可条款，然后单击“下载并安装”  。 可以看到 Windows 10 IoT 核心版此时正刷写到设备上。
+7. 接受软件许可条款，然后单击“下载并安装”****。 可以看到 Windows 10 IoT 核心版此时正刷写到设备上。
 
 ![处于刷写模式的 DragonBoard](../media/DeviceSetup/db4.png)
 
@@ -53,15 +53,15 @@ ms.locfileid: "75721740"
 如果设备支持 Wi-Fi 连接，而你已将显示器连接到设备，则需执行以下操作：
 
 1. 进入默认应用程序，单击时钟旁边的设置按钮。
-2. 在设置页上，选择“网络和 Wi-Fi”。 
+2. 在设置页上，选择“网络和 Wi-Fi”。__
 3. 设备将开始扫描无线网络。
-4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。 
+4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。__
 
 如果尚未连接显示器，因此希望通过 Wi-Fi 进行连接，则需执行以下操作：
 
-1. 转到 IoT 仪表板，单击“我的设备”。 
+1. 转到 IoT 仪表板，单击“我的设备”。__
 2. 从列表中找到你的未配置的板。 其名称会以“AJ_”开头（例如 AJ_58EA6C68）。 如果数分钟后仍没有看到自己的板显示，则请尝试重启你的板。
-3. 单击“配置设备”，然后输入网络凭据。  这样就会将板连接到网络。
+3. 单击“配置设备”，然后输入网络凭据。__ 这样就会将板连接到网络。
 
 > [!NOTE]
 > 需启用计算机上的 Wi-Fi 才能找到其他网络。
