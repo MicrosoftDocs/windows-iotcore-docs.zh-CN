@@ -2,14 +2,14 @@
 title: Creators Update - 版本 15063
 ms.date: 08/28/2017
 ms.topic: article
-description: 阅读并了解 Creators Update 的新增内容。
+description: 阅读并了解 Creators Update 的新增内容（内部版本号 15063，2017 年 4 月）。 另请查看已知问题列表。
 keywords: Windows IoT, Creators Update, 发行说明
-ms.openlocfilehash: 09157cb634de971bfe57f549c3c87354f814f9e9
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: 40089b05f8e37a09c1d710269f24932a9afb77de
+ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "80080562"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88081642"
 ---
 # <a name="creators-update-release-notes-for-windows-10-iot-core"></a>Windows 10 IoT 核心板的 Creators Update 的发行说明
 内部版本号 15063。 2017 年 4 月
@@ -92,7 +92,7 @@ Dragonboard BSP 具有耳机插孔和麦克风插孔的驱动程序，但它在�
 Dragonboard 上的 SPI 将会忽略所请求的速度，并始终以预配置的速度运行。  
 
 #### <a name="dragonboard-connected-standby"></a>Dragonboard 连接待机 
-默认情况下，连接待机在 Qualcomm Dragonboard 上未启用。  若要在 DragonBoard 上启用连接待机，需将以下注册表项设置为“1” 
+默认情况下，连接待机在 Qualcomm Dragonboard 上未启用。 若要在 DragonBoard 上启用连接待机，需要将以下注册表项设置为“1” 
 <br>
 `HKLM\System\Controlset001\Control\Power\CsEnabled=DWORD:1`
 <br>
@@ -200,21 +200,23 @@ delay = (dword) ((float)BaseRetryDelayMs * (crashes_seen ** Fallback_exponent))
  
 * 在设备的命令行（例如 SSH、Powershell）  w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2.something else, ..." 
 * 也可根据需要通过启动脚本或自定义运行时配置包（在创建映像过程中包括进来）将其添加到注册表中。 
-有关更多详细信息，请参阅： 
+有关详细信息，请参阅： 
 * [将文件和注册表设置添加到映像](https://msdn.microsoft.com/library/windows/hardware/mt670641(v=vs.85).aspx)
 * [Windows 10 IoT 核心板映像创建](https://blogs.msdn.microsoft.com/iot/2015/12/14/windows-10-iot-core-image-creation/)
 
 #### <a name="starting-the-ftp-server"></a>启动 FTP 服务器 
-FTP 服务器不再在启动时默认运行 
-<br>
-若要运行一次： 
-`Login with SSH\PS`运行以下命令以启动 FTP：  
-`start ftpd.exe`    
-若要在每次启动时运行，用户应创建一项计划程序任务。 
+FTP 服务器不再在启动时默认运行。
 
-    Login with SSH\PS and create a scheduler task:       
-    schtasks /create /tn "IoTFTPD" /tr ftpd.exe /ru system /sc onstart 
-    schtasks /run /tn “IoTFTPD” 
+要运行一次，请使用 SSH\PS 登录。
+
+运行以下命令来启动 FTP： `start ftpd.exe`
+
+若要在每次启动时运行，用户应创建一项计划程序任务。 请使用 SSH\PS 登录，然后创建一项计划程序任务：
+
+```cmd
+schtasks /create /tn "IoTFTPD" /tr ftpd.exe /ru system /sc onstart
+schtasks /run /tn “IoTFTPD”
+```
 
 ## <a name="copyright-information"></a>版权信息 
 
@@ -222,15 +224,15 @@ FTP 服务器不再在启动时默认运行 
  
 本文档按原样提供。  本文档中表达的信息和视图（包括 URL 和其他 Internet 网站引用）如有更改，恕不另行通知。 
 
-此处所述的某些示例仅用于进行说明，是虚构的。  不打算存在或不应推断存在实际关联或联系。  
+本书中提及的一些示例仅用于说明，纯属虚构。不存在任何实际关联或联系，请勿妄加推断。  
 
 本文档未提供针对任何 Microsoft 产品的任何知识产权的任何法律权限。  本文档仅供内部参考。 
   
-Microsoft 不做出任何明示或暗示担保。  
+Microsoft 不做任何明示或暗示的担保。  
 
-有关标有商标的产品的列表，请参阅 Microsoft 商标。 
+有关有商标的产品列表，请参阅 Microsoft 商标。 
 
-所有其他商标均为各自所有者的财产。  
+所有其他商标均为其各自所有者的财产。  
 
 UPnP ™ 是 UPnP™ Implementers Corporation 的认证标记。 
 
