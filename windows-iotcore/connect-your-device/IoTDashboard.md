@@ -4,21 +4,21 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解 Windows 10 IoT Core 仪表板的功能以及入门方式。
 keywords: windows iot，windows 10 iot 核心仪表板，windows iot 面板，设备
-ms.openlocfilehash: 53a8be4e29f93ab3f6d9979e247c598ea5e637c8
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: eb8ef700ef44b0b8800af89d8b57717551be885d
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721482"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782599"
 ---
 # <a name="windows-10-iot-core-dashboard"></a>Windows 10 IoT 核心版仪表板
 
 Windows 10 IoT 核心仪表板是从 PC 下载、设置和连接 Windows 10 IoT 核心设备的最佳方式。
 
-可在此处下载[IoT 核心仪表板](https://go.microsoft.com/fwlink/?LinkID=708576)。
+可在此处下载 [IoT 核心仪表板](https://go.microsoft.com/fwlink/?LinkID=708576)。
 
 > [!NOTE]
-> 如果您在下载后打开 IoT 面板时遇到了白屏，则可能是由于驱动程序问题所致。 若要解决此问题，需要下载 Intel 图形驱动程序的[zip 格式](https://downloadmirror.intel.com/27894/a08/win64_24.20.100.6229.zip)，并手动安装驱动程序。 
+> 如果您在下载后打开 IoT 面板时遇到了白屏，则可能是由于驱动程序问题所致。 若要解决此问题，需要下载 Intel 图形驱动程序的 [zip 格式](https://downloadmirror.intel.com/27894/a08/win64_24.20.100.6229.zip) ，并手动安装驱动程序。 
 
 ## <a name="set-up-a-new-device"></a>设置新设备
 
@@ -35,14 +35,14 @@ Windows 10 IoT 核心仪表板是从 PC 下载、设置和连接 Windows 10 IoT 
 
 ### <a name="sd-card"></a>SD 卡
 SD 卡的类型、品牌和型号极大地影响 IoT 核心的性能和质量。
-比我们[建议的卡](../learn-about-hardware/hardwarecompatlist.md)相比，慢卡的启动时间可能会长达五倍。
+比我们 [建议的卡](../learn-about-hardware/hardwarecompatlist.md)相比，慢卡的启动时间可能会长达五倍。
 旧的、不太可靠的 SD 卡甚至可能不起作用。 如果继续安装时遇到问题，请考虑更换 SD 卡。
 
 ### <a name="device-name"></a>设备名称
-默认设备名称为 minwinpc。 建议将其更改为唯一的内容，因为这样可以更轻松地在网络上查找设备。 设备名称的长度最长可以为15个字符，可以包含字母、数字和以下符号： @ # $% ^ & '）（。 -_ {} ~ 如果在设置设备时在 IoT 面板中更改设备名，则在第一次打开设备电源时将自动重启。
+默认设备名称为 minwinpc。 建议将其更改为唯一的内容，因为这样可以更轻松地在网络上查找设备。 设备名称的长度最长可以为15个字符，可以包含字母、数字和以下符号： @ # $% ^ & ")  (。 -_ {} ~ 如果在设置设备时在 IoT 面板中更改设备名，则在第一次打开设备电源时将自动重启。
 
 ### <a name="password"></a>密码
-密码是必填字段，必须设置。 在 IoT 面板中设置密码会修改管理员用户的密码，默认情况下为 "p@ssw0rd"。
+密码是必填字段，必须设置。 在 IoT 面板中设置密码会修改管理员用户的密码，默认值为 " p@ssw0rd "。
 
 ### <a name="wi-fi-network-connection"></a>Wi-fi 网络连接
 IoT 面板显示你的电脑以前连接到的所有可用网络。 如果在列表中看不到所需的 Wi-fi 网络，请确保你已在电脑上连接到该网络。
@@ -66,13 +66,13 @@ IoT 面板显示你的电脑以前连接到的所有可用网络。 如果在列
 ## <a name="my-devices"></a>我的设备
 ___
 将设备连接到 internet 后，IoT 面板会自动检测你的设备。
-若要查找你的设备，请参阅 **"我的设备**"。 如果未列出你的设备，请尝试重新启动设备。 请确保网络上有多个设备，每个设备都具有唯一的名称。 此外，请确保你的**windows10iotcoredashboard**可以通过执行以下步骤，通过 Windows 防火墙进行通信：
+若要查找你的设备，请参阅 **"我的设备**"。 如果未列出你的设备，请尝试重新启动设备。 请确保网络上有多个设备，每个设备都具有唯一的名称。 此外，请确保允许 **windows10iotcoredashboard.exe** 通过执行以下步骤，通过 Windows 防火墙进行通信：
 
-1. 打开 "**网络和共享中心**"，然后找到您的 PC 连接到的网络类型（域/专用/公共）。
-2. 打开 **"控制面板"** ，然后单击 "**系统和安全**"。
+1. 打开 " **网络和共享中心** "，然后查找计算机连接到的网络 (域/专用/公共) 的类型。
+2. 打开 **"控制面板"** ，然后单击 " **系统和安全**"。
 3. 在**Windows 防火墙**下，单击 "**允许应用通过 windows 防火墙**"。
-4. 单击“更改设置”。
-5. 在 "**允许的应用和功能**" 中找到**windows10iotcoredashboard** ，然后启用适当的网络复选框（即在步骤1中找到的网络类型）。
+4. 单击“更改设置”  。
+5. 在 "**允许的应用和功能**" 中查找**windows10iotcoredashboard.exe** ，然后启用适当的网络复选框 (即你在步骤1中找到的网络类型) 。
 
 
 ### <a name="connect-to-your-device"></a>连接到设备
@@ -81,7 +81,7 @@ ___
 > 如果在仪表板中找不到你的设备，请尝试在浏览器中键入 [IP 地址] 和 [： 8080] 以启动并运行 Windows 设备门户。 若要使设备在仪表板中显示，请尝试重新启动设备。
 
 
-右键单击并选择 **"在设备门户中打开"** 。 这将启动[Windows 设备门户](../manage-your-device/DevicePortal.md)页面，并且是交互和管理设备的最佳方式。
+右键单击并选择 **"在设备门户中打开"**。 这将启动 [Windows 设备门户](../manage-your-device/DevicePortal.md) 页面，并且是交互和管理设备的最佳方式。
 
 ![IoTDashboard 视图设备](../media/IoTDashboard/IoTDashboard_RightClickMenu.PNG)
 
@@ -89,7 +89,7 @@ ___
 
 ## <a name="connect-to-azure"></a>连接到 Azure
 ___
-IoT 面板允许通过 Azure IoT 中心设置 IoT 核心设备。 可在此[博客文章](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core)中阅读更多相关信息。
+IoT 面板允许通过 Azure IoT 中心设置 IoT 核心设备。 可在此 [博客文章](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core)中阅读更多相关信息。
 
 [了解如何在 Azure 中使用 IoT 面板](https://docs.microsoft.com/windows/iot-core/connect-to-cloud/connectdevicetocloud)
 

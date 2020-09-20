@@ -4,29 +4,29 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何将设备连接到云。 使用受信任的平台模块 (TPM) 微控制器设备来存储数据和执行计算。
 keywords: windows iot，Azure，安全性，受信任的平台模块，SoC
-ms.openlocfilehash: 13f37749981c713f9094aba828b7ff7a10122238
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: 159a33e3c49fcd7a5e32966740badd864f11e79f
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081152"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782629"
 ---
 # <a name="connect-your-device-to-the-cloud"></a>将设备连接到云
 
-在设备上存储安全信息（如密码或证书）可能会使设备容易遭受曝光。 泄漏密码是一种损害设备或整个系统的安全的 surefire 方式。 在 Windows 系列中，支持操作系统安全的技术是受信任的平台模块。
+在设备上存储安全信息（如密码或证书）可能会使设备容易遭受曝光。 泄露的密码是一种确保泄露设备或整个系统的安全性的方法。 在 Windows 系列中，支持操作系统安全的技术是受信任的平台模块。
 
 [受信任的平台模块](https://en.wikipedia.org/wiki/Trusted_Platform_Module) (TPM) 设备是可以存储数据和执行计算的微控制器。 它可以是焊接到计算机主板上的离散芯片，也可以是制造商 (SoC) 芯片上集成到系统中的模块。 
 
 ## <a name="inside-the-tpm"></a>TPM 内部 
 
-TPM 的一项重要功能是它只写内存。 根据数据，TPM 还可以基于数据中的数据来计算加密哈希 (例如[HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code)) 。
+TPM 的一项重要功能是它只写内存。 根据数据，TPM 还可以基于数据中的数据来计算加密哈希 (例如 [HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code)) 。
 由于哈希，无法发现机密，但如果对双方的通信都知道密码，则可能会确定是否从该机密产生了从另一方收到的哈希。
 
 使用加密密钥的基本思路：机密 (也称为共享访问密钥) 在设备预配过程中建立并共享 IoT 设备和云。 从此时开始，将使用从机密派生的 HMAC 对 IoT 设备进行身份验证。
 
 ## <a name="device-provisioning"></a>设备预配 
 
-设置 Windows 10 IoT Core 设备的工具称为 IoT 核心仪表板，可以从[下载页](https://go.microsoft.com/fwlink/?LinkID=708576)下载。
+适用于 Windows 10 IoT Core 设备的预配工具称为 IoT 核心仪表板，可轻松 [下载](https://go.microsoft.com/fwlink/?LinkID=708576) 和配置。
 
 仪表板会生成操作系统映像，并将设备安全连接到 Azure。 这是通过将物理设备与 Azure IoT 中心中的设备 ID 相关联并将设备特定的共享访问密钥 imprinting 到设备的 TPM 来完成的。 
 

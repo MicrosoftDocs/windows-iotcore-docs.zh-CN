@@ -5,23 +5,23 @@ ms.topic: article
 description: 阅读有关 Windows 10 IoT Core 默认应用的概述。 获取有关 (OOBE) 、命令栏、开始菜单等的全新体验的信息。
 keywords: windows iot，windows 10 iot core，默认应用
 ms.custom: RS5
-ms.openlocfilehash: 74da457bf824cb977522c9e1c0e81bba59d20b20
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: b8f6677259f60006910a41705c9616a1d98950b5
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081592"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90783009"
 ---
 # <a name="windows-10-iot-core-default-app-overview"></a>Windows 10 IoT Core 默认应用概述
 
 > [!TIP]
-> 如果你发现想要查看已添加到此示例应用的功能，请在 GitHub 上提出[问题](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp)，让我们知道。 如果你想要提交 bug，请按照[此处](https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT)的反馈中心的说明进行操作。
+> 如果你发现想要查看已添加到此示例应用的功能，请在 GitHub 上提出 [问题](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp) ，让我们知道。 如果你想要提交 bug，请按照 [此处](https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT)的反馈中心的说明进行操作。
 
 初次刷新 Windows 10 IoT Core 时，将在启动时向你显示 Windows 10 IoT Core 默认应用，如下所示：
 
 ![IoT Core 默认应用的屏幕截图](../media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
 
-此应用程序的目的不仅是为了让你在首次启动 Windows 10 IoT Core 时，为你提供与交互的友好 shell，但我们在[此处](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)提供了此应用程序的代码，以便你可以在自己的自定义应用程序 () 上插入和使用这些功能。
+此应用程序的目的不仅是为了让你在首次启动 Windows 10 IoT Core 时，为你提供与交互的友好 shell，但我们在 [此处](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) 提供了此应用程序的代码，以便你可以在自己的自定义应用程序 () 上插入和使用这些功能。
 
 本文将为你提供 Windows 10 IoT Core 默认应用提供的不同功能的说明，以及你可以如何对自己的应用程序使用这些不同功能。
 
@@ -30,15 +30,15 @@ ms.locfileid: "88081592"
 > [!IMPORTANT]
 > 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
 
-IoT Core 默认应用可进行自定义和扩展，也可将源代码用作你自己的应用的示例。 若要亲自尝试此问题，请下载我们的示例的 zip，或在[此处](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)查看 IoT Core 默认应用的代码。 如有任何问题，请在[此处](https://github.com/Microsoft/Windows-iotcore-samples/issues)提出有关示例存储库的问题。
+IoT Core 默认应用可进行自定义和扩展，也可将源代码用作你自己的应用的示例。 若要亲自尝试此问题，请下载我们的示例的 zip，或在 [此处](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)查看 IoT Core 默认应用的代码。 如有任何问题，请在 [此处](https://github.com/Microsoft/Windows-iotcore-samples/issues)提出有关示例存储库的问题。
 
-如下面的[设置部分](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
-)中所示，在某些情况下，你可以代表最终用户配置客户系统上的默认设置和功能。 但是，如果在默认情况下启用这些设置和功能，或者诊断高于 "基本" 设置，则必须执行以下操作：
+如下面的 [设置部分](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
+) 中所示，在某些情况下，你可以代表最终用户配置客户系统上的默认设置和功能。 但是，如果在默认情况下启用这些设置和功能，或者诊断高于 "基本" 设置，则必须执行以下操作：
 
-* 通知最终用户这些功能已启用，并向最终用户提供[此处](https://go.microsoft.com/fwlink/?LinkId=521839)指向 Microsoft 隐私声明网页的链接。 
+* 通知最终用户这些功能已启用，并向最终用户提供 [此处](https://go.microsoft.com/fwlink/?LinkId=521839)指向 Microsoft 隐私声明网页的链接。 
 * 根据适用法律) 的要求，在默认情况下启用此类功能，以确保基于相关最终用户的许可 (。
 * 向最终用户提供将诊断设置更改回 "基本" 设置的能力。
-* 如果你启用 Microsoft 帐户，并且你有权访问最终用户数据，则在最终用户删除 Microsoft 帐户时，你必须在设备上启用所有最终用户的 Microsoft 帐户数据的同时删除。 
+* 如果你启用 Microsoft 帐户，并且你有权访问最终用户数据，则在最终用户删除 Microsoft 帐户后，你必须在设备上启用所有最终用户的 Microsoft 帐户数据的同时删除。 
 
 ## <a name="out-of-box-experience-oobe"></a> (OOBE) 的全新体验
 
@@ -48,14 +48,14 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
  ![ 诊断设置的位置设置](../media/IoTCoreDefaultApp/OOBE4.jpg)
 
 ## <a name="command-bar"></a>命令栏
-命令栏是位于屏幕底部的持久性 horizonatal 栏。 这提供了对以下有趣的轻松访问：
+命令栏是位于屏幕底部的持久性水平条。 这样就可以轻松访问以下功能：
 - 前进和后退页面导航
 - 基本设备信息，无需离开当前页面
 - 打开或关闭全屏模式
 - 前进快捷方式
 - 页面特定按钮
 
-命令栏中有很多按钮，有时这些按钮可能会令人费解或隐藏。 若要展开命令栏并访问这些按钮，请按下右端的菜单按钮：
+命令栏中有许多按钮，有时这些按钮可能会令人费解或隐藏。 若要展开命令栏并访问这些按钮，请按下右端的菜单按钮：
 
 ![如何展开命令栏](../media/IoTCoreDefaultApp/CommandBar.gif)
 
@@ -70,13 +70,13 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 通过 web 浏览器，你可以从 web 中提取大多数站点。
 
 ### <a name="music"></a>Music
-此页面将从 "**音乐库**" 播放 MP3 和 WAV 文件，可以通过[Windows 设备门户](../manage-your-device/DevicePortal.md)访问这些文件。  若要将文件上传到音乐播放机，你需要导航到 Windows 设备门户，单击 "应用" 下拉列表，导航到 "文件资源管理器"，选择 "音乐"，然后上传文件。
+此页面将从 " **音乐库**" 播放 MP3 和 WAV 文件，可以通过 [Windows 设备门户](../manage-your-device/DevicePortal.md)访问这些文件。  若要将文件上传到音乐播放机，你需要导航到 Windows 设备门户，单击 "应用" 下拉列表，导航到 "文件资源管理器"，选择 "音乐"，然后上传文件。
 
 
 ![如何上传音乐文件](../media/IoTCoreDefaultApp/music.gif)
 
 ### <a name="slideshow"></a>幻灯片放映
-此页将显示 "**图片库**" 中的任何 PNG 或 JPEG 图像文件，可以通过[Windows 设备门户](../manage-your-device/DevicePortal.md)进行访问。 若要将图像上传到幻灯片，你将需要导航到 Windows 设备门户，单击 "应用" 下拉列表，导航到 "文件资源管理器"，选择 "图片"，然后上传文件。
+此页将显示 " **图片库**" 中的任何 PNG 或 JPEG 图像文件，可以通过 [Windows 设备门户](../manage-your-device/DevicePortal.md)进行访问。 若要将图像上传到幻灯片，你将需要导航到 Windows 设备门户，单击 "应用" 下拉列表，导航到 "文件资源管理器"，选择 "图片"，然后上传文件。
 
 
 ![如何上传音乐文件](../media/IoTCoreDefaultApp/slideshow.gif)
@@ -87,17 +87,17 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 ## <a name="start-menu---explore"></a>开始菜单-浏览 
 
 ### <a name="apps"></a>应用 
-此页面允许你启动在设备上安装的其他前台应用程序。 启动应用程序将挂起 IoT Core 默认应用，可通过在[Windows 设备门户](../manage-your-device/DevicePortal.md)中使用应用管理器变该应用。
+此页面允许你启动在设备上安装的其他前台应用程序。 启动应用程序将挂起 IoT Core 默认应用，可通过在 [Windows 设备门户](../manage-your-device/DevicePortal.md)中使用应用管理器变该应用。
 
-不需要任何特殊内容即可在页面中列出前景应用程序，只需[安装](AppInstaller.md)或[部署](AppDeployment.md)应用程序即可。 成功安装或部署后，请重新导航到 "应用" 页，刷新应用程序列表。
+不需要任何特殊内容即可在页面中列出前景应用程序，只需 [安装](AppInstaller.md) 或 [部署](AppDeployment.md) 应用程序即可。 成功安装或部署后，请重新导航到 "应用" 页，刷新应用程序列表。
 
-请注意，我们筛选掉了几个自动生成的操作系统相关应用程序，可以在[此处](http://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTCoreDefaultApp/CS/Views/AppLauncherPage.xaml.cs)找到应用名称的列表。
+请注意，我们筛选掉了几个自动生成的与 OS 相关的应用程序，可以在 [此处](http://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/IoTCoreDefaultApp/CS/Views/AppLauncherPage.xaml.cs)找到应用名称的列表。
 
 ### <a name="notifications"></a>通知
 此页将列出过去20个通知，因为 IoT Core 默认应用已启动。 当 IoT 核心默认应用在调试模式下运行时，将添加用于创建测试通知的按钮。
 
 ### <a name="logs"></a>日志
-此页将列出任何自动生成的崩溃或错误日志，然后可以将其移出设备并进行分析。
+此页将列出所有自动生成的崩溃或错误日志，然后可以将其移出设备并进行分析。
 
 ### <a name="github"></a>GitHub
 此页将转到 IoT Core 默认应用代码的开源 GitHub 位置。
@@ -122,7 +122,7 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 你将能够在此处配置许多设置，包括 Wi-fi、蓝牙、电源选项等。
 
 ### <a name="app-settings"></a>应用设置
-"**应用设置**" 部分允许你为应用中的页面配置各种设置。  
+" **应用设置** " 部分允许你为应用中的页面配置各种设置。  
 
 您可以自定义的一些设置如下：
 
@@ -132,9 +132,10 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 
 ##### <a name="weather-settings"></a>天气设置
 * 更改位置
-  > 仅当您提供有效的[Bing 地图服务令牌](https://msdn.microsoft.com/library/ff428642.aspx)时，才会启用此功能。  若要将令牌传递给应用，请在应用的 LocalState 文件夹中创建**MapToken.config**文件 (例如 C:\Data\USERS \\ [用户帐户] \AppData\Packages \\ [包全名] \LocalState\MapToken.config) 并重新启动应用。
+  > 仅当您提供有效的 [Bing 地图服务令牌](https://msdn.microsoft.com/library/ff428642.aspx)时，才会启用此功能。  若要将令牌传递给应用，请在应用的 LocalState 文件夹中创建 **MapToken.config** 文件 (例如 C:\Data\Users \\ [用户帐户] \AppData\Local\Packages \\ [包全名] \LocalState\MapToken.config) 并重新启动应用。  
+ (示例： C:\Data\Users\DefaultAccount\AppData\Local\Packages\16454Windows10IOTCore. IOTCoreDefaultApplication_rz84sjny4rf58 \LocalState\)
 * 展开地图
-* 启用/禁用地图翻转，使地图和天气交换机定期发生，以防屏幕烧入
+* 启用/禁用地图翻转以便定期放置地图和天气交换机，以防屏幕烧入
 
 ##### <a name="web-browser-settings"></a>Web 浏览器设置
 * 设置 Web 浏览器的主页
@@ -148,13 +149,13 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 * 设置 UI 缩放-默认设置自动缩放
 * 设置磁贴颜色
 
-#### <a name="system"></a>系统
+#### <a name="system"></a>System
 更改语言、键盘布局和时区。
 
 #### <a name="network--wi-fi"></a>网络 & Wi-fi
 查看网络适配器属性或连接到可用的 Wi-fi 网络。
 
-#### <a name="bluetooth"></a>Bluetooth
+#### <a name="bluetooth"></a>蓝牙
 与蓝牙设备配对。
 
 #### <a name="app-updates"></a>应用更新
@@ -164,7 +165,7 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 重新启动或关闭设备。
 
 #### <a name="diagnostics"></a>诊断
-选择要向 Microsoft 提供的诊断数据量。  我们鼓励用户选择**完整**的诊断数据，以便可以快速诊断问题并对产品进行改进。
+选择要向 Microsoft 提供的诊断数据量。  我们鼓励用户选择 **完整** 的诊断数据，以便可以快速诊断问题并对产品进行改进。
 
 ##### <a name="basic"></a>基本 
 仅发送有关你的设备的信息、其设置和功能以及它是否正确执行。

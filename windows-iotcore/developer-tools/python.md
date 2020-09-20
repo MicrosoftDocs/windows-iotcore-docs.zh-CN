@@ -6,12 +6,12 @@ ms.date: 08/13/2019
 ms.topic: article
 description: 了解如何在运行 Windows 10 IoT Core 的设备上安装 Python。 有关 x64、x86、ARM32 和 ARM64 的说明，请参阅。 请参阅其他 Python 开发人员资源。
 keywords: windows iot, python
-ms.openlocfilehash: 497b1d02805ed57a212481fa118db31862f917ff
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: ac8f18f21d2789b951b6577ba4e80a9ecd7f7ead
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081502"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782869"
 ---
 # <a name="python"></a>Python
 Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
@@ -19,7 +19,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ## <a name="using-python-on-x64-or-x86"></a>在 x64 或 x86 上使用 Python
 若要在 Windows IoT Core 上安装 Python，请执行以下操作：
-1. 下载 Python nuget 包，然后使用 [PowerShell](../connect-your-device/PowerShell.md) 安装这些文件。
+1. 下载 Python NuGet 包，然后使用 [PowerShell](../connect-your-device/PowerShell.md)安装这些文件。
 
     ```powershell
     $python_zip = "https://globalcdn.nuget.org/packages/python.3.7.4.nupkg"
@@ -48,7 +48,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ## <a name="using-python-on-windows-iot-core-arm32"></a>在 Windows IoT Core ARM32 上使用 Python
 
-若要获取适用于 Windows 的 Python，需要自行生成二进制文件。
+若要获取适用于 Windows 的 Python，需自行生成二进制文件。
 
 1. 生成适用于 ARM32 的 Python。  分支必须是 3.8 版或更高版本。
 
@@ -59,7 +59,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
     pcbuild\build.bat -p ARM --no-tkinter
     ```
 
-2. 生成适用于 Windows IoT Core ARM32 的 Python .zip 文件。  必须使用相同版本的 Python 来运行 PC/layout。 此步骤生成适用于 x86 的 Python，并使用它来生成 .zip 文件。  如果希望标准库测试包含在 .zip 文件中，请添加 `--include-tests` 参数。
+2. 为 Windows IoT Core ARM32 生成 Python .zip 文件。  必须使用相同版本的 Python 来运行 PC/layout。 此步骤生成适用于 x86 的 Python，并使用它来生成 .zip 文件。  如果希望标准库测试包含在 .zip 文件中，请添加 `--include-tests` 参数。
 
     ```cmd
     REM Build Python for x86 to use for building the .zip file.
@@ -87,7 +87,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ## <a name="using-python-on-windows-iot-core-arm64"></a>在 Windows IoT Core ARM64 上使用 Python
 
-若要获取适用于 Windows 的 Python，需要自行生成二进制文件。
+若要获取适用于 Windows 的 Python，需自行生成二进制文件。
 
 1. 克隆适用于 ARM32 的 Python，并运行 `get_externals`。  分支必须是 3.8 版或更高版本。
 
@@ -124,7 +124,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
     pcbuild\build.bat -p ARM64 --no-tkinter
     ```
 
-4. 生成适用于 Windows IoT Core ARM64 的 Python .zip 文件。  必须使用相同版本的 Python 来运行 PC/layout。 此步骤生成适用于 x86 的 Python，并使用它来生成 .zip 文件。  如果希望标准库测试包含在 .zip 文件中，请添加 `--include-tests` 参数。
+4. 为 Windows IoT Core ARM64 生成 Python .zip 文件。  必须使用相同版本的 Python 来运行 PC/layout。 此步骤生成适用于 x86 的 Python，并使用它来生成 .zip 文件。  如果希望标准库测试包含在 .zip 文件中，请添加 `--include-tests` 参数。
 
     ```cmd
     REM Build Python for x86 to use for building the .zip file.
@@ -188,7 +188,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
     copy "c:\test\GlobalSign Root CA.cer" X:\test
     ```
 
-13. 在设备上，使用 [PowerShell](../connect-your-device/PowerShell.md) 将证书导入根存储。
+13. 在设备上，使用 [PowerShell](../connect-your-device/PowerShell.md)将证书导入根存储。
 
     ```cmd
     certmgr -add "c:\test\DigiCert High Assurance EV Root.cer" -s root -r localMachine -c
@@ -201,7 +201,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
     python -m pip install azure-iot-device --no-color
     ```
 
-15.  在 `pip install` 的输出中可能有错误：`Download error for https://files.pythonhosted.org/`。  如果未出现此错误，请跳到 `Set up an IoT Hub and create a Device Identity`
+15.  在 `pip install` 的输出中可能有错误：`Download error for https://files.pythonhosted.org/`。  如果看不到此，请跳到 `Set up an IoT Hub and create a Device Identity`
 
 16. 在你喜爱的浏览器中导航到 `https://files.pythonhosted.org/`。 检查网站的证书并注意到它是由 `GlobalSign` 颁发的。
 
@@ -216,7 +216,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
     ```powershell
     az iot hub create --resource-group <your resource group> --name <your IoT Hub name>
     ```
-    * 请注意，此操作可能需要几分钟时间。
+    * 请注意，此操作可能需要几分钟的时间。
 
 20. 将 IoT 扩展添加到 Azure CLI，然后[注册设备标识](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-create)
 
@@ -244,7 +244,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
     az iot hub monitor-events --hub-name <your IoT Hub name> --output table
     ```
 
-23. 在设备上，将设备连接字符串设置为名为 `IOTHUB_DEVICE_CONNECTION_STRING` 的环境变量。
+23. 在设备上，将设备连接字符串设置为名为的环境变量 `IOTHUB_DEVICE_CONNECTION_STRING` 。
 
     ```cmd
     REM NOTE: there are no quotes
@@ -304,7 +304,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
     CMD cmd /k c:\test\start.cmd
     ```
 
-3. 将 Dockerfile 复制到设备上的 c:\docker。 此外，将所有证书复制到 P:\docker\test。  1.txt 是一个文件，其中包含数字 1 和一个回车符。
+3. 将 Dockerfile 复制到设备上的 c:\docker。 此外，将所有证书复制到 P:\docker\test。  1.txt 是一个文件，其中包含数字1和回车符。
 
     ```cmd
     net use P: \\[device IP address]\c$ /user:administrator
@@ -314,7 +314,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
     copy 1.txt P:\docker\test
     ```
 
-4.  使用 SSH 连接到设备。  远程 powershell 对于交互式 docker 会话不起作用。
+4.  使用 SSH 连接到设备。  远程 PowerShell 对于交互式 docker 会话不起作用。
 
     ```powershell
     docker build --isolation==process . -t python

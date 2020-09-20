@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 了解如何为 IoT 设备开发后台应用程序。 了解后台应用程序的启动和使用方式、可用的语言等。
 keywords: windows iot，后台应用程序
-ms.openlocfilehash: 217738b9e228be49cbc7a51fe7b41f00b1a3beed
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: aa65c31e0900ed0c2c2164104c87c85140d5f81d
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782509"
 ---
 # <a name="developing-background-applications"></a>开发后台应用程序
 
@@ -21,20 +21,20 @@ ms.locfileid: "88081552"
 
 ![后台任务](../media/BackgroundApplications/backgroundTaskScreenshot.png)
 
-需要注意的一点是：默认情况下，当 run 方法完成时，应用程序将关闭。 这意味着，遵循运行等待输入的服务器或在计时器上的常见 IoT 模式的应用会提前发现应用退出。 若要防止此情况发生，必须调用 "GetDeferral" 方法，以防止应用程序退出。 可在[此处](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskDeferral)找到有关延期模式的详细信息。
+需要注意的一点是：默认情况下，当 run 方法完成时，应用程序将关闭。 这意味着，遵循运行等待输入的服务器或在计时器上的常见 IoT 模式的应用会提前发现应用退出。 若要防止此情况发生，必须调用 "GetDeferral" 方法，以防止应用程序退出。 可在 [此处](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskDeferral)找到有关延期模式的详细信息。
 
 ## <a name="where-can-background-applications-be-installed-from"></a>后台应用程序的安装位置 
 
-你可以从 Visual [Studio 库下载](https://go.microsoft.com/fwlink/?linkid=847472)并安装 IoT 模板来启用后台应用程序。  此外，还可以通过在 `Windows IoT Core Project Templates` [Visual studio 库](https://visualstudiogallery.msdn.microsoft.com/)中搜索或直接从 visual Studio 的 "扩展和更新" 对话框中的 visual studio 查找模板， (工具 > 扩展和更新 > 联机) 。
+你可以从 Visual [Studio 库下载](https://go.microsoft.com/fwlink/?linkid=847472)并安装 IoT 模板来启用后台应用程序。  此外，还可以通过在 `Windows IoT Core Project Templates` [Visual studio 库](https://visualstudiogallery.msdn.microsoft.com/) 中搜索或直接从 visual Studio 的 "扩展和更新" 对话框中的 visual studio 查找模板， (工具 > 扩展和更新 > 联机) 。
 
 ## <a name="what-languages-are-available"></a>可用的语言有哪些？
 
 可在以下内容中找到**后台应用程序 (IoT) **模板：
 
-* **C + +**`File > New > Project > Installed > Visual C++ > Windows > Windows IoT Core`
+* **C++** `File > New > Project > Installed > Visual C++ > Windows > Windows IoT Core`
 * **C #**`File > New > Project > Installed > Visual C# > Windows > Windows IoT Core`
 * **Visual Basic** `File > New > Project > Installed > Visual Basic > Windows > Windows IoT Core`
-* **Javascript** `File > New > Project > Installed > JavaScript > Windows > Windows IoT Core`
+* **JavaScript** `File > New > Project > Installed > JavaScript > Windows > Windows IoT Core`
 
 ## <a name="how-are-background-applications-used"></a>后台应用程序如何使用？ 
 
@@ -72,12 +72,12 @@ deferral.Complete();
 
 若要部署后台应用程序，可以执行以下操作之一：
 
-* 使用 Visual Studio 的 F5 (将生成、部署和调用) 。  有关更多详细信息，请参阅我们的[Hello World 示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld)，其中介绍了如何从 Visual Studio 部署和启动。
+* 使用 Visual Studio 的 F5 (将生成、部署和调用) 。  有关更多详细信息，请参阅我们的 [Hello World 示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld) ，其中介绍了如何从 Visual Studio 部署和启动。
 
 > [!NOTE]
 > 这不会将后台应用程序配置为在设备启动时启动。
 
-* 在 Visual Studio 中创建 AppX，方法是选择 "项目 > 存储" > 创建应用包 "。  创建 AppX 后，可以使用[Windows 设备门户](../manage-your-device/DevicePortal.md)将其部署到 Windows 10 IoT Core 设备。
+* 在 Visual Studio 中创建 AppX，方法是选择 "项目 > 存储" > 创建应用包 "。  创建 AppX 后，可以使用 [Windows 设备门户](../manage-your-device/DevicePortal.md) 将其部署到 Windows 10 IoT Core 设备。
 
 若要调用后台应用程序，可以执行以下操作之一：
 
@@ -88,7 +88,7 @@ deferral.Complete();
 
 * 对于已部署到 IoT 设备的后台应用程序，可以使用 iotstartup.exe 实用程序将后台应用程序配置为在设备启动时启动。  若要将后台应用程序指定为启动应用程序，请按照以下说明 (**将应用程序的名称替换** `BackgroundApplication1`) ：
 
-1. 如[此处](../connect-your-device/PowerShell.md)所述，使用 Windows IoT Core 设备启动 POWERSHELL (PS) 会话。
+1. 如 [此处](../connect-your-device/PowerShell.md)所述，使用 Windows IoT Core 设备启动 POWERSHELL (PS) 会话。
 
 2. 在 PS 会话中键入：
             
@@ -127,4 +127,4 @@ Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 `Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
 ## <a name="see-also"></a>另请参阅
-若要在生成自定义映像时添加后台应用，请参阅[创建 Appx 包](../build-your-image/createinstallpackage.md)
+若要在生成自定义映像时添加后台应用，请参阅 [创建 Appx 包](../build-your-image/createinstallpackage.md)

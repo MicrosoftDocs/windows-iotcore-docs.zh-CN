@@ -1,19 +1,19 @@
 ---
-title: 设置默认应用
+title: 设置默认应用程序
 author: bfjelds
 ms.author: bfjelds
 ms.date: 09/05/2017
 ms.topic: article
 description: 了解如何使用 Windows 设备门户或 shell 设置默认应用程序。
 keywords: windows iot，默认应用，PowerShell，iot
-ms.openlocfilehash: b7165331daba3b8bc953535ecc2d5b51cfda782c
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 49a637fca3bf82a23c1fd771d61cc40d3fbf357b
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918206"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782439"
 ---
-# <a name="setup-a-default-app"></a>设置默认应用
+# <a name="set-up-a-default-app"></a>设置默认应用程序
 在这里，你将了解将应用程序设置为默认应用程序的方式。 默认的应用程序是在系统启动时启动的应用程序。  
 
 > [!NOTE]
@@ -25,18 +25,18 @@ ms.locfileid: "72918206"
 
 ### <a name="using-windows-device-portal"></a>使用 Windows 设备门户
 
-你可以单击对应于该应用的**启动**列。
+你可以单击对应于该应用的 **启动** 列。
 ![SetupDefaultAppWDP](../media/SetupDefaultApp/DefaultAppWDP.png)
 
 ### <a name="using-the-shell"></a>使用 shell
 
 使用 shell 设置默认应用程序的步骤 
 
-1. 通过[Powershell](../connect-your-device/PowerShell.md)连接到设备
+1. 通过[PowerShell](../connect-your-device/PowerShell.md)连接到设备
 
 2. 列出使用安装的应用程序 `iotstartup list`
 
-3. 请注意要作为默认值的应用程序的 appid，并使用 `iotstartup add headed <appid>`对其进行设置。 对于无外设应用，应使用 `iotstartup add headless <appid>`。
+3. 请注意要作为默认设置的应用程序的 appid，并使用对其进行设置 `iotstartup add headed <appid>` 。 对于无外设应用，应使用 `iotstartup add headless <appid>` 。
 
 
 ## <a name="build-time-option"></a>生成时间选项
@@ -46,10 +46,10 @@ ms.locfileid: "72918206"
 可以在创建预配包的过程中，在 WCD 中指定 StartupApp/Default 设置。
 ![SetupDefaultAppICD](../media/SetupDefaultApp/DefaultAppICD.png)
 
-请参阅[IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp/customizations.xml)作为示例。 可以使用[GetAppxInfo 工具](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/GetAppxInfo.exe)获取 Appx 的应用程序用户模型 ID （AUMID）。
+请参阅 [IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp/customizations.xml) 作为示例。 你可以使用 [GetAppxInfo 工具](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/GetAppxInfo.exe)获取应用程序用户模型 ID (APPX 的 AUMID) 。
 
 ## <a name="how-to-configure-home-key"></a>如何配置 "Home" 键
 
-Windows 10 IoT 周年更新（1607）提供了在当前运行其他应用程序时，将默认应用程序窗口引入前台的 shell 支持。
+Windows 10 IoT 周年更新 (1607) 为在另一应用程序当前运行时将默认应用程序窗口引入前台提供 shell 支持。
 
-若要了解如何启用 "主页" 密钥，请访问[IoT Shell 页面](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys)
+若要了解如何启用 "主页" 密钥，请访问 [IoT Shell 页面](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys)

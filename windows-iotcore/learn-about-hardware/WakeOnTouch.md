@@ -7,12 +7,12 @@ ms.topic: article
 description: 将设备配置为在触摸时唤醒，以便在不使用的情况下关闭设备，但在触摸屏幕时可以快速打开。 设置视频空闲超时。
 keywords: windows iot，屏幕，睡眠，唤醒，touch，待机，电源
 ms.custom: RS5
-ms.openlocfilehash: 1d57383d2ae8a3658de507648e6feb0c3ceeb521
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: 908aacf2f0fa48edc9f9d608d7cd0167de7b5d6c
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081302"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782939"
 ---
 # <a name="configure-your-device-to-wake-on-touch"></a>将设备配置为在触摸时唤醒
 
@@ -28,11 +28,11 @@ ms.locfileid: "88081302"
     powercfg.exe /setactive SCHEME_CURRENT
 ```
 
-有关详细信息，请参阅[显示空闲超时](/windows-hardware/customize/power-settings/display-settings-display-idle-timeout)和[显示、睡眠和休眠空闲计时器](/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers)。
+有关详细信息，请参阅 [显示空闲超时](/windows-hardware/customize/power-settings/display-settings-display-idle-timeout) 和 [显示、睡眠和休眠空闲计时器](/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers)。
 
 ## <a name="disabling-modern-standby"></a>禁用新式备用
 
-在 AoAC systems (包括) 的所有 ARM 系统）时，当显示器关闭时，系统将自动进入[新式备用](/windows-hardware/design/device-experiences/modern-standby)。 当系统处于新式备用状态时，它只能由某些输入唤醒。 这并不是一个详尽的列表，但这些输入包括按下电源按钮、打开便携式计算机的盖子或单击鼠标。 触摸屏幕将不会从新式备用设备唤醒设备。 如果希望设备通过触摸屏唤醒，则必须将设备配置为不进入新式备用。 若要禁用新式备用，请设置以下注册表项并重新启动。
+在 AoAC systems (包括) 的所有 ARM 系统）时，当显示器关闭时，系统将自动进入 [新式备用](/windows-hardware/design/device-experiences/modern-standby) 。 当系统处于新式备用状态时，它只能由某些输入唤醒。 这并不是一个详尽的列表，但这些输入包括按下电源按钮、打开便携式计算机的盖子或单击鼠标。 触摸屏幕将不会从新式备用设备唤醒设备。 如果希望设备通过触摸屏唤醒，则必须将设备配置为不进入新式备用。 若要禁用新式备用，请设置以下注册表项并重新启动。
 
 ```powershell
     reg add HKLM\System\CurrentControlSet\Control\Power /v PlatformAoAcOverride /t REG_DWORD /d 0

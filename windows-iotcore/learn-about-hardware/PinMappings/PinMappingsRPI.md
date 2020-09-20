@@ -1,29 +1,29 @@
 ---
-title: Raspberry Pi 2 和 3 引脚映射
+title: Raspberry Pi 2 & 3 针映射
 ms.date: 08/28/2017
 ms.topic: article
 description: 了解 Raspberry Pi 2 和3的 pin 映射功能。
 keywords: windows iot，Rasperry Pi 2，Raspberry Pi 3，固定映射，GPIO
-ms.openlocfilehash: 2a3155b28fb01434ff8596de6e2f75b06b42f6ae
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: d7d88f1295bf3be19efa17f1eafe5bc097d7de75
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917850"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782859"
 ---
-# <a name="raspberry-pi-2--3-pin-mappings"></a>Raspberry Pi 2 和 3 引脚映射
+# <a name="raspberry-pi-2--3-pin-mappings"></a>Raspberry Pi 2 & 3 针映射
 
 ![Raspberry Pi 2 & 3 针标题](../../media/PinMappingsRPI/RP2_Pinout.png)
 
-Raspberry Pi 2 和 Raspberry Pi 3 的硬件接口通过开发板上的 40 排针 **J8** 公开。 功能包括：
+Raspberry Pi 2 和 Raspberry Pi 3 的硬件接口通过板上的40针标头 **J8** 公开。 功能包括：
 
 * **24x** -GPIO 引脚
-* **1x** -串行 UARTs （RPi3 仅包含微型 UART）
+* **1x** -串行 UARTs (RPi3 仅包含微型 UART) 
 * **2x** -SPI 总线
-* **1x** - I2C 总线
-* **2x** - 5V 电源引脚
-* **2x** - 3.3V 电源引脚
-* **8x** - 接地引脚
+* **1x** -I2C 总线
+* **2x** -5v 电源
+* **2x** -3.3 v 电源针脚
+* **8x** -地面针脚
 
 ## <a name="gpio-pins"></a>GPIO Pin
 
@@ -31,42 +31,42 @@ Raspberry Pi 2 和 Raspberry Pi 3 的硬件接口通过开发板上的 40 排针
 
 ### <a name="gpio-pin-overview"></a>GPIO Pin 概述
 
-以下 GPIO 引脚可通过 API 访问：
+以下 GPIO pin 可通过 Api 访问：
 
-> | GPIO# | 通电拉 | 备用函数 | 排针         |
+> | GPIO# | 开机请求 | 备用函数 | 标头 Pin         |
 > |-------|---------------|---------------------|--------------------|
-> | 2     | 上拉        | I2C1 SDA            | 3                  |
-> | 3     | 上拉        | I2C1 SCL            | 5                  |
-> | 4     | 上拉        |                     | 7                  |
-> | 5     | 上拉        |                     | 29                 |
-> | 6     | 上拉        |                     | 31                 |
-> | 7     | 上拉        | SPI0 CS1            | 26                 |
-> | 8     | 上拉        | SPI0 CS0            | 24                 |
-> | 9     | 下拉      | SPI0 MISO           | 21                 |
-> | 10    | 下拉      | SPI0 MOSI           | 19                 |
-> | 11    | 下拉      | SPI0 SCLK           | 23                 |
-> | 12    | 下拉      |                     | 32                 |
-> | 13    | 下拉      |                     | 33                 |
-> | 16    | 下拉      | SPI1 CS0            | 36                 |
-> | 17    | 下拉      |                     | 11                 |
-> | 18    | 下拉      |                     | 12                 |
-> | 19    | 下拉      | SPI1 MISO           | 35                 |
-> | 20    | 下拉      | SPI1 MOSI           | 38                 |
-> | 21    | 下拉      | SPI1 SCLK           | 40                 |
-> | 22    | 下拉      |                     | 15                 |
-> | 23    | 下拉      |                     | 16                 |
-> | 24    | 下拉      |                     | 18                 |
-> | 25    | 下拉      |                     | 22                 |
-> | 26    | 下拉      |                     | 37                 |
-> | 27    | 下拉      |                     | 13                 |
-> | 35*   | 上拉        |                     | 红色电源 LED      |
-> | 47*   | 上拉        |                     | 绿色活动 LED |
+> | 2     | PullUp        | I2C1 SDA            | 3                  |
+> | 3     | PullUp        | I2C1 SCL            | 5                  |
+> | 4     | PullUp        |                     | 7                  |
+> | 5     | PullUp        |                     | 29                 |
+> | 6     | PullUp        |                     | 31                 |
+> | 7     | PullUp        | SPI0 CS1            | 26                 |
+> | 8     | PullUp        | SPI0 CS0            | 24                 |
+> | 9     | 下拉菜单      | SPI0 MISO           | 21                 |
+> | 10    | 下拉菜单      | SPI0 MOSI           | 19                 |
+> | 11    | 下拉菜单      | SPI0 SCLK           | 23                 |
+> | 12    | 下拉菜单      |                     | 32                 |
+> | 13    | 下拉菜单      |                     | 33                 |
+> | 16    | 下拉菜单      | SPI1 CS0            | 36                 |
+> | 17    | 下拉菜单      |                     | 11                 |
+> | 18    | 下拉菜单      |                     | 12                 |
+> | 19    | 下拉菜单      | SPI1 MISO           | 35                 |
+> | 20    | 下拉菜单      | SPI1 MOSI           | 38                 |
+> | 21    | 下拉菜单      | SPI1 SCLK           | 40                 |
+> | 22    | 下拉菜单      |                     | 15                 |
+> | 23    | 下拉菜单      |                     | 16                 |
+> | 24    | 下拉菜单      |                     | 18                 |
+> | 25    | 下拉菜单      |                     | 22                 |
+> | 26    | 下拉菜单      |                     | 37                 |
+> | 27    | 下拉菜单      |                     | 13                 |
+> | 35 *   | PullUp        |                     | 红色电源 LED      |
+> | 47 *   | PullUp        |                     | 绿色活动 LED |
 
-\* = Raspberry Pi 2。 Raspberry Pi 3 上未提供 GPIO 35 和 47。
+\* = Raspberry Pi 2。 在 Raspberry Pi 3 上，GPIO 35 & 47 不可用。
 
 ### <a name="gpio-sample"></a>GPIO 示例
 
-例如，以下代码将 **GPIO 5** 作为输出打开，并在该引脚上写入数字“**1**”：
+例如，以下代码将 **GPIO 5** 打开为输出，并在 pin 上写入数字 "**1**"：
 
 ```csharp
 using Windows.Devices.Gpio;
@@ -91,15 +91,15 @@ public void GPIO()
 }
 ```
 
-打开 pin 时，它将处于其开机状态，其中可能包括拉取电阻器。 若要断开拉电阻的连接并获取高阻抗输入，请将驱动程序模式设置为 GpioPinDriveMode.Input：
+打开 pin 时，它将处于其开机状态，其中可能包括拉取电阻器。 若要断开拉取电阻并获得高频输入，请将驱动器模式设置为 GpioPinDriveMode：
 
     pin.SetDriveMode(GpioPinDriveMode.Input);
 
-当关闭引脚时，它将还原到其通电状态。
+关闭 pin 后，它会恢复到其开机状态。
 
 ### <a name="pin-muxing"></a>固定 Muxing
 
-某些 GPIO pin 可以执行多个功能。 默认情况下，pin 配置为 GPIO 输入。 通过调用 `I2cDevice.FromIdAsync()` 或 `SpiDevice.FromIdAsync()` 打开备用函数时，该函数所需的 pin 会自动切换（"muxed"）到正确的函数。 当通过调用 `I2cDevice.Dispose()` 或 `SpiDevice.Dispose()`关闭设备时，pin 会恢复为其默认功能。 如果尝试同时对两个不同的函数使用 pin，则在尝试打开冲突的函数时会引发异常。 例如，
+某些 GPIO pin 可以执行多个功能。 默认情况下，pin 配置为 GPIO 输入。 当通过调用或打开替代函数时 `I2cDevice.FromIdAsync()` `SpiDevice.FromIdAsync()` ，该函数所需的 pin 会自动切换 ( "muxed" ) 转换为正确的函数。 当通过调用或关闭设备时 `I2cDevice.Dispose()` `SpiDevice.Dispose()` ，pin 会恢复为其默认功能。 如果尝试同时对两个不同的函数使用 pin，则在尝试打开冲突的函数时会引发异常。 例如，应用于对象的
 
 ```csharp
 var controller = GpioController.GetDefault();
@@ -119,12 +119,12 @@ var gpio2 = controller.OpenPin(2); // succeeds now that GPIO2 is available
 
 ## <a name="serial-uart"></a>串行 UART
 
-RPi2/3 上有一个串行 UART： **UART0**
+RPi2/3： **UART0**上提供了一个串行 UART：
 
 * Pin 8- **UART0 TX**
 * 引脚 10- **UART0 RX**
 
-以下示例初始化 **UART0** 并依次执行写入和读取操作：
+下面的示例初始化 **UART0** 并执行写操作，后跟读取：
 
 
 ```csharp
@@ -160,9 +160,9 @@ public async void Serial()
 }
 ```
 
-请注意，必须将以下功能添加到 UWP 项目中的 **Package.appxmanifest** 文件，才能运行串行 UART 代码：
+请注意，必须将以下功能添加到 UWP 项目中的 **appxmanifest.xml** 文件，才能运行串行 UART 代码：
 
-Visual Studio 2017 在清单设计器（appxmanifest.xml 文件的可视化编辑器）中有一个已知 bug，该 bug 会影响 serialcommunication 功能。  如果 appxmanifest.xml 添加 serialcommunication 功能，则在设计器中修改 appxmanifest.xml 将损坏 appxmanifest.xml （设备 xml 子级将丢失）。  若要解决此问题，请右键单击 appxmanifest.xml，然后从上下文菜单中选择 "查看代码"，手动编辑 appxmanifest.xml。
+Visual Studio 2017 在清单设计器中有一个已知 bug， (用于 appxmanifest.xml 文件的可视化编辑器) 会影响 serialcommunication 功能。  如果你的 appxmanifest.xml 添加 serialcommunication 功能，则通过设计器修改 appxmanifest.xml 将损坏 appxmanifest.xml (设备 xml 子级将丢失) 。  若要解决此问题，可以手动编辑 appxmanifest.xml，方法是右键单击 appxmanifest.xml，然后从上下文菜单中选择 "查看代码"。
 
 ```xml
   <Capabilities>
@@ -180,14 +180,14 @@ Visual Studio 2017 在清单设计器（appxmanifest.xml 文件的可视化编�
 
 ### <a name="i2c-overview"></a>I2C 概述
 
-排针上公开了一个 I2C 控制器 **I2C1**，带有 **SDA** 和 **SCL** 两条线。 用于此总线的 1.8K&#x2126; 内部上拉电阻已安装在开发板上。
+Pin 标头上有一个 I2C 控制器 **I2C1** ，其中包含两行 **SDA** 和 **SCL**。 1.8 k&#x2126; 在此总线的板上已经安装了内部下拉电阻。
 
 > | 信号名称 | 标头 Pin 号 | Gpio 编号 |
 > |-------------|-------------------|-------------|
 > | SDA         | 3                 | 2           |
 > | SCL         | 5                 | 3           |
 
-下面的示例将初始化 **I2C1** 并将数据写入地址为 **0x40** 的 I2C 设备：
+下面的示例使用 address **0x40**初始化**I2C1**并将数据写入 I2C 设备：
 
 ```csharp
 using Windows.Devices.Enumeration;
@@ -237,7 +237,7 @@ RPi2/3 提供了两个 SPI 总线控制器。
 
 ### <a name="spi-sample"></a>SPI 示例
 
-下面显示了一个示例，说明如何使用芯片**SPI0**在总线上执行 SPI 写入操作：
+下面显示了一个示例，说明如何使用芯片 **SPI0** 在总线上执行 SPI 写入操作：
 
 ```csharp
 using Windows.Devices.Enumeration;
