@@ -10,7 +10,7 @@
     - name: Windows Server IoT 2019
       href: windows-server.md
     - name: Windows IoT 核心版服务
-      href: 'https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview'
+      href: 'https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview'
     - name: Windows CE 应用容器
       href: windows-ce-app-container.md
 - name: 教程
@@ -28,6 +28,15 @@
       href: tutorials/qualcomm.md
     - name: 设置 Intel 设备
       href: tutorials/intel.md
+- name: 快速入门指南
+  expanded: false
+  items:
+    - name: 原型板
+      href: tutorials/quickstarter/PrototypeBoards.md
+    - name: 设备设置
+      href: tutorials/quickstarter/DeviceSetup.md
+    - name: 开发应用
+      href: tutorials/quickstarter/DevelopApp.md
 - name: 硬件指南
   expanded: false
   items:
@@ -165,6 +174,8 @@
       href: manage-your-device/ProjectRome.md
     - name: Intune 设备注册
       href: manage-your-device/IntuneDeviceEnrollment.md
+    - name: Azure IoT 设备代理
+      href: manage-your-device/AzureIoTDA.md
 - name: 保护设备
   expanded: false
   items:
