@@ -5,12 +5,12 @@ ms.topic: article
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Minnowboard。 查看如何使用仪表板、连接到网络，以及如何连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, Minnowboard
 ms.custom: RS5
-ms.openlocfilehash: ec5813a08dc66374573a43a170d47017112a2dd8
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: 8507f0471897301c2e9b65093d23d935de8360f8
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081702"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782349"
 ---
 # <a name="setting-up-a-minnowboard"></a>设置 MinnowBoard
 

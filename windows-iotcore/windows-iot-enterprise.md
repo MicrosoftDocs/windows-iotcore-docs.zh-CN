@@ -4,12 +4,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 了解 Windows 10 IoT 企业版是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 企业版, 企业, 二进制, Windows
-ms.openlocfilehash: 29edd07682102c89c3442ed77be86466e89ed346
-ms.sourcegitcommit: f4660deb31a5736f4bf267d358778d53d2a2c04d
+ms.openlocfilehash: d4568e212098282e80b7c9795cfe6719f449b016
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "83001351"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90781699"
 ---
 # <a name="an-overview-of-windows-10-iot-enterprise"></a>Windows 10 IoT 企业版概述
 

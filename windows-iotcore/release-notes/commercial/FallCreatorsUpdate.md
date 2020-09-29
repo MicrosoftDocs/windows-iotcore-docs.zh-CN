@@ -4,12 +4,12 @@ ms.date: 10/12/2017
 ms.topic: article
 description: 了解适用于 Windows 10 IoT 的 Fall Creators Update 的新增功能。
 keywords: Windows IoT, Fall Creators Update, 发行说明
-ms.openlocfilehash: 35dbe905cfb25613d1225ab8e6d4b8fd636134d9
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: e7d558fc8b96a9ebbc4f139ada980af22378a61d
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "72918697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782999"
 ---
 # <a name="fall-creators-update-release-notes-for-windows-10-iot"></a>适用于 Windows 10 IoT 的 Fall Creators Update 的发行说明
 内部版本号 16299。 2017 年 10 月
@@ -38,7 +38,7 @@ Windows 10 IoT 支持开发嵌入式设备或专用设备，适合 OEM 和开发
 * 为 Windows 10 IoT 核心版上的音频终结点设备启用了[专用模式音频流](https://msdn.microsoft.com/library/windows/desktop/dd370844(v=vs.85).aspx)。
 * 在 WinRT 中添加了新的 API，用于设置 Windows 10 IoT 核心版上的系统日期和时间。
 * 添加了对 [通用 BSP (wm.xml)](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-packages) 的支持。 将 iot-adk-addonkit v4.0 与当前版本的 ADK 配合使用。
-* 向屏幕键盘添加了语言选择和本地化布局。 有关更多详细信息，请参阅[屏幕键盘布局](https://docs.microsoft.com/windows/iot-core/develop-your-app/onscreenkeyboardlayouts)。
+* 向屏幕键盘添加了语言选择和本地化布局。 有关详细信息，请参阅[屏幕键盘布局](https://docs.microsoft.com/windows/iot-core/develop-your-app/onscreenkeyboardlayouts)。
 
 ## <a name="features-in-preview-for-dev-and-test-scenarios"></a>预览版可用于开发和测试场景的功能
 * 组件更新服务[预览版]允许 OEM 在全局管理应用并将操作系统、应用、设置和文件的更新从云端推送到设备，以保持更新和保障安全。

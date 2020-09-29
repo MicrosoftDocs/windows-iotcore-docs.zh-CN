@@ -5,14 +5,14 @@ ms.topic: article
 description: 了解如何通过 Windows 10 IoT 核心版来设置 NXP 设备。 使用仪表板、连接到网络，并连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, NXP
 ms.custom: RS5
-ms.openlocfilehash: 6bcf1c7bde16f941afa6bb3d83c33bf4f12c9454
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: a79ebcba3cc9351e5aff1caa74389fc73d8823f5
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081692"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782339"
 ---
-# <a name="setting-up-a-nxp-device"></a>设置 NXP 设备
+# <a name="setting-up-an-nxp-device"></a>设置 NXP 设备
 
 ## <a name="overview"></a>概述
 
@@ -37,7 +37,7 @@ ms.locfileid: "88081692"
 
 ### <a name="instructions"></a>Instructions
 
-1. 运行 Windows 10 IOT 核心版仪表板，单击“设置新设备”，然后将 SD 卡插入计算机中。**
+1. 运行 Windows 10 IOT 核心版仪表板，单击“设置新设备”，然后将 SD 卡插入计算机中。
 2. 将 NXP 设备连接到外部显示器。
 3. 填写字段。 选择“NXP [i.MX6/i.MX7]”作为设备类型。 确保为设备提供新的名称和密码。 否则，默认凭据仍旧为：
 

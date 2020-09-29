@@ -5,12 +5,12 @@ ms.topic: article
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Intel 设备。 使用 eMMC、连接到网络，并连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, Intel
 ms.custom: RS5
-ms.openlocfilehash: 1b9eec92e9f0858adafb79b1a857812305e67f73
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: c01a9f1a92b344e9e4458ca45c62c78162c253aa
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782359"
 ---
 # <a name="setting-up-an-intel-device"></a>设置 Intel 设备
 

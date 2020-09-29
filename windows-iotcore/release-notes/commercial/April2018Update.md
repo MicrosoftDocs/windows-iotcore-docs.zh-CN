@@ -4,12 +4,12 @@ ms.date: 05/01/2018
 ms.topic: article
 description: 了解适用于 Windows 10 IoT 的 2018 年 4 月更新中的新增功能。
 keywords: Windows IoT，2018 年 4 月更新，发行说明
-ms.openlocfilehash: b06378db14ba78fc5a3eb60e842e1555e56a66ac
-ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+ms.openlocfilehash: c33df71d3cbab03f1272d9b9bee0b5107a0c3e23
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75721750"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782809"
 ---
 # <a name="april-2018-update-release-notes-for-windows-10-iot"></a>适用于 Windows 10 IoT 的 2018 年 4 月更新的发行说明
 内部版本号 17134。 2018 年 5 月

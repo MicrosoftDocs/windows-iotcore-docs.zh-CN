@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 阅读并了解 Creators Update 的新增内容（内部版本号 15063，2017 年 4 月）。 另请查看已知问题列表。
 keywords: Windows IoT, Creators Update, 发行说明
-ms.openlocfilehash: 40089b05f8e37a09c1d710269f24932a9afb77de
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: 0f747fe0a23a75bce85c294b1253f4482efcbbd0
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081642"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782799"
 ---
 # <a name="creators-update-release-notes-for-windows-10-iot-core"></a>Windows 10 IoT 核心板的 Creators Update 的发行说明
 内部版本号 15063。 2017 年 4 月
@@ -92,7 +92,7 @@ Dragonboard BSP 具有耳机插孔和麦克风插孔的驱动程序，但它在�
 Dragonboard 上的 SPI 将会忽略所请求的速度，并始终以预配置的速度运行。  
 
 #### <a name="dragonboard-connected-standby"></a>Dragonboard 连接待机 
-默认情况下，连接待机在 Qualcomm Dragonboard 上未启用。 若要在 DragonBoard 上启用连接待机，需要将以下注册表项设置为“1” 
+默认情况下，连接待机在 Qualcomm Dragonboard 上未启用。  若要在 DragonBoard 上启用连接待机，需要将以下注册表项设置为“1” 
 <br>
 `HKLM\System\Controlset001\Control\Power\CsEnabled=DWORD:1`
 <br>

@@ -3,12 +3,12 @@ Description: 排查 Windows 10 IoT 核心版中与开发相关的不同问题，
 title: 疑难解答
 ms.date: 08/28/2018
 ms.topic: article
-ms.openlocfilehash: 6ed28a979cb5132e0b368e4e338c16a0d476367b
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: cc3a00d53c5bda8fae7eb4284b0b29fea41d87e0
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081362"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90782709"
 ---
 # <a name="troubleshooting"></a>疑难解答
 本文包含用户遇到的常见故障排除问题。 若要查找特定内容（字词或短语），请使用 Ctrl+F。 想要表达你自己的见解？ 请针对本文档创建一个 PR，或者在下面提供内容反馈。
@@ -20,7 +20,7 @@ ms.locfileid: "88081362"
 
 虽然我们不正式支持 ASUS Tinkerboard 和 Rockchip，但有时候，Rockchip 可以通过其他的第三方在 Windows 10 IoT 核心版上使用 SoC。
 
-## <a name="issue-when-connecting-a-mbm-device-when-roaming"></a>在漫游时连接 MBM 设备出现问题
+## <a name="issue-when-connecting-an-mbm-device-when-roaming"></a>在漫游时连接 MBM 设备出现问题
 
 在启用漫游时需考虑两个事项：
 
@@ -89,7 +89,7 @@ Raspberry Pi 3 的 B+ 型号是 Raspberry Pi 3 系列的最新产品，拥有以
 最近，许多对 Windows 10 IoT 核心版感兴趣的客户遇到一个问题：设备在刷写 Windows 10 IoT 核心版后无法正常启动，但其上的 Raspbian 正常。 下面是关于如何排查此启动问题的一些建议。
 
 此 Insider Preview 映像中存在一些已知的问题。 请注意：
-* 此映像仅适用于 Raspberry Pi 3B+，不会在 Raspbierry Pi 2 上启动。
+* 此映像仅适用于 Raspberry Pi 3B+，不会在 Raspberry Pi 2 上启动。
 * 不能在 Windows 10 IoT 核心版上通过 Visual Studio 进行 F5 驱动程序部署。
 * 板载 Wi-Fi 和蓝牙不能在 Raspberry Pi 3B+ 上使用。
 * Ft5406 触摸屏驱动程序在 Raspberry Pi 3B+ 上禁用。

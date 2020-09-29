@@ -4,12 +4,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: 阅读 Windows 10 IoT 核心版的概述。 了解 Windows 10 桌面版和 Windows 10 IoT 核心版之间的差异。
 keywords: Windows 10 IoT 核心版, 占用空间小, 无外设
-ms.openlocfilehash: 12d4b4eec337b72f2e67aaee74240214ed6c0b43
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: 62503c77c579670f66ba2dc9e1d7f1f441cad4c7
+ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90781589"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT 核心版概述
 
