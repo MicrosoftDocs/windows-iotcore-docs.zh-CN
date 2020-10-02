@@ -2,14 +2,16 @@
 title: 有外设设备和无外设设备
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何为设备配置 Windows IoT Core，使其适用于 "头" 或 "无外设" 模式。
 keywords: windows iot，屏幕，头，无外设，UI
-ms.openlocfilehash: a402697d1e5169a313f7c8ebc0604f74e24b00d8
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 9cac0198e58d2ace6bd751c25d97dd964e4db5a9
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782659"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655813"
 ---
 # <a name="headed-and-headless-devices"></a>头和无外设设备
 

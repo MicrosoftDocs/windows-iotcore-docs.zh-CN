@@ -4,14 +4,16 @@ author: msmimart
 ms.author: mimart
 ms.date: 05/08/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何使用 Microsoft Intune 设备管理和 Windows IoT 来管理设备。
 keywords: windows iot，Azure IoT，Intune 设备管理，设备管理
-ms.openlocfilehash: 03eda1fdd88e5a5b1114ee54397541f35fb85ec3
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 6122b0a3cb857103e0a08dea629b49ca13ed59e6
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782449"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655513"
 ---
 # <a name="enrolling-windows-iot-core-devices-in-microsoft-intune"></a>在 Microsoft Intune 中注册 Windows IoT Core 设备
 

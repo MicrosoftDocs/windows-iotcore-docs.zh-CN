@@ -4,35 +4,37 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 09/12/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何在 Visual Studio 中远程调试 IoT 核心控制台应用程序。
 keywords: windows iot，visual studio，应用部署，远程调试
-ms.openlocfilehash: 21011b6a1bb0a37146eac65b747673977e600c76
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: b5ef8429f3576cb701affcabfd10f0794fad22df
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782899"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656243"
 ---
 # <a name="debug-your-app-using-remote-console-app-debugging"></a>使用远程控制台应用调试来调试应用
 
 下面介绍如何在 Visual Studio 中远程调试 IoT 核心控制台应用程序：
 
-* 首先需要在 Windows IoT Core 设备上设置远程调试器。 首先，请按照 [此处](AppDeployment.md) 的步骤在设备上部署任何其他通用 Windows 应用程序 (尝试 HelloWorld 项目) 。 这会将所有必需的二进制文件复制到设备。 
+* 首先需要在 Windows IoT Core 设备上设置远程调试器。 首先，请按照 [此处](AppDeployment.md) 的步骤在设备上部署任何其他通用 Windows 应用程序 (尝试 HelloWorld 项目) 。 这会将所有必需的二进制文件复制到设备。
 
 * 若要在设备上启动远程调试器，请在电脑上打开 Web 浏览器，并将其指向 `http://<device name/IP address>:8080` 以启动 [Windows 设备门户](../manage-your-device/DevicePortal.md)。 在 "凭据" 对话框中，使用默认的 "用户名" 和 "密码： `Administrator` " `p@ssw0rd` 。 Windows 设备管理应启动并显示 web 管理主屏幕。
 
-* 现在，导航到 Windows 设备门户的 "调试设置" 部分，然后单击 "开始 Visual Studio 远程调试器下的" 开始 "按钮。 
+* 现在，导航到 Windows 设备门户的 "调试设置" 部分，然后单击 "开始 Visual Studio 远程调试器下的" 开始 "按钮。
 
     ![WindowsDevicePortalDebugSettings 启动远程调试器](../media/Console/device_portal_start_debugger.png)
 
-* 此时将显示一个消息框，并向你显示连接信息。 
+* 此时将显示一个消息框，并向你显示连接信息。
 
 *  在 Visual Studio 中，你可以通过编辑项目的属性来配置目标 (确保根据你的委员会的名称或 IP 地址进行所有突出显示的更改) ：
 
     ![控制台应用程序远程计算机项目设置](../media/Console/console_project_settings.png)
-    
+
 > [!NOTE]
-> 如果未看到上述图像，请前往上下文菜单中的 "解决方案资源管理器"，并进入 "项目属性"。 可在 [此处](https://docs.microsoft.com/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017)找到有关项目属性的详细信息。
+> 如果未看到上述图像，请前往上下文菜单中的 "解决方案资源管理器"，并进入 "项目属性"。 有关项目属性的详细信息，请参阅 [此处] (https://docs.microsoft.com/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017&preserve-view=true 。
 
 > [!TIP]
 > 你可以使用 IP 地址而不是 Windows IoT Core 设备名称。
@@ -43,7 +45,7 @@ ms.locfileid: "90782899"
 
     在 Configuration Manager 中，确保为你的项目配置选择 "部署" 复选框 (如果禁用此选项，则可能尚未将部署选项完全输入到项目属性的 "调试" 选项卡中) 
 
-    ![控制台应用程序远程计算机项目设置](../media/Console/deploy_checkbox.png)
+    ![控制台应用程序远程计算机项目设置1](../media/Console/deploy_checkbox.png)
 
 * 现在，我们已准备好部署到远程 Windows IoT Core 设备。 只需按 F5 (或选择 "调试" " \| 开始调试") 即可开始调试应用程序。 你还可以使用生成 \| 部署解决方案来部署应用程序，而无需启动调试会话。
 
@@ -59,4 +61,3 @@ ms.locfileid: "90782899"
 * 调试完应用程序后，请记得在 Windows IoT Core 设备上停止远程调试器。 要执行此操作，可以导航到 Windows 设备门户的 "调试设置" 部分，然后单击 "停止远程调试器" 按钮。
 
     ![WindowsDevicePortalDebugSettings 停止远程调试器](../media/Console/device_portal_stop_debugger.PNG)
-

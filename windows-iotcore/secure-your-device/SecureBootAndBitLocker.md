@@ -2,14 +2,16 @@
 title: 在 Windows 10 IoT Core 上启用安全启动、BitLocker 和 Device Guard
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何在 Windows 10 IoT Core 上启用安全启动、BitLocker 和 Device Guard
 keywords: windows iot，安全启动，BitLocker，device guard，安全性，全包式安全
-ms.openlocfilehash: 35295699b6290e786f0546f94db566fb96c5b651
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 716d3f62c29af34fe9cce87e60dbb0b5a9287850
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782759"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657343"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>在 Windows 10 IoT Core 上启用安全启动、BitLocker 和 Device Guard
 
@@ -41,13 +43,13 @@ Windows 10 IoT Core 包含安全功能产品/服务，如 UEFI 安全启动、Bi
 
 ### <a name="uefi-secure-boot"></a>UEFI 安全启动
 
-UEFI 安全启动是第一个策略强制点，位于 UEFI。  它将系统限制为仅允许执行由指定的颁发机构（如固件驱动程序、选项 Rom、UEFI 驱动程序或应用程序）和 UEFI 启动加载程序所签名的二进制文件。 此功能可防止在平台上执行未知的代码，潜在地削弱这种代码的安全风险。 安全启动降低了对设备进行预启动恶意软件攻击的风险，例如 rootkit。 
+UEFI 安全启动是第一个策略强制点，位于 UEFI。  它将系统限制为仅允许执行由指定的颁发机构（如固件驱动程序、选项 Rom、UEFI 驱动程序或应用程序）和 UEFI 启动加载程序所签名的二进制文件。 此功能可防止在平台上执行未知的代码，潜在地削弱这种代码的安全风险。 安全启动降低了对设备进行预启动恶意软件攻击的风险，例如 rootkit。
 
 作为 OEM，需要在生产时将 UEFI 安全启动数据库存储在 IoT 设备上。 这些数据库包括签名数据库 (db) 、已吊销的签名数据库 (.dbx) 和密钥注册密钥数据库 (KEK) 。 这些数据库存储在设备 (NV RAM) 的固件非易失性 RAM 中。
 
 * ** (db) 的签名数据库：** 这列出了允许在设备上加载的操作系统加载程序、UEFI 应用程序和 UEFI 驱动程序的签名者或图像哈希
 
-* 已**吊销 (.dbx) 的签名数据库：** 这列出了不再受信任且*不*允许在设备上加载的操作系统加载程序、uefi 应用程序和 uefi 驱动程序的签名者或图像哈希 
+* 已**吊销 (.dbx) 的签名数据库：** 这列出了不再受信任且*不*允许在设备上加载的操作系统加载程序、uefi 应用程序和 uefi 驱动程序的签名者或图像哈希
 
 * **密钥注册密钥数据库 (KEK) ：** 包含一个签名密钥列表，可用于更新签名和吊销的签名数据库。
 
@@ -100,11 +102,11 @@ Windows 10 IoT Core 还实现了 BitLocker 设备加密的轻型版，保护 IoT
 
 ![创建锁定映像](../media/SecurityFlowAndCertificates/ImageLockDown.png)
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 
-* 提供的脚本 **不** 支持运行 Windows 10 企业版 (其他 windows 版本的电脑)  
-* [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) -证书生成必需
-* [Windows 10 ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) -CAB 生成必需的
+* 提供的脚本 **不** 支持运行 Windows 10 企业版 (其他 windows 版本的电脑) 
+* [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) -证书生成必需
+* [Windows 10 ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) -CAB 生成必需的
 * 引用平台-需要随附固件、OS、驱动程序和应用程序的版本硬件才能进行最终锁定
 
 ### <a name="development-iot-devices"></a>开发 IoT 设备
@@ -154,23 +156,27 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在 [
     * SIPolicy 节：指定应信任的证书
         * ScanPath：用于扫描二进制文件的设备的路径。 `\\a.b.c.d\C$`
         * 更新： SIPolicy (PAUTH 键的签名者) 
-        * 用户模式证书 (UMCI 密钥)  
+        * 用户模式证书 (UMCI 密钥) 
         * 内核：内核模式证书 (KMCI 密钥) 
     * 打包：指定包生成的设置
 
 > [!IMPORTANT]
 > 为了在初始开发周期中协助测试，Microsoft 在适当的位置提供了预生成的密钥和证书。  这意味着 Microsoft 测试、开发和预发布二进制文件被视为受信任。  在最终产品创建和映像生成过程中，请确保删除这些证书并使用你自己的密钥，以确保完全锁定的设备。
 
-6.Exe要生成所需包的以下命令：
+6. 执行以下命令以生成所需的包：
+```
+    powershell
 
-    ```powershell
     Import-Module .\IoTTurnkeySecurity.psm1
+
     # Generate the security packages for retail
     New-IoTTurnkeySecurity -ConfigFileName .\settings.xml
+
     (or)
+
     # Generate the security packages for test
     New-IoTTurnkeySecurity -ConfigFileName .\settings.xml -Test
-    ```
+```
 
 ### <a name="test-lockdown-packages"></a>测试锁定包
 你可以通过以下步骤在解锁的设备上手动安装生成的包，以对其进行测试
@@ -223,7 +229,7 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在 [
     * DeviceGuard : `Copy ..\Output\DeviceGuard\*.*  ..\Workspace\Common\Packages\Security.DeviceGuard`
       * SIPolicyOn
       * SIPolicyOff
-  
+
 2. 在包含锁定包功能 ID 的 ProductName 目录下添加 RetailOEMInput.xml 和 TestOEMInput.xml
     * `<Feature>SEC_BITLOCKER</Feature>`
     * `<Feature>SEC_SECUREBOOT</Feature>`
@@ -261,5 +267,3 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在 [
 
 > [!NOTE]
 > 除非已禁用计划的加密任务，否则将在随后的设备启动时重新启用设备加密。
-
-

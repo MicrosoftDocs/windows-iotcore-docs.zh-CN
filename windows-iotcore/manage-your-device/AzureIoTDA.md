@@ -4,14 +4,16 @@ author: rcheeran
 ms.author: rcheeran
 ms.date: 06/25/2019
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何使用 Windows IoT 上的 Azure IoT 设备代理管理设备。
 keywords: windows iot，Azure IoT，Azure 设备代理，设备管理，远程管理
-ms.openlocfilehash: c1719932cc74034514874a108b21cdf01f18f3d2
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 7f2137be065a6ceab781a9276acba4a62f707a3c
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782829"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655493"
 ---
 # <a name="azure-iot-device-agent"></a>Azure IoT 设备代理
 

@@ -2,14 +2,16 @@
 title: Windows 文件共享
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何使用 Windows 文件共享在设备之间传输文件。
 keywords: windows iot，文件传输，文件共享，windows 文件共享
-ms.openlocfilehash: bc96208e892118d6a837b552d03287f37c799001
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: bd21300fc25f2cde644f0ba24418805edbd5e955
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782399"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655253"
 ---
 # <a name="windows-file-sharing"></a>Windows 文件共享
 

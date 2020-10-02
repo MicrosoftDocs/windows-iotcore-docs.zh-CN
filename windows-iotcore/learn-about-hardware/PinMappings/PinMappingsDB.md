@@ -2,14 +2,16 @@
 title: Dragonboard Pin 映射
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解 Dragonboard 的 pin 映射功能，包括 GPIO、串行 UART、I2C 总线和 SPI 总线。
 keywords: windows iot，Dragonboard，pin 映射，GPIO
-ms.openlocfilehash: 9a74e8256da8ed7a58343d8606eedbf58550d6b1
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: 3d0f164dd1d61ee52897864c28f0d7116e0c4a34
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081472"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655753"
 ---
 # <a name="dragonboard-pin-mappings"></a>Dragonboard Pin 映射
 
@@ -52,7 +54,7 @@ Dragonboard 的硬件接口通过板上的40针标头公开。 功能包括：
 > | 120   | 用户 LED 2         |         
 
 
-例如，以下代码将**GPIO 35**打开为输出，并在 pin 上写入数字 "**1**"：
+例如，以下代码将 **GPIO 35** 打开为输出，并在 pin 上写入数字 "**1**"：
          
 ```C#
 using Windows.Devices.Gpio;
@@ -79,7 +81,7 @@ public void GPIO()
 
 Dragonboard **UART0**和**UART1**上提供了两个串行 UARTS
 
-**UART0**具有标准的**UART0 TX**和**UART0 RX**线路，以及流控制信号**UART0 CTS**和**UART0 RTS**。
+**UART0** 具有标准的 **UART0 TX** 和 **UART0 RX** 线路，以及流控制信号 **UART0 CTS** 和 **UART0 RTS**。
 
 * Pin 5- **UART0 TX**
 * 引脚 7- **UART0 RX**
@@ -87,12 +89,12 @@ Dragonboard **UART0**和**UART1**上提供了两个串行 UARTS
 * Pin 9- **UART0 RTS**
 
 
-**UART1**仅包括**UART1 TX**和**UART1 RX**行。
+**UART1** 仅包括 **UART1 TX** 和 **UART1 RX** 行。
 
 * Pin 11- **UART1 TX**
 * Pin 13- **UART1 RX**
 
-下面的示例初始化**UART1**并执行写操作，后跟读取：
+下面的示例初始化 **UART1** 并执行写操作，后跟读取：
 
 ```C#
 using Windows.Storage.Streams;
@@ -129,7 +131,7 @@ public async void Serial()
 > [!NOTE]
 > Visual Studio 2017 在清单设计器中有一个已知 bug， (用于 appxmanifest.xml 文件的可视化编辑器) 会影响 serialcommunication 功能。  如果你的 appxmanifest.xml 添加 serialcommunication 功能，则通过设计器修改 appxmanifest.xml 将损坏 appxmanifest.xml (设备 xml 子级将丢失) 。  若要解决此问题，请右键单击 appxmanifest.xml，然后从上下文菜单中选择 "查看代码"，手动编辑 appxmanifest.xml。
 
-必须将以下功能添加到 UWP 项目中的**appxmanifest.xml**文件，才能运行串行 UART 代码：
+必须将以下功能添加到 UWP 项目中的 **appxmanifest.xml** 文件，才能运行串行 UART 代码：
 
 ```xml
   <Capabilities>
@@ -147,12 +149,12 @@ public async void Serial()
 
 ### <a name="i2c-pins"></a>I2C 引脚
 
-**I2C0**在 pin 标头上公开，并带有两行**SDA**和**SCL**
+**I2C0** 在 pin 标头上公开，并带有两行 **SDA** 和 **SCL**
 
 * Pin 17- **I2C0 SDA**
 * 固定 15- **I2C0 SCL**
 
-**I2C1**在 pin 标头上公开，并带有两行**SDA**和**SCL**
+**I2C1** 在 pin 标头上公开，并带有两行 **SDA** 和 **SCL**
 
 * Pin 21- **I2C1 SDA**
 * 固定 19- **I2C1 SCL**
@@ -194,7 +196,7 @@ public async void I2C()
 
 ### <a name="spi-pins"></a>SPI Pin
 
-数据库上有一个 SPI 控制器**SPI0**可用
+数据库上有一个 SPI 控制器 **SPI0** 可用
 
 * Pin 10- **SPI0 MISO**
 * Pin 14- **SPI0 MOSI**
@@ -208,7 +210,7 @@ SPI 时钟固定在 4.8 mhz。 请求的 SPI 时钟将被忽略。
 
 ### <a name="spi-sample"></a>SPI 示例
 
-下面显示了有关如何在总线上执行 SPI 写入的示例**SPI0** ：
+下面显示了有关如何在总线上执行 SPI 写入的示例 **SPI0** ：
 
 ```C#
 using Windows.Devices.Enumeration;

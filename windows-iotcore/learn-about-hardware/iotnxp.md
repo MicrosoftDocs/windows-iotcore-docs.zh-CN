@@ -4,14 +4,16 @@ author: chsha
 ms.author: chsha
 ms.date: 02/22/2019
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解有关 Windows 10 IoT Core 和 NXP i.MX systems for 芯片 (Soc) 的信息。 适用于 i.MX 6、i.MX 7 和 i.MX 8 分钟 (Bsp) 的板支持包。
 keywords: Windows 10 IoT Core，入门，i.MX，NXP
-ms.openlocfilehash: 7ab3e4d1b55281a15381b8c6cc0ddb69223d4ecd
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 041cc72cdef1182674afd435bdb97a5655608120
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782839"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655573"
 ---
 # <a name="window-10-iot-core-and-nxp-imx-socs"></a>Windows 10 IoT Core 和 NXP i.MX Soc
 

@@ -2,14 +2,16 @@
 title: 适用于 Windows 10 IoT Core 的 Soc 和自定义板
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解各种建议的板和社区设备的硬件功能。
 keywords: windows iot，开发设备，板，SOC，SOM，芯片上的系统，Raspberry Pi 2，Raspberry Pi 3，Minnowboard Max，DragonBoard
-ms.openlocfilehash: 01e3f9a91c5685ade99210be357bb82dfe58e88e
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 5f43fb7be7ba1641605c0adfc09c1b9dfd93827f
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782979"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655663"
 ---
 # <a name="socs-and-custom-boards"></a>SoC 和自定义板
 
@@ -39,7 +41,7 @@ Microsoft 与 Broadcom、Intel、NXP 和 Qualcomm 一起工作，验证对芯片
 
 为了帮助你为设备选择正确的平台，下表显示了具有 Windows 10 IoT Core 的处理器系列支持的功能。 Windows 10 IoT Core 支持下面列出的所有功能，但某些 Soc 可能不包含在其设计中的特定 IP，这种情况下会用 "N/A" 来指示。 在这种情况下，可以将第三方解决方案合并到设计中，以提供所需的功能。  在有限的情况下，如果在处理器上未实现 Windows 10 IoT Core 功能，该项将留空。
 
-> |    | Intel  |  Qualcomm  | NXP MX6 | NXP MX7 | NXP MX8M | Broadcom |
+> | 功能 | Intel  |  Qualcomm  | NXP MX6 | NXP MX7 | NXP MX8M | Broadcom |
 > |----|--------|------------|-----------|-----------|------------|----------|
 > | 音频 | x | x | x | x | x | x |
 > | GPIO | x | x | x | x | x | x |
@@ -58,7 +60,7 @@ Microsoft 与 Broadcom、Intel、NXP 和 Qualcomm 一起工作，验证对芯片
 > | 处理器电源管理 |  | x | x | x | 正在开发 | |
 > | TPM | x | x | x | x | x | 不可用 |
 > | 安全启动 | x | x | 正在开发 | 正在开发 | 正在开发 | |
-> | 休眠 | x | | | | | | 
+> | 休眠 | x | | | | | |
 > | PWM | x | 不可用 | x | x | x | |
 > | JTAG | x | 不可用 | x | x | x | |
 > | eMMC | x | x | x | x | x | |
@@ -107,7 +109,7 @@ Microsoft 与 Broadcom、Intel、NXP 和 Qualcomm 一起工作，验证对芯片
 
 BSP 包包含 ACPI 的源代码，以允许只需 ACPI 更改的简单硬件自定义。  
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > 如果需要额外的硬件自定义，例如使用特定的 MIPI-DSI 显示面板，请启用平台安全启动、RF 校准和认证 (例如。 FCC、CE) ，你将需要成为一个 Qualcomm BSP 源代码，或与具有访问权限的提供商合作 (在) 的经验丰富的合作伙伴。
 
 建议：

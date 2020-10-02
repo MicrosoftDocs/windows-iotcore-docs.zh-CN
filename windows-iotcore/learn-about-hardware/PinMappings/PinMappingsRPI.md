@@ -2,14 +2,16 @@
 title: Raspberry Pi 2 & 3 针映射
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解 Raspberry Pi 2 和3的 pin 映射功能。
 keywords: windows iot，Rasperry Pi 2，Raspberry Pi 3，固定映射，GPIO
-ms.openlocfilehash: d7d88f1295bf3be19efa17f1eafe5bc097d7de75
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: cbb2ce0cda197a0a9520a837fc1a0877430c6bcc
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782859"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655703"
 ---
 # <a name="raspberry-pi-2--3-pin-mappings"></a>Raspberry Pi 2 & 3 针映射
 
@@ -92,14 +94,14 @@ public void GPIO()
 ```
 
 打开 pin 时，它将处于其开机状态，其中可能包括拉取电阻器。 若要断开拉取电阻并获得高频输入，请将驱动器模式设置为 GpioPinDriveMode：
-
+```
     pin.SetDriveMode(GpioPinDriveMode.Input);
-
+```
 关闭 pin 后，它会恢复到其开机状态。
 
 ### <a name="pin-muxing"></a>固定 Muxing
 
-某些 GPIO pin 可以执行多个功能。 默认情况下，pin 配置为 GPIO 输入。 当通过调用或打开替代函数时 `I2cDevice.FromIdAsync()` `SpiDevice.FromIdAsync()` ，该函数所需的 pin 会自动切换 ( "muxed" ) 转换为正确的函数。 当通过调用或关闭设备时 `I2cDevice.Dispose()` `SpiDevice.Dispose()` ，pin 会恢复为其默认功能。 如果尝试同时对两个不同的函数使用 pin，则在尝试打开冲突的函数时会引发异常。 例如，应用于对象的
+某些 GPIO pin 可以执行多个功能。 默认情况下，pin 配置为 GPIO 输入。 当通过调用或打开替代函数时 `I2cDevice.FromIdAsync()` `SpiDevice.FromIdAsync()` ，该函数所需的 pin 会自动切换 ( "muxed" ) 转换为正确的函数。 当通过调用或关闭设备时 `I2cDevice.Dispose()` `SpiDevice.Dispose()` ，pin 会恢复为其默认功能。 如果尝试同时对两个不同的函数使用 pin，则在尝试打开冲突的函数时会引发异常。 例如，
 
 ```csharp
 var controller = GpioController.GetDefault();
@@ -247,15 +249,15 @@ public async void SPI()
 {
     // Use chip select line CS0
     var settings = new SpiConnectionSettings(0);
-    // Set clock to 10MHz 
+    // Set clock to 10MHz
     settings.ClockFrequency = 10000000;
 
     // Get a selector string that will return our wanted SPI controller
     string aqs = SpiDevice.GetDeviceSelector("SPI0");
-    
+
     // Find the SPI bus controller devices with our selector string
     var dis = await DeviceInformation.FindAllAsync(aqs);
-    
+
     // Create an SpiDevice with our selected bus controller and Spi settings
     using (SpiDevice device = await SpiDevice.FromIdAsync(dis[0].Id, settings))
     {
@@ -264,4 +266,3 @@ public async void SPI()
     }
 }
 ```
-

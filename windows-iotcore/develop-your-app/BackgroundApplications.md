@@ -2,14 +2,16 @@
 title: 后台应用程序
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何为 IoT 设备开发后台应用程序。 了解后台应用程序的启动和使用方式、可用的语言等。
 keywords: windows iot，后台应用程序
-ms.openlocfilehash: aa65c31e0900ed0c2c2164104c87c85140d5f81d
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 1749bca8ce4d8ccf99aa5e622b60461f3657f851
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782509"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656473"
 ---
 # <a name="developing-background-applications"></a>开发后台应用程序
 
@@ -31,8 +33,8 @@ ms.locfileid: "90782509"
 
 可在以下内容中找到**后台应用程序 (IoT) **模板：
 
-* **C++** `File > New > Project > Installed > Visual C++ > Windows > Windows IoT Core`
-* **C #**`File > New > Project > Installed > Visual C# > Windows > Windows IoT Core`
+* **C + +**`File > New > Project > Installed > Visual C++ > Windows > Windows IoT Core`
+* **C#** `File > New > Project > Installed > Visual C# > Windows > Windows IoT Core`
 * **Visual Basic** `File > New > Project > Installed > Visual Basic > Windows > Windows IoT Core`
 * **JavaScript** `File > New > Project > Installed > JavaScript > Windows > Windows IoT Core`
 

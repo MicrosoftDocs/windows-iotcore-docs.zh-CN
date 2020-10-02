@@ -4,15 +4,17 @@ author: jordanrh1
 ms.author: jordanrh
 ms.date: 09/17/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 将设备配置为在触摸时唤醒，以便在不使用的情况下关闭设备，但在触摸屏幕时可以快速打开。 设置视频空闲超时。
 keywords: windows iot，屏幕，睡眠，唤醒，touch，待机，电源
 ms.custom: RS5
-ms.openlocfilehash: 908aacf2f0fa48edc9f9d608d7cd0167de7b5d6c
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 25a09499ebc2fa9e2242ff0cc21054061bdf1edc
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782939"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655633"
 ---
 # <a name="configure-your-device-to-wake-on-touch"></a>将设备配置为在触摸时唤醒
 

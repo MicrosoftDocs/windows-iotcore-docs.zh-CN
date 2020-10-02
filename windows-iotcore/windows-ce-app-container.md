@@ -2,14 +2,16 @@
 title: Windows CE 应用容器概述
 ms.date: 08/12/2020
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Windows CE 应用容器迁移技术
 keywords: Windows 10 IoT Core，Windows CE，应用程序迁移，cepal
-ms.openlocfilehash: f5afc821bad50993bd8471cbac76820caa0fd892
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 08f2f167f92a323e0b18a2982e84a2ecacadd292
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90781599"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657133"
 ---
 # <a name="an-overview-of-the-windows-ce-app-container"></a>Windows CE 应用容器概述
 

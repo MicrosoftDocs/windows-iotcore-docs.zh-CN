@@ -2,14 +2,16 @@
 title: 通过 Azure IoT 中心管理 Windows 设备
 ms.date: 01/08/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 通过 Azure IoT 中心管理 Windows 设备。 通过设备管理，操作员可以同时远程配置和监视高 IoT 设备卷。
 keywords: windows iot，Azure，DM，设备管理，Azure IoT 中心，IoT 中心，设备运行状况
-ms.openlocfilehash: ff6171fd028d62c3f1b1d6c8bd04994e7c85399c
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: 8fdec35f8328668de9ffd3623795243a052351e3
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081562"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656833"
 ---
 # <a name="manage-your-windows-devices-with-the-azure-iot-hub"></a>通过 Azure IoT 中心管理 Windows 设备
 
@@ -31,4 +33,4 @@ ms.locfileid: "88081562"
 * 操作员用于远程配置和查询设备的门户或应用程序。
   * 必须通过设备 OEM 或操作员对设备进行自定义。 作为此解决方案的一部分，我们还提供开源数据模型和示例实现，以便更轻松地与 IoT 中心存储和 Windows IoT 客户端交互。
 
-若要了解有关 Windows 设备的设备管理的详细信息，请访问主要[设备管理客户端](https://github.com/ms-iot/iot-core-azure-dm-client/tree/master)存储库。
+若要了解有关 Windows 设备的设备管理的详细信息，请访问主要 [设备管理客户端](https://github.com/ms-iot/iot-core-azure-dm-client/tree/master)存储库。

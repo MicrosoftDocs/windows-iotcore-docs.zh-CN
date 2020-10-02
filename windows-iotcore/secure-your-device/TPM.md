@@ -2,14 +2,16 @@
 title: 受信任的平台模块 (TPM)
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何使用受信任的平台模块启用加密功能，从而更好地保护设备。
 keywords: windows iot，安全性，受信任的平台模块，TPM，加密，密钥
-ms.openlocfilehash: 2456d403d9c593ac656587d94ec81dc736031b6b
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 2459503eab215ae5c7f24a2f066039c0aa36918f
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782389"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657193"
 ---
 # <a name="trusted-platform-module-tpm-on-windows-10-iot-core"></a>受信任的平台模块 (Windows 10 IoT Core 上的 TPM) 
 

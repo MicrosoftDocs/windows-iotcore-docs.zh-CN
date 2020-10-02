@@ -2,14 +2,16 @@
 title: 在 Windows 10 IoT Core 设备上使用 WiFi
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何在 Windows 10 IoT Core 设备上使用、设置和配置 wifi。
 keywords: windows iot，wifi，安装程序，设备
-ms.openlocfilehash: 716dc8cec6a70977c7283773db8bc12b50d00f2e
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: ef1b7a81c33840bc3ec23efb294cab149d0c2fe2
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782539"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656603"
 ---
 # <a name="using-wifi-on-your-windows-10-iot-core-device"></a>在 Windows 10 IoT Core 设备上使用 WiFi
 
@@ -26,7 +28,7 @@ ms.locfileid: "90782539"
 
 ## <a name="custom-companion-app--wps-wi-fi-onboarding-samples"></a>自定义辅助应用 & WPS Wi-fi 载入示例
 
-目前，我们为开发人员提供了许多方法来为其设备构建自定义的 wifi 载入解决方案。 
+目前，我们为开发人员提供了许多方法来为其设备构建自定义的 wifi 载入解决方案。
 
 > | 示例 | 说明 | 优点  |  缺点  |
 > |-------------|----------|---------|---------|
@@ -95,11 +97,11 @@ Windows 10 IoT Core 支持使用无线配置文件设置 WiFi。 有关详细信
     ![具有文件资源管理器的 SMB](../media/SetupWifi/smb1.png)
 
     如果系统提示你输入用户名和密码，请使用以下凭据：
-
+```
         User Name: <TARGET_DEVICE>\Administrator
         Password:  p@ssw0rd
-
-    ![具有文件资源管理器的 SMB](../media/SetupWifi/cred1.png)
+```
+![SMB 与文件资源管理器1](../media/SetupWifi/cred1.png)
 
 > [!NOTE]
 > **强烈建议**您更新管理员帐户的默认密码。  请按照 [此处](../connect-your-device/PowerShell.md)的说明进行操作。
@@ -129,22 +131,23 @@ Windows 10 IoT Core 支持使用无线配置文件设置 WiFi。 有关详细信
 
 如果需要连接到 WPA2-PSK 个人 WiFi 网络，请先按照上面的说明进行操作，但对 XML 文件进行以下更改。 唯一的区别在于，当 Windows 电脑导出 XML 时，它会对密码进行加密。
 
-> [!WARNING] 
+> [!WARNING]
 > 这会使连接不安全。
 
 从 Windows 电脑导出的配置文件 XML：
-
+```
     <sharedKey>
         <keyType>passPhrase</keyType>
         <protected>true</protected>
         <keyMaterial><Your Encrypted password></keyMaterial>
     </sharedKey>
-
+```
 
 需要在 Windows 10 IoT Core 上运行的更改：
-
+```
     <sharedKey>
         <keyType>passPhrase</keyType>
         <protected>false</protected>
         <keyMaterial><Your Unencrypted password></keyMaterial>
     </sharedKey>
+```

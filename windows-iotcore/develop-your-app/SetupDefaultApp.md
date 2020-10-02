@@ -4,14 +4,16 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 09/05/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何使用 Windows 设备门户或 shell 设置默认应用程序。
 keywords: windows iot，默认应用，PowerShell，iot
-ms.openlocfilehash: 49a637fca3bf82a23c1fd771d61cc40d3fbf357b
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 34162704ea7433cd16c715ac1932fd32d2500872
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782439"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656183"
 ---
 # <a name="set-up-a-default-app"></a>设置默认应用程序
 在这里，你将了解将应用程序设置为默认应用程序的方式。 默认的应用程序是在系统启动时启动的应用程序。  

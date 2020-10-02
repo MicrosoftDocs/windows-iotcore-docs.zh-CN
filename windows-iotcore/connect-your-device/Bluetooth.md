@@ -2,14 +2,16 @@
 title: 蓝牙支持
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何利用适用于运行 Windows 10 IoT Core 的设备的蓝牙。
 keywords: windows iot，蓝牙，蓝牙支持，设备，设备门户
-ms.openlocfilehash: 081b8f61904d1719cea6e52fcc4dfc7473f73425
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 96f09f37b4a640405e489d7bf32f26566cdcf8c9
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782619"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656843"
 ---
 # <a name="bluetooth-support"></a>蓝牙支持
 Windows 10 IoT Core 支持蓝牙4.0。 可以在 [硬件兼容性列表](../learn-about-hardware/HardwareCompatList.md)中找到受支持的蓝牙连接器列表。
@@ -24,7 +26,7 @@ Windows 10 IoT Core 支持蓝牙4.0。 可以在 [硬件兼容性列表](../lear
 ## <a name="supported-bluetooth-profiles"></a>支持的蓝牙配置文件
 Windows 10 IoT Core 支持以下蓝牙配置文件：
 
-1.  **人体学接口设备配置文件概念 (HID) ** HID 设备从用户那里获取输入，并显示人工消耗的输出。 例如键盘、鼠标、游戏控制器、条形码读取器、LED 和字母数字显示。 Windows 10 IoT Core 设备可以通过蓝牙连接到 HID 设备。 请参阅 Windows 上下文： [Hid 概念简介](https://docs.microsoft.com/windows-hardware/drivers/hid/introduction-to-hid-concepts)中的有关 hid 的常规主题。 
+1.  **人体学接口设备配置文件概念 (HID) ** HID 设备从用户那里获取输入，并显示人工消耗的输出。 例如键盘、鼠标、游戏控制器、条形码读取器、LED 和字母数字显示。 Windows 10 IoT Core 设备可以通过蓝牙连接到 HID 设备。 请参阅 Windows 上下文： [Hid 概念简介](https://docs.microsoft.com/windows-hardware/drivers/hid/introduction-to-hid-concepts)中的有关 hid 的常规主题。
 
 2.  **射频通信 (RFCOMM) ** RFCOMMM 是经典蓝牙的基础串行通信。 对于 UWP 应用，支持以下 RFCOMM 服务：
 
@@ -35,16 +37,16 @@ Windows 10 IoT Core 支持以下蓝牙配置文件：
 * phoneBookAccessPse
 * genericFileTransfer
 
-3. **泛型属性配置文件 (GATT) ** 请参阅 [UWP-蓝牙低能耗](https://docs.microsoft.com/windows/uwp/devices-sensors/bluetooth-low-energy-overview) 主题。 
+3. **泛型属性配置文件 (GATT) ** 请参阅 [UWP-蓝牙低能耗](https://docs.microsoft.com/windows/uwp/devices-sensors/bluetooth-low-energy-overview) 主题。
 
 > [!NOTE]
 > 你将需要在 AppManifest 中手动指定 RFCOMM 服务。  请参阅 [UWP-蓝牙 RFCOMM](https://docs.microsoft.com/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm) 主题。 另请参阅 [UWP-蓝牙 Rfcomm Chat 示例](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BluetoothRfcommChat) 主题。
 
 ## <a name="connecting-bluetooth-devices-using-the-device-portal"></a>使用设备门户连接蓝牙设备
-使用 [windows 10 IoT Core 版本映像](https://developer.microsoft.com/en-us/windows/iot/downloads)之一时，可以使用设备门户将蓝牙设备与 Windows IoT Core 设备配对。 导航到 "蓝牙" 选项卡时，设备将查找蓝牙设备，并且其他蓝牙设备也会发现。 下图显示了传入配对请求。 
+使用 [windows 10 IoT Core 版本映像](https://developer.microsoft.com/windows/iot/downloads)之一时，可以使用设备门户将蓝牙设备与 Windows IoT Core 设备配对。 导航到 "蓝牙" 选项卡时，设备将查找蓝牙设备，并且其他蓝牙设备也会发现。 下图显示了传入配对请求。
 
 ![蓝牙传入配对](../media/Bluetooth/Portal_BT_2.png)
 
-成功配对设备后，它将在 "配对设备" 部分下列出 
+成功配对设备后，它将在 "配对设备" 部分下列出
 
-![蓝牙传入配对](../media/Bluetooth/Portal_BT_3.png)
+![蓝牙传入配对1](../media/Bluetooth/Portal_BT_3.png)

@@ -4,14 +4,16 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解通过 Windows 10 IoT Core 提供的不同提供商。
 keywords: windows iot，提供程序，总线提供程序，UWP，Gpio，Spi
-ms.openlocfilehash: ba4b204fed0807bd1be25173673f3fe1611cf319
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: c7c335bb791e487b1ef7808e0a7104ba9dbb91f3
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782489"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656403"
 ---
 # <a name="usermode-access-to-gpio-i2c-and-spi"></a>Usermode 访问 GPIO、I2C 和 SPI
 

@@ -4,14 +4,16 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解有关如何使用 Microsoft 闪电提供程序库的详细信息。
 keywords: windows iot，闪电提供商，闪电性能测试，总线
-ms.openlocfilehash: d0214c4c98b20f76410d2f7e2d7a450a2f9bb7b4
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 1ad7acd8d40bcedd4b0a2ef21af3e866e36ed790
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782459"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656293"
 ---
 # <a name="working-with-lightning-providers"></a>使用闪电提供程序
 DMAP 库包含一组提供程序，这些提供程序用于通过闪电直内存映射驱动 (程序在) 上通过闪电形控制器总线连接。

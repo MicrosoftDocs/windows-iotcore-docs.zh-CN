@@ -4,14 +4,16 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解管理 Windows 10 IoT Core 设备的不同方式，如使用支持基于证书的注册的传统 OMA DM MDM 服务器。
 keywords: windows iot，设备管理，windows iot，Azure DM，Azure 集线器，Azure IoT
-ms.openlocfilehash: 837ce4cd202b08ed01d44476ba6b91aaf52ed2af
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: f8dd90128f338a185af933470be941aaa813cc36
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782959"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655563"
 ---
 # <a name="managing-windows-iot-core-devices"></a>管理 Windows IoT Core 设备
 
@@ -41,13 +43,13 @@ ___
      - 证书配置文件的类型：受信任的 CA 证书  
      ![可信证书](../media/ManagingDevices/ConfigMgr-Certificate-Profiles-Wizard.png)
 
-5. 单击“下一步”。
+5. 单击 **“下一步”** 。
 
 6. 导入证书文件。
 
 7. 选择 " **计算机证书存储区-** **目标存储**的根目录"。
 
-8. 单击“下一步”。
+8. 单击 **“下一步”** 。
 
 9. 对于支持的平台支持平台，选择 "全**选**" ![](../media/ManagingDevices/ConfigMgr-Certificate-Profiles-Wizard-Supported-Platforms.png)
 

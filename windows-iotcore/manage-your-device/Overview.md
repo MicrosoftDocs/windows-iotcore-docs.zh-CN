@@ -3,15 +3,15 @@ title: 调试概述
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: windows-iot
-ms.technology: IoT
+ms.technology: iot
 description: 了解可用于调试 Windows 10 IoT Core 的不同方式。
-keywords: windows iot，调试，PowerShell，SSH
-ms.openlocfilehash: f1560cee2a49e2a05d8bd515fa25fc77b5fc2a2e
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+keywords: windows iot，调试，调试，PowerShell，SSH
+ms.openlocfilehash: 68fa95dd1a80a4d268133954aca9f391fdbcb0f9
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782419"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655393"
 ---
 # <a name="debugging-on-windows-iot-core"></a>在 Windows IoT Core 上调试
 使用运行中的应用程序设置 IoT 核心映像后，就必须根据需要调试应用程序或系统。 调试和测试系统的最佳时间是测试映像状态。 一旦基于 IoT 核心的系统出现在本质上，调试可能会变得很困难。 这并不是说它无法完成，而是为了进行调试而增加了额外的问题，而与测试阶段相比。 在测试模式下，可以使用以下操作调试应用程序或映像：
@@ -19,7 +19,7 @@ ms.locfileid: "90782419"
 ## <a name="device-portal"></a>设备门户
 通过 Windows 设备门户 (WDP) ，你可以通过本地网络远程配置和管理 IoT 设备。 可以通过 IoT 设备的本地 IP 来访问 WDP。 有关 IoT 上的 WDP 的其他信息，请参阅 [此处](https://docs.microsoft.com/windows/iot-core/manage-your-device/DevicePortal)。
 
-### <a name="collecting-etw--wpp-logs"></a>收集 ETW/WPP 日志 
+### <a name="collecting-etw--wpp-logs"></a>收集 ETW/WPP 日志
 -----
 
 ### <a name="file-sharing"></a>文件共享

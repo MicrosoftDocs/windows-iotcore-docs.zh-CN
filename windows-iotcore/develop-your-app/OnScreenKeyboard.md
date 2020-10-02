@@ -4,15 +4,17 @@ author: johntasler
 ms.author: jtasler
 ms.date: 09/13/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解新的屏幕键盘，以及如何在 Windows 10 IoT Core，版本1809中对其进行配置。
 keywords: Windows 10 IoT Core，touch，键盘，osk，屏幕，屏幕，sip，输入，ime，头，听写，语音，语音
 ms.custom: RS5
-ms.openlocfilehash: 6ff5c75ee46f4e13542d26e8d58669a3ff27db1a
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: b2af08919bca81026fa8e84d48f204d99af40263
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782909"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656134"
 ---
 # <a name="on-screen-keyboard-for-headed-devices"></a>用于头设备的屏幕键盘
 

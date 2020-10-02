@@ -2,14 +2,16 @@
 title: 硬件兼容性列表
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解 Windows 10 IoT Core 最支持的外围接口和协议。
 keywords: windows iot，外围设备，协议，兼容性，总线，硬件
-ms.openlocfilehash: e65f1b7a4bb0346fc9df1e8f601d5ced4adabab4
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 058f5aad2f0d233466f3d0e8615d1e0112f0ee48
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782669"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655823"
 ---
 # <a name="hardware-compatibility-list"></a>硬件兼容性列表
 

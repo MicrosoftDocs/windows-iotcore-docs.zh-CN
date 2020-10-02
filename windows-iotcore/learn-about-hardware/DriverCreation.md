@@ -4,33 +4,35 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
-description: 了解如何创建通用驱动程序, 以便跨设备启用单个驱动程序包创建。
-keywords: windows iot, 通用驱动程序, 驱动程序, Windows 10, UWP
-ms.openlocfilehash: 839a742598481e3ff70e3a0ccf1ff072bd62e051
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.prod: windows-iot
+ms.technology: iot
+description: 了解如何创建通用驱动程序，以便跨设备启用单个驱动程序包创建。
+keywords: windows iot，通用驱动程序，驱动程序，Windows 10，UWP
+ms.openlocfilehash: 0a3707d694f0eabd2dafe35aecdbb9e88415a23a
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60169575"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655833"
 ---
 # <a name="universal-driver-creation"></a>通用驱动程序创建
 
 本文档将引导你完成为 IoT 核心设备创建通用驱动程序的过程。
 
-利用通用驱动程序, 你可以创建单个驱动程序包, 该程序包可跨多个运行基于 UWP 的 Windows 10 版本的设备类型运行, 包括 IoT Core。
+利用通用驱动程序，你可以创建单个驱动程序包，该程序包可跨多个运行基于 UWP 的 Windows 10 版本的设备类型运行，包括 IoT Core。
 
-此驱动程序包包含通用 INF 文件和多个二进制文件。 每个的要求如下:
-- 通用 INF 文件只能使用[基于 UWP 的 Windows 版本上支持的 INF 语法的子集](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file#which-inf-sections-are-invalid-in-a-universal-inf-file)。 编写 INF 文件时, 请使用[InfVerif 工具](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif)验证该文件是否符合该语法。
+此驱动程序包包含通用 INF 文件和多个二进制文件。 每个的要求如下：
+- 通用 INF 文件只能使用 [基于 UWP 的 Windows 版本上支持的 INF 语法的子集](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file#which-inf-sections-are-invalid-in-a-universal-inf-file)。 编写 INF 文件时，请使用 [InfVerif 工具](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif) 验证该文件是否符合该语法。
 
-- 二进制文件只能使用在基于 UWP 的 Windows 10 版本 (在文档引用页面上标记为通用) 上支持的设备驱动程序接口:[KMDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/index)、 [UMDF 2](https://docs.microsoft.com/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2)或 Windows 驱动模型 (WDM)。 它们还可以仅调用 OneCore 子集中包含的 Api。 使用[ApiValidator 工具](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers)验证你的二进制文件调用的 api 是否有效。
+- 二进制文件只能使用在文档引用页面上标记为通用的基于 UWP 版本的 Windows 10 (设备驱动程序接口，) ： [KMDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/index)、 [UMDF 2](https://docs.microsoft.com/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2)或 Windows 驱动模型 (WDM) 。 它们还可以仅调用 OneCore 子集中包含的 Api。 使用 [ApiValidator 工具](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers) 验证你的二进制文件调用的 api 是否有效。
 
-若要了解如何**在 Visual Studio 中创建驱动程序包**, 请访问[创建驱动程序包](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-driver-package)
+若要了解如何 **在 Visual Studio 中创建驱动程序包**，请访问 [创建驱动程序包](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-driver-package)
 
-如果你想要**一个示例来帮助你在 IoT Core 上创建通用驱动程序**, 请访问我们的[通用驱动程序示例](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab)
+如果你想要 **一个示例来帮助你在 IoT Core 上创建通用驱动程序**，请访问我们的 [通用驱动程序示例](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab)
 
 ## <a name="additional-universal-driver-resources"></a>其他通用驱动程序资源
 
-1. 有关开发通用驱动程序包时的**设计原则**和**最佳做法**的其他详细信息, 请访问[使用通用驱动程序入门](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
+1. 有关开发通用驱动程序包时的 **设计原则** 和 **最佳做法** 的其他详细信息，请访问 [使用通用驱动程序入门](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 
-2. 有关**调试通用驱动程序**的帮助, 请访问[调试通用 Windows 驱动程序](https://docs.microsoft.com/windows-hardware/drivers/develop/debugging-a-universal-driver)。
+2. 有关 **调试通用驱动程序**的帮助，请访问 [调试通用 Windows 驱动程序](https://docs.microsoft.com/windows-hardware/drivers/develop/debugging-a-universal-driver)。
 

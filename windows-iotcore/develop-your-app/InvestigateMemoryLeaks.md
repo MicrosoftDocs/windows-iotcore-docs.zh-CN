@@ -1,17 +1,19 @@
 ---
 title: 调查内存泄漏
 author: paulmon
-ms.author: paulmon
+ms.author: riameser
 ms.date: 09/20/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何使用集成诊断工具通过 Visual Studio 调查 Windows IoT 代码上的内存泄漏。
 keywords: windows iot，Visual Studio，泄漏，故障排除
-ms.openlocfilehash: 8482d18d997979a087b352b917cea93c9cef2b84
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 20df086644a444c2a9d1aa576f3d65bd9b0bd59f
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782469"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656423"
 ---
 # <a name="investigating-memory-leaks"></a>调查内存泄漏
 
@@ -28,7 +30,7 @@ ms.locfileid: "90782469"
 3. 将 **后台应用** 运行 ( # A1 方法，检查 taskInstance 参数是否为 null，并以不同的方式处理这些情况。
 4. 从 **BlankApp** 调用 BackgroundApp：： Run (null) 
 5. 在调用 BackgroundApp：： Run 时设置断点
-6. 命中断点时，查找 **诊断工具** 窗口，然后单击 " ![ 快照" ](../media/MemoryLeaks/Snapshot.PNG) 按钮。
+6. 命中断点时，查找 **诊断工具** 窗口，然后单击 " ![ 快照" 图标 ](../media/MemoryLeaks/Snapshot.PNG) 按钮。
 
 8. 重现问题
 9. 拍摄另一个快照
@@ -105,23 +107,23 @@ namespace LeakyBackgroundApp
 
 若要解决此情况，我们将向解决方案中添加一个前景应用。 在 **解决方案资源管理器** 右键单击解决方案文件夹，然后选择 "添加" " **新建项目**"。
 
-![添加新项目](../media/MemoryLeaks/AddNewProject.png)
+![添加新项目图片1](../media/MemoryLeaks/AddNewProject.png)
 
 选择 " **Visual c # >Windows 通用>" 空白应用程序** "作为项目类型，为项目命名，然后单击 **" 确定 "**。
 
-![添加新项目](../media/MemoryLeaks/NewForegroundApp.PNG)
+![添加新项目图片2](../media/MemoryLeaks/NewForegroundApp.PNG)
 
 右键单击新的前台应用项目的 "**引用**" 节点，然后选择 "**添加引用 ...** "
 
-![添加新项目](../media/MemoryLeaks/AddReference.PNG)
+![添加新项目图片3](../media/MemoryLeaks/AddReference.PNG)
 
 在 "引用管理器" 对话框中，选择左窗格中的 " **项目** "。  在中心窗格中，在后台应用程序项目旁边的复选框中添加一个复选框，然后单击 **"确定"**。
 
-![添加新项目](../media/MemoryLeaks/AddReferenceDialog.PNG)
+![添加新项目图片4](../media/MemoryLeaks/AddReferenceDialog.PNG)
 
 接下来，右键单击前台应用项目，然后单击 " **设为启动项目**"。
 
-![添加新项目](../media/MemoryLeaks/SetAsStartup.PNG)
+![添加新项目图片5](../media/MemoryLeaks/SetAsStartup.PNG)
 
 添加代码以创建后台应用程序对象的实例，并以 null 作为唯一参数传入。
 ```C#
@@ -152,7 +154,7 @@ public void Run(IBackgroundTaskInstance taskInstance)
 3. 按 F5 开始调试
 4. 命中第一个断点时，请按 "快照" 按钮，设置比较基线
 
-![快照](../media/MemoryLeaks/Snapshot.PNG)
+![快照图标1](../media/MemoryLeaks/Snapshot.PNG)
 
 5. 按 F5
 6. 命中第二个断点时，请再次按 "快照" 按钮以捕获当前状态。
@@ -167,4 +169,4 @@ public void Run(IBackgroundTaskInstance taskInstance)
 
 按大小差异排序，使最大数值位于顶部，然后单击顶部的行。 在第二个详细信息表上方，单击 " **引用的类型**"。  第二个表现在应**显示 \<Byte[]\> 列表**作为所有内存使用情况的源。
 
-![快照表](../media/MemoryLeaks/Snapshot2_2.PNG)
+![快照表1](../media/MemoryLeaks/Snapshot2_2.PNG)

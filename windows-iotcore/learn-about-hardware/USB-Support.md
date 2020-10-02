@@ -2,14 +2,16 @@
 title: 适用于 Windows 10 IoT Core 的 USB 支持和双重角色概述
 ms.date: 10/11/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解什么是 USB 支持和双角色，以及如何为 Windows 10 IoT Core 设备自定义此功能。
 keywords: windows iot，USB 支持，双角色，USB
-ms.openlocfilehash: b1b53c1ee39e39bb465ab182d2c130881c123fc9
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: d8606ef3981d61fad5b334ba729cb2bd8731d84f
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782849"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655683"
 ---
 # <a name="overview-of-usb-support-and-dual-role"></a>USB 支持和双重角色概述
 

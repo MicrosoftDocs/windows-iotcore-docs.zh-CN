@@ -2,14 +2,16 @@
 title: 语音资源和示例
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 详细了解如何使用 IoT Core 构建完整的语音界面。
 keywords: windows iot，speech，speech recongnition，TTS，听写
-ms.openlocfilehash: b7ae1000bc9f7fc748ad64f88e207db132030b79
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: cb62e99290d7d098d508542c0b409852cf11e5ce
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918168"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655953"
 ---
 # <a name="speech-resources-and-samples"></a>语音资源和示例
 
@@ -19,23 +21,23 @@ ms.locfileid: "72918168"
 
 下面是 Windows 10 IoT Core 上可用的服务和 API 列表：
 
-* 语音识别（SR）
-* 综合文本转语音（TTS）
+* 语音识别 (SR) 
+* 综合文本转语音 (TTS) 
 * 连续听写
 
 ## <a name="windows-10-speech-resources"></a>Windows 10 语音资源
 
 * [快速启动语音交互](https://msdn.microsoft.com/library/windows/apps/xaml/dn630426.aspx)
 
-* 语音平台，使用带有约束语法的简单命令（TTS、SSML）
+* 语音平台，使用带有约束语法的简单命令 (TTS、SSML) 
   * [视频](https://www.youtube.com/watch?v=GiDvBhfNnjU) 
-  * [编写](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis) 
+  * [代码](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis) 
 
-* [Raspberry Pi 上的 Windows 10 IoT 核心语音和语音合成器演示（电话呼叫、切换灯）](https://www.youtube.com/watch?v=HstKdcP9XRA)
+* [Windows 10 IoT 核心语音和语音合成器演示 (电话呼叫，在 Raspberry Pi 上切换灯光) ](https://www.youtube.com/watch?v=HstKdcP9XRA)
 
 * 语音控制机器人汽车 
   * [视频](https://www.youtube.com/watch?v=vxUOTgechd4) 
-  * [编写](https://www.hackster.io/AnuragVasanwala/speech-controlled-robot-49744c)
+  * [代码](https://www.hackster.io/AnuragVasanwala/speech-controlled-robot-49744c)
 
 * 利用 SRGS 语法控制灯光的主自动化 
   * [视频](https://www.youtube.com/watch?v=MN18Uo_063g)

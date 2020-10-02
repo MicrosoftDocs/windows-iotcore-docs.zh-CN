@@ -2,14 +2,16 @@
 title: 远程显示
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何远程查看和控制 Windows 10 IoT Core UWP 应用程序。
 keywords: windows iot，UWP，远程显示，远程，UWP 应用程序
-ms.openlocfilehash: 146863bf02db3941b3fbc70c8c8e48add65cd27a
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: cd7df4fce6f41b3c8cdc185fe4c9b92961bc83f5
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782409"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655263"
 ---
 # <a name="remote-display"></a>远程显示
 从 Windows 10 台式计算机、平板电脑或手机远程查看并控制 Windows 10 IoT Core UWP 应用程序
@@ -61,7 +63,7 @@ ___
 若要使用 IoT 远程客户端，必须在目标设备上运行 Windows 10 IoT Core 的最新版本，并在应用商店中运行最新的客户端应用程序。 
     
   
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 ___
 使用远程显示技术非常简单，但仍有一些用户可能会遇到的问题。  请确保按照上面的设置说明进行操作，如果问题仍然存在，请检查以下各项。
 

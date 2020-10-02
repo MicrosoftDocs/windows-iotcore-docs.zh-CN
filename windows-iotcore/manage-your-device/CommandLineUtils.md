@@ -4,14 +4,16 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解连接到设备后用于 PowerShell 的命令行实用程序。
 keywords: windows iot，命令行，命令行实用工具，PowerShell
-ms.openlocfilehash: ff92b0be7c9613cd7adb52d6e4a9a0f4b4716903
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 6ebfe67a07893aaead25b21955308cc3fa8a5eaa
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782919"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655473"
 ---
 # <a name="windows-10-iot-core-command-line-utils"></a>Windows 10 IoT Core 命令行 Utils
 
@@ -63,7 +65,7 @@ ms.locfileid: "90782919"
 
 > [!TIP]
 > `IoTSettings -list uiLanguage` 会在对其执行的 Windows IoT core 映像的版本中，为 (提供支持的 UI 语言的列表) 
-    
+
 ### <a name="change-default-audio-device-and-volume"></a>**更改默认音频设备和卷：**
 
 该 `IoTCoreAudioControlTool` 工具控制音频相关的选项，如设置默认捕获和播放设备以及更改卷。 有关参数的完整列表，请运行 `IoTCoreAudioControlTool h` 。
@@ -155,8 +157,8 @@ SetDisplayResolution 工具可用于列出当前显示设置并显示受支持�
 * `SetDisplayResolution` 列出当前显示分辨率。
 * `SetDisplayResolution -list` 列出支持的显示分辨率。
 * `SetDisplayResolution -orientation:[n]` 更改显示方向，其中 n = 0、90180或270。
-* `SetDisplayResolution [width] [height]` 更改宽度和高度（以像素为单位） 
-* `SetDisplayResolution [width] [height] [refreshrate]` 更改宽度、高度和刷新率，其中宽度和高度以像素为单位，refreshrate 以 Hz 为单位。 
+* `SetDisplayResolution [width] [height]` 更改宽度和高度（以像素为单位）
+* `SetDisplayResolution [width] [height] [refreshrate]` 更改宽度、高度和刷新率，其中宽度和高度以像素为单位，refreshrate 以 Hz 为单位。
 * `SetDisplayResolution [width] [height] [refreshrate] [orientation]` 更改 width、height、refreshrate 和 screen 的宽度和高度（以像素为单位），refreshrate 以 Hz 为单位，方向为0、90、180或270。
 
 ### <a name="take-screenshot"></a>**拍摄屏幕截图：**
@@ -172,9 +174,9 @@ SetDisplayResolution 工具可用于列出当前显示设置并显示受支持�
 并非设备上的所有文件夹都可供通用 Windows 应用访问。 若要使某个文件夹可供 UWP 应用访问，可以使用 `FolderPermissions` 工具。 例如，运行 `FolderPermissions c:\test -e` 以提供 UWP 应用对 `c:\test` 文件夹的访问权限。 请注意，这仅适用于示例的本机 Win32 api。 CreateFile2，而不是采用 WinRT api，如 StorageFolder、StorageFile 等。
 
 ### <a name="work-with-serial-ports"></a>**使用串行端口：**
-[MinComm](https://github.com/ms-iot/samples/tree/develop/MinComm) 使你能够从命令行使用串行端口。 它作为示例项目提供到了 ms iot 示例存储库中。 
+[MinComm](https://github.com/ms-iot/samples/tree/develop/MinComm) 使你能够从命令行使用串行端口。 它作为示例项目提供到了 ms iot 示例存储库中。
 
-``` 
+```
 Usage: MinComm.exe [-list] device_path [baud=<B>] [parity=<P>] [data=<D>] [stop=<S>] [xon={on|off}] [odsr={on|off}] [octs={on|off}] [dtr={on|off|hs}] [rts={on|off|hs|tg}] [idsr={on|off}]
 
   -list                List all available serial ports on the system and exit.
@@ -218,6 +220,5 @@ Examples:
     MinComm.exe \\.\COM1 baud=115200 parity=n data=8 stop=1
 
   Open device interface in 115200 8N1 configuration:
-    MinComm.exe \\?\USB#VID_FFFF&PID_0005#{86e0d1e0-8089-11d0-9ce4-08003e301f73} baud=115200 parity=n data=8 stop=1```
-
-
+    MinComm.exe \\?\USB#VID_FFFF&PID_0005#{86e0d1e0-8089-11d0-9ce4-08003e301f73} baud=115200 parity=n data=8 stop=1
+```

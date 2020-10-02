@@ -2,14 +2,16 @@
 title: 移动宽带连接
 ms.date: 06/12/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 使用适用于 Windows 10 IoT Core 的 Mobile 宽带连接。 使用 MBBConnect 工具帮助在 IoT Core 中设置移动宽带连接的配置。
 keywords: windows iot，MBB，mobile 宽带连接
-ms.openlocfilehash: c10e56bc42bf2c77eb74d0e7cd8170cceaa72b75
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: f99bd1a4a710e78b6d5dacdbc5b30bf9cc23b947
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782589"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656633"
 ---
 # <a name="mobile-broadband-connection"></a>移动宽带连接
 

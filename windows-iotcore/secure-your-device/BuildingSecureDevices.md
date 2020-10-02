@@ -4,18 +4,20 @@ author: TorstenStein
 ms.author: torstens
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何通过启用安全启动、实现 Tpm 等来构建更安全的设备。
 keywords: windows iot，安全性，固件，安全启动，TPM，Bitlocker，加密
-ms.openlocfilehash: f7d075e026c1ef1936ebe1eef9f2aa5bad2787fc
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 4310ac1e8f043f23cae67b723ccb515dc009004f
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782769"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657353"
 ---
 # <a name="building-more-secure-devices-with-windows-10-iot-core"></a>通过 Windows 10 IoT Core 构建更安全的设备
 
-## <a name="introduction"></a>介绍  
+## <a name="introduction"></a>简介  
 
 Windows 10 IoT Core 提供了强大的企业级安全功能，可用于较小的、资源受限的 IoT 设备类别。 为了使这些安全功能提供实实在在的优势，硬件平台还必须提供一种方法来定位它们。 本文提供了 OEM 设备构建者和安全意识制造商的高级指导，他们希望选择适当的硬件并构建、配置更安全的 IoT 设备并将其交付给客户。
 ![数据安全性](../media/SecurityFlowAndCertificates/DataRestExecutionMotion.png)

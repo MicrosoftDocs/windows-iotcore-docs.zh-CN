@@ -2,14 +2,16 @@
 title: 使用统一写入筛选器
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何使用统一写入筛选器保护物理存储媒体的数据写入。
 keywords: windows iot，统一写入筛选器，安全，内存，存储媒体
-ms.openlocfilehash: f402850b2933d108b06c3597b0760fdc1a4b5a5f
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 61bd2b6240696b17e24a78d045b936271cf7d396
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782379"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657223"
 ---
 # <a name="using-the-unified-write-filter-uwf-on-windows-10-iot-core"></a>使用统一写入筛选器 (Windows 10 IoT Core 上的 UWF) 
 

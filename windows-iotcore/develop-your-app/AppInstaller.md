@@ -4,14 +4,16 @@ author: parameshbabu
 ms.author: pabab
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何使用 Windows 设备门户或 IoT core 映像的一部分来安装应用。
 keywords: windows iot，应用安装，Windows 设备门户，设备
-ms.openlocfilehash: c5a8dce3b8ab7e5651a6f223fdcbf9b36f11a740
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 80b06a4e9a75a1ecd7fe8d5f39bba7708c555c77
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782519"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656453"
 ---
 # <a name="install-your-app-on-an-iot-core-device"></a>在 IoT Core 设备上安装应用
 可以使用下面列出的两种方法之一来安装应用。

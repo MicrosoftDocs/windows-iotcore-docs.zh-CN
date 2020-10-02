@@ -2,14 +2,16 @@
 title: IoT Core 上的 Miracast
 ms.date: 11/30/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 请参阅如何在设备上包含 Miracast 功能。 阅读 Miracast 概述、硬件要求，以及如何使 Windows IoT 成为 Miracast 接收器或源。
 keywords: windows iot，miracast，连接
-ms.openlocfilehash: 344d7af4c89ef3c2d41ea8261895884cdf174067
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: cf0db60a6777ff1c306f73d01dc033980e8b6e4c
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782569"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656653"
 ---
 # <a name="miracast-on-iot-core"></a>IoT Core 上的 Miracast
 

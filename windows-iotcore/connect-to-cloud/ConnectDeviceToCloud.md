@@ -2,14 +2,16 @@
 title: 将设备连接到云
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何将设备连接到云。 使用受信任的平台模块 (TPM) 微控制器设备来存储数据和执行计算。
 keywords: windows iot，Azure，安全性，受信任的平台模块，SoC
-ms.openlocfilehash: 159a33e3c49fcd7a5e32966740badd864f11e79f
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: eeb8296a5b6600baa2d9596758794d136b951cb3
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782629"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656933"
 ---
 # <a name="connect-your-device-to-the-cloud"></a>将设备连接到云
 

@@ -4,14 +4,16 @@ author: PawelWMS
 ms.author: pawelwi
 ms.date: 12/06/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何启用可选的媒体传输协议 (MTP) 功能通过 USB 与设备之间传输文件。
 keywords: windows iot，MTP，媒体传输协议，文件传输，设备
-ms.openlocfilehash: efbc711960f7ff44ed6c66484047bac02705aa08
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: b7266321bf3fb86014bdaed8cd785f0fa057fe9a
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782579"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656623"
 ---
 # <a name="media-transfer-protocol"></a>媒体传输协议
 媒体传输协议 (MTP) 使你可以通过 USB 向/从 Windows 10 IoT Core 设备传输文件。 它允许访问设备的内部存储和 SD 卡（如果存在）。

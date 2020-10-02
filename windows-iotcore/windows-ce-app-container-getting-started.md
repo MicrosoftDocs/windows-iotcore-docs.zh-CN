@@ -2,14 +2,16 @@
 title: 与 Windows CE 应用容器入门
 ms.date: 08/25/2020
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Windows CE 应用容器迁移入门指南
 keywords: Windows 10 IoT Core，Windows CE，应用程序迁移，cepal
-ms.openlocfilehash: 14afd281b199249cb47af8378312c13b3aea81f3
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 9ce7f9316641e07c349bbe5c142c2a8c9c716f2f
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90801360"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657233"
 ---
 # <a name="getting-started-with-windows-ce-app-container"></a>与 Windows CE 应用容器入门
 
@@ -21,7 +23,7 @@ Windows CE 应用容器是一种技术，允许大多数 CE 应用程序运行�
 
 有关此体系结构的详细信息，请查看以下视频： [现代化 Windows CE 设备](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 Windows CE 应用容器软件需要 2013 [年 6) 2020 月版的 Windows Compact (版本 6294 ](https://support.microsoft.com/help/4566035/update-for-windows-embedded-compact-2013) 的更新版本，以及适用于 [x64 和 ARM32 的更新的 Windows 10 IoT 核心包 (8 月2020更新或更高) 版本 ](https://support.microsoft.com/help/4565349/windows-10-update-kb4565349)。 若要获取适用于 Windows 10 IoT Core 的最新包，请联系你的 Microsoft 分发服务器。
 
 > [!NOTE]
@@ -185,7 +187,7 @@ CE Cab 是 IoT Core 上的可部署包。 如果存在现有的 IoT 核心映像
 
 3. `ROMIMAGE` 将为每个内存部分创建多个 WM.XML 文件。 这样做的目的是为了使更新以更精细的方式推送，因为更新的最小单位是包。
 
-4. `ROMIMAGE` 将创建 `CEPALFM.xml` 引用所有已创建的包的。
+4. `ROMIMAGE` 将创建引用所有已创建的包的。
 
 所有创建的包都将使用固定的前缀命名 `“%OEM\_NAME%.WindowsCE.\*”` ，其中， `%OEM\_NAME%` 将在调用 [IoTCabPackage](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/New-IoTCabPackage.md)时在 IoT Core 创建过程中填充。 命名空间中的包名称是从选手文件的内存部分派生的 (例如，NK) 后跟模块/文件 (也由选手文件) 决定。
 
@@ -272,7 +274,7 @@ Value = \\?\Some\Other\DeviceInterface\Path
 
 #### <a name="oemoptions"></a>OEMOptions
 
-| 键           | 说明                                                                                                            |
+| 密钥           | 说明                                                                                                            |
 |---------------|------------------------------------------------------------------------------------------------------------------------|
 | GUI           | 启动带有 UI (默认为 true) 的 CE 应用容器                                                                     |
 | 宽度         | CE 应用容器的宽度显示 (默认 1024)                                                                    |
@@ -299,7 +301,7 @@ OEMConfigFile 在中指定 `C:\WindowsCE\CEEnvConfig.json` 。 请确保此文�
 
 选项：
 
-| 键                      | 说明                                                                              |
+| 密钥                      | 说明                                                                              |
 |--------------------------|------------------------------------------------------------------------------------------|
 | FactoryReset             | 由 config 应用用来指示 CE 应用容器转储持久状态。          |
 | PlatformBuilderDebugMode | 用于使用支持使用平台生成器进行调试的 KITL 支持启动 CE 应用程序容器。 |

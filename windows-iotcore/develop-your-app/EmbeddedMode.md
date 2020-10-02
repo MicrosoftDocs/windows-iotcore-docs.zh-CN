@@ -4,14 +4,16 @@ author: lilyhou
 ms.author: lihou
 ms.date: 11/10/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何将 Windows 配置为允许嵌入模式，启用后台应用程序和其他功能。
 keywords: windows iot，embedded 模式，后台应用程序
-ms.openlocfilehash: 656a0a9a32a23d12aa43f9d351b5e30d1f904e80
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: c7ecf9c4f163cf034c265b3e01581c9578dd9816
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782479"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656483"
 ---
 # <a name="embedded-mode"></a>嵌入模式
 
@@ -37,7 +39,7 @@ Windows IoT Core 上始终启用嵌入模式。
 
 **LowLevel**设备功能提供对低级硬件接口（如 GPIO、SPI 和 I2C）的访问权限。
 
-* [Blinky 示例 (GPIO) ](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
+* [Blinky 示例 (GPIO) ](https://developer.microsoft.com/windows/iot/samples/helloblinky)
 * [加速感应示例](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer)
 
 当满足一些额外的要求时， **lowLevelDevices** 功能允许应用访问自定义设备。 不能将此功能与 lowLevel 设备功能混淆，后者允许访问 GPIO、I2C、SPI 和 PWM 设备。
@@ -72,75 +74,76 @@ Windows IoT Core 上始终启用嵌入模式。
     ![WICD 图标](../media/EmbeddedMode/WICD_Icon.png)
 
 3. 单击 " **高级设置**"。  将项目命名为 **AllowEmbeddedMode** ，然后单击 " **下一步**"。
-    ![步骤3](../media/EmbeddedMode/Step3.png)
+    ![步骤 #3](../media/EmbeddedMode/Step3.png)
 
 4. 选择 " **通用"，** 然后选择 " **下一步**"。
-    ![步骤4](../media/EmbeddedMode/Step4.png)
+    ![步骤 #4](../media/EmbeddedMode/Step4.png)
 
 5. 单击“完成”。
 
-    ![步骤5](../media/EmbeddedMode/Step5.png)
+    ![步骤 #5](../media/EmbeddedMode/Step5.png)
 
 6. 在搜索框中键入 " **EmbeddedMode** "，然后单击 " **AllowEmbeddedMode**"。
 
-    ![步骤6](../media/EmbeddedMode/Step6.png)
+    ![步骤 #6](../media/EmbeddedMode/Step6.png)
 
-7. 在中心窗格中，将 " **AllowEmbeddedMode** " 的值设置为 **"是"** ![ Step7](../media/EmbeddedMode/Step7.png)
+7. 在中心窗格中，将 **AllowEmbeddedMode** 的值设置为 **"是"** ![ 步骤 #7](../media/EmbeddedMode/Step7.png)
 
 8. 单击 "导出" > 预配包
 
-    ![Step8](../media/EmbeddedMode/Step8.png)
+    ![步骤 #8](../media/EmbeddedMode/Step8.png)
 
 9. 单击“下一步”。
 
-    ![Step9](../media/EmbeddedMode/Step9.png)
+    ![步骤 #9](../media/EmbeddedMode/Step9.png)
 
 10. 单击“下一步”。
 
-    ![Step10](../media/EmbeddedMode/Step10.png)
+    ![步骤 #10](../media/EmbeddedMode/Step10.png)
 
 11. 单击“下一步”。
 
-    ![Step11](../media/EmbeddedMode/Step11.png)
+    ![步骤 #11](../media/EmbeddedMode/Step11.png)
 
 12. 单击“生成”。
 
-    ![Step12](../media/EmbeddedMode/Step12.png)
+    ![步骤 #12](../media/EmbeddedMode/Step12.png)
 
 13. 安装嵌入模式。PPKG 在 Windows IoT Enterprise 上双击。PPKG.
 
 14. 单击 **"是，添加它"**。
     在 LUA 对话框上单击 "是" （如果出现），然后单击 **"是，将其添加** 到下面显示的对话框中"。
-    ![Step14Standard](../media/EmbeddedMode/Step14Standard.png)
+    ![步骤 #14 标准](../media/EmbeddedMode/Step14Standard.png)
 
 
 ## <a name="configuring-a-background-application-to-run-automatically"></a>将后台应用程序配置为自动运行
-1. 若要将后台应用程序配置为自动运行，需要按照说明 [创建 MINNOWBOARDMAX Sd 卡](https://developer.microsoft.com/en-us/windows/iot/getstarted) ，并将 `D:\windows\system32\iotstartup.exe` (其中 D：是 SD 卡) 。
+1. 若要将后台应用程序配置为自动运行，需要按照说明 [创建 MINNOWBOARDMAX Sd 卡](https://developer.microsoft.com/windows/iot/getstarted) ，并将 `D:\windows\system32\iotstartup.exe` (其中 D：是 SD 卡) 。
 
 2. 若要获取已安装后台应用程序的列表，请键入：
-
+```
         C:\> iotstartup list BackgroundApplication1
-
+```
 3. 输出应包括每个已安装后台应用程序的完整名称，如下所示：
-
+```
         Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee
-
+```
 5. 将此应用配置为在启动时运行类型：
-
+```
         C:\> iotstartup add headless BackgroundApplication1
-
+```
 6. 如果后台应用程序已成功添加到启动列表，你应该会看到以下内容：
-
+```
         Added Headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpveeplication1
-
+```
 7. 重新启动嵌入的模式设备：
 
 8. 设备重新启动后，后台应用程序将自动启动。  管理后台应用程序的嵌入模式服务可能需要几分钟的时间才能启动。  嵌入模式服务将监视启动列表上的后台应用程序，并确保它们在停止时重新启动。  如果后台应用程序在很短的时间内停止多次，则将不再重新启动该应用程序。
 
 9. 若要从启动列表中删除后台应用程序，请执行以下操作：
-
+```
         C:\> iotstartup remove headless BackgroundApplication1
-
+```
 10. 如果从启动列表中删除后台应用程序，输出将如下所示：
-
+```
         Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee
+```

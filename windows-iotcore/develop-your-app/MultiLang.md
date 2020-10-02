@@ -4,14 +4,16 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 09/12/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解 UWP Core 上的 UWP 应用程序和 OS 中的多语言支持。
 keywords: windows iot，语言，应用类型，UWP，OS
-ms.openlocfilehash: 1ecb62f4da12dc6ce8ccf582879a0cdf94fd29e4
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 7559bcade5a9877d806bbaec090e02f4b9a160c0
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782689"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656123"
 ---
 # <a name="language-support"></a>语言支持
 

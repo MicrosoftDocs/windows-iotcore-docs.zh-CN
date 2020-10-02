@@ -2,17 +2,19 @@
 title: 安装 USB 外设驱动程序
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何创建驱动程序包，以及如何在设备上安装第三方驱动程序。
 keywords: windows iot，USB 驱动程序，外围设备，USB
-ms.openlocfilehash: ba7bc025bfd9f2a375d501d46aed160ede4e1997
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 7a218be05c6bdeed29d8c8fec84b8aa7659261f2
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782639"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655784"
 ---
 # <a name="install-usb-peripheral-drivers"></a>安装 USB 外设驱动程序
-按照以下步骤为外围设备（如 USB 移动宽带调制解调器、打印机、扫描仪等）添加 (USB) 的第三方驱动程序。 
+按照以下步骤为外围设备（如 USB 移动宽带调制解调器、打印机、扫描仪等）添加 (USB) 的第三方驱动程序。
 
 ## <a name="step-1-get-drivers-from-pc"></a>步骤1：从电脑获取驱动程序
 ___
@@ -41,7 +43,7 @@ ___
 > Windows IoT Core 仅支持 [通用 INF 和通用驱动程序](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)。
 
 
-另请参阅： [示例驱动程序包](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO) 
+另请参阅： [示例驱动程序包](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO)
 
 ## <a name="step-3-install-on-device"></a>步骤3：在设备上安装
 ___
@@ -59,6 +61,5 @@ ___
 * 启动 [PowerShell](../connect-your-device/PowerShell.md)
 * 可以使用以下 PowerShell commandlet 获取已安装驱动程序的状态
 
-    * [Pnp 设备](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdevice?view=win10-ps)
-    * [PnpDeviceProperty](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdeviceproperty?view=win10-ps)
-    
+    * [Pnp 设备](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdevice?view=win10-ps&preserve-view=true)
+    * [PnpDeviceProperty](https://docs.microsoft.com/powershell/module/pnpdevice/get-pnpdeviceproperty?view=win10-ps&preserve-view=true)

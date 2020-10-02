@@ -4,14 +4,16 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 10/08/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解多个硬件供应商的芯片 (Soc) 上的 IoT Core 支持的单元测试。
 keywords: windows iot，单元测试，UWP
-ms.openlocfilehash: aebe60bebad1062d19142e5434cd7277801b3e4f
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 7b9996135e05a056e8a757fa0635acae56ea0466
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782879"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656103"
 ---
 # <a name="developing-unit-tests"></a>开发单元测试
 了解 Windows 10 IoT Core 支持的 UWP 单元测试。
@@ -54,14 +56,13 @@ ___
 
 1. 若要运行测试部署，你的项目必须采用与 (专门使用通用身份验证和远程计算机) 配置 UWP 应用相同的方式进行配置。  有关详细信息，请参阅 [使用 Visual Studio 部署应用](../develop-your-app/appdeployment.md) 。
 
-1. 若要远程运行单元测试，可以使用测试资源管理器，右键单击所需的 TestMethod，然后选择 "运行/调试选定的测试" " ![ 测试资源管理器"](../media/UnitTests/test-explorer.png)
+1. 若要远程运行单元测试，可以使用测试资源管理器，右键单击所需的 TestMethod，然后选择 "运行/调试选定的测试" " ![ 测试资源管理器 1"](../media/UnitTests/test-explorer.png)
 
-1. 若要远程运行或调试所有单元测试，可以使用测试 > 运行或测试 > 调试 ![ 测试资源管理器 ](../media/UnitTests/run-tests.png)
-  ![ 测试资源管理器](../media/UnitTests/debug-tests.png)
-   
+1. 若要远程运行或调试所有单元测试，可以使用测试 > 运行或测试 > 调试 ![ 测试资源管理器 2 ](../media/UnitTests/run-tests.png)
+  ![ 测试资源管理器3](../media/UnitTests/debug-tests.png)
+
 
 ### <a name="configure-unit-tests-as-part-of-a-continuous-integration-build"></a>将单元测试配置为持续集成生成的一部分
 ___
 
 Visual Studio 团队创建了一个精彩的博客文章，其中展示了如何将 Windows 10 IoT 核心单元测试合并到 VSTS 生成： [DevOps For iot With Win10 IoT Core、UWP 和 VSTS](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)
-

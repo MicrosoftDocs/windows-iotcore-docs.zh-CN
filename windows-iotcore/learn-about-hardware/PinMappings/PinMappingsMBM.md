@@ -2,14 +2,16 @@
 title: Minnowboard 最大 Pin 映射
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解 Minnowboard Max 的 pin 映射功能。 获取有关串行 UART、I2C 总线和 SPI 总线的信息。 阅读 GPIO 代码示例。
 keywords: windows iot，Minnowboard Max，pin 映射，GPIO
-ms.openlocfilehash: 378d37c3608673c0e4580c100d299964d3144fe2
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: c0dbce3b012a76d793c48bd4231816ef16a7ba5e
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782989"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91655733"
 ---
 # <a name="minnowboard-max-pin-mappings"></a>MinnowBoard 最大 Pin 映射
 

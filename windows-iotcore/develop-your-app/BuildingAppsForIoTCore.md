@@ -4,14 +4,16 @@ author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解 IoT Core 支持的语言和应用类型。
 keywords: windows iot，语言，应用类型，UWP，受支持
-ms.openlocfilehash: b2db10c4177016cfcdf81e2e9adef00ef5d727fb
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 6b748561ff26ae7b48bfb444589b84408dc01421
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782499"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656443"
 ---
 # <a name="developing-foreground-applications"></a>开发前台应用程序
 了解 Windows 10 IoT Core 支持的语言，以及 IoT Core 支持的 UWP 和非 UWP 应用类型。

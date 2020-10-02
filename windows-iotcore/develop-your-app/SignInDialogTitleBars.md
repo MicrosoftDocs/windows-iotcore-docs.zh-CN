@@ -4,15 +4,17 @@ author: johntasler
 ms.author: jtasler
 ms.date: 09/13/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何在 Windows 10 IoT Core，版本1809中配置用于登录对话框的标题栏高度。
 keywords: Windows 10 IoT Core，msa，aad，标题栏，关闭，取消，头，web，帐户，WebAccountManagement，登录，签署
 ms.custom: RS5
-ms.openlocfilehash: f12d2ec8ebe1ec42644e383544c48a6c484d7483
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 0c867492f13dfcd69b093194661692cd9a7da310
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782889"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656113"
 ---
 # <a name="title-bars-for-sign-in-dialogs"></a>"登录" 对话框的标题栏
 

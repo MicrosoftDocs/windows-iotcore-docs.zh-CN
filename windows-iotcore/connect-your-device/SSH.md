@@ -2,14 +2,16 @@
 title: 安全外壳(SSH)
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何使用安全外壳远程管理和配置 IoT Core 设备。
 keywords: windows iot，安全 shell，远程，SSH 客户端，PuTTY，SSH
-ms.openlocfilehash: 8875d67c67393c2400d0b682ccfd179157586e00
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: c30586135883cfe03a8aa9c6d7318717f07e9d7e
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782559"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656673"
 ---
 # <a name="secure-shell-ssh"></a>安全外壳(SSH)
 安全外壳 (SSH) 允许远程管理和配置 Windows IoT 核心设备
@@ -70,7 +72,7 @@ if not exist x:\data\users\defaultaccount\.ssh md x:\data\users\defaultaccount\.
 copy .\id_rsa.pub x:\data\users\defaultaccount\.ssh\authorized_keys
 ```
 
-如果未向 ssh 代理注册该密钥，则必须在命令行上指定该密钥才能登录： 
+如果未向 ssh 代理注册该密钥，则必须在命令行上指定该密钥才能登录：
 
 ```cmd
 ssh -i .\id_rsa DefaultAccount@host
@@ -94,7 +96,7 @@ Are you sure you want to continue connecting (yes/no)?
 
 现在，你应该已连接到 **DefaultAccount**
 
-若要使用 **管理员** 帐户进行单一登录，请在 Windows IoT Core 设备上将公钥附加到 c:\data\programdata\ssh\ administrators_authorized_keys。 
+若要使用 **管理员** 帐户进行单一登录，请在 Windows IoT Core 设备上将公钥附加到 c:\data\programdata\ssh\ administrators_authorized_keys。
 
 ```cmd
 net use X: \\host\c$ /user:host\administrator
@@ -153,22 +155,22 @@ get-acl x:\data\ProgramData\ssh\ssh_host_dsa_key | set-acl x:\data\ProgramData\s
 **强烈建议**您更新管理员帐户的默认密码。
 
 为此，请在 PuTTY 控制台中输入以下命令， `[new password]` 并将替换为强密码：
-    
+```    
     net user Administrator [new password]
-    
+```    
 ### <a name="configure-your-windows-iot-core-device"></a>配置 Windows IoT Core 设备
 * 若要从 Visual Studio 2017 部署应用程序，需要确保 Visual Studio 远程调试器在 Windows IoT Core 设备上运行。 远程调试器应在计算机启动时自动启动。 若要仔细检查，请使用 tlist.exe 命令列出 PowerShell 中所有正在运行的进程。 设备上应运行 msvsmon.exe 的两个实例。
 
 * 在长时间的非活动状态后，Visual Studio 远程调试器可能会超时。 如果 Visual Studio 无法连接到 Windows IoT Core 设备，请尝试重新启动设备。
 
 * 如果需要，也可以重命名设备。 若要更改 "计算机名称"，请使用 `setcomputername` 实用工具：
-
+```
         setcomputername <new-name>
-
-    你将需要重新启动设备以使更改生效。 你可以使用命令，如下所示 `shutdown` ：
-
+```
+你将需要重新启动设备以使更改生效。 你可以使用命令，如下所示 `shutdown` ：
+```
         shutdown /r /t 0
-        
+```
 ### <a name="commonly-used-utilities"></a>常用实用程序
 
 请参阅 [命令行 Utils](../manage-your-device/CommandLineUtils.md) 页，获取可用于 SSH 的命令和实用工具的列表。
