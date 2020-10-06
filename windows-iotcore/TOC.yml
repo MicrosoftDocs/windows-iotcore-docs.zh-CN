@@ -13,6 +13,8 @@
       href: 'https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview'
     - name: Windows CE 应用容器
       href: windows-ce-app-container.md
+    - name: FAQ - CE 迁移
+      href: windows-ce-migration-faq.md
 - name: 教程
   expanded: false
   items:
@@ -46,6 +48,9 @@
       href: learn-about-hardware/HardwareCompatList.md
     - name: NXP i.MX SoC
       href: learn-about-hardware/iotnxp.md
+- name: 硬件开发
+  expanded: false
+  items:
     - name: 引脚映射
       items:
         - name: Raspberry Pi 2 和 3
@@ -54,12 +59,17 @@
           href: learn-about-hardware/PinMappings/PinMappingsDB.md
         - name: Minnowboard Max
           href: learn-about-hardware/PinMappings/PinMappingsMBM.md
-    - name: 有外设设备和无外设设备
-      href: learn-about-hardware/HeadlessMode.md
     - name: 触摸唤醒
       href: learn-about-hardware/WakeOnTouch.md
     - name: UEFI 要求
       href: commercialize-your-device/uefirequirements.md
+- name: OS 配置
+  expanded: false
+  items:
+    - name: IoT Shell 概述
+      href: develop-your-app/IoTCoreShell.md
+    - name: 有外设设备和无外设设备
+      href: learn-about-hardware/HeadlessMode.md
 - name: 驱动程序指南
   expanded: false
   items:
@@ -102,8 +112,6 @@
       href: develop-your-app/SignInDialogTitleBars.md
     - name: 本地主机环回
       href: develop-your-app/Loopback.md
-    - name: IoT Shell 概述
-      href: develop-your-app/IoTCoreShell.md
 - name: 调试应用程序
   expanded: false
   items:
