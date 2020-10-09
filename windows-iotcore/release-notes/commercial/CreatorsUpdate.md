@@ -2,14 +2,16 @@
 title: Creators Update - 版本 15063
 ms.date: 08/28/2017
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 阅读并了解 Creators Update 的新增内容（内部版本号 15063，2017 年 4 月）。 另请查看已知问题列表。
 keywords: Windows IoT, Creators Update, 发行说明
-ms.openlocfilehash: 0f747fe0a23a75bce85c294b1253f4482efcbbd0
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 0650bcbfdb84ead3c3a81269122049d3bb7c9cac
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782799"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657363"
 ---
 # <a name="creators-update-release-notes-for-windows-10-iot-core"></a>Windows 10 IoT 核心板的 Creators Update 的发行说明
 内部版本号 15063。 2017 年 4 月

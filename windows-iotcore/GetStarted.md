@@ -2,14 +2,16 @@
 title: 入门概述
 ms.date: 04/10/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: Windows 10 IoT 核心版入门。 查看相关文章，了解 Windows 10 IoT、Windows 10 IoT 定价、设备原型以及将设备投入市场的方式。
 keywords: Windows 10 IoT 核心版, 入门, 映像,
-ms.openlocfilehash: 32869420dcb9d4514a647848eb80646a393e0c66
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: 0c7b5dbabe9922828fa843588e96fcecd56f06c3
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081222"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657103"
 ---
 # <a name="get-started-with-windows-10-iot-core"></a>Windows 10 IoT 核心版入门
 

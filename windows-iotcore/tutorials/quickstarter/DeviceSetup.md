@@ -2,15 +2,17 @@
 title: 设置设备
 ms.date: 04/10/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何使用 SD 卡通过 Windows 10 IoT 核心版来设置设备。
 keywords: Windows 10 IoT 核心版, SD 卡, Windows 10 IoT 核心版仪表板
 ms.custom: RS5
-ms.openlocfilehash: 5d7cc902a53596ba8d9d4c570a39129f9fce9a3b
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: a48caef4b17a3d5c4c3f069273102c33018fdef4
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90781709"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657263"
 ---
 # <a name="setting-up-your-device"></a>设置设备
 
@@ -24,7 +26,7 @@ ms.locfileid: "90781709"
 
 ## <a name="using-the-iot-dashboard-raspberry-pi-minnowboard-nxp"></a>使用 IoT 仪表板（Raspberry Pi、MinnowBoard、NXP）
 
-> [!Video https://www.youtube.com/embed/JPRUbGIyODY]M
+> [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
 
 > [!IMPORTANT]
@@ -47,7 +49,7 @@ ms.locfileid: "90781709"
 
 
 ![仪表板屏幕截图](../../media/DeviceSetup/Dashboard-Screenshot.jpg)
- 
+
 
 ## <a name="using-the-iot-dashboard-dragonboard-410c"></a>使用 IoT 仪表板 (DragonBoard 410c)
 
@@ -63,12 +65,12 @@ ms.locfileid: "90781709"
 > 使用新的 Dragonboard 时，请注意，它已经安装了 Android。 需使用 eMMC 刷写方法擦除并加载设备。
 
 > [!NOTE]
-> 如果 DragonBoard 出现任何音频相关问题，建议通读[此处](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf)提供的 Qualcomm 的手册。 
+> 如果 DragonBoard 出现任何音频相关问题，建议通读[此处](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf)提供的 Qualcomm 的手册。
 
 1. 在[此处](https://docs.microsoft.com/windows/iot-core/downloads)下载 Windows 10 IoT 核心版仪表板。
-2. 下载后，请打开仪表板，选择“Qualcomm DragonBoard 410c”。 然后，以 Windows 预览体验成员身份登录__。 必须以预览体验成员身份登录才能刷写 DragonBoard 410c。 
+2. 下载后，请打开仪表板，选择“Qualcomm DragonBoard 410c”。 然后，以 Windows 预览体验成员身份登录__。 必须以预览体验成员身份登录才能刷写 DragonBoard 410c。
 3. 使用 microUSB 电缆将 Qualcomm 板连接到开发人员计算机。
-4. 使用 12V (>1A) 电源在按住调高音量 (+) 按钮的情况下将 Dragonboard 通电。 此设备在连接到显示器的情况下应该显示包含一个锤子、一个闪电和一个齿轮的图像。 
+4. 使用 12V (>1A) 电源在按住调高音量 (+) 按钮的情况下将 Dragonboard 通电。 此设备在连接到显示器的情况下应该显示包含一个锤子、一个闪电和一个齿轮的图像。
 5. 此设备现在应该在仪表板上可见，如下所示。 选择适当的设备。
 6. 接受软件许可条款，然后单击“下载并安装”__。 可以看到 Windows 10 IoT 核心版此时正刷写到设备上。
 
@@ -84,7 +86,7 @@ ms.locfileid: "90781709"
 4. 确保 DragonBoard 处于下载模式，方法是将板上的第一个启动开关设置为“USB 启动”，如下所示。 接着通过 microUSB 电缆将 DragonBoard 连接到主机，然后将 DragonBoard 连接到 12V (> 1A) 电源。
 5. 启动 DragonBoard Update Tool，该工具会通过一个绿色圆圈来表示已检测到 DragonBoard 连接到电脑。 “浏览”到 DragonBoard 的已下载 FFU，然后单击“程序”按钮。__
 6. 再次单击“浏览”，选择在步骤 5 创建的“rawprogram0.xml”。 然后单击“程序”按钮。
-7. 下载完以后，请断开板的电源和 microUSB 电缆连接，将 USB 启动开关切换回到“关”的位置。__ 将 HDMI 显示器、鼠标和键盘连接到 DragonBoard，然后重新连接电源。 数分钟后，应该会看到 Windows 10 IoT 核心版默认应用程序。 
+7. 下载完以后，请断开板的电源和 microUSB 电缆连接，将 USB 启动开关切换回到“关”的位置。__ 将 HDMI 显示器、鼠标和键盘连接到 DragonBoard，然后重新连接电源。 数分钟后，应该会看到 Windows 10 IoT 核心版默认应用程序。
 
 ![处于下载模式的 DragonBoard](../../media/DeviceSetup/db1.png)
 
@@ -140,5 +142,4 @@ ms.locfileid: "90781709"
 
 ## <a name="connecting-to-windows-device-portal"></a>连接到 Windows 设备门户
 
-使用 [Windows 设备门户](../../manage-your-device/DevicePortal.md)，通过 Web 浏览器来连接设备。 设备门户提供重要的配置和设备管理功能。 
-
+使用 [Windows 设备门户](../../manage-your-device/DevicePortal.md)，通过 Web 浏览器来连接设备。 设备门户提供重要的配置和设备管理功能。

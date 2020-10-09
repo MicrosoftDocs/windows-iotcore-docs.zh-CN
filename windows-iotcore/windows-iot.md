@@ -2,14 +2,16 @@
 title: Windows 10 IoT 概述
 ms.date: 01/30/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 查看 Windows 10 IoT 的概述及其用途。 查看 Windows 10 IoT 核心版、Windows 10 IoT 企业版和 Windows 10 桌面版之间的差异。
 keywords: Windows 10 IoT 企业版, Windows 10 IoT 核心版, 无外设, 语音, 功能, 二进制版本, 版本
-ms.openlocfilehash: f75dec2a16d68fb66707b1a19feb7b6b59b467e1
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 1af7da8bda3ed6375dacc1ec71b2323fb053adfa
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90781670"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657143"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 概述 
 

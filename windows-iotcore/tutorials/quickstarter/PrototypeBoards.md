@@ -2,14 +2,16 @@
 title: 建议的原型板
 ms.date: 04/17/2018
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 查看建议用于 Windows 10 IoT 核心版的原型板。 查看描述完整闪存更新 (FFU) 映像、设置方式和入门方式的链接。
 keywords: windows iot, 开发设备, 板, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, Dragonboard
-ms.openlocfilehash: 0b95df56e217f6380f70b4bff14f6c0f1beec80a
-ms.sourcegitcommit: 03b937e522efaa89eaf6e8959f7b5593386ed715
+ms.openlocfilehash: e08ff82f2b3bcbb7dd842101f3a84c1e06b0a5df
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90804667"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657253"
 ---
 # <a name="suggested-prototype-boards"></a>建议的原型板
 

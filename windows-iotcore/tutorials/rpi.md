@@ -2,15 +2,17 @@
 title: 设置 Raspberry Pi
 ms.date: 05/22/2019
 ms.topic: article
+ms.prod: windows-iot
+ms.technology: iot
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Raspberry Pi。 使用仪表板、连接到网络，并连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, Raspberry Pi
 ms.custom: RS5
-ms.openlocfilehash: b07ffa15cb42a7ad486db31124a32a5f3bdff703
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 059eacae001af199a7f307c21d325bf85d2c3a4e
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90781639"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657243"
 ---
 # <a name="setting-up-a-raspberry-pi"></a>设置 Raspberry Pi
 
