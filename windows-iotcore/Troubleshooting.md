@@ -1,14 +1,16 @@
 ---
-Description: 排查 Windows 10 IoT 核心版中与开发相关的不同问题，包括特定硬件设备方面的问题。
+description: 排查 Windows 10 IoT 核心版中与开发相关的不同问题，包括特定硬件设备方面的问题。
 title: 疑难解答
 ms.date: 08/28/2018
 ms.topic: article
-ms.openlocfilehash: cc3a00d53c5bda8fae7eb4284b0b29fea41d87e0
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.prod: windows-iot
+ms.technology: iot
+ms.openlocfilehash: 0472836b70d59b4cac058f4c9bdbbecf62b99fe5
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782709"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656963"
 ---
 # <a name="troubleshooting"></a>疑难解答
 本文包含用户遇到的常见故障排除问题。 若要查找特定内容（字词或短语），请使用 Ctrl+F。 想要表达你自己的见解？ 请针对本文档创建一个 PR，或者在下面提供内容反馈。
@@ -39,7 +41,7 @@ ms.locfileid: "90782709"
        <xs:enumeration value="AllRoaming"/>
     </xs:restriction>
   </xs:simpleType>
-  
+
   <xs:simpleType name="roamControlType">
     <xs:restriction base="xs:token">
        <xs:enumeration value="AllRoamAllowed"/>
@@ -47,7 +49,7 @@ ms.locfileid: "90782709"
        <xs:enumeration value="NoRoamAllowed"/>
     </xs:restriction>
   </xs:simpleType>
-``` 
+```
 
 若要设置用于自动连接的配置文件，请选择 "auto"：
 
@@ -82,7 +84,7 @@ ms.locfileid: "90782709"
 ## <a name="raspberry-pi-3b-booting-issues"></a>Raspberry Pi 3B+ 启动问题
 
 > [!NOTE]
-> Raspberry Pi 3B+ 的此版本是不受支持的技术预览版。 已完成有限的验证和启用。 若要获得更好的评估体验，或者要将产品商用化，请使用 Raspberry Pi 3B 或者其他带有受支持的 Intel、Qualcomm 或 NXP SoC 的设备。 若要排查 Raspberry Pi 3B+ 的问题，请参阅[此处](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues)的故障排除指南。 
+> Raspberry Pi 3B+ 的此版本是不受支持的技术预览版。 已完成有限的验证和启用。 若要获得更好的评估体验，或者要将产品商用化，请使用 Raspberry Pi 3B 或者其他带有受支持的 Intel、Qualcomm 或 NXP SoC 的设备。 若要排查 Raspberry Pi 3B+ 的问题，请参阅[此处](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues)的故障排除指南。
 
 Raspberry Pi 3 的 B+ 型号是 Raspberry Pi 3 系列的最新产品，拥有以 1.4GHz 运行的 64 位四核处理器、2.4GHz 和 5GHz 双频段无线 LAN、蓝牙 4.2/BLE、更快速的以太网，以及通过独立 PoE HA 实现的 PoE 功能。
 
@@ -101,17 +103,17 @@ Raspberry Pi 3 的 B+ 型号是 Raspberry Pi 3 系列的最新产品，拥有以
 
 通常情况下，需检查 SD 卡是否为假货，或者是否受到损伤或损坏。 许多因素（例如电力不足或拆除不当）都有相同的几率造成 SD 卡受损。 必须确保内存卡不受损。
 
-若要将映像刷写到 SD 卡，可以使用 [Windows 10 IoT 核心版仪表板](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard)。 需在“OS 内部版本”字段中选择“自定义”，然后选择要刷写的 FFU 文件。 
+若要将映像刷写到 SD 卡，可以使用 [Windows 10 IoT 核心版仪表板](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard)。 需在“OS 内部版本”字段中选择“自定义”，然后选择要刷写的 FFU 文件。
 
 查看设备中是否存在硬件故障。 Raspberry Pi 3B+ 板上有两个 LED，与 3B 一样。 一个用于 PWR，另一个用于 ACT。 ACT 灯的闪烁次数将决定板是否启动。 在 Raspberry Pi 3B+ 上启动时，在某些阶段 SD 卡活动 LED 不会闪烁。
 
 当设备启动时，如果设备显示等待页面，请耐心等待。 通常情况下，这最多持续一分钟的时间。 但有时候，由于 SD 卡的读写速度慢，可能需要更长的时间。
 
-如果设备在使用 Windows 10 IoT 核心版时无法正常启动，可以尝试将 Linux OS（例如 Raspbian）刷写到 SD 卡中，以确定问题是否是硬件导致的。 
+如果设备在使用 Windows 10 IoT 核心版时无法正常启动，可以尝试将 Linux OS（例如 Raspbian）刷写到 SD 卡中，以确定问题是否是硬件导致的。
 
-如果出现“彩虹屏幕”，请进行检查，确保刷写的是[此处](https://www.microsoft.com/en-us/software-download/windowsiot)提供的 3B+ 发行版。 [此处](https://www.hackster.io/JiongShi/windows-10-iot-core-for-raspberry-pi-3-model-b-92b1a3)是社区提交的 3B+ 刷写教程，可以参阅它来验证你的过程。
+如果出现“彩虹屏幕”，请进行检查，确保刷写的是[此处](https://www.microsoft.com/software-download/windowsiot)提供的 3B+ 发行版。 [此处](https://www.hackster.io/JiongShi/windows-10-iot-core-for-raspberry-pi-3-model-b-92b1a3)是社区提交的 3B+ 刷写教程，可以参阅它来验证你的过程。
 
-## <a name="serial-port-communication-on-windows-10-iot-core-for-raspberry-pi"></a>适用于 Raspberry Pi 的 Windows 10 IoT 核心版上的串行端口通信 
+## <a name="serial-port-communication-on-windows-10-iot-core-for-raspberry-pi"></a>适用于 Raspberry Pi 的 Windows 10 IoT 核心版上的串行端口通信
 
 在 Raspberry Pi 上，硬件 UART 适配器和 USB UART 适配器均可用于应用程序的串行通信。 默认情况下，UART 的传输引脚和接收引脚是 GPIO 排针上的引脚 8 和引脚 10。
 
@@ -145,10 +147,10 @@ USB\VID_10C4&PID_EA60\0001
     Controlling service:
         silabser
 ```
-[Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm) 是另一项有用的工具，用于排查串行端口问题。 此工具可以枚举端口、给出其易记名称和设备 ID、打开端口、配置设置（即波特率、停止位，等等），以及发送和接收数据。 
+[Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm) 是另一项有用的工具，用于排查串行端口问题。 此工具可以枚举端口、给出其易记名称和设备 ID、打开端口、配置设置（即波特率、停止位，等等），以及发送和接收数据。
 
 ## <a name="sirep-test-service"></a>Sirep 测试服务
-Sirep 测试服务在零售映像中并没有默认启用，即便如此，如果你仍然需要在启动时禁用 Sirep 服务，也可以登录后在自动启动中禁用 Sirep。 
+Sirep 测试服务在零售映像中并没有默认启用，即便如此，如果你仍然需要在启动时禁用 Sirep 服务，也可以登录后在自动启动中禁用 Sirep。
 
 可以使用以下 PowerShell 命令来这样做，如下所示：
 
@@ -180,7 +182,7 @@ administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=
 
 ## <a name="tablet-mode"></a>平板模式
 
-“平板模式”是仅存在于桌面 shell 上的概念，不适用于 IoT 核心版。 
+“平板模式”是仅存在于桌面 shell 上的概念，不适用于 IoT 核心版。
 
 如果设备有支持的硬件（不管是通过 I2C 还是通过 USB HID 触摸进行支持），则应可通过内置型驱动程序自动启用触摸功能。 你可以在[此处](https://docs.microsoft.com/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity)了解更多相关信息。
 

@@ -4,13 +4,13 @@ description: 开发单元测试，了解 Windows 10 IoT 核心版上支持的通
 ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-iot
-ms.technology: IoT
-ms.openlocfilehash: b09db9145ecc454d888e40155b5c37f22eb8a632
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.technology: iot
+ms.openlocfilehash: 17acb3c7b7a2da178f22ed3fdaa6c1f0ddef7ea2
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782739"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91657073"
 ---
 # <a name="downloads"></a>下载
 下载 Windows 10 IoT 核心版入门所需的工具和软件。
@@ -31,7 +31,7 @@ Windows 10 IoT 核心版仪表板有一个可导航的界面，可以简化将 W
 > [!WARNING]
 > 请勿将创客映像用于商业化。 若要将某个设备商业化，必须使用自定义 FFU 以确保最佳安全性。 在[此处](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)了解详细信息。
 
-商业化 IoT 解决方案时，需从 [Microsoft 软件下载站点](https://aka.ms/iotcoredownloads)下载内部版本。 考虑到你可能需要使用适用于设备的 Windows 10 IoT 核心版的旧内部版本，我们还在下面提供了过去的几个版本。 
+商业化 IoT 解决方案时，需从 [Microsoft 软件下载站点](https://aka.ms/iotcoredownloads)下载内部版本。 考虑到你可能需要使用适用于设备的 Windows 10 IoT 核心版的旧内部版本，我们还在下面提供了过去的几个版本。
 
 ### <a name="october-2018-release"></a>2018 年 10 月发行版
 

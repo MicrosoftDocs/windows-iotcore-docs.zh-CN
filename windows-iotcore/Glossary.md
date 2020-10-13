@@ -3,15 +3,15 @@ title: Windows IoT 术语表
 ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot
-ms.technology: IoT
+ms.technology: iot
 description: 通过文档了解与 Windows IoT 核心版相关的各种术语。
 keywords: windows iot, 术语表, 术语, 定义
-ms.openlocfilehash: 199bb379c806652758c93c4dcefdf4424a2e26bd
-ms.sourcegitcommit: 2d04dae9cb26f9aa6e1da2056be5d04dcfab317d
+ms.openlocfilehash: 423e8c2f5e66d54cf98f412ed3f36ff367a0cfc7
+ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90782729"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91656993"
 ---
 # <a name="glossary-for-windows-iot"></a>Windows IoT 术语表
 
