@@ -2,20 +2,23 @@
 title: Lightning 提供程序
 author: msalehmsft
 ms.author: msaleh
-ms.date: 08/28/2017
+ms.date: 11/12/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: 了解有关如何使用 Microsoft 闪电提供程序库的详细信息。
 keywords: windows iot，闪电提供商，闪电性能测试，总线
-ms.openlocfilehash: 1ad7acd8d40bcedd4b0a2ef21af3e866e36ed790
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: d96e1c76e141a48e97a55fe5127e46a4a77da530
+ms.sourcegitcommit: 3d2e11ed186dc224672acf5ecc539fa9afd10a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656293"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94943070"
 ---
 # <a name="working-with-lightning-providers"></a>使用闪电提供程序
+> [!NOTE]
+> 此页仅用于旧式目的。
+
 DMAP 库包含一组提供程序，这些提供程序用于通过闪电直内存映射驱动 (程序在) 上通过闪电形控制器总线连接。
 
 
@@ -49,7 +52,7 @@ DMAP 驱动程序是一个开发中的驱动程序，它提供对默认收件箱
 
 2. NuGet 包管理器将打开。 在 "浏览" 选项卡中，搜索 "闪电 SDK"，确保选中 "包括预发行版" 复选框。
 
-3. 选择最新版本，然后单击 "安装" 以将闪电 SDK 添加到你的项目。 
+3. 选择最新版本，然后单击 "安装" 以将闪电 SDK 添加到你的项目。
 ![NuGet 包管理器](../media/LightningProviders/nuget-package-manager.png)
 
 4. 如果需要，请按照屏幕上的说明进行操作。 安装完成后，将向你的项目添加对闪电 SDK 的引用。
@@ -74,7 +77,7 @@ DMAP 驱动程序是一个开发中的驱动程序，它提供对默认收件箱
 
 ### <a name="checking-for-the-lightning-dmap-driver"></a>检查闪电 (DMAP) 驱动程序
 
-若要检查是否启用了闪电， `LightningProvider.IsLightningEnabled` 应使用属性。 通常，在使用闪电提供程序 Api 之前，验证是否启用了闪电驱动程序是一种很好的做法。 
+若要检查是否启用了闪电， `LightningProvider.IsLightningEnabled` 应使用属性。 通常，在使用闪电提供程序 Api 之前，验证是否启用了闪电驱动程序是一种很好的做法。
 
 ``` C#
 if (Microsoft.IoT.Lightning.Providers.LightningProvider.IsLightningEnabled)
@@ -85,7 +88,7 @@ if (Microsoft.IoT.Lightning.Providers.LightningProvider.IsLightningEnabled)
 
 ### <a name="general-usage-pattern"></a>常规用法模式
 
-使用提供程序的最简单方法是将闪电提供程序设置为应用程序中的默认提供程序。 
+使用提供程序的最简单方法是将闪电提供程序设置为应用程序中的默认提供程序。
 
 如果闪电提供商可用，以下代码将设置 `Microsoft.IoT.Lightning.Providers.LightningProvider` 为默认提供程序。 否则，如果未显式设置默认提供程序，则不同的总线会退回到默认提供程序。
 ``` C#
@@ -101,11 +104,11 @@ i2cController = await I2cController.GetDefaultAsync();
 spiController = await SpiController.GetDefaultAsync();
 ```
 
-获得所需总线的控制器后，可以像平常一样使用它。 
+获得所需总线的控制器后，可以像平常一样使用它。
 
 ### <a name="using-lightning-for-individual-buses"></a>为单个总线使用闪电
 
-如果要使用其他默认提供程序，以下部分说明了如何为单个总线使用闪电提供程序。 
+如果要使用其他默认提供程序，以下部分说明了如何为单个总线使用闪电提供程序。
 
 #### <a name="for-gpio-bus-controller"></a>对于 GPIO 总线控制器：
 
@@ -155,7 +158,7 @@ if (LightningProvider.IsLightningEnabled)
 * [使用闪电提供](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers/Blinky/Background) 程序的 BlinkyHeadless 演示如何在无外设应用程序中使用闪电提供程序
 
 * 使用[闪电提供程序的 SPIDisplay](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers/SPIDisplay)演示了如何使用 API 来控制使用 SPI 和闪电提供程序的设备
- 
+
 * 使用[闪电提供程序的 WeatherStation](https://github.com/ms-iot/BusProviders/tree/develop/Microsoft.IoT.Lightning.Providers/WeatherStation)演示如何使用带有闪电的 I2C 提供程序与设备交互
 
 ## <a name="build-requirements"></a>生成要求
@@ -193,7 +196,7 @@ if (LightningProvider.IsLightningEnabled)
 可以从 [下载页面](https://developer.microsoft.com/windows/iot/Downloads)下载 Windows 10 IoT Core 映像。 对于设备类型，请单击 "下载内幕预览版"。
 
 ### <a name="direct-memory-mapped-driver-must-be-enabled"></a>必须启用直接内存映射驱动程序
- 
+
 闪电提供程序库中的 Api 需要在目标设备上启用闪电直接内存映射驱动程序。 Raspberry Pi 2/3 和 MinnowBoard Max 都有可用的驱动程序，但默认情况下未启用。
 
 可以使用 Windows 设备 Web 门户启用该驱动程序。 有关如何启用闪电驱动程序的详细信息，请参阅 [闪电安装指南](LightningSetup.md) 。

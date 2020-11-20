@@ -8,12 +8,12 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解通过 Windows 10 IoT Core 提供的不同提供商。
 keywords: windows iot，提供程序，总线提供程序，UWP，Gpio，Spi
-ms.openlocfilehash: c7c335bb791e487b1ef7808e0a7104ba9dbb91f3
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: fbe79a9365251457a58e9078afeb306fdb5a2da1
+ms.sourcegitcommit: 3d2e11ed186dc224672acf5ecc539fa9afd10a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656403"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94943050"
 ---
 # <a name="usermode-access-to-gpio-i2c-and-spi"></a>Usermode 访问 GPIO、I2C 和 SPI
 
@@ -31,7 +31,7 @@ Usermode 在 Windows 上访问低级别总线的权限通过现有和框架进�
 
 
 ```
-ArduinoProviders.ArduinoProvider.Configuration = 
+ArduinoProviders.ArduinoProvider.Configuration =
     new ArduinoProviders.ArduinoConnectionConfiguration("VID_2341", "PID_0043", 57600);
 Windows.Devices.LowLevelDevicesController.DefaultProvider =  new ArduinoProviders.ArduinoProvider();
 
@@ -45,7 +45,7 @@ GpioPin pin = gpioController.OpenPin(LED_PIN, GpioSharingMode.Exclusive);`
 
 ## <a name="available-providers"></a>可用提供程序
 
-目前， [总线提供](https://github.com/ms-iot/BusProviders) 商 github 存储库中提供了许多提供程序。 除了提供程序的代码以外，每个提供程序都有一个示例 VS 解决方案，该解决方案演示了客户端如何使用该提供程序。 
+目前， [总线提供](https://github.com/ms-iot/BusProviders) 商 github 存储库中提供了许多提供程序。 除了提供程序的代码以外，每个提供程序都有一个示例 VS 解决方案，该解决方案演示了客户端如何使用该提供程序。
 
 - **ADC**
   - Ads1x15
@@ -56,7 +56,7 @@ GpioPin pin = gpioController.OpenPin(LED_PIN, GpioSharingMode.Exclusive);`
   - PCA9685
   - 模拟 with Gpio
   - 远程 Arduino
-  
+
 - **Gpio、SPI、I2C**
   - 远程 Arduino
 
@@ -66,3 +66,4 @@ GpioPin pin = gpioController.OpenPin(LED_PIN, GpioSharingMode.Exclusive);`
 
 可在 [此处](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools)找到 I2C、SPI、GPIO、MINCOMM/UART 的其他总线工具、示例代码和生成和测试。
 
+请参阅 [Windows 运行时 (WinRT) api](https://docs.microsoft.com/uwp/api) ，这里介绍了如何利用 [Win32 应用程序](https://blogs.windows.com/windowsdeveloper/2017/01/25/calling-windows-10-apis-desktop-application/)中的 api。   

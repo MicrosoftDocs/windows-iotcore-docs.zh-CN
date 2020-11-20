@@ -8,14 +8,16 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解如何使用 PowerShell 连接到你的设备并管理你的设备。
 keywords: windows iot，PowerShell，Windows PowerShell，命令行，命令行 shell
-ms.openlocfilehash: 8e7566d1bc3554adfc9ef83d59cad3b080ed53bb
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 87f8755ec7601fa9669b2a9516b6aa2df8c5a2b5
+ms.sourcegitcommit: 3d2e11ed186dc224672acf5ecc539fa9afd10a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656693"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94943090"
 ---
 # <a name="using-powershell-for-windows-iot"></a>使用适用于 Windows IoT 的 PowerShell
+> [!NOTE]
+> 使用[Import-PSCoreRelease (importps) ](https://github.com/ms-iot/iot-adk-addonkit/blob/master/Tools/IoTCoreImaging/Docs/Import-PSCoreRelease.md#Import-PSCoreRelease)添加[开源 powershell](https://github.com/PowerShell/PowerShell/releases)版本。 你仍需要 IOT_POWERSHELL 功能才能包含 WinRM 二进制文件
 
 使用 Windows PowerShell 远程配置和管理任何 Windows 10 IoT Core 设备。
 PowerShell 是一种基于任务的命令行 shell 和脚本语言，专为系统管理而设计。
@@ -116,14 +118,14 @@ Windows IoT Core 设备现在应已正确配置并可供使用！
 ## <a name="known-issues-and-workarounds"></a>已知问题和解决方法
 
 **问题**： PowerShell 安全策略中的已知 bug 会导致远程会话中出现以下问题：
-* Get-help 返回意外的匹配项。
+* Get-Help 返回意外的匹配项。
 * 指定模块上的 Get-Command 返回空的命令列表。
 * 从任何这些模块运行 cmdlet 都将引发 System.management.automation.commandnotfoundexception： Appx、Get-netadapter、NetSecurity、NetTCPIP、Pnp 设备。
-* 以上任何模块上的 import-module 都将引发 PSSecurityException 异常和 UnauthorizedAccess。 模块自动加载似乎不起作用。
+* 在上述任何模块上 Import-Module 都将引发 UnauthorizedAccess 的 PSSecurityException 异常。 模块自动加载似乎不起作用。
 
-**解决方法**：在远程 PowerShell 会话中将执行策略修改到 **RemoteSigned**。 有关不同的执行策略的详细信息，请参阅 [使用 Set-executionpolicy Cmdlet](https://technet.microsoft.com/library/ee176961.aspx)。
+**解决方法**：在远程 PowerShell 会话中将执行策略修改到 **RemoteSigned**。 有关不同的执行策略的详细信息，请参阅 [使用 Set-ExecutionPolicy Cmdlet](https://technet.microsoft.com/library/ee176961.aspx)。
 
-**问题**：某些模块（如 get-netadapter）中的 cmdlet 有时不可见。 例如，Get-netadapter 返回一个空列表。
+**问题**：某些模块（如 get-netadapter）中的 cmdlet 有时不可见。 例如，Get-Module Get-netadapter 返回一个空列表。
 
 **解决方法**：将-Force 参数与 Import-module 一起使用。 例如，`Import-Module NetAdapter -Force`。
 
@@ -141,4 +143,4 @@ Windows IoT Core 设备现在应已正确配置并可供使用！
 
 - 不支持出站 CIM 和 PowerShell 远程处理。 依赖 cmdlet 中的相关功能将不起作用。 其中包括输入-PSSession、获取作业、接收作业、导入模块、调用命令和复制项。
 
-- SecureString 命令 Convertfrom-csv-SecureString 和 Convertto-html-SecureString 在使用 CredSSP 身份验证创建会话之前不起作用。 否则，必须指定-Key 参数。 有关配置 CredSSP 身份验证的详细信息，请参阅 [使用 CredSSP 启用 PowerShell "第二跃点" 功能](https://devblogs.microsoft.com/scripting/enable-powershell-second-hop-functionality-with-credssp/)。
+- SecureString 命令 ConvertFrom-SecureString 和 ConvertTo-SecureString 不起作用，除非使用 CredSSP 身份验证创建了会话。 否则，必须指定-Key 参数。 有关配置 CredSSP 身份验证的详细信息，请参阅 [使用 CredSSP 启用 PowerShell "第二跃点" 功能](https://devblogs.microsoft.com/scripting/enable-powershell-second-hop-functionality-with-credssp/)。

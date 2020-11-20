@@ -7,18 +7,14 @@ ms.technology: iot
 description: 阅读有关 Windows 10 IoT Core 默认应用的概述。 获取有关 (OOBE) 、命令栏、开始菜单等的全新体验的信息。
 keywords: windows iot，windows 10 iot core，默认应用
 ms.custom: RS5
-ms.openlocfilehash: b24c7a269627b4b9f118f9dc3da183889470292d
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: c94c6d661ccde2dbda0770e0343a062ff4f09e39
+ms.sourcegitcommit: 3d2e11ed186dc224672acf5ecc539fa9afd10a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656373"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94943080"
 ---
 # <a name="windows-10-iot-core-default-app-overview"></a>Windows 10 IoT Core 默认应用概述
-
-> [!TIP]
-> 如果你发现想要查看已添加到此示例应用的功能，请在 GitHub 上提出 [问题](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp) ，让我们知道。 如果你想要提交 bug，请按照 [此处](https://social.msdn.microsoft.com/Forums/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT)的反馈中心的说明进行操作。
-
 初次刷新 Windows 10 IoT Core 时，将在启动时向你显示 Windows 10 IoT Core 默认应用，如下所示：
 
 ![IoT Core 默认应用的屏幕截图](../media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
@@ -71,7 +67,7 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 ### <a name="web-browser"></a>Web 浏览器
 通过 web 浏览器，你可以从 web 中提取大多数站点。
 
-### <a name="music"></a>Music
+### <a name="music"></a>音乐
 此页面将从 " **音乐库**" 播放 MP3 和 WAV 文件，可以通过 [Windows 设备门户](../manage-your-device/DevicePortal.md)访问这些文件。  若要将文件上传到音乐播放机，你需要导航到 Windows 设备门户，单击 "应用" 下拉列表，导航到 "文件资源管理器"，选择 "音乐"，然后上传文件。
 
 
@@ -88,7 +84,7 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 
 ## <a name="start-menu---explore"></a>开始菜单-浏览
 
-### <a name="apps"></a>应用
+### <a name="apps"></a>“应用”
 此页面允许你启动在设备上安装的其他前台应用程序。 启动应用程序将挂起 IoT Core 默认应用，可通过在 [Windows 设备门户](../manage-your-device/DevicePortal.md)中使用应用管理器变该应用。
 
 不需要任何特殊内容即可在页面中列出前景应用程序，只需 [安装](AppInstaller.md) 或 [部署](AppDeployment.md) 应用程序即可。 成功安装或部署后，请重新导航到 "应用" 页，刷新应用程序列表。
@@ -135,7 +131,7 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 ##### <a name="weather-settings"></a>天气设置
 * 更改位置
   > 仅当您提供有效的 [Bing 地图服务令牌](https://msdn.microsoft.com/library/ff428642.aspx)时，才会启用此功能。  若要将令牌传递给应用，请在应用的 LocalState 文件夹中创建 **MapToken.config** 文件 (例如 C:\Data\Users \\ [用户帐户] \AppData\Local\Packages \\ [包全名] \LocalState\MapToken.config) 并重新启动应用。  
- (示例： C:\Data\Users\DefaultAccount\AppData\Local\Packages\16454Windows10IOTCore. IOTCoreDefaultApplication_rz84sjny4rf58 \LocalState\)
+ (示例： C:\Data\Users\DefaultAccount\AppData\Local\Packages\ 16454Windows10IOTCore.IOTCoreDefaultApplication_rz84sjny4rf58 \LocalState\)
 * 展开地图
 * 启用/禁用地图翻转以便定期放置地图和天气交换机，以防屏幕烧入
 
@@ -154,8 +150,8 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 #### <a name="system"></a>系统
 更改语言、键盘布局和时区。
 
-#### <a name="network--wi-fi"></a>网络 & Wi-fi
-查看网络适配器属性或连接到可用的 Wi-fi 网络。
+#### <a name="network--wi-fi"></a>网络 & Wi-Fi
+查看网络适配器属性或连接到可用的 Wi-Fi 网络。
 
 #### <a name="bluetooth"></a>Bluetooth
 与蓝牙设备配对。
@@ -172,7 +168,7 @@ IoT 核心默认应用的全新体验在获取时与之相关。 第一页将要
 ##### <a name="basic"></a>基本
 仅发送有关你的设备的信息、其设置和功能以及它是否正确执行。
 
-##### <a name="full"></a>完全
+##### <a name="full"></a>完整
 发送所有基本诊断数据，以及有关浏览的网站以及如何使用应用程序和功能的信息，以及有关设备运行状况、设备活动和增强的错误报告的其他信息。
 
 #### <a name="location"></a>位置
