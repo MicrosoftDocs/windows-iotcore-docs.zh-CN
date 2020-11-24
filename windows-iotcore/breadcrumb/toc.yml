@@ -6,7 +6,7 @@
       tocHref: /windows/
       topicHref: /windows/
       items:
-        - name: Windows IoT 核心版文档
+        - name: Windows IoT 文档
           tocHref: /windows/iot-core/
           topicHref: /windows/iot-core/index
           items:
@@ -40,7 +40,7 @@
             - name: 开发人员工具
               tocHref: /windows/iot-core/connect-your-device/
               topicHref: /windows/iot-core/connect-your-device/iotdashboard
-            - name: 连接性
+            - name: 连接
               tocHref: /windows/iot-core/connect-your-device/
               topicHref: /windows/iot-core/connect-your-device/setupwifidirect
             - name: 管理设备
