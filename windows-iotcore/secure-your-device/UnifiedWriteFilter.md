@@ -6,17 +6,14 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解如何使用统一写入筛选器保护物理存储媒体的数据写入。
 keywords: windows iot，统一写入筛选器，安全，内存，存储媒体
-ms.openlocfilehash: 61bd2b6240696b17e24a78d045b936271cf7d396
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 78f9780c6d8fd5850ef3ca362c439c9a8c65c7a1
+ms.sourcegitcommit: 7b4f4da423dccbbf038f32e2fba94ae1287da355
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657223"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95820622"
 ---
 # <a name="using-the-unified-write-filter-uwf-on-windows-10-iot-core"></a>使用统一写入筛选器 (Windows 10 IoT Core 上的 UWF) 
-
-> [!WARNING]
-> UWF 不支持动态磁盘。
 
 统一写入筛选器 (UWF) 是一项功能，可保护物理存储媒体的数据写入。 UWF 将拦截所有针对受保护卷的写入尝试，并将这些写入尝试重定向到虚拟覆盖。 这可改进设备的可靠性和稳定性，同时减少写入敏感介质（例如，诸如固态硬盘等闪存介质）的损耗。
 
@@ -40,9 +37,9 @@ ms.locfileid: "91657223"
   ![Windows 10 IoT Core 上的 uwfmgr.exe](../media/UnifiedWriteFilter/uwfmgr.png)
 
 
-## <a name="how-to-include-uwf-in-your-custom-ffu"></a>如何在自定义 FFU 中包含 UWF 
+## <a name="how-to-include-uwf-in-your-custom-ffu"></a>如何在自定义 FFU 中包含 UWF
 
-* 将 **IOT_UNIFIED_WRITE_FILTER** 功能 ID 添加到 OEM 输入文件 
+* 将 **IOT_UNIFIED_WRITE_FILTER** 功能 ID 添加到 OEM 输入文件
 * 创建 image\FFU。 有关说明，请参阅 [创建基本映像](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image) 。
 
 
@@ -63,12 +60,13 @@ ms.locfileid: "91657223"
   <br>
   `shutdown /r /t 0`              重新启动设备以使写入筛选器设置生效
 
-需要*重新启动*才能使所有 uwfmgr 设置生效。 
+需要 *重新启动* 才能使所有 uwfmgr 设置生效。
 
 
 ## <a name="protecting-a-data-volume"></a>保护数据卷
 
-可以使用卷的 GUID 保护 IoT Core 中的数据量。 可用卷的 GUID 可通过以下命令找到
+可以使用卷的 GUID 保护 IoT Core 中的数据量。
+可用卷的 GUID 可通过以下命令找到
 
   `dir /AL`
   <br>
@@ -109,16 +107,16 @@ C:\Data\systemdata\nonetwlogs
 
 ## <a name="unsupported-uwfmgrexe-commands"></a>不支持的 uwfmgr.exe 命令
 
-IoT 核心不支持**UWF 服务模式**。
+IoT 核心不支持 **UWF 服务模式**。
 
 `uwfmgr.exe` 在 Windows 10 IoT Core 上不支持下面列出的命令。
 
 ```
-Filter 
-    Shutdown 
-    Restart 
-Servicing 
-    Enable 
-    Disable 
+Filter
+    Shutdown
+    Restart
+Servicing
+    Enable
+    Disable
     Update-Windows
 ```

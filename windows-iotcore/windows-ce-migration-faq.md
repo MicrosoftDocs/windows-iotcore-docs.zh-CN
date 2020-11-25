@@ -6,12 +6,12 @@ ms.prod: windows-iot
 ms.technology: iot
 description: Windows CE 应用容器迁移技术的常见问题
 keywords: Windows 10 IoT Core，Windows CE，应用程序迁移，cepal，Windows CE 迁移常见问题解答
-ms.openlocfilehash: aaebc59790d870ccfc6fac7846d69613ed6dacc5
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 69260fb4b8ffbb3ffb703e42fc195415b0561976
+ms.sourcegitcommit: 7b4f4da423dccbbf038f32e2fba94ae1287da355
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659432"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95820603"
 ---
 # <a name="ce-migration---frequently-asked-questions"></a>CE 迁移-常见问题
 在本部分中，我们将介绍常见问题 (常见问题解答) 有关 CE 迁移的问题。 我们将介绍产品路线图、迁移选项以及如何开始迁移过程。
@@ -33,7 +33,7 @@ Microsoft 为客户提供了多个有关如何导航此过程的解决方案–�
 ### <a name="windows-10-iot-enterprise"></a>Windows 10 IoT 企业版  
 对于需要访问全套 x64 硬件的设备，ARM64 硬件（如 NXP MX8、advanced UX，或具有可在一个产品设计迭代中迁移的 CE 应用程序），最佳做法是直接移到 [Windows 10 IoT 企业版](https://docs.microsoft.com/windows/iot-core/windows-iot-enterprise) 。 你将能够快速利用功能，并获得最大的产品支持生存期。  
 
-### <a name="windows-10-iot-core"></a>Windows 10 IoT Core  
+### <a name="windows-10-iot-core"></a>Windows 10 IoT 核心板  
 对于需要利用 ARM32 或拥有需要多个开发周期才能迁移的复杂 CE 应用程序的设计，具有 Windows 10 IoT Core Services 的[Ce 应用程序容器](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container)   提供了一个解决方案，用于逐步迁移到 Windows 10 IoT Core。 [Windows 10 IoT Core Services](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview)在 Windows 10 IoT Core Services 中，你将收到 Windows Embedded Compact 2013 和 Windows 10 IoT Core 的许可证。在2029之前，IoT 核心操作系统将继续接收安全更新。  
 
 ### <a name="windows-ce-2013"></a>Windows CE 2013
@@ -47,4 +47,4 @@ Microsoft 当前没有计划提供超过2023的扩展支持。
 请联系你的分销商以获取有关可用的各种迁移选项的特定定价，并获得适用于你的技术评估的最新 Windows 更新的访问权限。  
 
 ## <a name="what-is-ce-app-container"></a>什么是 CE 应用容器？
-通过在 Windows 10 IoT Core 顶层运行 Windows CE 2013 实例，Windows CE 应用容器工作。 该技术的目标是允许大多数客户在 Windows 10 IoT 上运行其现有的、未修改的 Windows CE 应用程序，同时他们会继续投入更新应用程序。 若要查看 CE 应用容器是否为组织的正确解决方案，请查看以下文章 (https://docs.microsoft.com/windows/iot-core/windows-ce-app-container) 。
+通过在 Windows 10 IoT Core 顶层运行 Windows CE 2013 实例，Windows CE 应用容器工作。 该技术的目标是允许大多数客户在 Windows 10 IoT 上运行其现有的、未修改的 Windows CE 应用程序，同时他们会继续投入更新应用程序。 若要查看 CE 应用容器是否是适用于你的组织的正确解决方案，请查看以下 [概述文章](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container)。
