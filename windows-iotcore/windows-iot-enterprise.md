@@ -1,17 +1,17 @@
 ---
 title: Windows 10 IoT 企业版概述
-ms.date: 11/12/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: 了解 Windows 10 IoT 企业版是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 企业版, 企业, 二进制, Windows
-ms.openlocfilehash: 7adb758c8c10425b030cd121ccc4dcead2b5f015
-ms.sourcegitcommit: 3d2e11ed186dc224672acf5ecc539fa9afd10a95
+ms.openlocfilehash: 39f968ad71d2588655e42beaf9215bd645476a60
+ms.sourcegitcommit: d6b6a659b64193d1a9ef785871ab2beff3bb2590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94943060"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96481063"
 ---
 # <a name="an-overview-of-windows-10-iot-enterprise"></a>Windows 10 IoT 企业版概述
 
@@ -44,7 +44,7 @@ Windows 作为可供全世界消费者和企业使用的笔记本电脑和台式
 
 专用系统（例如控制医疗设备的电脑、销售点系统和 ATM）出于其目的原因，通常需要长期维护选项。 这些设备通常执行一项重要的任务，并且不像组织中其他设备那样频繁需要功能更新。 相比通过 UI 更改保持最新状态，这些设备更应该尽可能地保持稳定和安全。 LTSC 服务模式将阻止 Windows 10 IoT 企业版 LTSC 设备接收常规功能更新，仅提供质量更新，确保设备安全性保持最新。 有鉴于此，质量更新仍可立即用于 Windows 10 IoT 企业版 LTSC 客户端，但客户可以使用“维护工具”部分提到的某项维护工具来选择延迟更新。
 
-Microsoft 大约每三年提供一个新的 Windows 10 IoT 企业版 LTSC 版本。 每个 Windows 10 IoT 企业版 LTSC 版本都是其自己的 SKU，还带有自上次 LTSC 版本以来包含在 Windows 10 IoT 企业版功能更新中的所有新功能和支持更新。 若要访问这些功能更新，必须购买新的 Windows 10 IoT 企业版 LTSC SKU。
+Microsoft 大约每三年提供一个新的 Windows 10 IoT 企业版 LTSC 版本。 每个 Windows 10 IoT 企业版 LTSC 版本都是其自己的 SKU，还带有自上次 LTSC 版本以来包含在 Windows 10 IoT 企业版功能更新中的所有新功能和支持更新。 若要访问这些功能更新，必须购买新的 Windows 10 IoT 企业版 LTSC SKU 许可证。 例如，若要访问自 Windows 10 IoT 企业版 2016 LTSC 发布以来新推出的安全、部署和管理更新及功能，必须购买 Windows 10 IoT 企业版 2019 LTSC 许可证，并向设备应用更新。
 
 * [了解有关 LTSC 的详细信息](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel)
 
