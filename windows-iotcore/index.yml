@@ -5,26 +5,26 @@ metadata:
   description: 了解适用于 IoT 的 Windows，以便开发自己的联网嵌入式解决方案。
   ms.topic: landing-page
   ms.date: 09/04/2019
-  ms.openlocfilehash: 9d2a71a4e5615ec8ef79ed9e6f6d20ce6702aff1
-  ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
+  ms.openlocfilehash: 17bf9a9372982360714c663bcf1460de40244f3a
+  ms.sourcegitcommit: d048cc83c8a916bc761f5065e880d3555758321c
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/24/2020
-  ms.locfileid: "74154961"
+  ms.lasthandoff: 03/06/2021
+  ms.locfileid: "102247140"
 landingContent:
 - title: 关于适用于 IoT 的 Windows
   linkLists:
   - linkListType: overview
     links:
-    - text: Windows 10 IoT 核心版
+    - text: Windows 10 IoT 核心板
       url: windows-iot-core.md
     - text: Windows 10 IoT 企业版
-      url: windows-iot-enterprise.md
+      url: https://docs.microsoft.com/windows/iot/iot-enterprise/getting_started
     - text: Windows Server IoT 2019
-      url: windows-server.md
-    - text: Windows 10 IoT 核心版服务
-      url: https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview
-- title: 立即开始行动
+      url: https://docs.microsoft.com/windows/iot-core/windows-server
+    - text: Windows 10 IoT Core Services
+      url: https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview
+- title: 入门
   linkLists:
   - linkListType: tutorial
     links:
