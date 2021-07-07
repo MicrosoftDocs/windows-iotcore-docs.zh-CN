@@ -6,12 +6,12 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解 Windows 10 IoT 企业版是什么，以及可以用它执行什么操作。
 keywords: Windows 10 IoT 企业版, 企业, 二进制, Windows
-ms.openlocfilehash: 39f968ad71d2588655e42beaf9215bd645476a60
-ms.sourcegitcommit: d6b6a659b64193d1a9ef785871ab2beff3bb2590
+ms.openlocfilehash: 20bb33fba02c3659374920751807ed0dd68a428d
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96481063"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230394"
 ---
 # <a name="an-overview-of-windows-10-iot-enterprise"></a>Windows 10 IoT 企业版概述
 

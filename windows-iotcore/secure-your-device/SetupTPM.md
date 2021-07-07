@@ -1,30 +1,30 @@
 ---
-title: 在建议的平台上设置 TPM
+title: 在建议平台上设置 TPM
 ms.date: 09/05/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 在建议的平台上设置 TPM 后，了解如何使设备安全。
-keywords: windows iot，安全性，安装程序，受信任的平台模块，TPM，加密，密钥
-ms.openlocfilehash: 4b07e7ed6e31252ca5ebe3a34c0dbf233a49c400
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+description: 按照本指南在建议平台上设置 TPM，了解如何确保设备安全。
+keywords: windows iot， 安全性， 设置， 受信任的平台模块， TPM， 加密， 密钥
+ms.openlocfilehash: b7f33dc803490b9410364abbd97d1d3bad2865a9
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657293"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230644"
 ---
-# <a name="setting-up-tpm-on-suggested-platforms"></a>在建议的平台上设置 TPM
+# <a name="setting-up-tpm-on-suggested-platforms"></a>在建议平台上设置 TPM
 
-## <a name="setup-firmware-tpm-ftpm"></a>设置固件 TPM (fTPM) 
-固件 TPM (fTPM) 需要特殊的处理器/SoC 支持，whence fTPM 目前未在 Raspberry Pi2 上实现。
+## <a name="setup-firmware-tpm-ftpm"></a>使用 fTPM (设置固件 TPM) 
+固件 TPM (fTPM) 需要特殊的处理器/SoC 支持，并且当前未在 Raspberry Pi2 上实现 fTPM。
 
-1. 您必须具有 UEFI 版本0.80 或更高版本的 MBM。
+1. 必须具有 UEFI 版本为 0.80 或以上的 MBM。
 2. 通过更改以下 UEFI 设置来启用 fTPM：
 ```
         Device Manager -> System Setup -> Security Configuration -> PTT = <Enable>
 ```
-3. 请确保没有 C:\Windows\System32\ACPITABL.dat sTPM/dTPM (解决冲突/删除文件（如果不需要）) 。
-4. 验证是否已启用正确的 TPM 版本-在 Windows IoT Core 设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T) 。
+3. 确保没有用于 sTPM/dTPM 的 C：\Windows\System32\ACPITABL.dat (如果需要，请解决冲突/删除) 。
+4. 验证是否已启用正确的 TPM 版本 - 在 IoT 核心版设备上Windows [TPM 2.0](https://github.com/ms-iot/security/tree/master/Urchin/T2T)工具。
 ```
         C:\>t2t.exe -cap
 
@@ -95,8 +95,8 @@ ms.locfileid: "91657293"
 
         c:\>
 ```
-5. 验证 fTPM 是否正常运行-在 Windows IoT Core 设备上运行 [Urchin 单元测试](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) 。  
-   应该会看到几个 PASS 测试 (请注意，fTPM 不支持某些功能，因此) 需要几个错误代码：
+5. 验证 fTPM 是否正常工作 - 在 IoT 核心Windows运行[Urchin](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest)单元测试。  
+   应会看到多个 PASS (请注意，fTPM 不支持某些功能，因此预期会生成一些) ：
 ```
         C:\>urchintest.exe
         ---SETUP----------------------------------------
@@ -144,24 +144,24 @@ ms.locfileid: "91657293"
 ## <a name="setup-discrete-tpm-dtpm"></a>设置离散 TPM (dTPM) 
 这些说明适用于 MBM、RPi2 或 RPi3 上支持的任何 dTPM 模块。
 
-1. 获取独立的 TPM 模块，并将其附加到 MBM/RPi2/RPi3。
-2.  (适用于 MBM) 通过更改以下 UEFI 设置来禁用 fTPM：
+1. 获取离散 TPM 模块并将其附加到 MBM/RPi2/RPi3。
+2.  (更改以下 UEFI 设置) 禁用 fTPM 的 MBM 设置：
 ```
         Device Manager -> System Setup -> Security Configuration -> PTT = <Disable>
 ```
-3.  (适用于 MBM) 通过更改以下 UEFI 设置启用 dTPM：
+3.  (更改以下 UEFI 设置) 启用 dTPM 的 MBM 设置：
 ```
         Device Manager -> System Setup -> Security Configuration -> Discrete TPM = <Enable>
 ```
-4. 根据所选的独立 TPM 模块，在 [此处](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL)确定其匹配的 ACPI 表。
-5. 将该 ACPI 表复制到 MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_。
-6. 在设备上启用 testsigning：
+4. 根据你选择的离散 TPM 模块，在此处确定其匹配的 ACPI [表](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL)。
+5. 将 ACPI 表复制到 MBM/RPi2/RPi3 _C：\Windows\System32\ACPITABL.dat_。
+6. 在设备上启用测试签名：
 ```
         bcdedit /set {current} integrityservices disable
         bcdedit /set testsigning on
 ```
 7. 重新启动设备。
-8. 验证是否已启用正确的 TPM 版本-在 Windows IoT Core 设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T) 。
+8. 验证是否已启用正确的 TPM 版本 - 在 IoT 核心版设备上Windows [TPM 2.0](https://github.com/ms-iot/security/tree/master/Urchin/T2T)工具。
 ```
         C:\>t2t.exe -cap
 
@@ -232,8 +232,8 @@ ms.locfileid: "91657293"
 
         C:\>
 ```
-9. 验证 dTPM 是否正常运行-在 Windows IoT Core 设备上运行 [Urchin 单元测试](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) 。  
-    应该会看到几个 PASS 测试 (请注意，dTPM 可能不支持某些功能，因此) 需要几个错误代码：
+9. 验证 dTPM 是否正常工作 - 在 IoT 核心Windows运行[Urchin](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest)单元测试。  
+    应会看到多个 PASS (请注意，某些功能可能不受 dTPM 支持，因此预期会生成一些) ：
 ```
         C:\>urchintest.exe
 
@@ -279,25 +279,25 @@ ms.locfileid: "91657293"
 
         C:\>
 ```
-## <a name="enable-and-verify-software-tpm-stpm"></a>启用和验证软件 TPM (sTPM)   
-请注意， **sTPM 仅用于开发目的，不提供任何真正的安全优势**。
+## <a name="enable-and-verify-software-tpm-stpm"></a>启用并验证 sTPM (软件 TPM)   
+请注意 **，sTPM 仅用于开发目的，不提供任何真正的安全优势**。
 
-1.  (适用于 MBM) 通过更改以下 UEFI 设置来禁用 fTPM：
+1.  (更改以下 UEFI 设置) 禁用 fTPM 的 MBM 设置：
 ```
         Device Manager -> System Setup -> Security Configuration -> PTT = <Disable>
 ```
-2.  (适用于 MBM) 通过更改以下 UEFI 设置启用 dTPM：
+2.  (更改以下 UEFI 设置) 启用 dTPM 的 MBM 设置：
 ```
         Device Manager -> System Setup -> Security Configuration -> Discrete TPM = <Enable>
 ```
-3. 在设备上启用 testsigning：
+3. 在设备上启用测试签名：
 ```
         bcdedit /set {current} integrityservices disable
         bcdedit /set testsigning on
 ```
-4. 将 ACPI 表从 [此处](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim) 复制到 MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_。
+4. 将 ACPI 表 [从此处](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim)复制到 MBM/RPi2/RPi3 _C：\Windows\System32\ACPITABL.dat_。
 5. 重新启动设备。
-6. 验证是否已启用正确的 TPM 版本-在 Windows IoT Core 设备上运行 [TPM 2.0 工具](https://github.com/ms-iot/security/tree/master/Urchin/T2T) 。
+6. 验证是否已启用正确的 TPM 版本 - 在 IoT 核心版设备上Windows [TPM 2.0](https://github.com/ms-iot/security/tree/master/Urchin/T2T)工具。
 ```
         C:\>t2t.exe -cap
         TBS detected 2.0 simulated TPM (sTPM).
@@ -367,8 +367,8 @@ ms.locfileid: "91657293"
 
         C:\>
 ```
-7. 验证 sTPM 是否正常运行-在 Windows IoT Core 设备上运行 [Urchin 单元测试](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) 。  
-   应该会看到几个 PASS 测试 (请注意，sTPM 不支持某些功能，因此) 需要几个错误代码：
+7. 验证 sTPM 是否正常工作 - 在 IoT 核心Windows运行[Urchin](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest)单元测试。  
+   应会看到多个 PASS (请注意，sTPM 不支持某些功能，因此预期会生成一些) ：
 ```
         C:\>urchintest.exe
         ---SETUP----------------------------------------

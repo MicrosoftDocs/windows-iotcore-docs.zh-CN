@@ -1,5 +1,5 @@
 ---
-title: 通过 Windows 10 IoT Core 构建更安全的设备
+title: 通过 Windows 10 IoT 核心版生成更安全的设备
 author: TorstenStein
 ms.author: torstens
 ms.date: 08/28/2017
@@ -8,18 +8,18 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解如何通过启用安全启动、实现 Tpm 等来构建更安全的设备。
 keywords: windows iot，安全性，固件，安全启动，TPM，Bitlocker，加密
-ms.openlocfilehash: 4310ac1e8f043f23cae67b723ccb515dc009004f
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 0a0768aba88967b2c1bcaaf87786c5dd0fd3ad40
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657353"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230713"
 ---
-# <a name="building-more-secure-devices-with-windows-10-iot-core"></a>通过 Windows 10 IoT Core 构建更安全的设备
+# <a name="building-more-secure-devices-with-windows-10-iot-core"></a>通过 Windows 10 IoT 核心版生成更安全的设备
 
 ## <a name="introduction"></a>简介  
 
-Windows 10 IoT Core 提供了强大的企业级安全功能，可用于较小的、资源受限的 IoT 设备类别。 为了使这些安全功能提供实实在在的优势，硬件平台还必须提供一种方法来定位它们。 本文提供了 OEM 设备构建者和安全意识制造商的高级指导，他们希望选择适当的硬件并构建、配置更安全的 IoT 设备并将其交付给客户。
+Windows 10 IoT 核心版提供了强大的企业级安全功能，可用于较小的、资源受限的 IoT 设备类别。 为了使这些安全功能提供实实在在的优势，硬件平台还必须提供一种方法来定位它们。 本文提供了 OEM 设备构建者和安全意识制造商的高级指导，他们希望选择适当的硬件并构建、配置更安全的 IoT 设备并将其交付给客户。
 ![数据安全性](../media/SecurityFlowAndCertificates/DataRestExecutionMotion.png)
 
 ## <a name="building-a-more-secure-iot-device"></a>构建更安全的 IoT 设备  
@@ -42,13 +42,13 @@ IoT 核心使用受信任的平台模块 2.0 (TPM 2.0) 为硬件安全平台。 
 与流行的 Raspberry Pi 3 一样，开发板可提供灵活性，并使开发人员能够通过可移动 SD 卡轻松启动任何平台。 对于大多数业界 IoT 设备，这种灵活性并不理想，可使设备成为攻击的目标。 相反，在设计硬件时，请考虑对小型、低成本的 IoT 设备使用 eMMC 存储。 利用嵌入的存储空间，可以很难将内容从设备中分离出来，进而降低数据被盗的可能性或引入到设备上的恶意软件。
 
 ## <a name="create-a-retail-image"></a>创建零售映像 
-[创建 Windows IoT Core 零售映像](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)时，请确保生产系统中不存在允许远程访问和调试的开发人员工具，因为这可能会使你的设备遭受攻击。 如果在开发过程中使用 [Windows 设备门户](https://docs.microsoft.com/windows/iot-core/manage-your-device/remotedisplay)、 [FTP 服务器](https://docs.microsoft.com/windows/iot-core/connect-your-device/ftp)、 [SSH](https://docs.microsoft.com/windows/iot-core/connect-your-device/ssh)或 [PowerShell](https://docs.microsoft.com/windows/iot-core/connect-your-device/powershell) 等开发人员工具，请确保在不包含这些工具的情况下，在零售 IoT 核心映像上测试和验证方案。
+[创建 Windows IoT 核心零售映像](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)时，请确保生产系统中不存在允许远程访问和调试的开发人员工具，因为这可能会使你的设备遭受攻击。 如果在开发过程中使用映像中的开发人员工具（如[Windows 设备门户](https://docs.microsoft.com/windows/iot-core/manage-your-device/remotedisplay)、 [FTP 服务器](https://docs.microsoft.com/windows/iot-core/connect-your-device/ftp)、 [SSH](https://docs.microsoft.com/windows/iot-core/connect-your-device/ssh)或[PowerShell](https://docs.microsoft.com/windows/iot-core/connect-your-device/powershell) ），请确保在不包含这些工具的零售 IoT 核心映像上测试和验证方案。
 
 ### <a name="user-accounts"></a>用户帐户
-大多数用户都熟悉了获取设备（如电脑和手机）的 *所有权* 的概念：对设备进行取消装箱和设置凭据以访问设备时，对其进行个性化的理念。 不同于消费者电脑和手机，IoT 设备并不旨在用作常规用途计算设备。 相反，它们通常是单应用、固定用途设备。 虽然 Windows 支持在开发周期中可远程连接到设备的设备管理员的概念，但在行业 IoT 设备上，此类支持可能会造成威胁，尤其是在使用弱密码时。 通常，建议不要在 IoT Core 设备上创建默认帐户或密码。
+大多数用户都熟悉了获取设备（如电脑和手机）的 *所有权* 的概念：对设备进行取消装箱和设置凭据以访问设备时，对其进行个性化的理念。 不同于消费者电脑和手机，IoT 设备并不旨在用作常规用途计算设备。 相反，它们通常是单应用、固定用途设备。 尽管 Windows 支持在开发周期内可远程连接到设备的设备管理员的概念，但在行业 IoT 设备上，此类支持可能会造成威胁，尤其当使用弱密码时。 通常，建议不要在 IoT Core 设备上创建默认帐户或密码。
 
 ## <a name="lockdown-a-retail-image"></a>锁定零售映像
-在常规用途计算设备（如 Pc）上，用户可以安装应用程序并更改设置，包括安全功能，以确保设备最适合其需求。 大多数 IoT 设备是固定功能设备，不会在设备生存期内改变其用途。 它们会在其操作边界内接收软件更新或启用功能更新，如智能恒温器上改进的 UI 或温度规定。 此信息可用于通过只允许执行已知和受信任的代码来完全锁定 IoT 设备。 Windows 10 IoT Core 上的 Device Guard 可以通过确保无法在锁定的设备上运行未知或不受信任的可执行代码来帮助保护 IoT 设备。
+在常规用途计算设备（如 Pc）上，用户可以安装应用程序并更改设置，包括安全功能，以确保设备最适合其需求。 大多数 IoT 设备是固定功能设备，不会在设备生存期内改变其用途。 它们会在其操作边界内接收软件更新或启用功能更新，如智能恒温器上改进的 UI 或温度规定。 此信息可用于通过只允许执行已知和受信任的代码来完全锁定 IoT 设备。 Windows 10 IoT 核心版上的设备防护可以确保无法在锁定的设备上运行未知或不受信任的可执行代码，从而帮助保护 IoT 设备。
 
 Microsoft 提供了 [全包式安全包](https://github.com/ms-iot/security/tree/master/TurnkeySecurity) ，有助于在 IoT 核心设备上启用关键安全功能。 这允许设备构建者创建完全锁定的 IoT 设备。 此包将帮助你：
 

@@ -7,29 +7,29 @@ ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: 了解如何在设备上将默认控制器驱动程序更改为闪电 DMAP 驱动程序。
-keywords: windows iot，闪电，安装，闪电安装，Windows 设备门户
-ms.openlocfilehash: fb3ef09472a948d2fd48ddde1487ed72f3803ed0
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+keywords: windows iot，闪电，安装程序，闪电安装，Windows 设备门户
+ms.openlocfilehash: 9bf44c8f1b12a29bac265b74fa7463c5ad77b365
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656253"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229023"
 ---
 # <a name="lightning-setup-guide"></a>闪电设置指南
 
-本指南将指导你完成将默认控制器驱动程序更改为 Windows IoT Core 设备上 (DMAP) 驱动程序的 "闪电直接内存访问" 所需的步骤。 这将允许在该设备上使用启用了闪电的应用程序。
+本指南将引导你完成将默认控制器驱动程序更改为 Windows IoT Core 设备上的 (DMAP) 驱动程序所需的步骤。 这将允许在该设备上使用启用了闪电的应用程序。
 
 ## <a name="change-the-default-controller-driver"></a>更改默认控制器驱动程序
 
 我们需要打开 Windows 设备门户。
 
-1. 查找设备的 IP 地址，方法是使用 Windows 10 IoT Core 仪表板应用程序，或将你的板挂钩到监视器。
+1. 使用 Windows 10 IoT 核心版仪表板应用程序，或将你的板挂钩到监视器，找到设备的 IP 地址。
 
-2. 在本地计算机上，通过在 web 浏览器中输入以下地址 http：//{BoardIPAddress}： 8080/来打开 Windows 设备门户网页。
-   ![Windows 设备门户](../media/LightningSetup/dmap1.png)
+2. 在本地计算机上，通过在 web 浏览器中输入此地址 http：//{BoardIPAddress}： 8080/来打开 "Windows 设备门户" 网页。
+   ![Windows设备门户](../media/LightningSetup/dmap1.png)
 
-3. "Windows 设备门户" 页应要求提供凭据。 默认用户名为， `Administrator` 密码为 `p@ssw0rd` 注意，输入用户名和密码后，门户会询问你是否需要更改密码。 更改此方法始终是一个好办法。
-   ![Windows 设备门户凭据](../media/LightningSetup/dmap2.png)
+3. "Windows 设备" 门户页应要求提供凭据。 默认用户名为， `Administrator` 密码为 `p@ssw0rd` 注意，输入用户名和密码后，门户会询问你是否需要更改密码。 更改此方法始终是一个好办法。
+   ![Windows设备门户凭据](../media/LightningSetup/dmap2.png)
 
 4. 单击导航菜单中的 "设备"，打开 "设备页面 ![ 设备" 页面](../media/LightningSetup/dmap3.png)
 

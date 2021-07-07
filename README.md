@@ -1,26 +1,26 @@
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 开放源代码行为准则
 
-此项目采用了[Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。
-有关详细信息，请参阅[代码的行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)或联系[ opencode@microsoft.com ](mailto:opencode@microsoft.com)提出任何其他问题或意见。
+此项目采用了 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。
+有关详细信息，请参阅[行为准则常见问题](https://opensource.microsoft.com/codeofconduct/faq/)，或如果有任何其他问题或意见，请与 [opencode@microsoft.com](mailto:opencode@microsoft.com) 联系。
 
 # <a name="how-to-contribute-to-windows-10-iotcore-documentation"></a>如何参与撰写 Windows 10 IoT 核心版文档
 
 ## <a name="legal-notices"></a>法律声明
 Microsoft 及任何创作人按照[创作共用署名 4.0 国际公共许可](https://creativecommons.org/licenses/by/4.0/legalcode)授予你此存储中的 Microsoft 文档和其他内容的许可，请参阅[许可证](LICENSE)文件，并按照 [MIT 许可](https://opensource.org/licenses/MIT)授予你存储库中任何代码的许可，请参阅[许可证代码](LICENSE-CODE)文件。
 
-本文档中引用的 Microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 产品和服务是 Microsoft 在美国和/或其他国际/地区的商标或注册商标。
-此项目的许可证并未授予你使用任何 Microsoft 名称、徽标或商标的权利。
+Microsoft、Windows、Microsoft Azure 和/或其他在本文档中引用的 Microsoft 产品和服务可能是 Microsoft 在美国和/或其他国家/地区的商标或注册商标。
+该项目的许可证没有授予你使用任何 Microsoft 名称、徽标或商标的权利。
 有关 Microsoft 的常规商标指南，可参看 http://go.microsoft.com/fwlink/?LinkID=254653 。
 
-可在 https://privacy.microsoft.com/en-us/ 查找隐私信息
+有关隐私信息，请参阅 https://privacy.microsoft.com/en-us/
 
-Microsoft 及任何创作人保留所有其他权利（无论是其各自的版权、专利或商标），无论是通过默示、禁止否认的方式还是以其他方式。
+Microsoft 和任何参与者通过暗示、禁止或其他方式保留其他所有权利，无论是他们各自的版权、专利权利，还是商标权利。
 
-## <a name="contributing"></a>投稿
+## <a name="contributing"></a>供稿
 
-这是托管在 [https://docs.microsoft.com/windows/iot-core](https://docs.microsoft.com/windows/iot-core) 上的 Windows 10 IoT **文档**的存储库。
+这是托管在 [https://docs.microsoft.com/windows/iot-core](https://docs.microsoft.com/windows/iot-core) 上的 Windows 10 IoT **文档** 的存储库。
 
-如果希望看到新的报道或提供反馈，请考虑[**投稿**](/CONTRIBUTING.md)。  可以编辑现有内容、添加新内容，或者直接创建新[问题](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues)。 我们会查看你的建议，并争取将其纳入文档中。
+如果希望看到新的报道或提供反馈，请考虑 [**投稿**](/CONTRIBUTING.md)。  可以编辑现有内容、添加新内容，或者直接创建新[问题](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues)。 我们会查看你的建议，并争取将其纳入文档中。
 
 若要编辑内容，只需在要更改的文章中单击“编辑”即可：
 
@@ -51,7 +51,7 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
    * 项目符号列表应该有不止一个条目。
 * 极标准
 
-1. 经过排序的列表
+1. 有序列表
 2. 使用常规编号或西式编号。
 3. 只有在某个列表真的可以排序时才使用。
 
@@ -75,20 +75,20 @@ body {
 
 ## <a name="tables"></a>表
 
-| 你可以     | 使用标头 | 在表中    |
+| 可以     | 使用标头 | 在表中    |
 |-------------|-------------|-------------:|
 | 左对齐| 除非使用 #  | 456          |
 | 文本值  | 更多文本   | $0.00        |
 
-## <a name="notes"></a>说明
+## <a name="notes"></a>注释
 
 请谨慎使用注释。 注释是旨在突出显示“请勿错过”信息的块。
 
 我们有四个不同版本的目前已进行样式设置的注释：
 - 注意
-- 警告
+- WARNING
 - 提示
-- 重要提示
+- 重要事项
 
 
 对于多行块引用注释，请在每行注释前面使用 >，如以下示例所示。
@@ -101,4 +101,4 @@ body {
 
 
 ## <a name="code-of-conduct"></a>行为准则
-此项目采用了[Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。 有关详细信息，请参阅[代码的行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)或联系[ opencode@microsoft.com ](mailto:opencode@microsoft.com)提出任何其他问题或意见。
+此项目采用了 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。 有关详细信息，请参阅[行为准则常见问题](https://opensource.microsoft.com/codeofconduct/faq/)，或如果有任何其他问题或意见，请与 [opencode@microsoft.com](mailto:opencode@microsoft.com) 联系。

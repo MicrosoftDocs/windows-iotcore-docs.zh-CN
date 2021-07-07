@@ -6,16 +6,16 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解部署 Arduino 接线图项目时出现的修改和常见问题。
 keywords: windows iot，Arduino，布线，Visual Studio，移植
-ms.openlocfilehash: 9f96c8e5b8b799690d31e1cd75574533773c0eaf
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 2f874e6fb1c22382fefde2b3480bd40b4824faf9
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91655933"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229684"
 ---
 # <a name="arduino-wiring-porting-guide"></a>Arduino 布线指南
 
-可以将 Arduino 布线和库复制/粘贴到 Visual Studio 中的 Arduino 布线项目，并在 Raspberry Pi 2 上运行，Raspberry Pi 3 或 Minnowboard Max。 有时需要对这些文件进行少量的修改，以便使它们更兼容于 Windows 环境或您正在使用的板。 本指南将介绍这些修改以及部署 Arduino 布线项目时可能遇到的常见问题。
+可以将 Arduino 布线和库复制/粘贴到 Visual Studio 内的 Arduino 接线图，并在 Raspberry Pi 2 上运行，Raspberry Pi 3 或 Minnowboard Max。 有时需要对这些文件进行少量的修改，以便使它们与 Windows 环境或您正在使用的板更兼容。 本指南将介绍这些修改以及部署 Arduino 布线项目时可能遇到的常见问题。
 
 ## <a name="porting"></a>移植
 
@@ -86,9 +86,9 @@ digitalWrite( GPIO5, HIGH );
 
 ### <a name="cant-find-arduino-wiring-application-visual-c-project-template-in-visual-studio"></a>Visual Studio 中找不到 "Arduino 接线图应用程序" Visual C++ 项目模板
 
-**原因**：未安装适用于 Visual Studio 的 Windows IoT 项目模板扩展。
+**原因**：未安装适用于 Visual Studio 的 Windows IoT Project 模板扩展。
 
-**解决方案**：必须安装适用于 Windows IoT 项目模板的 Visual studio 扩展，然后才能在 Visual studio 中创建 Arduino 接线图项目。 转到 [Windows IoT Core 项目模板扩展页面](https://go.microsoft.com/fwlink/?linkid=847472) 以从 Visual Studio 库中下载扩展！
+**解决方案**：必须先安装 Windows IoT Project 模板的 Visual Studio 扩展，然后才能在 Visual Studio 中创建 Arduino 接线图项目。 转到[Windows IoT Core Project 模板扩展 "页](https://go.microsoft.com/fwlink/?linkid=847472)，从 Visual Studio 库下载该扩展！
 
 ### <a name="error-identifier-not-found-when-calling-a-function"></a>错误：调用函数时出现 "找不到标识符"
 
@@ -160,7 +160,7 @@ void loop()
 
 ### <a name="my-solution-hangs-infinitely-when-being-initialized"></a>在初始化时，解决方案会无限期挂起
 
-存在一个已知问题，可能会导致 c + + 解决方案在初始化时挂起 (死锁) 。 如果您发现您的解决方案看似始终挂起，并且您无法使用调试程序 "中断" 到安装程序 ( # A1 或 ( 循环中的任何语句，则可能会遇到这种类型的问题 Arduino 接线图。
+存在一个已知问题，可能会导致 c + + 解决方案在初始化时挂起 (死锁) 。 如果你发现你的解决方案看似始终挂起，并且你无法使用调试程序 "中断" 到安装 () 或循环 () Arduino 布线应用程序的任何语句，则可能会遇到这种类型的问题。
 
 **原因**：正在创建对象或调用函数，这会导致在解决方案完成初始化之前出现 asyncronous 操作。 这可能是由对象的构造函数调用 API 函数（如）引起的 `pinMode` 。
 
@@ -168,7 +168,7 @@ void loop()
 
 **示例 1**：
 
-此草拟的执行将调用一个函数，该函数在 `setPinModes()` 解决方案自身初始化之前被调用。 解决方案似乎会执行，但会无限期挂起。
+此草图的执行调用在初始化 `setPinModes()` 解决方案本身之前调用的函数。 该解决方案似乎要执行，但会无限期挂起。
 
 ```C++
 bool setPinModes();
@@ -197,7 +197,7 @@ bool setPinModes()
 }
 ```
 
-解决方案如下所示，我们只是将执行操作移 `setPinModes()` 到了 `setup()` 函数：
+解决方案如下，我们只需将 的执行 `setPinModes()` 移动到 `setup()` 函数：
 
 ```C++
 bool setPinModes();
@@ -228,7 +228,7 @@ bool setPinModes()
 
 **示例 2**：
 
-在调用之前，该草绘在堆栈上创建一个对象 `setup()` 。 因为对象 `pinMode` 在其构造函数中调用，这也会导致死锁。 这是一种不常见的问题，但可能会发生某些库中的对象 (如 Arduino `LiquidCrystal` 库) 。
+此草图的执行在调用 之前在堆栈 `setup()` 上创建一个对象。 由于 对象在其 `pinMode` 构造函数中调用 ，因此也会导致死锁。 这是一个不常见的问题，但某些库（如 Arduino 库 (）中的对象 `LiquidCrystal`) 。
 
 ```C++
 class MyObject
@@ -257,7 +257,7 @@ void loop()
 }
 ```
 
-解决方案如下。 我们已将对象更改为对象指针，并将对象的初始化移到 `setup()` 。
+解决方案如下。 我们已将 对象更改为对象指针，并且将 对象的初始化移动到 `setup()` 。
 
 ```C++
 class MyObject
@@ -289,29 +289,29 @@ void loop()
 
 ### <a name="using-serialprint-and-serialprintln"></a>使用 `Serial.print()` 和 `Serial.println()`
 
-许多 Arduino 草绘使用 `Serial` 将数据打印到串行控制台 (如果打开) 或写入到 (USB 或 tx/rx) 的串行行。
-在以前版本的闪电 SDK 中， `Serial` 不包括硬件支持，因此我们提供了一个 `Log()` 函数，该函数将打印到 Visual Studio 中的 "调试器输出" 窗口。 `Serial.print*()` 或者 `Serial.write()` 必须删除。
+许多 Arduino 草图使用 将数据打印到串行控制台 (如果打开) ，或者将数据写入 USB 或 `Serial` tx/rx (串行) 。
+在早期版本的 Lightning SDK 中，未包括硬件支持，因此，我们提供了一个函数，该函数将输出到 Visual Studio `Serial` `Log()` 中的调试器输出窗口。 `Serial.print*()` 或 `Serial.write()` 必须删除。
 
-但是，从 _闪电 1.1.0_开始，我们添加了 `Hardware Serial` 支持，并 `Serial.print*()` `Serial.write()` 完全支持或函数。 因此，如果您要复制为 Arduino 生成的草绘，则不需要替换该草图的 Windows IoT 版本中的任何这些序列引用。
+但是，从 _Lightning SDK v1.1.0_ 开始，我们添加了支持，并且完全支持 或 `Hardware Serial` `Serial.print*()` `Serial.write()` 函数。 因此，如果要复制为 Arduino 构建的草图，则无需替换该草图的 Windows IoT 版本中的任何串行引用。
 
-此外，我们还扩展了和的 `Serial.print()` 功能 `Serial.println()` ，以便在附加调试器时输出到调试器窗口-除了写入硬件串行 pin 外。
-调试输出打印设置为默认值，因为在读取输出后，大多数用户都需要该输出。 但是，也可以禁用该功能;例如，为了提高性能，只需调用 `Serial.enablePrintDebugOutput(false);` 即可在草图中禁用它。 若要重新启用，请调用 `Serial.enablePrintDebugOutput(true);` 。 写入硬件串行端口不受这些调用的影响。
+此外，除了写入硬件串行引脚，我们还扩展了 和 的功能，以在附加调试器时输出到调试 `Serial.print()` `Serial.println()` 器窗口。
+调试输出打印设置为默认值，因为读取该输出是大多数用户在运行其草图时需要的输出。 但是，该功能也可以禁用;例如，若要提高性能，只需调用 以 `Serial.enablePrintDebugOutput(false);` 在草图中禁用它。 若要重新启用它，请调用 `Serial.enablePrintDebugOutput(true);` 。 写入硬件串行引脚不受这些调用的影响。
 
-请注意，不需要将任何外围设备连接到串行 pin （如 FTDI），即可获取发送到调试器窗口的输出。 但是，你需要确保在调试你的应用程序时调试器窗口处于打开状态。
+请注意，无需将任何外围设备附加到串行引脚（如 FTDI）中，就无需将输出发送到调试器窗口。 但是，需要在调试应用程序时确保调试器窗口已打开。
 
 ![调试器输出](../media/ArduinoWiringPortingGuide/debugger_output.png)
 
-已在 [Windows IoT Core 项目模板扩展页面](https://go.microsoft.com/fwlink/?linkid=847472) 上更新项目模板，以允许使用现成的硬件 `Serial` 。 但是，如果你的 Arduino 配应用程序已使用较旧的项目模板版本创建，则需要) 将项目升级到最新的闪电 SDK、v 1.1.0 或更高版本，并 2) 将所需的硬件串行设备功能添加到你的 Appxmanifest.xml，以便能够使用 `Serial` 。
+项目模板已在 Windows [IoT Core](https://go.microsoft.com/fwlink/?linkid=847472) Project 模板扩展页上更新，以启用"硬件 `Serial` "开箱即用。 但是，如果 Arduino 布线应用程序已使用较旧的项目模板版本创建，则需要 1) 将项目升级到最新的 Lightning SDK、v1.1.0 或更高版本，以及 2) 将所需的硬件串行设备功能添加到 AppxManifest 才能使用 `Serial` 。
 
 ### <a name="hardware-serial-device-capability-requirements"></a>硬件串行设备功能要求
 
-Windows 10 IoT Core 中的硬件串行功能要求向 AppX 清单添加设备功能声明。
+应用程序中的硬件串行Windows 10 IoT 核心版需要添加到 AppX 清单的设备功能声明。
 
-在 `Package.appxmanifest` "解决方案资源管理器" 中键入文件名，查找项目中的文件。 然后，右键单击该文件，然后选择 "打开方式 ..."。 选择 "XML (文本) 编辑器"，然后单击 "确定"。
+在解决方案 `Package.appxmanifest` 资源管理器中键入文件名，找到项目中的文件。 然后，右键单击该文件，然后选择"打开时..."。 选择"XML (文本) 编辑器"，然后单击"确定"。
 
-![正在更新包。 appxmanifest.xml](../media/ArduinoWiringPortingGuide/appxmanifest_search.png)
+![更新 Package.appxmanifest](../media/ArduinoWiringPortingGuide/appxmanifest_search.png)
 
-在 appx 清单文件编辑器中，将 `serialcommunication` DeviceCapability 添加到你的项目中，如以下 XML 代码片段所示：
+在 appx 清单文件编辑器中，将 `serialcommunication` DeviceCapability 添加到项目，如以下 XML 代码片段所示：
 
 ```xml
 <Capabilities>
@@ -331,14 +331,14 @@ Windows 10 IoT Core 中的硬件串行功能要求向 AppX 清单添加设备功
 </Capabilities>
 ```
 
-### <a name="upgrade-your-project-to-the-latest-lightning-sdk"></a>将项目升级到最新的闪电 SDK
+### <a name="upgrade-your-project-to-the-latest-lightning-sdk"></a>将项目升级到最新的 Lightning SDK
 
-Arduino 布线项目依赖于 [闪电 SDK Nuget 包](https://www.nuget.org/packages/Microsoft.IoT.Lightning/) 来实现所需的 Arduino 布线功能和声明，并与闪电驱动程序建立接口。 最新的闪电 SDK 将包含最新的改进和 bug 修复。 若要升级到最新的闪电 SDK，请执行以下步骤：
+Arduino 布线项目依赖于 Lightning [SDK Nuget](https://www.nuget.org/packages/Microsoft.IoT.Lightning/) 包来实现所需的 Arduino 布线函数和声明，以及与闪电驱动程序的接口。 最新的 Lightning SDK 将包含最新的改进和 bug 修复。 若要升级到最新的 Lightning SDK，请执行以下步骤：
 
-- 在解决方案资源管理器中，右键单击你的项目，然后单击 "管理 Nuget 包 ..."
-- 在 NuGet 包管理器中，切换到 "已安装" 选项卡。应会看到已安装的 ""
-- 可用版本将在 "版本" combobox 内列出。
-- 选择最新版本，并单击 "更新" 更新您的包。
-- 请注意，若要升级到预发布版本，请务必选中 "包括预发行版" 复选框。
+- 在解决方案资源管理器，右键单击项目，然后单击"管理 Nuget 包..."
+- 在NuGet 程序包管理器，转到"已安装"选项卡。应会看到已安装 Microsoft.IoT.Lightning 包
+- 可用版本将在"版本"组合框内列出。
+- 选择最新版本，然后单击"更新"以更新包。
+- 请注意，若要升级到预发行版本，请确保也选中"包括预发行版本"复选框。
 
-![NuGet 包管理器](../media/ArduinoWiringPortingGuide/Nuget_PackageManager.png)
+![NuGet包管理器](../media/ArduinoWiringPortingGuide/Nuget_PackageManager.png)

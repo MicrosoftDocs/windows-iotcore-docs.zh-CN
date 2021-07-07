@@ -1,5 +1,5 @@
 ---
-title: Windows 10 IoT Core 命令行实用程序
+title: Windows 10 IoT 核心版命令行实用程序
 author: bfjelds
 ms.author: bfjelds
 ms.date: 08/28/2017
@@ -8,14 +8,14 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解连接到设备后用于 PowerShell 的命令行实用程序。
 keywords: windows iot，命令行，命令行实用工具，PowerShell
-ms.openlocfilehash: 6ebfe67a07893aaead25b21955308cc3fa8a5eaa
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: b52f0ca49bfa27721099b2546d92e2ae0eda06e9
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91655473"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229434"
 ---
-# <a name="windows-10-iot-core-command-line-utils"></a>Windows 10 IoT Core 命令行 Utils
+# <a name="windows-10-iot-core-command-line-utils"></a>Windows 10 IoT 核心版命令行 Utils
 
 想要在设备上配置某些设置？ 以下工具可供你使用。 在 [连接到你的设备](../connect-your-device/PowerShell.md)后，使用 PowerShell 来运行这些命令。
 
@@ -25,7 +25,7 @@ ms.locfileid: "91655473"
 ## <a name="iot-core-specific-command-line-utils"></a>IoT Core 特定的命令行 Utils
 
 ### <a name="setting-startup-app"></a>**设置启动应用程序：**
-使用启动编辑器在 Windows IoT Core 设备上配置启动应用。 `IotStartup`用以下任一选项运行：
+使用启动编辑器在 Windows IoT 核心设备上配置启动应用。 `IotStartup`用以下任一选项运行：
 
 * `IotStartup list` 列出已安装的应用程序
 * `IotStartup list headed` 列出已安装的应用程序
@@ -60,11 +60,11 @@ ms.locfileid: "91655473"
 * `IotSettings set uilanguage language\_tag - (e.g. fr-CA)` 设置默认的 UI 语言加拿大法语) 
 * `IotSettings set speechlanguage language\_tag - (e.g. fr-CA)` 设置语音语言法语（加拿大）) 
 * `IotSettings set region region\_code - (e.g. CA)` 将默认区域设置为加拿大) 
-* `IotSettings set bluetoothpref {sink | source}` 指定在采用 IOT_BLUETOOTH_A2DP_SOURCE 和 IOT_BLUETOOTH_A2DP_SINK 功能构建的设备连接到同时支持这两种角色的另一台设备时要选择的蓝牙角色首选项。
-* `IotSettings get bluetoothpref` 返回 IOT_BLUETOOTH_A2DP_SOURCE 和 IOT_BLUETOOTH_A2DP_SINK 生成的设备的当前蓝牙角色首选项。  默认值为 source。
+* `IotSettings set bluetoothpref {sink | source}`指定在采用 IOT_BLUETOOTH_A2DP_SOURCE 和 IOT_BLUETOOTH_A2DP_SINK 功能构建的设备连接到同时支持这两种角色的另一台设备时要选择蓝牙角色首选项。
+* `IotSettings get bluetoothpref`返回 IOT_BLUETOOTH_A2DP_SOURCE 和 IOT_BLUETOOTH_A2DP_SINK 生成的设备的当前蓝牙角色首选项。  默认值为 source。
 
 > [!TIP]
-> `IoTSettings -list uiLanguage` 会在对其执行的 Windows IoT core 映像的版本中，为 (提供支持的 UI 语言的列表) 
+> `IoTSettings -list uiLanguage`会在对其执行的 Windows IoT 核心映像的版本中，为 (提供支持的 UI 语言列表) 
 
 ### <a name="change-default-audio-device-and-volume"></a>**更改默认音频设备和卷：**
 
@@ -97,7 +97,7 @@ DeployAppx getpackageid IotCoreDefaultApp.appx
 
 ### <a name="create-local-user-accounts"></a>**创建本地用户帐户：**
 
-如果要向其他人授予对 Windows IoT 核心设备的访问权限，可以通过键入来使用 PS 创建其他本地用户帐户 `net user [username] [password] /add` 。 如果希望将此用户添加到其他组（如管理员组），请使用 `net localgroup Administrators [username] /add` 。
+如果要向其他人授予对 Windows IoT 核心设备的访问权限，则可以通过键入来使用 PS 创建其他本地用户帐户 `net user [username] [password] /add` 。 如果希望将此用户添加到其他组（如管理员组），请使用 `net localgroup Administrators [username] /add` 。
 
 ### <a name="set-password"></a>**设置密码：**
 
@@ -105,11 +105,11 @@ DeployAppx getpackageid IotCoreDefaultApp.appx
 
 ### <a name="query-and-set-device-name"></a>**查询和设置设备名称：**
 
-若要确定当前设备名称，只需键入即可 `hostname` 。 若要更改 Windows IoT Core 设备的名称，请键入 `SetComputerName [new machinename]` 。 你可能需要重新启动设备以使名称更改生效。
+若要确定当前设备名称，只需键入即可 `hostname` 。 若要更改 Windows IoT 核心设备的名称，请键入 `SetComputerName [new machinename]` 。 你可能需要重新启动设备以使名称更改生效。
 
 ### <a name="basic-network-configuration"></a>**基本网络配置：**
 
-您可能已熟悉的许多基本网络配置实用工具在 Windows IoT Core （包括、、、、和等命令）中可用 `ping.exe` `netstat.exe` `netsh.exe` `ipconfig.exe` `tracert.exe` `arp.exe` 。
+您可能已熟悉的许多基本网络配置实用程序在 Windows IoT 核心中提供，其中包括、、、、 `ping.exe` 和等命令 `netstat.exe` `netsh.exe` `ipconfig.exe` `tracert.exe` `arp.exe` 。
 
 ### <a name="copy-utilities"></a>**复制实用工具：**
 
@@ -122,7 +122,7 @@ Microsoft 提供熟悉的工具，包括 `sfpcopy.exe` 和 `xcopy.exe` 。
 
 ### <a name="set-boot-option-headless-vs-headed-boot"></a>**设置启动选项 (无外设 vs Boot) ：**
 
-当需要显示功能时，可以将 Windows IoT Core 设备设置为 () 或无外设 (当) 设备模式下不需要或不可用时。 若要更改此设置，请使用 `setbootoption.exe [headed | headless]` 。
+Windows如果需要显示功能，可以将 IoT 核心设备设置为 () 或无外设 (当) 设备模式下不需要或不可用时。 若要更改此设置，请使用 `setbootoption.exe [headed | headless]` 。
 
 > [!NOTE]
 > 更改此设置将需要重新启动才能使更改生效。
@@ -141,11 +141,11 @@ Microsoft 提供熟悉的工具，包括 `sfpcopy.exe` 和 `xcopy.exe` 。
 
 ### <a name="services"></a>**服务：**
 
-可以通过命令来完成管理 Windows 服务 `net.exe` 。 若要查看正在运行的服务的列表，请键入 `net start` 。 若要启动或停止特定服务，请键入 `net [start | stop] [service name]` 。 此外，也可以通过命令使用服务控制管理器 `sc.exe` 。
+可以通过命令来实现 Windows 服务的管理 `net.exe` 。 若要查看正在运行的服务的列表，请键入 `net start` 。 若要启动或停止特定服务，请键入 `net [start | stop] [service name]` 。 此外，也可以通过命令使用服务控制管理器 `sc.exe` 。
 
 ### <a name="boot-configuration"></a>**启动配置：**
 
-你可以通过使用对 Windows IoT Core 设备的启动配置进行更改 `bcdedit.exe` 。 例如，可以使用命令来启用 testsigning `bcdedit –set testsigning on` 。
+你可以通过使用对 Windows IoT 核心设备的启动配置进行更改 `bcdedit.exe` 。 例如，可以使用命令来启用 testsigning `bcdedit –set testsigning on` 。
 
 ### <a name="shutdownrestart-device"></a>**关机/重新启动设备：**
 

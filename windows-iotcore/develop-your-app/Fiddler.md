@@ -4,14 +4,14 @@ ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解如何使用 Fiddler 在 Windows IoT Core 上捕获 Fiddler 跟踪。
+description: 了解如何使用 Fiddler 捕获 Windows IoT Core 上的 Fiddler 跟踪。
 keywords: windows iot，Fiddler，跟踪，PuTTY，Fiddler 跟踪
-ms.openlocfilehash: 266017cb6d649f04148dd3caf57d665613cdd4aa
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 11e246a2f1d373040c66c8ab0c723974712776ce
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656383"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229043"
 ---
 # <a name="capturing-fiddler-traces-on-windows-iot-core"></a>捕获 Windows IoT Core 上的 Fiddler 跟踪
 
@@ -53,7 +53,7 @@ Fiddler 是一种用于调试 web 流量的工具。 此方法特别有用，因
 ## <a name="setup-proxy-on-vm-or-iot-core-device"></a>在 VM 或 IoT 核心设备上设置代理
 以下步骤将允许 IoT VM 或设备通过电脑路由流量，使 Fiddler 可以捕获用于分析的网络流量：
 
-1. 通过_ipconfig_使用 CMD 控制台确定开发计算机的 IP
+1. 通过 _ipconfig_ 使用 CMD 控制台确定开发计算机的 IP
 2. 启动新的 SSH 会话，然后以 defaultUser 的身份登录 (Username： _DefaultAccount_  Pwd： _[空白]_ ) 
 3. 通过以下命令设置代理：
     * `reg add "hkcu\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 1`

@@ -6,12 +6,12 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解辅助功能以及如何将这些学习知识应用到下一应用程序或设备。
 keywords: Windows 10 IoT 核心版, Windows 10 IoT 企业版, 辅助功能, 颜色对比度
-ms.openlocfilehash: 95260c7af8358ea5850560b47faf87d6571b9440
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 80f4604accf3e349ec5a4ed860546902eb0da150
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657093"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229183"
 ---
 # <a name="an-overview-of-accessibility-for-windows-iot"></a>Windows IoT 辅助功能概述 
  

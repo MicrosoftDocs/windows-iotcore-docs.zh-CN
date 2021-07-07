@@ -4,18 +4,18 @@ ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解如何将 Microosft 认知服务和 OpenCV 用于 IoT 设备。
-keywords: windows iot，计算机视觉，认知服务，OpenCV
-ms.openlocfilehash: 42b4498ef94d2047144df79ea649d36273ec81bf
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+description: 了解如何对 IoT 设备使用 Microosft 认知服务和 OpenCV。
+keywords: windows iot， 计算机视觉， 认知服务， OpenCV
+ms.openlocfilehash: 47d195545bf4b59351c6a1b08b3d6f0d4f47b07c
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656023"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229694"
 ---
 # <a name="computer-vision"></a>计算机视觉
 
-人认为我们的三维世界是相对轻松的。 从早期的时代开始，我们的大脑可以收集有价值的见解，包括特征标识、障碍、障碍、协调、深度认知等。 计算机视觉尝试使用处理器和照相机来执行相同的操作。 对于当今的设备，它具有无数个应用程序。 无人机可以使用它快速检测并避免在飞行期间发生障碍;工厂可以使用它来检测程序集线条上最小组件中的修饰缺陷;用户可以使用它来检测其心率，而无需使用显示器或医生的设备。 我们的数据中心世界使计算机视觉成为一个非常活跃的研究领域。 公司在本来就十年前的方式中利用它。 随着计算机、照相机和数据在我们的社会中变得越来越根深蒂固，使用计算机视觉的最令人兴奋的功能应尽可能易于访问和使用。 Windows 10 IoT Core 尝试通过与两个产品/服务的兼容性来满足此需求： Microsoft 认知服务和 OpenCV。
+人类相对容易地感知我们的三维世界。 从早期开始，我们的大脑可以收集有价值的见解，包括特征识别、障碍规避、协调、深度感知，以及来自视觉障碍的许多其他见解。 计算机视觉是尝试使用处理器和相机执行相同的操作。 它拥有适用于当今设备的数个应用程序。 无人机可以使用它在飞行期间快速检测和避免障碍;工厂可以使用它来检测装配线上最小组件中的修饰缺陷;并且一个人可以使用它来检测其心动率，而无需使用监视器或医生的设备。 以数据为中心的世界使计算机视觉成为一个非常活跃的研究领域。 公司以十年前无法实现的方式利用它。 随着计算机、照相机和数据在我们的社会越来越受到支持，应尽量使利用计算机视觉最令人心动的功能的工具变得易于访问和使用。 Windows 10 IoT 核心版 Microsoft 认知服务和 OpenCV 这两个产品/服务，尝试满足此需求。
 
 ## <a name="services"></a>服务
 ___
@@ -23,72 +23,72 @@ ___
 ### <a name="cognitive-services"></a>认知服务
 
 #### <a name="overview"></a>概述
-认知服务最初称为 Project Oxford 的 Microsoft 研究项目，是一组执行高级 "认知任务" 的 Api。 这些 Api 基于经过高度训练的机器学习模型，从 Microsoft Research 探索和开发的多年来获取见解。
+认知服务最初是名为 Project 的 Microsoft Research 项目，是执行高级"认知任务"的 API 集合。 这些 API 基于 Microsoft Research 多年来的探索和开发中经过高度训练的机器学习模型，从数据中拉取见解。
 
-认知服务包括5个类别：视觉、语音、语言、知识和搜索。
+认知服务由 5 个类别组成：视觉、语音、语言、知识和搜索。
 
-可在认知服务 [网站](https://www.microsoft.com/cognitive-services)上找到有关认知服务的详细信息。
+可以在认知服务网站上找到有关认知服务 [详细信息](https://www.microsoft.com/cognitive-services)。
 
-"远景" 类别是计算机视觉应用程序的最有价值的类别，其中包含四个 Api：计算机视觉、情感、脸和视频。 这些 Api 提供以下功能：
+视觉类别是计算机视觉应用程序最有价值的类别，包含四个 API：计算机视觉、情感、人脸和视频。 这些 API 提供以下功能：
 - 面部识别
 - 动作检测
 - 情感识别
-- 视频抖动
+- 视频稳定
 - 图像内容分析
 
-认知服务非常适合处理大量数据、访问 Microsoft Azure 并大大降低应用程序的上市时间，因为远景 Api 通常会证明是独立开发的时间。 由于 Microsoft 调研的努力，为这些 Api 使用的模型具有良好的培训和广泛的内容。 另一方面，其云连接性要求可降低系统性能，并为 internet 连接产生要求。
+认知服务非常适用于处理大量数据、访问 Microsoft Azure，并极大地缩短应用程序的上市时间，因为视觉 API 通常证明独立开发非常耗时。 由于 Microsoft Research 的工作，用于这些 API 的模型经过良好训练且广泛。 另一方面，其云连接要求会降低系统性能，并创建 Internet 连接的要求。
 
 #### <a name="pricing"></a>定价
-每个 API 订阅都附带一组免费事务，每月 (300 到30000，具体取决于 API) 。 超过此初始金额后，服务会提供合理的价格。 例如，情感 API 免费提供前30000个事务，并且在此之后需要 $0.10 或 $0.25 每个1000事务，具体取决于订阅类型。
+每个 API 订阅每月附带一组免费事务 (300 到 30，000 个，具体取决于 API) 。 超过此初始金额后，服务会提供合理的价格。 例如，情感 API 免费提供前 30，000 个事务，之后每 1000 个事务需要 $0.10 或 $0.25，具体取决于订阅类型。
 
-有关认知服务定价的详细信息，请参阅他们的 [网站](https://www.microsoft.com/cognitive-services/en-us/pricing)。
+有关认知服务定价的更多详细信息，请参阅其 [网站](https://www.microsoft.com/cognitive-services/en-us/pricing)。
 
-#### <a name="get-started"></a>开始使用
-若要使用认知服务，用户必须在认知 Services 网站注册，才能接收 API 密钥。 向认知服务提供 API 密钥后，用户可以在 "定价" 部分中提到的限制内调用 Api。
+#### <a name="get-started"></a>入门
+若要使用认知服务，用户必须在 Congitive Services 网站上注册以接收 API 密钥。 向认知服务提供 API 密钥后，用户可以在"定价"部分中提到的限制内调用 API。
 
-有关每个 API 的文档，请参阅认知服务 [网站](https://www.microsoft.com/cognitive-services/en-us/documentation)。
+可以在认知服务网站上找到每个 API [的文档](https://www.microsoft.com/cognitive-services/en-us/documentation)。
 
-所有认知服务 API 都可以使用 c # 在任何硬件平台上实现。
+所有认知服务 API都可以通过 C# 在任何硬件平台上实现。
 
-想要在 IoT 设备上运行认知服务？ 请访问我们的 [教程](https://developer.microsoft.com/en-us/windows/iot/samples/cognitiveservices) ，开始学习。
+想要在 IoT 设备上运行认知服务？ 请访问 [我们的教程](https://developer.microsoft.com/en-us/windows/iot/samples/cognitiveservices) 以开始使用。
 
 ### <a name="opencv"></a>OpenCV
 
-OpenCV 是一种开放源计算机视觉和机器学习软件库，专为计算效率和实时应用程序而设计。 由于其高效率、丰富的工具、对各种平台的支持以及使开发人员生动生动的在线社区，因此它在开发人员和行业中广泛受欢迎。 目前为止，它是最受欢迎的开源计算机视觉工具。 OpenCV 库适用于 C/c + +、Java 和 c #。
+OpenCV 是一种开源计算机视觉和机器学习软件库，专为计算效率和实时应用程序设计。 它以前所未有的效率、通用工具、对各种平台的支持以及活跃的在线开发人员社区，在开发人员和行业中广泛使用。 它是到目前为止最常用的开源计算机视觉工具。 OpenCV 库适用于 C/C++、Java 和 C#。
 
-OpenCV [网站](http://opencv.org/) 提供其他详细信息。
+OpenCV [网站提供了](http://opencv.org/) 更多详细信息。
 
 OpenCV 功能：
 - 本地图像和视频处理和分析
 - 实时对象标识、匹配和跟踪
 - 实时面部识别
-- 从图像和实时确定的距离
-- 3D 映射/建模/重建
-- 图像编辑 (如组合和颜色更改) 
+- 从图像和实时距离确定
+- 3D 映射/建模/重构
+- 图像编辑 (，如合成和颜色更改) 
 
-OpenCV 提供了许多优势。 由于优化的 C/c + + 内部机制和使用 OpenCL 的 GPU 访问 GPU （如果启用了)  (），这种方法非常有效。 它包含当前可用的大多数计算机视觉功能。 它的生存期和实用工具形成了丰富且经验丰富的在线社区，可帮助新用户解决应用程序或库问题。 另一方面，由于复杂的代码和库设置以及教程和示例代码中的不一致，还会出现一条陡的学习曲线。
+OpenCV 具有许多优点。 它非常适用于本地数据处理，因为优化了 C/C++ 内部机制，并且它使用 OpenCL (访问 GPU（如果) ）。 它包含当前可用的大多数（如果不是全部）计算机视觉功能。 其长期性和实用工具已形成一个广泛且经验丰富的在线社区，可帮助新用户解决应用程序或库问题。 另一方面，由于复杂的代码和库设置以及教程和示例代码中的不一致，存在一个复杂的学习曲线。
 
-目前，使用 IoT Core 的 OpenCV 仅适用于用户基于源构建库，这可能会非常耗时。 为此，我们正在积极努力通过为其创建 NuGet 包集合来更轻松地在 IoT Core 上设置 OpenCV。 通过认知服务使用的 NuGet 包，开发人员只需单击几下鼠标，即可将预构建的库导入到其应用程序中。 使用 NuGet 包的应用程序将继续从专用服务器接收库更新;当开源软件发生公开更改时，用户无需重新生成新的源代码。 包还可使用库中的部件来释放设备上的存储空间。
+目前，只有当用户从源生成库时，具有 IoT Core 的 OpenCV 才有效，这很耗时。 因此，我们正在努力通过为 IoT Core 创建一组 NuGet包，使 OpenCV 更易于设置。 认知NuGet包允许开发人员将预构建的库导入到其应用程序中，通过单击几下鼠标即可提供完整的功能。 使用 NuGet 包的应用程序将继续从专用服务器接收库更新;当对开源软件进行公共更改时，用户不需要重新生成新的源代码。 该包还仅使用库的某些部分来节省设备的存储空间。
 
-当前正在进行一项工作，请继续检查 WindowsOnDevices.com 是否有更新！
+这是当前正在处理的工作，因此请 WindowsOnDevices.com 更新！
 
-同时，若要从 ARM 的源构建库，请访问 [GitHub 存储库](https://github.com/Microsoft/opencv/tree/vs2015-samples-ARM)。
+同时，若要从 ARM 的源生成库，请访问GitHub[存储库](https://github.com/Microsoft/opencv/tree/vs2015-samples-ARM)。
 
-想要在 IoT Core 设备上运行 OpenCV？ 请访问我们的 [教程](https://developer.microsoft.com/en-us/windows/iot/samples/opencv) ，开始学习。
+想要在 IoT Core 设备上运行 OpenCV？ 请访问 [我们的教程](https://developer.microsoft.com/en-us/windows/iot/samples/opencv) 以开始使用。
 
 ## <a name="comparing-opencv-and-cognitive-services"></a>比较 OpenCV 和认知服务
 
 > |功能|Microsoft 认知服务|OpenCV|
 > |---------------------|--------|------|
-> |易于在 Windows 上使用|是|否 |
+> |易于在 Windows|是|否 |
 > |体系结构支持|ARM、x86、x64 | ARM、x86、x64|
 > |面部识别和跟踪| 是 | 是|
 > |情感识别| 是 | 是|
-> |3D 重建和映射| 否 | 是|
-> |内容检测| 检测常规功能，而不是特定对象 | 是|
-> |视频抖动| 是 | 是|
+> |3D 重构和映射| 否 | 是|
+> |内容检测| 检测常规功能而不是特定对象 | 是|
+> |视频稳定| 是 | 是|
 > |动作检测| 是 | 是|
-> |社区| 认知服务包含多个行业的多个活动用户和几个热门网站，包括 how-old.net 和 celebslike.me | OpenCV 是非常受欢迎的开源项目;成千上万的人对 it 做出了贡献并维护了|
+> |社区| 认知服务在多个行业和一些热门网站中有许多活跃用户，包括 how-old.net celebslike.me | OpenCV 是一个非常受欢迎的开源项目;成千上万的人为它贡献并维护了它|
 > |文档| 认知服务具有全面的清晰文档 | 可以联机使用许多示例，但每个示例都是由不同的人编写的，因此，可能会不一致。|
 > |免费| 是的， [此处](https://azure.microsoft.com/pricing/details/cognitive-services/) (详细信息)  | 是|
 > |性能| 所有操作和 API 调用都需要访问云中的数据 | 所有算法经过优化和本地，使用 c + + 而不是 Python 会进一步提高速度|

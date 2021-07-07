@@ -1,21 +1,21 @@
 ---
-title: Windows 10 IoT Core 上的 VPN
+title: Windows 10 IoT 核心版上的 VPN
 ms.date: 11/19/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解如何为 Windows 10 IoT Core 设备使用、设置和配置 VPN 功能。
+description: 了解如何使用、设置和配置 Windows 10 IoT 核心版设备的 VPN 功能。
 keywords: windows iot，VPN，安装程序，设备
-ms.openlocfilehash: f5ba6bf38ee76228617fd31d95b28d2d8d42eb7a
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 09ac16c2e653efdb0abde7b5ef2e3b07736a4f6c
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656553"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229854"
 ---
-# <a name="leveraging-vpn-capabilities-for-your-windows-10-iot-core-device"></a>为 Windows 10 IoT Core 设备利用 VPN 功能
+# <a name="leveraging-vpn-capabilities-for-your-windows-10-iot-core-device"></a>利用 Windows 10 IoT 核心版设备的 VPN 功能
 
-若要利用 Windows 10 IoT Core 的 VPN 功能，请按照以下说明进行操作。
+若要利用 Windows 10 IoT 核心版的 VPN 功能，请按照下面的说明进行操作。
 
 > [!NOTE]
 > 以下大多数说明必须经过改编。 它们特定于用户连接到的 VPN 主机。 使用的证书是示例。
@@ -49,13 +49,13 @@ certmgr -add .\RootCA.crl -r currentuser -s my
 
 4. 修复主机文件将条目添加到 c:\windows\system32\driverS\etc\hosts 文件 (示例如下) ;
 
-> | IP 地址 | 域名 | 备注 |
+> | IP 地址 | 域名 | 注意 |
 > |----|----| ---|
 > | 10.10.10.10 | MyVPN.DomainName.org | 根据需要将替换为 IP 地址和域名 |
 
 5. 生成 VPN 测试应用替换源代码中的 "MyVPN.DomainName.org"。 根据需要进一步增加。
 
-6. 将下面的代码部署到 Windows 10 IoT 设备的 "启动和停止 VPN 连接" 部分。
+6. 将以下代码部署到 Windows 10 IoT 设备的 "启动和停止 VPN 连接" 部分。
 输入任意 "配置文件名称"，并按 "连接到 VPN" 按钮。
 
 

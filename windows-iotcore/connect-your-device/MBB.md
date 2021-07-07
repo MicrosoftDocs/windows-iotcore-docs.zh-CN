@@ -4,18 +4,18 @@ ms.date: 06/12/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 使用适用于 Windows 10 IoT Core 的 Mobile 宽带连接。 使用 MBBConnect 工具帮助在 IoT Core 中设置移动宽带连接的配置。
+description: 使用移动宽带连接进行 Windows 10 IoT 核心版。 使用 MBBConnect 工具帮助在 IoT Core 中设置移动宽带连接的配置。
 keywords: windows iot，MBB，mobile 宽带连接
-ms.openlocfilehash: f99bd1a4a710e78b6d5dacdbc5b30bf9cc23b947
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: b931f670d0176076fb2120ced81048b55fa053bf
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656633"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229173"
 ---
 # <a name="mobile-broadband-connection"></a>移动宽带连接
 
-[Windows 10 IoT Core](http://windowsondevices.com)支持移动宽带连接。 如果 IoT 网关支持移动宽带调制解调器模块，则可以使用该 `MBBConnect` 工具来帮助在 IoT Core 中设置移动宽带连接的配置。
+[Windows 10 IoT 核心版](http://windowsondevices.com)上支持移动宽带连接。 如果 IoT 网关支持移动宽带调制解调器模块，则可以使用该 `MBBConnect` 工具来帮助在 IoT Core 中设置移动宽带连接的配置。
 
 `MBBConnect` 检索连接的相关信息，例如订户 ID、SIM ICC ID、接口名称和 home 提供商名称等。然后，它会创建连接配置文件。 你需要执行的唯一操作是提供 APN，并会自动设置连接。
 

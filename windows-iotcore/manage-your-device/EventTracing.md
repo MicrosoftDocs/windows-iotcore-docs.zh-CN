@@ -1,43 +1,43 @@
 ---
-title: Windows IoT Core 事件跟踪
+title: Windows IoT 核心的事件跟踪
 ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解如何使用事件跟踪为 Windows IoT Core 编写事件和使用事件。
+description: 了解如何使用事件跟踪为 Windows IoT 核心编写事件和使用事件。
 keywords: windows iot，事件跟踪，ETW，windows 事件跟踪，设备
-ms.openlocfilehash: 7c9a8169205219367979c780c1138257147a2ea9
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: faf7fd9e4269ba8885ca9613dde03c0c080d2363
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91655483"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113228613"
 ---
-# <a name="event-tracing-for-windows-iot-core"></a>Windows IoT Core 事件跟踪
+# <a name="event-tracing-for-windows-iot-core"></a>Windows IoT 核心的事件跟踪
 
-Windows 事件跟踪 (ETW) 使开发人员能够启动和停止事件跟踪会话，检测应用程序以提供跟踪事件，并使用跟踪事件。
-Windows IoT Core 设备上的 ETW 支持基于清单的事件和典型事件，与其他 Windows 10 设备并无区别。
+对于 Windows (ETW) 的事件跟踪，使开发人员能够启动和停止事件跟踪会话，检测应用程序以提供跟踪事件，并使用跟踪事件。
+Windows IoT 核心设备上的 ETW 支持基于清单的事件和典型事件，并且与其他 Windows 10 设备没有区别。
 
-本部分将提供有关编写和使用事件的基本知识的有用链接。 从 [Windows 事件跟踪页](https://msdn.microsoft.com/library/windows/desktop/bb968803(v=vs.85).aspx)中查找更多详细信息。
+本部分将提供有关编写和使用事件的基本知识的有用链接。 从 " [Windows 事件跟踪" 页](https://msdn.microsoft.com/library/windows/desktop/bb968803(v=vs.85).aspx)中查找更多详细信息。
 
 ## <a name="writing-events"></a>写入事件
 
-查找一个 UWP 示例，用于实现在 [Windows 通用示例 GitHub](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Logging)中编写事件的不同方法。
-这会在 Windows IoT Core 设备上运行，也是一种很好的代码参考。
+查找可实现不同方法的 UWP 示例，作为[Windows 通用示例 GitHub](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Logging)的一部分。
+这会在 Windows IoT 核心设备上运行，也是一种很好的代码参考。
 
 可在 [此处](https://msdn.microsoft.com/library/windows/desktop/aa364161(v=vs.85).aspx)找到有关写入事件和获取 guid 的详细指南。
 
 ## <a name="consuming-events"></a>使用事件
 
 事件要么保存到 ETL 文件中，要么是实时捕获的。
-使用 [FTP](../connect-your-device/FTP.md) 或 [windows 文件共享](../manage-your-device/WindowsFileSharing.md) 从 Windows IOT Core 设备检索 ETL 文件。
+使用[FTP](../connect-your-device/FTP.md)或[Windows 文件共享](../manage-your-device/WindowsFileSharing.md)从 Windows IoT 核心设备检索 ETL 文件。
 
 ## <a name="use-tools-in-windows-assessment-and-deployment-kit"></a>使用 Windows 评估和部署工具包中的工具
 
-[Windows 评估和部署工具包](https://go.microsoft.com/fwlink/p/?LinkId=526740) 包含三种工具来帮助捕获和分析事件。
+[Windows 评估和部署工具包](https://go.microsoft.com/fwlink/p/?LinkId=526740)包含三种工具来帮助捕获和分析事件。
 
 
-1. **Windows 性能分析器**直观显示桌面上的 ETL 文件[，其中包含分步指南。](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx)
+1. **Windows 性能分析器** 会直观显示桌面上的 ETL 文件 [，其中包含分步指南。](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx)
 
 2. **Xperf 命令行工具** 捕获实时事件并将其写入 ETL 文件。 此工具已安装在 Windows IoT Core 设备上，只需在设备上运行以下命令：
 ```

@@ -5,12 +5,12 @@ ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-ms.openlocfilehash: 17acb3c7b7a2da178f22ed3fdaa6c1f0ddef7ea2
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 297a8af9cf60a68a347d4317813635ded9f7e745
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657073"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229193"
 ---
 # <a name="downloads"></a>下载
 下载 Windows 10 IoT 核心版入门所需的工具和软件。

@@ -6,12 +6,12 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 阅读 Windows 10 IoT 的 2018 年 10 月更新的发行说明。 查看新增功能，了解已分配的访问权限的改进之处等等。
 keywords: Windows IoT，2018 年 10 月更新，发行说明
-ms.openlocfilehash: c9aa6553572496c2636756119e0728a5f3bc91ef
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 394914339e46aec4435ad418a73a2f64ee7fa1b5
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657323"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230264"
 ---
 # <a name="october-2018-update-release-notes-for-windows-10-iot"></a>适用于 Windows 10 IoT 的 2018 年 10 月更新的发行说明
 内部版本号 17763。 2018 年 10 月

@@ -1,27 +1,27 @@
 ---
-title: 带有 Windows 10 IoT Core 的网络3D 打印机
+title: 带 Windows 10 IoT 核心版的网络3d 打印机
 ms.date: 09/05/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解如何将 Windows 10 IoT Core 设备转换为打印服务器，并将3D 打印机连接到该服务器。
+description: 了解如何将 Windows 10 IoT 核心版设备变为打印服务器，并将3d 打印机连接到该服务器。
 keywords: windows iot，3D，3D 打印机，打印服务器，网络3D 打印机
-ms.openlocfilehash: f84870f48120df323794737b39b19612fa037aa6
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: baa3c25ba703e0e16eeb6a89ba5f5950f461ce45
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656063"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113228923"
 ---
-# <a name="network-3d-printer-with-windows-10-iot-core"></a>带有 Windows 10 IoT Core 的网络3D 打印机
+# <a name="network-3d-printer-with-windows-10-iot-core"></a>带 Windows 10 IoT 核心版的网络3d 打印机
 
-将 Windows 10 IoT Core 设备转换为打印服务器，并将3D 打印机连接到该服务器。 你将能够从其他设备通过无线方式访问打印机。
+将 Windows 10 IoT 核心版设备变为打印服务器，并将3d 打印机连接到该服务器。 你将能够从其他设备通过无线方式访问打印机。
 
-## <a name="1-install-windows-10-iot-core-on-your-device"></a>1. 在设备上安装 Windows 10 IoT Core
+## <a name="1-install-windows-10-iot-core-on-your-device"></a>1. 在设备上安装 Windows 10 IoT 核心版
 ___
 在开始之前，你将需要：
 
-* 安装了最新版本的 Windows 10 IoT Core 内幕预览版的板。 请按照 [入门指南](https://developer.microsoft.com/en-us/windows/iot/getstarted) 获取 IoT 面板应用并安装 Windows 10 IoT Core。
+* 安装了最新版本的 Windows 10 IoT 核心版有问必答 preview 的板。 按照[入门指南](https://developer.microsoft.com/en-us/windows/iot/getstarted)获取 IoT 面板应用并安装 Windows 10 IoT 核心版。
 * 与我们的网络3D 打印机应用兼容的3D 打印机：
 
     * Lulzbot Taz 6
@@ -38,9 +38,9 @@ ___
 
 ## <a name="2-connect-your-3d-printer-to-your-device"></a>2. 将3D 打印机连接到设备
 ___
-* 使用 USB 电缆将3D 打印机插入到 Windows 10 IoT 核心板。
+* 使用 USB 电缆将3d 打印机插入 Windows 10 IoT 核心版板。
 
-    ![将3D 打印机连接到设备](../media/3DPrintServer/connect-3d-printer.png)
+    ![连接3D 打印机到设备](../media/3DPrintServer/connect-3d-printer.png)
 
 * 打开 IoT 面板应用并验证设备是否显示在 " **我的设备** " 选项卡中。
 
@@ -83,7 +83,7 @@ PrintDeviceCapabilities xml 中的其他值用于通知3d 打印驱动程序中�
 
 ## <a name="4-add-your-3d-printer"></a>4. 添加3D 打印机
 ___
-* 请切换到 Windows 10 电脑，并中转到 "**设置**" "设备" "打印机"  ->  **Devices**  ->  **& 扫描器**"。
+* 中转到 Windows 10 PC，并中转到 **设置**  ->  **设备**  ->  **打印机 & 扫描仪**。
 * 按 " **添加打印机或扫描程序**"。
 
      ![Windows 设置添加设备](../media/3dprintserver/add-printer.png)

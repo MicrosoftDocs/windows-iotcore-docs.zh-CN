@@ -5,12 +5,12 @@ metadata:
   description: 了解适用于 IoT 的 Windows，以便开发自己的联网嵌入式解决方案。
   ms.topic: landing-page
   ms.date: 09/04/2019
-  ms.openlocfilehash: 17bf9a9372982360714c663bcf1460de40244f3a
-  ms.sourcegitcommit: d048cc83c8a916bc761f5065e880d3555758321c
+  ms.openlocfilehash: 1b5ebf44c19c992ed7bca1a17f4ab2617cc8f9c8
+  ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/06/2021
-  ms.locfileid: "102247140"
+  ms.lasthandoff: 07/02/2021
+  ms.locfileid: "113228803"
 landingContent:
 - title: 关于适用于 IoT 的 Windows
   linkLists:

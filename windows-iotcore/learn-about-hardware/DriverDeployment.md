@@ -6,20 +6,20 @@ ms.date: 08/22/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 在 Windows 10 IoT Core 上构建并部署驱动程序。 配置你的 Visual Studio 驱动程序项目，以便可以编译和部署特定平台的驱动程序。
+description: 在 Windows 10 IoT 核心版上生成和部署驱动程序。 配置 Visual Studio 驱动程序项目，以便可以编译和部署特定平台的驱动程序。
 keywords: windows 10 IoT Core，驱动程序部署
-ms.openlocfilehash: 772cd46022a69f68ebfd9ec79c7c2eb3fe7933c0
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: ecb82e744a0ffc80697eb164362aa9029d1d4202
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91655903"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113228913"
 ---
 # <a name="driver-deployment"></a>驱动程序部署
 
-使用 Visual Studio 在 Windows 10 IoT Core 上部署驱动程序。
+使用 Visual Studio 在 Windows 10 IoT 核心版上部署驱动程序。
 
-配置你的 Visual Studio 驱动程序项目，以便可以在驱动程序开发阶段为特定平台编译和部署驱动程序。
+配置 Visual Studio 驱动程序项目，以便可以在驱动程序开发阶段为特定平台编译和部署驱动程序。
 
 对于本练习，可以使用 [gpiokmdfdemo 示例驱动程序](https://github.com/ms-iot/samples/tree/develop/DriverSamples)。
 
@@ -30,13 +30,13 @@ ___
 
 ### <a name="on-the-device"></a>在设备上
 
-* 请确保你的设备按照 [入门说明](https://go.microsoft.com/fwlink/?linkid=860461)安装了 IoTCore 映像。
-* 通过 [PowerShell](../connect-your-device/PowerShell.md)连接到你的设备。
+* 请确保你的设备按照[入门说明](https://go.microsoft.com/fwlink/?linkid=860461)安装了 IoTCore 映像。
+* 通过[PowerShell](../connect-your-device/PowerShell.md)将连接到设备。
 
 ### <a name="on-the-pc"></a>在电脑上
 
-* 请确保已安装 Visual Studio 2017。
-* 安装 [Windows 驱动程序工具包](https://developer.microsoft.com/windows/hardware/windows-driver-kit)。  你将需要安装 SDK 和 WDK。
+* 请确保已安装 2017 Visual Studio。
+* 安装[Windows 驱动程序工具包](https://developer.microsoft.com/windows/hardware/windows-driver-kit)。  你将需要安装 SDK 和 WDK。
 * 安装证书，以便对驱动程序进行正确签名，并且可以在设备上运行。 从提升权限的命令提示符处执行下列命令：
 
     1.  `cd c:\Program Files (x86)\Windows Kits\10\Tools\bin\i386`
@@ -49,9 +49,9 @@ ___
     2.  `md “WdkTempFiles”` 手动创建 "WdkTempFiles" 目录这是工具中 bug 的一种解决方法，只需在 PC 中执行 *一次* 。
 
 
-## <a name="step-2-provision-device-with-visual-studio"></a>步骤2：在 Visual Studio 中预配设备
+## <a name="step-2-provision-device-with-visual-studio"></a>步骤2：设置设备与 Visual Studio
 ___
-* 打开 Visual Studio 并选择 " **驱动程序" > 测试 > 配置设备 > 添加新设备**
+* 打开 Visual Studio，然后选择 "**驱动程序" > 测试 > 配置设备 > "添加新设备**"
     * 如果未显示 "驱动程序" 菜单选项，请检查是否安装了 SDK。
 
 * 在 " **设备配置** " 对话框中，
@@ -71,26 +71,26 @@ ___
   ![配置调试设置](../media/DriverDeployment/confdbgsettings.png)
 
     * Raspberry Pi 使用串行进行内核调试。
-       *  将相应的串行调试电缆连接到 PI 和主机
+       *  连接相应的串行调试电缆连接到 PI 和主机
        *  为连接类型选择 " **串行** "
        *  针对 Raspberry Pi 填写参数的其余部分。
        *  选择“下一步”
 
 * 通过 VS，WDK 现在将预配 IoT 设备。  将在设备上安装 TAEF 和 WDTF，并按上面提供的设置针对内核调试设置设备。
 
-* 完成后，设备可能会重新启动。  **设备配置**上的进度屏幕将提供状态，并在 IoT 设备完成安装后显示完成。 按 " **完成**"。
+* 完成后，设备可能会重新启动。  **设备配置** 上的进度屏幕将提供状态，并在 IoT 设备完成安装后显示完成。 按 " **完成**"。
 
 ![配置进度](../media/DriverDeployment/confprogress.png)
 
-* 设备现已设置，**设备测试配置**状态显示为 "**驱动程序测试**"
+* 设备现已设置，**设备测试配置** 状态显示为 "**驱动程序测试**"
 
 ![配置设备](../media/DriverDeployment/ConfigureDevices.png)
 
 ## <a name="step-3-configure-visual-studio-driver-project"></a>步骤3：配置 Visual Studio 驱动程序项目
 ___    
-1. 在管理员模式下启动 Visual Studio，然后打开 visual studio 驱动程序项目。
-2. 请确保目标平台版本与开发计算机上安装的 SDK 匹配。 从 "解决方案资源管理器" 窗口中选择 "项目属性"。  在 "常规配置属性" 下，确保目标平台版本与开发计算机上安装的 SDK 匹配。  可以从 "控制面板" 中检查 SDK 的版本， **> 程序 ">" 程序和功能**"。
-3. 在 " **Project > Visual C++ > Windows 驱动程序添加新项" >**，选择 " **包清单** " 并按 " **添加**"。
+1. 在管理员模式下启动 Visual Studio，并打开 Visual Studio 驱动程序项目。
+2. 请确保目标平台版本与开发计算机上安装的 SDK 匹配。 从 "解决方案资源管理器" 窗口中选择 Project 属性。  在 "常规配置属性" 下，确保目标平台版本与开发计算机上安装的 SDK 匹配。  可以从 "控制面板" 中检查 SDK 的版本， **> 程序 ">" 程序和功能**"。
+3. 在 " **Project >" 添加新项 "> Visual C++ > Windows 驱动程序**"，选择 "**包清单**" 并按 "**添加**"。
 
 ![程序包清单](../media/DriverDeployment/PackageManifest.png)
 
@@ -98,11 +98,11 @@ ___
 
 ![包 .pkg xml](../media/DriverDeployment/Package-pkg-xml.png)
 
-4. 在 **项目属性 > PackageGen > 版本**中设置包版本号。 请注意，每次需要执行驱动程序的安装/重新安装时，此版本号必须递增。
+4. Project 属性设置包版本号 **> PackageGen > 版本**。 请注意，每次需要执行驱动程序的安装/重新安装时，此版本号必须递增。
 
 ![包版本](../media/DriverDeployment/PackageVersion.png)
 
-5. 在 " **项目属性 > 驱动程序签名" > 测试证书**"下，选择" 测试证书 (电话 OEM 测试证书 ") 
+5. 在 " **Project 属性" > 驱动程序签名 > 测试证书**"下，选择" 测试证书 (电话 OEM 测试证书) 
 
 ![DriverSigning](../media/DriverDeployment/DriverTestSigning.png)
 
@@ -110,20 +110,20 @@ ___
 
 ![安装选项](../media/DriverDeployment/installOptions.png)
 
-* 从 " **目标设备名称** " 下拉列表中，选择在预配过程中创建的目标。 请注意两个用于 **安装/重新** 安装和 **快速重新安装**的选项。 选择一个选项，然后单击 **"确定"**。
-* **安装/重新安装** 用于向目标驱动程序的初始安装。  这将使用 Windows 更新堆栈安装驱动程序包，可能需要几分钟时间。 每次更改 INF 文件时都必须使用此文件。
+* 从 " **目标设备名称** " 下拉列表中，选择在预配过程中创建的目标。 请注意两个用于 **安装/重新** 安装和 **快速重新安装** 的选项。 选择一个选项，然后单击 **"确定"**。
+* **安装/重新安装** 用于向目标驱动程序的初始安装。  这会使用 Windows 更新堆栈安装驱动程序包，可能需要几分钟时间。 每次更改 INF 文件时都必须使用此文件。
 
 > [!TIP]
 > 在初始安装后，每次用此选项安装驱动程序时，包版本号必须递增。
 
-* 安装驱动程序后，可以使用**快速重新安装**，并且不会对驱动程序 INF 文件进行后续更改，这会影响注册表。  此方法将绕过安装过程，关闭与驱动程序相关的所有 devnodes，将驱动程序复制到，并重新启动 devnode。  这会花费几个 ( # B0 20) 秒。
+* 安装驱动程序后，可以使用 **快速重新安装**，并且不会对驱动程序 INF 文件进行后续更改，这会影响注册表。  此方法将绕过安装过程，关闭与驱动程序相关的所有 devnodes，将驱动程序复制到，并重新启动 devnode。  这需几 (<20) 秒。
 
 
 > [!WARNING]
 > 不保证此方法成功-如果由于某种原因无法关闭 devnode 来释放驱动程序，操作将失败。  这可能是由硬件故障或驱动程序的初始错误实现引起的。  在这种情况下，必须使用 "安装/重新安装" 选项。
 
 
-你的 Visual Studio 项目现在已准备好生成驱动程序并将其部署到目标设备。 如果使用的是示例 gpiokmdfdemo 驱动程序，则需要生成 ACPI 表，并将其复制到目标设备，然后按照在 [Visual Studio 中生成驱动程序](https://developer.microsoft.com/windows/iot/samples/driverlab2)中的步骤进行操作。
+Visual Studio 项目现在已准备好生成驱动程序并将其部署到目标设备。 如果使用的是示例 gpiokmdfdemo 驱动程序，则需要生成 ACPI 表，并将其复制到目标设备，然后按照[Visual Studio 中生成驱动程序](https://developer.microsoft.com/windows/iot/samples/driverlab2)中的步骤进行操作。
 
 
 ## <a name="step-4-build-and-deploy-driver"></a>步骤4：生成并部署驱动程序
@@ -138,34 +138,34 @@ ___
 
 ![选择“部署”](../media/DriverDeployment/deploy.png)
 
-3.  部署过程应继续。  IoT 设备将在部署后重新启动，并在进行安装时显示 "齿轮" 屏幕。
+3.  部署过程应继续进行。  IoT 设备将在部署后重新启动，并且应在安装过程中显示"齿轮"屏幕。
 
-生成输出在 " **输出** " 窗口中，安装完成后也会出现在 "输出" 窗口中，设备将再次重新启动，而 VS 输出屏幕将指示成功或失败。
+生成输出位于" **输出窗口** ""部署"状态也位于输出窗口中。安装完成后，设备将再次重新启动，"VS 输出"屏幕将指示成功或失败。
 
 ### <a name="f5"></a>F5
 
-1.  在 "生成" 窗口中，确保配置正确– "当前生成" 与目标设备相同。  在这种情况下，目标名称中的这种情况非常有用。  目标将显示在 VS 中的菜单栏上的 "视图" 框中，位于右上方。
+1.  在生成窗口中，确保配置正确 - 当前生成原型与目标设备原型相同。  这是目标名称中具有原型的有用位置。  目标将显示在 VS 中右上方菜单栏的视图框中。
 2.  按 **F5**。  目标将生成、部署并附加到 VS 内核调试器。
 
-* 重新启动后，请确保 PowerShell 仍连接到它，否则，请使用 PowerShell 命令重新连接到目标设备。 `enter-pssession`
+* 重新启动后，请确保 PowerShell 仍连接到它，否则，使用 PowerShell 命令重新连接到目标 `enter-pssession` 设备。
 
 
 ## <a name="known-issues"></a>已知问题
 ___
 
 ### <a name="provisioning-errors"></a>预配错误
-与 MinnowBoardMax 交互过程中的争用条件可能会导致在预配过程中出现报告故障。  事实上，预配可能会成功。
+与 MinnowBoardMax 交互期间出现竞争情况可能会导致预配期间报告失败。  事实上，预配很可能成功。
 
 **错误列表：**
 
-* 错误：任务 "注册 WDTF" 未能成功完成。
-* 错误：任务 "配置内核调试器设置 (可能重新启动) " 无法成功完成
+* 错误：任务"正在注册 WDTF"未能成功完成。
+* 错误：任务"配置内核调试器设置 (重新启动) "未能成功完成
 
-**解决方法：** 几乎肯定会忽略这些错误。
+**解决方法：** 几乎可以忽略这些错误。
 
-**详细**
+**细节：**
 
-**设备配置配置进度**对话框中将显示以下错误：
+"设备配置配置进度"对话框中 **将显示以下** 错误：
 
 ```
 Installing necessary components...
@@ -191,16 +191,16 @@ Computer configuration log file://C:/Users/username/AppData/Roaming/Microsoft/WD
 Failed installing components
 ```
 
-此时，你可以安全地单击 " **完成** "，然后单击 " **应用** **" 和 "确定"**。
+此时，可以安全地单击"完成 **"，** 然后单击"**应用"** 和"确定 **"。**
 
-这是由争用情况形成的良性错误，导致结果日志的格式不正确。 可以通过查看以下区域中的日志文件来对此进行验证：
+这是一个良性错误，由导致结果日志格式错误的竞争条件构成。 可以通过查看以下区域中的日志文件来验证这一点：
 
-1. 打开到设备 IP 的 FTP 连接 (如设备屏幕上所示) 到 `Data/test/bin/DriverTest/Run` 目录。
+1. 打开设备 IP 的 FTP 连接 (如设备屏幕中所示) `Data/test/bin/DriverTest/Run` 目录。
 例如，`ftp://<ip address of device>/Data/test/bin/DriverTest/Run/`
 
-2. 将 `Configuring_computer_settings_(possible_reboot)_identifier.wtl` 文件复制到本地计算机。  请注意，日志文件名称与失败的任务的名称相匹配。
+2. 将 `Configuring_computer_settings_(possible_reboot)_identifier.wtl` 文件复制到本地计算机。  请注意，日志文件名与失败任务的名称匹配。
 3. 在记事本中打开文件
-4. 滚动到日志的底部。  将显示以下文本，指示预配成功。
+4. 滚动到日志底部。  将显示以下文本，指示预配成功。
 
 ```
 <PFRollup

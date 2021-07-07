@@ -1,35 +1,35 @@
 ---
-title: 在 Windows 10 IoT Core 上启用安全启动、BitLocker 和 Device Guard
+title: 在 Windows 10 IoT 核心版上启用安全启动、BitLocker 和设备保护
 ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解如何在 Windows 10 IoT Core 上启用安全启动、BitLocker 和 Device Guard
+description: 了解如何在 Windows 10 IoT 核心版上启用安全启动、BitLocker 和设备保护
 keywords: windows iot，安全启动，BitLocker，device guard，安全性，全包式安全
-ms.openlocfilehash: 716d3f62c29af34fe9cce87e60dbb0b5a9287850
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 99b106a672a379e8eca6e3d12614bd4af20e88a8
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657343"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230704"
 ---
-# <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>在 Windows 10 IoT Core 上启用安全启动、BitLocker 和 Device Guard
+# <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>在 Windows 10 IoT 核心版上启用安全启动、BitLocker 和设备保护
 
-Windows 10 IoT Core 包含安全功能产品/服务，如 UEFI 安全启动、BitLocker 设备加密和设备防护。  这将帮助设备构建者创建完全锁定的 Windows IoT 设备，这些设备可灵活应对多种不同类型的攻击。  这些功能结合在一起，可确保平台以定义的方式启动，同时锁定未知的二进制文件并通过使用设备加密来保护用户数据。
+Windows 10 IoT 核心版包括安全功能产品（如 UEFI 安全启动、BitLocker 设备加密和设备保护）。  这将帮助设备构建者创建完全锁定的 Windows IoT 设备，这些设备可复原多种不同类型的攻击。  这些功能结合在一起，可确保平台以定义的方式启动，同时锁定未知的二进制文件并通过使用设备加密来保护用户数据。
 
 ## <a name="boot-order"></a>启动顺序
 
-需要先了解 Windows 10 IoT Core 设备上的启动顺序，然后才能深入了解为 IoT 设备提供安全平台的单个组件。
+需要先了解 Windows 10 IoT 核心版设备上的启动顺序，然后才能深入了解为 IoT 设备提供安全平台的单个组件。
 
 有三个主要方面发生在 IoT 设备打开时，一直到操作系统内核加载和执行安装的应用程序。
 
 * 平台安全启动
 * 统一可扩展固件接口 (UEFI) 安全启动
-* Windows 代码完整性
+* Windows代码完整性
 
 ![启动顺序](../media/SecureBootAndBitLocker/BootOrder.jpg)
 
-有关 Windows 10 启动过程的其他信息，请参阅 [此处](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)。
+可在[此处](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)找到有关 Windows 10 启动过程的其他信息。
 
 ## <a name="locking-down-iot-devices"></a>锁定 IoT 设备
 
@@ -47,9 +47,9 @@ UEFI 安全启动是第一个策略强制点，位于 UEFI。  它将系统限�
 
 作为 OEM，需要在生产时将 UEFI 安全启动数据库存储在 IoT 设备上。 这些数据库包括签名数据库 (db) 、已吊销的签名数据库 (.dbx) 和密钥注册密钥数据库 (KEK) 。 这些数据库存储在设备 (NV RAM) 的固件非易失性 RAM 中。
 
-* ** (db) 的签名数据库：** 这列出了允许在设备上加载的操作系统加载程序、UEFI 应用程序和 UEFI 驱动程序的签名者或图像哈希
+* **(db) 的签名数据库：** 这列出了允许在设备上加载的操作系统加载程序、UEFI 应用程序和 UEFI 驱动程序的签名者或图像哈希
 
-* 已**吊销 (.dbx) 的签名数据库：** 这列出了不再受信任且*不*允许在设备上加载的操作系统加载程序、uefi 应用程序和 uefi 驱动程序的签名者或图像哈希
+* 已 **吊销 (.dbx) 的签名数据库：** 这列出了不再受信任且 *不* 允许在设备上加载的操作系统加载程序、uefi 应用程序和 uefi 驱动程序的签名者或图像哈希
 
 * **密钥注册密钥数据库 (KEK) ：** 包含一个签名密钥列表，可用于更新签名和吊销的签名数据库。
 
@@ -60,34 +60,34 @@ UEFI 安全启动是第一个策略强制点，位于 UEFI。  它将系统限�
 1. 打开设备后，会根据平台签名密钥检查每个签名数据库 (PK) 。
 2. 如果固件不受信任，则 UEFI 固件启动 OEM 特定的恢复以还原受信任的固件。
 3. 如果无法加载 Windows 启动管理器，固件将尝试启动 Windows 启动管理器的备份副本。 如果此操作失败，则 UEFI 固件会启动 OEM 特定的修正。
-4. Windows 启动管理器运行并验证 Windows 内核的数字签名。 如果受信任，Windows 启动管理器会将控制权传递给 Windows 内核。
+4. Windows启动管理器运行并验证 Windows 内核的数字签名。 如果受信任，Windows 启动管理器会将控制权传递给 Windows 内核。
 
 [此处](https://technet.microsoft.com/library/dn747883.aspx)提供有关安全引导的其他详细信息，以及密钥创建和管理指南。
 
-### <a name="windows-code-integrity"></a>Windows 代码完整性
+### <a name="windows-code-integrity"></a>Windows代码完整性
 
-Windows 代码完整性 (WCI) 通过在每次将驱动程序或应用程序加载到内存时验证其完整性来提高操作系统的安全性。 CI 包含两个主要组件：内核模式代码完整性 (KMCI) 和用户模式代码完整性 (UMCI) 。
+Windows代码完整性 (WCI) 通过在每次将驱动程序或应用程序加载到内存时验证其完整性来提高操作系统的安全性。 CI 包含两个主要组件：内核模式代码完整性 (KMCI) 和用户模式代码完整性 (UMCI) 。
 
-可配置代码完整性 (CCI) 是 Windows 10 中的一项功能，它允许设备构建者锁定设备，并只允许其运行和执行签名和信任的代码。  为此，设备构建者可以在 "黄金" 设备上创建代码完整性策略 (最终版本的硬件和软件) ，然后在工厂地面上的所有设备上保护并应用此策略。
+可配置代码完整性 (CCI) 是 Windows 10 中的一项功能，它允许设备构建者锁定设备，并仅允许其运行和执行签名和信任的代码。  为此，设备构建者可以在 "黄金" 设备上创建代码完整性策略 (最终版本的硬件和软件) ，然后在工厂地面上的所有设备上保护并应用此策略。
 
 若要了解有关部署代码完整性策略、审核和强制的详细信息，请查看 [此处](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-code-integrity-policies-steps)的最新 technet 文档。
 
 下面是 Windows 代码完整性执行的步骤：
 
-1. 在加载之前，Windows 内核将对照签名数据库验证所有其他组件。 这包括驱动程序、启动文件和 ELAM (提前启动反恶意软件) 。
-2. Windows 内核将在启动过程中加载受信任的组件，并禁止加载不受信任的组件。
-3. Windows 10 IoT Core 操作系统加载和任何已安装的应用程序。
+1. Windows内核将在加载前对签名数据库验证所有其他组件。 这包括驱动程序、启动文件和 ELAM (提前启动反恶意软件) 。
+2. Windows内核将在启动过程中加载受信任的组件，并禁止加载不受信任的组件。
+3. 操作系统加载 Windows 10 IoT 核心版和任何已安装的应用程序。
 
 ### <a name="bitlocker-device-encryption"></a>BitLocker 设备加密
 
-Windows 10 IoT Core 还实现了 BitLocker 设备加密的轻型版，保护 IoT 设备免受离线攻击。 此功能与平台上的 TPM 的存在很强，其中包括在 UEFI 中执行必要度量的必需的操作系统协议。 这些预操作系统度量值可确保 OS 更高版本具有操作系统启动方式的明确记录;但是，它不强制执行任何执行限制。
+Windows 10 IoT 核心版还实现了 BitLocker 设备加密的轻型版本，保护 IoT 设备免受离线攻击。 此功能与平台上的 TPM 的存在很强，其中包括在 UEFI 中执行必要度量的必需的操作系统协议。 这些预操作系统度量值可确保 OS 更高版本具有操作系统启动方式的明确记录;但是，它不强制执行任何执行限制。
 
 > [!TIP]
-> Windows 10 IoT Core 上的 BitLocker 功能允许对基于 NTFS 的 OS 卷进行自动加密，同时将所有可用的 NTFS 数据卷绑定到该卷。 为此，必须确保 EFIESP 卷 GUID 设置为 _C12A7328-F81F-11D2-BA4B-00A0C93EC93B_。
+> Windows 10 IoT 核心版上的 BitLocker 功能允许对基于 ntfs 的 OS 卷进行自动加密，同时将所有可用的 ntfs 数据卷绑定到该卷。 为此，必须确保 EFIESP 卷 GUID 设置为 _C12A7328-F81F-11D2-BA4B-00A0C93EC93B_。
 
-### <a name="device-guard-on-windows-iot-core"></a>Windows IoT Core 上的 Device Guard
+### <a name="device-guard-on-windows-iot-core"></a>Windows IoT 核心上的设备防护
 
-大多数 IoT 设备被构建为固定功能的设备。 这意味着设备制造商确切知道哪些固件、操作系统、驱动程序和应用程序应在给定设备上运行。 反过来，此信息可用于通过只允许执行已知的和受信任的代码来完全锁定 IoT 设备。 Windows 10 IoT Core 上的 Device Guard 可以通过确保无法在锁定的设备上运行未知或不受信任的可执行代码来帮助保护 IoT 设备。
+大多数 IoT 设备被构建为固定功能的设备。 这意味着设备制造商确切知道哪些固件、操作系统、驱动程序和应用程序应在给定设备上运行。 反过来，此信息可用于通过只允许执行已知的和受信任的代码来完全锁定 IoT 设备。 Windows 10 IoT 核心版上的设备防护可以确保无法在锁定的设备上运行未知或不受信任的可执行代码，从而帮助保护 IoT 设备。
 
 
 ## <a name="turnkey-security-on-iot-core"></a>IoT 核心安全
@@ -102,24 +102,24 @@ Windows 10 IoT Core 还实现了 BitLocker 设备加密的轻型版，保护 IoT
 
 ![创建锁定映像](../media/SecurityFlowAndCertificates/ImageLockDown.png)
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
-* 提供的脚本 **不** 支持运行 Windows 10 企业版 (其他 windows 版本的电脑) 
+* 提供的脚本 **不** 支持运行 Windows 10 企业版 (其他 Windows 版本的电脑) 
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) -证书生成必需
 * [Windows 10 ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) -CAB 生成必需的
 * 引用平台-需要随附固件、OS、驱动程序和应用程序的版本硬件才能进行最终锁定
 
 ### <a name="development-iot-devices"></a>开发 IoT 设备
 
-Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在 [建议的 IoT 开发设备](../learn-about-hardware/SoCsAndCustomBoards.md)中，以下提供了现成的固件 TPM 功能，以及安全启动、标准启动、BitLocker 和设备防护功能：
+Windows 10 IoT 核心版适用于数百个设备中使用的各种 silicons。 在 [建议的 IoT 开发设备](../learn-about-hardware/SoCsAndCustomBoards.md)中，以下提供了现成的固件 TPM 功能，以及安全启动、标准启动、BitLocker 和设备防护功能：
 
 * Qualcomm DragonBoard 410c
 
-    若要启用安全启动，可能需要预配 RPMB。 按照 [此处](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-dragonboard-410c)的说明将 EMMC 与 Windows 10 IoT Core (闪存后，请在启动时在设备上同时按 [Power] + [Vol +] + [vol] + [vol]，并从 BDS 菜单中选择 "预配 RPMB"。 *请注意，这是一个不可逆的步骤。*
+    若要启用安全启动，可能需要预配 RPMB。 按照[此处](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-dragonboard-410c)的说明 Windows 10 IoT 核心版 (刷新 eMMC 时，请在启动时在设备上同时按 [Power] + [Vol +] + [vol] + [vol]，并从 BDS 菜单中选择 "预配 RPMB"。 *请注意，这是一个不可逆的步骤。*
 
 * Intel MinnowBoardMax
 
-    对于 Intel 的 MinnowBoard Max，固件版本必须为0.82 或更高版本 (获取 [最新固件](https://firmware.intel.com/projects/minnowboard-max)) 。 若要启用 TPM 功能，请使用键盘 & 显示连接，然后按 F2 进入 UEFI 设置。 请参阅_设备管理器-> 系统设置-> 安全配置-> PTT_并将其设置为 " _ &lt; 启用 &gt; _"。 按 F10 保存更改并继续重新启动平台。
+    对于 Intel 的 MinnowBoard Max，固件版本必须为0.82 或更高版本 (获取 [最新固件](https://firmware.intel.com/projects/minnowboard-max)) 。 若要启用 TPM 功能，请使用键盘 & 显示连接，然后按 F2 进入 UEFI 设置。 请参阅 _Device Manager-> 系统设置-> 安全配置-> PTT_ 并将其设置为 " _&lt; 启用 &gt;_"。 按 F10 保存更改并继续重新启动平台。
 
 > [!NOTE]
 > Raspberry Pi 2 或3不支持 TPM，因此我们无法配置锁定方案。
@@ -182,8 +182,8 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在 [
 你可以通过以下步骤在解锁的设备上手动安装生成的包，以对其进行测试
 
 1. 使用解锁的映像刷新设备， (用于在先前步骤中扫描的映像) 。
-2. [使用 SSH](../connect-your-device/SSH.md)或[PowerShell](../connect-your-device/PowerShell.md)连接到设备 () 
-3. 将以下 .cab 文件复制到目录下的设备，例如 `c:\OemInstall`
+2. [使用 SSH](../connect-your-device/SSH.md)或[PowerShell](../connect-your-device/PowerShell.md)) 连接到设备 (
+3. 将以下 .cab 文件复制到目录下的设备（例如）。 `c:\OemInstall`
     * OEM.Custom.Cmd.cab
     * OEM.Security.BitLocker.cab
     * OEM.Security.SecureBoot.cab
@@ -193,7 +193,7 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在 [
     ```C
     applyupdate -stage c:\OemInstall\OEM.Custom.Cmd.cab
     ```
-    如果使用的是自定义映像，则必须*跳过*此文件，并 `c:\windows\system32\oemcustomization.cmd` 使用文件中可用的内容手动编辑 `Output\OEMCustomization\OEMCustomization.cmd`
+    如果使用的是自定义映像，则必须 *跳过* 此文件，并 `c:\windows\system32\oemcustomization.cmd` 使用文件中可用的内容手动编辑 `Output\OEMCustomization\OEMCustomization.cmd`
 
     ```C
     applyupdate -stage c:\OemInstall\OEM.Security.BitLocker.cab
@@ -246,7 +246,7 @@ Windows 10 IoT Core 适用于数百个设备中使用的各种 silicons。 在 [
 
 ### <a name="developing-with-codesigning-enforcement-enabled"></a>已启用代码签名强制开发
 
-生成包并激活锁定后，在开发过程中引入到映像中的所有二进制文件都需要进行相应的签名。 确保用户模式的二进制文件已用密钥  _.\Keys\ * * *-UMCI_进行签名。 对于内核模式签名（如驱动程序），需要指定自己的签名密钥并确保它们也包含在上述 SIPolicy 中。
+生成包并激活锁定后，在开发过程中引入到映像中的所有二进制文件都需要进行相应的签名。 确保用户模式的二进制文件已用密钥  _.\Keys\ * * *-UMCI_ 进行签名。 对于内核模式签名（如驱动程序），需要指定自己的签名密钥并确保它们也包含在上述 SIPolicy 中。
 
 ### <a name="unlocking-encrypted-drives"></a>解锁加密驱动器
 

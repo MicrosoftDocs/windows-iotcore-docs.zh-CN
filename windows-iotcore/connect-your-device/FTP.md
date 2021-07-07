@@ -6,22 +6,22 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解如何使用文件传输协议 (FTP) 在设备之间传输文件。
 keywords: windows iot，FTP，文件传输协议，文件传输，设备
-ms.openlocfilehash: 0006be1fa2beb7e404c83d25b5167f5a444076b5
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 00705d6ff00603b8876803633a9c4c88d1ea9675
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656863"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230074"
 ---
 # <a name="file-transfer-protocol"></a>文件传输协议
-利用文件传输协议 (FTP) ，你可以在 Windows 10 IoT 核心设备之间传输文件
+利用文件传输协议 (FTP) ，你可以在 Windows 10 IoT 核心版设备之间传输文件
 
 > [!IMPORTANT]
 > 建议通常将 FTP 用于开发人员简化初始开发过程。 不建议在零售设备中使用 FTP。
 
 ## <a name="starting-the-ftp-server-on-your-device"></a>启动设备上的 FTP 服务器
 * 默认情况下，在 IoT 核心设备上禁用 FTP 服务器。  若要在设备上启动 FTP 服务器，首先需要通过 [PowerShell](../connect-your-device/PowerShell.md) 或 [SSH](../connect-your-device/SSH.md)连接到设备。
-* 类型 `start C:\Windows\System32\ftpd.exe`
+* 键入 `start C:\Windows\System32\ftpd.exe`
 * 可以通过键入来检查服务器是否正在运行 `tlist` ，这将列出所有正在运行的进程。  如果 FTP 服务器正在运行，则应 `ftpd.exe` 在列表中看到。
 
 ![FTP 启动](../media/ftp/ftp_start.png)
@@ -39,7 +39,7 @@ ms.locfileid: "91656863"
 ## <a name="accessing-your-files-over-ftp"></a>通过 FTP 访问文件
 * IoT Core 设备上的 FTP 服务器在启动时自动启动。  若要连接到它，你需要设备的 IP 地址。  你可以在默认应用上查找设备启动时启动的 IP 地址。
 
-![Windows IoT Core 上的 Defaultapp.osd](../media/ftp/DefaultApp.png)
+![Windows IoT 核心上的 defaultapp.osd](../media/ftp/DefaultApp.png)
 
 * 获得 IP 后，在电脑上打开 **文件资源管理器** 并键入 `ftp://<TARGET_DEVICE>` ，其中 `<TARGET_DEVICE>` 是设备的名称或 IP 地址，然后按 Enter。  如果出现提示，请输入管理员用户名和密码。
 

@@ -6,12 +6,12 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解如何开始使用 Microsoft IoT Pack。 Windows 10 IoT 核心版是一个针对小型嵌入式设备的 Windows 版本。
 keywords: windows iot, Raspberry Pi 3, Adafruit, 初学者包
-ms.openlocfilehash: 44144cba36cbf0b4ce5aa99391e9507d152d04ed
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 908d5d3ce0df5f1f14bedd7aa1e9ad92de245677
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657183"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230684"
 ---
 # <a name="microsoft-iot-pack"></a>Microsoft IoT Pack
 

@@ -5,12 +5,12 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-ms.openlocfilehash: 0472836b70d59b4cac058f4c9bdbbecf62b99fe5
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: d1e2e730830ccda76a5de58d20fccf8967931ea1
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656963"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230214"
 ---
 # <a name="troubleshooting"></a>疑难解答
 本文包含用户遇到的常见故障排除问题。 若要查找特定内容（字词或短语），请使用 Ctrl+F。 想要表达你自己的见解？ 请针对本文档创建一个 PR，或者在下面提供内容反馈。

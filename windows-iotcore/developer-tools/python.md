@@ -6,14 +6,14 @@ ms.date: 08/13/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解如何在运行 Windows 10 IoT Core 的设备上安装 Python。 有关 x64、x86、ARM32 和 ARM64 的说明，请参阅。 请参阅其他 Python 开发人员资源。
+description: 了解如何在运行 Windows 10 IoT 核心版的设备上安装 Python。 有关 x64、x86、ARM32 和 ARM64 的说明，请参阅。 请参阅其他 Python 开发人员资源。
 keywords: windows iot, python
-ms.openlocfilehash: 3a78a721ff86d13da905718f671090aec9a617d9
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 66934acaacf0047842aba6fca41517ec333b7f3c
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656053"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229784"
 ---
 # <a name="python"></a>Python
 Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
@@ -21,7 +21,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ## <a name="using-python-on-x64-or-x86"></a>在 x64 或 x86 上使用 Python
 若要在 Windows IoT Core 上安装 Python，请执行以下操作：
-1. 下载 Python NuGet 包，然后使用 [PowerShell](../connect-your-device/PowerShell.md)安装这些文件。
+1. 下载 Python NuGet 包，然后使用[PowerShell](../connect-your-device/PowerShell.md)安装这些文件。
 
     ```powershell
     $python_zip = "https://globalcdn.nuget.org/packages/python.3.7.4.nupkg"
@@ -50,7 +50,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ## <a name="using-python-on-windows-iot-core-arm32"></a>在 Windows IoT Core ARM32 上使用 Python
 
-若要获取适用于 Windows 的 Python，需自行生成二进制文件。
+若要获取针对 Windows 的 Python，需自行生成二进制文件。
 
 1. 生成适用于 ARM32 的 Python。  分支必须是 3.8 版或更高版本。
 
@@ -89,7 +89,7 @@ Python 是一种脚本语言，常用于系统自动化和机器学习 (ML)。
 
 ## <a name="using-python-on-windows-iot-core-arm64"></a>在 Windows IoT Core ARM64 上使用 Python
 
-若要获取适用于 Windows 的 Python，需自行生成二进制文件。
+若要获取针对 Windows 的 Python，需自行生成二进制文件。
 
 1. 克隆适用于 ARM32 的 Python，并运行 `get_externals`。  分支必须是 3.8 版或更高版本。
 

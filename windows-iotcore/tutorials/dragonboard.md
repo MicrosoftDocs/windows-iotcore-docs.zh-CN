@@ -7,12 +7,12 @@ ms.technology: iot
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Dragonboard。 使用仪表板、连接到网络，并连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, Dragonboard
 ms.custom: RS5
-ms.openlocfilehash: bde424a321121853dd556eec2fe42a78a8ff3bc4
-ms.sourcegitcommit: d048cc83c8a916bc761f5065e880d3555758321c
+ms.openlocfilehash: a48b4ae90ac60d2947e104e5db5bc595840548c7
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102247112"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230674"
 ---
 # <a name="setting-up-a-dragonboard"></a>设置 Dragonboard
 

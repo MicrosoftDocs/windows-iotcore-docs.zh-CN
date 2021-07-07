@@ -4,12 +4,12 @@ ms.date: 02/26/2019
 ms.topic: article
 description: 了解如何开始使用面向 Windows IoT 的 mDNS 响应程序。 需要下载与 Bonjour 兼容的示例源。
 keywords: Windows 10 IoT 核心版, mDNS 响应程序示例源代码
-ms.openlocfilehash: ea6be19041b82ab4b496728d0ffb4a169c262eb9
-ms.sourcegitcommit: 05278f1a522ed498900ce15b98bdd4389b5dde55
+ms.openlocfilehash: 4b87a20f30de2fcce1ac3bb4038ed4ec7360ea65
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88081352"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113228663"
 ---
 # <a name="getting-started-with-mdns-responder-sample-source"></a>mDNS 响应程序示例源代码入门
 

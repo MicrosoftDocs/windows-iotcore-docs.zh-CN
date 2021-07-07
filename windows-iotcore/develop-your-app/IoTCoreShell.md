@@ -6,12 +6,12 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解如何利用 IoT Shell 在设备上的导航之间导航。
 keywords: windows iot，IoT core shell，应用程序，前台应用程序，后台应用程序
-ms.openlocfilehash: 49d555673bcab6880606f02d242727ce6a880868
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 38a55e3545116bbddb77c2ec6a7f4de14efc1d0a
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656313"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229844"
 ---
 # <a name="iot-shell-overview"></a>IoT 外壳概述
 
@@ -29,7 +29,7 @@ IoT 核心设备运行 IoT Shell。 它具有许多责任，但其主要任务�
 
 ## <a name="switching-between-apps-with-a-home-app"></a>使用 Home 应用在应用之间切换
 
-目前，启动应用允许你创建适用于 Windows 10 IoT Core 的家庭应用，使你能够在不同的前台应用程序之间切换。 
+目前，启动应用程序允许您为 Windows 10 IoT 核心版创建 home 应用程序，使您可以在不同的前台应用程序之间切换。 
 
 **IoT 启动应用** ([示例](https://github.com/microsoft/Windows-iotcore-samples/tree/master/Samples/IoTStartApp)表示一个简单的启动应用程序，该应用程序在设备上列出已安装的应用，然后使用 PackageManager api 启动一个应用。
 
@@ -37,13 +37,13 @@ IoT 核心设备运行 IoT Shell。 它具有许多责任，但其主要任务�
 
 以下说明介绍了如何通过注册表项打开热键支持。 如果你正在构建自己的映像，并且想要支持以下热键 (Home、previous 应用和下一应用) 无需访问注册表，你可以包含一个可选功能包来处理这些步骤。
 
-要查找的功能包称为： **Microsoft-OneCore-IoTUAP-Shell-HotKeys-Feature-Package.cab** ，该功能 **IOT_SHELL_HOTKEY_SUPPORT**。 有关示例，请参阅 [设置。热键示例包](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Common/Packages/Settings.HotKey/Settings.HotKey.pkg.xml) 。
+要查找的功能包称为： **Microsoft-OneCore-IoTUAP-Shell-HotKeys-Feature-Package.cab** ，该功能 **IOT_SHELL_HOTKEY_SUPPORT**。 请参阅[设置。示例的热键示例包](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Common/Packages/Settings.HotKey/Settings.HotKey.pkg.xml)。
 
 本文档的其余部分介绍了如何手动实现此功能。
 
 ### <a name="return-home"></a>返回主页
 
-使用 Windows 10 IoT 周年更新 (1607) ，IoT Shell 支持在运行另一个应用程序时将默认应用程序窗口置于前台，方法是按 "中转 HOME" 键（设置为键盘上 Windows 按钮的版本）。 如果 IoT 设备上没有键盘，并且需要通过 [HID 注入](https://developer.microsoft.com/en-us/windows/iot/samples/hidinjection)注入低级键盘事件，或者只是想要在应用程序中将 "中转 HOME" 功能重新映射到其他密钥，则可以在注册表中调整密钥值。 例如，若要启用 (0x1B) 中按 ESC 键，请在注册表中输入以下命令：
+使用 Windows 10 iot 周年更新 (1607) ，iot Shell 支持在运行另一个应用程序时将默认应用程序窗口设置为前台，方法是将设置为键盘上的 Windows 按钮的版本。 如果 IoT 设备上没有键盘，并且需要通过 [HID 注入](https://developer.microsoft.com/en-us/windows/iot/samples/hidinjection)注入低级键盘事件，或者只是想要在应用程序中将 "中转 HOME" 功能重新映射到其他密钥，则可以在注册表中调整密钥值。 例如，若要启用 (0x1B) 中按 ESC 键，请在注册表中输入以下命令：
 
 ``
 “HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\HotKeys” “HOME” QWORD    0x0000000 0000001B  
@@ -58,7 +58,7 @@ IoT 核心设备运行 IoT Shell。 它具有许多责任，但其主要任务�
 
 ### <a name="switch-between-apps"></a>在应用之间切换
 
-或者，如果你想要在前台应用之间切换，则可以通过在注册表中输入以下命令，设置 Alt-Tab (下一应用) 和移动-Alt-Tab (之前的应用) 功能
+或者，如果你想要在前台应用之间切换，则可以通过在注册表中输入以下命令来设置 Alt-Tab (下一个应用) 和移动-Alt-Tab (上一个应用) 功能。
 
 ``
 “HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\HotKeys”

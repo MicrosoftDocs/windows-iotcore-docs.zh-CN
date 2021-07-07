@@ -8,12 +8,12 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解如何使用 Windows 设备门户或 shell 设置默认应用程序。
 keywords: windows iot，默认应用，PowerShell，iot
-ms.openlocfilehash: 34162704ea7433cd16c715ac1932fd32d2500872
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 09897d19f6b6f7cea64597b94c3a000a2ea7fa06
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656183"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229003"
 ---
 # <a name="set-up-a-default-app"></a>设置默认应用程序
 在这里，你将了解将应用程序设置为默认应用程序的方式。 默认的应用程序是在系统启动时启动的应用程序。  
@@ -34,7 +34,7 @@ ms.locfileid: "91656183"
 
 使用 shell 设置默认应用程序的步骤 
 
-1. 通过[PowerShell](../connect-your-device/PowerShell.md)连接到设备
+1. 通过[PowerShell](../connect-your-device/PowerShell.md)将连接到设备
 
 2. 列出使用安装的应用程序 `iotstartup list`
 
@@ -52,6 +52,6 @@ ms.locfileid: "91656183"
 
 ## <a name="how-to-configure-home-key"></a>如何配置 "Home" 键
 
-Windows 10 IoT 周年更新 (1607) 为在另一应用程序当前运行时将默认应用程序窗口引入前台提供 shell 支持。
+Windows 10IoT 周年更新 (1607) 为在另一个应用程序当前运行时将默认应用程序窗口引入前台提供 shell 支持。
 
 若要了解如何启用 "主页" 密钥，请访问 [IoT Shell 页面](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys)

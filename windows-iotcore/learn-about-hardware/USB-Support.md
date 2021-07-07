@@ -1,26 +1,26 @@
 ---
-title: 适用于 Windows 10 IoT Core 的 USB 支持和双重角色概述
+title: Windows 10 IoT 核心版的 USB 支持和双重角色概述
 ms.date: 10/11/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解什么是 USB 支持和双角色，以及如何为 Windows 10 IoT Core 设备自定义此功能。
+description: 了解什么是 USB 支持和双角色，以及如何为 Windows 10 IoT 核心版设备自定义此功能。
 keywords: windows iot，USB 支持，双角色，USB
-ms.openlocfilehash: d8606ef3981d61fad5b334ba729cb2bd8731d84f
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: df7a6d857e147c12c4e679f70b5c28e02e623f61
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91655683"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229584"
 ---
 # <a name="overview-of-usb-support-and-dual-role"></a>USB 支持和双重角色概述
 
 通用串行总线 (USB) 提供一个可扩展、可热插拔的即插即用串行接口，该接口可确保外围设备（例如键盘、鼠标、游戏杆、打印机、扫描仪、存储设备、调制解调器和视频会议摄像机）的标准、低成本连接。  
 当我们谈到 USB 设备时，USB 函数堆栈是指由即插即用 Manager 枚举和加载的一组驱动程序，复合 USB 设备可以在单个配置中支持多个接口。 尽管本文中所述的大部分内容都与用于 USB 2.0 的双重角色相关，但更常见的是 usb 即用或 USB OTG 或 OTG，但知道 USB 3.0 以及它与 USB 2.0 有何不同。 USB OTG 为设备定义了两个角色： OTG A-设备和 OTG B-设备，指定哪一端提供对链接的电源，哪一方最初为主机。 由于每个 OTG 控制器都支持这两个角色，因此它们通常称为 "双角色" 控制器而不是 "OTG 控制器"。 另一方面，USB 3.0 可以使设备进入主机或外围设备。 某些设备可以采用这两种角色，具体取决于在另一端上检测到的类型。 这些类型的端口称为双角色数据 (DRD) 。 连接两个此类设备时，将随机分配角色，但可以从任一端发出交换。 
 
-## <a name="architecture-of-usb-function-in-windows-10-iot-core"></a>Windows 10 IoT Core 中的 USB 功能的体系结构
+## <a name="architecture-of-usb-function-in-windows-10-iot-core"></a>Windows 10 IoT 核心版中的 USB 功能的体系结构
 
-当 Windows 10 IoT 平台充当 USB 设备时，它将使用几种配置中的一种。 每个配置都有一个或多个 USB 接口。 若要在 Windows 10 IoT 上正确支持 USB OTG，需要注意以下几件事。  
+当 Windows 10 IoT 平台充当 USB 设备时，它将使用几种配置中的一种。 每个配置都有一个或多个 USB 接口。 若要在 Windows 10 IoT 上正确支持 USB OTG，需要注意几个问题。  
 
 ## <a name="components-oems-have-to-supply"></a>Oem 必须提供的组件
 
@@ -30,7 +30,7 @@ Oem 需要为 USB 设备端和 USB 主机端提供两端的组件。
 
 ### <a name="oems-support-for-both-sides"></a>Oem 支持两侧
 
-每个 USB 设备都具有唯一的 VID 和 PID，用于识别它。 作为基于 Windows IoT 的 USB 设备的制造商，OEM 需要提供这些。  Oem 可以应用于 USB 联盟，并获取其公司 VID (如果没有) ，然后选择对于该产品唯一的 PID。 当带有 USBFN 功能的 Windows 10 IoT 连接到电脑时，它将充当 USB 设备， (在 myUSBFN.sys) 中所选的任何功能，其中包含 "VID_nnn" 和 "PID_NNN"。 然后，主机将使用此 VID 和 PID 组合查找适当的驱动程序，以便加载 ( # A0) 。 
+每个 USB 设备都具有唯一的 VID 和 PID，用于识别它。 作为 Windows 基于 IoT 的 USB 设备的制造商，OEM 需要提供这些。  Oem 可以应用于 USB 联盟，并获取其公司 VID (如果没有) ，然后选择对于该产品唯一的 PID。 当 Windows 10 IoT with USBFN 功能连接到电脑时，它将充当 myUSBFN.sys) 中设置的任何功能的 USB 设备 (，其中包含 "VID_nnn" 和 "PID_NNN"。 然后，主机将使用此 VID 和 PID 组合查找适当的驱动程序，以便 (myUSB.sys) 负载。 
 
 ![USB 函数如何结合在一起](../media/USB-Support/OEM-supplies.png)
 
@@ -79,7 +79,7 @@ _按配置属性_
 
 默认情况下，FFU 中包含空的默认 USB 函数配置，如中所述： `HKLM\SYSTEM\ControlSet001\Control\USBFN\Configurations\default`
 
-此空的默认配置会导致 IoT 平台显示为在其上未安装主机端驱动程序的 Windows IoT 设备。
+这一空的默认配置会导致 iot 平台显示为未安装主机端上没有驱动程序的 Windows iot 设备。
 
 ![USBFN 的配置](../media/USB-Support/config-screenshot.png)
 
@@ -116,4 +116,4 @@ _配置示例_
 
 ### <a name="supporting-from-the-host-side"></a>从宿主端支持
 
-如果 OEM 选择实现任何标准 USB 接口 (例如 大容量存储) 在设备端，则主机 PC 可以为该类型的 USB 设备使用内置的 Windows 驱动程序。 如果 OEM 在设备端实现任何自定义 USB 接口，则 OEM 需要为该自定义 USB 功能设备开发 Windows 主机驱动程序。 
+如果 OEM 选择实现任何标准 USB 接口 (例如 大容量存储) 在设备端，则主机 PC 可为该类型的 USB 设备使用内置 Windows 驱动程序。 如果 oem 在设备端实现任何自定义 usb 接口，则 oem 需要为该自定义 usb 功能设备开发 Windows 主机驱动程序。 

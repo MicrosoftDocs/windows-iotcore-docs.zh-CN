@@ -6,25 +6,25 @@ ms.date: 06/25/2019
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解如何使用 Windows IoT 上的 Azure IoT 设备代理管理设备。
+description: 了解如何使用 Windows IoT 上 Azure IoT 设备代理管理设备。
 keywords: windows iot，Azure IoT，Azure 设备代理，设备管理，远程管理
-ms.openlocfilehash: 7f2137be065a6ceab781a9276acba4a62f707a3c
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: dfb2e7bce3535d87f477329bc793e40d8c3bae84
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91655493"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229464"
 ---
 # <a name="azure-iot-device-agent"></a>Azure IoT 设备代理
 
-当涉及到连接的设备时，远程设备管理是系统操作员所需的主要功能之一。 它使操作员能够远程配置属性和更新设备上的软件，而无需对设备进行本地或物理访问。 使用在家庭设备、HVAC 系统等设备上运行的 Windows IoT Core 和 Windows IoT Enterprise，需要可自定义的轻型设备管理解决方案。 虽然 Windows 10 版本已经提供基于 [OMA DM](https://en.wikipedia.org/wiki/OMA_Device_Management) (MDM) 的移动设备管理，但这主要用于使用 SCCM 或 Intune 等管理工具的企业解决方案。 尽管这些解决方案非常适合于处于企业设置中的设备，但在 IoT 解决方案中看到的更多样化的设置中会出现问题。 IoT 设备还需要轻型、小型设备管理解决方案，这可能是一项挑战。 Microsoft 还提供了使用 [Azure IoT 中心](https://docs.microsoft.com/azure/iot-hub/iot-hub-device-management-overview) 及其 [SDK](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-sdks)的设备管理功能。 [Azure IoT 设备代理](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/device-agent.md) 同时提供这两项功能：云中的设备管理功能通过 IoT 中心，可与相同的标准 [配置服务提供程序 (CSP) ](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) ，与移动设备管理使用的相同。 借助 Azure 设备代理，Oem 可以构建提供这些设备管理功能的设备，而无需编写任何代码。
+当涉及到连接的设备时，远程设备管理是系统操作员所需的主要功能之一。 它使操作员能够远程配置属性和更新设备上的软件，而无需对设备进行本地或物理访问。 由于在家庭设备、HVAC 系统等设备上运行 Windows iot 核心和 Windows iot Enterprise，因此需要可自定义的轻型设备管理解决方案。 尽管 Windows 10 版本已经) 基于[OMA DM](https://en.wikipedia.org/wiki/OMA_Device_Management)的 MDM 提供了移动设备 (管理，但这主要用于使用 SCCM 或 Intune 等管理工具的企业解决方案。 尽管这些解决方案非常适合于处于企业设置中的设备，但在 IoT 解决方案中看到的更多样化的设置中会出现问题。 IoT 设备还需要轻型、小型设备管理解决方案，这可能是一项挑战。 Microsoft 还使用[Azure IoT 集线器](https://docs.microsoft.com/azure/iot-hub/iot-hub-device-management-overview)及其[SDK](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-sdks)提供了设备管理功能。[Azure IoT 设备代理](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/device-agent.md)同时提供这两项功能：云中的设备管理功能通过 IoT 中心，可与移动设备管理使用[ (CSP) 相同的标准配置服务提供程序](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)。 借助 Azure 设备代理，Oem 可以构建提供这些设备管理功能的设备，而无需编写任何代码。
 
-Azure 设备代理是一种可用于启用远程设备管理功能的现成的开放源包。 Windows 10 IoT Core 和 Windows 10 IoT Enterprise 支持 Azure 设备代理，并可在通过 IoT 中心连接的设备上运行。 现在，Oem 可以构建支持 SCCM、Intune 或 Azure IoT 中心进行设备管理的设备，并使其客户能够选择最适合的设备管理解决方案。   
+Azure 设备代理是一种可用于启用远程设备管理功能的现成的开放源包。 Azure 设备代理在 Windows 10 IoT 核心版和 Windows 10 IoT 企业版上受支持，并且可在通过 IoT 中心连接的设备上运行。 现在，oem 可以构建支持 SCCM、Intune 或 Azure IoT 中心进行设备管理的设备，并使其客户能够选择最适合的设备管理解决方案。   
 
-![Azure IoT 中心设备管理](../media/AzureIoTDM/azureDM.png)
+![Azure IoT集线器设备管理](../media/AzureIoTDM/azureDM.png)
 
 
-## <a name="how-does-it-work"></a>工作原理
+## <a name="how-does-it-work"></a>它是如何工作的？
 
 [Azure IoT 设备代理](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/device-agent.md)由两个核心组件组成。 
 
@@ -39,7 +39,7 @@ Azure 设备代理是一种可用于启用远程设备管理功能的现成的�
 GitHub 上提供了 Azure IoT 设备代理。 该项目还包括快速入门的示例。 有关详细信息，请查看我们的[GitHub 存储](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/device-agent.md)库
 
 ## <a name="migrating-from-azure-device-agent-v1-to-v2"></a>从 Azure 设备代理 V1 迁移到 V2
-如果你当前使用的是 v1 版本的设备代理，则 V1 与 V2 之间的一个重大更改是在 V2 版本中，Azure 设备代理不再与 UWP 应用共享连接。 通过对 IoT 中心的增强功能，现在可以让 UWP 应用和 Azure 设备代理具有独立的连接字符串，并且仍与 IoT 中心中的同一设备相关联。 有关更多详细信息，请参阅 [此处](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/migration-from-old-client.md) 。
+如果你当前使用的是 v1 版本的设备代理，则 V1 与 V2 之间的一个重大更改是在 V2 版本中，Azure 设备代理不再与 UWP 应用共享连接。 通过对 IoT 中心的增强功能，现在可以让 UWP 应用和 Azure 设备代理具有独立的连接字符串，并且仍与 IoT 中心中的同一设备相关联。 请参阅[此处](https://github.com/ms-iot/azure-client-tools/blob/master/docs/device-agent/migration-from-old-client.md)了解详细信息。
 
 有关 Azure 设备代理 V1 的详细信息，请参阅 [此处](https://docs.microsoft.com/windows/iot-core/manage-your-device/azureiotdm)。
 

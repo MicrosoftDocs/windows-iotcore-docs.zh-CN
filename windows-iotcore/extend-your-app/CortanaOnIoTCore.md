@@ -4,20 +4,20 @@ ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解如何开始和在 Windows IoT Core 上安装 Cortana 更新。
+description: 了解如何在 Windows IoT Core 上开始并安装 Cortana 的更新。
 keywords: windows iot，Cortana，语音，AI，数字助手，语言
-ms.openlocfilehash: 267e1d337d787716787085dad8f12deb84fe1900
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 601b22c71c9f89005733e0bfb0bc43154f19b1f1
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91655963"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113228883"
 ---
 # <a name="cortana-on-iot-core"></a>IoT Core 上的 Cortana
 
 Cortana 是在所有设备上工作的个人数字助理，可帮助你日常生活。 她了解你的情况;帮助您通过完成任务来完成工作;以一致的上下文方式使用自然语言与你交互;并且始终会为你提供。 Cortana 具有一致的视觉标识、个性和语音。
 
-若要使用 Cortana 设备 SDK 在设备中启用无人参与的智能帮助，请访问 [Cortana 开发人员中心](https://aka.ms/cortanadevices)。
+若要使用 Cortana 设备 SDK 在设备中启用无人参与的智能帮助，请访问[Cortana 开发人员中心](https://aka.ms/cortanadevices)。
 
 IoT Core 上的 Cortana 将着重于将来的商业方案。 即将更新。 
 
@@ -250,7 +250,7 @@ available in Embedded Mode to UWP applications.
 
 Embedded mode is a restricted device mode that enables a device to gain
 access to features and APIs that are otherwise restricted in UWP,
-including: 
+including: 
 
 -   Background applications (aka CBT or headless apps)
 
@@ -265,7 +265,7 @@ The Windows.Services.Cortana.CortanaSettings will provide the following
 -   An API to check if user has consent to voice activation for Cortana
 
 -   an API to control Cortana voice activation (listening to “Hey
-    Cortana”). 
+    Cortana”). 
 
 IoT OEM has a UWP app that enables voice activation (Cortana can listen
 to “Hey Cortana”) when user is close to a device. The sample below shows

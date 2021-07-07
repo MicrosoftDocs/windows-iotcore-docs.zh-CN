@@ -6,14 +6,14 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解如何使用受信任的平台模块启用加密功能，从而更好地保护设备。
 keywords: windows iot，安全性，受信任的平台模块，TPM，加密，密钥
-ms.openlocfilehash: 2459503eab215ae5c7f24a2f066039c0aa36918f
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 2360d62f78f874efd6e28d4efc689fd21f835f03
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657193"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113228603"
 ---
-# <a name="trusted-platform-module-tpm-on-windows-10-iot-core"></a>受信任的平台模块 (Windows 10 IoT Core 上的 TPM) 
+# <a name="trusted-platform-module-tpm-on-windows-10-iot-core"></a>受信任的平台模块 (上的 TPM) Windows 10 IoT 核心版
 
 ## <a name="what-is-tpm"></a>什么是 TPM？
 受信任的平台模块 (TPM) ，是一种加密协处理器，其中包括用于随机编号生成的功能、安全生成的加密密钥和其使用限制。 它还包括远程证明和密封的存储等功能。
@@ -39,14 +39,14 @@ TPM 规范开发了两次。 第一次是从 1.1 b 开发到1.2，其中包含�
 * 增强了平台服务安全性的附加功能
 
 > [!NOTE] 
-> Windows IoT Core 仅支持 TPM 2.0，并且不支持过时的 TPM 1.2。
+> WindowsIoT Core 仅支持 TPM 2.0，并且不支持过时的 TPM 1.2。
 
 ## <a name="what-is-tbs"></a>什么是 TBS？ 
 TPM 基本服务 (TB) 功能是允许对 TPM 资源进行透明共享的系统服务。 它通过远程过程调用 (RPC) 来共享同一物理计算机上多个应用程序中的 TPM 资源。 它使用调用应用程序指定的优先级跨应用程序集中访问 TPM。  
 
 TPM 提供旨在在平台中提供信任的加密功能。 由于 TPM 是在硬件中实现的，因此它具有有限的资源。 TCG 定义 TPM 软件堆栈 (TSS) ，它利用这些资源为应用程序软件提供受信任的操作。 但是，并不是为了与可能使用 TPM 资源的操作系统软件并行运行 TSS 实现。 TBS 功能通过以下方式解决了这一问题：启用每个与 TBS 通信的软件堆栈，以将 TPM 资源检查用于计算机上可能正在运行的任何其他软件堆栈。
 
-## <a name="tpm-solutions-available-on-windows-iot-core"></a>Windows IoT Core 上提供的 TPM 解决方案  
+## <a name="tpm-solutions-available-on-windows-iot-core"></a>Windows IoT 核心上提供的 TPM 解决方案  
 _一些有关软件 TPM (sTPM) ，固件 TPM (fTPM) ，离散 TPM (dTPM) .。。_
 
 ### <a name="firmware-tpm-ftpm"></a>固件 TPM (fTPM)   
@@ -54,7 +54,7 @@ _一些有关软件 TPM (sTPM) ，固件 TPM (fTPM) ，离散 TPM (dTPM) .。。
 
 ### <a name="discrete-tpm-dtpm"></a>独立 TPM (dTPM)   
 所有方法都将独立的 TPM (dTPM) 视为受信任的最佳解决方案。  
-Windows IoT Core 支持多个 dTPM 芯片和 PCB 模块制造商：
+Windows IoT 核心支持多个 dTPM 芯片和 PCB 模块制造商：
 
 > | 制造商 | 网页 | Modul 类型 | TPM 芯片 |
 > |-------------|----------|----------|----------| 
@@ -63,7 +63,7 @@ Windows IoT Core 支持多个 dTPM 芯片和 PCB 模块制造商：
 
 
 ### <a name="software-tpm-stpm"></a>软件 TPM (sTPM)   
-软件 TPM (sTPM) 也称为 TPM 模拟器。 它独立于平台，在 Windows IoT Core 上受支持。  
+软件 TPM (sTPM) 也称为 TPM 模拟器。 它独立于平台，在 Windows IoT 核心上受支持。  
 
 > [!NOTE]
 > sTPM 仅用于开发目的，不提供任何真正的安全优势。  

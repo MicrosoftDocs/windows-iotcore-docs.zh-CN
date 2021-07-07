@@ -1,47 +1,47 @@
 ---
-title: SoC 和自定义板Windows 10 IoT 核心版
+title: Windows 10 IoT 核心版的 soc 和自定义 Boards
 ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解各种建议板和社区设备的硬件功能。
-keywords: windows iot， 开发设备， 板， SOC， SOM， 芯片上的系统， Raspberry Pi 2， Raspberry Pi 3， Minnowboard Max， DragonBoard
-ms.openlocfilehash: 82b4f4b19c4ce4d6022d44efd8206dfdb0fd84ae
-ms.sourcegitcommit: 9912959e9b1bf6a06234b3a38141e8bc30109a4a
+description: 了解各种建议的板和社区设备的硬件功能。
+keywords: windows iot，开发设备，板，SOC，SOM，芯片上的系统，Raspberry Pi 2，Raspberry Pi 3，Minnowboard Max，DragonBoard
+ms.openlocfilehash: 8a9500c2e12180e2e479d63a6ef6fd3002e8aa49
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112584521"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113228753"
 ---
 # <a name="socs-and-custom-boards"></a>SoC 和自定义板
 
-## <a name="microsoft-enabled-socs"></a>已启用 Microsoft 的 SoC
+## <a name="microsoft-enabled-socs"></a>支持 Microsoft 的 Soc
 
-Microsoft 与 Broadcom、Intel、NXP 和 Qualcomm 一起验证对多个供应商系统的支持Windows 10 IoT 核心版芯片 (SoC) 。 这些 IoT 核心支持 SoC 用于数百个不同的设备，可用于对想法进行原型制作和商品化。
+Microsoft 与 Broadcom、Intel、NXP 和 Qualcomm 一起工作，验证对芯片 (soc) 上的多个供应商系统的 Windows 10 IoT 核心版支持。 这些支持 IoT 核心的 Soc 在数百个不同的设备中使用，你可以使用它们来原型和商业化你的想法。
 
 | Broadcom | Intel | Qualcomm | NXP |
 |----------|-------|----------|-----|
 | BCM2837 | [Intel® Atom®处理器 E3900 系列 (Apollo Lake) ](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016) ](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 系列](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp) |
-| BCM2836 | [Intel® Celeron®处理器 N3350 (Apollo Lake) ](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009) ](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 系列](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp)     |
-|         | [Intel® Pentium®处理器 N4200 平台 (Apollo Lake) ](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8M 和 8M 微型系列](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp) |
-|         | [Intel® Pentium® 和 Celeron® Processor N3000 series (Braswell) ](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
+| BCM2836 | [Intel®赛扬® processor N3350 (Apollo Lake) ](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009) ](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 系列](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp)     |
+|         | [Intel®奔腾® processor N4200 platform (Apollo Lake) ](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8 分钟和8分钟微型系列](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp) |
+|         | [Intel®奔腾®和赛扬® Processor N3000 系列 (Braswell) ](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
 |         | [Intel® Atom® x5-E8000 处理器 (Braswell) ](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         |  |
-|         | [Intel® Atom® x5-Z8350 处理器 (步尾) ](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         |     |
-|         | [Intel® Atom®处理器 E3800 产品系列 (Bay Trail-I) ](http://ark.intel.com/products/codename/55844/#@Embedded)                     |                                                                                         |  |
-|         | [Intel® Pentium® 和 Celeron® Processor N 和 J 系列 (Bay Trail-M/D) ](http://ark.intel.com/products/codename/55844/)                     |                                                                                         |       |
+|         | [Intel® Atom® x5-Z8350 处理器 (挑拣轨迹) ](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         |     |
+|         | [Intel® Atom®处理器 E3800 产品系列 (托架踪迹-I) ](http://ark.intel.com/products/codename/55844/#@Embedded)                     |                                                                                         |  |
+|         | [Intel®奔腾®和赛扬®处理器 N 和 J 系列 (托架踪迹-M/D) ](http://ark.intel.com/products/codename/55844/)                     |                                                                                         |       |
 
-选择采用 SoC 取决于性能要求、电源配置文件、成本、物理连接选项、长期支持和操作条件等注意事项。
+选择采用的 SoC 将取决于注意事项，如性能要求、电源配置文件、成本、物理连接选项、长期支持和操作条件。
 
-还需要确定是要使用现成的板还是设备，是使用模块 (SoM) 上的系统构建自定义设备，还是构建完整的自定义板。 成本和自定义程度是做出此决定的关键因素，随着进一步自定义，这两者通常会增加。
+你还需要决定是要使用现成的板还是设备，使用模块 (SoM) 和自定义运营商板上的系统生成自定义设备，还是构建完整的自定义板。 成本和自定义的程度是此决定的关键因素，这两者通常在你进一步自定义时增加。
 
-## <a name="windows-10-iot-core-features-by-processor-family"></a>Windows 10 IoT 核心版处理器系列提供的功能
+## <a name="windows-10-iot-core-features-by-processor-family"></a>Windows 10 IoT 核心版按处理器系列的功能
 
 > [!NOTE]
-> 此列表将考虑非商业公共预览版中的处理器。
+> 此列表考虑非商业公共预览版中的处理器。
 
-为了帮助你为设备选择正确的平台，下表显示了处理器系列支持的功能和Windows 10 IoT 核心版。 下面列出的所有功能在 Windows 10 IoT 核心版中受支持，但某些 SoC 在设计时可能未包含特定的 IP，因此以"N/A"表示。 在这种情况下，可以将第三方解决方案纳入设计以提供所需的功能。  在处理器上未实现 Windows 10 IoT 核心版功能的情况有限的情况下，条目将留空。
+为了帮助你为设备选择正确的平台，下表显示了具有 Windows 10 IoT 核心版的处理器系列支持的功能。 Windows 10 IoT 核心版中支持下面列出的所有功能，但某些 soc 可能未包含在其设计中的特定 IP，这种情况下表示为 "N/A"。 在这种情况下，可以将第三方解决方案合并到设计中，以提供所需的功能。  在有限的情况下，如果在处理器上未实现 Windows 10 IoT 核心版功能，该项将留空。
 
-> | 功能 | Intel  |  Qualcomm  | NXP i.MX6 | NXP i.MX7 | NXP i.MX8M | Broadcom |
+> | Feature | Intel  |  Qualcomm  | NXP MX6 | NXP MX7 | NXP MX8M | Broadcom |
 > |----|--------|------------|-----------|-----------|------------|----------|
 > | 音频 | x | x | x | x | x | x |
 > | GPIO | x | x | x | x | x | x |
@@ -72,7 +72,7 @@ Microsoft 与 Broadcom、Intel、NXP 和 Qualcomm 一起验证对多个供应商
 
 对于大多数人而言，开发完整的自定义板可在产品预计在超过数十甚至几百个单位的卷中销售时发挥作用。 对于较小的卷，使用 SoM 并设计自定义电信板，而不是设计全新的板，可以显著降低成本和上市时间，并简化软件开发和集成。
 
-每个平台都具有在实现过程中需要注意的独特的特点。  下面是有关如何开始的一些建议。 虽然在 Windows 10 IoT Core 上构建许多公司，但以下是一些已获经验证使用 Windows 10 IoT Core 的部分的列表：
+每个平台都具有在实现过程中需要注意的独特的特点。  下面是有关如何开始的一些建议。 尽管有很多公司在 Windows 10 IoT 核心版上构建，但下面列出了一些已获经验证使用 Windows 10 IoT 核心版的人员：
 
 * __[Raspberry Pi](#raspberry-pi-derived-custom-design)__
 * __[Intel](#intel-based-custom-design)__
@@ -85,11 +85,11 @@ Microsoft 与 Broadcom、Intel、NXP 和 Qualcomm 一起验证对多个供应商
 
 ### <a name="raspberry-pi-derived-custom-design"></a>**Raspberry Pi-派生自定义设计**
 
-[元素 14](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service) 提供适用于 Raspberry Pi 的板自定义服务，以允许您添加或删除连接选项。 如果还需要对 BSP 进行自定义，可以利用 [GitHub 上的开源 BSP 代码](https://github.com/ms-iot/rpi-iotcore)。
+[元素 14](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service) 提供适用于 Raspberry Pi 的板自定义服务，以允许您添加或删除连接选项。 如果还需要对 BSP 进行自定义，可以[在 GitHub 上利用开源 BSP 代码](https://github.com/ms-iot/rpi-iotcore)。
 
 ### <a name="intel-based-custom-design"></a>**基于 Intel 的自定义设计**
 
-您可以使用的 Windows [经验丰富的 Windows 体验经验丰富](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) 。 为运行 Windows 10 IoT Core 而设计的 Intel 设备与更常见的 Pc 有一些不同之处：
+适用于 Windows 的[经验丰富的经验丰富的 Intel 设备构建](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349)群体。 与更常见的 pc 相比，设计用于运行 Windows 10 IoT 核心版的 Intel 设备具有几个不同之处：
 
 1. 如果需要提供用户模式通用 Windows 平台 (UWP) API 访问 I2C、GPIO 和 SPI 等简单总线，需要确保 UEFI 固件中的 ACPI 表包含 RHProxy 的相应条目。 有关详细信息，请参阅 [用户模式访问权限](https://docs.microsoft.com/windows/uwp/devices-sensors/enable-usermode-access) 。
 2. 必须确保固件中的 SMBIOS 包含 [OEM 许可证要求](https://docs.microsoft.com/windows/iot-core/commercialize-your-device/oemlicenserequirements)中所列的信息。
@@ -127,7 +127,7 @@ BSP 包包含 ACPI 的源代码，以允许只需 ACPI 更改的简单硬件自�
 
 ### <a name="nxp-preview"></a>**NXP 预览**
 
-NXP 支持 Windows 10 IoT Core 提供公共预览版。 有关详细信息，请访问 BSP 或查找硬件合作伙伴，请访问 [NXP SoC 页面](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp)。
+NXP 支持 Windows 10 IoT 核心版提供公共预览版。 有关详细信息，请访问 BSP 或查找硬件合作伙伴，请访问 [NXP SoC 页面](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp)。
 
 你还可以与我们正在使用的合作伙伴联系：
 

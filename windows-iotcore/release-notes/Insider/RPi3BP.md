@@ -6,12 +6,12 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 阅读发行说明，了解 Raspberry Pi 3B + 内部版本包含的内容。 查看该内部版本中的已知问题。
 keywords: windows iot, Windows 预览体验成员, 发行说明, Raspberry Pi 3B +
-ms.openlocfilehash: 93dfb07d2b16dca2a7c282bd2b1fc57ccd8cccac
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 87a6ac966d39a0e23589205c412c5c00e6d796bd
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657203"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230724"
 ---
 # <a name="release-notes-for-raspberry-pi-3b"></a>Raspberry Pi 3B + 的发行说明
 
