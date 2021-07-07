@@ -8,30 +8,30 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解多个硬件供应商的芯片 (Soc) 上的 IoT Core 支持的单元测试。
 keywords: windows iot，单元测试，UWP
-ms.openlocfilehash: 7b9996135e05a056e8a757fa0635acae56ea0466
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: ed905cd83030ac091be84c3f328372e3c80a7feb
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656103"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113228983"
 ---
-# <a name="developing-unit-tests"></a><span data-ttu-id="da871-104">开发单元测试</span><span class="sxs-lookup"><span data-stu-id="da871-104">Developing unit tests</span></span>
-<span data-ttu-id="da871-105">了解 Windows 10 IoT Core 支持的 UWP 单元测试。</span><span class="sxs-lookup"><span data-stu-id="da871-105">Learn about UWP unit testing supported on Windows 10 IoT Core.</span></span>
+# <a name="developing-unit-tests"></a><span data-ttu-id="073c5-104">开发单元测试</span><span class="sxs-lookup"><span data-stu-id="073c5-104">Developing unit tests</span></span>
+<span data-ttu-id="073c5-105">了解 Windows 10 IoT 核心版上支持的 UWP 单元测试。</span><span class="sxs-lookup"><span data-stu-id="073c5-105">Learn about UWP unit testing supported on Windows 10 IoT Core.</span></span>
 
-## <a name="uwp-unit-tests"></a><span data-ttu-id="da871-106">UWP 单元测试</span><span class="sxs-lookup"><span data-stu-id="da871-106">UWP Unit Tests</span></span>
+## <a name="uwp-unit-tests"></a><span data-ttu-id="073c5-106">UWP 单元测试</span><span class="sxs-lookup"><span data-stu-id="073c5-106">UWP Unit Tests</span></span>
 ___
 
-<span data-ttu-id="da871-107">单元测试为应用开发人员提供重要的保护和验证。</span><span class="sxs-lookup"><span data-stu-id="da871-107">Unit tests provide vital protection and validation for app developers.</span></span>  <span data-ttu-id="da871-108">Visual Studio 15.6 在新的测试平台中添加了对 Windows 10 IoT Core 的支持。</span><span class="sxs-lookup"><span data-stu-id="da871-108">Visual Studio 15.6 added support for Windows 10 IoT Core in its new test platform.</span></span>  <span data-ttu-id="da871-109">通过此新支持，可以创建可作为持续集成生成的一部分或直接从 Visual Studio 中执行的 UWP 功能的单元测试。</span><span class="sxs-lookup"><span data-stu-id="da871-109">With this new support, it is possible to create unit tests for UWP functionality that can execute as part of a Continuous Integration build or directly from Visual Studio.</span></span>
+<span data-ttu-id="073c5-107">单元测试为应用开发人员提供重要的保护和验证。</span><span class="sxs-lookup"><span data-stu-id="073c5-107">Unit tests provide vital protection and validation for app developers.</span></span>  <span data-ttu-id="073c5-108">Visual Studio 15.6 在新的测试平台中添加了对 Windows 10 IoT 核心版的支持。</span><span class="sxs-lookup"><span data-stu-id="073c5-108">Visual Studio 15.6 added support for Windows 10 IoT Core in its new test platform.</span></span>  <span data-ttu-id="073c5-109">利用这一新的支持，可以创建 UWP 功能的单元测试，该功能可作为持续集成生成的一部分或直接从 Visual Studio 执行。</span><span class="sxs-lookup"><span data-stu-id="073c5-109">With this new support, it is possible to create unit tests for UWP functionality that can execute as part of a Continuous Integration build or directly from Visual Studio.</span></span>
 
 
-### <a name="create-new-unit-test-project"></a><span data-ttu-id="da871-110">创建新的单元测试项目</span><span class="sxs-lookup"><span data-stu-id="da871-110">Create new unit test project</span></span>
+### <a name="create-new-unit-test-project"></a><span data-ttu-id="073c5-110">创建新的单元测试项目</span><span class="sxs-lookup"><span data-stu-id="073c5-110">Create new unit test project</span></span>
 ___
 
-1. <span data-ttu-id="da871-111">打开 Visual Studio</span><span class="sxs-lookup"><span data-stu-id="da871-111">Open Visual Studio</span></span>
+1. <span data-ttu-id="073c5-111">打开 Visual Studio</span><span class="sxs-lookup"><span data-stu-id="073c5-111">Open Visual Studio</span></span>
 
-2. <span data-ttu-id="da871-112">创建新的单元测试项目 ![ 安装应用](../media/UnitTests/newproject.png)</span><span class="sxs-lookup"><span data-stu-id="da871-112">Create a new unit test project ![Install App](../media/UnitTests/newproject.png)</span></span>
+2. <span data-ttu-id="073c5-112">创建新的单元测试项目 ![ 安装应用](../media/UnitTests/newproject.png)</span><span class="sxs-lookup"><span data-stu-id="073c5-112">Create a new unit test project ![Install App](../media/UnitTests/newproject.png)</span></span>
 
-3. <span data-ttu-id="da871-113">更新 UnitTest.cs 以包含测试代码</span><span class="sxs-lookup"><span data-stu-id="da871-113">Update UnitTest.cs to include your test code</span></span>
+3. <span data-ttu-id="073c5-113">更新 UnitTest 以包含测试代码</span><span class="sxs-lookup"><span data-stu-id="073c5-113">Update UnitTest.cs to include your test code</span></span>
    ```C#
    namespace UnitTestProject1
    {
@@ -48,22 +48,22 @@ ___
    ```
 
 
-### <a name="remotely-run-unit-test-on-windows-10-iot-core-device"></a><span data-ttu-id="da871-114">在 Windows 10 IoT Core 设备上远程运行单元测试</span><span class="sxs-lookup"><span data-stu-id="da871-114">Remotely run unit test on Windows 10 IoT Core device</span></span>
+### <a name="remotely-run-unit-test-on-windows-10-iot-core-device"></a><span data-ttu-id="073c5-114">在 Windows 10 IoT 核心版设备上远程运行单元测试</span><span class="sxs-lookup"><span data-stu-id="073c5-114">Remotely run unit test on Windows 10 IoT Core device</span></span>
 ___
 
-1. <span data-ttu-id="da871-115">打开 Visual Studio 测试资源管理器 (测试 > Windows > 测试资源管理器) 。</span><span class="sxs-lookup"><span data-stu-id="da871-115">Open the Visual Studio Test Explorer (Test > Windows > Test Explorer).</span></span>
- <span data-ttu-id="da871-116">![测试资源管理器](../media/UnitTests/show-test-explorer.png)</span><span class="sxs-lookup"><span data-stu-id="da871-116">![Test Explorer](../media/UnitTests/show-test-explorer.png)</span></span>
+1. <span data-ttu-id="073c5-115">打开 Visual Studio 测试资源管理器 (测试 > Windows > 测试资源管理器) 。</span><span class="sxs-lookup"><span data-stu-id="073c5-115">Open the Visual Studio Test Explorer (Test > Windows > Test Explorer).</span></span>
+ <span data-ttu-id="073c5-116">![测试资源管理器](../media/UnitTests/show-test-explorer.png)</span><span class="sxs-lookup"><span data-stu-id="073c5-116">![Test Explorer](../media/UnitTests/show-test-explorer.png)</span></span>
 
-1. <span data-ttu-id="da871-117">若要运行测试部署，你的项目必须采用与 (专门使用通用身份验证和远程计算机) 配置 UWP 应用相同的方式进行配置。</span><span class="sxs-lookup"><span data-stu-id="da871-117">For test deployment to work, your project must be configured in the same way UWP apps are configured (specifically using Universal Authentication and Remote Machine).</span></span>  <span data-ttu-id="da871-118">有关详细信息，请参阅 [使用 Visual Studio 部署应用](../develop-your-app/appdeployment.md) 。</span><span class="sxs-lookup"><span data-stu-id="da871-118">See [Deploy an App with Visual Studio](../develop-your-app/appdeployment.md) for specifics.</span></span>
+1. <span data-ttu-id="073c5-117">若要运行测试部署，你的项目必须采用与 (专门使用通用身份验证和远程计算机) 配置 UWP 应用相同的方式进行配置。</span><span class="sxs-lookup"><span data-stu-id="073c5-117">For test deployment to work, your project must be configured in the same way UWP apps are configured (specifically using Universal Authentication and Remote Machine).</span></span>  <span data-ttu-id="073c5-118">有关详细信息，请参阅[部署具有 Visual Studio 的应用](../develop-your-app/appdeployment.md)。</span><span class="sxs-lookup"><span data-stu-id="073c5-118">See [Deploy an App with Visual Studio](../develop-your-app/appdeployment.md) for specifics.</span></span>
 
-1. <span data-ttu-id="da871-119">若要远程运行单元测试，可以使用测试资源管理器，右键单击所需的 TestMethod，然后选择 "运行/调试选定的测试" " ![ 测试资源管理器 1"](../media/UnitTests/test-explorer.png)</span><span class="sxs-lookup"><span data-stu-id="da871-119">To remotely run a unit test, you can use the Test Explorer and right-click the desired TestMethod and selecting Run/Debug Selected Tests ![Test Explorer 1](../media/UnitTests/test-explorer.png)</span></span>
+1. <span data-ttu-id="073c5-119">若要远程运行单元测试，可以使用测试资源管理器，右键单击所需的 TestMethod，然后选择 "运行/调试选定的测试" " ![ 测试资源管理器 1"](../media/UnitTests/test-explorer.png)</span><span class="sxs-lookup"><span data-stu-id="073c5-119">To remotely run a unit test, you can use the Test Explorer and right-click the desired TestMethod and selecting Run/Debug Selected Tests ![Test Explorer 1](../media/UnitTests/test-explorer.png)</span></span>
 
-1. <span data-ttu-id="da871-120">若要远程运行或调试所有单元测试，可以使用测试 > 运行或测试 > 调试 ![ 测试资源管理器 2 ](../media/UnitTests/run-tests.png)
-  ![ 测试资源管理器3](../media/UnitTests/debug-tests.png)</span><span class="sxs-lookup"><span data-stu-id="da871-120">To remotely run or debug all unit tests, you can use Test > Run or Test > Debug ![Test Explorer 2](../media/UnitTests/run-tests.png)
+1. <span data-ttu-id="073c5-120">若要远程运行或调试所有单元测试，可以使用测试 > 运行或测试 > 调试 ![ 测试资源管理器 2 ](../media/UnitTests/run-tests.png)
+  ![ 测试资源管理器3](../media/UnitTests/debug-tests.png)</span><span class="sxs-lookup"><span data-stu-id="073c5-120">To remotely run or debug all unit tests, you can use Test > Run or Test > Debug ![Test Explorer 2](../media/UnitTests/run-tests.png)
  ![Test Explorer 3](../media/UnitTests/debug-tests.png)</span></span>
 
 
-### <a name="configure-unit-tests-as-part-of-a-continuous-integration-build"></a><span data-ttu-id="da871-121">将单元测试配置为持续集成生成的一部分</span><span class="sxs-lookup"><span data-stu-id="da871-121">Configure unit tests as part of a Continuous Integration build</span></span>
+### <a name="configure-unit-tests-as-part-of-a-continuous-integration-build"></a><span data-ttu-id="073c5-121">将单元测试配置为持续集成生成的一部分</span><span class="sxs-lookup"><span data-stu-id="073c5-121">Configure unit tests as part of a Continuous Integration build</span></span>
 ___
 
-<span data-ttu-id="da871-122">Visual Studio 团队创建了一个精彩的博客文章，其中展示了如何将 Windows 10 IoT 核心单元测试合并到 VSTS 生成： [DevOps For iot With Win10 IoT Core、UWP 和 VSTS](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)</span><span class="sxs-lookup"><span data-stu-id="da871-122">The Visual Studio team has created a great blog post showing how to incorporate Windows 10 IoT Core unit tests into a VSTS build: [DevOps for IoT with Win10 IoT Core, UWP, and VSTS](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)</span></span>
+<span data-ttu-id="073c5-122">Visual Studio 团队已经创建了一个很好的博客文章，其中展示了如何将 Windows 10 IoT 核心版单元测试合并为 VSTS 生成：[使用 Win10 iot Core、UWP 和 VSTS 的 iot DevOps](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)</span><span class="sxs-lookup"><span data-stu-id="073c5-122">The Visual Studio team has created a great blog post showing how to incorporate Windows 10 IoT Core unit tests into a VSTS build: [DevOps for IoT with Win10 IoT Core, UWP, and VSTS](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)</span></span>

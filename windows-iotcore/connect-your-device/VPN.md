@@ -1,43 +1,43 @@
 ---
-title: Windows 10 IoT Core 上的 VPN
+title: Windows 10 IoT 核心版上的 VPN
 ms.date: 11/19/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
-description: 了解如何为 Windows 10 IoT Core 设备使用、设置和配置 VPN 功能。
+description: 了解如何使用、设置和配置 Windows 10 IoT 核心版设备的 VPN 功能。
 keywords: windows iot，VPN，安装程序，设备
-ms.openlocfilehash: f5ba6bf38ee76228617fd31d95b28d2d8d42eb7a
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 09ac16c2e653efdb0abde7b5ef2e3b07736a4f6c
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91656553"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113229854"
 ---
-# <a name="leveraging-vpn-capabilities-for-your-windows-10-iot-core-device"></a><span data-ttu-id="8de1c-104">为 Windows 10 IoT Core 设备利用 VPN 功能</span><span class="sxs-lookup"><span data-stu-id="8de1c-104">Leveraging VPN capabilities for your Windows 10 IoT Core device</span></span>
+# <a name="leveraging-vpn-capabilities-for-your-windows-10-iot-core-device"></a><span data-ttu-id="de5cd-104">利用 Windows 10 IoT 核心版设备的 VPN 功能</span><span class="sxs-lookup"><span data-stu-id="de5cd-104">Leveraging VPN capabilities for your Windows 10 IoT Core device</span></span>
 
-<span data-ttu-id="8de1c-105">若要利用 Windows 10 IoT Core 的 VPN 功能，请按照以下说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="8de1c-105">In order to leverage the VPN capabilities of Windows 10 IoT Core, follow the instructions below.</span></span>
+<span data-ttu-id="de5cd-105">若要利用 Windows 10 IoT 核心版的 VPN 功能，请按照下面的说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="de5cd-105">In order to leverage the VPN capabilities of Windows 10 IoT Core, follow the instructions below.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8de1c-106">以下大多数说明必须经过改编。</span><span class="sxs-lookup"><span data-stu-id="8de1c-106">Most of the instructions below must be adapted.</span></span> <span data-ttu-id="8de1c-107">它们特定于用户连接到的 VPN 主机。</span><span class="sxs-lookup"><span data-stu-id="8de1c-107">They are specific to the VPN host that the user is connecting to.</span></span> <span data-ttu-id="8de1c-108">使用的证书是示例。</span><span class="sxs-lookup"><span data-stu-id="8de1c-108">The certs used are examples.</span></span>
+> <span data-ttu-id="de5cd-106">以下大多数说明必须经过改编。</span><span class="sxs-lookup"><span data-stu-id="de5cd-106">Most of the instructions below must be adapted.</span></span> <span data-ttu-id="de5cd-107">它们特定于用户连接到的 VPN 主机。</span><span class="sxs-lookup"><span data-stu-id="de5cd-107">They are specific to the VPN host that the user is connecting to.</span></span> <span data-ttu-id="de5cd-108">使用的证书是示例。</span><span class="sxs-lookup"><span data-stu-id="de5cd-108">The certs used are examples.</span></span>
 
-## <a name="establishing-a-vpn-connection"></a><span data-ttu-id="8de1c-109">建立 VPN 连接</span><span class="sxs-lookup"><span data-stu-id="8de1c-109">Establishing a VPN connection</span></span>
+## <a name="establishing-a-vpn-connection"></a><span data-ttu-id="de5cd-109">建立 VPN 连接</span><span class="sxs-lookup"><span data-stu-id="de5cd-109">Establishing a VPN connection</span></span>
 
-1. <span data-ttu-id="8de1c-110">获取必要的证书并将其复制到 IoT 设备 (例如，) 的 \vpntest 文件夹中。</span><span class="sxs-lookup"><span data-stu-id="8de1c-110">Obtain the necessary certs and copy to your IoT device (e.g. to a \vpntest folder).</span></span>
+1. <span data-ttu-id="de5cd-110">获取必要的证书并将其复制到 IoT 设备 (例如，) 的 \vpntest 文件夹中。</span><span class="sxs-lookup"><span data-stu-id="de5cd-110">Obtain the necessary certs and copy to your IoT device (e.g. to a \vpntest folder).</span></span>
 
-* <span data-ttu-id="8de1c-111">RASTest .pfx</span><span class="sxs-lookup"><span data-stu-id="8de1c-111">RASTest.pfx</span></span>
-* <span data-ttu-id="8de1c-112">Issuingca-app1</span><span class="sxs-lookup"><span data-stu-id="8de1c-112">IssuingCA.crl</span></span>
-* <span data-ttu-id="8de1c-113">Rootca.cer</span><span class="sxs-lookup"><span data-stu-id="8de1c-113">RootCA.crl</span></span>
+* <span data-ttu-id="de5cd-111">RASTest .pfx</span><span class="sxs-lookup"><span data-stu-id="de5cd-111">RASTest.pfx</span></span>
+* <span data-ttu-id="de5cd-112">Issuingca-app1</span><span class="sxs-lookup"><span data-stu-id="de5cd-112">IssuingCA.crl</span></span>
+* <span data-ttu-id="de5cd-113">Rootca.cer</span><span class="sxs-lookup"><span data-stu-id="de5cd-113">RootCA.crl</span></span>
 
-2. <span data-ttu-id="8de1c-114">应用本地计算机证书 a。</span><span class="sxs-lookup"><span data-stu-id="8de1c-114">Apply local machine certs a.</span></span> <span data-ttu-id="8de1c-115">以管理员身份从 PowerShell 进入设备</span><span class="sxs-lookup"><span data-stu-id="8de1c-115">PowerShell into device as administrator</span></span>
+2. <span data-ttu-id="de5cd-114">应用本地计算机证书 a。</span><span class="sxs-lookup"><span data-stu-id="de5cd-114">Apply local machine certs a.</span></span> <span data-ttu-id="de5cd-115">以管理员身份从 PowerShell 进入设备</span><span class="sxs-lookup"><span data-stu-id="de5cd-115">PowerShell into device as administrator</span></span>
 
 ```powershell
 certmgr -add .\IssuingCA.crl -r localmachine -s root
 certmgr -add .\RootCA.crl -r localmachine -s root
 ```
 
-3. <span data-ttu-id="8de1c-116">应用用户证书 a。</span><span class="sxs-lookup"><span data-stu-id="8de1c-116">Apply user certs a.</span></span> <span data-ttu-id="8de1c-117">使用 SSH 作为 "DefaultAccount" 登录到 IoT 设备。</span><span class="sxs-lookup"><span data-stu-id="8de1c-117">Login to the IoT Device using SSH as "DefaultAccount".</span></span>
-<span data-ttu-id="8de1c-118">b.</span><span class="sxs-lookup"><span data-stu-id="8de1c-118">b.</span></span> <span data-ttu-id="8de1c-119">在命令提示符下，键入 "PowerShell"。</span><span class="sxs-lookup"><span data-stu-id="8de1c-119">From the command prompt, type "PowerShell".</span></span>
-<span data-ttu-id="8de1c-120">c.</span><span class="sxs-lookup"><span data-stu-id="8de1c-120">c.</span></span> <span data-ttu-id="8de1c-121">在以 "默认帐户" 的身份登录时，从 PowerShell (发出以下命令 ) ：</span><span class="sxs-lookup"><span data-stu-id="8de1c-121">Issue the following commands from PowerShell (while logged in as "Default Account"):</span></span>
+3. <span data-ttu-id="de5cd-116">应用用户证书 a。</span><span class="sxs-lookup"><span data-stu-id="de5cd-116">Apply user certs a.</span></span> <span data-ttu-id="de5cd-117">使用 SSH 作为 "DefaultAccount" 登录到 IoT 设备。</span><span class="sxs-lookup"><span data-stu-id="de5cd-117">Login to the IoT Device using SSH as "DefaultAccount".</span></span>
+<span data-ttu-id="de5cd-118">b.</span><span class="sxs-lookup"><span data-stu-id="de5cd-118">b.</span></span> <span data-ttu-id="de5cd-119">在命令提示符下，键入 "PowerShell"。</span><span class="sxs-lookup"><span data-stu-id="de5cd-119">From the command prompt, type "PowerShell".</span></span>
+<span data-ttu-id="de5cd-120">c.</span><span class="sxs-lookup"><span data-stu-id="de5cd-120">c.</span></span> <span data-ttu-id="de5cd-121">在以 "默认帐户" 的身份登录时，从 PowerShell (发出以下命令 ) ：</span><span class="sxs-lookup"><span data-stu-id="de5cd-121">Issue the following commands from PowerShell (while logged in as "Default Account"):</span></span>
 
 ```powershell
 $mypwd = ConvertTo-SecureString -String "<password>" -Force -AsPlainText
@@ -47,21 +47,21 @@ Cert -add .\IssuingCA.crl -r currentuser -s my
 certmgr -add .\RootCA.crl -r currentuser -s my
 ```
 
-4. <span data-ttu-id="8de1c-122">修复主机文件将条目添加到 c:\windows\system32\driverS\etc\hosts 文件 (示例如下) ;</span><span class="sxs-lookup"><span data-stu-id="8de1c-122">Fix hosts file Add an entry into c:\windows\system32\driverS\etc\hosts file (example shown below);</span></span>
+4. <span data-ttu-id="de5cd-122">修复主机文件将条目添加到 c:\windows\system32\driverS\etc\hosts 文件 (示例如下) ;</span><span class="sxs-lookup"><span data-stu-id="de5cd-122">Fix hosts file Add an entry into c:\windows\system32\driverS\etc\hosts file (example shown below);</span></span>
 
-> | <span data-ttu-id="8de1c-123">IP 地址</span><span class="sxs-lookup"><span data-stu-id="8de1c-123">IP Address</span></span> | <span data-ttu-id="8de1c-124">域名</span><span class="sxs-lookup"><span data-stu-id="8de1c-124">Domain Name</span></span> | <span data-ttu-id="8de1c-125">备注</span><span class="sxs-lookup"><span data-stu-id="8de1c-125">Note</span></span> |
+> | <span data-ttu-id="de5cd-123">IP 地址</span><span class="sxs-lookup"><span data-stu-id="de5cd-123">IP Address</span></span> | <span data-ttu-id="de5cd-124">域名</span><span class="sxs-lookup"><span data-stu-id="de5cd-124">Domain Name</span></span> | <span data-ttu-id="de5cd-125">注意</span><span class="sxs-lookup"><span data-stu-id="de5cd-125">Note</span></span> |
 > |----|----| ---|
-> | <span data-ttu-id="8de1c-126">10.10.10.10</span><span class="sxs-lookup"><span data-stu-id="8de1c-126">10.10.10.10</span></span> | <span data-ttu-id="8de1c-127">MyVPN.DomainName.org</span><span class="sxs-lookup"><span data-stu-id="8de1c-127">MyVPN.DomainName.org</span></span> | <span data-ttu-id="8de1c-128">根据需要将替换为 IP 地址和域名</span><span class="sxs-lookup"><span data-stu-id="8de1c-128">Replace with IP address and domain name as needed</span></span> |
+> | <span data-ttu-id="de5cd-126">10.10.10.10</span><span class="sxs-lookup"><span data-stu-id="de5cd-126">10.10.10.10</span></span> | <span data-ttu-id="de5cd-127">MyVPN.DomainName.org</span><span class="sxs-lookup"><span data-stu-id="de5cd-127">MyVPN.DomainName.org</span></span> | <span data-ttu-id="de5cd-128">根据需要将替换为 IP 地址和域名</span><span class="sxs-lookup"><span data-stu-id="de5cd-128">Replace with IP address and domain name as needed</span></span> |
 
-5. <span data-ttu-id="8de1c-129">生成 VPN 测试应用替换源代码中的 "MyVPN.DomainName.org"。</span><span class="sxs-lookup"><span data-stu-id="8de1c-129">Build the VPN test app Replace the "MyVPN.DomainName.org" in the source code.</span></span> <span data-ttu-id="8de1c-130">根据需要进一步增加。</span><span class="sxs-lookup"><span data-stu-id="8de1c-130">Augment further as needed.</span></span>
+5. <span data-ttu-id="de5cd-129">生成 VPN 测试应用替换源代码中的 "MyVPN.DomainName.org"。</span><span class="sxs-lookup"><span data-stu-id="de5cd-129">Build the VPN test app Replace the "MyVPN.DomainName.org" in the source code.</span></span> <span data-ttu-id="de5cd-130">根据需要进一步增加。</span><span class="sxs-lookup"><span data-stu-id="de5cd-130">Augment further as needed.</span></span>
 
-6. <span data-ttu-id="8de1c-131">将下面的代码部署到 Windows 10 IoT 设备的 "启动和停止 VPN 连接" 部分。</span><span class="sxs-lookup"><span data-stu-id="8de1c-131">Deploy the code below in the "Starting and stopping a VPN Connection" section to the Windows 10 IoT device.</span></span>
-<span data-ttu-id="8de1c-132">输入任意 "配置文件名称"，并按 "连接到 VPN" 按钮。</span><span class="sxs-lookup"><span data-stu-id="8de1c-132">Enter an arbitrary "Profile name" and press the "Connect to VPN" button.</span></span>
+6. <span data-ttu-id="de5cd-131">将以下代码部署到 Windows 10 IoT 设备的 "启动和停止 VPN 连接" 部分。</span><span class="sxs-lookup"><span data-stu-id="de5cd-131">Deploy the code below in the "Starting and stopping a VPN Connection" section to the Windows 10 IoT device.</span></span>
+<span data-ttu-id="de5cd-132">输入任意 "配置文件名称"，并按 "连接到 VPN" 按钮。</span><span class="sxs-lookup"><span data-stu-id="de5cd-132">Enter an arbitrary "Profile name" and press the "Connect to VPN" button.</span></span>
 
 
-## <a name="starting-and-stopping-a-vpn-connection"></a><span data-ttu-id="8de1c-133">启动和停止 VPN 连接</span><span class="sxs-lookup"><span data-stu-id="8de1c-133">Starting and stopping a VPN connection</span></span>
+## <a name="starting-and-stopping-a-vpn-connection"></a><span data-ttu-id="de5cd-133">启动和停止 VPN 连接</span><span class="sxs-lookup"><span data-stu-id="de5cd-133">Starting and stopping a VPN connection</span></span>
 
-<span data-ttu-id="8de1c-134">使用以下代码启动和停止 VPN 连接。</span><span class="sxs-lookup"><span data-stu-id="8de1c-134">Use the code below to start and stop a VPN connection.</span></span>
+<span data-ttu-id="de5cd-134">使用以下代码启动和停止 VPN 连接。</span><span class="sxs-lookup"><span data-stu-id="de5cd-134">Use the code below to start and stop a VPN connection.</span></span>
 
 ```csharp
 
