@@ -7,12 +7,12 @@ ms.technology: iot
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Qualcomm 设备。
 keywords: Windows 10 IoT 核心版, Qualcomm
 ms.custom: RS5
-ms.openlocfilehash: 59d4fec484f1c377465f09f13ff6861710755034
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: bf4fcd7169291b77f1d05311f9e68999b91d64d0
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657283"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230484"
 ---
 # <a name="setting-up-a-qualcomm-device"></a>设置 Qualcomm 设备
 
@@ -27,7 +27,7 @@ ms.locfileid: "91657283"
 2. 下载 [Windows 10 IoT 核心版 DragonBoard FFU](https://docs.microsoft.com/windows/iot-core/downloads)。
 3. 双击下载的 ISO 文件，找到装载的虚拟 CD 驱动器。 此驱动器将包含一个安装程序文件 (.msi)；双击它。 这样会在电脑中的 `C:\Program Files (x86)\Microsoft IoT\FFU\` 下创建一个新目录，其中可以看到映像文件“flash.ffu”。
 4. 确保 DragonBoard 处于下载模式，方法是将板上的第一个启动开关设置为“USB 启动”，如下所示。 接着通过 microUSB 电缆将 DragonBoard 连接到主机，然后将 DragonBoard 连接到 12V (> 1A) 电源。
-5. 启动 DragonBoard Update Tool，该工具会通过一个绿色圆圈来表示已检测到 DragonBoard 连接到电脑。 “浏览”到 DragonBoard 的已下载 FFU，然后单击“程序”按钮。 
+5. 启动 DragonBoard Update Tool，该工具会通过一个绿色圆圈来表示已检测到 DragonBoard 连接到电脑。 “浏览”到 DragonBoard 的已下载 FFU，然后单击“程序”按钮。
 6. 再次单击“浏览”，选择在步骤 5 创建的“rawprogram0.xml”。 然后单击“程序”按钮。
 7. 下载完以后，请断开板的电源和 microUSB 电缆连接，将 USB 启动开关切换回到“关”的位置。  将 HDMI 显示器、鼠标和键盘连接到 DragonBoard，然后重新连接电源。 数分钟后，应该会看到 Windows 10 IoT 核心版默认应用程序。 
 
@@ -42,15 +42,15 @@ ms.locfileid: "91657283"
 如果设备支持 Wi-Fi 连接，而你已将显示器连接到设备，则需执行以下操作：
 
 1. 进入默认应用程序，单击时钟旁边的设置按钮。
-2. 在设置页上，选择“网络和 Wi-Fi”。 
+2. 在设置页上，选择“网络和 Wi-Fi”。
 3. 设备将开始扫描无线网络。
-4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。 
+4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。
 
 如果尚未连接显示器，因此希望通过 Wi-Fi 进行连接，则需执行以下操作：
 
-1. 转到 IoT 仪表板，单击“我的设备”。 
+1. 转到 IoT 仪表板，单击“我的设备”。
 2. 从列表中找到你的未配置的板。 其名称会以“AJ_”开头（例如 AJ_58EA6C68）。 如果数分钟后仍没有看到自己的板显示，则请尝试重启你的板。
-3. 单击“配置设备”，然后输入网络凭据。  这样就会将板连接到网络。
+3. 单击“配置设备”，然后输入网络凭据。 这样就会将板连接到网络。
 
 > [!NOTE]
 > 需启用计算机上的 Wi-Fi 才能找到其他网络。

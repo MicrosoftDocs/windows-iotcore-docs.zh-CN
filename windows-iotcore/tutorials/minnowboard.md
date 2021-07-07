@@ -7,12 +7,12 @@ ms.technology: iot
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Minnowboard。 查看如何使用仪表板、连接到网络，以及如何连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, Minnowboard
 ms.custom: RS5
-ms.openlocfilehash: d61b38b019f450ea4f7b0e33fe115f298d7508e9
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 8168909b6185ae54efd7acf12a81e33f03b797ea
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657153"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230554"
 ---
 # <a name="setting-up-a-minnowboard"></a>设置 MinnowBoard
 
@@ -22,7 +22,7 @@ ms.locfileid: "91657153"
 > MinnowBoard Turbot 的最新 64 位固件可以在 [MinnowBoard 网站](https://minnowboard.org/tutorials/updating-the-firmware)上找到（跳过 MinnowBoard 站点的说明中的步骤 4）。
 
 > [!IMPORTANT]
-> 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。__ 我们正在努力修复此问题。
+> 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。 我们正在努力修复此问题。
 
 设置进行原型制作的 MinnowBoard 时，建议使用 Windows 10 IoT 核心版仪表板。 但是，若要使用 MinnowBoard 进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
 <br>
@@ -60,15 +60,15 @@ Password: p@ssw0rd
 如果设备支持 Wi-Fi 连接，而你已将显示器连接到设备，则需执行以下操作：
 
 1. 进入默认应用程序，单击时钟旁边的设置按钮。
-2. 在设置页上，选择“网络和 Wi-Fi”。__
+2. 在设置页上，选择“网络和 Wi-Fi”。
 3. 设备将开始扫描无线网络。
-4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。__
+4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。
 
 如果尚未连接显示器，因此希望通过 Wi-Fi 进行连接，则需执行以下操作：
 
-1. 转到 IoT 仪表板，单击“我的设备”。__
+1. 转到 IoT 仪表板，单击“我的设备”。
 2. 从列表中找到你的未配置的板。 其名称会以“AJ_”开头（例如 AJ_58EA6C68）。 如果数分钟后仍没有看到自己的板显示，则请尝试重启你的板。
-3. 单击“配置设备”，然后输入网络凭据。__ 这样就会将板连接到网络。
+3. 单击“配置设备”，然后输入网络凭据。 这样就会将板连接到网络。
 
 > [!NOTE]
 > 需启用计算机上的 Wi-Fi 才能找到其他网络。

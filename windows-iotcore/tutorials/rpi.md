@@ -7,12 +7,12 @@ ms.technology: iot
 description: 了解如何通过 Windows 10 IoT 核心版来设置 Raspberry Pi。 使用仪表板、连接到网络，并连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, Raspberry Pi
 ms.custom: RS5
-ms.openlocfilehash: 059eacae001af199a7f307c21d325bf85d2c3a4e
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 3ce2544a4b1f49cbe755efa1b852ec7d05108e84
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657243"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230454"
 ---
 # <a name="setting-up-a-raspberry-pi"></a>设置 Raspberry Pi
 
@@ -22,7 +22,7 @@ ms.locfileid: "91657243"
 > 仪表板不能用来设置 Raspberry Pi 3B+。 如果有 3B+ 设备，则必须使用 [3B+ 技术预览版](https://www.microsoft.com/en-us/software-download/windowsiot)。 请查看技术预览版的[已知限制](https://docs.microsoft.com/windows/iot-core/troubleshooting)，确定它是否适合开发。
 
 > [!IMPORTANT]
-> 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。__ 我们正在努力修复此问题。
+> 出现“格式化此磁盘”弹出窗口时，请勿格式化磁盘。 我们正在努力修复此问题。
 
 设置进行原型制作的 Raspberry Pi 时，建议使用 Windows 10 IoT 核心版仪表板。 但是，若要使用 Raspberry Pi 进行制作，请参阅 [IoT 核心版制造指南](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)。 不能将创客映像用于制作。
 <br>
@@ -60,15 +60,15 @@ Password: p@ssw0rd
 如果设备支持 Wi-Fi 连接，而你已将显示器连接到设备，则需执行以下操作：
 
 1. 进入默认应用程序，单击时钟旁边的设置按钮。
-2. 在设置页上，选择“网络和 Wi-Fi”。__
+2. 在设置页上，选择“网络和 Wi-Fi”。
 3. 设备将开始扫描无线网络。
-4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。__
+4. 你的网络显示在此列表中以后，将其选中，然后单击“连接”。
 
 如果尚未连接显示器，因此希望通过 Wi-Fi 进行连接，则需执行以下操作：
 
-1. 转到 IoT 仪表板，单击“我的设备”。__
+1. 转到 IoT 仪表板，单击“我的设备”。
 2. 从列表中找到你的未配置的板。 其名称会以“AJ_”开头（例如 AJ_58EA6C68）。 如果数分钟后仍没有看到自己的板显示，则请尝试重启你的板。
-3. 单击“配置设备”，然后输入网络凭据。__ 这样就会将板连接到网络。
+3. 单击“配置设备”，然后输入网络凭据。 这样就会将板连接到网络。
 
 > [!NOTE]
 > 需启用计算机上的 Wi-Fi 才能找到其他网络。

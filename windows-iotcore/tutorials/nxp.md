@@ -7,12 +7,12 @@ ms.technology: iot
 description: 了解如何通过 Windows 10 IoT 核心版来设置 NXP 设备。 使用仪表板、连接到网络，并连接到 Windows 设备门户。
 keywords: Windows 10 IoT 核心版, NXP
 ms.custom: RS5
-ms.openlocfilehash: 67d6728981cb9b1dd8e2a4ab0dc00c432f856c16
-ms.sourcegitcommit: d048cc83c8a916bc761f5065e880d3555758321c
+ms.openlocfilehash: 501b7482aaeab7905c943dc837c3e75d3858ca73
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102247107"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230494"
 ---
 # <a name="setting-up-an-nxp-imx6imx7-device"></a>设置 NXP i.MX6/i.MX7 设备
 

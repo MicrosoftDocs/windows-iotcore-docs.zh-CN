@@ -6,12 +6,12 @@ ms.prod: windows-iot
 ms.technology: iot
 description: 了解如何添加和开发适合你的设备的应用。 查看指向建议的初学者示例和应用开发资源的链接。
 keywords: Windows 10 IoT 核心版, 入门, 开发应用, 应用
-ms.openlocfilehash: 3b41c7de76644b25193fdf751667e8fd119b4951
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+ms.openlocfilehash: 25023bc064e89a37218110b5afa9fda72c2cbbbd
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657273"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230474"
 ---
 # <a name="develop-an-app-for-your-device"></a>开发适用于设备的应用
 

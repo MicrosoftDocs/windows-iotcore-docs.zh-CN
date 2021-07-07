@@ -1,41 +1,41 @@
 ---
-title: Windows CE 应用容器概述
+title: 概述Windows CE 应用容器
 ms.date: 08/12/2020
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: iot
 description: Windows CE 应用容器迁移技术
-keywords: Windows 10 IoT Core，Windows CE，应用程序迁移，cepal
-ms.openlocfilehash: 08f2f167f92a323e0b18a2982e84a2ecacadd292
-ms.sourcegitcommit: c57cebdf4d083079f41ec92ef65d897fd3c0faf8
+keywords: Windows 10 IoT 核心版、Windows CE、应用程序迁移、cepal
+ms.openlocfilehash: ca48c8934cbda168a8c21dbdad727d8b7eecc5dc
+ms.sourcegitcommit: 938c83c2823304341ce6022d12eeed037c119112
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91657133"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113230424"
 ---
-# <a name="an-overview-of-the-windows-ce-app-container"></a>Windows CE 应用容器概述
+# <a name="an-overview-of-the-windows-ce-app-container"></a>概述Windows CE 应用容器
 
-Microsoft 为 embedded 设备提供了平台和操作系统，数十年。 随着 Windows 10 IoT 等新产品/服务的推出，我们的客户和合作伙伴对这些操作系统提供的高级安全性、平台和云连接功能的兴趣越来越大。 从大多数早期版本的 Windows （如 Windows XP 和 Windows 7）迁移的客户可以轻松完成此操作，因为二进制兼容的应用程序。 其他操作系统（如 Windows CE）需要设备构建者来修改源代码。 迁移此类应用程序可能会很困难。
+数十年来，Microsoft 一直为嵌入式设备提供平台和操作系统。 随着 IoT Windows 10等新产品/服务推出，我们的客户和合作伙伴对这些 OS 提供的高级安全性、平台和云连接功能越来越感兴趣。 从大多数早期版本的 Windows（如 Windows XP 和 Windows 7）迁移的客户，由于二进制兼容的应用程序，因此几乎不做任何工作。 其他操作系统（例如 Windows CE）要求设备生成器修改源代码。 移植这样的应用程序可能很有挑战性。
 
-为了帮助这些客户移动到 Windows 10 IoT 并充分利用智能边缘（包括人工智能和机器学习）的全部功能，Microsoft 开发了一项技术，使大多数客户可以在 Windows 10 IoT 上运行其现有的、未修改的 Windows CE 应用程序，同时他们会继续投入更新应用程序。 可以在 IoT Show 剧集[现代化 Windows CE 设备](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices)中了解有关此技术工作原理的详细信息
+为了帮助这些客户移动到 Windows 10 IoT，并充分利用智能边缘（包括人工智能和机器学习）的全部功能，Microsoft 开发了一项技术，使大多数客户在 Windows 10 IoT 上运行其现有的未经修改的 Windows CE 应用程序，同时继续投资更新其应用程序。 若要详细了解此技术的工作原理，可观看 IoT 展示集现代化[Windows CE设备](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Modernizing-Windows-CE-Devices)
 
-## <a name="what-are-the-platform-requirements"></a>什么是平台要求
+## <a name="what-are-the-platform-requirements"></a>平台要求是什么
 
-Windows CE 应用迁移技术的工作原理是在 Windows 10 IoT Core 之上运行 Windows CE 2013 实例。
+应用Windows CE技术的工作原理是，在 Windows 10 IoT 核心版 上运行 Windows CE 2013 Windows 10 IoT 核心版。
 
-此解决方案适用于32位应用程序代码，需要与 Windows 10 IoT Core [兼容](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards) 的 ARM32 或 x64 基本平台。
-你应该使用平台生成器以及为 Windows 10 IoT Core 构建映像，来熟悉如何构建 Windows CE 2013 系统映像。
+该解决方案适用于 32 位应用程序代码，并且需要与 32 位应用程序代码兼容的 ARM32 或 x64 Windows 10 IoT 核心版。 [](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards)
+你应熟悉使用平台生成器生成 Windows CE 2013 系统映像，以及生成适用于 Windows 10 IoT 核心版。
 
-有关要求的更详细列表，请参阅[使用 CE 应用容器入门](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container-getting-started)一文中的 "[先决条件](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container-getting-started#prerequisites)"。
+有关要求的详细列表，可在此文章中的先决条件下找到[](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container-getting-started#prerequisites)，入门[CE 应用容器 。](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container-getting-started)
 
-## <a name="is-windows-ce-app-container-the-right-choice-for-me"></a>Windows CE 应用容器是正确的选择
+## <a name="is-windows-ce-app-container-the-right-choice-for-me"></a>Windows CE 应用容器适合我
 
-对于需要使用 ARM32 或拥有需要多个开发周期才能迁移的复杂 CE 应用程序的设计，具有 [Windows 10 IoT Core Services](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview) 的 Ce 应用容器为逐步迁移提供了一个很好的解决方案。
+对于需要利用 ARM32 或具有需要多个开发周期进行迁移的复杂 CE 应用程序的设计，包含 Windows 10 IoT 核心版 Services 的 CE[应用容器为](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview)逐步迁移提供了一个很好的解决方案。
 
-开发人员在其 IoT 核心系统映像中放置了一个特殊的 ARM32 或 x86 Windows CE2013 平台映像，这些映像在 Windows 10 IoT Core 兼容硬件上部署。 开发人员可以通过 Windows 10 层开始添加功能，如 Azure 云连接或新式外设，还可以移动 CE 应用程序的某些部分，并将其用于在2029之前完成迁移。
+开发人员将特殊的 ARM32 或 x86 Windows CE2013 平台映像放在其 IoT 核心系统映像中，该映像部署在Windows 10 IoT 核心版硬件上。 开发人员可以通过 Windows 10 层开始添加 Azure 云连接或新式外围设备等功能，并且可以将部分 CE 应用程序移到另一层，并可以在 2029 年之前完成迁移。
 
-对于 IoT 核心服务，Windows 10 IoT Core OS 将继续接收安全更新，直至2029。 而且，通过设备更新中心等功能，Oem 可以管理操作系统更新的时间，并可以轻松地分发应用程序更新。
+使用 IoT 核心服务，Windows 10 IoT 核心版 OS 将继续接收安全更新，直到 2029 年。 借助 设备更新中心 等功能，OEM 可以轻松管理 OS 更新的计时以及分发应用程序更新。
 
-请参阅 [CE 应用容器入门](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container-getting-started) ，了解指导你完成迁移过程的分步指南。
+有关入门迁移旅程的分步指南，请查看 [使用 CE](https://docs.microsoft.com/windows/iot-core/windows-ce-app-container-getting-started) 应用容器进行迁移。
 
-但是，如果现有设计只需要几年的生产，最佳做法是继续 Windows CE 2013。 [使用 Windows 10 IoT Core 上的 Windows CE 应用容器](https://techcommunity.microsoft.com/t5/internet-of-things/moving-forward-with-windows-ce-using-the-windows-ce-app/ba-p/1582360)，更深入地介绍了前进 Windows CE。
+但是，如果你的现有设计只需要再进行一些年的生产，那么最好在 2013 年 1 月Windows CE。 使用 Windows 10 IoT 核心版 上的 Windows CE，进一步Windows CE 应用容器[进一步Windows 10 IoT 核心版。](https://techcommunity.microsoft.com/t5/internet-of-things/moving-forward-with-windows-ce-using-the-windows-ce-app/ba-p/1582360)
